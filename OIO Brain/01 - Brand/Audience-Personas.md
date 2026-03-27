@@ -22,7 +22,7 @@ The Honda Fit How-To videos are the top-of-funnel engine. Everything else is the
 ## Primary Persona — The Relatable Wrencher
 
 **Who they are:**
-- 25–45 years old
+- 15–45 years old
 - Owns a practical car (or wants to)
 - Curious about motorsports but hasn't tried it (or just started)
 - Watches YouTube for both utility and entertainment
