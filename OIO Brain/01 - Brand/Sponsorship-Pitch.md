@@ -1,3 +1,14 @@
+---
+title: OIO Sponsorship Pitch
+type: reference
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [sponsorship, business, pitch, revenue]
+source_of_truth: true
+summary: Everything needed to pitch a sponsorship to OIO Racing. Includes channel stats, why OIO, sponsorship tiers, best-fit sponsor categories, and contact info. Use this as the source document when reaching out to potential partners.
+---
+
 # Sponsorship Pitch
 
 > Everything needed to pitch and close a sponsorship deal with OIO Racing.

@@ -1,3 +1,14 @@
+---
+title: Video Ideas Backlog
+type: content
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [content, ideas, backlog, videos]
+source_of_truth: true
+summary: Master list of all video ideas organized across 7 content buckets. Pull from here when planning the next video. Mark ideas as assigned when they move to script or production.
+---
+
 # Video Ideas Backlog
 
 > The master list of video ideas, organized by content bucket. Pull from here when planning the next video.

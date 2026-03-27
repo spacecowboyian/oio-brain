@@ -1,3 +1,14 @@
+---
+title: OIO Mission and Positioning
+type: core
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [mission, positioning, brand, strategy]
+source_of_truth: true
+summary: OIO's mission statement, brand positioning, brand promise, competitive differentiation, and long-term vision. The canonical answer to "what is OIO and why does it exist."
+---
+
 # Mission and Positioning
 
 *Last updated: March 2026*

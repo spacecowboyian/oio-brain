@@ -1,3 +1,14 @@
+---
+title: OIO Brand Guide
+type: core
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [brand, voice, tone, church-of-combustion, identity]
+source_of_truth: true
+summary: Definitive reference for how OIO looks, sounds, and behaves. Covers brand voice, target audience, the Church of Combustion framework, message pillars, and the Rallycross ≠ Autocross rule. Read before writing, filming, or designing anything.
+---
+
 # OIO Brand Guide
 
 > The definitive reference for how OIO looks, sounds, and behaves. Read this before writing, filming, or designing anything.

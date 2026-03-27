@@ -1,3 +1,14 @@
+---
+title: Killer Corolla — 1977 Toyota Corolla Sport Coupe
+type: vehicle
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [vehicle, corolla, killer-corolla, down, rebuild, trd]
+source_of_truth: true
+summary: Overview of the Killer Corolla — Ian's 1977 Corolla Sport Coupe loaded with vintage TRD parts. Down since ~2021 after dropping a valve mid-autocross. Six-year resurrection underway with a $100 mystery motor.
+---
+
 # Killer Corolla — 1977 Toyota Corolla Sport Coupe
 
 > Six-year resurrection. Loaded with vintage TRD parts. $100 mystery motor.

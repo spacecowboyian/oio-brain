@@ -1,3 +1,14 @@
+---
+title: Event Schedules — 2026
+type: event
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [schedule, events, season-2026, calendar]
+source_of_truth: false
+summary: Known upcoming events for the 2026 season. Dates are placeholders until confirmed. Includes Lake Garnett, SCCA nationals, FIT OFF, and Nessie's dragstrip debut. Update as events are confirmed.
+---
+
 # Event Schedules
 
 > Known upcoming events for the 2026 season and beyond.

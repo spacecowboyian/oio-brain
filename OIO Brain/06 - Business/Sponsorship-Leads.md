@@ -1,3 +1,14 @@
+---
+title: Sponsorship Leads
+type: finance
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [sponsorship, business, leads, pipeline]
+source_of_truth: true
+summary: Pipeline tracker for all active and potential sponsorship leads. Includes status definitions, prospect table, outreach history, and link to templates. Update as conversations progress.
+---
+
 # Sponsorship Leads
 
 > Active and potential sponsorship contacts. Track every conversation.

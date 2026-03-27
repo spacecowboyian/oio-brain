@@ -1,3 +1,14 @@
+---
+title: Nessie — 1982 Toyota Cressida Wagon
+type: vehicle
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [vehicle, cressida, nessie, drag, building]
+source_of_truth: true
+summary: Overview of Nessie — Ian's 1982 Cressida Wagon. Currently building for drag racing. Dragstrip debut planned for 2026, with drag-and-drive in 2027 as the long-term goal.
+---
+
 # Nessie — 1982 Toyota Cressida Wagon
 
 > The Drag Cressie. A wagon with ambitions above its station.

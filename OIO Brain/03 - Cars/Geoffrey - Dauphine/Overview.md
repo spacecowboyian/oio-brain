@@ -1,3 +1,14 @@
+---
+title: Geoffrey — 1962 Renault Dauphine
+type: vehicle
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [vehicle, dauphine, geoffrey, rally, new-acquisition]
+source_of_truth: true
+summary: Overview of Geoffrey — Ian's recently acquired 1962 Renault Dauphine. Build direction is a future rally car replica. Condition and timeline are still being assessed.
+---
+
 # Geoffrey — 1962 Renault Dauphine
 
 > Recent acquisition. Future rally car replica. The most unexpected car in the fleet.

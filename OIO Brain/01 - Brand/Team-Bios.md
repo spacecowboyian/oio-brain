@@ -1,3 +1,14 @@
+---
+title: OIO Team Bios
+type: reference
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [team, bios, fleet, congregation, drivers]
+source_of_truth: true
+summary: Full roster of the OIO team — Ian, Ryan, Richard, Keegan, the kids, and extended congregation. Includes each person's fleet, role, and 2026 arcs. The canonical reference for who's who and what they drive.
+---
+
 # Team Bios
 
 > Who's in the congregation. Roles, cars, arcs, and context for everyone who appears on camera.

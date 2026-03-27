@@ -1,3 +1,14 @@
+---
+title: Fitty Cent — 2009 Honda Fit GE8
+type: vehicle
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [vehicle, honda-fit, fitty-cent, autocross, rallycross, daily-driver, kids-racing]
+source_of_truth: true
+summary: Overview of Fitty Cent — Ian's 2009 Honda Fit GE8. Active daily driver, autocross car, and rallycross car. The kids (Miles and Hudson) race it in both disciplines. The How-To content subject. 2026 arc is dual-discipline double duty.
+---
+
 # Fitty Cent — 2009 Honda Fit (GE8)
 
 > Ian's daily driver, autocross car, rallycross car, and the kids' race vehicle. It does everything.

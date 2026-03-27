@@ -1,3 +1,14 @@
+---
+title: OIO Current Priorities
+type: state
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [priorities, season-2026, arcs, goals]
+source_of_truth: false
+summary: 2026 season active story arcs, kids racing status, channel goals, and upcoming key events. This is a working document — update it when priorities shift. For the live short-form version, see 01-active/active-priorities.md.
+---
+
 # OIO Current Priorities
 
 > What's active, what's coming, and what needs attention right now. Updated at the start of each season and after major changes.

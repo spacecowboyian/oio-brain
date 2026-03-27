@@ -1,3 +1,14 @@
+---
+title: Rallycross — OIO Reference
+type: reference
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [rallycross, events, discipline, prep, tires]
+source_of_truth: true
+summary: OIO's reference document for rallycross — what it is, how it differs from autocross, which OIO cars compete, pre/post event checklists, and tire notes. Critical: rallycross ≠ autocross. Never flatten them together.
+---
+
 # Rallycross
 
 > Everything OIO needs to know about rallycross — the discipline, prep, rules, and how it's different from autocross.

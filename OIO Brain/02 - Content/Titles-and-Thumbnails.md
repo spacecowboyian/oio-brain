@@ -1,3 +1,14 @@
+---
+title: Titles and Thumbnails
+type: reference
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [content, titles, thumbnails, youtube]
+source_of_truth: true
+summary: OIO's approach to YouTube titles and thumbnails. Covers title patterns by format, thumbnail principles, and a working list of title drafts for upcoming videos.
+---
+
 # Titles and Thumbnails
 
 > OIO's approach to titles and thumbnails. Patterns that work, patterns to avoid, and a working list of title drafts.

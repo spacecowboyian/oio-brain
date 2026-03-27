@@ -1,3 +1,14 @@
+---
+title: OIO Policies
+type: core
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [policies, rules, governance, content, brand, business]
+source_of_truth: true
+summary: Standing operating policies for OIO — content rules, brand standards, business policies, and data/security rules. These apply to any agent or human acting on behalf of OIO. Includes the standing rules that must never be broken.
+---
+
 # Policies
 
 > OIO's standing operating policies. These define how the channel and brand operate consistently.

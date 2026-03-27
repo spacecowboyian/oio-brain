@@ -1,3 +1,14 @@
+---
+title: OIO Audience Personas
+type: reference
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [audience, personas, marketing, brand]
+source_of_truth: true
+summary: Three distinct OIO audience personas — the Relatable Wrencher, the Comedy Fan Who Ended Up Here, and the Grassroots Motorsport Regular. Describes who they are, what they want, and how to speak to each.
+---
+
 # Audience Personas
 
 > Who watches OIO, why they watch, and how to talk to them.

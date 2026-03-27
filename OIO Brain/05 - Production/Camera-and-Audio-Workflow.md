@@ -1,3 +1,14 @@
+---
+title: Camera and Audio Workflow
+type: sop
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [production, camera, audio, workflow, solo]
+source_of_truth: true
+summary: How OIO captures footage as a one-person operation. Covers equipment list, shot types by format, pre-shoot checklist, field workflow at events and in the garage, and file organization conventions.
+---
+
 # Camera and Audio Workflow
 
 > How OIO captures footage. Equipment, setup, and field workflow for shoots.

@@ -1,3 +1,14 @@
+---
+title: OIO Brain — Master Index
+type: core
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [navigation, index, overview]
+source_of_truth: true
+summary: Root-level navigation index for the OIO Brain. Contains quick navigation to all sections, active car roster, 2026 story arcs, and standing rules. Start here for a full map of the repo.
+---
+
 # OIO Brain — Master Index
 
 > **The knowledge base for OIO Racing.** Everything a human or AI agent needs to understand, operate, and grow the brand.

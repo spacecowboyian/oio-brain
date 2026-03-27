@@ -1,3 +1,14 @@
+---
+title: Editing SOPs
+type: sop
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [production, editing, sop, workflow]
+source_of_truth: true
+summary: Standard operating procedures for editing OIO videos. Covers time budgets per format, step-by-step edit process for How-To, Vlog, and Church of Combustion, export settings, and the upload checklist. The 6-hour cap is non-negotiable.
+---
+
 # Editing SOPs
 
 > Standard operating procedures for editing OIO videos. Follow these to stay within time budgets and maintain quality.

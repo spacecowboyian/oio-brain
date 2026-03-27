@@ -1,3 +1,14 @@
+---
+title: OIO Budget — 2026
+type: finance
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [budget, finance, business, costs]
+source_of_truth: false
+summary: Annual budget overview for OIO racing and production costs, revenue/sponsorship offsets, and net position. Most values are placeholders until confirmed. Update as actual costs are known.
+---
+
 # Budget
 
 > OIO's annual budget overview. What it costs to run the channel and race.

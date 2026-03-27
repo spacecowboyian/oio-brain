@@ -1,3 +1,14 @@
+---
+title: The Goblin — 1985 Toyota MR2 AW11
+type: vehicle
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [vehicle, mr2, goblin, rallycross, rebuild]
+source_of_truth: true
+summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Currently down with a shot motor; rebuild in progress. The Goblin's 2026 arc is championship run or death. Links to setup notes and maintenance log.
+---
+
 # The Goblin — 1985 Toyota MR2 (AW11)
 
 > Ian's rallycross car. Named with appropriate menace.

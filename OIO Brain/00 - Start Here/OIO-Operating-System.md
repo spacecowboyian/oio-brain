@@ -1,3 +1,14 @@
+---
+title: OIO Operating System
+type: sop
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [content, schedule, workflow, standing-rules, production]
+source_of_truth: true
+summary: How the OIO channel runs. Defines the four-week content rotation, standing rules, the Project Board system, content bucket rotation, upload checklist, and seasonal calendar. The canonical reference for content operations.
+---
+
 # OIO Operating System
 
 > How the channel runs. The content machine, standing rules, workflows, and production cadence.

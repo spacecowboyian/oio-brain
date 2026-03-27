@@ -1,3 +1,14 @@
+---
+title: Published Videos Log
+type: content
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [content, videos, published, analytics]
+source_of_truth: true
+summary: Running append-only log of every published OIO video with view counts tracked at 7, 30, and 90 days. Use this to spot patterns, track top performers, and avoid repeating topics too soon.
+---
+
 # Published Videos Log
 
 > A running record of every published video. Use this to track performance, find patterns, and avoid repeating topics too soon.

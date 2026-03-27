@@ -1,3 +1,14 @@
+---
+title: Dale — 1972 Toyota Celica
+type: vehicle
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [vehicle, celica, dale, track, lake-garnett]
+source_of_truth: true
+summary: Overview of Dale — Ian's 1972 Celica with 18R-G motor. Active, track-setup, long-term time attack goal. 2026 arc is a season-long pilgrimage toward Lake Garnett Grand Prix Revival in October.
+---
+
 # Dale — 1972 Toyota Celica
 
 > Ian's track car and 2026 pilgrimage vehicle. Destination: Lake Garnett.

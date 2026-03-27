@@ -1,3 +1,14 @@
+---
+title: OIO Master Index (Brain Structure)
+type: core
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [navigation, structure, index]
+source_of_truth: true
+summary: Full brain directory tree with folder-by-folder listing, document conventions, and quick-reference navigation table. Use this to understand what lives where and how files are named.
+---
+
 # OIO Master Index
 
 > The canonical table of contents for the entire OIO Brain. Start here.

@@ -1,3 +1,14 @@
+---
+title: Autocross — OIO Reference
+type: reference
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [autocross, events, discipline, prep, tires, scca]
+source_of_truth: true
+summary: OIO's reference document for autocross — what it is, how it differs from rallycross, which OIO cars compete, pre/post event checklists, SCCA notes, and tire notes. Critical: autocross ≠ rallycross. Never flatten them together.
+---
+
 # Autocross
 
 > Everything OIO needs to know about autocross — the discipline, prep, rules, and how it's different from rallycross.

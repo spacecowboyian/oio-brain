@@ -1,3 +1,14 @@
+---
+title: OIO Voice and Tone
+type: core
+status: active
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [voice, tone, writing, brand, style]
+source_of_truth: true
+summary: How OIO writes, speaks, and sounds. Covers the core voice qualities, tone by format (How-To, Vlog, Church of Combustion, Social), things to never do, and a writing checklist. Read before writing any OIO content.
+---
+
 # Voice and Tone
 
 > How OIO writes, speaks, and sounds. Use this before writing any script, post, title, description, or caption.
