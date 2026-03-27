@@ -134,12 +134,12 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 | The Goblin | 1985 Toyota MR2 (AW11) | Down | Rallycross car, motor shot, rebuild in progress |
 | Killer Corolla | 1977 Toyota Corolla Sport Coupe | Down | Loaded with vintage TRD parts, dropped a valve mid-autocross ~5 years ago, $100 mystery motor, rebuild planned |
 | Geoffrey | 1962 Renault Dauphine | Recent acquisition | Future rally car replica |
-| Fittty Scent | 2009 Honda Fit (GE8) | Active | Daily driver, autocross, rallycross, lightly modified suspension |
+| Fitty Cent | 2009 Honda Fit (GE8) | Active | Daily driver, autocross, rallycross, lightly modified suspension |
 | Al | 2014 Toyota Tundra | Active | Tow rig |
 
 **2026 story arcs:**
 - *Goblin* — Championship run or death. Season-long survival question.
-- *Fittty Scent* — Double duty: kids race it in both autocross AND rallycross. Big ask of a small car.
+- *Fitty Cent* — Double duty: kids race it in both autocross AND rallycross. Big ask of a small car.
 - *Dale* — Season-long pilgrimage toward Lake Garnett Grand Prix Revival in October.
 - *Killer Corolla* — Six-year resurrection. $100 mystery motor. TRD everything eventually.
 - *Nessie* — First rites at the dragstrip. Long road toward drag-and-drive in 2027.
