@@ -25,7 +25,8 @@ OIO is a grassroots motorsports brand built around autocross, rallycross, car bu
 
 - **Channel:** @oioracing | ~1.93K subscribers | 358 videos
 - **Brand voice:** Lonely Island meets Vice Grip Garage — absurdist comedy meets folksy Midwest "will it run" drama
-- **The bit:** OIO operates as a Southern Baptist-style Church of Combustion. Ian is The Reverend. Racing events are Sunday services.
+- **The church bit:** OIO also operates as a Southern Baptist-style Church of Combustion. Call
+it an alter ego of the team. Ian is The Reverend. Racing events are Sunday services.
 - **Sign-off:** *"Until next time, remember to go out and find your own apex, because it's better late than never."*
 
 ---
