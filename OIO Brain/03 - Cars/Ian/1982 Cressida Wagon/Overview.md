@@ -3,7 +3,7 @@ title: Nessie — 1982 Toyota Cressida Wagon
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [vehicle, cressida, nessie, drag, building]
 source_of_truth: true
 summary: Overview of Nessie — Ian's 1982 Cressida Wagon. Currently building for drag racing. Dragstrip debut planned for 2026, with drag-and-drive in 2027 as the long-term goal.
@@ -43,6 +43,37 @@ Calling it "The Drag Cressie." A wagon built to go fast in a straight line. Clas
 Nessie's 2026 debut is at the dragstrip. The arc is: will it make it down the track, and what happens when it does?
 
 **2027 goal:** Drag-and-drive event.
+
+---
+
+## Open Work / 2026 Tasks
+
+### Suspension / Drivability
+| Task | Status |
+|---|---|
+| Front Suspension (Springs + Fender Clearance) | Open |
+| Belt Tension Fix | Open |
+
+### Fuel / Safety
+| Task | Status |
+|---|---|
+| Fuel System Overhaul (V8-Compatible) | Open |
+
+### Events / Usage
+| Task | Status |
+|---|---|
+| Drag Season Open Nights (Calendar + Prep) | Open |
+
+### Drivetrain Planning
+| Task | Status |
+|---|---|
+| Rear End Plan (Welded vs Stock vs 8.8) | Open |
+| Ford 8.8 / 9-Inch Swap (Winter 2026) | Open |
+
+### Maintenance
+| Task | Status |
+|---|---|
+| Oil/Filter + Air Filter (Quarterly) | Recurring |
 
 ---
 

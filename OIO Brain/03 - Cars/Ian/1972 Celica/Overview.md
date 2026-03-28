@@ -3,7 +3,7 @@ title: Dale — 1972 Toyota Celica
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [vehicle, celica, dale, track, lake-garnett]
 source_of_truth: true
 summary: Overview of Dale — Ian's 1972 Celica with 18R-G motor. Active, track-setup, long-term time attack goal. 2026 arc is a season-long pilgrimage toward Lake Garnett Grand Prix Revival in October.
@@ -48,6 +48,35 @@ The Lake Garnett LGPR is OIO's annual cathedral moment. Dale going there is the 
 ## 2026 Story Arc
 
 Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale moves the car a step closer to Lake Garnett in October. The Church of Combustion episode from Lake Garnett is the payoff.
+
+---
+
+## Open Work / 2026 Tasks
+
+### Core Build / Timeline
+| Task | Status |
+|---|---|
+| 18RG Machine Shop Drop + Parts Ordering | Open |
+| 18RG Block Search (48-Hour Decision) | Open |
+| Engine Assembly (18RG + Accusump + Oil Cooler) | Open |
+| Engine Install + Throttle Pull (Webers) | Open |
+| Cooling System Final Validation | Open |
+| Exhaust System (Seeburg, Post-Swap) | Open |
+| Alignment + Corner Weight | Open |
+
+### Fabrication / Body
+| Task | Status |
+|---|---|
+| Rocker Panel Replacement | Open |
+| Hood Vent / Flute Cut + Paint | Open |
+| Paint Bumpers (Silver) | Open |
+| Front Fog Lights (Round) | Open |
+
+### Reliability / Prep
+| Task | Status |
+|---|---|
+| Pre-Season Nut & Bolt + System Check | Open |
+| Oil/Filter + Air Filter (Quarterly) | Recurring |
 
 ---
 
