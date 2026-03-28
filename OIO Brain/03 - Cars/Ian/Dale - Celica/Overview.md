@@ -55,8 +55,8 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 
 → [Setup Notes](Setup-Notes.md)
 → [Maintenance Log](Maintenance-Log.md)
-→ [Current Priorities](../../00%20-%20Start%20Here/OIO-Current-Priorities.md)
-→ [Lake Garnett Grand Prix Revival](../../04%20-%20Events/Event%20Notes/)
+→ [Current Priorities](../../../00%20-%20Start%20Here/OIO-Current-Priorities.md)
+→ [Lake Garnett Grand Prix Revival](../../../04%20-%20Events/Event%20Notes/)
 
 ---
 

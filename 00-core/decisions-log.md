@@ -73,6 +73,24 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
+## 2026-03-28 — Cars Folder Reorganized by Driver/Owner
+
+**Decision:** Restructured `OIO Brain/03 - Cars/` from a flat list of car folders into driver subfolders: `Ian/`, `Ryan/`, `Keegan/`, `Richard/`.
+
+**Why:** With 13+ car folders, the flat layout was disorganized. Owner context is now clear from folder path alone. Team member cars also had the driver name as a folder suffix (e.g., `AE86 - Ryan`) which was redundant once they live under `Ryan/`.
+
+**Structure:**
+- `Ian/` — Dale, Goblin, Fitty Cent, Killer Corolla, Nessie, Geoffrey
+- `Ryan/` — AE86, MGB GT, 2001 Camry
+- `Keegan/` — Tercel, Lincoln Town Car
+- `Richard/` — ST205
+
+**Notes:** The kids (Miles, Hudson, Parker) don't own cars — they drive Ian's Fitty Cent.
+
+**Implications:** All relative links in Overview files updated. Owner frontmatter on team member car files corrected to the actual owner.
+
+---
+
 ## 2026-03-28 — OIO Video Catalog Processed Into Brain Structure
 
 **Decision:** The root-level `OIO-Video-Catalog.md` file (359 videos, ~156KB) was processed into the appropriate brain files and then deleted.

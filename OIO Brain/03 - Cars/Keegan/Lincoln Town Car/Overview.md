@@ -2,7 +2,7 @@
 title: Keegan's Lincoln Town Car
 type: vehicle
 status: active
-owner: Ian Jennings
+owner: Keegan Wilhelm
 updated: 2026-03-28
 tags: [vehicle, lincoln, town-car, keegan, autocross, rallycross, congregation, absurdist]
 source_of_truth: true
@@ -67,5 +67,5 @@ The Lincoln first appeared prominently in the 2020 "4AGE Swapped 4WD Tercel DEST
 
 → [Setup Notes](Setup-Notes.md)
 → [Maintenance Log](Maintenance-Log.md)
-→ [Tercel — Keegan](../Tercel%20-%20Keegan/Overview.md)
-→ [Keegan Wilhelm — Team Bio](../../01%20-%20Brand/Team-Bios.md)
+→ [Tercel — Keegan](../Tercel/Overview.md)
+→ [Keegan Wilhelm — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

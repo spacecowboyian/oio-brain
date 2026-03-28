@@ -2,7 +2,7 @@
 title: Keegan's Tercel — Mid-80s 4WD Toyota Tercel
 type: vehicle
 status: active
-owner: Ian Jennings
+owner: Keegan Wilhelm
 updated: 2026-03-28
 tags: [vehicle, tercel, keegan, 4age, rallycross, congregation, 4wd]
 source_of_truth: true
@@ -81,5 +81,5 @@ Keegan's 4A-G swap arc never ends — it just changes which car is on the table.
 
 → [Setup Notes](Setup-Notes.md)
 → [Maintenance Log](Maintenance-Log.md)
-→ [Lincoln Town Car — Keegan](../Lincoln%20Town%20Car%20-%20Keegan/Overview.md)
-→ [Keegan Wilhelm — Team Bio](../../01%20-%20Brand/Team-Bios.md)
+→ [Lincoln Town Car — Keegan](../Lincoln%20Town%20Car/Overview.md)
+→ [Keegan Wilhelm — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

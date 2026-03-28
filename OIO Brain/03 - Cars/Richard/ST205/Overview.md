@@ -2,7 +2,7 @@
 title: Richard's ST205 — Toyota Celica GT-Four ST205
 type: vehicle
 status: active
-owner: Ian Jennings
+owner: Richard Thompson
 updated: 2026-03-28
 tags: [vehicle, st205, celica, gt-four, richard, rallycross, congregation, jdm, awd, rhd]
 source_of_truth: true
@@ -76,4 +76,4 @@ The ST205 has been called. Every SCCA event Richard enters is a chapter in this 
 
 → [Setup Notes](Setup-Notes.md)
 → [Maintenance Log](Maintenance-Log.md)
-→ [Richard Thompson — Team Bio](../../01%20-%20Brand/Team-Bios.md)
+→ [Richard Thompson — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

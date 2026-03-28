@@ -80,7 +80,7 @@ The kids are racing Fitty Cent in both autocross AND rallycross. That's a big as
 
 → [Setup Notes](Setup-Notes.md)
 → [Maintenance Log](Maintenance-Log.md)
-→ [Video Ideas — Honda Fit How-Tos](../../02%20-%20Content/Video-Ideas-Backlog.md)
+→ [Video Ideas — Honda Fit How-Tos](../../../02%20-%20Content/Video-Ideas-Backlog.md)
 
 ---
 

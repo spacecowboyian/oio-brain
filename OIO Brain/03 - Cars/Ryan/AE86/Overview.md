@@ -2,7 +2,7 @@
 title: Ryan's AE86 — 1985 Toyota Corolla AE86
 type: vehicle
 status: active
-owner: Ian Jennings
+owner: Ryan Redenbaugh
 updated: 2026-03-28
 tags: [vehicle, ae86, ryan, rallycross, v8-swap, congregation]
 source_of_truth: true
@@ -87,4 +87,4 @@ The 1UZ V8 swap is the 2026 (and possibly multi-year) arc for this car. It's the
 
 → [Setup Notes](Setup-Notes.md)
 → [Maintenance Log](Maintenance-Log.md)
-→ [Ryan Redenbaugh — Team Bio](../../01%20-%20Brand/Team-Bios.md)
+→ [Ryan Redenbaugh — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

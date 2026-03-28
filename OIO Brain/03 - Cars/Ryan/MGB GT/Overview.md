@@ -2,7 +2,7 @@
 title: Ryan's MGB GT — 1973 MGB GT-S
 type: vehicle
 status: active
-owner: Ian Jennings
+owner: Ryan Redenbaugh
 updated: 2026-03-28
 tags: [vehicle, mgb, mgb-gt, ryan, rallycross, congregation, british]
 source_of_truth: true
@@ -84,4 +84,4 @@ Ryan raced the MGB GT at Lake Garnett 2025. Active competitor heading into 2026.
 
 → [Setup Notes](Setup-Notes.md)
 → [Maintenance Log](Maintenance-Log.md)
-→ [Ryan Redenbaugh — Team Bio](../../01%20-%20Brand/Team-Bios.md)
+→ [Ryan Redenbaugh — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

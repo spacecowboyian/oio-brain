@@ -2,7 +2,7 @@
 title: Ryan's 2001 Camry — "The 2001 Car"
 type: vehicle
 status: active
-owner: Ian Jennings
+owner: Ryan Redenbaugh
 updated: 2026-03-28
 tags: [vehicle, camry, ryan, gambler500, off-road, congregation, 2001-car]
 source_of_truth: true
@@ -76,4 +76,4 @@ The Kansas Gambler 500 is the target event for the 2001 Car. The build and prep 
 
 → [Setup Notes](Setup-Notes.md)
 → [Maintenance Log](Maintenance-Log.md)
-→ [Ryan Redenbaugh — Team Bio](../../01%20-%20Brand/Team-Bios.md)
+→ [Ryan Redenbaugh — Team Bio](../../../01%20-%20Brand/Team-Bios.md)
