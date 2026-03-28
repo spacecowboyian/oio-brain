@@ -32,7 +32,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Nickname | Car | Driver | Status | Blocker |
 |---|---|---|---|---|
-| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Mostly dead** | 4AG needs assessment — savable or not? |
+| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Non-operational** | Diagnostic complete — bearing failure + cyl 4 at 35 PSI. Rebuild vs. replace TBD. |
 | Dale | 1972 Toyota Celica | Ian | Active | None currently |
 | Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Dual-duty workload on one car |
 | Nessie | 1982 Toyota Cressida Wagon | Ian | Building | Drag setup not complete |
@@ -56,7 +56,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Item | Blocker | Notes |
 |---|---|---|
-| Goblin on track | Motor rebuild not complete | Can't compete until motor is done |
+| Goblin on track | Motor rebuild not complete — rebuild vs. replace decision pending | Diagnostic done: bearing failure, cyl 4 at 35 PSI |
 | Nessie drag debut | Setup not complete | 2026 dragstrip appearance is goal |
 | Killer Corolla | Mystery motor status unknown | Full rebuild required |
 | Geoffrey build direction | Too new — no plan yet | First step: assess condition |
@@ -69,6 +69,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
+- **2026-03-28:** Goblin engine diagnostic complete — post-rallycross inspection done. Confirmed bearing failure (lock-up), cylinder 4 at 35 PSI, oil contamination across all cylinders (heaviest cyl 1), heavy valve carbon, loose cyl 1 plug wire. Root cause not yet isolated. Rebuild vs. replace decision pending. See `OIO Brain/03 - Cars/Ian/1985 MR2/Maintenance-Log.md`.
 - **2026-03-28:** Tootie added to brain — Karen's 1965 Chevrolet Suburban (blue). Ian and kids do occasional work on it; may appear in OIO content. Filed under `OIO Brain/03 - Cars/Karen/`.
 - **2026-03-28:** Team project status updated — MGB GT (orange paint/rebuild), Goblin (mostly dead/4AG assessment), 2001 Car (slow build/Gambler 500), Richard Starlet Miata rear end consideration noted
 - **2026-03-28:** 2026 content schedule rebooted — new schedule created in `OIO Brain/02 - Content/2026-Content-Schedule.md`. Full race calendar added to `OIO Brain/04 - Events/Schedules.md`.

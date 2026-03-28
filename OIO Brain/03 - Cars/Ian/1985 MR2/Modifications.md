@@ -19,7 +19,7 @@
 | Step | Status |
 |---|---|
 | Motor removed | TODO |
-| Diagnosis complete | TODO |
+| Diagnosis complete | ✅ 2026-03-28 — bearing failure confirmed, cyl 4 at 35 PSI, oil contamination throughout, heavy valve carbon |
 | Parts ordered | TODO |
 | Engine build | TODO |
 | Engine reinstall | TODO |

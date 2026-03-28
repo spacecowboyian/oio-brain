@@ -6,7 +6,7 @@ owner: Ian Jennings
 updated: 2026-03-28
 tags: [vehicle, mr2, goblin, rallycross, rebuild]
 source_of_truth: true
-summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Mostly dead as of March 2026. Assessing the 4AG to determine if it's savable. If savable: pull, rebuild cheaply, possibly add differential to the transmission.
+summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Engine non-operational as of March 2026. Full diagnostic completed 2026-03-28: confirmed bearing failure + cylinder 4 at 35 PSI. Rebuild vs. replace decision pending.
 ---
 
 # The Goblin — 1985 Toyota MR2 (AW11)
@@ -24,7 +24,7 @@ summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Mostly d
 | Nickname | The Goblin |
 | Year / Make / Model | 1985 Toyota MR2 AW11 |
 | Driver | Ian Jennings |
-| Status | **Mostly dead** — assessing 4AG viability |
+| Status | **Non-operational** — 4AG has confirmed bearing failure + cyl 4 compression loss (35 PSI) |
 | Primary Use | Rallycross |
 | 2026 Arc | Championship run or death. Season-long survival question. |
 
@@ -32,25 +32,28 @@ summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Mostly d
 
 ## Background
 
-The Goblin is Ian's rallycross car and primary source of on-camera suffering. A mid-engine AW11 MR2 that regularly reminds Ian that motorsports is humbling. Motor shot. Rebuild in progress as of March 2026.
+The Goblin is Ian's rallycross car and primary source of on-camera suffering. A mid-engine AW11 MR2 that regularly reminds Ian that motorsports is humbling. Engine is non-operational as of March 2026 following a rallycross failure.
 
-The question for 2026 is simple: **will it be ready, and will it hold together if it is?**
+Full diagnostic completed 2026-03-28. Confirmed: bearing failure (lock-up), cylinder 4 compression at 35 PSI, oil contamination across all cylinders (heaviest in cyl 1), heavy valve carbon buildup, and a loose plug wire on cylinder 1. Root cause not yet isolated. Rebuild vs. replace decision pending.
 
 ---
 
 ## Current Status
 
-- 4AG assessed as "mostly dead" as of March 2026
-- Need to determine if the 4AG is salvageable before any path forward is decided
-- **If salvageable:** pull the engine, rebuild it as cheaply as possible
+- **Diagnostic complete as of 2026-03-28** — full engine MRI performed post-rallycross failure
+- Confirmed: bearing failure (lock-up during event), cylinder 4 at 35 PSI compression, oil in all cylinders (increasing from cyl 4 → 1), heavy valve carbon buildup
+- Also found: loose plug wire on cylinder 1 (contributing factor or pre-existing unknown)
+- Root cause not yet isolated — top-end and bottom-end failure relationship unclear
+- **Next decision:** rebuild this 4AG or replace it
+- **If rebuild:** pull engine, rebuild as cheaply as possible
 - **Also considering:** adding a differential to the transmission during the rebuild
-- Target: return to rallycross — but timeline is uncertain pending engine assessment
+- Target: return to rallycross — timeline uncertain pending rebuild/replace decision
 
 ---
 
 ## 2026 Story Arc
 
-The Goblin's 2026 narrative has shifted from "rebuild in progress" to a real survival question. The 4AG needs to be assessed — is it savable? If yes: pull it, rebuild it cheap, possibly add a diff to the trans. If no: the Goblin may be done. Either way, it gets documented.
+The Goblin's 2026 narrative has shifted from "rebuild in progress" to a documented failure investigation. The engine MRI on March 28 confirmed bearing failure and near-total cylinder 4 compression loss. The next chapter is the rebuild-vs-replace decision — and then executing whichever path is chosen. Either way, it gets documented.
 
 ---
 
@@ -96,6 +99,7 @@ The Goblin's 2026 narrative has shifted from "rebuild in progress" to a real sur
 
 → [Setup Notes](Setup-Notes.md)
 → [Modifications](Modifications.md)
+→ [Maintenance Log](Maintenance-Log.md)
 → [Current Priorities](../../../00%20-%20Start%20Here/OIO-Current-Priorities.md)
 
 ---
