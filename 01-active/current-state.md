@@ -3,7 +3,7 @@ title: OIO Current State
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [state, current, season-2026]
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
@@ -32,7 +32,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Nickname | Car | Driver | Status | Blocker |
 |---|---|---|---|---|
-| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Rebuilding** | Motor shot — rebuild in progress |
+| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Mostly dead** | 4AG needs assessment — savable or not? |
 | Dale | 1972 Toyota Celica | Ian | Active | None currently |
 | Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Dual-duty workload on one car |
 | Nessie | 1982 Toyota Cressida Wagon | Ian | Building | Drag setup not complete |
@@ -69,7 +69,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
-- **2026-03-27:** OIO Brain repository established — canonical operational brain created
+- **2026-03-28:** Team project status updated — MGB GT (orange paint/rebuild), Goblin (mostly dead/4AG assessment), 2001 Car (slow build/Gambler 500), Keegan's Prelude added, Richard Starlet Miata rear end consideration noted
 - **2026-03-27:** Fitty Cent nickname confirmed and corrected throughout
 - **2026 (pre-season):** Geoffrey (1962 Renault Dauphine) recently acquired
 
@@ -88,7 +88,10 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Driver | Car | Arc | Status |
 |---|---|---|---|
+| Ryan | MGB GT | Stripped to bare metal, rebuilt with Bondo + new metal + new design cues. Orange paint imminent. Returns to rallycross after paint. | Nearly ready |
+| Ryan | The 2001 Car | Gambler 500 Kansas run — slowly building, target later in 2026 | Building |
 | Ryan | AE86 | 1UZ V8 swap — national rallycross push | In progress |
-| Ryan | The 2001 Car | Gambler 500 Kansas run | Planning |
-| Richard | ST205 | SCCA debut | Season starting |
-| Keegan | Various Tercels | Always another 4A-G | Ongoing |
+| Richard | ST205 | Bits and bobs; active SCCA competitor | Ongoing |
+| Richard | Starlet | 4AG swap planned; also considering Miata rear end + subframe | Planning |
+| Keegan | Various Tercels | 4A-FE swap in a Tercel (unclear if for him or someone else) | In progress |
+| Keegan | Honda Prelude (~1982–83) | First-gen Prelude on air, wide metal flares — unpainted, in build | Building |
