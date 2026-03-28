@@ -33,7 +33,7 @@ The picdump already exists as an intake queue for images. The goal here is to ex
 
 ### 1. Google Photos Sync
 
-- A specific public Google Photos shared album serves as the source folder. No API auth required — use the public shared album URL.
+- Source album: **https://photos.app.goo.gl/W757cit6HfvKmCQh6** (public shared album — no API auth required).
 - A GitHub Action runs on a schedule (multiple times per day — e.g., every 4–6 hours) and checks for new photos in that album.
 - Any new photos that haven't already been processed are downloaded and dropped into the `picdump/` folder.
 - The action commits the new images to the repo so the existing picdump processing workflow can pick them up.
@@ -78,6 +78,7 @@ The picdump already exists as an intake queue for images. The goal here is to ex
 
 | Question | Decision | Date |
 |---|---|---|
+| Google Photos album URL | https://photos.app.goo.gl/W757cit6HfvKmCQh6 | 2026-03-28 |
 | Google Photos auth | No auth required — use a public shared album URL | 2026-03-28 |
 | Notification channel | GitHub Actions run results/summaries as primary; Slackbot as secondary option | 2026-03-28 |
 | Interface stack | Lightweight React app | 2026-03-28 |
@@ -85,7 +86,7 @@ The picdump already exists as an intake queue for images. The goal here is to ex
 
 ## Open Questions
 
-- Which specific Google Photos shared album URL(s) should be watched?
+None — all questions resolved.
 
 ---
 
