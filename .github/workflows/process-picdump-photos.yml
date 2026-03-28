@@ -37,7 +37,7 @@ jobs:
             echo "image_count=$COUNT" >> "$GITHUB_OUTPUT"
 
             # Build a markdown list of filenames for the issue body
-            FILE_LIST=$(echo "$IMAGES" | sed 's/^/- `/' | sed 's/$/`/')
+            FILE_LIST=$(echo "$IMAGES" | sed 's/^/- /')
             # Use EOF delimiter to handle multi-line safely
             {
               echo "file_list<<PICDUMP_EOF"

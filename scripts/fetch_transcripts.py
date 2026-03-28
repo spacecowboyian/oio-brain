@@ -52,20 +52,38 @@ def format_timestamp(seconds):
     return f"{minutes}:{secs:02d}"
 
 
+def duration_to_seconds(duration_str):
+    """Convert a duration string (M:SS or H:MM:SS with zero-padded seconds) to total seconds.
+
+    Returns None if the string cannot be parsed.
+    """
+    parts = duration_str.strip().split(":")
+    try:
+        if len(parts) == 2:
+            return int(parts[0]) * 60 + int(parts[1])
+        if len(parts) == 3:
+            return int(parts[0]) * 3600 + int(parts[1]) * 60 + int(parts[2])
+    except ValueError:
+        pass
+    print(f"    ⚠ Could not parse duration '{duration_str}' — treating as long-form")
+    return None
+
+
 def parse_catalog(catalog_path):
     """
     Parse OIO-Video-Catalog.md and extract video entries.
 
-    Returns a list of dicts with keys: video_id, title, date, url
+    Returns a list of dicts with keys: video_id, title, date, url, duration, is_short
     """
     videos = []
     seen_ids = set()
 
-    # Pattern matches markdown table rows with YouTube URLs
-    # e.g.: | 2026-02-02 | [Road Noise - 002](https://www.youtube.com/watch?v=Scclz_OPo0U) | ...
+    # Pattern matches markdown table rows with YouTube URLs and an optional duration column.
+    # e.g.: | 2026-02-02 | [Road Noise - 002](https://www.youtube.com/watch?v=Scclz_OPo0U) | 20:23 | ...
     row_pattern = re.compile(
         r"\|\s*(\d{4}-\d{2}-\d{2})\s*\|"          # date column
         r"\s*\[([^\]]+)\]\(https://www\.youtube\.com/watch\?v=([A-Za-z0-9_-]{11})\)"  # title + video_id
+        r"(?:\s*\|\s*(\d+:\d{2}(?::\d{2})?))?",     # optional duration column (M:SS or H:MM:SS, seconds zero-padded)
     )
 
     with open(catalog_path, encoding="utf-8") as f:
@@ -75,6 +93,9 @@ def parse_catalog(catalog_path):
                 date = match.group(1)
                 title = match.group(2).strip()
                 video_id = match.group(3)
+                duration = match.group(4)  # may be None if column absent
+                total_seconds = duration_to_seconds(duration) if duration else None
+                is_short = total_seconds is not None and total_seconds <= 60
                 if video_id not in seen_ids:
                     seen_ids.add(video_id)
                     videos.append({
@@ -82,6 +103,8 @@ def parse_catalog(catalog_path):
                         "title": title,
                         "date": date,
                         "url": f"https://www.youtube.com/watch?v={video_id}",
+                        "duration": duration,
+                        "is_short": is_short,
                     })
 
     return videos
@@ -196,12 +219,18 @@ def main():
         print("No videos found in catalog. Exiting.")
         return
 
+    # Exclude YouTube Shorts (≤ 60 seconds) — they don't need transcripts
+    longform = [v for v in videos if not v["is_short"]]
+    shorts_count = len(videos) - len(longform)
+    if shorts_count > 0:
+        print(f"  Excluded {shorts_count} YouTube Short(s) (duration ≤ 60 seconds)")
+
     if args.all:
-        targets = videos
+        targets = longform
         print("Mode: FULL BATCH — fetching all transcripts")
     else:
         processed = get_processed_ids(transcripts_dir)
-        targets = [v for v in videos if v["video_id"] not in processed]
+        targets = [v for v in longform if v["video_id"] not in processed]
         print(f"Mode: INCREMENTAL — {len(targets)} new videos to fetch ({len(processed)} already processed)")
 
     if not targets:
