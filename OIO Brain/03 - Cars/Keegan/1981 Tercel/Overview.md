@@ -55,6 +55,16 @@ The 1981 Tercel is Keegan's burnt metallic orange turbo build. A 4A-G has been s
 
 ---
 
+## KCRSCCA Competition History
+
+### 2024 AX — Class: XP (#69)
+
+| Event | Date | Class | # | P | Entries | Time | Notes |
+|---|---|---|---|---|---|---|---|
+| E10 (Halloweenie) | 2024-10-27 | XP | 69 | **1st** | 1 | 54.695 | Sole entry. Tercel AX debut. |
+
+---
+
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)

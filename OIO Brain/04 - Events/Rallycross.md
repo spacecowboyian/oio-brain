@@ -3,7 +3,7 @@ title: Rallycross — OIO Reference
 type: reference
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [rallycross, events, discipline, prep, tires]
 source_of_truth: true
 summary: OIO's reference document for rallycross — what it is, how it differs from autocross, which OIO cars compete, pre/post event checklists, and tire notes. Critical: rallycross ≠ autocross. Never flatten them together.
@@ -49,6 +49,7 @@ Rallycross is a timed motorsport discipline run on mixed surfaces — typically 
 | Car | Driver | Status |
 |---|---|---|
 | The Goblin (MR2) | Ian | Down — rebuild in progress |
+| MR2 (#12) | Miles Smith | Active — season trophy competitor |
 | Fitty Cent (Honda Fit) | Ian / Kids | Active |
 | AE86 (Ryan) | Ryan | Down — V8 swap in progress |
 | GD3 Fit (Ryan) | Ryan | Active |
