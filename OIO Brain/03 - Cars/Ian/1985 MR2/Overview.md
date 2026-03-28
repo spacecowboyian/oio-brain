@@ -6,7 +6,7 @@ owner: Ian Jennings
 updated: 2026-03-27
 tags: [vehicle, mr2, goblin, rallycross, rebuild]
 source_of_truth: true
-summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Currently down with a shot motor; rebuild in progress. The Goblin's 2026 arc is championship run or death. Links to setup notes and maintenance log.
+summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Mostly dead as of March 2026. Assessing the 4AG to determine if it's savable. If savable: pull, rebuild cheaply, possibly add differential to the transmission.
 ---
 
 # The Goblin — 1985 Toyota MR2 (AW11)
@@ -24,7 +24,7 @@ summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Currentl
 | Nickname | The Goblin |
 | Year / Make / Model | 1985 Toyota MR2 AW11 |
 | Driver | Ian Jennings |
-| Status | **Down** — motor shot, rebuild in progress |
+| Status | **Mostly dead** — assessing 4AG viability |
 | Primary Use | Rallycross |
 | 2026 Arc | Championship run or death. Season-long survival question. |
 
@@ -40,21 +40,17 @@ The question for 2026 is simple: **will it be ready, and will it hold together i
 
 ## Current Status
 
-- Motor shot as of [date TBD — update when known]
-- Rebuild in progress
-- Target: Ready for 2026 rallycross season opener
+- 4AG assessed as "mostly dead" as of March 2026
+- Need to determine if the 4AG is salvageable before any path forward is decided
+- **If salvageable:** pull the engine, rebuild it as cheaply as possible
+- **Also considering:** adding a differential to the transmission during the rebuild
+- Target: return to rallycross — but timeline is uncertain pending engine assessment
 
 ---
 
 ## 2026 Story Arc
 
-The Goblin's 2026 narrative is a season-long survival question. Championship run or mechanical death. The tension is the point.
-
-Every Goblin appearance is either:
-1. A step forward in the rebuild
-2. Another reason to doubt it
-
-Either way, it gets documented.
+The Goblin's 2026 narrative has shifted from "rebuild in progress" to a real survival question. The 4AG needs to be assessed — is it savable? If yes: pull it, rebuild it cheap, possibly add a diff to the trans. If no: the Goblin may be done. Either way, it gets documented.
 
 ---
 

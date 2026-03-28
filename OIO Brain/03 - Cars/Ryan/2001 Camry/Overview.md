@@ -24,7 +24,7 @@ summary: Overview of Ryan Redenbaugh's 2001 Toyota Camry, nicknamed "The 2001 Ca
 | Nickname | The 2001 Car |
 | Car | 2001 Toyota Camry |
 | Driver / Owner | Ryan Redenbaugh |
-| Status | **Building** — Gambler 500 prep |
+| Status | **Building** — slowly in progress, Gambler 500 target later in 2026 |
 | Primary Use | Gambler 500, off-road chaos |
 | 2026 Arc | Kansas Gambler 500 run |
 
@@ -53,7 +53,9 @@ The car is the opposite of motorsports precision. It is grassroots adventure con
 
 ## 2026 Story Arc
 
-The Kansas Gambler 500 is the target event for the 2001 Car. The build and prep are the content arc.
+Ryan is slowly working on the 2001 Car with the goal of getting it ready for a Gambler event later in 2026. If it makes it, this should produce a really strong video. Ian needs to start developing video ideas for the Gambler run — the content arc has clear potential.
+
+The Kansas Gambler 500 is the target event.
 
 ---
 
