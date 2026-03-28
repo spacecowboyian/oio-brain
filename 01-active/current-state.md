@@ -3,7 +3,7 @@ title: OIO Current State
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [state, current, season-2026]
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
@@ -69,6 +69,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
+- **2026-03-28:** Miles Smith's rallycross history updated — confirmed as primary MR2 driver, KCRSCCA season trophy holder (3rd and 4th place). KCRSCCA results archive 2017–2024 processed and deleted from docdump. See Team-Bios.md and MR2 Overview.md.
 - **2026-03-28:** 2026 content schedule rebooted — new schedule created in `OIO Brain/02 - Content/2026-Content-Schedule.md`. Full race calendar added to `OIO Brain/04 - Events/Schedules.md`.
 - **2026-03-28:** Channel gap identified — no uploads since Mar 4. First priority: Fit How-To on Apr 2 (overdue by 4+ weeks).
 - **2026-03-27:** OIO Brain repository established — canonical operational brain created

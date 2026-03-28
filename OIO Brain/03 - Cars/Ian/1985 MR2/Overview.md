@@ -3,10 +3,10 @@ title: The Goblin — 1985 Toyota MR2 AW11
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
-tags: [vehicle, mr2, goblin, rallycross, rebuild]
+updated: 2026-03-28
+tags: [vehicle, mr2, goblin, rallycross, rebuild, miles-smith]
 source_of_truth: true
-summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Currently down with a shot motor; rebuild in progress. The Goblin's 2026 arc is championship run or death. Links to setup notes and maintenance log.
+summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Currently down with a shot motor; rebuild in progress. The Goblin's 2026 arc is championship run or death. Miles Smith is the MR2's primary rallycross driver and a KCRSCCA season trophy holder.
 ---
 
 # The Goblin — 1985 Toyota MR2 (AW11)
@@ -23,7 +23,7 @@ summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Currentl
 |---|---|
 | Nickname | The Goblin |
 | Year / Make / Model | 1985 Toyota MR2 AW11 |
-| Driver | Ian Jennings |
+| Driver | Ian Jennings / Miles Smith |
 | Status | **Down** — motor shot, rebuild in progress |
 | Primary Use | Rallycross |
 | 2026 Arc | Championship run or death. Season-long survival question. |
@@ -35,6 +35,25 @@ summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Currentl
 The Goblin is Ian's rallycross car and primary source of on-camera suffering. A mid-engine AW11 MR2 that regularly reminds Ian that motorsports is humbling. Motor shot. Rebuild in progress as of March 2026.
 
 The question for 2026 is simple: **will it be ready, and will it hold together if it is?**
+
+---
+
+## Miles Smith — Rally Driver
+
+**Miles Smith is the MR2's primary rallycross competitor.** He has competed in KCRSCCA RallyCross across multiple seasons, earning two season-level championship trophies in the Kansas City region:
+
+- **3rd place** — KCRSCCA RallyCross season championship
+- **4th place** — KCRSCCA RallyCross season championship
+
+Miles runs car #12 in class MR (Mid-size Rear-wheel drive). His results from the available KCRSCCA archive (2023–2024):
+
+| Year | Event | Date | Class | P in Class |
+|---|---|---|---|---|
+| 2024 | Event #3 | 2024-06-15 | MR | 5th |
+| 2024 | Event #1 | 2024-04-14 | MR | 5th |
+| 2023 | RX 10 | 2023-11-12 | MF | 3rd |
+
+*Earlier seasons (2017–2022) not fully captured in archive due to data access limitations. Season trophy years TBD — update when confirmed.*
 
 ---
 

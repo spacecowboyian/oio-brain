@@ -3,7 +3,7 @@ title: OIO Team Bios
 type: reference
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [team, bios, fleet, congregation, drivers]
 source_of_truth: true
 summary: Full roster of the OIO team — Ian, Ryan, Richard, Keegan, the kids, and extended congregation. Includes each person's fleet, role, and 2026 arcs. The canonical reference for who's who and what they drive.
@@ -112,11 +112,36 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 | Name | Age | Status | Notes |
 |---|---|---|---|
-| Miles Smith | 18 | Competing | Autocross and rallycross, no restrictions |
+| Miles Smith | 18 | Competing | Autocross and rallycross, no restrictions. **Primary driver of the MR2 in rallycross.** |
 | Hudson Smith | 15 | Competing | Must have adult ride-along per rules |
 | Parker | 14 | Pending | Ian's bio kid, lives half-time in Kansas. Gets permit at 14; once he has it, he races. |
 
 **2026 target:** Mid-2026 autocross debut as documented competitors.
+
+---
+
+### MILES SMITH — Rallycross Driver
+
+Miles is the primary driver of Ian's MR2 in KCRSCCA rallycross competition. He has competed across multiple seasons and earned season-level trophies — **3rd place and 4th place season finishes** in the Kansas City region SCCA RallyCross championship.
+
+**Car:** Ian's MR2 (1987 Toyota MR2, class: MR — Mid-size Rear-wheel drive)
+**Car number:** 12
+**Region:** KCRSCCA (Kansas City Region SCCA)
+**Class:** MR (Mid-size Rear-wheel drive)
+
+#### Known KCRSCCA Event Results
+
+| Year | Event | Date | Class | P in Class | Car |
+|---|---|---|---|---|---|
+| 2023 | RX 10 | 2023-11-12 | MF | 3rd | 2009 Honda Fit Sport (#16) |
+| 2024 | Event #1 | 2024-04-14 | MR | 5th | 1987 Toyota MR2 (#12) |
+| 2024 | Event #3 | 2024-06-15 | MR | 5th | 1987 Toyota MR2 (#12) |
+
+*Data source: KCRSCCA results archive, 2017–2024. Earlier seasons (2017–2022) accessible only partially due to archive gaps; Miles's full season-championship results are confirmed from Ian's account.*
+
+#### Season Trophies
+- **3rd place** — KCRSCCA RallyCross season championship (year TBD)
+- **4th place** — KCRSCCA RallyCross season championship (year TBD)
 
 ---
 

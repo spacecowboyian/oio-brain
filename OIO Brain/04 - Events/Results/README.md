@@ -46,4 +46,5 @@ For each event, record:
 
 | Year | Event | Driver | Car | Result | Notes |
 |---|---|---|---|---|---|
-| | | | | | |
+| TBD | KCRSCCA RX Season | Miles Smith | MR2 (#12, MR class) | **3rd place season championship** | Kansas City region SCCA RallyCross |
+| TBD | KCRSCCA RX Season | Miles Smith | MR2 (#12, MR class) | **4th place season championship** | Kansas City region SCCA RallyCross |
