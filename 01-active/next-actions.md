@@ -39,13 +39,13 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 ## Content
 
-- [ ] Identify April Honda Fit How-To topic and add to Video Scripts queue
-- [ ] Identify May Honda Fit How-To topic
-- [ ] Plan season opener Church of Combustion — which event, when to drop
-- [ ] Develop kids racing documentary plan — narrative, which event is the debut, how to film it
-- [ ] Contact Ryan about AE86 V8 swap progress and filming coordination
-- [ ] Draft shot list for Goblin rebuild episode(s)
-- [ ] Update Published Videos log with any 2025/early 2026 videos not yet logged
+- [ ] **IMMEDIATE: Film and publish Fit How-To for Apr 2** — Home Alignment / Gyraline. Overdue by 4+ weeks. This is job one.
+- [ ] **IMMEDIATE: Edit KCRX E1 footage (Mar 22 RayRocks)** — Season premiere COC due Apr 20
+- [ ] Plan and film Apr 10 Vlog — season reboot, what happened in March, kids autocross prep
+- [ ] Film Kids' First Autocross (Apr 12) for Apr 24 vlog
+- [ ] Line up May Fit How-To topic: Kids prep the GE8
+- [ ] Capture shorts at every event and garage session — minimum 2–3 per month
+- [ ] See full schedule: `OIO Brain/02 - Content/2026-Content-Schedule.md`
 
 ---
 
