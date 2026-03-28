@@ -1,4 +1,4 @@
-# Keegan's Tercel — Modifications
+# Keegan's 1985 Tercel — Modifications
 
 > Current modifications and build history. Links to related video or social content where applicable.
 
@@ -10,12 +10,13 @@
 
 | Date | Modification | Notes | Related Content |
 |---|---|---|---|
-| 2025 | Turbo build | Applies to primary 4WD Tercel | [OIO short](TODO) |
-| 2019 | 4A-G motor swap — extraction | — | [YouTube](TODO) — 5,900 views |
+| 2026 | 4A-FE engine swap | In progress as of March 2026 | — |
+| [prior] | 4WD swap | Factory or built-in at acquisition | — |
+| [prior] | 3-inch lift | Approximate | — |
+| [prior] | Pizza Hut delivery hat on roof | Iconic. Non-negotiable. | — |
 
 ---
 
 ## Notes
 
-- Keegan maintains a fleet — note which specific car a modification applies to
-- Every build is potential content; coordinate with Ian when major work is happening
+- Track which engine is in this car vs. the 1981 Tercel (turbo 4A-G)

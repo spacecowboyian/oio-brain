@@ -1,31 +1,24 @@
-# Keegan's Tercel — Setup Notes
+# Keegan's 1985 Tercel — Setup Notes
 
-> Build and configuration notes for Keegan's 4WD Toyota Tercel(s).
+> Build and configuration notes for Keegan's 1985 4WD Toyota Tercel.
 
 *Last updated: March 2026*
 
 ---
 
-## Current Configuration (Primary Tercel)
+## Current Configuration
 
 | System | Spec / Notes |
 |---|---|
-| Platform | Mid-80s 4WD Toyota Tercel |
-| Engine | 4A-G (primary) — various turbo 4A-C variants across fleet |
-| Drivetrain | 4WD |
-| Suspension | [Update as known] |
+| Platform | 1985 Toyota Tercel, 3-door |
+| Color | Fleet white |
+| Engine | 4A-FE (swap in progress as of March 2026) |
+| Transmission | 5+1 speed |
+| Drivetrain | 4WD swap |
+| Suspension | Lifted approximately 3 inches |
 | Tires | [Update as known] |
+| Roof | Pizza Hut delivery hat installed |
 | Use | Rallycross primary |
-
----
-
-## Fleet Notes
-
-Keegan has multiple Tercels. The "Tercel" in OIO videos may refer to different individual cars at different times. Key known configurations:
-
-- Mid-80s 4WD Tercel — 4A-G swapped, primary rallycross car
-- Early Tercel Coupe — turbo 4A-C or 4A-G build
-- 4-door Tercel — also swapped
 
 ---
 
@@ -33,5 +26,6 @@ Keegan has multiple Tercels. The "Tercel" in OIO videos may refer to different i
 
 | Date | Change | Notes |
 |---|---|---|
-| 2025 | Turbo Tercel build | Documented in OIO short |
-| 2019 | 4A-G motor extraction and reinstall | Documented — 5,900 view video |
+| 2026 | 4A-FE engine swap (in progress) | Replacing previous engine |
+| [prior] | 4WD swap | Factory or early build swap |
+| [prior] | 3-inch lift | Approximate |

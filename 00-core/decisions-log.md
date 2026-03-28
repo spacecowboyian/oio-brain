@@ -3,7 +3,7 @@ title: OIO Brain — Decisions Log
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [decisions, history, rationale]
 source_of_truth: true
 summary: Append-only log of significant decisions made about OIO — brand, operations, vehicles, content, business. Each entry records what was decided, why, and any follow-up implications.
@@ -20,6 +20,25 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 **Why:** Rationale.
 **Implications:** Follow-up actions or consequences, if any.
 ```
+
+---
+
+## 2026-03-28 — Update Keegan Fleet with Confirmed Vehicle Details
+
+**Decision:** Replaced the generic "Keegan's Tercel (multiple)" and "Lincoln Town Car (multiple)" placeholders with specific, confirmed vehicle records for all 6 cars in Keegan's current fleet.
+
+**Why:** Keegan told Ian his current fleet directly. This is the first time the brain has exact build specs for each individual car rather than fleet-level approximations. Accuracy matters for content planning, event prep, and knowing which car is which.
+
+**Changes made:**
+- Renamed "Lincoln Town Car" folder → "1979 Lincoln Continental" with full specs (400 V8, 3-spd auto, Medium Beryl Metallic / white vinyl top)
+- Updated "1985 Tercel" with specific details (fleet white, 5+1 spd, 4WD, ~3" lift, 4A-FE swap in progress, pizza hut hat)
+- Created new car folder: 1981 Toyota Tercel (burnt metallic orange, turbo 4A-G, gutted, 200TW)
+- Created new car folder: 1982 Honda Prelude 1st gen (ice blue, EL1/EK1 build, Weber 32/36, air bag coilovers, 280TW, DIY body kit)
+- Created new car folder: 1996 Chevrolet Lumina APV (dark red, Bonneville SSEI wheels, snow tires, dealer decals)
+- Created new car folder: 2003 Toyota Tundra (all black, access cab, 4.7L, Limited trim, smoked lights)
+- Updated Keegan README fleet index to reflect all 6 cars
+
+**Implications:** If more cars exist or details change, update individual car folders. Video content featuring Keegan's cars should now reference the specific car, not the generic fleet.
 
 ---
 
