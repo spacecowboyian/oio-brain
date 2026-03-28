@@ -3,7 +3,7 @@ title: OIO Brain — Entry Point
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [navigation, overview, onboarding]
 source_of_truth: true
 summary: Starting point for any human or AI agent entering this repo. Explains what OIO is, what this repo is for, where the memory layer lives, and how to navigate quickly.
@@ -47,11 +47,11 @@ The `01-active/` folder holds the short-term memory of OIO. Start here for curre
 
 | File | What It Answers |
 |---|---|
-| [`01-active/current-state.md`](01-active/current-state.md) | What is happening right now |
-| [`01-active/active-priorities.md`](01-active/active-priorities.md) | What matters most and why |
-| [`01-active/open-loops.md`](01-active/open-loops.md) | Unresolved questions and pending decisions |
-| [`01-active/next-actions.md`](01-active/next-actions.md) | Concrete next steps by area |
-| [`00-core/decisions-log.md`](00-core/decisions-log.md) | Log of significant decisions with rationale |
+| [`01-active/current-state.md`](../01-active/current-state.md) | What is happening right now |
+| [`01-active/active-priorities.md`](../01-active/active-priorities.md) | What matters most and why |
+| [`01-active/open-loops.md`](../01-active/open-loops.md) | Unresolved questions and pending decisions |
+| [`01-active/next-actions.md`](../01-active/next-actions.md) | Concrete next steps by area |
+| [`00-core/decisions-log.md`](../00-core/decisions-log.md) | Log of significant decisions with rationale |
 
 ---
 
@@ -59,12 +59,12 @@ The `01-active/` folder holds the short-term memory of OIO. Start here for curre
 
 | File | Why It Matters |
 |---|---|
-| [`OIO Brain/00 - Start Here/OIO-Brand-Guide.md`](OIO%20Brain/00%20-%20Start%20Here/OIO-Brand-Guide.md) | Voice, tone, Church of Combustion, message pillars |
-| [`OIO Brain/00 - Start Here/OIO-Operating-System.md`](OIO%20Brain/00%20-%20Start%20Here/OIO-Operating-System.md) | Content schedule, standing rules, workflows |
-| [`OIO Brain/01 - Brand/Team-Bios.md`](OIO%20Brain/01%20-%20Brand/Team-Bios.md) | Full team roster, cars, 2026 arcs |
-| [`OIO Brain/01 - Brand/Voice-and-Tone.md`](OIO%20Brain/01%20-%20Brand/Voice-and-Tone.md) | How OIO writes and sounds |
-| [`OIO Brain/02 - Content/Video-Ideas-Backlog.md`](OIO%20Brain/02%20-%20Content/Video-Ideas-Backlog.md) | All video ideas by content bucket |
-| [`OIO Brain/03 - Cars/`](OIO%20Brain/03%20-%20Cars/) | Every vehicle — overview, setup, maintenance |
+| [`OIO Brain/00 - Start Here/OIO-Brand-Guide.md`](../OIO%20Brain/00%20-%20Start%20Here/OIO-Brand-Guide.md) | Voice, tone, Church of Combustion, message pillars |
+| [`OIO Brain/00 - Start Here/OIO-Operating-System.md`](../OIO%20Brain/00%20-%20Start%20Here/OIO-Operating-System.md) | Content schedule, standing rules, workflows |
+| [`OIO Brain/01 - Brand/Team-Bios.md`](../OIO%20Brain/01%20-%20Brand/Team-Bios.md) | Full team roster, cars, 2026 arcs |
+| [`OIO Brain/01 - Brand/Voice-and-Tone.md`](../OIO%20Brain/01%20-%20Brand/Voice-and-Tone.md) | How OIO writes and sounds |
+| [`OIO Brain/02 - Content/Video-Ideas-Backlog.md`](../OIO%20Brain/02%20-%20Content/Video-Ideas-Backlog.md) | All video ideas by content bucket |
+| [`OIO Brain/03 - Cars/`](../OIO%20Brain/03%20-%20Cars/) | Every vehicle — overview, setup, maintenance |
 
 ---
 
