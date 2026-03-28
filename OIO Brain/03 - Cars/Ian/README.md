@@ -11,3 +11,13 @@ Ian's cars. He owns all of these. The kids (Miles, Hudson, Parker) drive Fitty C
 | 1982 Toyota Cressida Wagon | Nessie | Building | Drag racing |
 | 1962 Renault Dauphine | Geoffrey | Recent acquisition | Future rally replica |
 | 2014 Toyota Tundra | Al | Active | Tow rig |
+
+---
+
+## Also In The Garage
+
+These aren't Ian's cars but he and the kids occasionally work on them and they may appear in OIO content.
+
+| Car | Nickname | Owner | Notes |
+|---|---|---|---|
+| 1965 Chevrolet Suburban | Tootie | Karen | Family hauler; Ian + kids do occasional work |
