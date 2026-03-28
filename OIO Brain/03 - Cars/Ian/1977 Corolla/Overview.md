@@ -3,7 +3,7 @@ title: Killer Corolla — 1977 Toyota Corolla Sport Coupe
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [vehicle, corolla, killer-corolla, down, rebuild, trd]
 source_of_truth: true
 summary: Overview of the Killer Corolla — Ian's 1977 Corolla Sport Coupe loaded with vintage TRD parts. Down since ~2021 after dropping a valve mid-autocross. Six-year resurrection underway with a $100 mystery motor.
@@ -57,6 +57,44 @@ The Killer Corolla is loaded with vintage TRD (Toyota Racing Development) parts.
 Six years down. The rebuild begins. $100 mystery motor. TRD everything eventually.
 
 The question is not if — it's when and how bad it gets before it runs.
+
+---
+
+## Open Work / 2026 Tasks
+
+### Engine Decisions
+| Task | Status |
+|---|---|
+| 2TG Value Decision | Open |
+| 2TG Market Reality Check | Open |
+
+### Make It Move (Optional 2026)
+| Task | Status |
+|---|---|
+| 3TC Quick Rebuild Plan | Open |
+| 3TC Drop-In (Make It Move) | Open |
+
+### Long-Term Direction
+| Task | Status |
+|---|---|
+| XSB Chassis Bracing Legality Research | Open |
+| Powertrain Direction (Post-2AR MR2) | Open |
+
+### Hardware / Setup
+| Task | Status |
+|---|---|
+| XSB Wheels & 200TW Tire Selection | Open |
+| Ford 8.8 LSD Plan | Open |
+
+### Chassis
+| Task | Status |
+|---|---|
+| Interior Permanent Strip | Open |
+
+### Maintenance
+| Task | Status |
+|---|---|
+| Oil/Filter + Air Filter (Quarterly when running) | Recurring |
 
 ---
 

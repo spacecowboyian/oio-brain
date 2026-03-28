@@ -32,7 +32,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Nickname | Car | Driver | Status | Blocker |
 |---|---|---|---|---|
-| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Rebuilding** | Motor shot — rebuild in progress |
+| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Mostly dead** | 4AG needs assessment — savable or not? |
 | Dale | 1972 Toyota Celica | Ian | Active | None currently |
 | Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Dual-duty workload on one car |
 | Nessie | 1982 Toyota Cressida Wagon | Ian | Building | Drag setup not complete |
@@ -71,6 +71,8 @@ The 2026 motorsport season is opening. The primary focus is:
 
 - **2026-03-28:** Expanded KCRSCCA competition data processed — full AX + RX history 2021–2024 for Ian, Ryan, Miles, Keegan, Robyn, and Matthew. Updated 9 brain files: historical results, MR2, Honda Fit, Celica, MGB GT, Lincoln Continental, Tercel, Team-Bios, and current-state. Also corrected Ian = primary driver, Miles = co-driver framing throughout.
 - **2026-03-28:** Miles Smith's rallycross history updated — confirmed as co-driver of MR2, KCRSCCA season trophy holder (3rd and 4th place). KCRSCCA results archive 2017–2024 processed and deleted from docdump. See Team-Bios.md and MR2 Overview.md.
+- **2026-03-28:** Tootie added to brain — Karen's 1965 Chevrolet Suburban (blue). Ian and kids do occasional work on it; may appear in OIO content. Filed under `OIO Brain/03 - Cars/Karen/`.
+- **2026-03-28:** Team project status updated — MGB GT (orange paint/rebuild), Goblin (mostly dead/4AG assessment), 2001 Car (slow build/Gambler 500), Richard Starlet Miata rear end consideration noted
 - **2026-03-28:** 2026 content schedule rebooted — new schedule created in `OIO Brain/02 - Content/2026-Content-Schedule.md`. Full race calendar added to `OIO Brain/04 - Events/Schedules.md`.
 - **2026-03-28:** Channel gap identified — no uploads since Mar 4. First priority: Fit How-To on Apr 2 (overdue by 4+ weeks).
 - **2026-03-27:** OIO Brain repository established — canonical operational brain created
@@ -92,7 +94,8 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Driver | Car | Arc | Status |
 |---|---|---|---|
+| Ryan | MGB GT | Stripped to bare metal, rebuilt with Bondo + new metal + new design cues. Orange paint imminent. Returns to rallycross after paint. | Nearly ready |
+| Ryan | The 2001 Car | Gambler 500 Kansas run — slowly building, target later in 2026 | Building |
 | Ryan | AE86 | 1UZ V8 swap — national rallycross push | In progress |
-| Ryan | The 2001 Car | Gambler 500 Kansas run | Planning |
-| Richard | ST205 | SCCA debut | Season starting |
-| Keegan | Various Tercels | Always another 4A-G | Ongoing |
+| Richard | ST205 | Bits and bobs; active SCCA competitor | Ongoing |
+| Richard | Starlet | 4AG swap planned; also considering Miata rear end + subframe | Planning |

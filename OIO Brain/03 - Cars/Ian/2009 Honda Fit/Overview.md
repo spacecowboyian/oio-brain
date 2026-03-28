@@ -114,6 +114,34 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 ---
 
+## Open Work / 2026 Tasks
+
+### Performance Setup
+| Task | Status |
+|---|---|
+| 15×7.5 Wheels + 225 Tire Selection (EST) | Open |
+| Koni Shock Install | Open |
+| Home Alignment (Gyroline) + Video Verify | Open |
+
+### Reliability
+| Task | Status |
+|---|---|
+| Pre-Season Nut & Bolt + Brakes + Fluids | Open |
+| Rear Spring Experiment (If Needed) | Open |
+
+### Future / Acquisition
+| Task | Status |
+|---|---|
+| Search for Clean 09–12 Sport Manual | Open |
+| L15 High-Power Build Option (Research Gate) | Open |
+
+### Maintenance
+| Task | Status |
+|---|---|
+| Oil/Filter + Air Filter (Quarterly) | Recurring |
+
+---
+
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)

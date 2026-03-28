@@ -4,9 +4,10 @@ type: vehicle
 status: active
 owner: Ryan Redenbaugh
 updated: 2026-03-28
+
 tags: [vehicle, mgb, mgb-gt, ryan, rallycross, congregation, british]
 source_of_truth: true
-summary: Overview of Ryan Redenbaugh's 1973 MGB GT-S with Toyota 4A-C motor and Corolla transmission. Active rallycross car with extensive suspension mods. Fresh paint incoming as of 2026. 11 published OIO videos.
+summary: Overview of Ryan Redenbaugh's 1973 MGB GT-S with Toyota 4A-C motor and Corolla transmission. Active rallycross car with extensive suspension mods. Stripped to bare metal and being rebuilt — orange paint incoming, returning to rallycross soon. 11 published OIO videos.
 ---
 
 # Ryan's MGB GT — 1973 MGB GT-S
@@ -24,7 +25,7 @@ summary: Overview of Ryan Redenbaugh's 1973 MGB GT-S with Toyota 4A-C motor and 
 | Nickname | The MGBGT |
 | Car | 1973 MGB GT-S |
 | Driver / Owner | Ryan Redenbaugh |
-| Status | **Active** — fresh paint incoming |
+| Status | **Building** — stripped to bare metal, orange paint incoming |
 | Engine | Toyota 4A-C with Corolla transmission |
 | Primary Use | Rallycross |
 | 2026 Arc | Active competitor; Kansas Gambler 500 |
@@ -37,7 +38,7 @@ Ryan's MGB GT is the most characterful car in the congregation — a vintage Bri
 
 The car went from barn find to rally car in early 2024, documented in a 32-minute full-length video that became the MGB GT's best-performing video with over 5,400 views. Ryan has been racing it in KSSCCA rallycross and at Lake Garnett.
 
-Extensive suspension modifications. Fresh paint incoming as of 2026.
+Extensive suspension modifications. As of March 2026, the car has been stripped to bare metal and is being rebuilt — Bondo work, new metal pieces, and new design cues incorporated. Orange paint is imminent. Returns to rallycross shortly after paint.
 
 ---
 
@@ -49,14 +50,14 @@ Extensive suspension modifications. Fresh paint incoming as of 2026.
 | Transmission | Toyota Corolla |
 | Drivetrain | RWD |
 | Suspension | Extensively modified |
-| Paint | Fresh paint planned / in progress (2026) |
+| Paint | **Orange** — in progress as of March 2026 |
 | Use | Rallycross, Lake Garnett Grand Prix Revival |
 
 ---
 
 ## 2026 Story Arc
 
-Ryan raced the MGB GT at Lake Garnett 2025. Active competitor heading into 2026. Kansas Gambler 500 is also on the arc. Fresh paint coming.
+Ryan stripped the MGB GT to bare metal for a full rebuild — Bondo, new metal pieces, new design cues, and a fresh coat of orange paint. The car returns to rallycross competition as soon as paint is done. Kansas Gambler 500 remains on the arc as well.
 
 ---
 

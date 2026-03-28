@@ -55,6 +55,12 @@ Richard is a serious SCCA competitor based in Manhattan, KS. The ST205 is his pr
 
 ---
 
+## Current Work (March 2026)
+
+Richard is working on various bits and bobs with the ST205. No major build in progress — incremental maintenance and prep.
+
+---
+
 ## 2026 Story Arc
 
 The ST205 has been called. Every SCCA event Richard enters is a chapter in this story. Richard is a serious competitor — this car is not a joke build.

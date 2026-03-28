@@ -45,13 +45,14 @@ Not yet featured on the OIO channel as of March 2026.
 | Model | Toyota Starlet |
 | Engine (current) | [unknown] |
 | Engine (planned) | 4A-G |
+| Rear suspension (planned) | Possibly Miata rear end + rear subframe swap |
 | Use | Track car |
 
 ---
 
 ## 2026 Story Arc
 
-Get the 4A-G in, get it on track.
+Get the 4A-G in, get it on track. Richard is also thinking about swapping in a Miata rear end with the rear subframe — this would be a significant suspension upgrade for a purpose-built track car.
 
 ---
 
