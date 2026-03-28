@@ -15,6 +15,74 @@ summary: Maintenance and diagnostic history for The Goblin (1985 MR2 AW11). Appe
 
 ---
 
+## 2026-03-28 — Follow-Up Diagnostic Findings
+
+**Context:** Additional testing performed after the initial post-rallycross diagnostic (see entry below). Wet compression test on cyl 4 and a focused borescope re-inspection of cyl 4 valves.
+
+---
+
+### Wet Compression Test — Cylinder 4
+
+| Condition | PSI |
+|---|---|
+| Dry (initial) | 35 |
+| Wet (oil added) | ~60 |
+
+**Observations:**
+- Compression increased after oil was introduced to cylinder 4
+- Recovery was partial — compression did not return to a range consistent with a healthy cylinder
+- The partial increase suggests ring sealing is a contributing factor, but rings alone do not account for the full compression loss
+
+---
+
+### Additional Borescope — Cylinder 4 (Focused Re-Inspection)
+
+**Valve Motion**
+- Piston rotated while observing valves
+- Both intake and exhaust valves observed to open and close during engine rotation
+- No visible indication of a stuck valve or mechanical interference
+
+**Valve Condition (All Cylinders)**
+- Valve faces and edges are heavily carbon-coated across all inspected cylinders
+- Carbon buildup is significant enough to obscure clean sealing surfaces
+- Whether carbon is interfering with sealing cannot be confirmed visually
+
+**Cylinder 4 Oil (Reconfirmed)**
+- Oil remains visible in cylinder 4
+- Appears to be present from upper region of cylinder — source still unconfirmed
+
+---
+
+### Key Findings (Non-Interpretive)
+
+- Cyl 4 compression increased from 35 PSI to ~60 PSI with oil added — partial recovery only
+- Cyl 4 valves exhibit normal motion during engine rotation
+- No obvious mechanical damage visible in piston or valve movement in cyl 4
+- Valve sealing surfaces cannot be visually confirmed due to carbon buildup
+- Carbon accumulation on valves is significant across all inspected cylinders
+- Oil remains present in cyl 4 despite low compression
+
+---
+
+### Updated Unknowns (as of 2026-03-28 follow-up)
+
+- Exact contribution of ring sealing vs. valve sealing in cyl 4 — wet test narrows but does not resolve
+- Whether carbon buildup is interfering with valve sealing in cyl 4
+- Exact source of oil entering cyl 4
+- Relationship between cyl 4 sealing loss and bottom-end bearing failure
+- Sequence of failure events (top-end vs. bottom-end)
+
+---
+
+### Status After Follow-Up
+
+- **Engine: Non-operational**
+- Wet compression test confirms partial ring involvement in cyl 4 — but valve sealing remains unverified due to carbon
+- Evidence continues to indicate multiple unresolved failure mechanisms
+- Next step: rebuild vs. replace decision pending
+
+---
+
 ## 2026-03-28 — Post-Rallycross Engine Failure Diagnostic
 
 **Context:** Engine failed during/after a rallycross event. This is the full diagnostic MRI conducted on 2026-03-28.

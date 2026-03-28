@@ -17,10 +17,11 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 ## Vehicles
 
-- **Goblin motor diagnosis:** ✅ 2026-03-28 — Partial. Full diagnostic inspection complete. Confirmed: bearing failure (lock-up), cylinder 4 at 35 PSI, oil contamination across all cylinders (cyl 1 worst), heavy valve carbon, loose cyl 1 plug wire. Root cause not yet isolated. See `OIO Brain/03 - Cars/Ian/1985 MR2/Maintenance-Log.md`.
-- **Goblin — cyl 4 compression loss root cause:** Unknown. Could be valves, head gasket, rings, or other. Borescope showed oil in cyl 4 but no visible piston damage. Needs further investigation.
-- **Goblin — oil source in cylinder 4:** Upper area suspected but not confirmed. Valve seals? Head gasket? Rings?
-- **Goblin — top-end vs. bottom-end failure relationship:** Are these causally linked? Did the bearing failure cause the top-end oil issue, or are they independent? Unknown.
+- **Goblin motor diagnosis:** ✅ 2026-03-28 — Two-stage diagnostic complete. Initial inspection confirmed bearing failure (lock-up), cyl 4 at 35 PSI, oil contamination across all cylinders, heavy valve carbon, loose cyl 1 plug wire. Follow-up wet compression test showed cyl 4 rising to ~60 PSI (partial recovery). Root cause not yet isolated. See `OIO Brain/03 - Cars/Ian/1985 MR2/Maintenance-Log.md`.
+- **Goblin — cyl 4 compression loss root cause:** Partially narrowed. Wet test (35→60 PSI) confirms ring sealing is a factor, but partial recovery means valve sealing may also be compromised. Heavy carbon on valve faces prevents visual confirmation of sealing surfaces.
+- **Goblin — ring sealing vs. valve sealing contribution in cyl 4:** Wet compression test is consistent with partial ring failure, but cannot rule out carbon-fouled valve sealing. Both may be active failure modes.
+- **Goblin — oil source in cylinder 4:** Upper area suspected but not confirmed. Valve seals? Head gasket? Rings? Oil reconfirmed present after follow-up inspection.
+- **Goblin — top-end vs. bottom-end failure relationship:** Valve motion confirmed normal (no stuck valves). Carbon buildup significant but cannot visually confirm sealing. Relationship to bearing failure still unknown.
 - **Goblin 4AG assessment status:** ✅ 2026-03-28 — Diagnostic complete, but rebuild vs. replace decision not yet made. Waiting on cost assessment.
 - **Goblin differential:** Is adding a differential to the transmission during rebuild a firm plan or still exploratory?
 - **Goblin rebuild timeline:** Can it be ready for any 2026 rallycross events? What's the realistic first event if the 4AG is salvageable?
