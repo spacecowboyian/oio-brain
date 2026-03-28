@@ -1,17 +1,17 @@
 ---
-title: Keegan's Tercel — 1985 4WD Toyota Tercel
+title: Keegan's 1985 4WD Toyota Tercel
 type: vehicle
 status: active
 owner: Keegan Wilhelm
 updated: 2026-03-28
-tags: [vehicle, tercel, keegan, 4age, rallycross, congregation, 4wd]
+tags: [vehicle, tercel, keegan, 4afe, rallycross, congregation, 4wd, pizza-hut-hat]
 source_of_truth: true
-summary: Overview of Keegan Wilhelm's 1985 4WD Toyota Tercel(s). Keegan's core cars — multiple Tercels with 4A-G swaps and turbo builds. Rallycross competitor and OIO fan favorite. 11 published OIO videos.
+summary: Overview of Keegan Wilhelm's 1985 4WD Toyota Tercel. 3-door, fleet white, 5+1 speed with 4WD swap, lifted ~3 inches, currently receiving 4A-FE engine swap. Has iconic pizza hut delivery hat on roof. 11 published OIO videos.
 ---
 
-# Keegan's Tercel — 1985 4WD Toyota Tercel
+# Keegan's 1985 4WD Toyota Tercel
 
-> Keegan's 4A-G weapon. One of several. The Tercel is his natural habitat.
+> Fleet white. Lifted. Pizza Hut hat on the roof. 4A-FE swap in progress.
 
 *Last updated: March 2026*
 
@@ -21,20 +21,22 @@ summary: Overview of Keegan Wilhelm's 1985 4WD Toyota Tercel(s). Keegan's core c
 
 | Field | Value |
 |---|---|
-| Car | 1985 4WD Toyota Tercel (multiple) |
+| Car | 1985 Toyota Tercel, 3-door |
 | Driver / Owner | Keegan Wilhelm |
-| Status | **Active** — ongoing builds and mods |
-| Engine | Various 4A-G and turbo 4A-C configurations |
-| Primary Use | Rallycross, showing up and winning |
-| 2026 Arc | Always another 4A-G going into something |
+| Status | **Active** — 4A-FE engine swap in progress |
+| Color | Fleet white |
+| Transmission | 5+1 speed |
+| Drivetrain | 4WD swap |
+| Lift | ~3 inches |
+| Engine (current) | Receiving 4A-FE swap |
+| Notable | Pizza Hut delivery hat installed on roof |
+| Primary Use | Rallycross |
 
 ---
 
 ## Background
 
-Keegan's Tercels are a cornerstone of the OIO congregation story. Keegan collects and builds mid-80s 4WD Toyota Tercels, swapping in 4A-G engines (and turbo 4A-C units) with characteristic calm confidence. He has multiple Tercels in various states of build.
-
-The Tercel first appeared on the OIO channel in 2019 — a 4A-G motor extraction video that earned 5,900 views. The car (or one of the Tercels) then appeared destroying the competition at an early rallycross event in 2020. Keegan's content is characterized by his ability to make unusual builds look effortless.
+Keegan's 1985 4WD Tercel is the white one — currently receiving a 4A-FE engine swap with a lift of about three inches. The car wears a pizza hut delivery hat on its roof, which is exactly as iconic as it sounds.
 
 The Tercel has 11 published OIO videos going back to 2019.
 
@@ -44,16 +46,19 @@ The Tercel has 11 published OIO videos going back to 2019.
 
 | System | Spec / Notes |
 |---|---|
-| Drivetrain | 4WD |
-| Engine options | 4A-G (primary swap), turbo 4A-C variants |
-| Units | Multiple Tercels in collection |
-| Use | Rallycross |
+| Body | 3-door hatchback |
+| Color | Fleet white |
+| Transmission | 5+1 speed |
+| Drivetrain | 4WD swap |
+| Engine | 4A-FE (swap in progress as of March 2026) |
+| Suspension | Lifted approximately 3 inches |
+| Roof accessory | Pizza Hut delivery hat |
 
 ---
 
 ## 2026 Story Arc
 
-Keegan's 4A-G swap arc never ends — it just changes which car is on the table. The Tercel is always being worked on, upgraded, or used as a donor for something else in the fleet.
+Engine swap in progress. The 4A-FE is going in. The pizza hut hat stays.
 
 ---
 
@@ -81,5 +86,6 @@ Keegan's 4A-G swap arc never ends — it just changes which car is on the table.
 
 → [Setup Notes](Setup-Notes.md)
 → [Modifications](Modifications.md)
-→ [Lincoln Town Car — Keegan](../Lincoln%20Town%20Car/Overview.md)
+→ [1981 Tercel — Keegan](../1981%20Tercel/Overview.md)
+→ [1979 Lincoln Continental — Keegan](../1979%20Lincoln%20Continental/Overview.md)
 → [Keegan Wilhelm — Team Bio](../../../01%20-%20Brand/Team-Bios.md)
