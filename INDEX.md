@@ -3,7 +3,7 @@ title: OIO Brain — Master Index
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [navigation, index, overview]
 source_of_truth: true
 summary: Root-level navigation index for the OIO Brain. Contains quick navigation to all sections, active car roster, 2026 story arcs, and standing rules. Start here for a full map of the repo.
@@ -53,6 +53,7 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 | [Audience Personas](OIO%20Brain/01%20-%20Brand/Audience-Personas.md) | Who watches and why |
 | [Video Ideas Backlog](OIO%20Brain/02%20-%20Content/Video-Ideas-Backlog.md) | All ideas, categorized and ready to pull from |
 | [Voice and Tone](OIO%20Brain/01%20-%20Brand/Voice-and-Tone.md) | How OIO writes, speaks, and sounds |
+| [Photo Index](PHOTO-INDEX.md) | Master index of every OIO photo — filing, post history, visual ID |
 
 ---
 

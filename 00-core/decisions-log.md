@@ -23,6 +23,16 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
+## 2026-03-28 — Photo Library System Established
+
+**Decision:** Created a `photos/` library at the repo root organized by driver and car. Added `PHOTO-INDEX.md` as the master searchable index. Created a GitHub Action (`process-picdump-photos.yml`) that auto-spawns a Copilot agent whenever photos are pushed to `picdump/`. The agent identifies the car, files the photo, updates the car description, and updates the index.
+
+**Why:** Ian wants to track all OIO photos in one place, understand which have been posted to social media, and eventually use the photo library as the basis for social media scheduling. The picdump intake pattern mirrors the existing docdump pattern, making it consistent with existing repo workflows.
+
+**Implications:** Ian can now add photos by dropping them in `picdump/` and pushing to main. The agent does the rest. Social media tracking lives in `PHOTO-INDEX.md` and per-car `photo-log.md` files. Each car's Overview.md now has a Visual Identification section to help AI match future photos.
+
+---
+
 ## 2026-03-28 — Update Keegan Fleet with Confirmed Vehicle Details
 
 **Decision:** Replaced the generic "Keegan's Tercel (multiple)" and "Lincoln Town Car (multiple)" placeholders with specific, confirmed vehicle records for all 6 cars in Keegan's current fleet.
