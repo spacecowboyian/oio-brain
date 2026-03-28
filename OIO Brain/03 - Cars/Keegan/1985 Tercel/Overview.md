@@ -51,13 +51,7 @@ The Tercel has 11 published OIO videos going back to 2019.
 
 ---
 
-## Current Work (March 2026)
-
-Keegan is working on a **4A-FE swap into a Tercel**. It's not yet confirmed whether this build is for him or for someone else — Ian is still getting the rundown. The 4A-FE is the fuel-injected variant of the 4A family (different from the 4A-GE/4A-G). This may be a customer/friend build.
-
----
-
-
+## 2026 Story Arc
 
 Keegan's 4A-G swap arc never ends — it just changes which car is on the table. The Tercel is always being worked on, upgraded, or used as a donor for something else in the fleet.
 

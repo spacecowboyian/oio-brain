@@ -26,10 +26,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 - **Killer Corolla TRD parts inventory:** No documented inventory yet. What TRD parts are on the car?
 - **Geoffrey (Dauphine) condition:** Just acquired. Running or not? What's the actual condition? How far is it from being a working car?
 - **Geoffrey build direction:** "Rally car replica" is the stated goal but no details defined. What era? What spec? What rally?
-- **Keegan's full collection — needs audit:** Keegan has roughly 8–9 cars total. The repo now covers the 1985 Tercel, Lincoln Town Car, and Honda Prelude. The rest of his collection (Dustbuster vans and any other builds) need to be documented — which cars are active, which have appeared on OIO, and what years/models they are. Year confirmed for Tercel (1985); Lincoln Town Car year still unknown.
-- **Keegan's Prelude — exact year:** Is it an 1982 or 1983? Confirm the model year.
-- **Keegan's Prelude — paint color:** What color is it going to be painted? Is there a plan?
-- **Keegan's 4A-FE Tercel swap:** Is this build for Keegan himself or for someone else? Ian is still getting the rundown.
+- **Keegan's full collection — needs audit:** Keegan has roughly 8–9 cars total. The repo only covers the 1985 Tercel and Lincoln Town Car. The rest of his collection (Dustbuster vans and any other builds) need to be documented — which cars are active, which have appeared on OIO, and what years/models they are. Year confirmed for Tercel (1985); Lincoln Town Car year still unknown.
 
 ---
 

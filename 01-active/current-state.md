@@ -69,7 +69,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
-- **2026-03-28:** Team project status updated — MGB GT (orange paint/rebuild), Goblin (mostly dead/4AG assessment), 2001 Car (slow build/Gambler 500), Keegan's Prelude added, Richard Starlet Miata rear end consideration noted
+- **2026-03-28:** Team project status updated — MGB GT (orange paint/rebuild), Goblin (mostly dead/4AG assessment), 2001 Car (slow build/Gambler 500), Richard Starlet Miata rear end consideration noted
 - **2026-03-27:** Fitty Cent nickname confirmed and corrected throughout
 - **2026 (pre-season):** Geoffrey (1962 Renault Dauphine) recently acquired
 
@@ -93,5 +93,3 @@ The 2026 motorsport season is opening. The primary focus is:
 | Ryan | AE86 | 1UZ V8 swap — national rallycross push | In progress |
 | Richard | ST205 | Bits and bobs; active SCCA competitor | Ongoing |
 | Richard | Starlet | 4AG swap planned; also considering Miata rear end + subframe | Planning |
-| Keegan | Various Tercels | 4A-FE swap in a Tercel (unclear if for him or someone else) | In progress |
-| Keegan | Honda Prelude (~1982–83) | First-gen Prelude on air, wide metal flares — unpainted, in build | Building |
