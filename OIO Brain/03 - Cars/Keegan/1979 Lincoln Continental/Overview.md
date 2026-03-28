@@ -42,6 +42,20 @@ The Continental first appeared prominently in the 2020 "4AGE Swapped 4WD Tercel 
 
 ---
 
+## KCRSCCA Competition History
+
+### 2023 AX — Class: CAMT (#690)
+
+| Event | Date | Class | # | P | Entries | Time |
+|---|---|---|---|---|---|---|
+| E1 | 2023 | CAMT | 690 | 3rd | 3 | 55.777 |
+| E2 | 2023 | CAMT | 690 | 4th | 6 | 51.781 |
+| E3 | 2023 | CAMT | 690 | 6th | 6 | 53.511 |
+
+*Data source lists "1986 Continental" — fleet records show 1979. Confirm year when possible.*
+
+---
+
 ## Notes
 
 - Has competed in both rallycross and autocross formats
