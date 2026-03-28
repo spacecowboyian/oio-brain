@@ -3,7 +3,7 @@ title: The Goblin — 1985 Toyota MR2 AW11
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [vehicle, mr2, goblin, rallycross, rebuild]
 source_of_truth: true
 summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Mostly dead as of March 2026. Assessing the 4AG to determine if it's savable. If savable: pull, rebuild cheaply, possibly add differential to the transmission.
@@ -51,6 +51,44 @@ The question for 2026 is simple: **will it be ready, and will it hold together i
 ## 2026 Story Arc
 
 The Goblin's 2026 narrative has shifted from "rebuild in progress" to a real survival question. The 4AG needs to be assessed — is it savable? If yes: pull it, rebuild it cheap, possibly add a diff to the trans. If no: the Goblin may be done. Either way, it gets documented.
+
+---
+
+## Open Work / 2026 Tasks
+
+### Immediate Reliability
+| Task | Status |
+|---|---|
+| Thermostat + Coolant Baseline | Open |
+| Fan Wiring + Override Switch | Open |
+
+### Suspension / Handling
+| Task | Status |
+|---|---|
+| Rear Suspension Overhaul (Phase 1) | Open |
+| Front Suspension Overhaul (Phase 1) | Open |
+| Steering Rack Swap | Open |
+
+### Misc / Interior
+| Task | Status |
+|---|---|
+| Interior QOL (3D Printed Parts) | Open |
+| Metal Side Vent + Trunk Swap | Open |
+| Post-Work Shakedown | Open |
+
+### 2AR Swap Runway
+| Task | Status |
+|---|---|
+| 2AR Swap: Define Target + Timeline | Open |
+| 2AR Swap: Master Parts List + Budget | Open |
+| 2AR Swap: Donor / Engine Secured | Open |
+| 2AR Swap: Parts Bin + Labeling | Open |
+| 2AR Swap: Monthly Part Hunt | Recurring |
+
+### Maintenance
+| Task | Status |
+|---|---|
+| Oil/Filter + Air Filter (Quarterly) | Recurring |
 
 ---
 
