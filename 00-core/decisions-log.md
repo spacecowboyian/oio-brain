@@ -122,3 +122,28 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 ---
 
 
+
+## 2026-03-28 — Car Folder Naming Convention Changed to Year-Model
+
+**Decision:** Renamed all car folders in `OIO Brain/03 - Cars/` to use `YYYY Model` format (e.g., `1972 Celica`, `1985 MR2`). Nicknames removed from folder names.
+
+**Why:** Nicknames are fun for content but create ambiguity in folder paths. Year-model is unambiguous and consistent.
+
+**Folders renamed:**
+- `Ian/Dale - Celica` → `Ian/1972 Celica`
+- `Ian/Geoffrey - Dauphine` → `Ian/1962 Dauphine`
+- `Ian/Honda Fit - Fitty Cent` → `Ian/2009 Honda Fit`
+- `Ian/Killer Corolla` → `Ian/1977 Corolla`
+- `Ian/MR2 - Goblin` → `Ian/1985 MR2`
+- `Ian/Nessie - Cressida Wagon` → `Ian/1982 Cressida Wagon`
+- `Ryan/AE86` → `Ryan/1985 AE86`
+- `Ryan/MGB GT` → `Ryan/1973 MGB GT`
+- `Richard/Starlet` → `Richard/1983 Starlet`
+- `Richard/Miata` → `Richard/2001 Miata`
+
+**Exceptions (no year known, no nickname — left as-is):**
+- `Keegan/Tercel`, `Keegan/Lincoln Town Car`, `Richard/ST205`
+
+**Implications:** Future car folders should follow `YYYY Model` naming. Nicknames live inside files, not in folder names.
+
+---

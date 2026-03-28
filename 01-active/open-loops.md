@@ -24,7 +24,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 - **Killer Corolla TRD parts inventory:** No documented inventory yet. What TRD parts are on the car?
 - **Geoffrey (Dauphine) condition:** Just acquired. Running or not? What's the actual condition? How far is it from being a working car?
 - **Geoffrey build direction:** "Rally car replica" is the stated goal but no details defined. What era? What spec? What rally?
-- **Nessie drag setup:** What still needs to happen before the dragstrip debut? What's the target ET? What safety equipment is required by the tracks being considered?
+- **Keegan's full collection — needs audit:** Keegan has roughly 8–9 cars total. The repo only covers the 1985 Tercel and Lincoln Town Car. The rest of his collection (Dustbuster vans and any other builds) need to be documented — which cars are active, which have appeared on OIO, and what years/models they are. Year confirmed for Tercel (1985); Lincoln Town Car year still unknown.
 
 ---
 
