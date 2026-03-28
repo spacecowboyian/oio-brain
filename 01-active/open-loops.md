@@ -17,11 +17,15 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 ## Vehicles
 
-- **Goblin motor diagnosis:** What exactly failed? Is the 4AG rebuildable or does it need a full replacement? What parts are needed and what will it cost?
-- **Goblin 4AG assessment status:** Is the 4AG savable? This determines whether the Goblin gets a rebuild or gets sidelined indefinitely.
+- **Goblin motor diagnosis:** ✅ 2026-03-28 — Two-stage diagnostic complete. Initial inspection confirmed bearing failure (lock-up), cyl 4 at 35 PSI, oil contamination across all cylinders, heavy valve carbon, loose cyl 1 plug wire. Follow-up wet compression test showed cyl 4 rising to ~60 PSI (partial recovery). Root cause not yet isolated. See `OIO Brain/03 - Cars/Ian/1985 MR2/Maintenance-Log.md`.
+- **Goblin — cyl 4 compression loss root cause:** Partially narrowed. Wet test (35→60 PSI) confirms ring sealing is a factor, but partial recovery means valve sealing may also be compromised. Heavy carbon on valve faces prevents visual confirmation of sealing surfaces.
+- **Goblin — ring sealing vs. valve sealing contribution in cyl 4:** Wet compression test is consistent with partial ring failure, but cannot rule out carbon-fouled valve sealing. Both may be active failure modes.
+- **Goblin — oil source in cylinder 4:** Upper area suspected but not confirmed. Valve seals? Head gasket? Rings? Oil reconfirmed present after follow-up inspection.
+- **Goblin — top-end vs. bottom-end failure relationship:** Valve motion confirmed normal (no stuck valves). Carbon buildup significant but cannot visually confirm sealing. Relationship to bearing failure still unknown.
+- **Goblin 4AG assessment status:** ✅ 2026-03-28 — Diagnostic complete, but rebuild vs. replace decision not yet made. Waiting on cost assessment.
 - **Goblin differential:** Is adding a differential to the transmission during rebuild a firm plan or still exploratory?
 - **Goblin rebuild timeline:** Can it be ready for any 2026 rallycross events? What's the realistic first event if the 4AG is salvageable?
-- **Goblin rebuild budget:** Unknown until diagnosis is complete. Needs a number before parts can be ordered.
+- **Goblin rebuild budget:** Diagnostic complete but budget still unknown — depends on rebuild vs. replace decision. Once that's made, parts list and cost estimate needed.
 - **Mystery motor for Killer Corolla:** What is it? Does it run? Is it actually the right engine for the car? How long is the full rebuild?
 - **Killer Corolla TRD parts inventory:** No documented inventory yet. What TRD parts are on the car?
 - **Geoffrey (Dauphine) condition:** Just acquired. Running or not? What's the actual condition? How far is it from being a working car?

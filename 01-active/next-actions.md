@@ -17,8 +17,9 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 ## Racing
 
-- [ ] Diagnose Goblin motor — document what failed and what's needed
-- [ ] Get a parts cost estimate for Goblin rebuild
+- [x] Diagnose Goblin motor — ✅ 2026-03-28 diagnostic complete (see Maintenance-Log.md)
+- [ ] **Goblin: decide rebuild vs. replace** — diagnostic confirms bearing failure + cyl 4 at 35 PSI. Is the 4AG worth rebuilding or does it need a replacement?
+- [ ] Get a parts cost estimate for Goblin rebuild (or source a replacement 4AG if rebuild not viable)
 - [ ] Confirm 2026 rallycross event schedule — which events, which dates
 - [ ] Confirm 2026 autocross event schedule
 - [ ] Confirm Lake Garnett Grand Prix Revival date for October
