@@ -1,15 +1,15 @@
 ---
-title: Keegan's Lincoln Town Car
+title: Keegan's 1979 Lincoln Continental
 type: vehicle
 status: active
 owner: Keegan Wilhelm
 updated: 2026-03-28
-tags: [vehicle, lincoln, town-car, keegan, autocross, rallycross, congregation, absurdist]
+tags: [vehicle, lincoln, continental, keegan, autocross, rallycross, congregation, absurdist]
 source_of_truth: true
-summary: Overview of Keegan Wilhelm's Lincoln Town Car(s). Rallycrossed AND autocrossed. Leaks things. A running joke and genuine vehicle in the OIO congregation. 4 published OIO videos.
+summary: Overview of Keegan Wilhelm's 1979 Lincoln Continental. 400 V8, 3-speed auto, Medium Beryl Metallic with white vinyl top. Rallycrossed AND autocrossed. A running joke and genuine vehicle in the OIO congregation. 4 published OIO videos.
 ---
 
-# Keegan's Lincoln Town Car
+# Keegan's 1979 Lincoln Continental
 
 > Rallycrossed. Autocrossed. Leaks things. Keegan will not be stopped.
 
@@ -21,22 +21,22 @@ summary: Overview of Keegan Wilhelm's Lincoln Town Car(s). Rallycrossed AND auto
 
 | Field | Value |
 |---|---|
-| Car | Lincoln Town Car (multiple in Keegan's collection) |
+| Car | 1979 Lincoln Continental |
 | Driver / Owner | Keegan Wilhelm |
 | Status | **Active** — in the rotation |
+| Engine | 400 V8 |
+| Transmission | 3-speed automatic |
+| Color | Medium Beryl Metallic with white vinyl top |
 | Primary Use | Rallycross, autocross, general chaos |
-| Known issue | Leaks things |
 | 2026 Arc | Whatever Keegan decides next |
 
 ---
 
 ## Background
 
-Keegan owns multiple Lincoln Town Cars. He has rallycrossed and autocrossed them. The Lincoln is both a running joke in the congregation and a genuine vehicle that shows up at events and competes.
+Keegan's 1979 Lincoln Continental is both a running joke in the congregation and a genuine vehicle that shows up at events and competes. He has rallycrossed and autocrossed it with characteristic calm confidence.
 
-The OIO description: *"Leaks things."* That is sufficient.
-
-The Lincoln first appeared prominently in the 2020 "4AGE Swapped 4WD Tercel DESTROYS the competition!" video alongside Keegan's other cars. It later appeared at the 2025 SCCA Solo Nationals as a "Misfit Car" in a video against a BMW 2002.
+The Continental first appeared prominently in the 2020 "4AGE Swapped 4WD Tercel DESTROYS the competition!" video alongside Keegan's other cars. It later appeared at the 2025 SCCA Solo Nationals as a "Misfit Car" in a video against a BMW 2002.
 
 4 published OIO videos.
 
@@ -44,7 +44,6 @@ The Lincoln first appeared prominently in the 2020 "4AGE Swapped 4WD Tercel DEST
 
 ## Notes
 
-- Multiple Town Cars in Keegan's collection
 - Has competed in both rallycross and autocross formats
 - Content angle: absurdist, relatable, "why would anyone do this and yet here we are"
 
@@ -67,5 +66,5 @@ The Lincoln first appeared prominently in the 2020 "4AGE Swapped 4WD Tercel DEST
 
 → [Setup Notes](Setup-Notes.md)
 → [Modifications](Modifications.md)
-→ [Tercel — Keegan](../Tercel/Overview.md)
+→ [1985 Tercel — Keegan](../1985%20Tercel/Overview.md)
 → [Keegan Wilhelm — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

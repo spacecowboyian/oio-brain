@@ -70,6 +70,9 @@ The 2026 motorsport season is opening. The primary focus is:
 ## Recent Changes
 
 - **2026-03-28:** Team project status updated — MGB GT (orange paint/rebuild), Goblin (mostly dead/4AG assessment), 2001 Car (slow build/Gambler 500), Richard Starlet Miata rear end consideration noted
+- **2026-03-28:** 2026 content schedule rebooted — new schedule created in `OIO Brain/02 - Content/2026-Content-Schedule.md`. Full race calendar added to `OIO Brain/04 - Events/Schedules.md`.
+- **2026-03-28:** Channel gap identified — no uploads since Mar 4. First priority: Fit How-To on Apr 2 (overdue by 4+ weeks).
+- **2026-03-27:** OIO Brain repository established — canonical operational brain created
 - **2026-03-27:** Fitty Cent nickname confirmed and corrected throughout
 - **2026 (pre-season):** Geoffrey (1962 Renault Dauphine) recently acquired
 
