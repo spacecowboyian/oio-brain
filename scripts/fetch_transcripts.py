@@ -132,8 +132,9 @@ def get_processed_ids(transcripts_dir):
 def fetch_transcript(video_id):
     """Fetch transcript for a video. Returns list of segment dicts or None on failure."""
     try:
-        segments = YouTubeTranscriptApi.get_transcript(video_id)
-        return segments
+        api = YouTubeTranscriptApi()
+        fetched = api.fetch(video_id)
+        return fetched.to_raw_data()
     except TranscriptsDisabled:
         print(f"    ⚠ Transcripts disabled for {video_id}")
         return None
