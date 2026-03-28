@@ -23,6 +23,16 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
+## 2026-03-28 — YouTube Transcript Fetching Workflow Added
+
+**Decision:** Created `scripts/fetch_transcripts.py` and `.github/workflows/fetch-youtube-transcripts.yml` to automatically fetch auto-generated YouTube transcripts for all OIO Racing videos. Transcripts are stored in `transcripts/YYYY-MM-DD_video-title/` with `transcript.md` (timestamped Markdown + frontmatter) and `metadata.json`. The workflow triggers on merge to main when `OIO-Video-Catalog.md` changes, and supports a manual `fetch_all=true` dispatch for the initial bulk run of all 360 videos.
+
+**Why:** 360 published videos have no accessible transcripts, blocking rapid generation of video scripts, captions, and content ideas based on existing structures and patterns. Transcripts enable AI agents and humans to analyze past content, identify recurring structures, extract talking points, and generate new scripts that match the OIO voice.
+
+**Implications:** Run the workflow manually with `fetch_all=true` to pull the first full batch. Going forward, new transcripts are fetched automatically whenever a new video is added to `OIO-Video-Catalog.md` via the `oio-video-fetcher.js` flow. Video markdown can link to transcripts via `transcripts/YYYY-MM-DD_title/transcript.md`.
+
+---
+
 ## 2026-03-28 — Photo Library System Established
 
 **Decision:** Created a `photos/` library at the repo root organized by driver and car. Added `PHOTO-INDEX.md` as the master searchable index. Created a GitHub Action (`process-picdump-photos.yml`) that auto-spawns a Copilot agent whenever photos are pushed to `picdump/`. The agent identifies the car, files the photo, updates the car description, and updates the index.

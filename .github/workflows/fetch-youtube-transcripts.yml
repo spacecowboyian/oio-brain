@@ -1,0 +1,55 @@
+name: Fetch YouTube Transcripts
+
+on:
+  workflow_dispatch:
+    inputs:
+      fetch_all:
+        description: 'Fetch all transcripts (full batch mode). Leave unchecked to fetch only new ones.'
+        required: false
+        default: 'false'
+        type: boolean
+
+  push:
+    branches:
+      - main
+    paths:
+      - 'OIO-Video-Catalog.md'
+
+jobs:
+  fetch-transcripts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install youtube-transcript-api
+
+      - name: Fetch transcripts
+        run: |
+          if [ "${{ github.event.inputs.fetch_all }}" = "true" ]; then
+            python scripts/fetch_transcripts.py --all
+          else
+            python scripts/fetch_transcripts.py
+          fi
+
+      - name: Commit transcripts
+        run: |
+          git config user.name "OIO Transcript Bot"
+          git config user.email "bot@oioracing.local"
+          git add transcripts/
+          if git diff --cached --quiet; then
+            echo "No new transcripts to commit."
+          else
+            NEW_COUNT=$(git diff --cached --name-only | grep 'transcript.md' | wc -l)
+            git commit -m "chore: add ${NEW_COUNT} transcript(s) [skip ci]"
+            git push
+          fi
