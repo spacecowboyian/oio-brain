@@ -130,7 +130,7 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 ### MILES SMITH — Rallycross Driver
 
-Miles is the primary driver of Ian's MR2 in KCRSCCA rallycross competition. He has competed across multiple seasons and earned season-level trophies — **3rd place and 4th place season finishes** in the Kansas City region SCCA RallyCross championship.
+Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is the primary driver). Miles has competed across multiple seasons and earned season-level trophies — **3rd place and 4th place season finishes** in the Kansas City region SCCA RallyCross championship.
 
 **Car:** Ian's MR2 (1987 Toyota MR2, class: MR — Mid-size Rear-wheel drive)
 **Car number:** 12

@@ -85,7 +85,7 @@ Ian's KCRSCCA history spans at least three distinct car eras: Fiesta ST (2017), 
 
 ## MILES SMITH
 
-Miles competes in KCRSCCA RallyCross as the primary MR2 driver for OIO. He is a **multi-season KCRSCCA championship trophy holder: 3rd place and 4th place season finishes** (exact years TBD — confirm and update).
+Miles competes in KCRSCCA RallyCross as the MR2 co-driver for OIO (Ian Jennings is the primary driver). He is a **multi-season KCRSCCA championship trophy holder: 3rd place and 4th place season finishes** (exact years TBD — confirm and update).
 
 ### 2023 — Honda Fit Sport (Class: MF)
 

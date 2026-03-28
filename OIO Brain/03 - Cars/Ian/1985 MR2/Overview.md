@@ -6,7 +6,7 @@ owner: Ian Jennings
 updated: 2026-03-28
 tags: [vehicle, mr2, goblin, rallycross, rebuild, miles-smith]
 source_of_truth: true
-summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Currently down with a shot motor; rebuild in progress. The Goblin's 2026 arc is championship run or death. Miles Smith is the MR2's primary rallycross driver and a KCRSCCA season trophy holder.
+summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Currently down with a shot motor; rebuild in progress. The Goblin's 2026 arc is championship run or death. Ian is the primary driver; Miles Smith is the co-driver and a KCRSCCA season trophy holder.
 ---
 
 # The Goblin — 1985 Toyota MR2 (AW11)
@@ -51,7 +51,7 @@ Both Ian and Miles have competed in KCRSCCA RallyCross with MR2s in class MR. No
 
 ### Miles Smith — 2023–2024 (Class: MR/MF, Car #12/16)
 
-**Miles is the MR2's primary rallycross competitor.** He has competed in KCRSCCA RallyCross across multiple seasons, earning two season-level championship trophies in the Kansas City region:
+**Miles Smith is the MR2's co-driver in rallycross competition.** Ian Jennings is the primary driver. Miles has competed in KCRSCCA RallyCross across multiple seasons, earning two season-level championship trophies in the Kansas City region:
 
 - **3rd place** — KCRSCCA RallyCross season championship
 - **4th place** — KCRSCCA RallyCross season championship
