@@ -130,7 +130,27 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
-## 2026-03-28 — Docdump Folder and Processing Rules Established
+## 2026-03-28 — 2026 Content Schedule Rebooted
+
+**Decision:** The original tentative 2026 content schedule was replaced with a rebooted version anchored to confirmed race events and the current reality as of March 28.
+
+**Why:** The original schedule was not followed — Feb 26, Mar 5, Mar 15, Mar 19, and Mar 26 planned uploads were all missed. The channel had a 24-day gap since Mar 4. A fresh, realistic schedule was needed that starts from today rather than attempting to backfill missed content.
+
+**What changed:**
+- Original missed content (Gyraline How-To, Kids prep vlog, Killer Corolla vlog) re-slotted into April and June
+- KCRX E1 (Mar 22) COC rescheduled as April 20 Season Premiere (~4 weeks post-event, still usable)
+- Kids' first autocross (Apr 12) documented in Apr 24 vlog
+- Full KCRX/KSRX/KCR race calendar added to the brain (`OIO Brain/04 - Events/Schedules.md`)
+- COC pipeline map created to track which events have been recapped
+- Shorts strategy section added — top-of-funnel growth driver, must not be neglected
+
+**New file created:** `OIO Brain/02 - Content/2026-Content-Schedule.md`
+
+**Implications:** April 2 Fit How-To is the first action. Edit KCRX E1 footage immediately for the Apr 20 COC.
+
+---
+
+
 
 **Decision:** Created `docdump/` folder at repo root for Ian to drop raw documents into for Copilot processing. Established rules that (1) processed files must be deleted after ingestion, and (2) any data-processing script must include deletion of its source file.
 

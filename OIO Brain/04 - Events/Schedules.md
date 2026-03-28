@@ -3,39 +3,100 @@ title: Event Schedules — 2026
 type: event
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [schedule, events, season-2026, calendar]
-source_of_truth: false
-summary: Known upcoming events for the 2026 season. Dates are placeholders until confirmed. Includes Lake Garnett, SCCA nationals, FIT OFF, and Nessie's dragstrip debut. Update as events are confirmed.
+source_of_truth: true
+summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCRX Rallycross (9 scored events), KSRX Rallycross (11 events), and other key events. Updated from Ian's family calendar and official schedules.
 ---
 
 # Event Schedules
 
-> Known upcoming events for the 2026 season and beyond.
+> Full 2026 racing season calendar. Sourced from Ian's family calendar and official KCRX/KSRX/KCR schedules.
 
-*Last updated: March 2026*
+*Last updated: March 28, 2026*
 
 ---
 
 ## How to Use This Document
 
-- Add events as they're confirmed
-- Note which cars and drivers are attending each event
-- Cross-reference with [Current Priorities](../00%20-%20Start%20Here/OIO-Current-Priorities.md) for story arc planning
-- Church of Combustion episodes are planned around this schedule
+- Events marked ✅ are confirmed on the family calendar
+- Events marked ❓ are questionable — verify before committing
+- Events marked ⚠️ are not yet on the family calendar — need to be added
+- Cross-reference with `OIO Brain/02 - Content/2026-Content-Schedule.md` for COC episode planning
 
 ---
 
 ## 2026 Season Calendar
 
-| Date | Event | Location | Discipline | Cars / Drivers | Content Plan |
-|---|---|---|---|---|---|
-| March–April | Season opener (TBD) | TBD | Rallycross | Goblin (if ready), Fitty Cent | Goblin comeback? COC episode |
-| Memorial Day weekend | SCCA Spring Nationals | TBD | Autocross | Doug (BMW 2002) | Potential coverage |
-| Mid-season (TBD) | FIT OFF | TBD | Autocross | Fitty Cent + Ryan's Fit | Annual Fit battle — special format |
-| Labor Day weekend | SCCA Solo Nationals | TBD | Autocross | Doug (BMW 2002) | Potential coverage |
-| October | **Lake Garnett Grand Prix Revival** | Lake Garnett, KS | Autocross / TT | Dale, others | **The Cathedral Moment — Church of Combustion centerpiece** |
-| TBD 2026 | Dragstrip debut (Nessie) | TBD | Drag racing | Nessie (Cressida Wagon) | First rites at the strip |
+### KCR Autocross — 10 Events Total
+
+| # | Date | Status | Notes |
+|---|------|--------|-------|
+| 1 | Sun Apr 12 | ✅ Confirmed | Kids' first autocross |
+| 2 | Sat Apr 25 | ❓ Questionable | Back-to-back with E3 — verify on KCR schedule |
+| 3 | Sun Apr 26 | ❓ Questionable | Back-to-back with E2 — verify on KCR schedule |
+| 4 | Sun May 17 | ✅ Confirmed | |
+| 5 | TBD | ⚠️ Not on family calendar | Add to family calendar when date confirmed |
+| 6 | TBD | ⚠️ Not on family calendar | Add to family calendar when date confirmed |
+| 7 | Sat Sep 26 | ✅ Confirmed | |
+| 8 | Sun Sep 27 | ❓ Questionable | Back-to-back with E7 |
+| 9 | Sat Oct 24 | ❓ Questionable | |
+| 10 (Halloweenie) | Sun Oct 25 | ✅ Confirmed | Annual Halloweenie event |
+
+**Confirmed: 5 of 10 · Questionable: 4 · Missing from calendar: 2 (Events #5 and #6)**
+
+> ⚠️ Events #2 and #3 are back-to-back Sat/Sun — verify these dates are correct on the official KCR schedule.
+
+---
+
+### KCRX Rallycross — 9 Scored Events Total
+
+| # | Date | Location | Status | Notes |
+|---|------|----------|--------|-------|
+| TnT | Sun Mar 8 | RayRocks | ✅ Done (non-scored) | Season shakedown — no COC |
+| E1 | Sun Mar 22 | RayRocks | ✅ Done | **COC due — Season Premiere** |
+| E2 | Sun Apr 19 | Holsworth Farm (w/ KSRX) | ❓ Questionable | Joint event with KSRX E1 |
+| E3 | Sun May 25 | Thunder Valley | ⚠️ Not on family calendar | Add to calendar |
+| E4 | Sun Jun 28 | I-35 Speedway | ✅ Confirmed | COC planned Jul 19 |
+| E5 | Sun Jul 19 | I-35 Speedway | ✅ Confirmed | COC planned Aug 16 |
+| E6 | Sun Aug 2 | RayRocks | ✅ Confirmed | COC planned Sep 20 |
+| E7 | Sun Sep 20 | Thunder Valley | ✅ Confirmed | |
+| E8 | Sun Oct 4 | Holsworth Farm (w/ KSRX) | ✅ Confirmed | Joint event with KSRX E8 |
+| E9 | Sun Nov 15 | I-35 Speedway — EnduroX | ✅ Confirmed | **Season finale — COC Nov 22** |
+
+**Confirmed: 7 of 9 · Questionable: 1 · Missing from calendar: 1 (May 25)**
+
+---
+
+### KSRX Rallycross — 11 Events Total
+
+| # | Date | Location | Notes |
+|---|------|----------|-------|
+| E1 | Sun Apr 19 | Holsworth Farm (w/ KCRX) | Joint event |
+| E2 | Sat May 2 | McCain's Offroad Park | |
+| E3 | Sun May 31 | McCain's Offroad Park | |
+| E4 | Sat Jun 20 | McCain's Offroad Park | |
+| E5 | Sat Jul 25 | McCain's Offroad Park | |
+| E6 | Sun Aug 23 | McCain's Offroad Park | |
+| E7 | Sun Sep 13 | McCain's Offroad Park | |
+| E8 | Sun Oct 4 | Holsworth Farm (w/ KCRX) | Joint event |
+| E9 | Sat Nov 7 | McCain's Offroad Park | |
+| E10 | Sun Nov 22 | McCain's Offroad Park | |
+| E11 | Sat Dec 12 | McCain's Offroad Park | Season closer |
+
+*KSRX attendance not yet tracked on family calendar — plan separately.*
+
+---
+
+### Other Key Events
+
+| Date | Event | Cars / Drivers | Notes |
+|---|---|---|---|
+| Sat–Sun May 22–25 | SCCA Spring Nationals | Doug's BMW 2002 | Congregation arc — coverage TBD |
+| Apr–May TBD | Cressida first dragstrip outing | Nessie (Ian) | First rites at the strip |
+| Apr TBD | Kansas Gambler 500 | Ryan's 2001 Camry | Short series content |
+| Labor Day Week | SCCA Solo Nationals | Doug's BMW 2002 | Congregation arc — coverage TBD |
+| Oct (2nd weekend) | **Lake Garnett Grand Prix Revival** | Dale (Ian) | **THE REVIVAL — Season centerpiece COC** |
 
 ---
 
@@ -43,10 +104,12 @@ summary: Known upcoming events for the 2026 season. Dates are placeholders until
 
 | Event | Discipline | Frequency | Notes |
 |---|---|---|---|
-| Local SCCA RallyCross | Rallycross | Monthly (season) | Primary Goblin/Fit rallycross events |
-| Local SCCA Solo | Autocross | Monthly (season) | Primary autocross events |
-| Lake Garnett Grand Prix Revival | Autocross/TT | Annual (October) | The marquee OIO event |
-| FIT OFF | Autocross | Annual | Honda Fit battle format |
+| KCR Autocross | Autocross | ~Monthly (Apr–Oct) | Primary autocross series — Fitty Cent + Kids |
+| KCRX Rallycross | Rallycross | Monthly (Mar–Nov) | Primary rallycross series — Goblin, Fitty Cent |
+| KSRX Rallycross | Rallycross | Monthly (Apr–Dec) | Secondary rallycross series — attendance TBD |
+| Lake Garnett Grand Prix Revival | Autocross/TT | Annual (October) | The marquee OIO event — Dale's pilgrimage |
+| SCCA Solo Nationals | Autocross | Annual (Labor Day) | Congregation arc — Doug |
+| FIT OFF | Autocross | Annual (TBD) | Honda Fit battle format |
 
 ---
 
@@ -56,4 +119,5 @@ summary: Known upcoming events for the 2026 season. Dates are placeholders until
 
 | Date | Event | Location | Discipline | Notes |
 |---|---|---|---|---|
-| | | | | |
+| Oct 2025 | Lake Garnett Grand Prix Revival | Lake Garnett, KS | Autocross/TT | [See Published-Videos.md for recap content] |
+| Sep 2025 | SCCA Solo Nationals | TBD | Autocross | Doug — BMW 2002 |
