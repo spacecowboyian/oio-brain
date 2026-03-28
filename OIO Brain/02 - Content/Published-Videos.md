@@ -6,7 +6,7 @@ owner: Ian Jennings
 updated: 2026-03-28
 tags: [content, videos, published, analytics]
 source_of_truth: true
-summary: Complete catalog of all 359 published OIO videos with full chronological index, channel stats, and top performers. Use this to track performance, find patterns, and avoid repeating topics too soon.
+summary: Complete catalog of all 360 published OIO videos with full chronological index, channel stats, and top performers. Use this to track performance, find patterns, and avoid repeating topics too soon.
 ---
 
 # Published Videos Log
@@ -21,7 +21,7 @@ summary: Complete catalog of all 359 published OIO videos with full chronologica
 
 | Metric | Value |
 |---|---|
-| Total videos published | 359 |
+| Total videos published | 360 |
 | Total views (all-time) | 1,233,829 |
 | Last updated | March 2026 |
 
@@ -85,7 +85,7 @@ summary: Complete catalog of all 359 published OIO videos with full chronologica
 ---
 ## Full Video Index
 
-*358 videos | Last updated March 2026*
+*359 videos | Last updated March 2026*
 
 | Date | Title | Duration | Views | Car(s) | Format |
 |---|---|---|---|---|---|
@@ -447,3 +447,4 @@ summary: Complete catalog of all 359 published OIO videos with full chronologica
 | 2019-02-10 | [1987 Corolla FX16 - Exhaust Test](https://www.youtube.com/watch?v=1G6mmqvoj6U) | 3:54 | 64 views | Unknown / General | Review / Comparison |
 | 2019-02-10 | [1987 Corolla FX16 - Muffler Delete](https://www.youtube.com/watch?v=c8SklIW7eiA) | 4:02 | 52 views | Unknown / General | General |
 | 2019-02-10 | [AE86 Shifter Bushing Replacement](https://www.youtube.com/watch?v=NY8XtTMNvgk) | 3:03 | 444 views | AE86 (Ryan) | How-To / DIY |
+| 2019-02-10 | [#AE86 Front Weight Reduction](https://www.youtube.com/watch?v=CJ1V-WIldaE) | 4:42 | 213 views | AE86 (Ryan) | How-To / DIY |
