@@ -61,7 +61,7 @@ Either way, it gets documented.
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
-→ [Maintenance Log](Maintenance-Log.md)
+→ [Modifications](Modifications.md)
 → [Current Priorities](../../../00%20-%20Start%20Here/OIO-Current-Priorities.md)
 
 ---

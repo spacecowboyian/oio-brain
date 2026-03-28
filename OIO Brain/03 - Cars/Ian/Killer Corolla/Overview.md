@@ -63,7 +63,7 @@ The question is not if — it's when and how bad it gets before it runs.
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
-→ [Maintenance Log](Maintenance-Log.md)
+→ [Modifications](Modifications.md)
 
 ---
 

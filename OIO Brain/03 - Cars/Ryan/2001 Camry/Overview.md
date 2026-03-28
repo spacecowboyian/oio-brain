@@ -75,5 +75,5 @@ The Kansas Gambler 500 is the target event for the 2001 Car. The build and prep 
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
-→ [Maintenance Log](Maintenance-Log.md)
+→ [Modifications](Modifications.md)
 → [Ryan Redenbaugh — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

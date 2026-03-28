@@ -75,5 +75,5 @@ The ST205 has been called. Every SCCA event Richard enters is a chapter in this 
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
-→ [Maintenance Log](Maintenance-Log.md)
+→ [Modifications](Modifications.md)
 → [Richard Thompson — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

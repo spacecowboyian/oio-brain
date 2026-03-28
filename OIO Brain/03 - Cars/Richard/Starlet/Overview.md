@@ -1,0 +1,68 @@
+---
+title: Richard's Starlet — Toyota Starlet
+type: vehicle
+status: active
+owner: Richard Thompson
+updated: 2026-03-28
+tags: [vehicle, starlet, toyota, richard, track, congregation]
+source_of_truth: true
+summary: Overview of Richard Thompson's ~1983 Toyota Starlet. Currently being built as a track car with a 4A-G swap planned.
+---
+
+# Richard's Starlet — Toyota Starlet
+
+> Small, light, dangerous. The swap is planned.
+
+*Last updated: March 2026*
+
+---
+
+## Quick Reference
+
+| Field | Value |
+|---|---|
+| Car | Toyota Starlet (~1983) |
+| Driver / Owner | Richard Thompson |
+| Status | **Building** — 4A-G swap planned |
+| Primary Use | Track car |
+| 2026 Arc | Build it. Swap the motor. Race it. |
+
+---
+
+## Background
+
+Richard's Starlet is a natural companion to the ST205. Where the Celica is a capable, purpose-built rally weapon, the Starlet is a lightweight platform Richard is building into a track car. A 4A-G swap is the target engine.
+
+Not yet featured on the OIO channel as of March 2026.
+
+---
+
+## Build Specs (Current / Known)
+
+| System | Spec / Notes |
+|---|---|
+| Year | ~1983 |
+| Model | Toyota Starlet |
+| Engine (current) | [unknown] |
+| Engine (planned) | 4A-G |
+| Use | Track car |
+
+---
+
+## 2026 Story Arc
+
+Get the 4A-G in, get it on track.
+
+---
+
+## Related Videos
+
+*No OIO videos published as of March 2026.*
+
+---
+
+## Related Content
+
+→ [Setup Notes](Setup-Notes.md)
+→ [Modifications](Modifications.md)
+→ [Richard Thompson — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

@@ -49,7 +49,7 @@ Nessie's 2026 debut is at the dragstrip. The arc is: will it make it down the tr
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
-→ [Maintenance Log](Maintenance-Log.md)
+→ [Modifications](Modifications.md)
 
 ---
 

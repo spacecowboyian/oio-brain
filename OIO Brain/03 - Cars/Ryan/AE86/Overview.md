@@ -86,5 +86,5 @@ The 1UZ V8 swap is the 2026 (and possibly multi-year) arc for this car. It's the
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
-→ [Maintenance Log](Maintenance-Log.md)
+→ [Modifications](Modifications.md)
 → [Ryan Redenbaugh — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

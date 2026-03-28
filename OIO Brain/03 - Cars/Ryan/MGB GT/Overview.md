@@ -83,5 +83,5 @@ Ryan raced the MGB GT at Lake Garnett 2025. Active competitor heading into 2026.
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
-→ [Maintenance Log](Maintenance-Log.md)
+→ [Modifications](Modifications.md)
 → [Ryan Redenbaugh — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

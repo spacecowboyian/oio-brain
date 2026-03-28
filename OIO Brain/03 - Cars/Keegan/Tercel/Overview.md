@@ -80,6 +80,6 @@ Keegan's 4A-G swap arc never ends — it just changes which car is on the table.
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
-→ [Maintenance Log](Maintenance-Log.md)
+→ [Modifications](Modifications.md)
 → [Lincoln Town Car — Keegan](../Lincoln%20Town%20Car/Overview.md)
 → [Keegan Wilhelm — Team Bio](../../../01%20-%20Brand/Team-Bios.md)

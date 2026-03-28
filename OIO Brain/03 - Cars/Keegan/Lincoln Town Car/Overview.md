@@ -66,6 +66,6 @@ The Lincoln first appeared prominently in the 2020 "4AGE Swapped 4WD Tercel DEST
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
-→ [Maintenance Log](Maintenance-Log.md)
+→ [Modifications](Modifications.md)
 → [Tercel — Keegan](../Tercel/Overview.md)
 → [Keegan Wilhelm — Team Bio](../../../01%20-%20Brand/Team-Bios.md)
