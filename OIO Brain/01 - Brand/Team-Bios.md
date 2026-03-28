@@ -37,6 +37,10 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 | Fitty Cent | 2009 Honda Fit (GE8) | Active | Daily driver, autocross, rallycross, lightly modified suspension |
 | Al | 2014 Toyota Tundra | Active | Tow rig |
 
+**Former competition cars (confirmed from KCRSCCA archive):**
+- 2014 Ford Fiesta ST — competed 2017 KCRSCCA RallyCross, SF class
+- 1987 Toyota Corolla FX16 — competed 2019–2020 KCRSCCA RallyCross, PF class (won 4 class events in 2020)
+
 ### 2026 Story Arcs
 - *Goblin* — Championship run or death. Season-long survival question.
 - *Fitty Cent* — Double duty: kids race it in both autocross AND rallycross.
@@ -59,6 +63,10 @@ Co-conspirator, fellow Honda Fit believer, Gambler 500 veteran.
 | — | 2007 Honda Fit GD3 | Active | Real auto with paddle shift, heavily modified — more than Ian's |
 | — | Porsche Cayenne | Modified | Gambler 500 veteran |
 | The 2001 Car | 2001 Toyota Camry | Building | Lifted, big tires, future Gambler 500 car — "if 7th graders made their own Mad Max movie in their backyard" |
+
+### KCRSCCA RallyCross History
+
+Ryan has competed in KCRSCCA RallyCross across multiple seasons. He ran the AE86 (#86, MR class) from 2019–2020, a 1990 Mazda Miata (#13, MR class) at the 2023 RX 10, and the MGB GT (#86, MR class) starting in 2024. See [KCRSCCA-RX-Historical-2017-2024.md](../../04%20-%20Events/Results/KCRSCCA-RX-Historical-2017-2024.md) for full event results.
 
 ### 2026 Arcs
 - AE86 V8 national rallycross push — the big one

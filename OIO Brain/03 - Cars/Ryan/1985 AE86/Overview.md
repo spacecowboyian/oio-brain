@@ -58,6 +58,31 @@ The 1UZ V8 swap is the 2026 (and possibly multi-year) arc for this car. It's the
 
 ---
 
+## KCRSCCA Competition History
+
+Ryan has been running the AE86 in KCRSCCA RallyCross since at least 2019, competing in class MR (Mid-size Rear-wheel drive) as car #86.
+
+### 2019 (Class: MR)
+
+| Event | Date | Position in Class | Overall | Raw Time |
+|---|---|---|---|---|
+| Event #3 | 2019-10-19 | **1st** | 12th | 876.302 |
+| Event #1 | 2019-11-02 | **1st** | 13th | 633.458 |
+| Event #8 | 2019-11-03 | 4th | 24th | 441.31 |
+| Turkey Jive | 2019-11-24 | 6th | 28th | 490.18 |
+
+### 2020 (Class: MR)
+
+| Event | Date | Position in Class | Overall | Raw Time |
+|---|---|---|---|---|
+| RX 1 | 2020-02-22 | **1st** | 25th | 402.026 |
+| RX 4 | 2020-06-14 | 4th | 24th | 380.072 |
+| RX 7 | 2020-11-08 | 2nd | 6th | 455.425 |
+
+*Full historical record: see [KCRSCCA-RX-Historical-2017-2024.md](../../../04%20-%20Events/Results/KCRSCCA-RX-Historical-2017-2024.md)*
+
+---
+
 ## Related Videos
 
 | Date | Title | Views | Format |

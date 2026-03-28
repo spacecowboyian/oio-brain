@@ -38,22 +38,35 @@ The question for 2026 is simple: **will it be ready, and will it hold together i
 
 ---
 
-## Miles Smith — Rally Driver
+## KCRSCCA Competition History
 
-**Miles Smith is the MR2's primary rallycross competitor.** He has competed in KCRSCCA RallyCross across multiple seasons, earning two season-level championship trophies in the Kansas City region:
+Both Ian and Miles have competed in KCRSCCA RallyCross with MR2s in class MR. Note: Ian ran car #2 in 2024; Miles runs #12. These may represent two different MR2s (The Goblin is 1985; Ian's 2024 car appears to be a 1987 — possibly the car later nicknamed "Hobgoblin").
+
+### Ian Jennings — 2024 (Class: MR, Car #2)
+
+| Event | Date | Position in Class | Notes |
+|---|---|---|---|
+| Event #1 | 2024-04-14 | **1st** | Raw time: 512.744 |
+| Event #3 | 2024-06-15 | **1st** | Total time: 871.943 (final results page) |
+
+### Miles Smith — 2023–2024 (Class: MR/MF, Car #12/16)
+
+**Miles is the MR2's primary rallycross competitor.** He has competed in KCRSCCA RallyCross across multiple seasons, earning two season-level championship trophies in the Kansas City region:
 
 - **3rd place** — KCRSCCA RallyCross season championship
 - **4th place** — KCRSCCA RallyCross season championship
 
-Miles runs car #12 in class MR (Mid-size Rear-wheel drive). His results from the available KCRSCCA archive (2023–2024):
+Miles runs car #12 in class MR (Mid-size Rear-wheel drive). Known event results from archive (2023–2024):
 
-| Year | Event | Date | Class | P in Class |
-|---|---|---|---|---|
-| 2024 | Event #3 | 2024-06-15 | MR | 5th |
-| 2024 | Event #1 | 2024-04-14 | MR | 5th |
-| 2023 | RX 10 | 2023-11-12 | MF | 3rd |
+| Year | Event | Date | Class | Car # | P in Class |
+|---|---|---|---|---|---|
+| 2024 | Event #3 | 2024-06-15 | MR | 12 | 5th |
+| 2024 | Event #1 | 2024-04-14 | MR | 12 | 5th |
+| 2023 | RX 10 | 2023-11-12 | MF | 16 | 3rd |
 
 *Earlier seasons (2017–2022) not fully captured in archive due to data access limitations. Season trophy years TBD — update when confirmed.*
+
+*Full historical record: see [KCRSCCA-RX-Historical-2017-2024.md](../../../04%20-%20Events/Results/KCRSCCA-RX-Historical-2017-2024.md)*
 
 ---
 

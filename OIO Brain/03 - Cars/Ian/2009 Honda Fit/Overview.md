@@ -3,7 +3,7 @@ title: Fitty Cent — 2009 Honda Fit GE8
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [vehicle, honda-fit, fitty-cent, autocross, rallycross, daily-driver, kids-racing]
 source_of_truth: true
 summary: Overview of Fitty Cent — Ian's 2009 Honda Fit GE8. Active daily driver, autocross car, and rallycross car. The kids (Miles and Hudson) race it in both disciplines. The How-To content subject. 2026 arc is dual-discipline double duty.
@@ -73,6 +73,19 @@ OIO's Fit is the **GE8** (2009). Ryan's Fit is a **GD3** (2007). They are differ
 The kids are racing Fitty Cent in both autocross AND rallycross. That's a big ask of one small daily-driver car. The dual-discipline, kids-are-racing arc is a 2026 storyline.
 
 **Mid-2026 target:** Miles and Hudson's documented autocross debut.
+
+---
+
+## KCRSCCA Competition History
+
+Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA RallyCross.
+
+| Year | Event | Date | Driver | Car # | Class | Position in Class | Raw Time |
+|---|---|---|---|---|---|---|---|
+| 2023 | RX 10 | 2023-11-12 | Ian Jennings | 6 | MF | **1st** | 451.784 |
+| 2023 | RX 10 | 2023-11-12 | Miles Smith | 16 | MF | 3rd | 473.69 |
+
+*Full historical record: see [KCRSCCA-RX-Historical-2017-2024.md](../../../04%20-%20Events/Results/KCRSCCA-RX-Historical-2017-2024.md)*
 
 ---
 
