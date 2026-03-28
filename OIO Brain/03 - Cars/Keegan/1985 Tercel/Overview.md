@@ -1,15 +1,15 @@
 ---
-title: Keegan's Tercel — Mid-80s 4WD Toyota Tercel
+title: Keegan's Tercel — 1985 4WD Toyota Tercel
 type: vehicle
 status: active
 owner: Keegan Wilhelm
 updated: 2026-03-28
 tags: [vehicle, tercel, keegan, 4age, rallycross, congregation, 4wd]
 source_of_truth: true
-summary: Overview of Keegan Wilhelm's mid-80s 4WD Toyota Tercel(s). Keegan's core cars — multiple Tercels with 4A-G swaps and turbo builds. Rallycross competitor and OIO fan favorite. 11 published OIO videos.
+summary: Overview of Keegan Wilhelm's 1985 4WD Toyota Tercel(s). Keegan's core cars — multiple Tercels with 4A-G swaps and turbo builds. Rallycross competitor and OIO fan favorite. 11 published OIO videos.
 ---
 
-# Keegan's Tercel — Mid-80s 4WD Toyota Tercel
+# Keegan's Tercel — 1985 4WD Toyota Tercel
 
 > Keegan's 4A-G weapon. One of several. The Tercel is his natural habitat.
 
@@ -21,7 +21,7 @@ summary: Overview of Keegan Wilhelm's mid-80s 4WD Toyota Tercel(s). Keegan's cor
 
 | Field | Value |
 |---|---|
-| Car | Mid-80s 4WD Toyota Tercel (multiple) |
+| Car | 1985 4WD Toyota Tercel (multiple) |
 | Driver / Owner | Keegan Wilhelm |
 | Status | **Active** — ongoing builds and mods |
 | Engine | Various 4A-G and turbo 4A-C configurations |
