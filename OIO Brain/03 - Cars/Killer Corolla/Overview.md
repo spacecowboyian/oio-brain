@@ -64,3 +64,17 @@ The question is not if — it's when and how bad it gets before it runs.
 
 → [Setup Notes](Setup-Notes.md)
 → [Maintenance Log](Maintenance-Log.md)
+
+---
+
+## Related Videos
+
+| Date | Title | Views | Format |
+|---|---|---|---|
+| 2025-12-15 | [killer corolla 2tg #cars #toyota #vintagecars](https://www.youtube.com/watch?v=OJtWWOQo4iM) | 1,589 views | General |
+| 2024-01-12 | [Killer Corolla #TE51 #2TG #toyota #shorts](https://www.youtube.com/watch?v=tOJtKLGYWX8) | 4,435 views | Race Event |
+| 2023-12-10 | [Soon. #killercorolla #te51 #corolla #toyota #autocross](https://www.youtube.com/watch?v=hFTIkB18yrg) | 305 views | Race Event |
+| 2020-07-30 | [1977 Killer Corolla - Vintage Toyota Racing Disaster!](https://www.youtube.com/watch?v=fnQbi6dzDK8) | 951 views | How-To / DIY |
+| 2019-10-08 | [1976 TE51 "Killer" Corolla Autocross](https://www.youtube.com/watch?v=LXqGcQL5_zs) | 146 views | Race Event |
+
+*5 videos total. Views as of March 2026.*

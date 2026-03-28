@@ -49,3 +49,13 @@ The Dauphine is an air-cooled, rear-engine French economy car from the early 196
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
+
+---
+
+## Related Videos
+
+| Date | Title | Views | Format |
+|---|---|---|---|
+| 2025-09-29 | [If you know… Renault. #cars #weirdcars #french](https://www.youtube.com/watch?v=VbASENU71ho) | 13,315 views | General |
+
+*1 videos total. Views as of March 2026.*

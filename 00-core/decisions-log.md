@@ -73,4 +73,34 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
-<!-- Add new entries above this line, newest first -->
+## 2026-03-28 — OIO Video Catalog Processed Into Brain Structure
+
+**Decision:** The root-level `OIO-Video-Catalog.md` file (359 videos, ~156KB) was processed into the appropriate brain files and then deleted.
+
+**Data distributed to:**
+- `OIO Brain/02 - Content/Published-Videos.md` — channel stats, top 10, full chronological video index
+- `OIO Brain/03 - Cars/[each car]/Overview.md` — Related Videos sections added to all Ian's car files (Dale, Goblin, Fitty Cent, Killer Corolla, Nessie, Geoffrey)
+- `OIO Brain/03 - Cars/AE86 - Ryan/` — New car folder created for Ryan's AE86 (16 videos)
+- `OIO Brain/03 - Cars/MGB GT - Ryan/` — New car folder created for Ryan's MGB GT (11 videos)
+- `OIO Brain/03 - Cars/2001 Camry - Ryan/` — New car folder created for Ryan's 2001 Camry (6 videos)
+- `OIO Brain/03 - Cars/Tercel - Keegan/` — New car folder created for Keegan's Tercel (11 videos)
+- `OIO Brain/03 - Cars/Lincoln Town Car - Keegan/` — New car folder created for Keegan's Lincoln (4 videos)
+- `OIO Brain/03 - Cars/ST205 - Richard/` — New car folder created for Richard's ST205 (2 videos)
+
+**Why:** The raw catalog file at root was an unstructured dump. The brain is now the source of truth for all published video data.
+
+**Implications:** When updating video data in the future, update `Published-Videos.md` and the relevant car Overview files directly. Do not recreate a root-level catalog.
+
+---
+
+## 2026-03-28 — Docdump Folder and Processing Rules Established
+
+**Decision:** Created `docdump/` folder at repo root for Ian to drop raw documents into for Copilot processing. Established rules that (1) processed files must be deleted after ingestion, and (2) any data-processing script must include deletion of its source file.
+
+**Why:** Creates a simple workflow for getting raw documents into the brain without leaving orphaned files cluttering the repo.
+
+**Implications:** The `docdump/` folder should normally be empty. If files are present, they haven't been processed yet.
+
+---
+
+

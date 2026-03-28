@@ -50,3 +50,23 @@ Nessie's 2026 debut is at the dragstrip. The arc is: will it make it down the tr
 
 → [Setup Notes](Setup-Notes.md)
 → [Maintenance Log](Maintenance-Log.md)
+
+---
+
+## Related Videos
+
+| Date | Title | Views | Format |
+|---|---|---|---|
+| 2026-01-18 | [Too Many Race Cars. Not Enough Garage. The 3D Printer Gets Involved.](https://www.youtube.com/watch?v=aHgw2EsZcto) | 184 views | How-To / DIY |
+| 2025-08-27 | [So Many Problems. So Little Time \| Late Summer Update](https://www.youtube.com/watch?v=bdFZiVBad4E) | 208 views | How-To / DIY |
+| 2025-08-10 | [New Wheels, Wrong Lug Pattern \| Wheel Adapter Install & FAIL \| ’83 Cressida](https://www.youtube.com/watch?v=jzIowS47LIw) | 144 views | How-To / DIY |
+| 2025-07-11 | [Mystery Car Replaces Entire Collection! - 2025 Summer Projects Update](https://www.youtube.com/watch?v=Sd0k65KXkKQ) | 110 views | How-To / DIY |
+| 2025-06-23 | [1982 Cressida: 1/4 Mile Dad Wagon or Doomed to Die?](https://www.youtube.com/watch?v=NfItMJ6anuw) | 366 views | How-To / DIY |
+| 2025-06-21 | [Cressida oil pressure troubles #workvlog #mx62 #cars](https://www.youtube.com/watch?v=MkGkMoqbKK8) | 750 views | Vlog |
+| 2025-06-21 | [Work Vlog - Ian 6/20 #5MGE #cressida #cars](https://www.youtube.com/watch?v=69LJB1jdfA4) | 1,049 views | Vlog |
+| 2025-06-20 | [ARP? Nooo!! #cars #5mge #cressida #dragracing](https://www.youtube.com/watch?v=KoTo-NY_cHg) | 1,067 views | General |
+| 2025-06-19 | [The worst gasket I’ve ever seen! #Cars #Mechanic #DIY #Cressida](https://www.youtube.com/watch?v=cCEpG1cwVwE) | 1,082 views | How-To / DIY |
+| 2025-06-19 | [Daily work vlog 6/19.1 #cressida #cars #diy](https://www.youtube.com/watch?v=N8Una90SYhQ) | 895 views | How-To / DIY |
+| 2025-05-31 | [This is goodbye: The #RXFX FX16 Story](https://www.youtube.com/watch?v=Hz9Vx6hoDfA) | 437 views | How-To / DIY |
+
+*11 videos total. Views as of March 2026.*

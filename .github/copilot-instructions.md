@@ -160,3 +160,40 @@ Always prefer updating an existing file over creating a new one. Follow frontmat
 | Conflicting info across files | Flag the conflict, ask for clarification, then update the files once resolved. |
 
 Never present invented facts as real. Never fill `[unknown]` fields with guesses. Use `TODO:` when something needs to be confirmed later.
+
+---
+
+## Docdump Workflow
+
+The `docdump/` folder at the repo root is the intake zone for raw documents that Ian wants processed into the brain.
+
+### When Ian drops a file in docdump:
+
+1. **Read the full file** before deciding where the data belongs
+2. **Identify all relevant destinations** in the brain structure
+3. **Distribute the data** — update existing files first, create new files only if no appropriate file exists
+4. **Follow all repo standards** — frontmatter, document classes, source of truth rules apply
+5. **Delete the original file** from `docdump/` once all data has been successfully written
+6. **Confirm the deletion** in your progress report — state which file was processed and deleted
+7. **Update `01-active/`** files as needed to reflect any state changes
+
+### Rules
+
+- **Always delete the source file after processing.** Do not leave originals in `docdump/`. The folder should be empty when you're done.
+- **If a file cannot be fully processed** (ambiguous data, incomplete information), document what was done and what remains as open loops in `01-active/open-loops.md` — then still delete the source file.
+- **Do not treat docdump files as source of truth** until their data has been validated and written into a canonical brain file.
+
+---
+
+## Data Processing Scripts
+
+Any script written to process data from this repo (or from `docdump/`) must include a step to delete the original source data file after processing is complete.
+
+### Rules for Processing Scripts
+
+- **Include deletion logic** — always delete the source file as the final step, after confirming that the data has been successfully written to its destination
+- **Confirm before deleting** — the script should verify that the destination write succeeded before deleting the source
+- **Log what was deleted** — output the name and path of the deleted file in the script's completion message
+- **Do not leave orphaned source files** — a processing script that exits without deleting its source file is incomplete
+
+This applies to all scripts regardless of language (Python, bash, JavaScript, etc.) and regardless of whether the source is in `docdump/`, a temp file, or any other location in or adjacent to this repo.
