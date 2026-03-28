@@ -45,7 +45,28 @@ The Lake Garnett LGPR is OIO's annual cathedral moment. Dale going there is the 
 
 ---
 
-## 2026 Story Arc
+## KCRSCCA Competition History
+
+### AUTOCROSS — Ian Jennings (Class: HCS)
+
+Dale debuted at autocross in September 2024.
+
+| Event | Date | Class | # | P | Entries | Time | Notes |
+|---|---|---|---|---|---|---|---|
+| E8 | 2024-09-22 | HCS | 1 | 3rd | 4 | 55.762 | **Dale AX debut** |
+| E10 | 2024-10-27 | HCS | 6 | 4th | 6 | 51.901 | |
+
+### AUTOCROSS — Miles Smith
+
+| Event | Date | Class | # | P | Entries | Time |
+|---|---|---|---|---|---|---|
+| E10 | 2024-10-27 | HCS | 16 | 6th | 6 | 54.807 |
+
+*Miles ran Dale at Halloweenie 2024, same event as Ian.*
+
+---
+
+
 
 Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale moves the car a step closer to Lake Garnett in October. The Church of Combustion episode from Lake Garnett is the payoff.
 

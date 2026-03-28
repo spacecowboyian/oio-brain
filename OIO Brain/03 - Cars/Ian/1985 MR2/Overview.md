@@ -42,12 +42,16 @@ The question for 2026 is simple: **will it be ready, and will it hold together i
 
 Both Ian and Miles have competed in KCRSCCA RallyCross with MR2s in class MR. Note: Ian ran car #2 in 2024; Miles runs #12. These may represent two different MR2s (The Goblin is 1985; Ian's 2024 car appears to be a 1987 — possibly the car later nicknamed "Hobgoblin").
 
-### Ian Jennings — 2024 (Class: MR, Car #2)
+### Ian Jennings — 2023–2024 (Class: MR, Car #2)
 
-| Event | Date | Position in Class | Notes |
-|---|---|---|---|
-| Event #1 | 2024-04-14 | **1st** | Raw time: 512.744 |
-| Event #3 | 2024-06-15 | **1st** | Total time: 871.943 (final results page) |
+| Year | Event | Date | Position in Class | Total Time | Notes |
+|---|---|---|---|---|---|
+| 2023 | E3 | 2023-05-07 | 2nd | 498.223 | 6.579s behind Ryan (Miata) |
+| 2024 | E1 | 2024-04-14 | **1st** | 512.744 | |
+| 2024 | E3 | 2024-06-15 | **1st** | 871.943 | **Best Raw Time of Day overall** |
+| 2024 | E4 | 2024-07-14 | **1st** | 491.100 | |
+| 2024 | E5 | 2024-08-25 | 3rd | 492.210 | Thunder Valley (sand) |
+| 2024 | E6 | 2024-09-15 | 2nd | 343.266 | 0.577s behind Niles Davis |
 
 ### Miles Smith — 2023–2024 (Class: MR/MF, Car #12/16)
 
@@ -58,11 +62,14 @@ Both Ian and Miles have competed in KCRSCCA RallyCross with MR2s in class MR. No
 
 Miles runs car #12 in class MR (Mid-size Rear-wheel drive). Known event results from archive (2023–2024):
 
-| Year | Event | Date | Class | Car # | P in Class |
-|---|---|---|---|---|---|
-| 2024 | Event #3 | 2024-06-15 | MR | 12 | 5th |
-| 2024 | Event #1 | 2024-04-14 | MR | 12 | 5th |
-| 2023 | RX 10 | 2023-11-12 | MF | 16 | 3rd |
+| Year | Event | Date | Class | Car # | P in Class | Notes |
+|---|---|---|---|---|---|---|
+| 2023 | RX 10 | 2023-11-12 | MF | 16 | 3rd | Honda Fit |
+| 2024 | Event #1 | 2024-04-14 | MR | 12 | 5th | |
+| 2024 | Event #3 | 2024-06-15 | MR | 12 | 5th | DSQ heat 2 |
+| 2024 | Event #4 | 2024-07-14 | MR | 12 | 4th | |
+| 2024 | Event #5 | 2024-08-25 | MR | 12 | 4th | |
+| 2024 | Event #6 | 2024-09-15 | MR | 12 | 4th | |
 
 *Earlier seasons (2017–2022) not fully captured in archive due to data access limitations. Season trophy years TBD — update when confirmed.*
 

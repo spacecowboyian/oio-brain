@@ -64,9 +64,20 @@ Co-conspirator, fellow Honda Fit believer, Gambler 500 veteran.
 | — | Porsche Cayenne | Modified | Gambler 500 veteran |
 | The 2001 Car | 2001 Toyota Camry | Building | Lifted, big tires, future Gambler 500 car — "if 7th graders made their own Mad Max movie in their backyard" |
 
-### KCRSCCA RallyCross History
+### KCRSCCA Competition History
 
-Ryan has competed in KCRSCCA RallyCross across multiple seasons. He ran the AE86 (#86, MR class) from 2019–2020, a 1990 Mazda Miata (#13, MR class) at the 2023 RX 10, and the MGB GT (#86, MR class) starting in 2024. See [KCRSCCA-RX-Historical-2017-2024.md](../../04%20-%20Events/Results/KCRSCCA-RX-Historical-2017-2024.md) for full event results.
+Ryan has competed in both AX and RX across multiple seasons with a wide variety of cars.
+
+**AX cars (confirmed):** 1985 Toyota Corolla DP (2021), 2002 Audi TT STH (2022), 1989 BMW LS-30 XA (2023), 2007 Honda Fit STS (2024)
+
+**RX cars (confirmed):** AE86 MR (2019–2020), 2020 Audi Panzerfaust MA (2022), 1990 Mazda Miata MR (2023), MGB GTS MR + Honda Fit PF (2024)
+
+Highlights:
+- **2023 RX E3** — CLASS WIN in Miata (MR class), beat Ian by 6.579s
+- **2024 RX E4** — CLASS WIN in Honda Fit GD3 (PF class), beat Huff by 16.6s
+- **2019–2020** — 3 AE86 class wins across two RX seasons
+
+See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Historical-2017-2024.md) for full event results.
 
 ### 2026 Arcs
 - AE86 V8 national rallycross push — the big one
@@ -109,8 +120,16 @@ Collector of obscure cars, engine builder, occasional chaos agent. His whole dea
 | Lincoln Town Cars (multiple) | Rallycrossed AND autocrossed. Leaks things. |
 | ~8–9 cars total | The full collection is knowable only to Keegan and perhaps God |
 
+### KCRSCCA Competition History
+
+Keegan has competed in KCRSCCA Autocross in both the Lincoln Continental and the 1981 Tercel.
+
+- **2023 AX** — Lincoln Continental, class CAMT (#690), E1–E3
+- **2024 AX Halloweenie** — 1981 Tercel, class XP (#69), sole entry class win
+
+See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Historical-2017-2024.md) for full event results.
+
 ### 2026 Arc
-- Always another 4A-G going into something. The arc never ends — it just changes patients.
 
 ---
 
@@ -120,7 +139,7 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 | Name | Age | Status | Notes |
 |---|---|---|---|
-| Miles Smith | 18 | Competing | Autocross and rallycross, no restrictions. **Primary driver of the MR2 in rallycross.** |
+| Miles Smith | 18 | Competing | Autocross and rallycross. **Co-driver of the MR2 in rallycross.** |
 | Hudson Smith | 15 | Competing | Must have adult ride-along per rules |
 | Parker | 14 | Pending | Ian's bio kid, lives half-time in Kansas. Gets permit at 14; once he has it, he races. |
 
@@ -139,11 +158,24 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 #### Known KCRSCCA Event Results
 
+**AUTOCROSS 2024**
+
+| Event | Date | Class | P | Car |
+|---|---|---|---|---|
+| E1 | 2024-04-07 | Novice-STS | 13th (Novice) | Honda Fit (#6) |
+| E4 MidDiv | 2024-06-29 | Novice-STS | 9th (Novice) | Honda Fit (#6) |
+| E10 | 2024-10-27 | HCS | 6th/6 | Dale Celica (#16) |
+
+**RALLYCROSS**
+
 | Year | Event | Date | Class | P in Class | Car |
 |---|---|---|---|---|---|
 | 2023 | RX 10 | 2023-11-12 | MF | 3rd | 2009 Honda Fit Sport (#16) |
 | 2024 | Event #1 | 2024-04-14 | MR | 5th | 1987 Toyota MR2 (#12) |
-| 2024 | Event #3 | 2024-06-15 | MR | 5th | 1987 Toyota MR2 (#12) |
+| 2024 | Event #3 | 2024-06-15 | MR | 5th (DSQ h2) | 1987 Toyota MR2 (#12) |
+| 2024 | Event #4 | 2024-07-14 | MR | 4th | 1987 Toyota MR2 (#12) |
+| 2024 | Event #5 | 2024-08-25 | MR | 4th | 1987 Toyota MR2 (#12) |
+| 2024 | Event #6 | 2024-09-15 | MR | 4th | 1987 Toyota MR2 (#12) |
 
 *Data source: KCRSCCA results archive, 2017–2024. Earlier seasons (2017–2022) accessible only partially due to archive gaps; Miles's full season-championship results are confirmed from Ian's account.*
 
@@ -162,3 +194,5 @@ Not core team. More like the next-door neighbor in *Golden Girls*. They show up,
 | Doug | BMW 2002 | Autocross. Targeting SCCA Spring Nationals (Memorial Day) and Solo Nationals (Labor Day) 2026 |
 | Larry | Various | Around the paddock, races with/against the crew |
 | Brian | Various | Same deal |
+| Robyn Redenbaugh | Audi TT / Honda Fit GD3 | Ryan's partner. 2022 AX E1 STH Ladies class win. 2024 RX E7 EnduroX (Honda Fit PF). |
+| Matthew Redenbaugh | MGB GTS | Ryan's son. 2024 RX E1 Novice DNS. |

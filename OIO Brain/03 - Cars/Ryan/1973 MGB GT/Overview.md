@@ -64,11 +64,19 @@ Ryan raced the MGB GT at Lake Garnett 2025. Active competitor heading into 2026.
 
 Ryan began running the MGB GT at KCRSCCA rallycross in 2024, in class MR (Mid-size Rear-wheel drive) as car #86. (Note: Ryan also ran a 1990 Mazda Miata at the 2023 RX 10 event, finishing 2nd in class MR.)
 
-### 2024 (Class: MR)
+### 2024 (Class: MR, Car #86)
 
-| Event | Date | Position in Class | Overall | Raw Time |
-|---|---|---|---|---|
-| Event #1 | 2024-04-14 | 3rd | 17th | 544.108 |
+| Event | Date | Class | Car | P | Entries | Total Time | Notes |
+|---|---|---|---|---|---|---|---|
+| E1 | 2024-04-14 | MR | MGB GTS | 3rd | 8 | 544.108 | First KCRSCCA run in the car |
+| E6 | 2024-09-15 | MR | MGB GTS | 5th | 7 | 389.133 | |
+
+*Ryan also ran Honda Fit GD3 (#86) in PF class for two 2024 RX events:*
+
+| Event | Date | Class | Car | P | Entries | Total Time | Notes |
+|---|---|---|---|---|---|---|---|
+| E4 | 2024-07-14 | PF | Honda Fit GD3 | **1st** | 5 | 497.083 | **CLASS WIN** — beat Huff by 16.6s |
+| E7 EnduroX | 2024-10-06 | PF | Honda Fit GD3 | 3rd | 5 | 444.095 | |
 
 *Full historical record: see [KCRSCCA-RX-Historical-2017-2024.md](../../../04%20-%20Events/Results/KCRSCCA-RX-Historical-2017-2024.md)*
 
