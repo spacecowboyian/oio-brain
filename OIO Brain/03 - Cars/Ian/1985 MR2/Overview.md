@@ -131,11 +131,43 @@ The Goblin's 2026 narrative has shifted from "rebuild in progress" to a real sur
 
 ---
 
+## Visual Identification
+
+> These details allow AI agents and humans to match photos to this car with confidence.
+
+| Attribute | Detail |
+|---|---|
+| Body style | Two-door coupe, mid-engine, low wedge profile |
+| Color | Steel / medium blue (factory AW11 blue tone) |
+| Roof | T-top configuration — removable panels, characteristic AW11 feature |
+| Headlights | Retractable pop-up units (flush when closed during a run) |
+| Wheels | Stock AW11 cross-spoke 4-spoke alloys, silver/white finish |
+| Tires | All-terrain / aggressive off-road pattern (rallycross spec) |
+| Door graphics | "2MR" race number in red/white block lettering on driver-side door |
+| Door vents | Black vertical slatted vent panel mid-body (both sides) |
+| Rear | Slatted engine cover (mid-engine layout), rear spoiler |
+| Condition | Rally-prepped; visibly used and raced |
+
+**In action:** Produces large dust/dirt rooster tails from rear wheels. Typical rallycross setting: loose gravel/dirt, cones, open dirt lot or field, safety marshals in hi-vis vests.
+
+---
+
+## Photo Library
+
+📁 [photos/Ian/1985-MR2-Goblin/](../../../../photos/Ian/1985-MR2-Goblin/)
+
+| # | Photo | Context | Posted |
+|---|---|---|---|
+| 1 | [IMG_8181.png](../../../../photos/Ian/1985-MR2-Goblin/IMG_8181.png) | Rallycross action shot — mid-slide, dust rooster tail, "2MR" graphics visible, marshal in bg | No |
+
+---
+
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
 → [Modifications](Modifications.md)
 → [Current Priorities](../../../00%20-%20Start%20Here/OIO-Current-Priorities.md)
+→ [Full Photo Index](../../../../PHOTO-INDEX.md)
 
 ---
 

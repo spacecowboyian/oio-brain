@@ -3,7 +3,7 @@ title: OIO Next Actions
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-28
 tags: [actions, tasks, next-steps]
 source_of_truth: false
 summary: Concrete next actions organized by area. Short and actionable only — not a project plan. Update after completing actions and when new ones are identified.
@@ -66,3 +66,5 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 - [ ] Add specific 2026 Fit How-To topics to the Video Ideas Backlog as they're confirmed
 - [ ] Fill in real data in Budget.md once racing costs are known
 - [ ] Add contact info to `OIO Brain/07 - Admin/Contacts.md` for key people
+- [ ] Upload more car photos to `picdump/` — agent will auto-file and index them
+- [ ] Add social media post history to `PHOTO-INDEX.md` as photos get posted

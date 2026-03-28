@@ -69,6 +69,8 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
+- **2026-03-28:** Photo library system launched — `photos/` folder created, organized by driver/car. `PHOTO-INDEX.md` created at repo root. GitHub Action `process-picdump-photos.yml` created to auto-spawn Copilot agent whenever images are pushed to `picdump/`.
+- **2026-03-28:** First photo filed — `IMG_8181.png` (Goblin MR2 rallycross action shot) moved to `photos/Ian/1985-MR2-Goblin/`. MR2 Overview.md updated with Visual Identification section and photo reference.
 - **2026-03-28:** Expanded KCRSCCA competition data processed — full AX + RX history 2021–2024 for Ian, Ryan, Miles, Keegan, Robyn, and Matthew. Updated 9 brain files: historical results, MR2, Honda Fit, Celica, MGB GT, Lincoln Continental, Tercel, Team-Bios, and current-state. Also corrected Ian = primary driver, Miles = co-driver framing throughout.
 - **2026-03-28:** Miles Smith's rallycross history updated — confirmed as co-driver of MR2, KCRSCCA season trophy holder (3rd and 4th place). KCRSCCA results archive 2017–2024 processed and deleted from docdump. See Team-Bios.md and MR2 Overview.md.
 - **2026-03-28:** Tootie added to brain — Karen's 1965 Chevrolet Suburban (blue). Ian and kids do occasional work on it; may appear in OIO content. Filed under `OIO Brain/03 - Cars/Karen/`.
