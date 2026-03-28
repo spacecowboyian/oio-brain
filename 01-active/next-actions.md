@@ -67,3 +67,5 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 - [ ] Add specific 2026 Fit How-To topics to the Video Ideas Backlog as they're confirmed
 - [ ] Fill in real data in Budget.md once racing costs are known
 - [ ] Add contact info to `OIO Brain/07 - Admin/Contacts.md` for key people
+- [ ] Upload more car photos to `picdump/` — agent will auto-file and index them
+- [ ] Add social media post history to `PHOTO-INDEX.md` as photos get posted

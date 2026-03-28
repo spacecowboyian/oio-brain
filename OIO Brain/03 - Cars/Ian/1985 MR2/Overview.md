@@ -4,7 +4,7 @@ type: vehicle
 status: active
 owner: Ian Jennings
 updated: 2026-03-28
-tags: [vehicle, mr2, goblin, rallycross, rebuild]
+tags: [vehicle, mr2, goblin, rallycross, rebuild, miles-smith]
 source_of_truth: true
 summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Engine non-operational as of March 2026. Full diagnostic completed 2026-03-28: confirmed bearing failure + cylinder 4 at 35 PSI. Rebuild vs. replace decision pending.
 ---
@@ -35,6 +35,45 @@ summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Engine n
 The Goblin is Ian's rallycross car and primary source of on-camera suffering. A mid-engine AW11 MR2 that regularly reminds Ian that motorsports is humbling. Engine is non-operational as of March 2026 following a rallycross failure.
 
 Full diagnostic completed 2026-03-28. Confirmed: bearing failure (lock-up), cylinder 4 compression at 35 PSI, oil contamination across all cylinders (heaviest in cyl 1), heavy valve carbon buildup, and a loose plug wire on cylinder 1. Root cause not yet isolated. Rebuild vs. replace decision pending.
+
+---
+
+## KCRSCCA Competition History
+
+Both Ian and Miles have competed in KCRSCCA RallyCross with MR2s in class MR. Note: Ian ran car #2 in 2024; Miles runs #12. These may represent two different MR2s (The Goblin is 1985; Ian's 2024 car appears to be a 1987 — possibly the car later nicknamed "Hobgoblin").
+
+### Ian Jennings — 2023–2024 (Class: MR, Car #2)
+
+| Year | Event | Date | Position in Class | Total Time | Notes |
+|---|---|---|---|---|---|
+| 2023 | E3 | 2023-05-07 | 2nd | 498.223 | 6.579s behind Ryan (Miata) |
+| 2024 | E1 | 2024-04-14 | **1st** | 512.744 | |
+| 2024 | E3 | 2024-06-15 | **1st** | 871.943 | **Best Raw Time of Day overall** |
+| 2024 | E4 | 2024-07-14 | **1st** | 491.100 | |
+| 2024 | E5 | 2024-08-25 | 3rd | 492.210 | Thunder Valley (sand) |
+| 2024 | E6 | 2024-09-15 | 2nd | 343.266 | 0.577s behind Niles Davis |
+
+### Miles Smith — 2023–2024 (Class: MR/MF, Car #12/16)
+
+**Miles Smith is the MR2's co-driver in rallycross competition.** Ian Jennings is the primary driver. Miles has competed in KCRSCCA RallyCross across multiple seasons, earning two season-level championship trophies in the Kansas City region:
+
+- **3rd place** — KCRSCCA RallyCross season championship
+- **4th place** — KCRSCCA RallyCross season championship
+
+Miles runs car #12 in class MR (Mid-size Rear-wheel drive). Known event results from archive (2023–2024):
+
+| Year | Event | Date | Class | Car # | P in Class | Notes |
+|---|---|---|---|---|---|---|
+| 2023 | RX 10 | 2023-11-12 | MF | 16 | 3rd | Honda Fit |
+| 2024 | Event #1 | 2024-04-14 | MR | 12 | 5th | |
+| 2024 | Event #3 | 2024-06-15 | MR | 12 | 5th | DSQ heat 2 |
+| 2024 | Event #4 | 2024-07-14 | MR | 12 | 4th | |
+| 2024 | Event #5 | 2024-08-25 | MR | 12 | 4th | |
+| 2024 | Event #6 | 2024-09-15 | MR | 12 | 4th | |
+
+*Earlier seasons (2017–2022) not fully captured in archive due to data access limitations. Season trophy years TBD — update when confirmed.*
+
+*Full historical record: see [KCRSCCA-RX-Historical-2017-2024.md](../../../04%20-%20Events/Results/KCRSCCA-RX-Historical-2017-2024.md)*
 
 ---
 
@@ -95,12 +134,44 @@ The Goblin's 2026 narrative has shifted from "rebuild in progress" to a document
 
 ---
 
+## Visual Identification
+
+> These details allow AI agents and humans to match photos to this car with confidence.
+
+| Attribute | Detail |
+|---|---|
+| Body style | Two-door coupe, mid-engine, low wedge profile |
+| Color | Steel / medium blue (factory AW11 blue tone) |
+| Roof | T-top configuration — removable panels, characteristic AW11 feature |
+| Headlights | Retractable pop-up units (flush when closed during a run) |
+| Wheels | Stock AW11 cross-spoke 4-spoke alloys, silver/white finish |
+| Tires | All-terrain / aggressive off-road pattern (rallycross spec) |
+| Door graphics | "2MR" race number in red/white block lettering on driver-side door |
+| Door vents | Black vertical slatted vent panel mid-body (both sides) |
+| Rear | Slatted engine cover (mid-engine layout), rear spoiler |
+| Condition | Rally-prepped; visibly used and raced |
+
+**In action:** Produces large dust/dirt rooster tails from rear wheels. Typical rallycross setting: loose gravel/dirt, cones, open dirt lot or field, safety marshals in hi-vis vests.
+
+---
+
+## Photo Library
+
+📁 [photos/Ian/1985-MR2-Goblin/](../../../../photos/Ian/1985-MR2-Goblin/)
+
+| # | Photo | Context | Posted |
+|---|---|---|---|
+| 1 | [IMG_8181.png](../../../../photos/Ian/1985-MR2-Goblin/IMG_8181.png) | Rallycross action shot — mid-slide, dust rooster tail, "2MR" graphics visible, marshal in bg | No |
+
+---
+
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
 → [Modifications](Modifications.md)
 → [Maintenance Log](Maintenance-Log.md)
 → [Current Priorities](../../../00%20-%20Start%20Here/OIO-Current-Priorities.md)
+→ [Full Photo Index](../../../../PHOTO-INDEX.md)
 
 ---
 

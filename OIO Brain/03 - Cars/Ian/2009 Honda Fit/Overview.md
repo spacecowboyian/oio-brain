@@ -76,6 +76,44 @@ The kids are racing Fitty Cent in both autocross AND rallycross. That's a big as
 
 ---
 
+## KCRSCCA Competition History
+
+Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and rallycross).
+
+### AUTOCROSS — Ian Jennings
+
+| Year | Event | Date | Class | # | P | Entries | Time | Notes |
+|---|---|---|---|---|---|---|---|---|
+| 2021 | E3 | 2021-07-31 | HS | 6 | DNS | — | — | |
+| 2022 | E2 | 2022-05-01 | STS | 6 | 4th | 9 | 49.059 | |
+| 2024 | E1 | 2024-04-07 | STS | 6 | 2nd | 8 | 54.068 | |
+
+### AUTOCROSS — Miles Smith (Novice 2024)
+
+| Year | Event | Date | Class | # | Result | Notes |
+|---|---|---|---|---|---|---|
+| 2024 | E1 | 2024-04-07 | Novice-STS | 6 | 13th (Novice) | PAX 46.508 |
+| 2024 | E4 MidDiv | 2024-06-29 | Novice-STS | 6 | 9th (Novice) | PAX 43.809 |
+
+### RALLYCROSS — Ian Jennings
+
+| Year | Event | Date | Class | # | P | Total Time | Notes |
+|---|---|---|---|---|---|---|---|
+| 2023 | E1 | 2023-04-02 | MF | 2 | 2nd | 388.276 | First Fit RX |
+| 2023 | RX 10 | 2023-11-12 | MF | 6 | **1st** | 451.784 | |
+
+### RALLYCROSS — Miles Smith
+
+| Year | Event | Date | Class | # | P | Total Time |
+|---|---|---|---|---|---|---|
+| 2023 | RX 10 | 2023-11-12 | MF | 16 | 3rd | 473.69 |
+
+*Miles ran #16; Ian ran #6 in the same event.*
+
+*Full historical record: see [KCRSCCA-RX-Historical-2017-2024.md](../../../04%20-%20Events/Results/KCRSCCA-RX-Historical-2017-2024.md)*
+
+---
+
 ## Open Work / 2026 Tasks
 
 ### Performance Setup
