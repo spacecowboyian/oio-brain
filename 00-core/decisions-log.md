@@ -23,7 +23,23 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
-## 2026-03-28 — YouTube Transcript Fetching Workflow Added
+## 2026-03-29 — Transcript Fetcher Switched to Batched Execution
+
+**Decision:** Updated `scripts/fetch_transcripts.py` and `.github/workflows/fetch-youtube-transcripts.yml` to process transcripts in configurable batches (default: 25 per run) instead of attempting one large bulk fetch.
+
+**Why:** The previous bulk strategy (all 360+ videos in a single run) was failing — YouTube rate-limits or network timeouts cut the run short before it could complete. Since each run already skips already-processed videos, running repeatedly with a small batch naturally resumes from where the last run stopped.
+
+**Changes:**
+- Added `--batch-size N` flag to the script (default 25, 0 = no limit)
+- Added a `schedule: cron: '0 */2 * * *'` trigger to the workflow (runs every 2 hours)
+- Added `batch_size` as a `workflow_dispatch` input so it can be overridden manually
+- Script now reports how many videos remain after each batch run
+
+**Implications:** Transcripts will accumulate automatically over time without manual intervention (~15 batched runs to cover all 360 videos). Manual dispatch is still available with configurable batch size. The `--all` flag still works for a forced full re-fetch, also subject to batch size.
+
+---
+
+
 
 **Decision:** Created `scripts/fetch_transcripts.py` and `.github/workflows/fetch-youtube-transcripts.yml` to automatically fetch auto-generated YouTube transcripts for all OIO Racing videos. Transcripts are stored in `transcripts/YYYY-MM-DD_video-title/` with `transcript.md` (timestamped Markdown + frontmatter) and `metadata.json`. The workflow triggers on merge to main when `OIO-Video-Catalog.md` changes, and supports a manual `fetch_all=true` dispatch for the initial bulk run of all 360 videos.
 
