@@ -54,6 +54,7 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 | [Video Ideas Backlog](OIO%20Brain/02%20-%20Content/Video-Ideas-Backlog.md) | All ideas, categorized and ready to pull from |
 | [Voice and Tone](OIO%20Brain/01%20-%20Brand/Voice-and-Tone.md) | How OIO writes, speaks, and sounds |
 | [Photo Index](PHOTO-INDEX.md) | Master index of every OIO photo — filing, post history, visual ID |
+| [Agent Skill Guide](skill.md) | How AI agents should orient and operate in this repo |
 
 ---
 

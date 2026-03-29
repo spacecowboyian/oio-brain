@@ -6,7 +6,7 @@ The canonical operational brain for **Outside Inside Outside Racing (OIO)** — 
 
 ## If you are an AI agent
 
-Read [`01-active/current-state.md`](01-active/current-state.md) first. Then check [`01-active/next-actions.md`](01-active/next-actions.md). Full instructions in [`.github/copilot-instructions.md`](.github/copilot-instructions.md).
+Start with [`skill.md`](skill.md) — it explains how to use this brain. Then read [`01-active/current-state.md`](01-active/current-state.md) and [`01-active/next-actions.md`](01-active/next-actions.md). Full standing instructions in [`.github/copilot-instructions.md`](.github/copilot-instructions.md).
 
 ## If you are a human
 
@@ -41,6 +41,7 @@ OIO makes grassroots motorsports feel accessible to regular people — autocross
 /
 ├── README.md              ← Start here
 ├── INDEX.md               ← Full section navigation
+├── skill.md               ← Agent onboarding guide (start here if you're an AI)
 ├── OIO-Master-Brief.md    ← Original source brief (reference only)
 ├── .github/
 │   └── copilot-instructions.md   ← AI agent standing instructions
