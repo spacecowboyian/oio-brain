@@ -63,15 +63,17 @@ Any document type can be dropped here. Common ones:
 | Raw video ideas | `docdump/` (root) | `OIO Brain/02 - Content/Video-Ideas-Backlog.md` |
 | Event schedule | `docdump/` (root) | `OIO Brain/04 - Events/Schedules.md` |
 | General notes | `docdump/` (root) | `01-active/` appropriate file |
-| **Raw video transcripts** | **`docdump/transcripts/`** | **`OIO Brain/02 - Content/Summaries/`** |
+| **Raw daily video transcripts** | **`docdump/dailies/`** | **`OIO Brain/02 - Content/Summaries/`** |
 
 ---
 
-## Special Intake: Transcripts
+## Special Intake: Dailies
 
-Video transcripts have their own subfolder: **`docdump/transcripts/`**
+Daily video transcripts (raw audio dumps from Ian's working video files) have their own subfolder: **`docdump/dailies/`**
 
-Drop raw transcript files (`.md`, `.txt`, or `.vtt`) there. A separate workflow (`process-transcripts`) will auto-trigger and spawn a Copilot agent to generate structured summaries using the `transcript-summary` template. See `docdump/transcripts/README.md` for full details.
+Drop raw daily transcript files (`.md`, `.txt`, or `.vtt`) there. A separate workflow (`process-dailies`) will auto-trigger and spawn a Copilot agent to generate structured summaries using the `transcript-summary` template. See `docdump/dailies/README.md` for full details.
+
+> **Dailies vs. final transcripts:** `docdump/dailies/` is for raw working clips — not published videos. Final YouTube video transcripts are stored in `transcripts/` at the repo root and are fetched automatically by the `fetch-youtube-transcripts` workflow.
 
 ---
 
@@ -79,4 +81,4 @@ Drop raw transcript files (`.md`, `.txt`, or `.vtt`) there. A separate workflow 
 
 If you see files here (in the root `docdump/`), they are waiting to be processed. The `process-docdump` workflow auto-triggers whenever files are pushed to `docdump/` — a Copilot agent will be spawned automatically. You can also manually trigger the workflow from the Actions tab if needed.
 
-The `transcripts/` subfolder may contain files while they await processing — that is normal.
+The `dailies/` subfolder may contain files while they await processing — that is normal.

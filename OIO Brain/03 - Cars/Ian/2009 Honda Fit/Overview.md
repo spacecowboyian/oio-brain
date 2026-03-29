@@ -54,7 +54,7 @@ This car is the subject of the How-To content that drives most of OIO's top-of-f
 | System | Modification | Notes |
 |---|---|---|
 | Suspension | Lightly modified | [Update specifics as known] |
-| Tires | [Update as known] | Needs to swap between autocross and rallycross use |
+| Tires | Continental DWS O6 (500 treadwear) | Street/event tires; note: no longer available in 15" |
 | | | |
 
 ---
@@ -146,6 +146,7 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 → [Setup Notes](Setup-Notes.md)
 → [Modifications](Modifications.md)
+→ [Maintenance Log](Maintenance-Log.md)
 → [Video Ideas — Honda Fit How-Tos](../../../02%20-%20Content/Video-Ideas-Backlog.md)
 
 ---

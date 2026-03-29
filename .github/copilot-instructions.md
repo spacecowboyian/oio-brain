@@ -185,24 +185,40 @@ The `docdump/` folder at the repo root is the intake zone for raw documents that
 
 ---
 
-## Transcript Docdump Workflow
+## Transcript Types — Know the Difference
 
-The `docdump/transcripts/` subfolder is the intake zone for raw video transcripts.
+There are two distinct types of transcripts in this repo. Do not confuse them.
 
-### When Ian drops a transcript in docdump/transcripts/:
+| Type | Location | Source | Purpose |
+|---|---|---|---|
+| **Final YouTube transcripts** | `transcripts/` (repo root) | Published YouTube videos — auto-fetched by `fetch-youtube-transcripts` workflow | Full text archive of published content |
+| **Dailies** | `docdump/dailies/` | Raw audio from Ian's working video files (unedited clips) | Drive brain data updates + create summary for future scripting/outlining |
+
+**Final transcripts** are auto-fetched from YouTube and stored in `transcripts/YYYY-MM-DD_title/`. They require no manual action.
+
+**Dailies** are raw audio dumps that Ian drops manually. They are NOT published videos. The goal is to use the audio to extract data into the brain and create a summary that can inform future video outlines and scripts.
+
+---
+
+## Dailies Workflow
+
+The `docdump/dailies/` subfolder is the intake zone for raw daily video transcripts.
+
+### When Ian drops a daily in docdump/dailies/:
 
 1. **Read the full transcript** before starting
 2. **Generate a structured summary** using `00-core/templates/transcript-summary.md` as the template
-3. **Save the summary** to `OIO Brain/02 - Content/Summaries/YYYY-MM-DD_video-title.md`
-4. **Update relevant brain files** — car overviews, maintenance logs, published videos, events, active state as appropriate
-5. **Delete the source transcript file** from `docdump/transcripts/` after the summary has been successfully written
+   - Note: YouTube ID is not required for dailies — leave blank or mark `[unknown]` if not yet published
+3. **Save the summary** to `OIO Brain/02 - Content/Summaries/YYYY-MM-DD_description.md`
+4. **Update relevant brain files** — car overviews, maintenance logs, video ideas backlog, events, active state as appropriate
+5. **Delete the source daily file** from `docdump/dailies/` after the summary has been successfully written
 6. **Confirm the deletion** in your progress report
 
 ### Rules
 
-- **Delete only the transcript file, not the folder.** `docdump/transcripts/` and `docdump/transcripts/README.md` must never be deleted.
-- **If a transcript cannot be fully processed**, document what was done in `01-active/open-loops.md` — then still delete the source file.
-- **Do not treat transcript files as source of truth** until their data has been validated and written into a canonical brain file.
+- **Delete only the transcript file, not the folder.** `docdump/dailies/` and `docdump/dailies/README.md` must never be deleted.
+- **If a daily cannot be fully processed**, document what was done in `01-active/open-loops.md` — then still delete the source file.
+- **Do not treat daily files as source of truth** until their data has been validated and written into a canonical brain file.
 
 ---
 
