@@ -1,12 +1,12 @@
 name: Fetch Social Media Posts
 
 on:
-  # Daily at 14:00 UTC (9 AM CDT / 8 AM CST — Kansas City time).
-  # Each run does a forward sync (new posts) + next backfill batch.
+  # Every 2 hours. Each run does a forward sync (new posts) + next backfill batch.
+  # After ingestion, the analysis script regenerates brand and story-arc docs.
   # Backfill is conservative: 25 posts per platform per run keeps
   # API usage well within Meta's 200 req/hr limit.
   schedule:
-    - cron: '0 14 * * *'
+    - cron: '0 */2 * * *'
 
   workflow_dispatch:
     inputs:
@@ -62,5 +62,21 @@ jobs:
           else
             NEW_COUNT=$(git diff --cached --name-only | grep '\.md$' | grep -v README | wc -l)
             git commit -m "chore: add ${NEW_COUNT} social post(s) [skip ci]"
+            git push
+          fi
+
+      - name: Analyze social posts and update brain docs
+        run: |
+          python scripts/analyze_social_posts.py
+
+      - name: Commit brain doc updates
+        run: |
+          git add \
+            "OIO Brain/01 - Brand/Social-Post-Voice.md" \
+            "OIO Brain/02 - Content/Car-and-Driver-Story-Arcs.md"
+          if git diff --cached --quiet; then
+            echo "Brain docs unchanged — nothing to commit."
+          else
+            git commit -m "chore: update social voice and story arcs [skip ci]"
             git push
           fi
