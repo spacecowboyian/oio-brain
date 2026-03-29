@@ -6197,6 +6197,104 @@
         }
       ]
     },
+    "2026": {
+      "events": [
+        {
+          "event_name": "KCRX Event 1",
+          "event_number": 1,
+          "date": "2026-03-22",
+          "venue": "Ray Rocks Offroad Resort",
+          "region": "Kansas City",
+          "source_url": "https://www.kcrscca.org/results/rallyx/2026/kcrx_event_1_fin.htm",
+          "num_runs": 7,
+          "notes": "Ian Jennings DNF on run 7 (did not take last run). Pronto official display shows Ian 1st with 318.321 (6 runs). DNF penalty = slowest MR run 7 time (Andrew Moll, 65.463s) + 10s = 75.463 added → corrected total 393.784, corrected position 7th. Modified Best Time of Day in official display belongs to Larry g Smith (370.630) after correction.",
+          "oio_drivers": [
+            {
+              "position": 7,
+              "first_in_class": false,
+              "class": "mr",
+              "car_number": "2",
+              "name": "Ian Jennings",
+              "car": "1985 Toyota MR2",
+              "car_color": "Goblin Blue",
+              "runs": [
+                { "time": 54.154, "cones": 0, "penalty": 0.0 },
+                { "time": 52.790, "cones": 0, "penalty": 0.0 },
+                { "time": 54.534, "cones": 1, "penalty": 2.0 },
+                { "time": 53.179, "cones": 0, "penalty": 0.0 },
+                { "time": 50.443, "cones": 0, "penalty": 0.0 },
+                { "time": 51.221, "cones": 0, "penalty": 0.0 },
+                { "time": null,   "cones": 0, "penalty": 75.463, "dnf": true, "dnf_reason": "Did not take run — car failure" }
+              ],
+              "total_time": 393.784,
+              "fastest_run": 50.443,
+              "official_total_before_dnf_correction": 318.321,
+              "official_position_before_dnf_correction": 1
+            },
+            {
+              "position": 2,
+              "first_in_class": false,
+              "class": "mr",
+              "car_number": "86",
+              "name": "Ryan Redenbaugh",
+              "car": "1990 Mazda Miata",
+              "car_color": "Unknown",
+              "runs": [
+                { "time": 54.931, "cones": 0, "penalty": 0.0 },
+                { "time": 56.850, "cones": 0, "penalty": 0.0 },
+                { "time": 52.339, "cones": 0, "penalty": 0.0 },
+                { "time": 54.116, "cones": 1, "penalty": 2.0 },
+                { "time": 51.658, "cones": 1, "penalty": 2.0 },
+                { "time": 51.685, "cones": 0, "penalty": 0.0 },
+                { "time": 50.095, "cones": 0, "penalty": 0.0 }
+              ],
+              "total_time": 375.674,
+              "fastest_run": 50.095
+            },
+            {
+              "position": 3,
+              "first_in_class": false,
+              "class": "mr",
+              "car_number": "12",
+              "name": "Miles Smith",
+              "car": "1985 Toyota MR2",
+              "car_color": "Goblin Blue",
+              "runs": [
+                { "time": 56.036, "cones": 0, "penalty": 0.0 },
+                { "time": 56.987, "cones": 0, "penalty": 0.0 },
+                { "time": 54.796, "cones": 0, "penalty": 0.0 },
+                { "time": 55.985, "cones": 0, "penalty": 0.0 },
+                { "time": 53.201, "cones": 0, "penalty": 0.0 },
+                { "time": 52.081, "cones": 0, "penalty": 0.0 },
+                { "time": 59.727, "cones": 0, "penalty": 0.0 }
+              ],
+              "total_time": 388.813,
+              "fastest_run": 52.081
+            },
+            {
+              "position": 1,
+              "first_in_class": true,
+              "class": "novice",
+              "car_number": "6",
+              "name": "Hudson Smith",
+              "car": "2009 Honda Fit Sport",
+              "car_color": "Overcast",
+              "runs": [
+                { "time": 57.312, "cones": 0, "penalty": 0.0 },
+                { "time": 54.738, "cones": 0, "penalty": 0.0 },
+                { "time": 55.856, "cones": 1, "penalty": 2.0 },
+                { "time": 56.538, "cones": 0, "penalty": 0.0 },
+                { "time": 47.363, "cones": 0, "penalty": 0.0 },
+                { "time": 46.785, "cones": 0, "penalty": 0.0 },
+                { "time": 47.892, "cones": 0, "penalty": 0.0 }
+              ],
+              "total_time": 368.484,
+              "fastest_run": 46.785
+            }
+          ]
+        }
+      ]
+    },
     "season_standings": {
       "source_notes": "KCRSCCA championship points pages. 'trophy' field = physical trophy awarded (T suffix on original standings). Years 2017, 2019, 2020, 2022 standings pages were not available.",
       "2025": {
