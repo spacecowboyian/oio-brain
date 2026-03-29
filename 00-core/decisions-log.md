@@ -23,6 +23,31 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
+## 2026-03-29 — 2025 Season Competition Results Processed Into Brain
+
+**Decision:** Processed `docdump/oio_results.json` (252KB, 8,458 lines) into structured brain files. Two new canonical result files created. Source file deleted.
+
+**Data distributed to:**
+- `OIO Brain/04 - Events/Results/2025-Season-Results.md` — Full 2025 KCR RallyCross (8 events) and KS Region RallyCross (5 events) results, including run-level data, head-to-heads, and season milestones
+- `OIO Brain/04 - Events/Results/KSRX-Historical-2018-2024.md` — New file covering KS Region RallyCross 2018–2021 and 2024 (previously undocumented in brain)
+- `01-active/current-state.md` — Added 2025 season data note to Recent Changes
+- `01-active/open-loops.md` — Added: 2025 AX data missing, BDR car data anomaly, process-dailies false-positive trigger issue
+
+**Why:** The JSON contained a complete 2025 season dataset plus historical KS Region data not yet in the brain. Both were distributed to appropriate canonical files.
+
+**Notable findings in 2025 data:**
+- Hudson Smith's rallycross debut: KCRX E8, 2025-09-21 (Novice class, 2nd place)
+- Ryan won KCRX E9 driving the MGB GT in MR class
+- Ian+Ryan+Richard all took class wins at KSRX Plinko (Aug 2025)
+- Ian switched to Honda Fit for KCRX season finale — MR2 motor issues
+- BDR (Dec 2025): Ian listed as driving "1985 Toyota Celica" — potential source data error (Ian's Celica is 1972 Dale)
+
+**Also noted:** The `process-dailies` workflow triggered a processing issue on `docdump/dailies/README.md`, which is the permanent infrastructure README (never to be deleted). That file contains no operational data. Added open loop to fix the workflow filter.
+
+**Implications:** 2025 results are now accessible via the brain. 2025 AX data is absent from source — needs to be sourced separately. BDR car entry needs verification.
+
+---
+
 ## 2026-03-29 — Dailies Separated from Final YouTube Transcripts
 
 **Decision:** Renamed `docdump/transcripts/` to `docdump/dailies/` and replaced `process-transcripts.yml` with `process-dailies.yml`. Clarified the two distinct transcript types in all documentation and copilot instructions.

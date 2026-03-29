@@ -79,6 +79,9 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 - **Who else has access to this repo?** Beyond Ian, who can read and write?
 - **Update cadence:** How often should `01-active/` files be reviewed and updated? Weekly? After each event?
+- **process-dailies false-positive trigger:** The `process-dailies` workflow triggers on any push to `docdump/` — including the permanent `docdump/dailies/README.md`. When that README was pushed as infrastructure, the automation opened a processing issue. The workflow should be scoped to ignore README.md files in the dailies folder to prevent future false-positives.
+- **2025 autocross results missing:** The `oio_results.json` file did not include 2025 KCRSCCA autocross data. No 2025 AX results are in the brain. Confirm whether Ian, Ryan, or others competed in 2025 AX and source that data.
+- **KSRX BDR 2025 — Ian's car listed as "1985 Toyota Celica":** Source data shows Ian racing a "1985 Toyota Celica" in the O4 class at the December 2025 BDR event. Ian's known Celica is Dale (1972, HCS). This may be a source data error, or Ian drove a different car at this event. Needs confirmation. See `OIO Brain/04 - Events/Results/2025-Season-Results.md`.
 
 ---
 
