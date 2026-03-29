@@ -61,4 +61,5 @@ jobs:
           2. Distribute the data to the appropriate brain files (e.g. \`OIO Brain/02 - Content/Published-Videos.md\`, \`OIO Brain/02 - Content/Video-Ideas-Backlog.md\`, etc.)
           3. Update \`01-active/\` files as needed to reflect any state changes
           4. Delete \`docdump/oio_videos_raw.json\` once all data has been written" \
-            --label "copilot"
+            --label "copilot" \
+            --assignee "Copilot"

@@ -116,4 +116,5 @@ jobs:
           If a transcript cannot be fully processed (ambiguous data, missing metadata), document what was done and note the open items in \`01-active/open-loops.md\` — then still delete the source file.
 
           Do not treat transcript files as source of truth until their data has been validated and written into canonical brain files." \
-            --label "copilot"
+            --label "copilot" \
+            --assignee "Copilot"

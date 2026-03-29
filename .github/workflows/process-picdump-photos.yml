@@ -104,4 +104,5 @@ jobs:
           If a photo cannot be confidently identified, add it to \`01-active/open-loops.md\` with a note and still remove it from picdump (move to \`photos/unidentified/\`).
 
           Follow all repo standards: frontmatter on new files, update \`updated:\` dates, log significant decisions in \`00-core/decisions-log.md\`." \
-            --label "copilot"
+            --label "copilot" \
+            --assignee "Copilot"

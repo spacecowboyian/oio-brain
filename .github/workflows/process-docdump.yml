@@ -98,4 +98,5 @@ jobs:
           If a file cannot be fully processed (ambiguous data, incomplete information), document what was done and what remains as open loops in \`01-active/open-loops.md\` — then still delete the source file.
 
           Do not treat docdump files as source of truth until their data has been validated and written into a canonical brain file." \
-            --label "copilot"
+            --label "copilot" \
+            --assignee "Copilot"
