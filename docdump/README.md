@@ -3,7 +3,7 @@ title: Docdump — Inbound Document Processing Folder
 type: notes
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-03-29
 tags: [workflow, processing, ingest, docdump]
 source_of_truth: false
 summary: Drop raw documents here for processing by Copilot. When Ian drops a file here and asks Copilot to process it, Copilot will extract the data into the appropriate brain files and then delete the original source file from this folder.
@@ -53,19 +53,30 @@ The docdump folder should normally be empty. If there's a file here, it hasn't b
 
 Any document type can be dropped here. Common ones:
 
-| Type | Likely Destination |
-|---|---|
-| YouTube video catalog / export | `OIO Brain/02 - Content/Published-Videos.md` + car Overview files |
-| Race event results | `OIO Brain/04 - Events/Results/` |
-| Expense / budget data | `OIO Brain/06 - Business/` |
-| Sponsor info / pitch notes | `OIO Brain/06 - Business/` |
-| Build notes / spec sheets | Relevant car `Overview.md` or `Setup-Notes.md` |
-| Raw video ideas | `OIO Brain/02 - Content/Video-Ideas-Backlog.md` |
-| Event schedule | `OIO Brain/04 - Events/Schedules.md` |
-| General notes | `01-active/` appropriate file |
+| Type | Where to Drop | Likely Destination |
+|---|---|---|
+| YouTube video catalog / export | `docdump/` (root) | `OIO Brain/02 - Content/Published-Videos.md` + car Overview files |
+| Race event results | `docdump/` (root) | `OIO Brain/04 - Events/Results/` |
+| Expense / budget data | `docdump/` (root) | `OIO Brain/06 - Business/` |
+| Sponsor info / pitch notes | `docdump/` (root) | `OIO Brain/06 - Business/` |
+| Build notes / spec sheets | `docdump/` (root) | Relevant car `Overview.md` or `Setup-Notes.md` |
+| Raw video ideas | `docdump/` (root) | `OIO Brain/02 - Content/Video-Ideas-Backlog.md` |
+| Event schedule | `docdump/` (root) | `OIO Brain/04 - Events/Schedules.md` |
+| General notes | `docdump/` (root) | `01-active/` appropriate file |
+| **Raw video transcripts** | **`docdump/transcripts/`** | **`OIO Brain/02 - Content/Summaries/`** |
+
+---
+
+## Special Intake: Transcripts
+
+Video transcripts have their own subfolder: **`docdump/transcripts/`**
+
+Drop raw transcript files (`.md`, `.txt`, or `.vtt`) there. A separate workflow (`process-transcripts`) will auto-trigger and spawn a Copilot agent to generate structured summaries using the `transcript-summary` template. See `docdump/transcripts/README.md` for full details.
 
 ---
 
 ## This Folder Should Be Empty
 
-If you see files here, they are waiting to be processed. Tell Copilot: *"Process the file(s) in docdump."*
+If you see files here (in the root `docdump/`), they are waiting to be processed. The `process-docdump` workflow auto-triggers whenever files are pushed to `docdump/` — a Copilot agent will be spawned automatically. You can also manually trigger the workflow from the Actions tab if needed.
+
+The `transcripts/` subfolder may contain files while they await processing — that is normal.

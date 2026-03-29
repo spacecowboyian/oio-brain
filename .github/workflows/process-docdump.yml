@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'docdump/**'
+      - '!docdump/transcripts/**'
   workflow_dispatch:
 
 jobs:
@@ -29,9 +30,9 @@ jobs:
             FILES=$(find docdump/ -maxdepth 1 -type f \
               | grep -v 'README\.md$' || true)
           else
-            # Find files added in this push (exclude README.md)
+            # Find files added in this push (exclude README.md and transcripts subfolder)
             FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'docdump/**' 2>/dev/null \
-              | grep -v '^docdump/README\.md$' || true)
+              | grep -Ev '^docdump/(README\.md|transcripts/)' || true)
           fi
 
           if [ -z "$FILES" ]; then
