@@ -87,6 +87,21 @@ The ST205 has been called. Every SCCA event Richard enters is a chapter in this 
 
 ---
 
+## Hashtag Reference
+
+Use these tags when posting about the ST205.
+
+| Purpose | Tags |
+|---|---|
+| Car identity | `#st205` `#celicagtfour` `#celica` |
+| Engine / drivetrain | `#3sgte` `#gt4` `#jdm` `#toyota` `#awd` |
+| Discipline | `#rallycross` `#scca` |
+| Broad catch-all | `#cars` |
+
+**Short set for quick posts:** `#st205 #celicagtfour #3sgte #gt4 #cars`
+
+---
+
 ## Related Videos
 
 | Date | Title | Views | Format |

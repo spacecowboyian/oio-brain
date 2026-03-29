@@ -76,6 +76,21 @@ Get the 4A-G in, get it on track. Richard is also thinking about swapping in a M
 
 ---
 
+## Hashtag Reference
+
+Use these tags when posting about the Starlet.
+
+| Purpose | Tags |
+|---|---|
+| Car identity | `#starlet` `#toyotastarlet` `#kp61` |
+| Engine / drivetrain | `#4age` `#toyota` |
+| Discipline | `#rallycross` `#trackcar` |
+| Broad catch-all | `#cars` |
+
+**Short set for quick posts:** `#starlet #4age #toyota #cars`
+
+---
+
 ## Related Videos
 
 *No OIO videos published as of March 2026.*

@@ -123,6 +123,21 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 
 ---
 
+## Hashtag Reference
+
+Use these tags when posting about Dale. `#dalesdragon` is the consistent brand identifier for this car.
+
+| Purpose | Tags |
+|---|---|
+| Car identity | `#dalesdragon` `#celica` `#ra21` `#ta22` |
+| Engine | `#18rg` `#toyota` `#jdm` |
+| Events | `#lggpr` `#autocross` `#kcrscca` |
+| Broad catch-all | `#cars` |
+
+**Short set for quick posts:** `#dalesdragon #ra21 #18rg #celica #cars`
+
+---
+
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)

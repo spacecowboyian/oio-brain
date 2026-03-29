@@ -169,6 +169,21 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 ---
 
+## Hashtag Reference
+
+Use these tags when posting about Fitty Cent. `#fitgang` is the community identifier — always include it.
+
+| Purpose | Tags |
+|---|---|
+| Car identity | `#hondafit` `#fitgang` `#ge8` `#fitisgo` |
+| Multi-car content | `#fitoff` `#fit4track` |
+| Discipline | `#rallycross` `#autocross` `#scca` |
+| Broad catch-all | `#cars` |
+
+**Short set for quick posts:** `#hondafit #fitgang #ge8 #cars`
+
+---
+
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)

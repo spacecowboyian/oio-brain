@@ -111,6 +111,21 @@ Ryan began running the MGB GT at KCRSCCA rallycross in 2024, in class MR (Mid-si
 
 ---
 
+## Hashtag Reference
+
+Use these tags when posting about the MGB GT. `#mgbgts` is the consistent brand identifier for this car.
+
+| Purpose | Tags |
+|---|---|
+| Car identity | `#mgbgts` `#mgb` `#mg` |
+| Engine / drivetrain | `#toyota` `#4ac` |
+| Discipline | `#rallycross` `#cars` |
+| Events | `#lggpr` `#vintageracing` |
+
+**Short set for quick posts:** `#mgbgts #mg #toyota #rallycross #cars`
+
+---
+
 ## Related Videos
 
 | Date | Title | Views | Format |

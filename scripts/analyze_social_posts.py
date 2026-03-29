@@ -5,6 +5,12 @@ OIO Racing - Social Posts Analyzer
 Reads all social media posts from OIO Brain/data/social-posts/
 and updates brain documents in-place:
 
+  VOICE DOC: injects a live stats appendix into the hand-authored guide
+    OIO Brain/01 - Brand/Social-Post-Voice.md
+    The guide content (tone, rules, patterns, CTAs) is hand-authored and
+    preserved. Only the <!-- social-voice-stats:start/end --> block is
+    regenerated. Do not hand-edit that block.
+
   PER-CAR: injects a ## Social Post Arc block into each car's Overview.md
     OIO Brain/03 - Cars/Ian/1985 MR2/Overview.md           ← Goblin
     OIO Brain/03 - Cars/Ian/2009 Honda Fit/Overview.md     ← Fitty Cent
@@ -20,14 +26,12 @@ and updates brain documents in-place:
     multiple drivers/cars (e.g. the 2026 MR class season campaign)
     OIO Brain/02 - Content/Season-Story-Arcs.md
 
-  BRAND: regenerates the social voice reference doc
-    OIO Brain/01 - Brand/Social-Post-Voice.md
+All injected blocks are wrapped in per-key HTML comment markers so they
+can be safely replaced on every run without touching any other content.
 
-All injected blocks are wrapped in HTML comment markers:
-  <!-- social-arc:start -->
-  <!-- social-arc:end -->
-so they can be safely replaced on every run without touching
-the rest of the hand-maintained file content.
+  Car blocks:   <!-- social-arc:{car-slug}:start/end -->
+  Driver blocks: <!-- social-arc:{driver}:start/end -->
+  Voice stats:  <!-- social-voice-stats:start/end -->
 
 Usage:
   python scripts/analyze_social_posts.py
@@ -103,43 +107,56 @@ POST_TYPE_PATTERNS = {
     "video_tease": [
         r"link in the comments", r"new video", r"latest video",
         r"find the.*video", r"join us.*for", r"youtu\.be",
-        r"subscribe.*stay tuned",
+        r"subscribe.*stay tuned", r"video is up", r"go watch",
+        r"come see", r"let's jump in",
     ],
     "build_update": [
         r"getting ready", r"coming apart", r"stripping paint",
         r"body.*filler", r"bodywork", r"metal work", r"patch panel",
-        r"sanding", r"steering rack", r"tire", r"loaded up",
+        r"sanding", r"steering rack", r"loaded up",
         r"off to.*camp", r"fabrication", r"swap",
+        r"bring.*back to life", r"reviv", r"rebuild",
+        r"pointed it at the dirt", r"making hay",
     ],
     "event_recap": [
         r"rallycross", r"scca", r"ran.*this weekend", r"racing action",
         r"fastest run", r"class win", r"heat.*2", r"corner captain",
-        r"novice",
+        r"novice", r"cones were harmed", r"chaos won",
+        r"fastest.*time.*day", r"ftd",
     ],
     "event_hype": [
         r"race day", r"ready.*race", r"is ready", r"tune in",
         r"stay tuned.*racing", r"incoming.*race", r"racing.*incoming",
         r"race.*season.*incoming", r"battle.*supremacy",
+        r"prepared to rip", r"pointed.*at the dirt",
     ],
     "trash_talk": [
         r"trash talk", r"smack talk", r"taunting", r"handbag",
         r"world.*slowest", r"there ain.*a miata", r"best an.*mr2",
-        r"got.*edge.*battle",
+        r"got.*edge.*battle", r"move over.*miata",
+        r"battle for.*supremacy", r"got the edge",
     ],
     "farewell_milestone": [
         r"farewell", r"r\.i\.p\.", r"served well", r"great strip",
         r"merry christmas", r"happy.*day", r"new meat day",
-        r"celebrate", r"oldie.*goodie",
+        r"celebrate", r"oldie.*goodie", r"a life well lived",
+        r"off he goes", r"that'll do",
     ],
     "community_celebration": [
         r"damn good times", r"love what you do", r"real glad.*team",
         r"welcome back", r"tear.*eye", r"true love",
-        r"congregation",
+        r"congregation", r"our hudson", r"errbody",
+        r"real fast folks",
     ],
     "acquisition": [
         r"followed us home", r"mystery.*is coming apart",
         r"junkyard find", r"added to the display",
-        r"off he goes.*great strip",
+        r"off he goes.*great strip", r"another one",
+    ],
+    "enthusiast_take": [
+        r"move over.*miata", r"miata.*wrong answer",
+        r"not a trailer queen", r"underdog",
+        r"grassroots", r"fit vs", r"fit.*battle",
     ],
 }
 
@@ -147,25 +164,34 @@ TONE_MARKERS = {
     "self_deprecating": [
         r"ian.*butt.*joke", r"ian.*wrong", r"ian.*wishes",
         r"ian.*handbag", r"ian.*bedazzled", r"ian.*last legs",
-        r"if.*we can keep it powered",
+        r"if.*we can keep it powered", r"ian.*underdog",
+        r"ian.*doesn.*t have",
     ],
     "absurdist_humor": [
         r"cones were harmed", r"accusations were made",
         r"witchcraft was suspected", r"riding a tiny lawnmower",
         r"smack talk continues", r"cowboy hudson",
         r"church of combustion", r"prophecy in steel",
-        r"congregation",
+        r"congregation", r"chaos won", r"sermon",
+        r"church adjourned",
     ],
     "storytelling": [
         r"this is only the beginning", r"born.*again",
         r"died.*reborn", r"living legend.*tested",
         r"a life well lived", r"served well",
-        r"destined to slide",
+        r"destined to slide", r"it was only a matter of time",
+        r"this one came back", r"resurrection",
+        r"more to come",
     ],
     "community_voice": [
         r"real fast folks", r"our team", r"our hudson",
         r"the congregation", r"errbody",
-        r"fitgang",
+        r"fitgang", r"no better way",
+    ],
+    "pit_talk_casual": [
+        r"this thing", r"we're out here", r"car is ready",
+        r"car broke", r"this thing rules", r"it lived",
+        r"that'll do", r"approved",
     ],
 }
 
@@ -631,102 +657,34 @@ def inject_driver_block_into_bios(driver: str, new_block: str) -> bool:
     return True
 
 # ---------------------------------------------------------------------------
-# Generate Social-Post-Voice.md
+# Social-Post-Voice.md — inject stats appendix only
+# The guide content is hand-authored (source_of_truth: true).
+# We inject a live stats block at the bottom using markers.
 # ---------------------------------------------------------------------------
-def generate_voice_doc(posts: list[Post]) -> str:
+VOICE_STATS_START = "<!-- social-voice-stats:start -->"
+VOICE_STATS_END   = "<!-- social-voice-stats:end -->"
+
+
+def build_voice_stats_block(posts: list[Post]) -> str:
+    """Build the auto-generated stats appendix for Social-Post-Voice.md."""
     total = len(posts)
     fb_posts = [p for p in posts if p.platform == "facebook"]
     ig_posts = [p for p in posts if p.platform == "instagram"]
 
-    type_counts  = count_occurrences(posts, "post_types")
-    tone_counts  = count_occurrences(posts, "tone_tags")
+    type_counts    = count_occurrences(posts, "post_types")
+    tone_counts    = count_occurrences(posts, "tone_tags")
     hashtag_counts = count_hashtags(posts)
-    top_hashtags = list(hashtag_counts.items())[:25]
+    top_hashtags   = list(hashtag_counts.items())[:25]
 
     def examples(ptype, n=3):
         return posts_for_type(posts, ptype)[:n]
 
-    punchy      = [p for p in posts if "punchy_short" in p.tone_tags]
+    punchy       = [p for p in posts if "punchy_short" in p.tone_tags]
     storytelling = [p for p in posts if "storytelling" in p.tone_tags]
 
-    dated = [p for p in posts if p.date]
+    dated      = [p for p in posts if p.date]
     first_date = min(p.date for p in dated).isoformat() if dated else "unknown"
     last_date  = max(p.date for p in dated).isoformat() if dated else "unknown"
-
-    lines = [
-        "---",
-        "title: OIO Social Post Voice",
-        "type: reference",
-        "status: active",
-        "owner: Ian Jennings",
-        f"updated: {TODAY}",
-        "tags: [brand, voice, social, marketing, auto-generated]",
-        "source_of_truth: false",
-        "summary: Marketing voice and tone as demonstrated by real published OIO social posts.",
-        "  Includes tone patterns, post-type taxonomy, real examples, and hashtag strategy.",
-        "  Auto-generated by scripts/analyze_social_posts.py — do not hand-edit.",
-        "---",
-        "",
-        "# OIO Social Post Voice",
-        "",
-        "> Derived from real published posts. Use this as the reference for writing new social",
-        "> content that sounds and feels like OIO.",
-        ">",
-        f"> Auto-generated {TODAY} from {total} posts",
-        f"> ({len(fb_posts)} Facebook, {len(ig_posts)} Instagram)",
-        f"> covering {first_date} → {last_date}.",
-        "> Do not hand-edit — regenerated on every social post ingestion run.",
-        "",
-        "---",
-        "",
-        "## The OIO Social Voice in One Sentence",
-        "",
-        "Short, punchy, often self-deprecating, always genuine — written by someone who",
-        "would rather be wrenching than posting, and you can tell.",
-        "",
-        "---",
-        "",
-        "## Tone Patterns Found in Published Posts",
-        "",
-        "| Tone | Posts | What It Looks Like |",
-        "|---|---|---|",
-        f"| **Punchy / Short** | {tone_counts.get('punchy_short', 0)} | Single line. Sometimes one word. 'Approved.' / 'Taunting continues' |",
-        f"| **Hashtag-Heavy** | {tone_counts.get('hashtag_heavy', 0)} | 3+ hashtags. Post itself is brief; hashtags carry the metadata |",
-        f"| **Absurdist Humor** | {tone_counts.get('absurdist_humor', 0)} | Committed bit. Treats a lawnmower video as legitimate trash-talk |",
-        f"| **Storytelling** | {tone_counts.get('storytelling', 0)} | Multi-sentence arc: setup, conflict, payoff implied |",
-        f"| **Community Voice** | {tone_counts.get('community_voice', 0)} | 'Our Hudson', 'our team', 'errbody in the pool' |",
-        f"| **Self-Deprecating** | {tone_counts.get('self_deprecating', 0)} | Ian is wrong, underpowered, or bedazzled |",
-        "",
-        "---",
-        "",
-        "## Post-Type Taxonomy",
-        "",
-        "| Type | Count | Description |",
-        "|---|---|---|",
-    ]
-
-    type_descriptions = {
-        "video_tease":            "Link in the comments. Hook + one-line tease. Pull, don't push.",
-        "build_update":           "Progress checkpoint. Photo + caption. Shows the work without over-explaining.",
-        "event_recap":            "Race day results. Names, cars, outcomes. Tone: celebratory or rueful.",
-        "event_hype":             "Pre-race hype. Sets expectations up or down. Often includes trash talk.",
-        "trash_talk":             "Playful smack talk between Ian, Ryan, and the audience. Never mean.",
-        "farewell_milestone":     "Departure of cars or places. Respectful, brief, sometimes funny.",
-        "community_celebration":  "Highlights an achievement. Always about someone else, not OIO.",
-        "acquisition":            "A car arrived. Usually understated. Let the car do the talking.",
-    }
-
-    for ptype, desc in type_descriptions.items():
-        count = type_counts.get(ptype, 0)
-        lines.append(f"| **{ptype.replace('_', ' ').title()}** | {count} | {desc} |")
-
-    lines += [
-        "",
-        "---",
-        "",
-        "## Real Post Examples by Type",
-        "",
-    ]
 
     def section(heading, example_posts, note=""):
         out = [f"### {heading}", ""]
@@ -740,6 +698,59 @@ def generate_voice_doc(posts: list[Post]) -> str:
             out.append("")
         return out
 
+    lines = [
+        VOICE_STATS_START,
+        "",
+        "## Live Post Stats Appendix",
+        "",
+        f"*Auto-generated {TODAY} from {total} posts "
+        f"({len(fb_posts)} Facebook, {len(ig_posts)} Instagram) "
+        f"covering {first_date} → {last_date}. "
+        "Updated on every social post ingestion run — do not hand-edit this section.*",
+        "",
+        "---",
+        "",
+        "### Tone Patterns Observed",
+        "",
+        "| Tone | Posts | What It Looks Like |",
+        "|---|---|---|",
+        f"| Pit-Talk Casual | {tone_counts.get('pit_talk_casual', 0)} | Short, direct, 1–3 sentences — 'this thing rules' |",
+        f"| Punchy / Short | {tone_counts.get('punchy_short', 0)} | Single line. Sometimes one word. 'Approved.' |",
+        f"| Hashtag-Heavy | {tone_counts.get('hashtag_heavy', 0)} | 3+ hashtags; copy is minimal |",
+        f"| Absurdist Humor | {tone_counts.get('absurdist_humor', 0)} | Committed bit — lawnmower as valid trash-talk |",
+        f"| Storytelling / Sermon | {tone_counts.get('storytelling', 0)} | Multi-sentence arc: setup, conflict, payoff implied |",
+        f"| Community Voice | {tone_counts.get('community_voice', 0)} | 'Our Hudson', 'errbody in the pool' |",
+        f"| Self-Deprecating | {tone_counts.get('self_deprecating', 0)} | Ian is wrong, underpowered, or bedazzled |",
+        "",
+        "---",
+        "",
+        "### Post-Type Counts",
+        "",
+        "| Type | Count |",
+        "|---|---|",
+    ]
+
+    type_labels = {
+        "video_tease":          "Video Tease",
+        "build_update":         "Build Update",
+        "event_recap":          "Event Recap",
+        "event_hype":           "Event Hype",
+        "trash_talk":           "Trash Talk",
+        "enthusiast_take":      "Enthusiast Take",
+        "farewell_milestone":   "Farewell / Milestone",
+        "community_celebration":"Community Celebration",
+        "acquisition":          "Acquisition",
+    }
+    for key, label in type_labels.items():
+        lines.append(f"| {label} | {type_counts.get(key, 0)} |")
+
+    lines += [
+        "",
+        "---",
+        "",
+        "### Post Examples by Type",
+        "",
+    ]
     lines += section("Video Tease", examples("video_tease"),
                      "Short hook, 'link in the comments' closer, never explains too much.")
     lines += section("Build Update", examples("build_update"),
@@ -749,19 +760,21 @@ def generate_voice_doc(posts: list[Post]) -> str:
                      "Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.")
     lines += section("Event Recap", examples("event_recap"),
                      "Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.")
+    lines += section("Enthusiast Take", examples("enthusiast_take"),
+                     "Strong opinion. Insider-friendly. Should feel quotable.")
     lines += section("Farewell / Milestone", examples("farewell_milestone"),
                      "Cars leave. Places close. People move on. One or two lines, genuine.")
     lines += section("Punchy Single-Line Posts", punchy[:4],
                      "The shortest format. One idea. Sometimes one word. Fully intentional.")
     lines += section("Storytelling / Sermon Mode", storytelling[:3],
-                     "Multi-line. Usually connected to a video. Church-of-Combustion energy.")
+                     "Multi-line. Church-of-Combustion energy.")
 
     lines += [
         "---",
         "",
-        "## Hashtag Strategy",
+        "### Observed Hashtag Frequency",
         "",
-        f"Observed across {total} posts. Top hashtags by frequency:",
+        f"Top {len(top_hashtags)} hashtags across {total} posts:",
         "",
         "| Hashtag | Uses |",
         "|---|---|",
@@ -769,33 +782,42 @@ def generate_voice_doc(posts: list[Post]) -> str:
     for tag, cnt in top_hashtags:
         lines.append(f"| #{tag} | {cnt} |")
 
-    lines += [
-        "",
-        "**Patterns:**",
-        "- Car-specific hashtags anchor every build post (`#goblinmr2`, `#mgbgts`, `#fitgang`)",
-        "- `#cars` is the broad catch-all — almost always present",
-        "- `#rallycross` and `#sccarallycross` used specifically for events, not casually",
-        "- `#aw11` and `#mr2` co-tag; both used together when the Goblin appears",
-        "- Branded hashtags (`#oioracing`) appear in multi-post series or sponsored content",
-        "",
-        "---",
-        "",
-        "## Writing Rules Derived from Real Posts",
-        "",
-        "1. **Short beats long.** More than 3 sentences is the exception, not the rule.",
-        "2. **Ian is always the underdog.** Never the hero. The cars humble him.",
-        "3. **Name the car.** Every post where a car appears uses its nickname or hashtag.",
-        "4. **Don't explain the joke.** 'Taunting continues' needs no context.",
-        "5. **Hashtags at the end, not inline.** Copy runs clean, hashtags close it out.",
-        "6. **'Link in the comments' is the standard tease format.** Never paste a raw YouTube URL inline.",
-        "7. **Teammates get credit.** Posts about Ryan or Richard always name them.",
-        "8. **Community events feel communal.** 'Our Hudson', 'our team', 'errbody in the pool'.",
-        "9. **Milestones are acknowledged briefly.** No overwrought farewell essays.",
-        "10. **Absurdity is deployed with full commitment.** A lawnmower video IS a valid trash-talk response.",
-        "",
-    ]
-
+    lines += ["", VOICE_STATS_END]
     return "\n".join(lines)
+
+
+def update_voice_doc(posts: list[Post]) -> bool:
+    """
+    Inject the stats appendix into Social-Post-Voice.md via markers.
+    The hand-authored guide content is never touched.
+    Returns True if the file changed.
+    """
+    if not os.path.isfile(VOICE_DOC):
+        print(f"  Voice doc not found, skipping stats injection: {VOICE_DOC}")
+        return False
+
+    with open(VOICE_DOC, encoding="utf-8") as f:
+        content = f.read()
+
+    original = content
+    new_block = build_voice_stats_block(posts)
+
+    pattern = re.compile(
+        re.escape(VOICE_STATS_START) + r".*?" + re.escape(VOICE_STATS_END),
+        re.DOTALL,
+    )
+    if pattern.search(content):
+        content = pattern.sub(new_block, content)
+    else:
+        # Append at end if markers aren't present yet
+        content = content.rstrip("\n") + "\n\n" + new_block + "\n"
+
+    if content == original:
+        return False
+
+    with open(VOICE_DOC, "w", encoding="utf-8") as f:
+        f.write(content)
+    return True
 
 
 # ---------------------------------------------------------------------------
@@ -924,12 +946,11 @@ def main():
         print("  No posts found — skipping.")
         return
 
-    # 1. Update voice doc (standalone regenerated file)
-    print(f"  Generating {VOICE_DOC} ...")
+    # 1. Update voice doc — inject stats appendix only (guide content is hand-authored)
+    print(f"  Updating {VOICE_DOC} stats appendix ...")
     os.makedirs(BRAND_DIR, exist_ok=True)
-    with open(VOICE_DOC, "w", encoding="utf-8") as f:
-        f.write(generate_voice_doc(posts) + "\n")
-    print("  Done.")
+    changed = update_voice_doc(posts)
+    print(f"  {'Updated' if changed else 'Unchanged'}.")
 
     # 2. Update season arcs doc (standalone regenerated file)
     print(f"\n  Generating {SEASON_DOC} ...")

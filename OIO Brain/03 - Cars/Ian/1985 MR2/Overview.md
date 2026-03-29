@@ -193,6 +193,21 @@ The Goblin's 2026 narrative has shifted from "rebuild in progress" to a document
 
 ---
 
+## Hashtag Reference
+
+Use these tags when posting about the Goblin. Lead with car-specific tags; `#cars` is the catch-all closer.
+
+| Purpose | Tags |
+|---|---|
+| Car identity | `#aw11` `#mr2` `#goblinmr2` `#rxaw11` |
+| Engine / drivetrain | `#4age` `#4agze` `#toyota` |
+| Discipline | `#rallycross` `#sccarallycross` |
+| Broad catch-all | `#cars` |
+
+**Short set for quick posts:** `#goblinmr2 #aw11 #mr2 #rallycross #cars`
+
+---
+
 ## Related Content
 
 → [Setup Notes](Setup-Notes.md)
