@@ -3,42 +3,61 @@
 OIO Racing - Social Posts Analyzer
 
 Reads all social media posts from OIO Brain/data/social-posts/
-and generates two brain documents:
+and updates brain documents in-place:
 
-  OIO Brain/01 - Brand/Social-Post-Voice.md
-    → Marketing voice and tone as demonstrated by real published posts.
-      Includes tone patterns, post-type taxonomy, real example posts,
-      hashtag strategy, and cadence observations.
+  PER-CAR: injects a ## Social Post Arc block into each car's Overview.md
+    OIO Brain/03 - Cars/Ian/1985 MR2/Overview.md           ← Goblin
+    OIO Brain/03 - Cars/Ian/2009 Honda Fit/Overview.md     ← Fitty Cent
+    OIO Brain/03 - Cars/Ian/1972 Celica/Overview.md        ← Dale
+    OIO Brain/03 - Cars/Ryan/1973 MGB GT/Overview.md       ← MGBGT
+    OIO Brain/03 - Cars/Richard/ST205/Overview.md          ← ST205
+    OIO Brain/03 - Cars/Richard/1983 Starlet/Overview.md   ← Starlet
 
-  OIO Brain/02 - Content/Car-and-Driver-Story-Arcs.md
-    → Chronological story arcs for each car and driver as told through
-      social posts. Updated whenever new posts are ingested.
+  PER-DRIVER: injects a ### Social Post Arc block into Team-Bios.md
+    under each driver's section (Ian, Ryan, Richard, Hudson, Miles)
+
+  CROSS-CUTTING: regenerates one aggregate doc for arcs that span
+    multiple drivers/cars (e.g. the 2026 MR class season campaign)
+    OIO Brain/02 - Content/Season-Story-Arcs.md
+
+  BRAND: regenerates the social voice reference doc
+    OIO Brain/01 - Brand/Social-Post-Voice.md
+
+All injected blocks are wrapped in HTML comment markers:
+  <!-- social-arc:start -->
+  <!-- social-arc:end -->
+so they can be safely replaced on every run without touching
+the rest of the hand-maintained file content.
 
 Usage:
   python scripts/analyze_social_posts.py
 
-This script is called automatically by fetch-social-posts.yml after
-new posts are committed.  It is safe to run at any time — it always
-regenerates the docs from the full corpus.
+Called automatically by fetch-social-posts.yml after ingestion.
+Safe to run at any time — always regenerates from the full corpus.
 """
 
 import os
 import re
 from collections import defaultdict
-from datetime import datetime, date
+from datetime import date
 
 # ---------------------------------------------------------------------------
-# Paths (relative to repo root)
+# Paths
 # ---------------------------------------------------------------------------
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SOCIAL_DIR = os.path.join(REPO_ROOT, "OIO Brain", "data", "social-posts")
-BRAND_DIR  = os.path.join(REPO_ROOT, "OIO Brain", "01 - Brand")
+REPO_ROOT   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SOCIAL_DIR  = os.path.join(REPO_ROOT, "OIO Brain", "data", "social-posts")
+BRAND_DIR   = os.path.join(REPO_ROOT, "OIO Brain", "01 - Brand")
 CONTENT_DIR = os.path.join(REPO_ROOT, "OIO Brain", "02 - Content")
+CARS_DIR    = os.path.join(REPO_ROOT, "OIO Brain", "03 - Cars")
 
-VOICE_DOC  = os.path.join(BRAND_DIR, "Social-Post-Voice.md")
-ARCS_DOC   = os.path.join(CONTENT_DIR, "Car-and-Driver-Story-Arcs.md")
+VOICE_DOC   = os.path.join(BRAND_DIR, "Social-Post-Voice.md")
+SEASON_DOC  = os.path.join(CONTENT_DIR, "Season-Story-Arcs.md")
+TEAM_BIOS   = os.path.join(BRAND_DIR, "Team-Bios.md")
 
 TODAY = date.today().isoformat()
+
+ARC_START = "<!-- social-arc:{driver}:start -->"
+ARC_END   = "<!-- social-arc:{driver}:end -->"
 
 # ---------------------------------------------------------------------------
 # Car / driver keyword maps
@@ -69,30 +88,15 @@ CAR_PATTERNS = {
     "Starlet": [
         r"\bstarlet\b", r"4age.*starlet", r"starlet.*4age",
     ],
-    "Corolla (Domination)": [
-        r"domination.*corolla", r"corolla.*dominat",
-    ],
 }
 
 DRIVER_PATTERNS = {
-    "Ian": [
-        r"\bIan\b", r"\bIan's\b", r"\bIan here\b",
-    ],
-    "Ryan": [
-        r"\bRyan\b", r"\bRyan's\b",
-    ],
-    "Richard": [
-        r"\bRichard\b",
-    ],
-    "Hudson": [
-        r"\bHudson\b",
-    ],
-    "Miles": [
-        r"\bMiles\b",
-    ],
-    "Keegan": [
-        r"\bKeegan\b",
-    ],
+    "Ian":     [r"\bIan\b", r"\bIan's\b", r"\bIan here\b"],
+    "Ryan":    [r"\bRyan\b", r"\bRyan's\b"],
+    "Richard": [r"\bRichard\b"],
+    "Hudson":  [r"\bHudson\b"],
+    "Miles":   [r"\bMiles\b"],
+    "Keegan":  [r"\bKeegan\b"],
 }
 
 POST_TYPE_PATTERNS = {
@@ -152,8 +156,6 @@ TONE_MARKERS = {
         r"church of combustion", r"prophecy in steel",
         r"congregation",
     ],
-    "punchy_short": [],  # detected by word count < 10
-    "hashtag_heavy": [],  # detected by hashtag count >= 3
     "storytelling": [
         r"this is only the beginning", r"born.*again",
         r"died.*reborn", r"living legend.*tested",
@@ -169,6 +171,27 @@ TONE_MARKERS = {
 
 HASHTAG_RE = re.compile(r"#(\w+)")
 
+# ---------------------------------------------------------------------------
+# Car → Overview.md file paths
+# ---------------------------------------------------------------------------
+CAR_OVERVIEW_PATHS = {
+    "Goblin (MR2)":           os.path.join(CARS_DIR, "Ian",     "1985 MR2",      "Overview.md"),
+    "Honda Fit / Fitty Cent": os.path.join(CARS_DIR, "Ian",     "2009 Honda Fit","Overview.md"),
+    "Dale (Celica)":          os.path.join(CARS_DIR, "Ian",     "1972 Celica",   "Overview.md"),
+    "MGB GT":                 os.path.join(CARS_DIR, "Ryan",    "1973 MGB GT",   "Overview.md"),
+    "Richard's ST205":        os.path.join(CARS_DIR, "Richard", "ST205",         "Overview.md"),
+    "Starlet":                os.path.join(CARS_DIR, "Richard", "1983 Starlet",  "Overview.md"),
+}
+
+# Driver → anchor heading used in Team-Bios.md to locate their section
+DRIVER_BIO_ANCHORS = {
+    "Ian":     "## IAN JENNINGS",
+    "Ryan":    "## RYAN REDENBAUGH",
+    "Richard": "## RICHARD THOMPSON",
+    "Hudson":  "## THE KIDS",
+    "Miles":   "### MILES SMITH",
+    "Keegan":  "## KEEGAN WILHELM",
+}
 
 # ---------------------------------------------------------------------------
 # Post data model
@@ -192,12 +215,10 @@ class Post:
         with open(self.filepath, encoding="utf-8") as f:
             raw = f.read()
 
-        # Strip frontmatter
         if raw.startswith("---"):
             end = raw.find("---", 3)
             fm = raw[3:end]
             body = raw[end + 3:].strip()
-            # Extract date from frontmatter
             m = re.search(r"^date:\s*(.+)$", fm, re.MULTILINE)
             if m:
                 self.date_str = m.group(1).strip().split("T")[0]
@@ -227,25 +248,19 @@ class Post:
             if any(re.search(p, text_lower) for p in patterns):
                 self.post_types.append(ptype)
 
-        # Punchy: fewer than 12 words and no hashtags or <=2 hashtags
         word_count = len(self.text.split())
         if word_count < 12:
             self.tone_tags.append("punchy_short")
-
-        # Hashtag-heavy
         if len(self.hashtags) >= 3:
             self.tone_tags.append("hashtag_heavy")
 
         for tone, patterns in TONE_MARKERS.items():
-            if tone in ("punchy_short", "hashtag_heavy"):
-                continue
             if any(re.search(p, text_lower) for p in patterns):
                 if tone not in self.tone_tags:
                     self.tone_tags.append(tone)
 
-
 # ---------------------------------------------------------------------------
-# Load all posts
+# Load posts
 # ---------------------------------------------------------------------------
 def load_posts() -> list[Post]:
     posts: list[Post] = []
@@ -256,53 +271,360 @@ def load_posts() -> list[Post]:
         for fname in sorted(os.listdir(folder)):
             if fname.endswith(".md") and fname != ".gitkeep":
                 try:
-                    p = Post(os.path.join(folder, fname))
-                    posts.append(p)
+                    posts.append(Post(os.path.join(folder, fname)))
                 except Exception as e:
                     print(f"  Warning: could not parse {fname}: {e}")
     posts.sort(key=lambda p: p.date or date.min)
     return posts
 
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
+def posts_for_car(posts, car):
+    return [p for p in posts if car in p.car_mentions]
 
-# ---------------------------------------------------------------------------
-# Aggregate helpers
-# ---------------------------------------------------------------------------
-def count_occurrences(posts: list[Post], attr: str) -> dict[str, int]:
-    counts: dict[str, int] = defaultdict(int)
+def posts_for_driver(posts, driver):
+    return [p for p in posts if driver in p.driver_mentions]
+
+def posts_for_type(posts, ptype):
+    return [p for p in posts if ptype in p.post_types]
+
+def count_occurrences(posts, attr):
+    counts = defaultdict(int)
     for p in posts:
         for val in getattr(p, attr):
             counts[val] += 1
     return dict(sorted(counts.items(), key=lambda x: x[1], reverse=True))
 
-
-def count_hashtags(posts: list[Post]) -> dict[str, int]:
-    counts: dict[str, int] = defaultdict(int)
+def count_hashtags(posts):
+    counts = defaultdict(int)
     for p in posts:
         for tag in p.hashtags:
             counts[tag] += 1
     return dict(sorted(counts.items(), key=lambda x: x[1], reverse=True))
 
-
-def posts_for_car(posts: list[Post], car: str) -> list[Post]:
-    return [p for p in posts if car in p.car_mentions]
-
-
-def posts_for_driver(posts: list[Post], driver: str) -> list[Post]:
-    return [p for p in posts if driver in p.driver_mentions]
-
-
-def posts_for_type(posts: list[Post], ptype: str) -> list[Post]:
-    return [p for p in posts if ptype in p.post_types]
-
-
-def excerpt(text: str, max_len: int = 120) -> str:
+def excerpt(text, max_len=120):
     text = text.replace("\n", " ").strip()
     return text if len(text) <= max_len else text[:max_len].rstrip() + "…"
 
-
-def post_line(p: Post) -> str:
+def post_line(p):
     return f"- **{p.date_str}** — {excerpt(p.text)}"
 
+def pluralize(n, word):
+    return f"{n} {word}" if n == 1 else f"{n} {word}s"
+
+# ---------------------------------------------------------------------------
+# Arc bullet extractors (per car)
+# ---------------------------------------------------------------------------
+def arc_goblin(car_posts):
+    arc = []
+    if any(re.search(r"revival|bring back to life", p.text, re.I) for p in car_posts):
+        arc.append("**Revival arc begins** — pulled from storage, brought back before the hard freeze (Nov 2025)")
+    if any(re.search(r"new.*tires?|new meat", p.text, re.I) for p in car_posts):
+        arc.append("**New rubber** — fresh tires arrive ahead of race season (Mar 2026)")
+    if any(re.search(r"steering rack|quick rack|making hay", p.text, re.I) for p in car_posts):
+        arc.append("**Suspension work** — quick rack installed and other prep (Feb–Mar 2026)")
+    if any(re.search(r"is ready|bonesaw", p.text, re.I) for p in car_posts):
+        arc.append("**Race-ready declaration** — 'BONESAW… er.. the Goblin is READY!' (Mar 22, 2026)")
+    if any(re.search(r"cylinder four|cylinder 4|tear it down", p.text, re.I) for p in car_posts):
+        arc.append("**Engine failure confirmed** — cylinder 4 dead post-event; rebuild begins (Mar 28, 2026)")
+    return arc
+
+def arc_mgb(car_posts):
+    arc = []
+    if any(re.search(r"mystery|18rg", p.text, re.I) for p in car_posts):
+        arc.append("**Mystery acquisition teardown** — 'The mystery18rg is coming apart' (Dec 2025)")
+    if any(re.search(r"getting ready|racing this weekend", p.text, re.I) for p in car_posts):
+        arc.append("**Race debut** — Ryan gets the MGBGT ready for its first event (Dec 2025)")
+    if any(re.search(r"better and better", p.text, re.I) for p in car_posts):
+        arc.append("**Growing confidence** — 'This thing just gets better and better' (Dec 2025)")
+    if any(re.search(r"strip|bodywork|sanding|patch panel|body filler", p.text, re.I) for p in car_posts):
+        arc.append("**Full bodywork campaign** — bare metal → patch panel → body filler → orange paint incoming (Feb–Mar 2026)")
+    if any(re.search(r"inches ever closer", p.text, re.I) for p in car_posts):
+        arc.append("**Season approaching** — 'MGBGTS inches ever closer' (Mar 2026)")
+    return arc
+
+def arc_fit(car_posts):
+    arc = []
+    if any(re.search(r"fit.?off|fit off", p.text, re.I) for p in car_posts):
+        arc.append("**Fit-Off series** — Honda Fits compete head-to-head in rally and autocross (Nov–Dec 2025)")
+    if any(re.search(r"christmas|sway bar", p.text, re.I) for p in car_posts):
+        arc.append("**Christmas gear** — rear sway bar gifted, ongoing upgrades (Dec 2025)")
+    if any(re.search(r"dws06|continental|new tires", p.text, re.I) for p in car_posts):
+        arc.append("**New Continental DWS06 tires** — Fitty Cent ready for summer duty (Mar 2026)")
+    if any(re.search(r"hudson", p.text, re.I) for p in car_posts):
+        arc.append("**Hudson behind the wheel** — fastest novice at KCRX E1 2026, faster than most non-novice (Mar 25, 2026)")
+    return arc
+
+def arc_dale(car_posts):
+    arc = []
+    if any(re.search(r"followed us home", p.text, re.I) for p in car_posts):
+        arc.append("**New Celica acquired** — 'Another 1st Gen Celica followed us home' (Dec 2025)")
+    if any(re.search(r"gary rod|fabrication", p.text, re.I) for p in car_posts):
+        arc.append("**Off to Gary Rod and Chassis** — loaded up for fabrication ahead of race season (Feb 2026)")
+    return arc
+
+def arc_st205(car_posts):
+    arc = []
+    if any(re.search(r"living legend|prophecy|rally beast|on boost", p.text, re.I) for p in car_posts):
+        arc.append("**Prophecy fulfilled** — ST205 revealed at a Church of Combustion event, dropped straight into the dirt (Dec 2025)")
+    return arc
+
+def arc_starlet(car_posts):
+    arc = []
+    if any(re.search(r"starlet|4age", p.text, re.I) for p in car_posts):
+        arc.append("**Future build teased** — 'Future Richard is calling. Time to get that 4age in the Starlet.' (Mar 2026)")
+    return arc
+
+CAR_ARC_FN = {
+    "Goblin (MR2)":           arc_goblin,
+    "Honda Fit / Fitty Cent": arc_fit,
+    "Dale (Celica)":          arc_dale,
+    "MGB GT":                 arc_mgb,
+    "Richard's ST205":        arc_st205,
+    "Starlet":                arc_starlet,
+}
+
+# ---------------------------------------------------------------------------
+# Driver arc extractors
+# ---------------------------------------------------------------------------
+def arc_driver_ian(driver_posts):
+    return [
+        "**Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)",
+        "**Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)",
+        "**Smack talk backfires** — challenges Ryan/Larry's Miata in MR class, Goblin dies anyway (Mar 2026)",
+        "**Dale to Gary Rod and Chassis** — sent for fabrication, building toward Lake Garnett (Feb 2026)",
+    ] if driver_posts else []
+
+def arc_driver_ryan(driver_posts):
+    return [
+        "**MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)",
+        "**Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)",
+    ] if driver_posts else []
+
+def arc_driver_hudson(driver_posts):
+    return [
+        "**Breakout** — fastest novice run all day at KCRX E1 2026, faster than most non-novice (Mar 25, 2026)",
+    ] if driver_posts else []
+
+def arc_driver_richard(driver_posts):
+    return [
+        "**ST205 reveal** — arrives at a Church of Combustion event with the ST205; publicly established as a real competitor (Dec 2025)",
+        "**Starlet 4A-GE telegraphed** — social post hints at next build project (Mar 2026)",
+    ] if driver_posts else []
+
+def arc_driver_miles(driver_posts):
+    return []  # Miles not yet mentioned in social posts by name
+
+def arc_driver_keegan(driver_posts):
+    return []
+
+DRIVER_ARC_FN = {
+    "Ian":     arc_driver_ian,
+    "Ryan":    arc_driver_ryan,
+    "Hudson":  arc_driver_hudson,
+    "Richard": arc_driver_richard,
+    "Miles":   arc_driver_miles,
+    "Keegan":  arc_driver_keegan,
+}
+
+# ---------------------------------------------------------------------------
+# File injection helpers
+# ---------------------------------------------------------------------------
+def _regen_note():
+    return (f"*Auto-generated {TODAY} from social posts "
+            f"by `scripts/analyze_social_posts.py`. Do not hand-edit.*")
+
+def _arc_markers(key: str) -> tuple[str, str]:
+    """Return (start_marker, end_marker) for a given car or driver key."""
+    slug = re.sub(r"[^a-z0-9]", "-", key.lower()).strip("-")
+    return f"<!-- social-arc:{slug}:start -->", f"<!-- social-arc:{slug}:end -->"
+
+
+def build_car_arc_block(car: str, car_posts: list[Post], arc_fn) -> str:
+    """Build the full <!-- social-arc:{car}:start/end --> block for a car's Overview.md."""
+    arc_bullets = arc_fn(car_posts)
+    recent = car_posts[-5:] if car_posts else []
+    start, end = _arc_markers(car)
+
+    lines = [
+        start,
+        "",
+        "## Social Post Arc",
+        "",
+        _regen_note(),
+        "",
+        f"**Posts mentioning this car:** {pluralize(len(car_posts), 'post')}",
+        "",
+    ]
+
+    if arc_bullets:
+        lines += ["**Story arc from social posts:**", ""]
+        for b in arc_bullets:
+            lines.append(f"- {b}")
+        lines.append("")
+
+    if recent:
+        lines += ["**Recent social posts:**", ""]
+        for p in recent:
+            lines.append(post_line(p))
+        lines.append("")
+
+    if not arc_bullets and not recent:
+        lines += ["*No social post arc data detected yet.*", ""]
+
+    lines += [end]
+    return "\n".join(lines)
+
+
+def build_driver_arc_block(driver: str, driver_posts: list[Post], arc_fn) -> str:
+    """Build the <!-- social-arc:{driver}:start/end --> block for a driver in Team-Bios.md."""
+    arc_bullets = arc_fn(driver_posts)
+    recent = driver_posts[-4:] if driver_posts else []
+    start, end = _arc_markers(driver)
+
+    lines = [
+        start,
+        "",
+        "### Social Post Arc",
+        "",
+        _regen_note(),
+        "",
+        f"**Social post mentions:** {pluralize(len(driver_posts), 'post')}",
+        "",
+    ]
+
+    if arc_bullets:
+        for b in arc_bullets:
+            lines.append(f"- {b}")
+        lines.append("")
+
+    if recent:
+        lines += ["**Recent posts:**", ""]
+        for p in recent:
+            lines.append(post_line(p))
+        lines.append("")
+
+    if not arc_bullets and not recent:
+        lines += ["*No social post arc data detected yet.*", ""]
+
+    lines += [end]
+    return "\n".join(lines)
+
+
+def inject_block_into_file(filepath: str, new_block: str, key: str,
+                           insert_before_pattern: str | None = None) -> bool:
+    """
+    Replace an existing <!-- social-arc:{key}:start/end --> block in filepath,
+    or insert new_block before insert_before_pattern if no block exists yet.
+
+    Returns True if the file changed.
+    """
+    if not os.path.isfile(filepath):
+        print(f"  Skipping (file not found): {filepath}")
+        return False
+
+    with open(filepath, encoding="utf-8") as f:
+        content = f.read()
+
+    original = content
+    start, end = _arc_markers(key)
+
+    # Replace existing keyed block
+    pattern = re.compile(
+        re.escape(start) + r".*?" + re.escape(end),
+        re.DOTALL,
+    )
+    if pattern.search(content):
+        content = pattern.sub(new_block, content)
+    else:
+        # Insert before the anchor pattern (e.g. "## Open Work" or "## Related Content")
+        if insert_before_pattern:
+            match = re.search(insert_before_pattern, content, re.MULTILINE)
+            if match:
+                pos = match.start()
+                content = content[:pos] + new_block + "\n\n---\n\n" + content[pos:]
+            else:
+                content = content.rstrip("\n") + "\n\n---\n\n" + new_block + "\n"
+        else:
+            content = content.rstrip("\n") + "\n\n---\n\n" + new_block + "\n"
+
+    if content == original:
+        return False
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(content)
+    return True
+
+
+def inject_driver_block_into_bios(driver: str, new_block: str) -> bool:
+    """
+    Inject or replace the social-arc block for a specific driver in Team-Bios.md.
+    Uses per-driver keyed markers so multiple drivers in the same file never conflict.
+    Finds the driver's anchor heading, then operates within that section only.
+    """
+    if not os.path.isfile(TEAM_BIOS):
+        print(f"  Skipping (Team-Bios.md not found): {TEAM_BIOS}")
+        return False
+
+    with open(TEAM_BIOS, encoding="utf-8") as f:
+        content = f.read()
+
+    original = content
+    anchor = DRIVER_BIO_ANCHORS.get(driver)
+    if not anchor:
+        return False
+
+    start, end = _arc_markers(driver)
+
+    # If the keyed block already exists anywhere in the file, replace it directly.
+    pattern = re.compile(re.escape(start) + r".*?" + re.escape(end), re.DOTALL)
+    if pattern.search(content):
+        content = pattern.sub(new_block, content)
+    else:
+        # Find the driver's anchor heading
+        anchor_match = re.search(re.escape(anchor), content)
+        if not anchor_match:
+            print(f"  Driver anchor not found for {driver}: '{anchor}'")
+            return False
+
+        # Find the section end: next heading of the same or higher level
+        anchor_level = anchor.count("#")
+        next_section_re = re.compile(
+            r"^#{1," + str(anchor_level) + r"} ",
+            re.MULTILINE,
+        )
+        section_start = anchor_match.start()
+        next_match = next_section_re.search(content, section_start + len(anchor))
+        section_end = next_match.start() if next_match else len(content)
+
+        driver_section = content[section_start:section_end]
+
+        # For Hudson specifically: insert before the ### MILES SMITH subsection
+        # so the two kids don't share the same injection zone.
+        if driver == "Hudson":
+            miles_match = re.search(r"^### MILES SMITH", driver_section, re.MULTILINE)
+            if miles_match:
+                insert_pos = section_start + miles_match.start()
+                content = (content[:insert_pos].rstrip("\n") +
+                           "\n\n" + new_block + "\n\n" +
+                           content[insert_pos:])
+            else:
+                content = (content[:section_end].rstrip("\n") +
+                           "\n\n" + new_block + "\n\n" +
+                           content[section_end:])
+        else:
+            # Append at end of the driver's section
+            content = (content[:section_end].rstrip("\n") +
+                       "\n\n" + new_block + "\n\n" +
+                       content[section_end:])
+
+    if content == original:
+        return False
+
+    with open(TEAM_BIOS, "w", encoding="utf-8") as f:
+        f.write(content)
+    return True
 
 # ---------------------------------------------------------------------------
 # Generate Social-Post-Voice.md
@@ -312,21 +634,17 @@ def generate_voice_doc(posts: list[Post]) -> str:
     fb_posts = [p for p in posts if p.platform == "facebook"]
     ig_posts = [p for p in posts if p.platform == "instagram"]
 
-    type_counts = count_occurrences(posts, "post_types")
-    tone_counts = count_occurrences(posts, "tone_tags")
+    type_counts  = count_occurrences(posts, "post_types")
+    tone_counts  = count_occurrences(posts, "tone_tags")
     hashtag_counts = count_hashtags(posts)
     top_hashtags = list(hashtag_counts.items())[:25]
 
-    # Pick representative examples per type
-    def examples(ptype: str, n: int = 3) -> list[Post]:
+    def examples(ptype, n=3):
         return posts_for_type(posts, ptype)[:n]
 
-    punchy = [p for p in posts if "punchy_short" in p.tone_tags]
-    absurdist = [p for p in posts if "absurdist_humor" in p.tone_tags]
+    punchy      = [p for p in posts if "punchy_short" in p.tone_tags]
     storytelling = [p for p in posts if "storytelling" in p.tone_tags]
-    community = [p for p in posts if "community_voice" in p.tone_tags]
 
-    # Date range
     dated = [p for p in posts if p.date]
     first_date = min(p.date for p in dated).isoformat() if dated else "unknown"
     last_date  = max(p.date for p in dated).isoformat() if dated else "unknown"
@@ -384,14 +702,14 @@ def generate_voice_doc(posts: list[Post]) -> str:
     ]
 
     type_descriptions = {
-        "video_tease": "Link in the comments. Hook + one-line tease. Pull, don't push.",
-        "build_update": "Progress checkpoint. Photo + caption. Shows the work without over-explaining.",
-        "event_recap": "Race day results. Names, cars, outcomes. Tone: celebratory or rueful.",
-        "event_hype": "Pre-race hype. Sets expectations up or down. Often includes trash talk.",
-        "trash_talk": "Playful smack talk between Ian, Ryan, and the audience. Never mean.",
-        "farewell_milestone": "Departure of cars or places. Respectful, brief, sometimes funny.",
-        "community_celebration": "Highlights an achievement. Always about someone else, not OIO.",
-        "acquisition": "A car arrived. Usually understated. Let the car do the talking.",
+        "video_tease":            "Link in the comments. Hook + one-line tease. Pull, don't push.",
+        "build_update":           "Progress checkpoint. Photo + caption. Shows the work without over-explaining.",
+        "event_recap":            "Race day results. Names, cars, outcomes. Tone: celebratory or rueful.",
+        "event_hype":             "Pre-race hype. Sets expectations up or down. Often includes trash talk.",
+        "trash_talk":             "Playful smack talk between Ian, Ryan, and the audience. Never mean.",
+        "farewell_milestone":     "Departure of cars or places. Respectful, brief, sometimes funny.",
+        "community_celebration":  "Highlights an achievement. Always about someone else, not OIO.",
+        "acquisition":            "A car arrived. Usually understated. Let the car do the talking.",
     }
 
     for ptype, desc in type_descriptions.items():
@@ -406,7 +724,7 @@ def generate_voice_doc(posts: list[Post]) -> str:
         "",
     ]
 
-    def section(heading: str, example_posts: list[Post], note: str = "") -> list[str]:
+    def section(heading, example_posts, note=""):
         out = [f"### {heading}", ""]
         if note:
             out += [f"*{note}*", ""]
@@ -477,261 +795,111 @@ def generate_voice_doc(posts: list[Post]) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Generate Car-and-Driver-Story-Arcs.md
+# Generate Season-Story-Arcs.md (cross-cutting arcs only)
 # ---------------------------------------------------------------------------
-def generate_arcs_doc(posts: list[Post]) -> str:
+def generate_season_arcs_doc(posts: list[Post]) -> str:
     total = len(posts)
     dated = [p for p in posts if p.date]
     first_date = min(p.date for p in dated).isoformat() if dated else "unknown"
     last_date  = max(p.date for p in dated).isoformat() if dated else "unknown"
 
-    def car_section(car: str, note: str, arc_bullets: list[str]) -> list[str]:
-        car_posts = posts_for_car(posts, car)
-        out = [
-            f"### {car}",
-            "",
-            f"*{note}*",
-            "",
-            f"**Social post mentions:** {len(car_posts)} {'post' if len(car_posts) == 1 else 'posts'}",
-            "",
-        ]
-        if arc_bullets:
-            out.append("**Story arc from social posts:**")
-            out.append("")
-            for b in arc_bullets:
-                out.append(f"- {b}")
-            out.append("")
-        if car_posts:
-            out.append("**Recent posts:**")
-            out.append("")
-            for p in car_posts[-5:]:
-                out.append(post_line(p))
-            out.append("")
-        return out
+    # MR class: posts that mention both an MR2 and at least one of Ian/Miles/Ryan
+    mr_posts = [
+        p for p in posts
+        if "Goblin (MR2)" in p.car_mentions
+        and any(d in p.driver_mentions for d in ("Ian", "Ryan", "Miles"))
+    ]
 
-    def driver_section(driver: str, note: str, arc_bullets: list[str]) -> list[str]:
-        driver_posts = posts_for_driver(posts, driver)
-        out = [
-            f"### {driver}",
-            "",
-            f"*{note}*",
-            "",
-            f"**Social post mentions:** {len(driver_posts)} {'post' if len(driver_posts) == 1 else 'posts'}",
-            "",
-        ]
-        if arc_bullets:
-            out.append("**Story arc from social posts:**")
-            out.append("")
-            for b in arc_bullets:
-                out.append(f"- {b}")
-            out.append("")
-        if driver_posts:
-            out.append("**Recent posts:**")
-            out.append("")
-            for p in driver_posts[-4:]:
-                out.append(post_line(p))
-            out.append("")
-        return out
-
-    # Derive arc bullets from post chronology
-    def arc_for_goblin(car_posts: list[Post]) -> list[str]:
-        arc = []
-        if any("revival" in p.text.lower() or "bring back to life" in p.text.lower() for p in car_posts):
-            arc.append("**Revival arc begins** — Goblin pulled from storage, brought back before the hard freeze (Nov 2025)")
-        if any("new tires" in p.text.lower() or "new meat" in p.text.lower() for p in car_posts):
-            arc.append("**New rubber** — fresh tires arrive ahead of race season (Mar 2026)")
-        if any("quick rack" in p.text.lower() or "steering rack" in p.text.lower() or "making hay" in p.text.lower() for p in car_posts):
-            arc.append("**Suspension work** — quick rack and other prep toward race season (Feb–Mar 2026)")
-        if any("is ready" in p.text.lower() or "bonesaw" in p.text.lower() for p in car_posts):
-            arc.append("**Race-ready declaration** — 'BONESAW… er.. the Goblin is READY!' pre-event hype (Mar 22, 2026)")
-        if any("cylinder four" in p.text.lower() or "cylinder 4" in p.text.lower() or "tear it down" in p.text.lower() for p in car_posts):
-            arc.append("**Engine failure** — cylinder 4 confirmed dead post-event; announced publicly (Mar 28, 2026)")
-        if not arc:
-            arc.append("Arc data pending — insufficient keywords matched. Check car posts for details.")
-        return arc
-
-    def arc_for_mgb(car_posts: list[Post]) -> list[str]:
-        arc = []
-        if any("mystery" in p.text.lower() for p in car_posts):
-            arc.append("**Mystery acquisition** — 'The mystery18rg is coming apart' — teardown and assessment begins (Dec 2025)")
-        if any("getting ready" in p.text.lower() or "racing this weekend" in p.text.lower() for p in car_posts):
-            arc.append("**Race debut** — Ryan gets the MGBGT ready for its first event (Dec 2025)")
-        if any("better and better" in p.text.lower() for p in car_posts):
-            arc.append("**Growing confidence** — 'This thing just gets better and better' (Dec 2025)")
-        if any("strip" in p.text.lower() or "paint" in p.text.lower() or "bodywork" in p.text.lower() for p in car_posts):
-            arc.append("**Full bodywork campaign** — stripped to bare metal, patch panel work, sanding season (Feb–Mar 2026)")
-        if any("inches ever closer" in p.text.lower() for p in car_posts):
-            arc.append("**Race season approaching** — 'MGBGTS inches ever closer' — late-build-season milestone (Mar 2026)")
-        if not arc:
-            arc.append("Arc data pending — insufficient keywords matched. Check car posts for details.")
-        return arc
-
-    def arc_for_fit(car_posts: list[Post]) -> list[str]:
-        arc = []
-        if any("fit.?off" in p.text.lower() or "fit off" in p.text.lower() for p in car_posts):
-            arc.append("**Fit-Off series** — Honda Fits compete head-to-head in rally and autocross (Nov–Dec 2025)")
-        if any("christmas" in p.text.lower() or "sway bar" in p.text.lower() for p in car_posts):
-            arc.append("**Christmas gift** — rear sway bar gifted, Fitty Cent continuously upgraded (Dec 2025)")
-        if any("new tires" in p.text.lower() or "dws06" in p.text.lower() or "continental" in p.text.lower() for p in car_posts):
-            arc.append("**New Continental DWS06 tires** — Fitty Cent geared up for summer duty (Mar 2026)")
-        if any("hudson" in p.text.lower() for p in car_posts):
-            arc.append("**Hudson behind the wheel** — 15-year-old Hudson fastest novice at KCRX E1 2026 (Mar 2026)")
-        if not arc:
-            arc.append("Arc data pending — insufficient keywords matched. Check car posts for details.")
-        return arc
-
-    def arc_for_dale(car_posts: list[Post]) -> list[str]:
-        arc = []
-        if any("followed us home" in p.text.lower() for p in car_posts):
-            arc.append("**New Celica acquired** — 'Another 1st Generation Celica followed us home' (Dec 2025)")
-        if any("gary rod" in p.text.lower() or "fabrication" in p.text.lower() for p in car_posts):
-            arc.append("**Sent to Gary Rod and Chassis** — Dale loaded for fabrication work ahead of race season (Feb 2026)")
-        if not arc:
-            arc.append("Arc data pending — insufficient keywords matched. Check car posts for details.")
-        return arc
-
-    goblin_posts = posts_for_car(posts, "Goblin (MR2)")
-    mgb_posts    = posts_for_car(posts, "MGB GT")
-    fit_posts    = posts_for_car(posts, "Honda Fit / Fitty Cent")
-    dale_posts   = posts_for_car(posts, "Dale (Celica)")
+    # Fit-Off: posts that mention the Fit in a competitive context
+    fitoff_posts = [
+        p for p in posts
+        if "Honda Fit / Fitty Cent" in p.car_mentions
+        and "event_hype" in p.post_types or "event_recap" in p.post_types
+    ]
 
     lines = [
         "---",
-        "title: Car and Driver Story Arcs",
+        "title: Season Story Arcs",
         "type: reference",
         "status: active",
         "owner: Ian Jennings",
         f"updated: {TODAY}",
-        "tags: [story, arc, cars, drivers, narrative, social, auto-generated]",
+        "tags: [story, arc, season, cross-cutting, narrative, social, auto-generated]",
         "source_of_truth: false",
-        "summary: Chronological story arcs for OIO cars and drivers as told through social media posts.",
-        "  Updated automatically whenever new social posts are ingested.",
-        "  Do not hand-edit — regenerated by scripts/analyze_social_posts.py.",
+        "summary: Cross-cutting story arcs that span multiple drivers or cars.",
+        "  Individual car arcs live in each car's Overview.md.",
+        "  Individual driver arcs live in Team-Bios.md.",
+        "  This doc is for arcs that require multiple drivers or cars to tell.",
+        "  Auto-generated by scripts/analyze_social_posts.py — do not hand-edit.",
         "---",
         "",
-        "# Car and Driver Story Arcs",
+        "# Season Story Arcs",
         "",
-        "> Story arcs extracted from published social posts. These reflect what has been",
-        "> communicated publicly about each car and driver — the narrative the audience",
-        "> has already been shown.",
+        "> These are arcs that span multiple drivers or multiple cars.",
+        "> Individual car arcs live in each car's `Overview.md`.",
+        "> Individual driver arcs live in `Team-Bios.md`.",
+        "> This document is for stories that can't be told from one car's or one driver's perspective alone.",
         ">",
-        f"> Auto-generated {TODAY} from {total} posts",
-        f"> covering {first_date} → {last_date}.",
+        f"> Auto-generated {TODAY} from {total} posts covering {first_date} → {last_date}.",
         "> Do not hand-edit — regenerated on every social post ingestion run.",
         "",
         "---",
         "",
-        "## Car Story Arcs",
+        "## 2026 MR Class Championship — The Gravel Glory Campaign",
         "",
-        "Each car's arc is the story the audience has already been told through social posts.",
-        "Use these to maintain continuity in new posts and video scripts.",
+        "**Drivers:** Ian Jennings (primary), Miles Smith (co-driver) — Goblin MR2 | Ryan Redenbaugh — MGB GT",
+        "",
+        "The 2026 KCRSCCA RallyCross MR class is an internal OIO battle.",
+        "Ian and Miles share the MR2; Ryan brings the MGB GT.",
+        "All three are competing in the same class for the same trophies.",
+        "This is the season's central multi-driver arc.",
+        "",
+        "**Arc beats so far (from social posts):**",
+        "",
+        "- **Build season** — Ian preps the Goblin (quick rack, new tires); Ryan strips the MGB GT to bare metal for a full rebuild",
+        "- **Pre-event trash talk** — Ryan and Larry (Miata) talk smack; Ian responds with a cowboy on a lawnmower",
+        "- **KCRX E1 (Mar 22, 2026)** — Goblin races, declared ready ('BONESAW… READY!'), MGB GT not yet ready to run",
+        "- **Post-E1 failure** — Goblin's cylinder 4 dead; Ian announces the teardown publicly",
+        "- **MGB GT progressing** — 'MGBGTS inches ever closer' — Ryan getting closer to race-ready",
+        "- **Hudson emerges** — fastest novice all day at E1 in the Honda Fit, faster than most non-novice",
         "",
     ]
 
-    lines += car_section(
-        "Goblin (MR2)",
-        "Ian's 1985 AW11 MR2 rallycross car. The heart of the OIO universe.",
-        arc_for_goblin(goblin_posts),
-    )
-
-    lines += car_section(
-        "MGB GT",
-        "Ryan's 1973 MGB GT with Toyota 4A-C engine. The congregation's most dramatic build arc.",
-        arc_for_mgb(mgb_posts),
-    )
-
-    lines += car_section(
-        "Honda Fit / Fitty Cent",
-        "Ian's GE8 Honda Fit. Double-duty daily driver, autocross, and rallycross car. Also Hudson's ride.",
-        arc_for_fit(fit_posts),
-    )
-
-    lines += car_section(
-        "Dale (Celica)",
-        "Ian's 1972 Toyota Celica. Named Dale. Long-term time-attack and Lake Garnett goal.",
-        arc_for_dale(dale_posts),
-    )
-
-    lines += car_section(
-        "Richard's ST205",
-        "Richard's Celica GT-Four ST205. Revealed at a Church of Combustion event. Not a museum piece.",
-        [
-            "**Prophecy fulfilled** — Richard arrives with the ST205 at a Church of Combustion event,",
-            "  revealed as a living legend dropped straight into the dirt to be tested (Dec 2025)",
-        ],
-    )
-
-    lines += car_section(
-        "Starlet",
-        "Richard's Toyota Starlet — future 4A-GE swap project.",
-        [
-            "**Future build teased** — 'Future Richard is calling. Time to get that 4age in the Starlet.' (Mar 2026)",
-        ],
-    )
+    if mr_posts:
+        lines += [
+            "**Social posts touching this arc:**",
+            "",
+        ]
+        for p in mr_posts[-6:]:
+            lines.append(post_line(p))
+        lines.append("")
 
     lines += [
         "---",
         "",
-        "## Driver Story Arcs",
+        "## The Fit-Off — Honda Fits at War",
+        "",
+        "**Drivers:** Ian, Ryan, and occasionally Hudson — multiple GE8 and GD3 Fits",
+        "",
+        "OIO's recurring multi-car challenge format. Multiple Honda Fits, same venue, different generations.",
+        "Not a single-car story — the Fit-Off is a format that any Fit can enter.",
+        "",
+        "**Arc beats so far:**",
+        "",
+        "- **Fit-Off 3** — three Fits, dirt, chaos. Cones harmed. Accusations made. Witchcraft suspected. (Nov 2025)",
+        "- **'Move over, Miata'** — social post positioning the Fit as the new grassroots benchmark (Dec 2025)",
+        "- **Hudson fastest novice at KCRX E1** — Fitty Cent as youth development platform (Mar 2026)",
         "",
     ]
-
-    lines += driver_section(
-        "Ian",
-        "Founder, driver, perpetual underdog. His cars always break at the worst time.",
-        [
-            "**Goblin revival** — Off-season, Ian brings the Goblin back from cold storage",
-            "**Pre-race hype meets reality** — declares the Goblin ready; engine fails post-event",
-            "**Smack talk backfires** — challenges Ryan/Larry's Miata, posts trash talk, Goblin dies anyway",
-            "**Dale at Gary Rod and Chassis** — sends Dale for fabrication, building toward Lake Garnett",
-        ],
-    )
-
-    lines += driver_section(
-        "Ryan",
-        "Co-conspirator. Building the MGB GT through a full winter bodywork campaign.",
-        [
-            "**MGBGT buildout** — Winter 2025–26 bodywork campaign: strip, patch, sand, paint",
-            "**Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian",
-        ],
-    )
-
-    lines += driver_section(
-        "Hudson",
-        "Ian's 15-year-old son. First official race results in 2026.",
-        [
-            "**Breakout** — Fastest novice run all day at KCRX E1 2026, faster than most non-novice (Mar 2026)",
-        ],
-    )
-
-    lines += driver_section(
-        "Richard",
-        "ST205 Celica owner. Surprise reveals are his style.",
-        [
-            "**ST205 reveal** — Appears at a Church of Combustion event with the ST205; crowd goes silent",
-            "**Starlet 4A-GE** — telegraphing the next build in social posts (Mar 2026)",
-        ],
-    )
-
-    lines += driver_section(
-        "Miles",
-        "Co-driver of the MR2. Multi-season KC RallyCross competitor.",
-        [],
-    )
 
     lines += [
         "---",
         "",
-        "## Continuity Notes for Writers",
+        "## How to Use This Document",
         "",
-        "When writing new social posts or scripts, check this document to ensure story continuity:",
-        "",
-        "- **The Goblin is currently down.** Posts should acknowledge the rebuild arc, not assume it runs.",
-        "- **The MGB GT is in late-stage bodywork.** Race season is approaching for Ryan's car.",
-        "- **Hudson is now established as a real competitor.** Reference his KCRX E1 result when relevant.",
-        "- **Dale is at Gary Rod and Chassis.** Fabrication is underway. Return ETA is TBD.",
-        "- **The ST205 has been revealed.** Richard's car is no longer a mystery — it's been driven in the dirt.",
-        "- **Fitty Cent has fresh Continental tires.** Ready for summer.",
+        "- Check this doc when scripting or posting about **season-level** competition narratives",
+        "- For **a specific car's** build arc: see that car's `Overview.md → ## Social Post Arc`",
+        "- For **a specific driver's** arc: see `Team-Bios.md → [Driver] → ### Social Post Arc`",
         "",
     ]
 
@@ -744,32 +912,63 @@ def generate_arcs_doc(posts: list[Post]) -> str:
 def main():
     print("OIO Social Posts Analyzer")
     print(f"  Repo root: {REPO_ROOT}")
-    print(f"  Social dir: {SOCIAL_DIR}")
 
     posts = load_posts()
-    print(f"  Loaded {len(posts)} posts")
+    print(f"  Loaded {len(posts)} posts\n")
 
     if not posts:
-        print("  No posts found — skipping doc generation.")
+        print("  No posts found — skipping.")
         return
 
-    print(f"\n  Generating {VOICE_DOC} ...")
-    voice_content = generate_voice_doc(posts)
+    # 1. Update voice doc (standalone regenerated file)
+    print(f"  Generating {VOICE_DOC} ...")
     os.makedirs(BRAND_DIR, exist_ok=True)
     with open(VOICE_DOC, "w", encoding="utf-8") as f:
-        f.write(voice_content + "\n")
+        f.write(generate_voice_doc(posts) + "\n")
     print("  Done.")
 
-    print(f"\n  Generating {ARCS_DOC} ...")
-    arcs_content = generate_arcs_doc(posts)
+    # 2. Update season arcs doc (standalone regenerated file)
+    print(f"\n  Generating {SEASON_DOC} ...")
     os.makedirs(CONTENT_DIR, exist_ok=True)
-    with open(ARCS_DOC, "w", encoding="utf-8") as f:
-        f.write(arcs_content + "\n")
+    with open(SEASON_DOC, "w", encoding="utf-8") as f:
+        f.write(generate_season_arcs_doc(posts) + "\n")
     print("  Done.")
+
+    # 3. Inject per-car arc blocks into individual Overview.md files
+    print("\n  Injecting car arc blocks ...")
+    for car, overview_path in CAR_OVERVIEW_PATHS.items():
+        car_posts = posts_for_car(posts, car)
+        arc_fn = CAR_ARC_FN.get(car, lambda _: [])
+        block = build_car_arc_block(car, car_posts, arc_fn)
+        changed = inject_block_into_file(
+            overview_path,
+            block,
+            key=car,
+            insert_before_pattern=r"^## (Open Work|Related Content|Related Videos)",
+        )
+        status = "updated" if changed else "unchanged"
+        print(f"    [{status}] {car} → {os.path.relpath(overview_path, REPO_ROOT)}")
+
+    # 4. Inject per-driver arc blocks into Team-Bios.md
+    print("\n  Injecting driver arc blocks into Team-Bios.md ...")
+    for driver, arc_fn in DRIVER_ARC_FN.items():
+        driver_posts = posts_for_driver(posts, driver)
+        block = build_driver_arc_block(driver, driver_posts, arc_fn)
+        changed = inject_driver_block_into_bios(driver, block)
+        status = "updated" if changed else "unchanged"
+        print(f"    [{status}] {driver}")
+
+    # 5. Remove the old aggregate doc if it still exists
+    old_doc = os.path.join(CONTENT_DIR, "Car-and-Driver-Story-Arcs.md")
+    if os.path.isfile(old_doc):
+        os.remove(old_doc)
+        print(f"\n  Removed old aggregate doc: {old_doc}")
 
     print("\nAnalysis complete.")
     print(f"  → {VOICE_DOC}")
-    print(f"  → {ARCS_DOC}")
+    print(f"  → {SEASON_DOC}")
+    print(f"  → Car arcs injected into individual Overview.md files")
+    print(f"  → Driver arcs injected into {TEAM_BIOS}")
 
 
 if __name__ == "__main__":

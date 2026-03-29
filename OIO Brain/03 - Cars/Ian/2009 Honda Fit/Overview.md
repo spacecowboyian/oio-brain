@@ -114,6 +114,35 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 ---
 
+---
+
+<!-- social-arc:honda-fit---fitty-cent:start -->
+
+## Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Posts mentioning this car:** 12 posts
+
+**Story arc from social posts:**
+
+- **Fit-Off series** — Honda Fits compete head-to-head in rally and autocross (Nov–Dec 2025)
+- **Christmas gear** — rear sway bar gifted, ongoing upgrades (Dec 2025)
+- **New Continental DWS06 tires** — Fitty Cent ready for summer duty (Mar 2026)
+- **Hudson behind the wheel** — fastest novice at KCRX E1 2026, faster than most non-novice (Mar 25, 2026)
+
+**Recent social posts:**
+
+- **2026-01-14** — Someday.. someday..   Today or never!  #fitgang
+- **2026-01-20** — New video link in the comments! Been a minute, so here’s the full shop catch-up.  Honda Fits, Celicas, an off-road Camry…
+- **2026-03-06** — Speaking of new tires… #fittycent the #ge8 #hondafit is back in the #fitgang rocking the @continental_tire dws06 for all…
+- **2026-03-22** — World’s slowest drag race… it might not actually be but Ian gets to post the videos and he’s got to beat the Miata at ra…
+- **2026-03-25** — Here's our Hudson in the #ge8 #hondafit gettin it done in the gravel at Kansas City Region SCCA RallyCross #1 for 2026!…
+
+<!-- social-arc:honda-fit---fitty-cent:end -->
+
+---
+
 ## Open Work / 2026 Tasks
 
 ### Performance Setup

@@ -96,6 +96,36 @@ The Goblin's 2026 narrative has shifted from "rebuild in progress" to a document
 
 ---
 
+---
+
+<!-- social-arc:goblin--mr2:start -->
+
+## Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Posts mentioning this car:** 8 posts
+
+**Story arc from social posts:**
+
+- **Revival arc begins** — pulled from storage, brought back before the hard freeze (Nov 2025)
+- **New rubber** — fresh tires arrive ahead of race season (Mar 2026)
+- **Suspension work** — quick rack installed and other prep (Feb–Mar 2026)
+- **Race-ready declaration** — 'BONESAW… er.. the Goblin is READY!' (Mar 22, 2026)
+- **Engine failure confirmed** — cylinder 4 dead post-event; rebuild begins (Mar 28, 2026)
+
+**Recent social posts:**
+
+- **2026-03-21** — Ryan thinks he’s got the edge in the battle for modified rear wheel drive rallycross supremacy. But there ain’t a Miata…
+- **2026-03-22** — BONESAW… er.. the #goblinmr2 is READY! Ain’t no Miata gotta lotta chance in the gravel against mid-rear powa! That is..…
+- **2026-03-22** — The Miata gal pals brought their handbags…. Ian wishes he had a handbag. #miata #mx5 #cars #mr2
+- **2026-03-22** — World’s slowest drag race… it might not actually be but Ian gets to post the videos and he’s got to beat the Miata at ra…
+- **2026-03-28** — The goblin speaketh… cylinder four is done. Time to tear it down. #goblinMR2 #RXMR2 #rallycross #aw11
+
+<!-- social-arc:goblin--mr2:end -->
+
+---
+
 ## Open Work / 2026 Tasks
 
 ### Immediate Reliability

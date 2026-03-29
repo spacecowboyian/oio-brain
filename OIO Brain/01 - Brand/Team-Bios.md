@@ -50,6 +50,28 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 ---
 
+<!-- social-arc:ian:start -->
+
+### Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Social post mentions:** 8 posts
+
+- **Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)
+- **Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)
+- **Smack talk backfires** — challenges Ryan/Larry's Miata in MR class, Goblin dies anyway (Mar 2026)
+- **Dale to Gary Rod and Chassis** — sent for fabrication, building toward Lake Garnett (Feb 2026)
+
+**Recent posts:**
+
+- **2026-03-05** — Happy new meat day for Ian! @alpha_racingtyres @kraken_concepts_racing #sccarallycross #rxaw11 #mr2
+- **2026-03-22** — Ian here… I haven’t been able to make a video response to Ryan and Larry’s trash talking.. so here’s cowboy Hudson ridin…
+- **2026-03-22** — The Miata gal pals brought their handbags…. Ian wishes he had a handbag. #miata #mx5 #cars #mr2
+- **2026-03-22** — World’s slowest drag race… it might not actually be but Ian gets to post the videos and he’s got to beat the Miata at ra…
+
+<!-- social-arc:ian:end -->
+
 ## RYAN REDENBAUGH — Driver, Congregation Member
 
 Co-conspirator, fellow Honda Fit believer, Gambler 500 veteran.
@@ -86,6 +108,26 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ---
 
+<!-- social-arc:ryan:start -->
+
+### Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Social post mentions:** 8 posts
+
+- **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
+- **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
+
+**Recent posts:**
+
+- **2026-03-07** — Ryan’s #mgbgts inches ever closer. #cars #bodywork #sandingforever
+- **2026-03-21** — Hole in the roof equals hole in the floor. Ryan's fixing the problem.  Big patch panel over the sunroof opening on the ,…
+- **2026-03-21** — Ryan thinks he’s got the edge in the battle for modified rear wheel drive rallycross supremacy. But there ain’t a Miata…
+- **2026-03-22** — Ian here… I haven’t been able to make a video response to Ryan and Larry’s trash talking.. so here’s cowboy Hudson ridin…
+
+<!-- social-arc:ryan:end -->
+
 ## RICHARD THOMPSON — Driver, Congregation Member
 
 Serious SCCA competitor. Lives in Manhattan, KS.
@@ -104,6 +146,25 @@ Serious SCCA competitor. Lives in Manhattan, KS.
 - ST205 has been "called" to compete in SCCA. The dirt will judge.
 
 ---
+
+<!-- social-arc:richard:start -->
+
+### Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Social post mentions:** 3 posts
+
+- **ST205 reveal** — arrives at a Church of Combustion event with the ST205; publicly established as a real competitor (Dec 2025)
+- **Starlet 4A-GE telegraphed** — social post hints at next build project (Mar 2026)
+
+**Recent posts:**
+
+- **2025-11-11** — Ryan and Richard ran rallycross in KS this weekend with some other real fast folks!
+- **2025-12-30** — Find the new video in the comments to join us once again for the Church of Combustion. This week’s sermon arrives… on bo…
+- **2026-03-06** — Future Richard is calling. Time to get that 4age in the starlet.
+
+<!-- social-arc:richard:end -->
 
 ## KEEGAN WILHELM — Driver, Congregation Member, 4A-G Wizard
 
@@ -133,6 +194,18 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ---
 
+<!-- social-arc:keegan:start -->
+
+### Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Social post mentions:** 0 posts
+
+*No social post arc data detected yet.*
+
+<!-- social-arc:keegan:end -->
+
 ## THE KIDS — Next Generation of the Congregation
 
 Ian's three kids. Track time makes better street drivers — getting them in early is intentional. Kids do the actual wrenching on Fit How-To videos while Ian supervises with visible anxiety.
@@ -146,6 +219,23 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 **2026 target:** Mid-2026 autocross debut as documented competitors.
 
 ---
+
+<!-- social-arc:hudson:start -->
+
+### Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Social post mentions:** 2 posts
+
+- **Breakout** — fastest novice run all day at KCRX E1 2026, faster than most non-novice (Mar 25, 2026)
+
+**Recent posts:**
+
+- **2026-03-22** — Ian here… I haven’t been able to make a video response to Ryan and Larry’s trash talking.. so here’s cowboy Hudson ridin…
+- **2026-03-25** — Here's our Hudson in the #ge8 #hondafit gettin it done in the gravel at Kansas City Region SCCA RallyCross #1 for 2026!…
+
+<!-- social-arc:hudson:end -->
 
 ### MILES SMITH — Rallycross Driver
 
@@ -184,6 +274,18 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 - **4th place** — KCRSCCA RallyCross season championship (year TBD)
 
 ---
+
+<!-- social-arc:miles:start -->
+
+### Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Social post mentions:** 0 posts
+
+*No social post arc data detected yet.*
+
+<!-- social-arc:miles:end -->
 
 ## EXTENDED CONGREGATION — Recurring Cameos
 

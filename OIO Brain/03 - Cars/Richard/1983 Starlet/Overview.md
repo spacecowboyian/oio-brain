@@ -56,6 +56,28 @@ Get the 4A-G in, get it on track. Richard is also thinking about swapping in a M
 
 ---
 
+---
+
+<!-- social-arc:starlet:start -->
+
+## Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Posts mentioning this car:** 1 post
+
+**Story arc from social posts:**
+
+- **Future build teased** — 'Future Richard is calling. Time to get that 4age in the Starlet.' (Mar 2026)
+
+**Recent social posts:**
+
+- **2026-03-06** — Future Richard is calling. Time to get that 4age in the starlet.
+
+<!-- social-arc:starlet:end -->
+
+---
+
 ## Related Videos
 
 *No OIO videos published as of March 2026.*

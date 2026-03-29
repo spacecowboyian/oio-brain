@@ -73,10 +73,17 @@ jobs:
         run: |
           git add \
             "OIO Brain/01 - Brand/Social-Post-Voice.md" \
-            "OIO Brain/02 - Content/Car-and-Driver-Story-Arcs.md"
+            "OIO Brain/01 - Brand/Team-Bios.md" \
+            "OIO Brain/02 - Content/Season-Story-Arcs.md" \
+            "OIO Brain/03 - Cars/Ian/1985 MR2/Overview.md" \
+            "OIO Brain/03 - Cars/Ian/2009 Honda Fit/Overview.md" \
+            "OIO Brain/03 - Cars/Ian/1972 Celica/Overview.md" \
+            "OIO Brain/03 - Cars/Ryan/1973 MGB GT/Overview.md" \
+            "OIO Brain/03 - Cars/Richard/ST205/Overview.md" \
+            "OIO Brain/03 - Cars/Richard/1983 Starlet/Overview.md"
           if git diff --cached --quiet; then
             echo "Brain docs unchanged — nothing to commit."
           else
-            git commit -m "chore: update social voice and story arcs [skip ci]"
+            git commit -m "chore: update social arcs in car and driver files [skip ci]"
             git push
           fi

@@ -67,6 +67,28 @@ The ST205 has been called. Every SCCA event Richard enters is a chapter in this 
 
 ---
 
+---
+
+<!-- social-arc:richard-s-st205:start -->
+
+## Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Posts mentioning this car:** 1 post
+
+**Story arc from social posts:**
+
+- **Prophecy fulfilled** — ST205 revealed at a Church of Combustion event, dropped straight into the dirt (Dec 2025)
+
+**Recent social posts:**
+
+- **2025-12-30** — Find the new video in the comments to join us once again for the Church of Combustion. This week’s sermon arrives… on bo…
+
+<!-- social-arc:richard-s-st205:end -->
+
+---
+
 ## Related Videos
 
 | Date | Title | Views | Format |
