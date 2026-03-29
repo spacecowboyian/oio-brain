@@ -113,7 +113,7 @@ Use these to maintain continuity in new posts and video scripts.
 
 *Richard's Celica GT-Four ST205. Revealed at a Church of Combustion event. Not a museum piece.*
 
-**Social post mentions:** 1 posts
+**Social post mentions:** 1 post
 
 **Story arc from social posts:**
 
@@ -128,7 +128,7 @@ Use these to maintain continuity in new posts and video scripts.
 
 *Richard's Toyota Starlet — future 4A-GE swap project.*
 
-**Social post mentions:** 1 posts
+**Social post mentions:** 1 post
 
 **Story arc from social posts:**
 

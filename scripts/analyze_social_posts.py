@@ -492,7 +492,7 @@ def generate_arcs_doc(posts: list[Post]) -> str:
             "",
             f"*{note}*",
             "",
-            f"**Social post mentions:** {len(car_posts)} posts",
+            f"**Social post mentions:** {len(car_posts)} {'post' if len(car_posts) == 1 else 'posts'}",
             "",
         ]
         if arc_bullets:
@@ -516,7 +516,7 @@ def generate_arcs_doc(posts: list[Post]) -> str:
             "",
             f"*{note}*",
             "",
-            f"**Social post mentions:** {len(driver_posts)} posts",
+            f"**Social post mentions:** {len(driver_posts)} {'post' if len(driver_posts) == 1 else 'posts'}",
             "",
         ]
         if arc_bullets:
