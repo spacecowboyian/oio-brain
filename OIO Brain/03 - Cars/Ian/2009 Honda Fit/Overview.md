@@ -114,8 +114,6 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 ---
 
----
-
 <!-- social-arc:honda-fit---fitty-cent:start -->
 
 ## Social Post Arc

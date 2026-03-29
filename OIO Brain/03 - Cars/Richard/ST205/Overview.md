@@ -67,8 +67,6 @@ The ST205 has been called. Every SCCA event Richard enters is a chapter in this 
 
 ---
 
----
-
 <!-- social-arc:richard-s-st205:start -->
 
 ## Social Post Arc

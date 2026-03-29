@@ -66,9 +66,9 @@ Dale debuted at autocross in September 2024.
 
 ---
 
-Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale moves the car a step closer to Lake Garnett in October. The Church of Combustion episode from Lake Garnett is the payoff.
+## 2026 Story Arc
 
----
+Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale moves the car a step closer to Lake Garnett in October. The Church of Combustion episode from Lake Garnett is the payoff.
 
 ---
 

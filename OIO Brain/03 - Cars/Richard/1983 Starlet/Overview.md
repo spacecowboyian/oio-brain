@@ -56,8 +56,6 @@ Get the 4A-G in, get it on track. Richard is also thinking about swapping in a M
 
 ---
 
----
-
 <!-- social-arc:starlet:start -->
 
 ## Social Post Arc

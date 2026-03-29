@@ -96,8 +96,6 @@ The Goblin's 2026 narrative has shifted from "rebuild in progress" to a document
 
 ---
 
----
-
 <!-- social-arc:goblin--mr2:start -->
 
 ## Social Post Arc

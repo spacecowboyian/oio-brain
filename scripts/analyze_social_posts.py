@@ -543,7 +543,11 @@ def inject_block_into_file(filepath: str, new_block: str, key: str,
             match = re.search(insert_before_pattern, content, re.MULTILINE)
             if match:
                 pos = match.start()
-                content = content[:pos] + new_block + "\n\n---\n\n" + content[pos:]
+                # Strip any trailing separator already present before the insertion point
+                before = content[:pos].rstrip()
+                if before.endswith("---"):
+                    before = before[:-3].rstrip()
+                content = before + "\n\n---\n\n" + new_block + "\n\n---\n\n" + content[pos:]
             else:
                 content = content.rstrip("\n") + "\n\n---\n\n" + new_block + "\n"
         else:
@@ -814,7 +818,7 @@ def generate_season_arcs_doc(posts: list[Post]) -> str:
     fitoff_posts = [
         p for p in posts
         if "Honda Fit / Fitty Cent" in p.car_mentions
-        and "event_hype" in p.post_types or "event_recap" in p.post_types
+        and ("event_hype" in p.post_types or "event_recap" in p.post_types)
     ]
 
     lines = [
