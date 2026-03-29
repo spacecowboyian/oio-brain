@@ -91,7 +91,14 @@ def save_state(state):
 # ---------------------------------------------------------------------------
 
 def get_existing_post_ids(platform):
-    """Return the set of post IDs already saved to disk for a platform."""
+    """
+    Return the set of post IDs already saved to disk for a platform.
+
+    NOTE: This reads the `post_id` frontmatter field written by `save_post()`.
+    The regex is tightly coupled to the exact format that `save_post()` writes
+    (double-quoted value on its own line). If the write format changes, update
+    this pattern to match.
+    """
     platform_dir = os.path.join(SOCIAL_POSTS_DIR, platform)
     if not os.path.isdir(platform_dir):
         return set()
@@ -147,13 +154,15 @@ def save_post(platform, post_id, date_str, text):
     filename = f"{date_prefix}_{slug}.md"
     filepath = os.path.join(platform_dir, filename)
 
-    # Resolve collisions (same date + same first words, different post)
+    # Handle filename collisions (same date + same first words, different post).
+    # Falls back to last 12 chars of post_id; for very short IDs this is the full ID.
     if os.path.isfile(filepath):
-        filename = f"{date_prefix}_{sanitize_slug(post_id[-12:])}.md"
+        id_slug = sanitize_slug(post_id) if len(post_id) <= 12 else sanitize_slug(post_id[-12:])
+        filename = f"{date_prefix}_{id_slug}.md"
         filepath = os.path.join(platform_dir, filename)
 
-    safe_text = text.replace('"', "'")
-    summary_preview = safe_text[:80].replace("\n", " ")
+    # Sanitize for YAML scalar: collapse newlines, escape backslashes and quotes
+    summary_preview = text[:80].replace("\\", "\\\\").replace('"', "'").replace("\n", " ").replace("\r", " ")
 
     frontmatter = (
         "---\n"

@@ -88,12 +88,14 @@ GET https://graph.facebook.com/oauth/access_token
   &fb_exchange_token={SHORT_LIVED_TOKEN}
 ```
 
-**4. Get a Never-Expiring Page Access Token**
-Page Access Tokens generated from a long-lived User Access Token do not expire:
+**4. Get a Long-Lived Page Access Token**
+Page Access Tokens generated from a long-lived User Access Token are long-lived (they do not have a fixed expiry timestamp the way short-lived tokens do). However, they **can be invalidated** if the underlying user's password changes, permissions are revoked, or the user de-authorizes the app. If the workflow starts failing with authentication errors, regenerate the token using these same steps and update the `META_ACCESS_TOKEN` secret.
 ```
 GET https://graph.facebook.com/me/accounts?access_token={LONG_LIVED_USER_TOKEN}
 ```
 Find your page in the response and copy its `access_token`. This is your `META_ACCESS_TOKEN`.
+
+> **Token health:** If the workflow starts returning 401 errors, the token has been invalidated. Repeat steps 2–4 to get a fresh token and update the repository secret.
 
 **5. Find Your Page ID**
 ```
