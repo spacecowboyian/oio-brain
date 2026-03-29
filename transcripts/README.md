@@ -1,6 +1,8 @@
 # Transcripts
 
-Auto-generated YouTube transcripts for OIO Racing videos.
+Auto-generated transcripts for final published OIO Racing YouTube videos.
+
+> **Note:** This folder is for **final published video transcripts only** — fetched automatically from YouTube. For raw daily video transcripts (Ian's working clips), see `docdump/dailies/`.
 
 Each video gets its own folder named `YYYY-MM-DD_video-title/` containing:
 - `transcript.md` — Full transcript with timestamps and YAML frontmatter

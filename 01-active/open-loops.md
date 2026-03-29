@@ -3,7 +3,7 @@ title: OIO Open Loops
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-03-29
 tags: [open-loops, decisions, unknowns, blockers]
 source_of_truth: false
 summary: All pending decisions, unanswered questions, missing information, and things waiting on money, parts, time, people, or research. Update as loops open and close.
@@ -17,6 +17,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 ## Vehicles
 
+- **Fitty Cent clutch hydraulics:** Slave cylinder replaced but clutch still engages near the floor. Air likely in master cylinder. Cheap Chinese master installed years ago, possibly wrong spec. Next step: pressure bleed at Ryan's shop. If that fails: bench bleed or master cylinder replacement. See `OIO Brain/03 - Cars/Ian/2009 Honda Fit/Maintenance-Log.md`.
 - **Goblin motor diagnosis:** ✅ 2026-03-28 — Two-stage diagnostic complete. Initial inspection confirmed bearing failure (lock-up), cyl 4 at 35 PSI, oil contamination across all cylinders, heavy valve carbon, loose cyl 1 plug wire. Follow-up wet compression test showed cyl 4 rising to ~60 PSI (partial recovery). Root cause not yet isolated. See `OIO Brain/03 - Cars/Ian/1985 MR2/Maintenance-Log.md`.
 - **Goblin — cyl 4 compression loss root cause:** Partially narrowed. Wet test (35→60 PSI) confirms ring sealing is a factor, but partial recovery means valve sealing may also be compromised. Heavy carbon on valve faces prevents visual confirmation of sealing surfaces.
 - **Goblin — ring sealing vs. valve sealing contribution in cyl 4:** Wet compression test is consistent with partial ring failure, but cannot rule out carbon-fouled valve sealing. Both may be active failure modes.

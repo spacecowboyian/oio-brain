@@ -3,7 +3,7 @@ title: OIO Brain — Decisions Log
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-03-29
 tags: [decisions, history, rationale]
 source_of_truth: true
 summary: Append-only log of significant decisions made about OIO — brand, operations, vehicles, content, business. Each entry records what was decided, why, and any follow-up implications.
@@ -20,6 +20,28 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 **Why:** Rationale.
 **Implications:** Follow-up actions or consequences, if any.
 ```
+
+---
+
+## 2026-03-29 — Dailies Separated from Final YouTube Transcripts
+
+**Decision:** Renamed `docdump/transcripts/` to `docdump/dailies/` and replaced `process-transcripts.yml` with `process-dailies.yml`. Clarified the two distinct transcript types in all documentation and copilot instructions.
+
+**Why:** There are two fundamentally different types of transcripts in play:
+1. **Final YouTube video transcripts** — full text of published videos, auto-fetched by the `fetch-youtube-transcripts` workflow and stored in `transcripts/` at the repo root.
+2. **Dailies** — raw audio dumps from Ian's working video files (unedited clips), manually dropped into `docdump/dailies/` for brain processing. These are not published videos.
+
+Mixing these under the generic "transcripts" label created confusion about purpose, workflow, and expectations.
+
+**Changes:**
+- `docdump/transcripts/` → `docdump/dailies/` (renamed)
+- `.github/workflows/process-transcripts.yml` → `.github/workflows/process-dailies.yml` (replaced with updated paths and purpose)
+- `docdump/README.md` — updated to reference dailies
+- `copilot-instructions.md` — added "Transcript Types" section distinguishing the two; renamed workflow section to "Dailies Workflow"
+- `transcripts/README.md` — added clarifying note that this folder is for final published videos only
+- `00-core/templates/transcript-summary.md` — updated template header and source path for dailies; YouTube ID marked optional
+
+**Implications:** Ian drops raw daily clip transcripts in `docdump/dailies/`. The `process-dailies` workflow auto-triggers. Final YouTube transcripts continue to auto-fetch into `transcripts/` on cron schedule. No workflow changes for the final transcript pipeline.
 
 ---
 

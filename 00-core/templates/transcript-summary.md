@@ -1,21 +1,21 @@
 ---
-title: Template — Video Transcript Summary
+title: Template — Daily / Transcript Summary
 type: content
 status: draft
 owner: Ian Jennings
-updated: YYYY-MM-DD
-tags: [template, transcript, summary, content]
+updated: 2026-03-29
+tags: [template, transcript, daily, summary, content]
 source_of_truth: false
-summary: Template for AI-generated summaries from raw video transcripts dropped in docdump/transcripts/. Use this to structure a human-readable summary of what was said, what matters, and what the video should feed into the brain.
+summary: Template for AI-generated summaries from raw daily video transcripts dropped in docdump/dailies/. Also used for final published video transcripts. Use this to structure a human-readable summary of what was said, what matters, and what the video should feed into the brain.
 ---
 
-# [Video Title] — Transcript Summary
+# [Video Title / Clip Description] — Daily Summary
 
-**Date:** YYYY-MM-DD
-**YouTube ID:** [video_id or URL]
-**Duration:** [e.g., 18:42]
-**Format:** [Vlog / Fit How-To / Church of Combustion / Short / Other]
-**Status:** [Filmed / Edited / Published / Unknown]
+**Date:** YYYY-MM-DD (or `[unknown]` if not captured)
+**YouTube ID:** [video_id or URL — leave blank if not yet published]
+**Duration:** [e.g., 18:42, or `[unknown]`]
+**Format:** [Vlog / Fit How-To / Church of Combustion / Daily / Short / Other]
+**Status:** [Filmed / Edited / Published / Raw Daily]
 
 ---
 
@@ -103,6 +103,6 @@ summary: Template for AI-generated summaries from raw video transcripts dropped 
 
 ## Source Transcript
 
-**Processed from:** `docdump/transcripts/[filename]`
+**Processed from:** `docdump/dailies/[filename]`
 **Processed on:** YYYY-MM-DD
-**Summary stored at:** `OIO Brain/02 - Content/Summaries/[YYYY-MM-DD_video-title].md`
+**Summary stored at:** `OIO Brain/02 - Content/Summaries/[YYYY-MM-DD_description].md`
