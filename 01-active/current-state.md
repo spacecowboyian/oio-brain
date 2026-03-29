@@ -3,7 +3,7 @@ title: OIO Current State
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-03-29
 tags: [state, current, season-2026]
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
@@ -69,6 +69,8 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
+- **2026-03-29:** Racing result links processed — comprehensive KCRSCCA + KSRX URL reference (2017–2024, AX + RX) filed as `OIO Brain/04 - Events/Results/KCRSCCA-Results-Links.md`. All direct links to every individual event result page now in the brain. Source deleted from docdump.
+- **2026-03-29:** MR2 quick rack recovery documented — Ian recovered the quick steering rack from the old rallycross MR2 at Alex's house on 2026-03-18 and installed it on the Goblin same day before KCRX E1 (Mar 22, Ray Rocks). Steering Rack Swap marked done in MR2 Overview.md. U-joint connector lesson logged in Setup-Notes.md. Video idea added to backlog. Source deleted from docdump.
 - **2026-03-28:** Goblin engine diagnostic complete — post-rallycross inspection done. Confirmed bearing failure (lock-up), cylinder 4 at 35 PSI, oil contamination across all cylinders (heaviest cyl 1), heavy valve carbon, loose cyl 1 plug wire. Root cause not yet isolated. Rebuild vs. replace decision pending. See `OIO Brain/03 - Cars/Ian/1985 MR2/Maintenance-Log.md`.
 - **2026-03-28:** Photo library system launched — `photos/` folder created, organized by driver/car. `PHOTO-INDEX.md` created at repo root. GitHub Action `process-picdump-photos.yml` created to auto-spawn Copilot agent whenever images are pushed to `picdump/`.
 - **2026-03-28:** First photo filed — `IMG_8181.png` (Goblin MR2 rallycross action shot) moved to `photos/Ian/1985-MR2-Goblin/`. MR2 Overview.md updated with Visual Identification section and photo reference.

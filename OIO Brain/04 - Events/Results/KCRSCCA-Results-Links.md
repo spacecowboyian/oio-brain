@@ -1,3 +1,14 @@
+---
+title: KCRSCCA + KSRX Results Link Reference — 2017–2024
+type: reference
+status: reference
+owner: Ian Jennings
+updated: 2026-03-29
+tags: [results, links, kcrscca, ksrx, autocross, rallycross, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+source_of_truth: true
+summary: Complete URL reference for KCRSCCA (Kansas City Region SCCA) and KSRX (Kansas Region SCCA) competition results pages, 2017–2024. Use this to find specific event result files. Covers AX and RX for both regions plus venue key.
+---
+
 # OIO Racing — Complete Competition Results Link Reference
 ## Kansas City Region SCCA + Kansas Region SCCA | 2017–2024
 
@@ -98,55 +109,52 @@
 | Event 3 / MiDiv Day 2 | May 5 | HMP | https://www.kcrscca.org/results/solo/2019/midiv2019day2_fin.htm | https://www.kcrscca.org/results/solo/2019/midiv2019day2_raw.htm | https://www.kcrscca.org/results/solo/2019/midiv2019day2_pax.htm |
 | Event 4 | Jun 2 | MCC | https://www.kcrscca.org/results/solo/2019/2019event4_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event4_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event4_pax.htm |
 | Event 5 | Jun 30 | MCC | https://www.kcrscca.org/results/solo/2019/2019event5_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event5_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event5_pax.htm |
-| Event 6 | Jul 7 | MCC | https://www.kcrscca.org/results/solo/2019/2019event6_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event6_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event6_pax.htm |
-| Event 7 | Jul 28 | MCC | https://www.kcrscca.org/results/solo/2019/2019event7_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event7_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event7_pax.htm |
-| Event 8 | Aug 18 | MCC | https://www.kcrscca.org/results/solo/2019/2019event8_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event8_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event8_pax.htm |
+| Event 6 | Jul 28 | MCC | https://www.kcrscca.org/results/solo/2019/2019event6_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event6_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event6_pax.htm |
+| Event 7 / MiDiv Day 1 | Aug 3 | PMCA | https://www.kcrscca.org/results/solo/2019/2019event7_midiv_d1_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event7_midiv_d1_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event7_midiv_d1_pax.htm |
+| Event 8 / MiDiv Day 2 | Aug 4 | PMCA | https://www.kcrscca.org/results/solo/2019/2019event8_midiv_d2_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event8_midiv_d2_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event8_midiv_d2_pax.htm |
 | Event 9 | Sep 22 | MCC | https://www.kcrscca.org/results/solo/2019/2019event9_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event9_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event9_pax.htm |
-| Event 10 | Oct 13 | MCC | https://www.kcrscca.org/results/solo/2019/2019event10_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event10_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event10_pax.htm |
-| Event 11 / Halloweenie | Oct 27 | MCC | https://www.kcrscca.org/results/solo/2019/2019event11_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event11_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event11_pax.htm |
+| Event 10 | Oct 20 | MCC | https://www.kcrscca.org/results/solo/2019/2019event10_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event10_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event10_pax.htm |
+| Event 11 / Halloweenie | Nov 3 | MCC | https://www.kcrscca.org/results/solo/2019/2019event11_fin.htm | https://www.kcrscca.org/results/solo/2019/2019event11_raw.htm | https://www.kcrscca.org/results/solo/2019/2019event11_pax.htm |
 
 #### 2018 (10 events)
 | Event | Date | Venue | Final | Raw | PAX |
 |-------|------|-------|-------|-----|-----|
-| Event 1 | Apr 8 | MCC | https://www.kcrscca.org/results/solo/2018/2018event1_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event1_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event1_pax.htm |
-| Event 2 / MiDiv Day 1 | Apr 21 | HMP | http://www.ksscca.org/wp-content/uploads/2018/04/midivday1_fin.htm | http://www.ksscca.org/wp-content/uploads/2018/04/midivday1_raw.htm | http://www.ksscca.org/wp-content/uploads/2018/04/midivday1_pax.htm |
-| Event 3 / MiDiv Day 2 | Apr 22 | HMP | http://www.ksscca.org/wp-content/uploads/2018/04/midivday2_fin.htm | http://www.ksscca.org/wp-content/uploads/2018/04/midivday2_raw.htm | http://www.ksscca.org/wp-content/uploads/2018/04/midivday2_pax.htm |
-| Event 4 | May 6 | MCC | https://www.kcrscca.org/results/solo/2018/2018event4_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event4_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event4_pax.htm |
-| Event 5 | Jun 17 | MCC | https://www.kcrscca.org/results/solo/2018/2018event5_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event5_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event5_pax.htm |
-| Event 6 | Jul 15 | MCC | https://www.kcrscca.org/results/solo/2018/2018event6_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event6_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event6_pax.htm |
-| Event 7 | Aug 12 | MCC | https://www.kcrscca.org/results/solo/2018/2018event7_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event7_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event7_pax.htm |
-| Event 8 | Sep 16 | MCC | https://www.kcrscca.org/results/solo/2018/2018event8_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event8_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event8_pax.htm |
-| Event 9 | Oct 7 | MCC | https://www.kcrscca.org/results/solo/2018/2018event9_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event9_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event9_pax.htm |
+| Event 1 | Mar 25 | MCC | https://www.kcrscca.org/results/solo/2018/2018event1_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event1_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event1_pax.htm |
+| Event 2 | Apr 29 | MCC | https://www.kcrscca.org/results/solo/2018/2018event2_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event2_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event2_pax.htm |
+| Event 3 | May 20 | HMP | https://www.kcrscca.org/results/solo/2018/2018event3_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event3_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event3_pax.htm |
+| Event 4 | Jun 17 | MCC | https://www.kcrscca.org/results/solo/2018/2018event4_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event4_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event4_pax.htm |
+| Event 5 | Jul 15 | MCC | https://www.kcrscca.org/results/solo/2018/2018event5_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event5_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event5_pax.htm |
+| Event 6 | Aug 5 | MCC | https://www.kcrscca.org/results/solo/2018/2018event6_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event6_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event6_pax.htm |
+| Event 7 | Aug 19 | MCC | https://www.kcrscca.org/results/solo/2018/2018event7_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event7_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event7_pax.htm |
+| Event 8 / MiDiv Day 1 | Sep 1 | PMCA | https://www.kcrscca.org/results/solo/2018/2018event8_midiv_d1_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event8_midiv_d1_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event8_midiv_d1_pax.htm |
+| Event 9 / MiDiv Day 2 | Sep 2 | PMCA | https://www.kcrscca.org/results/solo/2018/2018event9_midiv_d2_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event9_midiv_d2_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event9_midiv_d2_pax.htm |
 | Event 10 / Halloweenie | Oct 28 | MCC | https://www.kcrscca.org/results/solo/2018/2018event10_fin.htm | https://www.kcrscca.org/results/solo/2018/2018event10_raw.htm | https://www.kcrscca.org/results/solo/2018/2018event10_pax.htm |
 
-#### 2017 (12 events — venues varied)
+#### 2017 (10 events)
 | Event | Date | Venue | Final | Raw | PAX |
 |-------|------|-------|-------|-----|-----|
-| Event 1 | Apr 2 | MCC | http://www.kcrscca.org/results/solo/2017/2017event1_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event1_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event1_pax.htm |
-| MiDiv | Apr 22-23 | HPT | http://www.kcrscca.org/results/solo/2017/2017midiv1_fin.htm | http://www.kcrscca.org/results/solo/2017/2017midiv1_raw.htm | http://www.kcrscca.org/results/solo/2017/2017midiv1_pax.htm |
-| Event 2 | Apr 30 | PMCA | http://www.kcrscca.org/results/solo/2017/2017event2_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event2_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event2_pax.htm |
-| Event 3 | May 7 | MCC | http://www.kcrscca.org/results/solo/2017/2017event3_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event3_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event3_pax.htm |
-| Event 4 | Jun 11 | MCC | http://www.kcrscca.org/results/solo/2017/2017event4_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event4_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event4_pax.htm |
-| Event 5 | Jun 24 | HPT | http://www.kcrscca.org/results/solo/2017/2017event5_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event5_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event5_pax.htm |
-| Event 6 | Jun 25 | HPT | http://www.kcrscca.org/results/solo/2017/2017event6_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event6_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event6_pax.htm |
-| Event 7 | Jul 22 | HPT | http://www.kcrscca.org/results/solo/2017/2017event7_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event7_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event7_pax.htm |
-| Event 8 | Jul 23 | HPT | http://www.kcrscca.org/results/solo/2017/2017event8_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event8_raw.htm | http://www.kcrscca.org/results/solo/2017/2017even8_pax.htm |
-| Event 9 | Jul 30 | MCC | http://www.kcrscca.org/results/solo/2017/2017event9_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event9_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event9_pax.htm |
-| Event 10 | Sep 23 | HPT | http://www.kcrscca.org/results/solo/2017/2017event10_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event10_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event10_pax.htm |
-| Event 11 | Sep 24 | HPT | http://www.kcrscca.org/results/solo/2017/2017event11_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event11_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event11_pax.htm |
-| Event 12 / Halloweenie | Oct 29 | MCC | http://www.kcrscca.org/results/solo/2017/2017event12_fin.htm | http://www.kcrscca.org/results/solo/2017/2017event12_raw.htm | http://www.kcrscca.org/results/solo/2017/2017event12_pax.htm |
+| Event 1 | Mar 26 | MCC | https://www.kcrscca.org/results/solo/2017/2017event1_fin.htm | https://www.kcrscca.org/results/solo/2017/2017event1_raw.htm | https://www.kcrscca.org/results/solo/2017/2017event1_pax.htm |
+| Event 2 | Apr 23 | MCC | https://www.kcrscca.org/results/solo/2017/2017event2_fin.htm | https://www.kcrscca.org/results/solo/2017/2017event2_raw.htm | https://www.kcrscca.org/results/solo/2017/2017event2_pax.htm |
+| Event 3 | May 21 | MCC | https://www.kcrscca.org/results/solo/2017/2017event3_fin.htm | https://www.kcrscca.org/results/solo/2017/2017event3_raw.htm | https://www.kcrscca.org/results/solo/2017/2017event3_pax.htm |
+| Event 4 | Jun 18 | MCC | https://www.kcrscca.org/results/solo/2017/2017event4_fin.htm | https://www.kcrscca.org/results/solo/2017/2017event4_raw.htm | https://www.kcrscca.org/results/solo/2017/2017event4_pax.htm |
+| Event 5 | Jul 16 | MCC | https://www.kcrscca.org/results/solo/2017/2017event5_fin.htm | https://www.kcrscca.org/results/solo/2017/2017event5_raw.htm | https://www.kcrscca.org/results/solo/2017/2017event5_pax.htm |
+| Event 6 | Aug 6 | MCC | https://www.kcrscca.org/results/solo/2017/2017event6_fin.htm | https://www.kcrscca.org/results/solo/2017/2017event6_raw.htm | https://www.kcrscca.org/results/solo/2017/2017event6_pax.htm |
+| Event 7 | Aug 20 | MCC | https://www.kcrscca.org/results/solo/2017/2017event7_fin.htm | https://www.kcrscca.org/results/solo/2017/2017event7_raw.htm | https://www.kcrscca.org/results/solo/2017/2017event7_pax.htm |
+| Event 8 / MiDiv Day 1 | Sep 2 | PMCA | https://www.kcrscca.org/results/solo/2017/2017event8_midiv_d1_fin.htm | https://www.kcrscca.org/results/solo/2017/2017event8_midiv_d1_raw.htm | — |
+| Event 9 / MiDiv Day 2 | Sep 3 | PMCA | https://www.kcrscca.org/results/solo/2017/2017event9_midiv_d2_fin.htm | https://www.kcrscca.org/results/solo/2017/2017event9_midiv_d2_raw.htm | — |
+| Event 10 / Halloweenie | Oct 29 | MCC | https://www.kcrscca.org/results/solo/2017/2017event10_fin.htm | https://www.kcrscca.org/results/solo/2017/2017event10_raw.htm | https://www.kcrscca.org/results/solo/2017/2017event10_pax.htm |
 
 ---
 
 ### RALLYCROSS — Season Championship / Points Pages
 
 | Year | Season Page | Direct Points Link |
-|------|-------------|---------------------|
-| 2024 | https://www.kcrscca.org/2024-rallycross-results/ | Embedded |
-| 2023 | https://www.kcrscca.org/2023-rallycross-results/ | Embedded |
-| 2022 | https://www.kcrscca.org/2022-rallycross-results/ | Embedded |
-| 2021 | https://www.kcrscca.org/2021-rallycross-results | Embedded |
-| 2020 | https://www.kcrscca.org/2020-rallycross-events-results/ | Embedded |
+|------|-------------|-------------------|
+| 2024 | https://www.kcrscca.org/2024-rallycross-events-results/ | Embedded |
+| 2023 | https://www.kcrscca.org/2023-rallycross-events-results/ | Embedded |
+| 2022 | https://www.kcrscca.org/2022-rallycross-events-results/ | Embedded |
+| 2021 | https://www.kcrscca.org/our-racing/rallycross/2021-rallycross-events-results/ | Embedded |
+| 2020 | https://www.kcrscca.org/our-racing/rallycross/2020-rallycross-events-results/ | Embedded |
 | 2019 | https://www.kcrscca.org/2019-rallycross-events-results/ | Embedded |
 | 2018 | https://www.kcrscca.org/2018-rallycross-events-results/ | https://www.kcrscca.org/results/rallyx/2018/2018-RallyCross-Standings.htm |
 | 2017 | https://www.kcrscca.org/2017-rallycross-events-results/ | https://www.kcrscca.org/results/rallyx/2017/2017-kcrscca-rallycross-championship__points.htm |

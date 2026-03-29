@@ -3,10 +3,10 @@ title: The Goblin — 1985 Toyota MR2 AW11
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-03-29
 tags: [vehicle, mr2, goblin, rallycross, rebuild, miles-smith]
 source_of_truth: true
-summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Engine non-operational as of March 2026. Full diagnostic completed 2026-03-28: confirmed bearing failure + cylinder 4 at 35 PSI. Rebuild vs. replace decision pending.
+summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Engine non-operational as of March 2026. Full diagnostic completed 2026-03-28: confirmed bearing failure + cylinder 4 at 35 PSI. Rebuild vs. replace decision pending. Quick rack installed 2026-03-18; car competed at KCRX E1 on March 22 before engine failure.
 ---
 
 # The Goblin — 1985 Toyota MR2 (AW11)
@@ -109,7 +109,7 @@ The Goblin's 2026 narrative has shifted from "rebuild in progress" to a document
 |---|---|
 | Rear Suspension Overhaul (Phase 1) | Open |
 | Front Suspension Overhaul (Phase 1) | Open |
-| Steering Rack Swap | Open |
+| Steering Rack Swap | **Done** — 2026-03-18. Quick rack recovered from old rallycross MR2 (at Alex's), installed same day. |
 
 ### Misc / Interior
 | Task | Status |

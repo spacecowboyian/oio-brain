@@ -60,3 +60,4 @@ For each event, record:
 | File | Coverage | Notes |
 |---|---|---|
 | [KCRSCCA-RX-Historical-2017-2024.md](KCRSCCA-RX-Historical-2017-2024.md) | 2017–2024 KCRSCCA RX | All OIO drivers: Ian, Miles, Ryan, Hudson |
+| [KCRSCCA-Results-Links.md](KCRSCCA-Results-Links.md) | 2017–2024 KCRSCCA + KSRX (AX + RX) | Complete URL reference for all event result pages. Use this to find source data for any season or event. |
