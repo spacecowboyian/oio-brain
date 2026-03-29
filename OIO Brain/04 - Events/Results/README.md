@@ -59,5 +59,6 @@ For each event, record:
 
 | File | Coverage | Notes |
 |---|---|---|
+| [OIO-Combined-Achievements.md](OIO-Combined-Achievements.md) | All years, all disciplines | **Comprehensive team achievements rollup** — season trophies, event wins, records, year-by-year highlights for all OIO drivers |
 | [KCRSCCA-RX-Historical-2017-2024.md](KCRSCCA-RX-Historical-2017-2024.md) | 2017–2024 KCRSCCA RX | All OIO drivers: Ian, Miles, Ryan, Hudson |
 | [KCRSCCA-Results-Links.md](KCRSCCA-Results-Links.md) | 2017–2024 KCRSCCA + KSRX (AX + RX) | Complete URL reference for all event result pages. Use this to find source data for any season or event. |
