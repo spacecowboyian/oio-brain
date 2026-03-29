@@ -1,0 +1,3361 @@
+{
+  "metadata": {
+    "description": "OIO Racing competition results - KCRSCCA autocross and rallycross",
+    "drivers": [
+      "Ian Jennings",
+      "Ryan Redenbaugh",
+      "Richard Thompson",
+      "Keegan Wilhelm",
+      "Miles Smith",
+      "Hudson Smith",
+      "Douglas Hitchcock (only when Ian Jennings also competing)"
+    ],
+    "last_updated": "2026-03-29",
+    "source": "kcrscca.org"
+  },
+  "autocross": {
+    "2024": {
+      "events": [
+        {
+          "event_number": 1,
+          "date": "2024-04-07",
+          "title": "Event 1",
+          "url": "https://www.kcrscca.org/results/solo/2024/2024autoxevent1_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "STS",
+              "car": "2009 Honda Fit",
+              "color": "",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 54.068,
+              "notes": ""
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "STS",
+              "car": "2007 Honda Fit",
+              "color": "",
+              "position": 6,
+              "trophy_eligible": false,
+              "best_time": 55.481,
+              "notes": ""
+            },
+            {
+              "driver": "Miles Smith",
+              "car_number": "6",
+              "class": "Novice/STS",
+              "car": "2009 Honda Fit",
+              "color": "",
+              "position": 13,
+              "trophy_eligible": false,
+              "best_time": 56.383,
+              "notes": "Novice class, 13th in novice"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 53.657,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 2,
+          "date": "2024-05-19",
+          "title": "Event 2",
+          "url": "https://www.kcrscca.org/results/solo/2024/2024autoxevent2_fin.htm",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "STS",
+              "car": "2007 Honda Fit",
+              "color": "",
+              "position": 3,
+              "trophy_eligible": false,
+              "best_time": 56.342,
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "event_number": 3,
+          "date": "2023-11-05",
+          "title": "Event 3 (Halloweenie reuse/special event)",
+          "url": "https://www.kcrscca.org/results/solo/2024/2024autoxevent3_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 4,
+          "date": "2024-06-29",
+          "title": "MiDiv Day 1",
+          "url": "https://www.kcrscca.org/results/solo/2024/2024autoxevent4_middiv_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "",
+              "position": 2,
+              "trophy_eligible": false,
+              "best_time": 48.725,
+              "notes": "Driving Doug Hitchcock's 2002"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "STS",
+              "car": "2007 Honda Fit",
+              "color": "",
+              "position": 3,
+              "trophy_eligible": false,
+              "best_time": 52.458,
+              "notes": ""
+            },
+            {
+              "driver": "Miles Smith",
+              "car_number": "6",
+              "class": "Novice/STS",
+              "car": "2007 Honda Fit",
+              "color": "",
+              "position": 9,
+              "trophy_eligible": false,
+              "best_time": 53.688,
+              "notes": "Novice class, 9th in novice"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 48.677,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 5,
+          "date": "2024-06-30",
+          "title": "MiDiv Day 2",
+          "url": "https://www.kcrscca.org/results/solo/2024/2024autoxevent5_middiv_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 6,
+          "date": "2024-07-28",
+          "title": "Event 6",
+          "url": "https://www.kcrscca.org/results/solo/2024/2024autoxevent6_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 7,
+          "date": "2024-08-18",
+          "title": "Event 7",
+          "url": "https://www.kcrscca.org/results/solo/2024/2024autoxevent7_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 8,
+          "date": "2024-09-22",
+          "title": "Event 8",
+          "url": "https://www.kcrscca.org/results/solo/2024/2024autoxevent8_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "1",
+              "class": "HCS",
+              "car": "1972 Toyota Celica",
+              "color": "White",
+              "position": 3,
+              "trophy_eligible": false,
+              "best_time": 55.762,
+              "notes": ""
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 54.357,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 9,
+          "date": "2024-10-13",
+          "title": "Event 9",
+          "url": "https://www.kcrscca.org/results/solo/2024/2024autoxevent9_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 10,
+          "date": "2024-10-27",
+          "title": "Halloweenie",
+          "url": "https://www.kcrscca.org/results/solo/2024/2024halloweenie_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "HCS",
+              "car": "1972 Toyota Celica",
+              "color": "White",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 51.901,
+              "notes": ""
+            },
+            {
+              "driver": "Miles Smith",
+              "car_number": "16",
+              "class": "HCS",
+              "car": "1972 Toyota Celica",
+              "color": "White",
+              "position": 6,
+              "trophy_eligible": false,
+              "best_time": 54.807,
+              "notes": ""
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 49.554,
+              "notes": "Ian Jennings also competing this event"
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "XP",
+              "car": "1981 Toyota Tercel",
+              "color": "Orange",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 54.695,
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    "2023": {
+      "events": [
+        {
+          "event_number": 1,
+          "date": "2023-04-?",
+          "title": "Event 1",
+          "url": "https://www.kcrscca.org/results/solo/2023/2023autoxevent1_fin.htm",
+          "notes": "404 - page not found",
+          "results": []
+        },
+        {
+          "event_number": 2,
+          "date": "2023-04-29",
+          "title": "Event 02",
+          "url": "https://www.kcrscca.org/results/solo/2023/2023autoxevent2_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "9",
+              "class": "DS",
+              "car": "2022 Toyota RTV86",
+              "color": "Grayness",
+              "position": null,
+              "trophy_eligible": false,
+              "best_time": null,
+              "notes": "DNS - registered but did not start"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "189",
+              "class": "XA",
+              "car": "1989 BMW LS-30",
+              "color": "Blackish",
+              "position": 7,
+              "trophy_eligible": false,
+              "best_time": 49.493,
+              "notes": ""
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "690",
+              "class": "CAMT",
+              "car": "1986 Lincoln Continental",
+              "color": "Blue",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 51.781,
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "event_number": 3,
+          "date": "2023-04-30",
+          "title": "Event 03",
+          "url": "https://www.kcrscca.org/results/solo/2023/2023autoxevent3_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "9",
+              "class": "DS",
+              "car": "2022 Toyota GR86",
+              "color": "Grayness",
+              "position": 3,
+              "trophy_eligible": true,
+              "best_time": 44.22,
+              "notes": ""
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "189",
+              "class": "XA",
+              "car": "1989 BMW LS-30",
+              "color": "Blackish",
+              "position": 13,
+              "trophy_eligible": false,
+              "best_time": 47.344,
+              "notes": ""
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "690",
+              "class": "CAMT",
+              "car": "1986 Lincoln Continental",
+              "color": "Blue",
+              "position": 6,
+              "trophy_eligible": false,
+              "best_time": 53.511,
+              "notes": ""
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 46.744,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 4,
+          "date": "2023-06-18",
+          "title": "MiDiv (Event 04)",
+          "url": "https://www.kcrscca.org/results/solo/2023/2023autoxevent4_fin.htm",
+          "notes": "Results page titled 'Active heat (All)' - complete data",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "9",
+              "class": "DS",
+              "car": "2022 Toyota GR86",
+              "color": "Grayness",
+              "position": 2,
+              "trophy_eligible": false,
+              "best_time": 46.785,
+              "notes": ""
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "189",
+              "class": "XA",
+              "car": "1989 BMW LS-30",
+              "color": "Blackish",
+              "position": 7,
+              "trophy_eligible": false,
+              "best_time": 41.519,
+              "notes": ""
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "22",
+              "class": "CS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 46.335,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 5,
+          "date": "2023-?",
+          "title": "Event 05",
+          "url": "https://www.kcrscca.org/results/solo/2023/2023autoxevent5_fin.htm",
+          "notes": "404 - page not found (possibly cancelled)",
+          "results": []
+        },
+        {
+          "event_number": 6,
+          "date": "2023-08-20",
+          "title": "Event 06",
+          "url": "https://www.kcrscca.org/results/solo/2023/2023autoxevent%206_fin.htm",
+          "notes": "Ian Jennings DNS, Douglas Hitchcock DNS - neither included",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "13",
+              "class": "DP",
+              "car": "1973 MG GTS",
+              "color": "",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 52.4,
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "event_number": 7,
+          "date": "2023-08-20",
+          "title": "Event 07",
+          "url": "https://www.kcrscca.org/results/solo/2023/2023autoxevent%207_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "9",
+              "class": "DS",
+              "car": "2022 Toyota GR86",
+              "color": "Grayness",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 44.894,
+              "notes": ""
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "13",
+              "class": "DP",
+              "car": "1973 MG GTS",
+              "color": "",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 52.4,
+              "notes": ""
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "19",
+              "class": "DS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 2,
+              "trophy_eligible": false,
+              "best_time": 45.726,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 8,
+          "date": "2023-09-24",
+          "title": "Event 08",
+          "url": "https://www.kcrscca.org/results/solo/2023/2023autoxevent%208_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "9",
+              "class": "DS",
+              "car": "2022 Toyota GR86",
+              "color": "Grayness",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 49.112,
+              "notes": ""
+            },
+            {
+              "driver": "Miles Smith",
+              "car_number": "111",
+              "class": "Novice/STS",
+              "car": "2009 Honda Fit",
+              "color": "",
+              "position": 16,
+              "trophy_eligible": false,
+              "best_time": 57.59,
+              "notes": "Novice class, 16th in novice"
+            }
+          ]
+        },
+        {
+          "event_number": 9,
+          "date": "2023-10-08",
+          "title": "Event 09",
+          "url": "https://www.kcrscca.org/results/solo/2023/2023autoxevent9_fin.htm",
+          "notes": "Douglas Hitchcock competed but Ian Jennings NOT present - Hitchcock excluded per rules",
+          "results": []
+        },
+        {
+          "event_number": 10,
+          "date": "2023-11-12",
+          "title": "Event 10 (RallyX - KCRXEvent 10)",
+          "url": "https://www.kcrscca.org/results/solo/2023/2023autoxevent10_fin.htm",
+          "notes": "This event is actually a rallycross event despite being in solo/2023/ directory",
+          "results": []
+        }
+      ]
+    },
+    "2018": {
+      "events": [
+        {
+          "event_number": 1,
+          "date": "2018-04-08",
+          "title": "Event 1",
+          "url": "https://www.kcrscca.org/results/solo/2018/2018event1_fin.htm",
+          "notes": "No OIO members competed.",
+          "results": []
+        },
+        {
+          "event_number": 2,
+          "date": "2018-04-21",
+          "title": "MiDiv Solo Day 1 / KCR Event 2",
+          "url": "http://www.ksscca.org/wp-content/uploads/2018/04/midivday1_fin.htm",
+          "notes": "Heartland Motorsports Park, Topeka KS. Douglas Hitchcock DNS in STX; no Ian.",
+          "results": []
+        },
+        {
+          "event_number": 3,
+          "date": "2018-04-22",
+          "title": "MiDiv Solo Day 2 / KCR Event 3",
+          "url": "http://www.ksscca.org/wp-content/uploads/2018/04/midivday2_fin.htm",
+          "notes": "Heartland Motorsports Park, Topeka KS. Douglas Hitchcock STX pos:2T best:50.625; Ian not competing, excluded.",
+          "results": []
+        },
+        {
+          "event_number": 4,
+          "date": "2018-05-06",
+          "title": "Event 4",
+          "url": "https://www.kcrscca.org/results/solo/2018/2018event4_fin.htm",
+          "notes": "Douglas Hitchcock STX pos:1T best:42.308; Ian not competing, excluded.",
+          "results": []
+        },
+        {
+          "event_number": 5,
+          "date": "2018-06-17",
+          "title": "Event 5",
+          "url": "https://www.kcrscca.org/results/solo/2018/2018event5_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "155",
+              "class": "HS",
+              "car": "2014 Ford Fiesta ST",
+              "color": "Green",
+              "position": 3,
+              "trophy_eligible": false,
+              "best_time": 58.41,
+              "notes": "3rd of 5 in HS; all runs penalized, best is 56.410+1cone(+2sec)=58.410"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "191",
+              "class": "STX",
+              "car": "1998 BMW 328is",
+              "color": "avus blue",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 51.434,
+              "notes": "1T of 1 in STX; included because Ian competing same day"
+            }
+          ]
+        },
+        {
+          "event_number": 6,
+          "date": "2018-07-15",
+          "title": "Event 6",
+          "url": "https://www.kcrscca.org/results/solo/2018/2018event6_fin.htm",
+          "notes": "Douglas Hitchcock STX pos:1T best:44.311; Ian not competing, excluded.",
+          "results": []
+        },
+        {
+          "event_number": 7,
+          "date": "2018-08-12",
+          "title": "Event 7",
+          "url": "https://www.kcrscca.org/results/solo/2018/2018event7_fin.htm",
+          "notes": "Douglas Hitchcock STX pos:1T best:41.211; Ian not competing, excluded.",
+          "results": []
+        },
+        {
+          "event_number": 8,
+          "date": "2018-09-16",
+          "title": "Event 8",
+          "url": "https://www.kcrscca.org/results/solo/2018/2018event8_fin.htm",
+          "notes": "Douglas Hitchcock STX pos:1 best:45.230 (only entrant, no trophy); Ian not competing, excluded.",
+          "results": []
+        },
+        {
+          "event_number": 9,
+          "date": "2018-10-07",
+          "title": "Event 9",
+          "url": "https://www.kcrscca.org/results/solo/2018/2018event9_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "FSP",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 49.763,
+              "notes": "1T of 1 in FSP (only entrant)"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "191",
+              "class": "STX",
+              "car": "1998 BMW 328is",
+              "color": "avus blue",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 45.031,
+              "notes": "1T of 1 in STX; included because Ian competing same day"
+            }
+          ]
+        },
+        {
+          "event_number": 10,
+          "date": "2018-10-28",
+          "title": "Event 10 (Halloweenie)",
+          "url": "https://www.kcrscca.org/results/solo/2018/2018event10_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "FSP",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 52.056,
+              "notes": "1T of 1 in FSP (only entrant)"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "191",
+              "class": "STX",
+              "car": "1998 BMW 328is",
+              "color": "avus blue",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 45.571,
+              "notes": "1T of 3 in STX; included because Ian competing same day"
+            }
+          ]
+        }
+      ]
+    },
+    "2019": {
+      "events": [
+        {
+          "event_number": 1,
+          "date": "2019-04-07",
+          "title": "Event 1",
+          "url": "https://www.kcrscca.org/results/solo/2019/2019event1_fin.htm",
+          "notes": "No Ian. Hitchcock STX all-DNF (excluded).",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "153",
+              "class": "CP",
+              "car": "1966 Chevrolet Corvair",
+              "color": "Red",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 45.816,
+              "notes": "4th of 5 in CP"
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "CAMT",
+              "car": "1979 Lincoln Continental",
+              "color": "Brown",
+              "position": 5,
+              "trophy_eligible": false,
+              "best_time": 58.81,
+              "notes": "5th of 5 in CAMT"
+            }
+          ]
+        },
+        {
+          "event_number": 2,
+          "date": "2019-05-04",
+          "title": "MiDiv Day 1",
+          "url": "https://www.kcrscca.org/results/solo/2019/midiv2019day1_fin.htm",
+          "notes": "MiDiv event. No Ian.",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "153",
+              "class": "CP",
+              "car": "1966 Chevrolet Corvair",
+              "color": "Red",
+              "position": 6,
+              "trophy_eligible": false,
+              "best_time": 54.788,
+              "notes": "6th of 7 in CP"
+            }
+          ]
+        },
+        {
+          "event_number": 3,
+          "date": "2019-05-05",
+          "title": "MiDiv Day 2",
+          "url": "https://www.kcrscca.org/results/solo/2019/midiv2019day2_fin.htm",
+          "notes": "MiDiv event. No Ian \u2014 Hitchcock excluded.",
+          "results": []
+        },
+        {
+          "event_number": 4,
+          "date": "2019-06-02",
+          "title": "Event 4",
+          "url": "https://www.kcrscca.org/results/solo/2019/2019event4_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "FSP",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 57.021,
+              "notes": "Only entrant in FSP"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "91",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 52.658,
+              "notes": "Ian Jennings also competing; only entrant in HCS"
+            }
+          ]
+        },
+        {
+          "event_number": 5,
+          "date": "2019-06-30",
+          "title": "Event 5",
+          "url": "https://www.kcrscca.org/results/solo/2019/2019event5_fin.htm",
+          "notes": "No Ian \u2014 Hitchcock excluded.",
+          "results": []
+        },
+        {
+          "event_number": 6,
+          "date": "2019-09-15",
+          "title": "Event 6",
+          "url": "https://www.kcrscca.org/results/solo/2019/2019event6_fin.htm",
+          "notes": "Keegan Wilhelm ran as Novice EP.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "131",
+              "class": "HCR",
+              "car": "1977 Toyota Killer Corolla",
+              "color": "Yellow/Blue",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 41.202,
+              "notes": "Heritage Classic Race; 1T of 2"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "31",
+              "class": "HCR",
+              "car": "1977 Toyota Killer Corolla",
+              "color": "Yellow blue",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 42.079,
+              "notes": "Heritage Classic Race; 2T of 2"
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "EP (Novice)",
+              "car": "1981 Toyota Tercel",
+              "color": "Yellow",
+              "position": 18,
+              "trophy_eligible": false,
+              "best_time": 46.816,
+              "notes": "Running as Novice; 18th of 21 in Novice"
+            }
+          ]
+        },
+        {
+          "event_number": 7,
+          "date": "2019-07-28",
+          "title": "Event 7",
+          "url": "https://www.kcrscca.org/results/solo/2019/2019event7_fin.htm",
+          "notes": "No Ian \u2014 Hitchcock excluded.",
+          "results": []
+        },
+        {
+          "event_number": 8,
+          "date": "2019-08-18",
+          "title": "Event 8",
+          "url": "https://www.kcrscca.org/results/solo/2019/2019event8_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "114",
+              "class": "HS",
+              "car": "2014 Ford Fiesta ST",
+              "color": "White",
+              "position": 2,
+              "trophy_eligible": false,
+              "best_time": 50.815,
+              "notes": "2nd of 3 in HS; only 1 trophy position"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "153",
+              "class": "CP",
+              "car": "2013 Ford Mustang",
+              "color": "White",
+              "position": 3,
+              "trophy_eligible": false,
+              "best_time": 47.745,
+              "notes": "3rd of 7 in CP"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 49.332,
+              "notes": "Ian Jennings also competing; 1T of 2 in HCS"
+            }
+          ]
+        },
+        {
+          "event_number": 9,
+          "date": "2019-09-22",
+          "title": "Event 9",
+          "url": "https://www.kcrscca.org/results/solo/2019/2019event9_fin.htm",
+          "notes": "No OIO members competed.",
+          "results": []
+        },
+        {
+          "event_number": 10,
+          "date": "2019-10-13",
+          "title": "Event 10",
+          "url": "https://www.kcrscca.org/results/solo/2019/2019event10_fin.htm",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "31",
+              "class": "HCR",
+              "car": "1977 Toyota Killer Corolla",
+              "color": "Yellow blue",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 52.498,
+              "notes": "1T of 2 in HCR"
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "EP",
+              "car": "1981 Toyota Tercel",
+              "color": "Yellow",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 57.257,
+              "notes": "Only entrant in EP"
+            }
+          ]
+        },
+        {
+          "event_number": 11,
+          "date": "2019-10-27",
+          "title": "Event 11 (Halloweenie)",
+          "url": "https://www.kcrscca.org/results/solo/2019/2019event11_fin.htm",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "FSP",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 49.828,
+              "notes": "Only entrant in FSP"
+            },
+            {
+              "driver": "Parker Jennings",
+              "car_number": "9",
+              "class": "JB",
+              "car": "2014 Parolin Cadet",
+              "color": "Red",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 86.863,
+              "notes": "4th of 4 in Junior Kart B"
+            }
+          ]
+        }
+      ]
+    },
+    "2020": {
+      "events": [
+        {
+          "event_number": 3,
+          "date": "2020-07-11",
+          "title": "KS SCCA Event 3 (KCR co-event)",
+          "url": "http://www.ksscca.org/wp-content/uploads/2020/07/2020_event3_fin.htm",
+          "notes": "COVID year - most KCR events cancelled. Event held at Heartland Motorsports Park, Topeka KS. Douglas Hitchcock DNS; no Ian.",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "31",
+              "class": "HCR",
+              "car": "1977 Toyota Killer Corolla",
+              "color": "Yellow blue",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 74.753,
+              "notes": "Heritage Classic Race; only 2 entrants"
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "DS",
+              "car": "2017 Lincoln MKZ",
+              "color": "Burgundy",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 82.764,
+              "notes": "4th of 4 in DS"
+            }
+          ]
+        },
+        {
+          "event_number": 4,
+          "date": "2020-07-12",
+          "title": "KS SCCA Event 4 (KCR co-event)",
+          "url": "http://www.ksscca.org/wp-content/uploads/2020/07/2020event4_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "13",
+              "class": "HCR",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 72.888,
+              "notes": "Heritage Classic Race; 2T of 2"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "31",
+              "class": "HCR",
+              "car": "1977 Toyota Killer Corolla",
+              "color": "Yellow blue",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 70.818,
+              "notes": "Heritage Classic Race; 1T of 2"
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "EP",
+              "car": "1981 Toyota Tercel",
+              "color": "Yellow",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 78.012,
+              "notes": "E Prepared; 2T of 2"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 69.426,
+              "notes": "Ian Jennings also competing this event; only entrant in HCS"
+            }
+          ]
+        },
+        {
+          "event_number": 10,
+          "date": "2020-10-10",
+          "title": "KS SCCA Event 10 (KCR co-event)",
+          "url": "http://www.ksscca.org/wp-content/uploads/2020/10/event10_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "HCR",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 64.573,
+              "notes": "Heritage Classic Race; 2T of 2"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "HCR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 60.686,
+              "notes": "Heritage Classic Race; 1T of 2"
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "EP",
+              "car": "1981 Toyota Tercel",
+              "color": "Yellow",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 66.014,
+              "notes": "Only entrant in EP"
+            }
+          ]
+        },
+        {
+          "event_number": 11,
+          "date": "2020-10-11",
+          "title": "KS SCCA Event 11 (KCR co-event)",
+          "url": "http://www.ksscca.org/wp-content/uploads/2020/10/event11_fin.htm",
+          "notes": "Ian Jennings not present.",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "HCR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 65.873,
+              "notes": "Only entrant in HCR"
+            }
+          ]
+        },
+        {
+          "event_number": "MiDiv Day 1",
+          "date": "2020-10-03",
+          "title": "MiDiv 2020 Day 1",
+          "url": "http://www.ksscca.org/wp-content/uploads/2020/10/midiv2020_fin_d1.htm",
+          "notes": "MiDiv event at Heartland Motorsports Park, Topeka KS. Hitchcock DNS.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "FSP",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 66.492,
+              "notes": "Only entrant in FSP"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "153",
+              "class": "CP",
+              "car": "1966 Chevrolet Corvair",
+              "color": "Red",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 65.013,
+              "notes": "4th of 5 in CP"
+            }
+          ]
+        },
+        {
+          "event_number": "MiDiv Day 2",
+          "date": "2020-10-04",
+          "title": "MiDiv 2020 Day 2",
+          "url": "http://www.ksscca.org/wp-content/uploads/2020/10/midiv2020_fin_d2.htm",
+          "notes": "MiDiv event Day 2. Ian DNS. Hitchcock excluded (Ian DNS).",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "153",
+              "class": "CP",
+              "car": "1966 Chevrolet Corvair",
+              "color": "Red",
+              "position": 4,
+              "trophy_eligible": true,
+              "best_time": 64.485,
+              "notes": "4T of 5 in CP"
+            }
+          ]
+        }
+      ]
+    },
+    "2021": {
+      "events": [
+        {
+          "event_number": 1,
+          "date": "2021-05-23",
+          "title": "Event 1",
+          "url": "https://www.kcrscca.org/results/solo/2021/2021event1_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "FSP",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 47.82,
+              "notes": "Only entrant in FSP"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "DP",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 46.133,
+              "notes": "Only entrant in DP"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 46.271,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 2,
+          "date": "2021-06-19",
+          "title": "Event 2",
+          "url": "https://www.kcrscca.org/results/solo/2021/2021Event2F_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "187",
+              "class": "GS",
+              "car": "2013 Ford Focus ST",
+              "color": "Blue",
+              "position": 3,
+              "trophy_eligible": false,
+              "best_time": 48.495,
+              "notes": ""
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 48.721,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 3,
+          "date": "2021-07-31",
+          "title": "Event 3",
+          "url": "https://www.kcrscca.org/results/solo/2021/2021Event3_fin.htm",
+          "notes": "Ian Jennings DNS - Douglas Hitchcock competed but excluded per rules (Ian DNS)",
+          "results": []
+        },
+        {
+          "event_number": 4,
+          "date": "2021-08-01",
+          "title": "Event 4",
+          "url": "https://www.kcrscca.org/results/solo/2021/2021Event4_fin.htm",
+          "notes": "Douglas Hitchcock DNS",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "HS",
+              "car": "2009 Honda Fit Sport",
+              "color": "Overcast",
+              "position": 6,
+              "trophy_eligible": false,
+              "best_time": 53.515,
+              "notes": "6th of 7 in HS"
+            }
+          ]
+        },
+        {
+          "event_number": 5,
+          "date": "2021-08-21",
+          "title": "Event 5",
+          "url": "https://www.kcrscca.org/results/solo/2021/2021Event5_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "114",
+              "class": "HS",
+              "car": "2014 Ford Fiesta ST",
+              "color": "White",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 37.214,
+              "notes": "4th of 5 in HS"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 37.985,
+              "notes": "Ian Jennings also competing this event; only entrant in HCS"
+            }
+          ]
+        },
+        {
+          "event_number": 6,
+          "date": "2021-08-22",
+          "title": "Event 6",
+          "url": "https://www.kcrscca.org/results/solo/2021/2021Event6_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "113",
+              "class": "HS",
+              "car": "2014 Ford Fiesta ST",
+              "color": "White",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 54.207,
+              "notes": "4th of 5 in HS"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 54.356,
+              "notes": "Ian Jennings also competing this event; only entrant in HCS"
+            }
+          ]
+        },
+        {
+          "event_number": 7,
+          "date": "2021-09-18",
+          "title": "Event 7",
+          "url": "https://www.kcrscca.org/results/solo/2021/2021event7_fin.htm",
+          "notes": "Douglas Hitchcock HCS DNS - not recorded",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "61",
+              "class": "STS",
+              "car": "2009 Honda Fit Sport",
+              "color": "Overcast",
+              "position": 2,
+              "trophy_eligible": false,
+              "best_time": 44.591,
+              "notes": "Also DNS in CP"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "DP",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 46.36,
+              "notes": "Only entrant in DP"
+            }
+          ]
+        },
+        {
+          "event_number": 8,
+          "date": "2021-09-19",
+          "title": "Event 8",
+          "url": "https://www.kcrscca.org/results/solo/2021/2021event8_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "1",
+              "class": "CP",
+              "car": "1997 Ford Cujo",
+              "color": "Darkness",
+              "position": 2,
+              "trophy_eligible": false,
+              "best_time": 39.542,
+              "notes": "Also DNS in STS"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "DP",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 45.221,
+              "notes": "Only entrant in DP"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 43.031,
+              "notes": "Ian Jennings also competing this event; only entrant in HCS"
+            }
+          ]
+        },
+        {
+          "event_number": 9,
+          "date": "2021-10-23",
+          "title": "Event 9",
+          "url": "https://www.kcrscca.org/results/solo/2021/2021Event9_fin.htm",
+          "notes": "Douglas Hitchcock HCS DNS - not recorded",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "149",
+              "class": "CP",
+              "car": "2011 Ford Mustang",
+              "color": "Midnight",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 50.542,
+              "notes": "2T - 2nd of 4 in CP"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "DP",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 51.132,
+              "notes": "Only entrant in DP"
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "HS",
+              "car": "1982 Honda Prelude",
+              "color": "Dirty Ice Blue",
+              "position": 5,
+              "trophy_eligible": false,
+              "best_time": 60.042,
+              "notes": "5th of 8 in HS"
+            }
+          ]
+        },
+        {
+          "event_number": 10,
+          "date": "2021-10-24",
+          "title": "Event 10",
+          "url": "https://www.kcrscca.org/results/solo/2021/2021Event10_fin.htm",
+          "notes": "Ian Jennings CP DNS; Keegan Wilhelm HS DNS; Douglas Hitchcock HCS DNS",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "DP",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 52.528,
+              "notes": "Only entrant in DP"
+            }
+          ]
+        }
+      ]
+    },
+    "2022": {
+      "events": [
+        {
+          "event_number": 1,
+          "date": "2022-03-27",
+          "title": "Event 01",
+          "url": "https://www.kcrscca.org/results/solo/2022/2022event01_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "STX",
+              "car": "1995 Nissan 240SX",
+              "color": "Potato",
+              "position": 2,
+              "trophy_eligible": false,
+              "best_time": 54.451,
+              "notes": ""
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "3",
+              "class": "STH",
+              "car": "2002 Audi TT",
+              "color": "Black",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 54.221,
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "event_number": 2,
+          "date": "2022-05-01",
+          "title": "Event 02",
+          "url": "https://www.kcrscca.org/results/solo/2022/2022event02_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "STS",
+              "car": "2009 Honda Fit Sport",
+              "color": "Overcast",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 49.059,
+              "notes": ""
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "3",
+              "class": "STH",
+              "car": "2002 Audi TT",
+              "color": "Black",
+              "position": 5,
+              "trophy_eligible": false,
+              "best_time": 47.696,
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "event_number": 3,
+          "date": "2022-?",
+          "title": "Event 03",
+          "url": "https://www.kcrscca.org/results/solo/2022/2022event03_fin.htm",
+          "notes": "404 - page not found",
+          "results": []
+        },
+        {
+          "event_number": 4,
+          "date": "2022-?",
+          "title": "Event 04",
+          "url": "https://www.kcrscca.org/results/solo/2022/2022event04_fin.htm",
+          "notes": "404 - page not found",
+          "results": []
+        },
+        {
+          "event_number": 5,
+          "date": "2022-07-17",
+          "title": "Event 05",
+          "url": "https://www.kcrscca.org/results/solo/2022/2022event05_fin.htm",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "3",
+              "class": "STH",
+              "car": "2002 Audi TT",
+              "color": "",
+              "position": 6,
+              "trophy_eligible": false,
+              "best_time": 39.841,
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "event_number": 6,
+          "date": "2022-08-21",
+          "title": "Event 06",
+          "url": "https://www.kcrscca.org/results/solo/2022/2022event06_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "184",
+              "class": "STX",
+              "car": "2013 Scion FR-S",
+              "color": "",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 56.719,
+              "notes": ""
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "3",
+              "class": "STH",
+              "car": "2002 Audi TT",
+              "color": "Black",
+              "position": 6,
+              "trophy_eligible": false,
+              "best_time": 57.187,
+              "notes": ""
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 57.891,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 7,
+          "date": "2022-09-17",
+          "title": "Event 07",
+          "url": "https://www.kcrscca.org/results/solo/2022/2022event07_fin.htm",
+          "notes": "Douglas Hitchcock DS #16 DNS - not recorded",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "DS",
+              "car": "2022 Toyota GR86",
+              "color": "Grayness",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 36.591,
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "event_number": 8,
+          "date": "2022-09-18",
+          "title": "Event 08",
+          "url": "https://www.kcrscca.org/results/solo/2022/2022event08_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "DS",
+              "car": "2022 Toyota GR86",
+              "color": "Grayness",
+              "position": 3,
+              "trophy_eligible": true,
+              "best_time": 51.726,
+              "notes": ""
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "16",
+              "class": "DS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 51.573,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 9,
+          "date": "2022-10-16",
+          "title": "Event 09",
+          "url": "https://www.kcrscca.org/results/solo/2022/2022event09_fin.htm",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "186",
+              "class": "XSA",
+              "car": "1989 BMW LS-30",
+              "color": "Blackish",
+              "position": 3,
+              "trophy_eligible": true,
+              "best_time": 35.299,
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "event_number": 10,
+          "date": "2022-10-30",
+          "title": "Halloweenie",
+          "url": "https://www.kcrscca.org/results/solo/2022/2022event10_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "184",
+              "class": "STX",
+              "car": "2022 Toyota GR86",
+              "color": "Grayness",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 48.245,
+              "notes": ""
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "186",
+              "class": "XSA",
+              "car": "1989 BMW LS-30",
+              "color": "Blackish",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 47.083,
+              "notes": ""
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "HS",
+              "car": "1983 Mercedes-Benz 300SD",
+              "color": "Beige",
+              "position": 4,
+              "trophy_eligible": false,
+              "best_time": 61.721,
+              "notes": ""
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "76",
+              "class": "HCS",
+              "car": "1976 BMW 2002",
+              "color": "Malaga Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 49.701,
+              "notes": "Ian Jennings also competing this event"
+            }
+          ]
+        }
+      ]
+    },
+    "2017": {
+      "events": [
+        {
+          "event_number": 1,
+          "date": "2017-04-02",
+          "title": "Event 1",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event1_fin.htm",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "23",
+              "class": "HS",
+              "car": "2000 Ford Contour SVT",
+              "color": "Silver",
+              "position": 6,
+              "trophy_eligible": false,
+              "best_time": 58.915,
+              "notes": "6th of 10 in HS"
+            }
+          ]
+        },
+        {
+          "event_number": 2,
+          "date": "2017-04-30",
+          "title": "Event 2",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event2_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 3,
+          "date": "2017-05-07",
+          "title": "Event 3",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event3_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "HS",
+              "car": "2014 Ford Fiesta ST",
+              "color": "Green",
+              "position": 3,
+              "trophy_eligible": true,
+              "best_time": 56.514,
+              "notes": "3T of 6 in HS"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "191",
+              "class": "STX",
+              "car": "1998 BMW 328is",
+              "color": "avus blue",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 52.205,
+              "notes": "1T of 6 in STX. Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 4,
+          "date": "2017-06-11",
+          "title": "Event 4",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event4_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "9",
+              "class": "Novice/HS",
+              "car": "2014 Ford Fiesta ST",
+              "color": "Green",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 47.097,
+              "notes": "1T of 25 in Novice class (HS car)"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "91",
+              "class": "STP",
+              "car": "1998 BMW 328is",
+              "color": "avus blue",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 41.781,
+              "notes": "2T of 2 in STP. Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 5,
+          "date": null,
+          "title": "Event 5 (no file - 404)",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event5_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 6,
+          "date": "2017-06-25",
+          "title": "Event 6",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event6_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 7,
+          "date": "2017-07-22",
+          "title": "Event 7",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event7_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 8,
+          "date": "2017-07-23",
+          "title": "Event 8",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event8_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 9,
+          "date": "2017-07-30",
+          "title": "Event 9",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event9_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "HS",
+              "car": "2014 Ford Fiesta ST",
+              "color": "Green",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 42.906,
+              "notes": "2T of 3 in HS"
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "88",
+              "class": "STF",
+              "car": "1988 Toyota Tercel 4WD",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": false,
+              "best_time": 53.49,
+              "notes": "Only entrant in STF (no T suffix shown)"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "191",
+              "class": "STX",
+              "car": "1998 BMW 328is",
+              "color": "avus blue",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 38.578,
+              "notes": "1T of 3 in STX. Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": 10,
+          "date": "2017-09-23",
+          "title": "Event 10",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event10_fin.htm",
+          "results": []
+        },
+        {
+          "event_number": 11,
+          "date": "2017-09-24",
+          "title": "Event 11",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event11_fin.htm",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "153",
+              "class": "CP",
+              "car": "1966 Chevrolet Corvair",
+              "color": "Red",
+              "position": 3,
+              "trophy_eligible": true,
+              "best_time": 62.142,
+              "notes": "3T of 4 in CP"
+            }
+          ]
+        },
+        {
+          "event_number": 12,
+          "date": "2017-10-29",
+          "title": "Event 12 (Halloweenie)",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017event12_fin.htm",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "HS",
+              "car": "2014 Ford Fiesta ST",
+              "color": "Green",
+              "position": 4,
+              "trophy_eligible": true,
+              "best_time": 51.678,
+              "notes": "4T of 7 in HS"
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "FP",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 2,
+              "trophy_eligible": true,
+              "best_time": 55.656,
+              "notes": "2T of 3 in FP"
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "191",
+              "class": "STX",
+              "car": "1998 BMW 328is",
+              "color": "avus blue",
+              "position": 1,
+              "trophy_eligible": true,
+              "best_time": 46.715,
+              "notes": "1T of 9 in STX. Ian Jennings also competing this event"
+            }
+          ]
+        },
+        {
+          "event_number": "MiDiv",
+          "date": "2017-04-22",
+          "title": "MiDiv Day 1+2",
+          "url": "https://www.kcrscca.org/results/solo/2017/2017midiv1_fin.htm",
+          "notes": "Hitchcock STX #191 DNS on Day 1, best 53.414 on Day 2; no Ian Jennings \u2014 Hitchcock excluded.",
+          "results": []
+        }
+      ]
+    }
+  },
+  "rallycross": {
+    "2024": {
+      "events": [
+        {
+          "event_number": 1,
+          "date": "2024-04-14",
+          "title": "KCRXEvent 1",
+          "url": "https://www.kcrscca.org/results/rallyx/2024/kcrxevent1_fin.htm",
+          "venue": "I-35 Speedway, Winston MO",
+          "notes": "10 runs. Cone adjustment: 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "2",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 512.744,
+              "fastest_run": 48.729,
+              "notes": "1T of 8 in MR. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1973 MGB GTS",
+              "color": "Grenade Green",
+              "position": 3,
+              "trophy_eligible": true,
+              "total_time": 544.108,
+              "fastest_run": 48.961,
+              "notes": "3T of 8 in MR."
+            },
+            {
+              "driver": "Miles Smith",
+              "car_number": "12",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 5,
+              "trophy_eligible": true,
+              "total_time": 551.761,
+              "fastest_run": 51.217,
+              "notes": "5T of 8 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 2,
+          "date": "2024-04-28",
+          "title": "KCRXEvent 2",
+          "url": null,
+          "venue": "Thunder Valley Sand Drags, Grain Valley MO",
+          "notes": "CANCELLED \u2014 no results.",
+          "results": []
+        },
+        {
+          "event_number": 3,
+          "date": "2024-06-15",
+          "title": "KCRX Event 3",
+          "url": "https://www.kcrscca.org/results/rallyx/2024/kcrxevent3_fin.htm",
+          "venue": "Ray Rocks Offroad Resort, Missouri",
+          "notes": "17 runs. Cone adjustment: 0sec per system (using 2sec/cone per OIO rule for fastest_run calc). Miles Smith DSQ on runs 11-17 (heat 2). Ian had Best Raw Time of Day overall.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "2",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 871.943,
+              "fastest_run": 46.944,
+              "notes": "1T of 5 in MR. CLASS WIN + Best Raw Time of Day overall."
+            },
+            {
+              "driver": "Miles Smith",
+              "car_number": "12",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 5,
+              "trophy_eligible": false,
+              "total_time": 1141.136,
+              "fastest_run": 49.32,
+              "notes": "5 of 5 in MR. DSQ on runs 11-17 (heat 2). Fastest run from clean runs 1-10 only."
+            }
+          ]
+        },
+        {
+          "event_number": 4,
+          "date": "2024-07-14",
+          "title": "KCRX Event 4",
+          "url": "https://www.kcrscca.org/results/rallyx/2024/kcrxevent4_fin.htm",
+          "venue": "I-35 Speedway, Winston MO",
+          "notes": "9 runs. Cone adjustment: 0sec per system.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "2",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 491.1,
+              "fastest_run": 50.702,
+              "notes": "1T of 7 in MR. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "PF",
+              "car": "2007 Honda Fit",
+              "color": "Black",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 497.083,
+              "fastest_run": 52.953,
+              "notes": "1T of 5 in PF. CLASS WIN."
+            },
+            {
+              "driver": "Miles Smith",
+              "car_number": "12",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 4,
+              "trophy_eligible": false,
+              "total_time": 509.409,
+              "fastest_run": 53.449,
+              "notes": "4 of 7 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 5,
+          "date": "2024-08-25",
+          "title": "Event 5",
+          "url": "https://www.kcrscca.org/results/rallyx/2024/kcrxevent5_fin.htm",
+          "venue": "Thunder Valley Sand Drags, Grain Valley MO",
+          "notes": "8 runs (sand course). Cone adjustment: 0sec per system.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "2",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 492.21,
+              "fastest_run": 59.285,
+              "notes": "3 of 4 in MR. Thunder Valley sand course."
+            },
+            {
+              "driver": "Miles Smith",
+              "car_number": "12",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 4,
+              "trophy_eligible": false,
+              "total_time": 505.128,
+              "fastest_run": 59.678,
+              "notes": "4 of 4 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 6,
+          "date": "2024-09-15",
+          "title": "Event 6",
+          "url": "https://www.kcrscca.org/results/rallyx/2024/kcrxevent6_fin.htm",
+          "venue": "Ray Rocks Offroad Resort, Missouri",
+          "notes": "8 runs (two distinct course sections visible in run times). Cone adjustment: 0sec per system.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "2",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 343.266,
+              "fastest_run": 34.377,
+              "notes": "2T of 7 in MR. 0.577s behind Niles Davis."
+            },
+            {
+              "driver": "Miles Smith",
+              "car_number": "12",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 4,
+              "trophy_eligible": true,
+              "total_time": 355.896,
+              "fastest_run": 34.909,
+              "notes": "4T of 7 in MR."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1973 MGB GTS",
+              "color": "Grenade Green",
+              "position": 5,
+              "trophy_eligible": false,
+              "total_time": 389.133,
+              "fastest_run": 34.347,
+              "notes": "5 of 7 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 7,
+          "date": "2024-10-06",
+          "title": "Event 7 EnduroX",
+          "url": "https://www.kcrscca.org/results/rallyx/2024/kcrxevent7_endurocross_fin.htm",
+          "venue": "I-35 Speedway, Winston MO",
+          "notes": "6 runs. Endurocross format. Cone adjustment: 0sec per system.",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "PF",
+              "car": "2007 Honda Fit",
+              "color": "Black",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 444.095,
+              "fastest_run": 68.393,
+              "notes": "3 of 5 in PF. All runs had penalties; fastest adjusted run 6 (66.393+1 cone = 68.393)."
+            }
+          ]
+        }
+      ]
+    },
+    "2023": {
+      "events": [
+        {
+          "event_number": 1,
+          "date": "2023-04-02",
+          "title": "KCRXEvent 1",
+          "url": "https://www.kcrscca.org/results/rallyx/2023/kcrxevent1_fin.htm",
+          "notes": "8 runs. Cone adjustment: 5sec per system (fastest_run uses 2sec/cone per OIO rule).",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "2",
+              "class": "MF",
+              "car": "2009 Honda Fit Sport",
+              "color": "Overcast",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 388.276,
+              "fastest_run": 40.227,
+              "notes": "2T of 14 in MF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1990 Mazda Miata",
+              "color": "Red",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 405.998,
+              "fastest_run": 39.199,
+              "notes": "3 of 5 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 3,
+          "date": "2023-05-07",
+          "title": "KCRXEvent 3",
+          "url": "https://www.kcrscca.org/results/rallyx/2023/kcrxevent3_fin.htm",
+          "notes": "7 runs. Cone adjustment: 5sec per system (fastest_run uses 2sec/cone per OIO rule).",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1990 Mazda Miata",
+              "color": "Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 491.644,
+              "fastest_run": 67.81,
+              "notes": "1T of 9 in MR. CLASS WIN \u2014 beat Ian by 6.579s."
+            },
+            {
+              "driver": "Ian Jennings",
+              "car_number": "2",
+              "class": "MR",
+              "car": "1987 Toyota MR2",
+              "color": "Darkness",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 498.223,
+              "fastest_run": 68.373,
+              "notes": "2T of 9 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 4,
+          "date": "2023-05-21",
+          "title": "KCRXEvent 4",
+          "url": "https://www.kcrscca.org/results/rallyx/2023/kcrxevent4_fin.htm",
+          "notes": "10 runs. Cone adjustment: 5sec per system (fastest_run uses 2sec/cone per OIO rule).",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1990 Mazda Miata",
+              "color": "Red",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 480.987,
+              "fastest_run": 45.901,
+              "notes": "1T of 7 in MR. CLASS WIN."
+            }
+          ]
+        },
+        {
+          "event_number": 8,
+          "date": "2023-09-17",
+          "title": "Event 8",
+          "url": "https://www.kcrscca.org/results/rallyx/2023/kcrxevent8_fin.htm",
+          "notes": "10 runs. Cone adjustment: 5sec per system (fastest_run uses 2sec/cone per OIO rule).",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1973 MGB GTS",
+              "color": "Grenade Green",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 475.005,
+              "fastest_run": 44.382,
+              "notes": "1T of 3 in MR. CLASS WIN. Car switched from Miata to MGB GTS."
+            }
+          ]
+        },
+        {
+          "event_number": 10,
+          "date": "2023-11-12",
+          "title": "KCRXEvent 10",
+          "url": "https://www.kcrscca.org/results/rallyx/2023/kcrxevent10_fin.htm",
+          "notes": "10 runs. Cone adjustment: 0sec per system (fastest_run uses 2sec/cone per OIO rule).",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "MF",
+              "car": "2009 Honda Fit Sport",
+              "color": "Overcast",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 451.784,
+              "fastest_run": 43.244,
+              "notes": "1T of 7 in MF. CLASS WIN."
+            },
+            {
+              "driver": "Miles Smith",
+              "car_number": "16",
+              "class": "MF",
+              "car": "2009 Honda Fit Sport",
+              "color": "Overcast",
+              "position": 3,
+              "trophy_eligible": true,
+              "total_time": 473.69,
+              "fastest_run": 45.006,
+              "notes": "3T of 7 in MF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "13",
+              "class": "MR",
+              "car": "1990 Mazda Miata",
+              "color": "Red",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 466.809,
+              "fastest_run": 43.694,
+              "notes": "2T of 5 in MR."
+            }
+          ]
+        }
+      ]
+    },
+    "2022": {
+      "events": [
+        {
+          "event_number": 3,
+          "date": "2022-06-26",
+          "title": "KCRXEvent 3",
+          "url": "https://www.kcrscca.org/results/rallyx/2022/kcrxevent3_fin.htm",
+          "notes": "Cone adjustment: 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 555.679,
+              "fastest_run": 72.158,
+              "notes": "1T of 2 in PF. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "138",
+              "class": "MA",
+              "car": "1991 Audi Quattro",
+              "color": "Panzerfaust",
+              "position": 3,
+              "trophy_eligible": true,
+              "total_time": 549.171,
+              "fastest_run": 75.791,
+              "notes": "3T of 7 in MA."
+            }
+          ]
+        },
+        {
+          "event_number": 4,
+          "date": "2022-07-10",
+          "title": "KCRXEvent 4",
+          "url": "https://www.kcrscca.org/results/rallyx/2022/kcrxevent4_fin.htm",
+          "notes": "Cone adjustment: 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 521.176,
+              "fastest_run": 43.49,
+              "notes": "3 of 4 in PF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "138",
+              "class": "MA",
+              "car": "1991 Audi Quattro",
+              "color": "Panzerfaust",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 505.455,
+              "fastest_run": 43.429,
+              "notes": "2T of 4 in MA."
+            }
+          ]
+        },
+        {
+          "event_number": 7,
+          "date": "2022-10-16",
+          "title": "KCRXEvent 7",
+          "url": "https://www.kcrscca.org/results/rallyx/2022/kcrxevent7_fin.htm",
+          "notes": "8 runs. Cone adjustment: 5sec per system (fastest_run uses 2sec/cone per OIO rule).",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "13",
+              "class": "PR",
+              "car": "1990 Mazda Miata",
+              "color": "",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 522.615,
+              "fastest_run": 62.342,
+              "notes": "3 of 5 in PR."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1973 MGB GTS",
+              "color": "",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 503.846,
+              "fastest_run": 61.059,
+              "notes": "3 of 4 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 9,
+          "date": "2022-10-16",
+          "title": "KCRXEvent 9",
+          "url": "https://www.kcrscca.org/results/rallyx/2022/kcrxevent8_fin.htm",
+          "notes": "8 runs. File named KCRXevent8 on server. Cone adjustment: 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "188",
+              "class": "MR",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "",
+              "position": 9,
+              "trophy_eligible": false,
+              "total_time": 561.826,
+              "fastest_run": 58.106,
+              "notes": "9 of 9 in MR."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1973 MGB GTS",
+              "color": "Grenade Green",
+              "position": 4,
+              "trophy_eligible": true,
+              "total_time": 516.954,
+              "fastest_run": 56.005,
+              "notes": "4T of 9 in MR."
+            }
+          ]
+        }
+      ]
+    },
+    "2021": {
+      "events": [
+        {
+          "event_number": 3,
+          "date": "2021-04-18",
+          "title": "KCR RallyCross Event 3",
+          "url": "https://www.kcrscca.org/results/rallyx/2021/2021rxevent3_fin.htm",
+          "venue": "Riverside MO",
+          "notes": "7 runs. Cone adjustment: 5sec per system; fastest_run uses 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 503.435,
+              "fastest_run": 66.248,
+              "notes": "1T of 3 in PF. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 505.915,
+              "fastest_run": 65.641,
+              "notes": "1T of 8 in MR. CLASS WIN."
+            }
+          ]
+        },
+        {
+          "event_number": 5,
+          "date": "2021-05-02",
+          "title": "KCR RallyCross Event 5",
+          "url": "https://www.kcrscca.org/results/rallyx/2021/2021rxevent5_fin.htm",
+          "venue": "I-35 Speedway",
+          "notes": "10 runs.",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 3,
+              "trophy_eligible": true,
+              "total_time": 597.328,
+              "fastest_run": 49.438,
+              "notes": "3T of 7 in MR. Ian not present."
+            }
+          ]
+        },
+        {
+          "event_number": 7,
+          "date": "2021-06-26",
+          "title": "KCR RallyCross Event 7 / Divisionals",
+          "url": "https://www.kcrscca.org/results/rallyx/2021/2021rxevent7_fin.htm",
+          "venue": "Riverside MO",
+          "notes": "13 runs (10 regular + 3 bonus). Divisional event.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 573.887,
+              "fastest_run": 40.862,
+              "notes": "3 of 3 in PF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 2,
+              "trophy_eligible": false,
+              "total_time": 543.592,
+              "fastest_run": 39.993,
+              "notes": "2 of 5 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 8,
+          "date": "2021-07-25",
+          "title": "KCR RallyCross Event 8",
+          "url": "https://www.kcrscca.org/results/rallyx/2021/2021rxevent8_fin.htm",
+          "venue": "Thunder Valley Speedway",
+          "notes": "6 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 318.139,
+              "fastest_run": 46.852,
+              "notes": "2T of 4 in PF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 314.96,
+              "fastest_run": 48.797,
+              "notes": "1T of 4 in MR. CLASS WIN."
+            },
+            {
+              "driver": "Douglas Hitchcock",
+              "car_number": "90",
+              "class": "SF",
+              "car": "",
+              "color": "",
+              "position": 4,
+              "trophy_eligible": false,
+              "total_time": 430.1,
+              "fastest_run": 65.535,
+              "notes": "4 of 4 in SF. Ian competing at same event."
+            }
+          ]
+        },
+        {
+          "event_number": 9,
+          "date": "2021-08-15",
+          "title": "KCR RallyCross Event 9",
+          "url": "https://www.kcrscca.org/results/rallyx/2021/2021rxevent9_fin.htm",
+          "venue": "Riverside MO",
+          "notes": "8 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 2,
+              "trophy_eligible": false,
+              "total_time": 440.978,
+              "fastest_run": 50.928,
+              "notes": "2 of 2 in PF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 448.026,
+              "fastest_run": 53.3,
+              "notes": "1T of 4 in MR. CLASS WIN."
+            }
+          ]
+        },
+        {
+          "event_number": 10,
+          "date": "2021-09-12",
+          "title": "KCR RallyCross Event 10",
+          "url": "https://www.kcrscca.org/results/rallyx/2021/2021rxevent10_fin.htm",
+          "venue": "I-35 Speedway",
+          "notes": "9 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 572.53,
+              "fastest_run": 59.163,
+              "notes": "1T of 3 in PF. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "188",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": null,
+              "trophy_eligible": false,
+              "total_time": 596.52,
+              "fastest_run": 64.259,
+              "notes": "MR class."
+            }
+          ]
+        },
+        {
+          "event_number": 12,
+          "date": "2021-11-07",
+          "title": "KCR RallyCross Event 12",
+          "url": "https://www.kcrscca.org/results/rallyx/2021/2021rxevent12_fin.htm",
+          "venue": "Thunder Valley Speedway",
+          "notes": "9 runs. Ian DNS.",
+          "results": [
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 378.401,
+              "fastest_run": 40.061,
+              "notes": "2T of 4 in MR. Ian DNS."
+            }
+          ]
+        },
+        {
+          "event_number": 13,
+          "date": "2021-12-05",
+          "title": "KCR RallyCross Event 13",
+          "url": "https://www.kcrscca.org/results/rallyx/2021/2021rxevent13_fin.htm",
+          "venue": "Thunder Valley Speedway",
+          "notes": "6 runs. Cone adjustment: 0sec per system; fastest_run uses 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 433.166,
+              "fastest_run": 63.963,
+              "notes": "1T of 4 in PF. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 432.413,
+              "fastest_run": 62.874,
+              "notes": "1T of 5 in MR. CLASS WIN."
+            }
+          ]
+        }
+      ]
+    },
+    "2020": {
+      "events": [
+        {
+          "event_number": 1,
+          "date": "2020-02-22",
+          "title": "KCR RallyCross Event 1",
+          "url": "https://www.kcrscca.org/results/rallyx/2020/2020_rxEvent1_fin.htm",
+          "venue": "I-35 Speedway",
+          "notes": "8 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 2,
+              "trophy_eligible": false,
+              "total_time": 416.994,
+              "fastest_run": 43.145,
+              "notes": "2 of 2 in PF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 402.026,
+              "fastest_run": 42.666,
+              "notes": "1T of 6 in MR. CLASS WIN."
+            }
+          ]
+        },
+        {
+          "event_number": 3,
+          "date": "2020-05-24",
+          "title": "KCR RallyCross Event 3",
+          "url": "https://www.kcrscca.org/results/rallyx/2020/2020_rxEvent3_fin.htm",
+          "venue": "",
+          "notes": "10 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 567.029,
+              "fastest_run": 49.569,
+              "notes": "3 of 3 in PF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 3,
+              "trophy_eligible": true,
+              "total_time": 646.452,
+              "fastest_run": 52.999,
+              "notes": "3T of 7 in MR."
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "SF",
+              "car": "",
+              "color": "",
+              "position": 5,
+              "trophy_eligible": false,
+              "total_time": 596.806,
+              "fastest_run": 53.132,
+              "notes": "5 of 6 in SF."
+            }
+          ]
+        },
+        {
+          "event_number": 4,
+          "date": "2020-06-14",
+          "title": "KCR RallyCross Event 4",
+          "url": "https://www.kcrscca.org/results/rallyx/2020/2020_rxEvent4_fin.htm",
+          "venue": "",
+          "notes": "9 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 352.131,
+              "fastest_run": 36.411,
+              "notes": "1T of 4 in PF. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 4,
+              "trophy_eligible": false,
+              "total_time": 380.072,
+              "fastest_run": 38.503,
+              "notes": "4 of 6 in MR."
+            },
+            {
+              "driver": "Keegan Wilhelm",
+              "car_number": "69",
+              "class": "SF",
+              "car": "",
+              "color": "",
+              "position": 5,
+              "trophy_eligible": false,
+              "total_time": 400.488,
+              "fastest_run": 38.724,
+              "notes": "5 of 7 in SF."
+            }
+          ]
+        },
+        {
+          "event_number": 6,
+          "date": "2020-09-26",
+          "title": "KCR RallyCross Event 6 / Unnaturally Aspirated",
+          "url": "https://www.kcrscca.org/results/rallyx/2020/2020_rxEvent6_fin.htm",
+          "venue": "Riverside MO",
+          "notes": "9 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 527.739,
+              "fastest_run": 54.319,
+              "notes": "2T of 3 in PF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 3,
+              "trophy_eligible": true,
+              "total_time": 552.381,
+              "fastest_run": 53.23,
+              "notes": "3T of 5 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 7,
+          "date": "2020-11-08",
+          "title": "KCR RallyCross Event 7",
+          "url": "https://www.kcrscca.org/results/rallyx/2020/2020_rxEvent7_fin.htm",
+          "venue": "",
+          "notes": "8 runs. Internally titled KCRX#6.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 469.957,
+              "fastest_run": 55.464,
+              "notes": "1T of 1 in PF. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 455.425,
+              "fastest_run": 55.917,
+              "notes": "2T of 5 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 8,
+          "date": "2020-12-05",
+          "title": "KCR RallyCross Event 8",
+          "url": "https://www.kcrscca.org/results/rallyx/2020/2020_rxEvent8_fin.htm",
+          "venue": "",
+          "notes": "10 runs. Internally titled KCRX Event #7.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 561.398,
+              "fastest_run": 46.415,
+              "notes": "1T of 2 in PF. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 567.243,
+              "fastest_run": 46.12,
+              "notes": "1T of 2 in MR. CLASS WIN."
+            }
+          ]
+        },
+        {
+          "event_number": 9,
+          "date": "2020-12-06",
+          "title": "KCR RallyCross Event 9",
+          "url": "https://www.kcrscca.org/results/rallyx/2020/2020_rxEvent9_fin.htm",
+          "venue": "",
+          "notes": "8 runs. Internally titled KCRX#8.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 569.229,
+              "fastest_run": 65.595,
+              "notes": "1T of 2 in PF. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 568.581,
+              "fastest_run": 65.008,
+              "notes": "2T of 4 in MR."
+            }
+          ]
+        }
+      ]
+    },
+    "2019": {
+      "events": [
+        {
+          "event_number": 3,
+          "date": "2019-10-19",
+          "title": "KCR RallyCross Event 3",
+          "url": "https://www.kcrscca.org/results/rallyx/2019/20191019_event_3_fin.htm",
+          "venue": "",
+          "notes": "11 runs (10+1). Cone adjustment: 0sec per system; fastest_run uses 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 769.679,
+              "fastest_run": 60.697,
+              "notes": "1T of 2 in PF. CLASS WIN."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 876.302,
+              "fastest_run": 61.13,
+              "notes": "1T of 2 in MR. CLASS WIN."
+            }
+          ]
+        },
+        {
+          "event_number": 5,
+          "date": "2019-08-25",
+          "title": "KCR RallyCross Event 5",
+          "url": "https://www.kcrscca.org/results/rallyx/2019/20190825_event_5_fin.htm",
+          "venue": "",
+          "notes": "5 runs (shortened event). Cone adjustment: 0sec per system; fastest_run uses 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 2,
+              "trophy_eligible": false,
+              "total_time": 262.296,
+              "fastest_run": 51.281,
+              "notes": "2 of 3 in PF. Ryan not present."
+            }
+          ]
+        },
+        {
+          "event_number": 1,
+          "date": "2019-11-02",
+          "title": "KCR RallyCross Event 1",
+          "url": "https://www.kcrscca.org/results/rallyx/2019/20191102_event_1_fin.htm",
+          "venue": "",
+          "notes": "12 runs (10+2). Cone adjustment: 0sec per system; fastest_run uses 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 611.684,
+              "fastest_run": 47.472,
+              "notes": "3 of 3 in PF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 633.458,
+              "fastest_run": 49.709,
+              "notes": "1T of 3 in MR. CLASS WIN."
+            }
+          ]
+        },
+        {
+          "event_number": 8,
+          "date": "2019-11-03",
+          "title": "KCR RallyCross Event 8",
+          "url": "https://www.kcrscca.org/results/rallyx/2019/20191103_event_8_fin.htm",
+          "venue": "",
+          "notes": "8 runs. Cone adjustment: 0sec per system; fastest_run uses 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 444.402,
+              "fastest_run": 50.866,
+              "notes": "3 of 4 in PF. Run 7 had missed gate (+10sec)."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 4,
+              "trophy_eligible": false,
+              "total_time": 441.31,
+              "fastest_run": 55.368,
+              "notes": "4 of 4 in MR. All runs had cones."
+            }
+          ]
+        },
+        {
+          "event_number": "Turkey Jive",
+          "date": "2019-11-24",
+          "title": "KS SCCA Turkey Jive",
+          "url": "https://www.kcrscca.org/results/rallyx/2019/turkeyjive_fin.htm",
+          "venue": "",
+          "notes": "8 runs. Kansas Region SCCA event. Cone adjustment: 0sec per system; fastest_run uses 2sec/cone per OIO rule.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 2,
+              "trophy_eligible": true,
+              "total_time": 477.604,
+              "fastest_run": 55.956,
+              "notes": "2T of 4 in PF."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 6,
+              "trophy_eligible": false,
+              "total_time": 490.18,
+              "fastest_run": 56.102,
+              "notes": "6 of 6 in MR. Multiple DNF runs."
+            }
+          ]
+        }
+      ]
+    },
+    "2018": {
+      "events": [
+        {
+          "event_number": 2,
+          "date": "2018-03-24",
+          "title": "KCR RallyCross Event 2",
+          "url": "https://www.kcrscca.org/results/rallyx/2018/2018-KCRSCCA-RallyCross-Event2_fin.htm",
+          "venue": "Thunder Valley Speedway",
+          "notes": "7 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 366.848,
+              "fastest_run": 48.594,
+              "notes": "3 of 5 in PF."
+            }
+          ]
+        },
+        {
+          "event_number": 3,
+          "date": "2018-05-19",
+          "title": "KCR RallyCross Event 3 / MiDiv",
+          "url": "https://www.kcrscca.org/results/rallyx/2018/2018-KCRSCCA-RallyCross-Event3_MidDiv_2.htm",
+          "venue": "Santa Fe Trail",
+          "notes": "2-day combined Divisional event. 6 runs per day shown. Ian had DNF on most D1 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "2014 Ford Fiesta ST",
+              "color": "Green",
+              "position": 6,
+              "trophy_eligible": false,
+              "total_time": 532.546,
+              "fastest_run": 65.12,
+              "notes": "6 of 7 in PF. Multiple DNFs on D1. Note: Ian driving Fiesta ST at this event."
+            }
+          ]
+        },
+        {
+          "event_number": 4,
+          "date": "2018-07-01",
+          "title": "KS SCCA Unity Rallycross",
+          "url": "https://www.kcrscca.org/results/rallyx/2018/2018-KCRSCCA-RallyCross-Event4_fin.htm",
+          "venue": "",
+          "notes": "11 runs. Kansas Region SCCA event.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "2014 Ford Fiesta ST",
+              "color": "Green",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 496.807,
+              "fastest_run": 38.516,
+              "notes": "1T of 4 in PF. CLASS WIN. Note: Ian driving Fiesta ST at this event."
+            },
+            {
+              "driver": "Ryan Redenbaugh",
+              "car_number": "86",
+              "class": "MR",
+              "car": "1985 Toyota Corolla",
+              "color": "White",
+              "position": 5,
+              "trophy_eligible": false,
+              "total_time": 504.333,
+              "fastest_run": 40.786,
+              "notes": "5 of 6 in MR."
+            },
+            {
+              "driver": "Richard Thompson",
+              "car_number": "186",
+              "class": "MR",
+              "car": "Toyota Corolla",
+              "color": "White",
+              "position": 4,
+              "trophy_eligible": true,
+              "total_time": 498.478,
+              "fastest_run": 41.124,
+              "notes": "4T of 6 in MR."
+            }
+          ]
+        },
+        {
+          "event_number": 6,
+          "date": "2018-08-26",
+          "title": "KCR RallyCross Event 6",
+          "url": "https://www.kcrscca.org/results/rallyx/2018/2018-KCRSCCA-RallyCross-Event6_fin.htm",
+          "venue": "I-35 Speedway",
+          "notes": "9 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 2,
+              "trophy_eligible": false,
+              "total_time": 621.038,
+              "fastest_run": 65.127,
+              "notes": "2 of 3 in PF."
+            }
+          ]
+        },
+        {
+          "event_number": 7,
+          "date": "2018-09-30",
+          "title": "KCR RallyCross Event 7",
+          "url": "https://www.kcrscca.org/results/rallyx/2018/2018-KCRSCCA-RallyCross-Event7_fin.htm",
+          "venue": "I-35 Speedway",
+          "notes": "13 runs.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 1,
+              "trophy_eligible": false,
+              "total_time": 641.063,
+              "fastest_run": 47.332,
+              "notes": "1 of 1 in PF. Solo class entry."
+            }
+          ]
+        },
+        {
+          "event_number": 8,
+          "date": "2018-11-03",
+          "title": "KCR RallyCross Event 8",
+          "url": "https://www.kcrscca.org/results/rallyx/2018/2018-KCRSCCA-RallyCross-Event8_fin.htm",
+          "venue": "Thunder Valley Speedway",
+          "notes": "11 runs. Ryan DNS.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "PF",
+              "car": "1987 Toyota Corolla FX16",
+              "color": "Silver",
+              "position": 2,
+              "trophy_eligible": false,
+              "total_time": 645.985,
+              "fastest_run": 57.026,
+              "notes": "2 of 2 in PF."
+            }
+          ]
+        }
+      ]
+    },
+    "2017": {
+      "events": [
+        {
+          "event_number": 4,
+          "date": "2017-09-16",
+          "title": "KCR RallyCross Event 4",
+          "url": "https://www.kcrscca.org/results/rallyx/2017/2017-kcrscca-rallycross-event4_fin.htm",
+          "venue": "",
+          "notes": "11 runs. Ian in SF class with Fiesta ST.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "SF",
+              "car": "2014 Ford Fiesta ST",
+              "color": "Green",
+              "position": 3,
+              "trophy_eligible": false,
+              "total_time": 540.274,
+              "fastest_run": 46.857,
+              "notes": "3 of 4 in SF. Ian driving Fiesta ST in SF class."
+            }
+          ]
+        },
+        {
+          "event_number": 5,
+          "date": "2017-11-04",
+          "title": "KCR RallyCross Event 5",
+          "url": "https://www.kcrscca.org/results/rallyx/2017/2017-kcrscca-rallycross-event5_fin.htm",
+          "venue": "",
+          "notes": "11 runs. Ian in SF class with Fiesta ST.",
+          "results": [
+            {
+              "driver": "Ian Jennings",
+              "car_number": "6",
+              "class": "SF",
+              "car": "2014 Ford Fiesta ST",
+              "color": "Green",
+              "position": 1,
+              "trophy_eligible": true,
+              "total_time": 557.641,
+              "fastest_run": 43.286,
+              "notes": "1T of 3 in SF. CLASS WIN. Ian driving Fiesta ST in SF class."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
