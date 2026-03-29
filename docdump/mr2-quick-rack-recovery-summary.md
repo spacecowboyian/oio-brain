@@ -2,7 +2,7 @@
 
 ## Overview
 
-This set of transcripts captures a **Wednesday parts-recovery mission** to pull a **quicker-than-stock steering rack** out of Ian's old MR2 at **Alex's house** and install it back onto **the Goblin** in time for an event **that Sunday**.
+This set of transcripts captures a **Wednesday 3/18/26 parts-recovery mission** to pull a **quicker-than-stock steering rack** out of Ian's old MR2 at **Alex's house** and install it back onto **the Goblin** in time for an event **that Sunday**.
 
 The old car had already been sold to Alex for **$200**, and Alex knew the upgraded rack was coming back off the car. The Goblin was down and waiting on this rack, so the job had a real deadline. The rack was removed from Alex's car and reinstalled on the Goblin **the same day**.
 
