@@ -1,0 +1,108 @@
+---
+title: Template — Video Transcript Summary
+type: content
+status: draft
+owner: Ian Jennings
+updated: YYYY-MM-DD
+tags: [template, transcript, summary, content]
+source_of_truth: false
+summary: Template for AI-generated summaries from raw video transcripts dropped in docdump/transcripts/. Use this to structure a human-readable summary of what was said, what matters, and what the video should feed into the brain.
+---
+
+# [Video Title] — Transcript Summary
+
+**Date:** YYYY-MM-DD
+**YouTube ID:** [video_id or URL]
+**Duration:** [e.g., 18:42]
+**Format:** [Vlog / Fit How-To / Church of Combustion / Short / Other]
+**Status:** [Filmed / Edited / Published / Unknown]
+
+---
+
+## What This Video Is About
+
+[2–4 sentence overview of the video's core topic. What is happening? What problem or project is being covered? What is the viewer experiencing?]
+
+---
+
+## Key Topics Covered
+
+- [Topic 1 — brief description]
+- [Topic 2 — brief description]
+- [Topic 3 — brief description]
+- [Add more as needed]
+
+---
+
+## Cars and Vehicles Mentioned
+
+| Nickname | Car | Notes |
+|---|---|---|
+| [Goblin] | [1985 Toyota MR2] | [what was said or shown about it] |
+
+---
+
+## People Mentioned
+
+| Name | Role | Context |
+|---|---|---|
+| [Ian] | [Primary] | [what they said or did] |
+| [Miles] | [Co-driver] | [what they said or did] |
+
+---
+
+## Events or Locations Referenced
+
+| Event / Location | Date | Notes |
+|---|---|---|
+| [e.g., KCRSCCA RallyCross E1] | [YYYY-MM-DD] | [brief context] |
+
+---
+
+## Key Quotes or Memorable Moments
+
+> "[Exact quote or close paraphrase — something notable, funny, or character-defining]"
+> — [Speaker, timestamp if known]
+
+- [Other notable moment]
+- [Other notable moment]
+
+---
+
+## Build / Mechanical Details
+
+[Any specific build steps, part numbers, specs, tools, or mechanical notes mentioned in the video. If none, write "None."]
+
+---
+
+## Content and Story Arc Notes
+
+[How does this video fit into the larger OIO story arc? Does it open or close a project loop? Does it connect to a recurring theme (Dale's journey, Goblin rebuild, Fitty Cent kids racing, etc.)?]
+
+---
+
+## Follow-Up Content Ideas
+
+- [Idea generated from this video]
+- [Idea generated from this video]
+
+---
+
+## Brain Updates Triggered
+
+[List any files in the OIO Brain that should be updated based on this transcript. Check them off as done.]
+
+- [ ] `OIO Brain/03 - Cars/[Car]/Overview.md` — [what to update]
+- [ ] `OIO Brain/03 - Cars/[Car]/Maintenance-Log.md` — [what to update]
+- [ ] `OIO Brain/02 - Content/Published-Videos.md` — add entry
+- [ ] `OIO Brain/04 - Events/Results/` — [if event results are mentioned]
+- [ ] `01-active/current-state.md` — [if current state changed]
+- [ ] `01-active/open-loops.md` — [if new open loops surfaced]
+
+---
+
+## Source Transcript
+
+**Processed from:** `docdump/transcripts/[filename]`
+**Processed on:** YYYY-MM-DD
+**Summary stored at:** `OIO Brain/02 - Content/Summaries/[YYYY-MM-DD_video-title].md`

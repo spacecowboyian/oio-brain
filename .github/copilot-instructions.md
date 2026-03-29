@@ -185,6 +185,27 @@ The `docdump/` folder at the repo root is the intake zone for raw documents that
 
 ---
 
+## Transcript Docdump Workflow
+
+The `docdump/transcripts/` subfolder is the intake zone for raw video transcripts.
+
+### When Ian drops a transcript in docdump/transcripts/:
+
+1. **Read the full transcript** before starting
+2. **Generate a structured summary** using `00-core/templates/transcript-summary.md` as the template
+3. **Save the summary** to `OIO Brain/02 - Content/Summaries/YYYY-MM-DD_video-title.md`
+4. **Update relevant brain files** — car overviews, maintenance logs, published videos, events, active state as appropriate
+5. **Delete the source transcript file** from `docdump/transcripts/` after the summary has been successfully written
+6. **Confirm the deletion** in your progress report
+
+### Rules
+
+- **Delete only the transcript file, not the folder.** `docdump/transcripts/` and `docdump/transcripts/README.md` must never be deleted.
+- **If a transcript cannot be fully processed**, document what was done in `01-active/open-loops.md` — then still delete the source file.
+- **Do not treat transcript files as source of truth** until their data has been validated and written into a canonical brain file.
+
+---
+
 ## Data Processing Scripts
 
 Any script written to process data from this repo (or from `docdump/`) must include a step to delete the original source data file after processing is complete.
