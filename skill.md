@@ -1,5 +1,7 @@
 ---
 title: How to Use the OIO Brain — Agent Skill Guide
+name: oio-brain
+description: Operational brain for OIO Outside Inside Outside Racing. Agent onboarding guide covering orientation sequence, folder structure, document classes, read/write rules, key workflows, and standing rules.
 type: reference
 status: active
 owner: Ian Jennings
