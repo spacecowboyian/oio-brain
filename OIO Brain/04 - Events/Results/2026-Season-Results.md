@@ -33,48 +33,50 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 
 **KCRSCCA Kansas City Region SCCA RallyCross Event 1**
 **Total Registered: 40 | Times: 40 | Status: Unofficial**
-**Format:** 7 runs (6 runs for Ian — see note)
+**Format:** 7 runs per driver (Ian DNF'd run 7 — see scoring note below)
 
 | Driver | Car | # | Class | Pos | Entries | Trophies | Total | Best Run | Trophy |
 |---|---|---|---|---|---|---|---|---|---|
-| Ian Jennings | 1985 Toyota MR2 | 2 | MR | **1st** | 8 | 3 | **318.321** | 50.443 | ✓ |
+| Ian Jennings | 1985 Toyota MR2 | 2 | MR | **7th** | 8 | 3 | ~~318.321~~ → **393.784** ⚠️ | 50.443 | — |
 | Ryan Redenbaugh | 1990 Mazda Miata | 86 | MR | 3rd | 8 | 3 | 375.674 | 50.095 | ✓ |
 | Miles Smith | 1985 Toyota MR2 | 12 | MR | 4th | 8 | 3 | 388.813 | 52.081 | — |
 | Hudson Smith | 2009 Honda Fit Sport | 6 | N | **1st** | 8 | 3 | 368.484 | 46.785 | ✓ |
 
-**Runs (Ian #2):** 54.154 | 52.790 | 56.534(1c) | 53.179 | **50.443** | 51.221
+> ⚠️ **Ian DNF — run 7 not taken.** Official Pronto results display 318.321 (6 runs only) and list Ian 1st. Corrected total applies DNF penalty: slowest MR run 7 (Andrew Moll, 65.463) + 10s = **75.463** added → corrected total **393.784**. Per Ian's calculation: **7th place, no trophy.**
+
+**Runs (Ian #2):** 54.154 | 52.790 | 56.534(1c) | 53.179 | **50.443** | 51.221 | **DNF** (run 7 not taken → +75.463 penalty)
 **Runs (Ryan #86):** 54.931 | 56.850 | 52.339 | 56.116(1c) | 53.658(1c) | 51.685 | **50.095**
 **Runs (Miles #12):** 56.036 | 56.987 | 54.796 | 55.985 | 53.201 | **52.081** | 59.727
 **Runs (Hudson #6):** 57.312 | 54.738 | 57.856(1c) | 56.538 | 47.363 | **46.785** | 47.892
 
-*Note: Ian's row shows 6 runs in the source data (total 318.321 checks out at 6 runs). All other MR drivers have 7 runs. Possible cause: early DNF/DNS on one run not reflected in total.*
-
-**Top Times of Day:**
+**Top Times of Day (official display — pre-DNF-correction):**
 | Category | Time | Class | # | Driver |
 |---|---|---|---|---|
 | Raw | 236.154 | PR | 14 | Steven Allison |
 | Index | 236.154 | PR | 14 | Steven Allison |
 | Prepared | 236.154 | PR | 14 | Steven Allison |
-| **Modified** | **318.321** | MR | 2 | **Ian Jennings** |
+| Modified | 318.321 | MR | 2 | Ian Jennings ⚠️ |
 
-*Ian wins Modified Best Time of Day. PR class ran 4 runs; MR class ran 6–7 runs — not directly comparable.*
+*Modified ToD is based on Ian's incomplete 6-run official total. With DNF correction, Ian's total rises to 393.784 and the Modified ToD would belong to Larry g Smith (370.630).*
 
 ---
 
-#### MR Class — Full Results (for context)
+#### MR Class — Corrected Results (DNF penalty applied)
 
-| Pos | # | Driver | Car | Total | Best |
-|---|---|---|---|---|---|
-| **1** | 2 | **Ian Jennings** | 1985 Toyota MR2 | **318.321** | 50.443 |
-| 2 | 3 | Larry g Smith | 1990 Mazda Miata MX5 | 370.630 | 50.234 |
-| **3** | 86 | **Ryan Redenbaugh** | 1990 Mazda Miata | 375.674 | 50.095 |
-| **4** | 12 | **Miles Smith** | 1985 Toyota MR2 | 388.813 | 52.081 |
-| 5 | 27 | Jake Cobb | 1967 Ford Mustang | 388.987 | 51.063 |
-| 6 | 173 | Maximum Bear | — | 391.600 | 51.830 |
-| 7 | 16 | Andrew Moll | 1997 Chevrolet Camaro | 459.423 | 56.744 |
-| 8 | 73 | Izzy Secor | — | No Time | — |
+| Pos | # | Driver | Car | Total | Best | Notes |
+|---|---|---|---|---|---|---|
+| 1 | 3 | Larry g Smith | 1990 Mazda Miata MX5 | 370.630 | 50.234 | Trophy |
+| 2 | 86 | **Ryan Redenbaugh** | 1990 Mazda Miata | 375.674 | 50.095 | **Trophy** |
+| 3 | 12 | **Miles Smith** | 1985 Toyota MR2 | 388.813 | 52.081 | Trophy |
+| 4 | 27 | Jake Cobb | 1967 Ford Mustang | 388.987 | 51.063 | |
+| 5 | 173 | Maximum Bear | — | 391.600 | 51.830 | |
+| 6 | 16 | Andrew Moll | 1997 Chevrolet Camaro | 459.423 | 56.744 | |
+| **7** | 2 | **Ian Jennings** | 1985 Toyota MR2 | **393.784** ⚠️ | 50.443 | DNF run 7 |
+| 8 | 73 | Izzy Secor | — | No Time | — | |
 
-*Trophies: 3. Ian 1st, Larry g Smith 2nd, Ryan 3rd. Miles misses by 0.174s (Jake Cobb 5th at 388.987).*
+*⚠️ Ian's total is corrected from official 318.321 (6 runs). DNF penalty on run 7: 65.463 (Andrew Moll, slowest run 7) + 10s = 75.463 → corrected total 393.784. Official results list Ian 1st — the Pronto display does not reflect the missing run.*
+
+*Trophies: 3 (positions 1–3). Ryan 2nd, Miles 3rd.*
 
 #### Novice Class — Full Results (for context)
 
@@ -97,11 +99,11 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 
 ### Ian vs. Miles — KCRX 2026 (MR class)
 
-| Event | Ian | Miles | Ian wins? |
+| Event | Ian | Miles | Outcome |
 |---|---|---|---|
-| E1 Ray Rocks | **1st** (318.321) | 4th (388.813) | ✓ by 70.492s |
+| E1 Ray Rocks | 7th (393.784 corrected) | 3rd (388.813) | Miles wins — Ian DNF'd run 7 |
 
-*Ian leads Miles in every 2026 head-to-head so far (extends 2024–2025 streak).*
+*Miles beats Ian at E1 after Ian's DNF on run 7.*
 
 ---
 
@@ -109,17 +111,17 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 
 | Milestone | Details |
 |---|---|
-| Ian KCRX 2026 season opener win | E1 MR class win, Ray Rocks — despite post-race engine failure confirmed |
-| Ian Modified Best Time of Day | KCRX E1 — 318.321 total (best in Modified category across all classes) |
+| Ryan KCRX E1 trophy | 2nd in MR class, Ray Rocks — first OIO trophy of 2026 |
+| Miles KCRX E1 trophy | 3rd in MR class, Ray Rocks — trophy at season opener |
 | Ryan 2026 debut car | 1990 Mazda Miata — not the MGB GT (still in paint) or AE86 |
 | Hudson Novice class win | KCRX E1 Novice, 1st/8 — his second KCRX start overall |
-| MR class OIO sweep depth | Ian 1st, Ryan 3rd, Miles 4th out of 8 — 3 of top 4 are OIO |
+| Ian KCRX E1 DNF | Ran 6 of 7 runs in MR class. Official Pronto results show 1st (318.321) but DNF penalty on run 7 corrects to 7th (393.784). Goblin confirmed failed post-race. |
+| MR class OIO presence | Ryan 2nd, Miles 3rd, Ian 7th (DNF) — still strong representation across the MR field |
 
 ---
 
 ## `TODO` — Open Items
 
-- Confirm Ian's run count anomaly (6 vs 7 runs for other MR drivers at E1)
 - Confirm Ryan's Miata — is this a borrowed car or a new acquisition?
 - Confirm venue for E1 (noted as Ray Rocks in MR2 prep log — verify)
 - Add remaining 2026 KCRX events as they occur

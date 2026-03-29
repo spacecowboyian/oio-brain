@@ -10,7 +10,7 @@
       "Keegan Wilhelm"
     ],
     "updated": "2026-03-29",
-    "note": "Per-run times use format: raw seconds. Cone penalties noted separately in 'cones' field. SCCA RallyCross: total = sum of all completed runs. Cone penalty = 2s per cone, already reflected in total where applicable."
+    "note": "Per-run times use format: raw seconds. Cone penalties noted separately in 'cones' field. SCCA RallyCross: total = sum of all completed runs. Cone penalty = 2s per cone. DNF run penalty = slowest competitor time for that run + 10 seconds, added to driver's cumulative total."
   },
   "events": [
     {
@@ -29,7 +29,7 @@
         "raw": { "time": 236.154, "class": "PR", "number": 14, "driver": "Steven Allison" },
         "index": { "time": 236.154, "class": "PR", "number": 14, "driver": "Steven Allison" },
         "prepared": { "time": 236.154, "class": "PR", "number": 14, "driver": "Steven Allison" },
-        "modified": { "time": 318.321, "class": "MR", "number": 2, "driver": "Ian Jennings" }
+        "modified": { "time": 318.321, "class": "MR", "number": 2, "driver": "Ian Jennings", "note": "Based on official 6-run display only. Ian DNF'd run 7 — corrected result is 7th place per DNF penalty rule." }
       },
       "oio_results": [
         {
@@ -40,20 +40,24 @@
           "class_full": "Modified - Rear Wheel Drive",
           "class_entries": 8,
           "class_trophies": 3,
-          "position": 1,
-          "trophy": true,
-          "total_time": 318.321,
+          "position": 7,
+          "trophy": false,
+          "total_time_official": 318.321,
+          "total_time_corrected": 393.784,
           "best_run": 50.443,
+          "dnf_run": 7,
+          "dnf_penalty_basis": "Slowest MR run 7 time (Andrew Moll, 65.463) + 10s = 75.463 added to 6-run total of 318.321",
           "runs": [
             { "run": 1, "time": 54.154, "cones": 0 },
             { "run": 2, "time": 52.790, "cones": 0 },
             { "run": 3, "time": 56.534, "cones": 1 },
             { "run": 4, "time": 53.179, "cones": 0 },
             { "run": 5, "time": 50.443, "cones": 0 },
-            { "run": 6, "time": 51.221, "cones": 0 }
+            { "run": 6, "time": 51.221, "cones": 0 },
+            { "run": 7, "time": null, "dnf": true, "penalty_applied": 75.463 }
           ],
-          "notes": "Class win. Modified Best Time of Day. 6 runs recorded (see source image for possible truncation)."
-        },
+          "notes": "DNF on run 7 — did not take last run. Official Pronto results display shows 318.321 (6 runs) and lists Ian 1st, but that total is incomplete. Corrected total with DNF penalty = 393.784. Per Ian's calculation: 7th place, no trophy. The Modified Best Time of Day shown in official results (318.321) is based on the incomplete 6-run total and does not reflect the corrected standing."
+        }
         {
           "driver": "Ryan Redenbaugh",
           "car": "1990 Mazda Miata",
@@ -98,7 +102,7 @@
             { "run": 6, "time": 52.081, "cones": 0 },
             { "run": 7, "time": 59.727, "cones": 0 }
           ],
-          "notes": "4th place, missed trophy by 0.174s from Jake Cobb (5th — wait, 5th is 388.987). Miles was 4th."
+          "notes": "4th place, missed trophy by 0.174s (Jake Cobb 5th at 388.987)."
         },
         {
           "driver": "Hudson Smith",
