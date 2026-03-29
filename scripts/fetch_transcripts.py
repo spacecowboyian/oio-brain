@@ -20,11 +20,13 @@ Saves each transcript to:
 """
 
 import argparse
+import glob
 import json
 import os
 import re
+import tempfile
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 
 try:
     from youtube_transcript_api import YouTubeTranscriptApi
@@ -33,6 +35,13 @@ except ImportError:
     print("Error: youtube-transcript-api is not installed.")
     print("Run: pip install youtube-transcript-api")
     raise
+
+try:
+    from yt_dlp import YoutubeDL
+    from yt_dlp.utils import DownloadError
+    _YTDLP_AVAILABLE = True
+except ImportError:
+    _YTDLP_AVAILABLE = False
 
 CATALOG_FILE = os.path.join(os.path.dirname(__file__), "..", "OIO-Video-Catalog.md")
 TRANSCRIPTS_DIR = os.path.join(os.path.dirname(__file__), "..", "transcripts")
@@ -136,21 +145,115 @@ def get_processed_ids(transcripts_dir):
     return processed
 
 
-def fetch_transcript(video_id):
-    """Fetch transcript for a video. Returns list of segment dicts or None on failure."""
+def fetch_transcript_via_api(video_id):
+    """Primary: youtube-transcript-api (fast, no download)."""
     try:
         api = YouTubeTranscriptApi()
         fetched = api.fetch(video_id)
         return fetched.to_raw_data()
-    except TranscriptsDisabled:
-        print(f"    ⚠ Transcripts disabled for {video_id}")
+    except (TranscriptsDisabled, NoTranscriptFound):
         return None
-    except NoTranscriptFound:
-        print(f"    ⚠ No transcript found for {video_id}")
+    except Exception:
         return None
-    except Exception as exc:
-        print(f"    ✗ Error fetching {video_id}: {exc}")
+
+
+def parse_vtt(vtt_path):
+    """Parse a WebVTT file into a list of {start, text} segment dicts.
+
+    VTT files from yt-dlp contain overlapping cues due to rolling captions.
+    We deduplicate by emitting each distinct text span only once, using the
+    start time of its first appearance.
+    """
+    segments = []
+    seen_texts = set()
+
+    cue_time_re = re.compile(
+        r"(\d+):(\d{2}):(\d{2})\.(\d+)\s+-->\s+(\d+):(\d{2}):(\d{2})\.(\d+)"
+    )
+
+    with open(vtt_path, encoding="utf-8") as f:
+        content = f.read()
+
+    # Split on blank lines to get blocks
+    blocks = re.split(r"\n{2,}", content.strip())
+
+    for block in blocks:
+        lines = block.strip().splitlines()
+        if not lines:
+            continue
+
+        # Find the timestamp line
+        ts_match = None
+        text_lines = []
+        for idx, line in enumerate(lines):
+            if ts_match is None:
+                ts_match = cue_time_re.match(line)
+                if ts_match:
+                    text_lines = lines[idx + 1:]
+                    break
+
+        if not ts_match or not text_lines:
+            continue
+
+        h, m, s, ms = (int(ts_match.group(i)) for i in (1, 2, 3, 4))
+        start = h * 3600 + m * 60 + s + int(ms) / 1000
+
+        # Strip VTT inline tags (<c>, <00:00:00.000>, etc.)
+        raw = " ".join(text_lines)
+        raw = re.sub(r"<[^>]+>", "", raw).strip()
+        if not raw or raw in seen_texts:
+            continue
+
+        seen_texts.add(raw)
+        segments.append({"start": start, "text": raw})
+
+    return segments or None
+
+
+def fetch_transcript_via_ytdlp(video_id):
+    """Fallback: yt-dlp auto-subtitle download + VTT parse."""
+    if not _YTDLP_AVAILABLE:
         return None
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        ydl_opts = {
+            "skip_download": True,
+            "writeautomaticsub": True,
+            "writesubtitles": True,
+            "subtitleslangs": ["en", "en-US", "en-GB"],
+            "subtitlesformat": "vtt",
+            "outtmpl": os.path.join(tmpdir, video_id),
+            "quiet": True,
+            "no_warnings": True,
+        }
+        try:
+            with YoutubeDL(ydl_opts) as ydl:
+                ydl.download([f"https://www.youtube.com/watch?v={video_id}"])
+        except DownloadError:
+            return None
+        except Exception:
+            return None
+
+        vtt_files = glob.glob(os.path.join(tmpdir, "*.vtt"))
+        if not vtt_files:
+            return None
+
+        return parse_vtt(vtt_files[0])
+
+
+def fetch_transcript(video_id):
+    """Fetch transcript for a video. Returns list of segment dicts or None on failure."""
+    result = fetch_transcript_via_api(video_id)
+    if result:
+        return result
+
+    print(f"    ↩ API failed, trying yt-dlp fallback...")
+    result = fetch_transcript_via_ytdlp(video_id)
+    if result:
+        return result
+
+    print(f"    ⚠ No transcript available for {video_id} via API or yt-dlp")
+    return None
 
 
 def write_transcript(video, segments, transcripts_dir):
@@ -198,7 +301,7 @@ def write_transcript(video, segments, transcripts_dir):
         "url": video["url"],
         "transcript_path": os.path.join("transcripts", folder_name, "transcript.md"),
         "segment_count": len(segments),
-        "fetched_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
     meta_path = os.path.join(folder_path, "metadata.json")
     with open(meta_path, "w", encoding="utf-8") as f:
@@ -271,6 +374,7 @@ def main():
 
     success = 0
     skipped = 0
+    unavailable = []
 
     for i, video in enumerate(targets, 1):
         print(f"[{i}/{len(targets)}] {video['date']} — {video['title'][:60]}")
@@ -282,6 +386,7 @@ def main():
             success += 1
         else:
             skipped += 1
+            unavailable.append(video)
 
         if i < len(targets):
             time.sleep(RATE_LIMIT_SECONDS)
@@ -290,6 +395,54 @@ def main():
     print(f"\nDone. {success} fetched, {skipped} skipped (no transcript available).")
     if still_remaining > 0:
         print(f"  {still_remaining} video(s) still pending — run again to continue.")
+
+    if unavailable:
+        _write_unavailable_log(unavailable, transcripts_dir)
+
+
+def _write_unavailable_log(unavailable, transcripts_dir):
+    """Write/update transcripts/UNAVAILABLE.md with a list of videos that had no transcript."""
+    os.makedirs(transcripts_dir, exist_ok=True)
+    log_path = os.path.join(transcripts_dir, "UNAVAILABLE.md")
+
+    # Load existing entries so we don't duplicate them
+    existing_ids = set()
+    existing_lines = []
+    if os.path.isfile(log_path):
+        with open(log_path, encoding="utf-8") as f:
+            existing_lines = f.readlines()
+        for line in existing_lines:
+            m = re.search(r"video_id:\s*(\S+)", line)
+            if m:
+                existing_ids.add(m.group(1))
+
+    new_entries = [v for v in unavailable if v["video_id"] not in existing_ids]
+    if not new_entries:
+        return
+
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    new_lines = []
+    for v in new_entries:
+        new_lines.append(
+            f"- [{v['title']}]({v['url']}) — video_id: {v['video_id']} — {v['date']} — checked: {now}\n"
+        )
+
+    header = [
+        "# Unavailable Transcripts\n",
+        "\n",
+        "Videos where both `youtube-transcript-api` and `yt-dlp` returned no transcript.\n",
+        "Check these manually — they may have captions added later.\n",
+        "\n",
+    ]
+
+    if not existing_lines:
+        with open(log_path, "w", encoding="utf-8") as f:
+            f.writelines(header + new_lines)
+    else:
+        with open(log_path, "a", encoding="utf-8") as f:
+            f.writelines(new_lines)
+
+    print(f"  Logged {len(new_entries)} unavailable video(s) → {os.path.relpath(log_path)}")
 
 
 if __name__ == "__main__":
