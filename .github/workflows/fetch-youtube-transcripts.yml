@@ -1,13 +1,24 @@
 name: Fetch YouTube Transcripts
 
 on:
+  # Run on a schedule to automatically process transcripts in batches.
+  # Each run fetches --batch-size new videos. Runs every 2 hours until all
+  # transcripts are up to date, then becomes a no-op.
+  schedule:
+    - cron: '0 */2 * * *'   # every 2 hours
+
   workflow_dispatch:
     inputs:
       fetch_all:
-        description: 'Fetch all transcripts (full batch mode). Leave unchecked to fetch only new ones.'
+        description: 'Re-fetch ALL transcripts (ignores already-processed). Default: only new ones.'
         required: false
         default: 'false'
         type: boolean
+      batch_size:
+        description: 'Max videos to fetch in this run (0 = no limit). Default: 25.'
+        required: false
+        default: '25'
+        type: string
 
   push:
     branches:
@@ -35,10 +46,13 @@ jobs:
 
       - name: Fetch transcripts
         run: |
+          BATCH_SIZE="${{ github.event.inputs.batch_size }}"
+          BATCH_SIZE="${BATCH_SIZE:-25}"
+
           if [ "${{ github.event.inputs.fetch_all }}" = "true" ]; then
-            python scripts/fetch_transcripts.py --all
+            python scripts/fetch_transcripts.py --all --batch-size "$BATCH_SIZE"
           else
-            python scripts/fetch_transcripts.py
+            python scripts/fetch_transcripts.py --batch-size "$BATCH_SIZE"
           fi
 
       - name: Commit transcripts

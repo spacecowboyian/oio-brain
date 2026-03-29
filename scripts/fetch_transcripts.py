@@ -4,8 +4,15 @@ OIO Racing - YouTube Transcript Fetcher
 Fetches auto-generated YouTube transcripts for videos listed in OIO-Video-Catalog.md.
 
 Usage:
-  python scripts/fetch_transcripts.py           # Fetch only new (unprocessed) transcripts
-  python scripts/fetch_transcripts.py --all     # Re-fetch all transcripts (full batch)
+  python scripts/fetch_transcripts.py                        # Fetch only new transcripts (up to batch-size)
+  python scripts/fetch_transcripts.py --batch-size 25        # Limit this run to 25 videos (default)
+  python scripts/fetch_transcripts.py --all                  # Re-fetch ALL transcripts (ignores already-processed)
+  python scripts/fetch_transcripts.py --all --batch-size 25  # Re-fetch, but only 25 per run
+
+Batching strategy:
+  Run with a scheduled cron workflow. Each run fetches --batch-size new videos and commits them.
+  The next run automatically skips already-processed videos and picks up the remainder.
+  Repeat until all videos are processed.
 
 Saves each transcript to:
   transcripts/YYYY-MM-DD_video-title/transcript.md
@@ -200,12 +207,25 @@ def write_transcript(video, segments, transcripts_dir):
     return folder_path
 
 
+DEFAULT_BATCH_SIZE = 25
+
+
 def main():
     parser = argparse.ArgumentParser(description="Fetch YouTube transcripts for OIO Racing videos.")
     parser.add_argument(
         "--all",
         action="store_true",
-        help="Re-fetch all transcripts (full batch mode). Default: only fetch new ones.",
+        help="Re-fetch all transcripts, including already-processed ones.",
+    )
+    parser.add_argument(
+        "--batch-size",
+        type=int,
+        default=DEFAULT_BATCH_SIZE,
+        metavar="N",
+        help=(
+            f"Maximum number of videos to fetch in this run (default: {DEFAULT_BATCH_SIZE}). "
+            "Use 0 for no limit (process everything in one run)."
+        ),
     )
     args = parser.parse_args()
 
@@ -228,7 +248,7 @@ def main():
 
     if args.all:
         targets = longform
-        print("Mode: FULL BATCH — fetching all transcripts")
+        print("Mode: FULL BATCH — fetching all transcripts (ignoring already-processed)")
     else:
         processed = get_processed_ids(transcripts_dir)
         targets = [v for v in longform if v["video_id"] not in processed]
@@ -237,6 +257,15 @@ def main():
     if not targets:
         print("Nothing to fetch. All transcripts are up to date.")
         return
+
+    # Apply batch size limit
+    batch_size = args.batch_size
+    total_remaining = len(targets)
+    if batch_size > 0 and len(targets) > batch_size:
+        targets = targets[:batch_size]
+        print(f"Batch limit: processing {len(targets)} of {total_remaining} remaining videos this run.")
+    else:
+        print(f"Processing {len(targets)} video(s) this run.")
 
     os.makedirs(transcripts_dir, exist_ok=True)
 
@@ -257,7 +286,10 @@ def main():
         if i < len(targets):
             time.sleep(RATE_LIMIT_SECONDS)
 
+    still_remaining = total_remaining - len(targets)
     print(f"\nDone. {success} fetched, {skipped} skipped (no transcript available).")
+    if still_remaining > 0:
+        print(f"  {still_remaining} video(s) still pending — run again to continue.")
 
 
 if __name__ == "__main__":
