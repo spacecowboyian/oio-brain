@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'docdump/**'
+  workflow_dispatch:
 
 jobs:
   process-docdump:
@@ -23,9 +24,15 @@ jobs:
       - name: Detect new files in docdump
         id: detect
         run: |
-          # Find files added in this push (exclude README.md)
-          FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'docdump/**' 2>/dev/null \
-            | grep -v '^docdump/README\.md$' || true)
+          # For manual dispatch, list all current files; for push, find newly added files
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            FILES=$(find docdump/ -maxdepth 1 -type f \
+              | grep -v 'README\.md$' || true)
+          else
+            # Find files added in this push (exclude README.md)
+            FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'docdump/**' 2>/dev/null \
+              | grep -v '^docdump/README\.md$' || true)
+          fi
 
           if [ -z "$FILES" ]; then
             echo "No new files detected in docdump."
