@@ -18,7 +18,7 @@ This folder contains an archive of OIO Racing's published Facebook and Instagram
 ## Structure
 
 ```
-social-posts/
+OIO Brain/data/social-posts/
   README.md             — this file
   sync-state.json       — pagination cursors for the fetch script (do not edit manually)
   facebook/
