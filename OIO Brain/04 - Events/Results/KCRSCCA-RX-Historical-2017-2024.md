@@ -3,7 +3,7 @@ title: KCRSCCA Competition History — OIO Drivers 2017–2024
 type: reference
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-03-29
 tags: [results, rallycross, autocross, kcrscca, ian, miles, ryan, keegan, history]
 source_of_truth: true
 summary: Consolidated KCRSCCA Autocross and RallyCross event results for all OIO drivers (2017–2024). Covers Ian Jennings, Miles Smith, Ryan Redenbaugh, Keegan Wilhelm, and family members. Earliest confirmed records: May 2021.
@@ -20,6 +20,7 @@ summary: Consolidated KCRSCCA Autocross and RallyCross event results for all OIO
 ## Data Source and Coverage
 
 - **Source:** KCRSCCA results archive (2017–2024) + supplementary scraped data (kcrscca.org)
+- **Direct result URLs:** See [KCRSCCA-Results-Links.md](KCRSCCA-Results-Links.md) for the complete URL reference to every individual event result page.
 - **Tracked drivers:** Ian Jennings, Miles Smith, Ryan Redenbaugh, Keegan Wilhelm
 - **Coverage:**
   - AX 2021: Events 1–3 confirmed

@@ -3,8 +3,8 @@ title: The Goblin — Maintenance Log
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
-tags: [vehicle, mr2, goblin, maintenance, engine, diagnostic]
+updated: 2026-03-29
+tags: [vehicle, mr2, goblin, maintenance, engine, diagnostic, steering, quick-rack]
 source_of_truth: true
 summary: Maintenance and diagnostic history for The Goblin (1985 MR2 AW11). Append-only log — new entries go at the top.
 ---
@@ -12,6 +12,46 @@ summary: Maintenance and diagnostic history for The Goblin (1985 MR2 AW11). Appe
 # The Goblin — Maintenance Log
 
 > Append-only. New entries go at the top.
+
+---
+
+## 2026-03-18 — Quick Rack Recovery and Installation
+
+**Context:** KCRX E1 was scheduled for Sunday March 22. The Goblin needed the quicker-than-stock steering rack installed before that event. Ian went to Alex's house to recover the rack from the old rallycross MR2 that had been sold to Alex for $200. Alex knew the rack was coming back. The rack was pulled and installed on the Goblin the same day.
+
+---
+
+### What Was Done
+
+- Drove to Alex's house to recover the upgraded steering rack from the old rallycross car
+- Removed rack from Alex's car (disassembly: AC line access, brackets, tie rod ends, rack mounting hardware)
+- Rack inspected and confirmed in excellent condition — nearly new, only used for a few rallycross events
+- Rack brought home and installed on the Goblin same day
+- Goblin ready for KCRX E1 on March 22
+
+---
+
+### Key Lesson: Steering Column U-Joint Connector
+
+The **steering column U-joint connector** is the main recurring pain point in MR2 rack removal. Even when the rack itself is fine and surrounding hardware is manageable, the U-joint connector creates bad tool angles, poor access, and significant frustration. This is the part that turns what should be a straightforward job into a multi-attempt grind under the car. Budget extra time whenever this connector is involved.
+
+---
+
+### Condition of Recovered Rack
+
+| Attribute | Status |
+|---|---|
+| Overall condition | Excellent — nearly new |
+| Rallycross events on it | A few only |
+| Reusable | Yes — worth every bit of the recovery effort |
+
+---
+
+### Status After Work
+
+- **Quick rack now installed on The Goblin** — upgrade over stock
+- Goblin competed at KCRX E1 (March 22, Ray Rocks) with the new rack installed
+- Steering feel improvement immediately noticeable
 
 ---
 

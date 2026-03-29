@@ -3,7 +3,7 @@ title: Video Ideas Backlog
 type: content
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-03-29
 tags: [content, ideas, backlog, videos]
 source_of_truth: true
 summary: Master list of all video ideas organized across 7 content buckets. Pull from here when planning the next video. Mark ideas as assigned when they move to script or production.
@@ -60,6 +60,7 @@ summary: Master list of all video ideas organized across 7 content buckets. Pull
 - [ ] Fit windshield wiper replacement (yes, basics perform)
 
 ### MR2 / Goblin Content
+- [ ] **Quick rack recovery story** — "I sold the old rallycross car, but I had to go get the quick rack back for the Goblin before race weekend." Urgency (Wednesday → Sunday deadline), frustration (U-joint connector nightmare in the dirt at Alex's), payoff (rack in great shape, Goblin drove noticeably better). Memorable lines already captured in brain. See MR2 Maintenance-Log.md (2026-03-18 entry) and transcript summary in docdump archive.
 - [ ] Goblin motor rebuild — full documentation series
 - [ ] MR2 AW11 rallycross setup — what it takes
 - [ ] Mid-engine car handling — why it's terrifying and beautiful
