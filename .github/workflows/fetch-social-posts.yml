@@ -1,0 +1,66 @@
+name: Fetch Social Media Posts
+
+on:
+  # Daily at 14:00 UTC (9 AM CDT / 8 AM CST — Kansas City time).
+  # Each run does a forward sync (new posts) + next backfill batch.
+  # Backfill is conservative: 25 posts per platform per run keeps
+  # API usage well within Meta's 200 req/hr limit.
+  schedule:
+    - cron: '0 14 * * *'
+
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: 'Platform to sync'
+        required: false
+        default: 'facebook'
+        type: choice
+        options:
+          - facebook
+      batch_size:
+        description: 'Max posts to fetch per platform (default: 25)'
+        required: false
+        default: '25'
+        type: string
+
+jobs:
+  fetch-social-posts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch social posts
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_FACEBOOK_PAGE_ID: ${{ secrets.META_FACEBOOK_PAGE_ID }}
+        run: |
+          PLATFORM="${{ github.event.inputs.platform }}"
+          PLATFORM="${PLATFORM:-facebook}"
+          BATCH_SIZE="${{ github.event.inputs.batch_size }}"
+          BATCH_SIZE="${BATCH_SIZE:-25}"
+          python scripts/fetch_social_posts.py --platform "$PLATFORM" --batch-size "$BATCH_SIZE"
+
+      - name: Commit new posts
+        run: |
+          git config user.name "OIO Social Bot"
+          git config user.email "bot@oioracing.local"
+          git add social-posts/
+          if git diff --cached --quiet; then
+            echo "No new posts to commit."
+          else
+            NEW_COUNT=$(git diff --cached --name-only | grep '\.md$' | grep -v README | wc -l)
+            git commit -m "chore: add ${NEW_COUNT} social post(s) [skip ci]"
+            git push
+          fi
