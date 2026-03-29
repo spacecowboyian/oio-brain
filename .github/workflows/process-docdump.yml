@@ -1,0 +1,83 @@
+name: Process Docdump Files
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docdump/**'
+
+jobs:
+  process-docdump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect new files in docdump
+        id: detect
+        run: |
+          # Find files added in this push (exclude README.md)
+          FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'docdump/**' 2>/dev/null \
+            | grep -v '^docdump/README\.md$' || true)
+
+          if [ -z "$FILES" ]; then
+            echo "No new files detected in docdump."
+            echo "has_files=false" >> "$GITHUB_OUTPUT"
+          else
+            COUNT=$(echo "$FILES" | wc -l | tr -d ' ')
+            echo "Detected $COUNT new file(s) in docdump:"
+            echo "$FILES"
+            echo "has_files=true" >> "$GITHUB_OUTPUT"
+            echo "file_count=$COUNT" >> "$GITHUB_OUTPUT"
+
+            # Build a markdown list of filenames for the issue body
+            FILE_LIST=$(echo "$FILES" | sed 's/^/- /')
+            {
+              echo "file_list<<DOCDUMP_EOF"
+              echo "$FILE_LIST"
+              echo "DOCDUMP_EOF"
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Spawn Copilot agent to process docdump files
+        if: steps.detect.outputs.has_files == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          COUNT="${{ steps.detect.outputs.file_count }}"
+          FILE_LIST="${{ steps.detect.outputs.file_list }}"
+
+          gh issue create \
+            --title "Process ${COUNT} new file(s) from docdump" \
+            --body "@copilot New file(s) have been pushed to \`docdump/\` and need to be processed into the OIO Brain.
+
+          **Files to process:**
+          ${FILE_LIST}
+
+          **Instructions — follow these steps exactly:**
+
+          1. **Read each file in full** before deciding where the data belongs
+          2. **Identify all relevant destinations** across the brain structure:
+             - \`01-active/\` for current state, priorities, open loops, or next actions
+             - \`OIO Brain/\` canonical domain folders (vehicles, content, events, finance, etc.)
+             - \`00-core/decisions-log.md\` for any decisions that should be logged
+          3. **Distribute the data** — update existing files first; create new files only if no appropriate file exists
+          4. **Follow all repo standards**:
+             - Add frontmatter to any new file (title, type, status, owner, updated, tags, source_of_truth, summary)
+             - Update the \`updated:\` date on any file you modify
+             - Log significant decisions in \`00-core/decisions-log.md\`
+          5. **Delete the original file(s)** from \`docdump/\` after all data has been successfully written
+          6. **Update \`01-active/\`** files as needed to reflect any state changes
+          7. **Confirm deletion** in your progress report — state which file was processed and deleted
+
+          If a file cannot be fully processed (ambiguous data, incomplete information), document what was done and what remains as open loops in \`01-active/open-loops.md\` — then still delete the source file.
+
+          Do not treat docdump files as source of truth until their data has been validated and written into a canonical brain file." \
+            --label "copilot"
