@@ -3,7 +3,7 @@ title: OIO Current State
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-29
+updated: 2026-03-30
 tags: [state, current, season-2026]
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
@@ -60,15 +60,16 @@ The 2026 motorsport season is opening. The primary focus is:
 | Nessie drag debut | Setup not complete | 2026 dragstrip appearance is goal |
 | Killer Corolla | Mystery motor status unknown | Full rebuild required |
 | Geoffrey build direction | Too new — no plan yet | First step: assess condition |
-| Sponsorship revenue | No active sponsors | Outreach not yet started |
-| Website | Not launched | Design direction defined, platform TBD |
-| Merch | Not launched | Concepts exist, platform not chosen |
+| Sponsorship revenue | No active sponsors | **Research complete** — media kit strategy + SEO keywords defined. Next: write outreach messages. |
+| Website | Not launched | **Platform research complete** — Shopify recommended (see Paperclip OUT-104). Decision + account setup pending. |
+| Merch | Not launched | **Platform research complete** — Shopify + Printful print-on-demand recommended. Decision + design selection pending. |
 | Parker racing | Awaiting driver's permit | Gets permit at 14; once he has it, he races |
 
 ---
 
 ## Recent Changes
 
+- **2026-03-30:** Website + merch platform research complete — CMO completed comprehensive competitive analysis of 6 grassroots automotive YouTube channels (S/M/L/XL tiers). Key findings: Shopify dominates (95%+ market share), YouTube Merch Shelf integration critical, mobile-first UX required. Recommended stack: Shopify Basic ($39/mo) + Printful (print-on-demand) + YouTube Merch Shelf + automation (Zapier/RSS feeds). Sponsor strategy delivered: media kit components, SEO keywords, landing page structure. Full research filed in Paperclip task OUT-104. Next: platform decision + account setup.
 - **2026-03-29:** Social media post indexing system launched — `scripts/fetch_social_posts.py` + `.github/workflows/fetch-social-posts.yml` created. Posts fetched from Facebook Page and Instagram Business Account via Meta Graph API. Runs daily at 9 AM CDT; 25 posts/platform/run for conservative initial import. Posts stored as markdown in `OIO Brain/data/social-posts/facebook/` and `OIO Brain/data/social-posts/instagram/`. Requires 3 secrets: `META_ACCESS_TOKEN`, `META_FACEBOOK_PAGE_ID`, `META_INSTAGRAM_ACCOUNT_ID`. See `OIO Brain/data/social-posts/README.md` for setup.
 - **2026-03-29:** KCRX 2026 Event 1 results logged (March 22, Ray Rocks). **Corrected results:** Ryan 2nd MR (trophy), Miles 3rd MR (trophy), Hudson wins Novice (trophy). Ian DNF'd run 7 — official Pronto display shows him 1st (318.321, 6 runs) but DNF penalty corrects to 7th (393.784). Goblin post-race failure confirmed. `2026-Season-Results.md` and `oio-racing-results.json` created.
 - **2026-03-29:** 2025 season competition results processed — full KCR RallyCross (8 events) and KS Region RallyCross (5 events) results filed. New files: `OIO Brain/04 - Events/Results/2025-Season-Results.md` and `KSRX-Historical-2018-2024.md`. Notable: Hudson Smith debuted at KCRX E8 (Novice, 2nd place), Ian switched to Honda Fit for season finale (MR2 sidelined), Ryan won E9 driving the MGB GT. Source `oio_results.json` deleted from docdump.

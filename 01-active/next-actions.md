@@ -3,7 +3,7 @@ title: OIO Next Actions
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-03-30
 tags: [actions, tasks, next-steps]
 source_of_truth: false
 summary: Concrete next actions organized by area. Short and actionable only — not a project plan. Update after completing actions and when new ones are identified.
@@ -52,11 +52,15 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 ## Business
 
-- [ ] Research and decide on website platform (Squarespace vs Webflow vs custom)
-- [ ] Confirm domain — is oioracing.com available/owned?
-- [ ] Write first 5 targeted sponsorship outreach messages (use template in `07 - Admin/Templates/`)
-- [ ] Decide on merch platform
-- [ ] Pick first 3–5 merch designs
+- [x] Research website + merch platforms — ✅ 2026-03-30 CMO research complete (Paperclip OUT-104)
+- [x] Confirm domains owned — ✅ outsideinsideoutside.com + oioracing.com confirmed
+- [ ] **Decide: approve Shopify recommendation** — CMO research shows Shopify dominates (Vice Grip Garage, Hoonigan confirmed). Alternative: Squarespace/Webflow if simpler CMS preferred. See research doc.
+- [ ] **If Shopify approved:** Create Shopify Basic account ($39/mo), configure domains
+- [ ] **If Shopify approved:** Choose automotive theme (Motion, Impulse, Streamline recommended)
+- [ ] Enable YouTube Merch Shelf — requires 1K+ subs + YouTube Partner Program (current: 1.93K subs ✓, YPP status TBD)
+- [ ] Pick first 3–5 merch designs (print-on-demand via Printful = zero inventory risk)
+- [ ] Write first 5 targeted sponsorship outreach messages (use CMO media kit strategy)
+- [ ] Create sponsor landing page `/sponsors` with media kit (web + PDF versions)
 - [ ] Update Sponsorship Leads doc with first round of prospects
 
 ---
