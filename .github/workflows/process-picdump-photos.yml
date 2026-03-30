@@ -12,7 +12,7 @@ jobs:
   process-photos:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       issues: write
 
     steps:
@@ -20,6 +20,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install anthropic requests
 
       - name: Detect new image files in picdump
         id: detect
@@ -43,66 +52,42 @@ jobs:
             echo "$IMAGES"
             echo "has_images=true" >> "$GITHUB_OUTPUT"
             echo "image_count=$COUNT" >> "$GITHUB_OUTPUT"
-
-            # Build a markdown list of filenames for the issue body
-            FILE_LIST=$(echo "$IMAGES" | sed 's/^/- /')
-            # Use EOF delimiter to handle multi-line safely
-            {
-              echo "file_list<<PICDUMP_EOF"
-              echo "$FILE_LIST"
-              echo "PICDUMP_EOF"
-            } >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Ensure copilot label exists
+      - name: Run AI photo filing agent
         if: steps.detect.outputs.has_images == 'true'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          gh label create "copilot" \
-            --description "Assign to GitHub Copilot agent" \
-            --color "6e40c9" \
-            --force
+          python scripts/ai_photo_filing_agent.py
 
-      - name: Spawn Copilot agent to process photos
+      - name: Commit filed photos and updates
         if: steps.detect.outputs.has_images == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          COUNT="${{ steps.detect.outputs.image_count }}"
-          FILE_LIST="${{ steps.detect.outputs.file_list }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          gh issue create \
-            --title "Process ${COUNT} new photo(s) from picdump" \
-            --body "@copilot New photo(s) have been pushed to \`picdump/\` and need to be processed into the OIO photo library.
+          # Stage all changes (filed photos, updated docs, metadata)
+          git add photos/ PHOTO-INDEX.md "OIO Brain/03 - Cars/" .photo-filing-results.json
 
-          **Files to process:**
-          ${FILE_LIST}
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            # Read results summary for commit message
+            FILED_COUNT=$(python -c "import json; data=json.load(open('.photo-filing-results.json')); print(len([r for r in data if r['status']=='filed']))")
+            FLAGGED_COUNT=$(python -c "import json; data=json.load(open('.photo-filing-results.json')); print(len([r for r in data if r['status']=='flagged']))")
 
-          **Instructions — follow these steps exactly:**
+            git commit -m "$(cat <<'EOF'
+          chore: AI photo filing - processed ${{ steps.detect.outputs.image_count }} photo(s)
 
-          1. **View each image** in \`picdump/\` to see what car is in it
-          2. **Identify the car** using:
-             - Visual cues in the photo (color, body shape, wheels, livery, decals, era)
-             - Cross-reference against the OIO fleet in \`OIO Brain/03 - Cars/\`
-             - Use the \`PHOTO-INDEX.md\` Visual ID markers sections as a reference
-             - Apply general automotive knowledge if needed (make/model recognition from shape, era, details)
-          3. **File the photo** by moving it to \`photos/{Driver}/{Car}/\` — create the folder if it doesn't exist
-          4. **Create or update** the per-car \`photo-log.md\` in that folder with full details:
-             - Filename, estimated date, event/context, subject description, social media status
-             - Detailed visual description of what is visible in the shot
-          5. **Update \`PHOTO-INDEX.md\`** at the repo root:
-             - Add the photo to the correct driver/car section
-             - Update the Quick Stats totals
-          6. **Update the car's \`Overview.md\`** in \`OIO Brain/03 - Cars/\`:
-             - Add or update the Visual Identification section with any new details seen in the photo
-             - Add the photo to the Photo Library table
-             - If no Visual Identification section exists, create one using the format in \`Ian/1985 MR2/Overview.md\` as a template
-          7. **Delete the original file(s)** from \`picdump/\` after all data has been written
-          8. **Update \`01-active/\`** files if any state changes are relevant
+          - Filed: ${FILED_COUNT}
+          - Flagged for review: ${FLAGGED_COUNT}
 
-          If a photo cannot be confidently identified, add it to \`01-active/open-loops.md\` with a note and still remove it from picdump (move to \`photos/unidentified/\`).
-
-          Follow all repo standards: frontmatter on new files, update \`updated:\` dates, log significant decisions in \`00-core/decisions-log.md\`." \
-            --label "copilot" \
-            --assignee "Copilot"
+          Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+          Co-Authored-By: Paperclip <noreply@paperclip.ing>
+          EOF
+          )"
+            git push
+          fi
