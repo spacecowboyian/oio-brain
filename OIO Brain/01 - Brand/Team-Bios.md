@@ -56,7 +56,7 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 57 posts
+**Social post mentions:** 67 posts
 
 - **Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)
 - **Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)
@@ -114,7 +114,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 28 posts
+**Social post mentions:** 35 posts
 
 - **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
 - **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
@@ -200,7 +200,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 8 posts
+**Social post mentions:** 9 posts
 
 **Recent posts:**
 
@@ -288,7 +288,7 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 11 posts
+**Social post mentions:** 16 posts
 
 **Recent posts:**
 
