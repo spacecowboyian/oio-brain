@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-30 from 225 posts (225 Facebook, 0 Instagram) covering 2024-07-19 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-30 from 250 posts (250 Facebook, 0 Instagram) covering 2024-05-02 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,11 +409,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 3 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 89 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 71 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 95 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 83 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
-| Community Voice | 24 | 'Our Hudson', 'errbody in the pool' |
+| Community Voice | 30 | 'Our Hudson', 'errbody in the pool' |
 | Self-Deprecating | 4 | Ian is wrong, underpowered, or bedazzled |
 
 ---
@@ -422,13 +422,13 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 32 |
-| Build Update | 24 |
-| Event Recap | 56 |
-| Event Hype | 10 |
-| Trash Talk | 7 |
-| Enthusiast Take | 10 |
-| Farewell / Milestone | 11 |
+| Video Tease | 38 |
+| Build Update | 26 |
+| Event Recap | 63 |
+| Event Hype | 11 |
+| Trash Talk | 8 |
+| Enthusiast Take | 11 |
+| Farewell / Milestone | 12 |
 | Community Celebration | 7 |
 | Acquisition | 6 |
 
@@ -440,59 +440,59 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Short hook, 'link in the comments' closer, never explains too much.*
 
-- **2024-07-28** — New video link in the comments and live on on YouTube/@oioracing! Ian and Miles need to get the #rxaw11 known as “Senior…
-- **2024-09-09** — Finally! A new OIO video. Find the link in the comments or subscribe on YouTube/@! Ian and Miles are back in the #rxaw11…
-- **2024-11-07** — Sooooo... we're pushing to 1000 subs on youtube.com/@oioracing. When we get there we're thinking of finally making some…
+- **2024-05-06** — Video link in the comments!  The sound. It won’t leave Ian’s brain for quite some time. The sound of a 7 Liter Ford GT40…
+- **2024-05-16** — We join Ian and Ryan as they once again pit their Honda Fits against one another in a battle for Fit supremacy. This tim…
+- **2024-06-16** — Miles out paces Ian to serve up a Father's day present like no other. This kid can DRIVE y'all. Video link in the commen…
 
 ### Build Update
 
 *Photo-first. Caption captures progress without over-describing.*
 
+- **2024-07-12** — Join Ian and his crew as they tackle crucial steps on the way to completing the 18rg engine swap in Dale, the 1972 Toyot…
+- **2024-07-18** — Ian - Did I make myself cry for a thumbnail? No.. no I did not. This is real life y’all. Dale is alive once more and it’…
 - **2024-08-12** — Keegan's majestic 4wd swapped hatchback Tercel out (literally) in the wild!
-- **2024-08-20** — We did it!!! Track improvements at the Lake Garnett Grand Prix Revival!!!
-- **2024-08-24** — Thanks to a 3 day thrash, the #rxaw11 #mr2 #señiordos has a new quick steering rack from #flos via #technotoytuning and…
 
 ### Event Hype / Trash Talk
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2024-05-16** — We join Ian and Ryan as they once again pit their Honda Fits against one another in a battle for Fit supremacy. This tim…
 - **2024-12-06** — Things are getting… kinky in the #hobgoblinmr2! Meeting rule requirements for SCCA rallycross when you have no driver si…
 - **2024-12-13** — Full video on youtube, link in the comments!  With Señor Dos out of commission, the Hobgoblin, a 1985 Toyota MR2, steppe…
-- **2025-02-01** — Video link in comments! After 7 months suspended in the air, Ian's Toyota Corolla FX16 is finally coming back down to ea…
-- **2025-02-20** — Video link in the comments and live now on youtube/@oioracing!  It was too cold to wrench, so we stayed inside and playe…
+- **2024-05-16** — We join Ian and Ryan as they once again pit their Honda Fits against one another in a battle for Fit supremacy. This tim…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2024-07-28** — New video link in the comments and live on on YouTube/@oioracing! Ian and Miles need to get the #rxaw11 known as “Senior…
-- **2024-08-24** — Thanks to a 3 day thrash, the #rxaw11 #mr2 #señiordos has a new quick steering rack from #flos via #technotoytuning and…
-- **2024-08-31** — Change of plans… the #mgbgts rides again today in Kansas Region SCCA Rallycross!
+- **2024-05-02** — Coming soon to an #rxfx near you! We worked with the awesome @macy_maxpeedingrods at @maxpeedingrods to get a set of ae9…
+- **2024-05-16** — Something half dead... half alive..  I'd like to buy this reporter a beer.  #rallycross
+- **2024-05-16** — We join Ian and Ryan as they once again pit their Honda Fits against one another in a battle for Fit supremacy. This tim…
 
 ### Enthusiast Take
 
 *Strong opinion. Insider-friendly. Should feel quotable.*
 
+- **2024-05-16** — We join Ian and Ryan as they once again pit their Honda Fits against one another in a battle for Fit supremacy. This tim…
 - **2025-03-21** — New video link in the comments and live on YouTube Ryan’s Honda Fit gets a new cam and tune — then lines up against Ian’…
 - **2025-04-04** — Video link in the comments!  Just dropped a new video on youtube/@oioracing where we tackle one of Dale’s biggest handli…
-- **2025-04-10** — Video link in the comments! Back in the garage with Ryan and his GD3 Honda Fit as we dial in more rotation with Honed ca…
 
 ### Farewell / Milestone
 
 *Cars leave. Places close. People move on. One or two lines, genuine.*
 
+- **2024-05-10** — Happy 510 day!
 - **2024-08-06** — Happy 86 day from our yota family to yours!
 - **2024-11-28** — Too good of a pic not to share. Happy turkey day y’all! Get out for a drive if you can!
-- **2024-12-25** — It’s finally time to post this. Happy Holidays!!!
 
 ### Punchy Single-Line Posts
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2024-08-06** — Happy 86 day from our yota family to yours!
-- **2024-08-12** — Keegan's majestic 4wd swapped hatchback Tercel out (literally) in the wild!
-- **2024-08-22** — #lifegoals
-- **2024-08-30** — Are you #fitgang enough?
+- **2024-05-03** — World's most concise Cybertruck review.
+- **2024-05-10** — Happy 510 day!
+- **2024-06-11** — More proof that #fitisalwaystheanswer #fitgang!
+- **2024-06-12** — We crossed 700 subscribers on YouTube! Thanks to you all!
 
 ### Storytelling / Sermon Mode
 
@@ -506,34 +506,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 225 posts:
+Top 25 hashtags across 250 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 49 |
-| #fitgang | 20 |
-| #rallycross | 19 |
-| #diy | 16 |
-| #racing | 15 |
-| #scca | 15 |
+| #cars | 55 |
+| #rallycross | 26 |
+| #fitgang | 26 |
+| #racing | 22 |
+| #diy | 21 |
+| #toyota | 19 |
+| #scca | 17 |
+| #hondafit | 17 |
+| #mr2 | 16 |
 | #mgbgts | 15 |
-| #hondafit | 14 |
-| #mr2 | 14 |
-| #toyota | 14 |
-| #ra21 | 12 |
+| #ra21 | 14 |
+| #aw11 | 11 |
+| #rxaw11 | 11 |
+| #dalesdragon | 11 |
 | #sccarallycross | 11 |
-| #rxaw11 | 9 |
-| #aw11 | 9 |
+| #18rg | 10 |
+| #mechanic | 9 |
+| #ta22 | 9 |
+| #vintageracing | 9 |
 | #automobile | 9 |
-| #dalesdragon | 8 |
-| #vintageracing | 8 |
-| #18rg | 8 |
-| #celica | 7 |
-| #ta22 | 7 |
-| #suspension | 6 |
-| #grassrootsmotorsports | 6 |
-| #seniordos | 5 |
-| #autocross | 5 |
-| #oioracing | 5 |
+| #celica | 8 |
+| #autocross | 7 |
+| #jdm | 7 |
+| #fitisgo | 6 |
+| #seniordos | 6 |
 
 <!-- social-voice-stats:end -->
