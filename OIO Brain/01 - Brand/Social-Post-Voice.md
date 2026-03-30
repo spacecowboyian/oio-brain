@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-30 from 100 posts (100 Facebook, 0 Instagram) covering 2025-08-05 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-30 from 125 posts (125 Facebook, 0 Instagram) covering 2025-04-29 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,11 +409,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 2 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 41 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 39 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 53 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 45 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
-| Community Voice | 17 | 'Our Hudson', 'errbody in the pool' |
+| Community Voice | 18 | 'Our Hudson', 'errbody in the pool' |
 | Self-Deprecating | 4 | Ian is wrong, underpowered, or bedazzled |
 
 ---
@@ -422,12 +422,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 11 |
-| Build Update | 8 |
-| Event Recap | 28 |
+| Video Tease | 17 |
+| Build Update | 12 |
+| Event Recap | 31 |
 | Event Hype | 6 |
 | Trash Talk | 6 |
-| Enthusiast Take | 4 |
+| Enthusiast Take | 5 |
 | Farewell / Milestone | 7 |
 | Community Celebration | 7 |
 | Acquisition | 6 |
@@ -440,17 +440,17 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Short hook, 'link in the comments' closer, never explains too much.*
 
-- **2025-08-05** — New video link in the comments and live on youtube/@oioracing! We took a 1976 BMW 2002 out to our local SCCA Autocross a…
-- **2025-08-13** — New video link in the comments and in youtube.com/@oioracing!   Ian thought a set of wheel adapters would be the perfect…
-- **2025-10-06** — Video link in the comments! Because of a previous stupidity... Ian spent some time giving the MR2 a new set of lungs. A…
+- **2025-05-17** — New video live on our youtube channel. Link in the comments! Get behind the wheel with Ian as he takes the 2025 GR Corol…
+- **2025-06-20** — We made it to 1500 subscribers on youtube! If you're one of them.. <3 4EVA. If you're not yet.. go slap that subscribe b…
+- **2025-06-23** — Video link in the comments! Ian traded for this 1983 Toyota Cressida wagon. The goal? Build a sleeper for the 1/4 mile.…
 
 ### Build Update
 
 *Photo-first. Caption captures progress without over-describing.*
 
-- **2025-10-19** — Find salvation through the new video link in the comments!  Gather round brothers and sisters, as we officially welcome…
-- **2025-10-29** — SHO SWAP THE WORLD!
-- **2025-11-17** — Latest video link in the comments. Ian's got a Goblin to bring back to life before the hard freeze. Let's jump in! #aw11…
+- **2025-04-29** — Dale (the car) is honored to have this trophy… because he probably won’t ever win many beauty contests but man he sure d…
+- **2025-05-02** — Loaded up.. for the last time. The #RXFX #FX16 is on its way to a new owner... but there's a trade involved... and I thi…
+- **2025-06-07** — Ian here with a recap of a big week of work on my boy Dale, the 72 Celica  What started as a mystery knock turned into a…
 
 ### Event Hype / Trash Talk
 
@@ -465,17 +465,17 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2025-08-05** — New video link in the comments and live on youtube/@oioracing! We took a 1976 BMW 2002 out to our local SCCA Autocross a…
-- **2025-09-04** — Ian is ready to go up against this beast of a rabbit in FSP at SCCA Solo Nats today and tomorrow in Lincoln. Looking to…
-- **2025-09-05** — Ian takes you on a quick tour of the FSP grid at the Tire Rack SCCA National Solo.
+- **2025-05-05** — Endurocross is no ordinary rallycross. With three laps per run and 16 total runs per car, it’s a brutal test of machine,…
+- **2025-05-17** — New video live on our youtube channel. Link in the comments! Get behind the wheel with Ian as he takes the 2025 GR Corol…
+- **2025-06-30** — Video link in the comments! Ryan just upgraded the Toyota powered rallycross MGB GT with NA Miata seats, showing how you…
 
 ### Enthusiast Take
 
 *Strong opinion. Insider-friendly. Should feel quotable.*
 
+- **2025-05-05** — Endurocross is no ordinary rallycross. With three laps per run and 16 total runs per car, it’s a brutal test of machine,…
 - **2025-10-24** — Ok. No offense to Lia Block, get what you can get out of life. But Toyota USA is out there giving away GR Corollas to mi…
 - **2025-11-16** — Fit off 3 rally battle! https://youtu.be/myCo423Bo_0?si=YUsayPYzyGRXqHhp
-- **2025-12-06** — Video link in the comments to the new Fit-Off! We gathered three Honda Fits, pointed them at the dirt, and let chaos and…
 
 ### Farewell / Milestone
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2025-08-05** — https://www.youtube.com/watch?v=3QMr3fgbyjA&ab_channel=OIORacing
-- **2025-08-11** — The perfect tattoo doesn't exis...
-- **2025-08-11** — Too cool. Racing for a great cause.
-- **2025-08-16** — Tomorrow. We race. #seniordos #mr2 #rxaw11
+- **2025-05-16** — American Rally Association is just the best.
+- **2025-05-18** — THEM DUKE BOYS ARE AT IT AGAIN!
+- **2025-06-09** — Ryan’s got somethin’ cookin. #squatted #camryswiththreateningauras #gambler500
+- **2025-06-11** — Ryan has BIG plans for this Camry. #offroad #cars #diy
 
 ### Storytelling / Sermon Mode
 
@@ -506,34 +506,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 100 posts:
+Top 25 hashtags across 125 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 27 |
-| #fitgang | 13 |
+| #cars | 31 |
+| #fitgang | 14 |
+| #rallycross | 11 |
 | #mgbgts | 11 |
-| #rallycross | 10 |
+| #hondafit | 9 |
 | #mr2 | 8 |
-| #hondafit | 8 |
-| #sccarallycross | 6 |
+| #sccarallycross | 7 |
+| #diy | 6 |
+| #toyota | 6 |
+| #ra21 | 5 |
 | #goblinmr2 | 5 |
 | #aw11 | 5 |
 | #dalesdragon | 5 |
-| #ra21 | 4 |
-| #toyota | 4 |
-| #vintageracing | 3 |
+| #racing | 4 |
+| #scca | 4 |
+| #ge8 | 4 |
+| #vintageracing | 4 |
+| #gd3 | 3 |
+| #celica | 3 |
 | #oioracing | 3 |
-| #racing | 3 |
-| #ge8 | 3 |
 | #18rg | 3 |
 | #bodywork | 3 |
-| #scca | 2 |
-| #funwithcars | 2 |
-| #seniordos | 2 |
-| #rxaw11 | 2 |
-| #gd3 | 2 |
-| #cayawn | 2 |
-| #celica | 2 |
+| #honda | 2 |
+| #autocross | 2 |
+| #kcrscca | 2 |
 
 <!-- social-voice-stats:end -->

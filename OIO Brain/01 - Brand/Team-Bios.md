@@ -56,7 +56,7 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 17 posts
+**Social post mentions:** 23 posts
 
 - **Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)
 - **Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)
@@ -114,7 +114,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 11 posts
+**Social post mentions:** 15 posts
 
 - **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
 - **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
@@ -230,12 +230,13 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 3 posts
+**Social post mentions:** 4 posts
 
 - **Breakout** — fastest novice run all day at KCRX E1 2026, faster than most non-novice (Mar 25, 2026)
 
 **Recent posts:**
 
+- **2025-06-10** — Hudson (Soon to be OIO driver) has a lil mower flip for sale just for you toyota folks.. its a GT-S!!! ;)
 - **2025-10-06** — Video link in the comments! Because of a previous stupidity... Ian spent some time giving the MR2 a new set of lungs. A…
 - **2026-03-22** — Ian here… I haven’t been able to make a video response to Ryan and Larry’s trash talking.. so here’s cowboy Hudson ridin…
 - **2026-03-25** — Here's our Hudson in the #ge8 #hondafit gettin it done in the gravel at Kansas City Region SCCA RallyCross #1 for 2026!…
@@ -286,10 +287,11 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 1 post
+**Social post mentions:** 2 posts
 
 **Recent posts:**
 
+- **2025-06-07** — Ian here with a recap of a big week of work on my boy Dale, the 72 Celica  What started as a mystery knock turned into a…
 - **2025-10-06** — Video link in the comments! Because of a previous stupidity... Ian spent some time giving the MR2 a new set of lungs. A…
 
 <!-- social-arc:miles:end -->
