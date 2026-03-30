@@ -66,9 +66,31 @@ Dale debuted at autocross in September 2024.
 
 ---
 
-
+## 2026 Story Arc
 
 Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale moves the car a step closer to Lake Garnett in October. The Church of Combustion episode from Lake Garnett is the payoff.
+
+---
+
+<!-- social-arc:dale--celica:start -->
+
+## Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Posts mentioning this car:** 2 posts
+
+**Story arc from social posts:**
+
+- **New Celica acquired** — 'Another 1st Gen Celica followed us home' (Dec 2025)
+- **Off to Gary Rod and Chassis** — loaded up for fabrication ahead of race season (Feb 2026)
+
+**Recent social posts:**
+
+- **2025-12-22** — Another 1st Generation Celica followed us home yesterday. This one was once destined to slide.. any thoughts about what…
+- **2026-02-28** — Making hay while the sun shines. Ryan has the #mgbgts off to get bodywork. Ian wrestled yet another steering rack out of…
+
+<!-- social-arc:dale--celica:end -->
 
 ---
 
@@ -98,6 +120,21 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 |---|---|
 | Pre-Season Nut & Bolt + System Check | Open |
 | Oil/Filter + Air Filter (Quarterly) | Recurring |
+
+---
+
+## Hashtag Reference
+
+Use these tags when posting about Dale. `#dalesdragon` is the consistent brand identifier for this car.
+
+| Purpose | Tags |
+|---|---|
+| Car identity | `#dalesdragon` `#celica` `#ra21` `#ta22` |
+| Engine | `#18rg` `#toyota` `#jdm` |
+| Events | `#lggpr` `#autocross` `#kcrscca` |
+| Broad catch-all | `#cars` |
+
+**Short set for quick posts:** `#dalesdragon #ra21 #18rg #celica #cars`
 
 ---
 

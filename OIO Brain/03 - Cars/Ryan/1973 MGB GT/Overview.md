@@ -83,6 +83,49 @@ Ryan began running the MGB GT at KCRSCCA rallycross in 2024, in class MR (Mid-si
 
 ---
 
+<!-- social-arc:mgb-gt:start -->
+
+## Social Post Arc
+
+*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+
+**Posts mentioning this car:** 8 posts
+
+**Story arc from social posts:**
+
+- **Mystery acquisition teardown** — 'The mystery18rg is coming apart' (Dec 2025)
+- **Race debut** — Ryan gets the MGBGT ready for its first event (Dec 2025)
+- **Growing confidence** — 'This thing just gets better and better' (Dec 2025)
+- **Full bodywork campaign** — bare metal → patch panel → body filler → orange paint incoming (Feb–Mar 2026)
+- **Season approaching** — 'MGBGTS inches ever closer' (Mar 2026)
+
+**Recent social posts:**
+
+- **2025-12-22** — The MGBGTS prepares to rip. #mgbgts #cars #mg #toyota #rallycross
+- **2026-02-27** — Ryan’s striping paint off the #mgbgts and getting ready for some more metal work and a fresh coat. It’s all fun and game…
+- **2026-02-28** — Making hay while the sun shines. Ryan has the #mgbgts off to get bodywork. Ian wrestled yet another steering rack out of…
+- **2026-03-07** — Ryan’s #mgbgts inches ever closer. #cars #bodywork #sandingforever
+- **2026-03-21** — Hole in the roof equals hole in the floor. Ryan's fixing the problem.  Big patch panel over the sunroof opening on the ,…
+
+<!-- social-arc:mgb-gt:end -->
+
+---
+
+## Hashtag Reference
+
+Use these tags when posting about the MGB GT. `#mgbgts` is the consistent brand identifier for this car.
+
+| Purpose | Tags |
+|---|---|
+| Car identity | `#mgbgts` `#mgb` `#mg` |
+| Engine / drivetrain | `#toyota` `#4ac` |
+| Discipline | `#rallycross` `#cars` |
+| Events | `#lggpr` `#vintageracing` |
+
+**Short set for quick posts:** `#mgbgts #mg #toyota #rallycross #cars`
+
+---
+
 ## Related Videos
 
 | Date | Title | Views | Format |
