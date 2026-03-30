@@ -1,3 +1,4 @@
 youtube-transcript-api>=1.0.0
 yt-dlp>=2026.02.21
 requests>=2.31.0
+beautifulsoup4>=4.12.0
