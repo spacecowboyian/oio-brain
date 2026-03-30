@@ -8,7 +8,7 @@ Tracks downloaded photos to avoid duplicates.
 Usage:
   python scripts/sync_google_photos.py --album-url https://photos.app.goo.gl/W757cit6HfvKmCQh6
 
-The script maintains a state file (picdump/.sync-state.json) to track which
+The script maintains a state file (.github/sync-state/google-photos.json) to track which
 photos have already been downloaded by their URL hash.
 
 When new photos are found, they are downloaded to picdump/ and the state
@@ -42,7 +42,8 @@ except ImportError:
 
 
 PICDUMP_DIR = os.path.join(os.path.dirname(__file__), "..", "picdump")
-STATE_FILE = os.path.join(PICDUMP_DIR, ".sync-state.json")
+SYNC_STATE_DIR = os.path.join(os.path.dirname(__file__), "..", ".github", "sync-state")
+STATE_FILE = os.path.join(SYNC_STATE_DIR, "google-photos.json")
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 
 
@@ -64,7 +65,7 @@ def load_state():
 
 def save_state(state):
     """Write sync state to disk."""
-    os.makedirs(PICDUMP_DIR, exist_ok=True)
+    os.makedirs(SYNC_STATE_DIR, exist_ok=True)
     state["last_sync"] = datetime.utcnow().isoformat() + "Z"
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
