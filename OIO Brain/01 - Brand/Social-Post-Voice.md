@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-30 from 125 posts (125 Facebook, 0 Instagram) covering 2025-04-29 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-30 from 150 posts (150 Facebook, 0 Instagram) covering 2025-02-26 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -408,12 +408,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
-| Pit-Talk Casual | 2 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 53 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 45 | 3+ hashtags; copy is minimal |
+| Pit-Talk Casual | 3 | Short, direct, 1–3 sentences — 'this thing rules' |
+| Punchy / Short | 60 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 54 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
-| Community Voice | 18 | 'Our Hudson', 'errbody in the pool' |
+| Community Voice | 21 | 'Our Hudson', 'errbody in the pool' |
 | Self-Deprecating | 4 | Ian is wrong, underpowered, or bedazzled |
 
 ---
@@ -422,12 +422,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 17 |
-| Build Update | 12 |
-| Event Recap | 31 |
-| Event Hype | 6 |
+| Video Tease | 22 |
+| Build Update | 14 |
+| Event Recap | 40 |
+| Event Hype | 7 |
 | Trash Talk | 6 |
-| Enthusiast Take | 5 |
+| Enthusiast Take | 10 |
 | Farewell / Milestone | 7 |
 | Community Celebration | 7 |
 | Acquisition | 6 |
@@ -440,42 +440,42 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Short hook, 'link in the comments' closer, never explains too much.*
 
-- **2025-05-17** — New video live on our youtube channel. Link in the comments! Get behind the wheel with Ian as he takes the 2025 GR Corol…
-- **2025-06-20** — We made it to 1500 subscribers on youtube! If you're one of them.. <3 4EVA. If you're not yet.. go slap that subscribe b…
-- **2025-06-23** — Video link in the comments! Ian traded for this 1983 Toyota Cressida wagon. The goal? Build a sleeper for the 1/4 mile.…
+- **2025-03-16** — Fresh video link in the comments or on YouTube.com/@oioracing! . Ian had no choice but to replace this cracked windshiel…
+- **2025-03-21** — New video link in the comments and live on YouTube Ryan’s Honda Fit gets a new cam and tune — then lines up against Ian’…
+- **2025-04-04** — Video link in the comments!  Just dropped a new video on youtube/@oioracing where we tackle one of Dale’s biggest handli…
 
 ### Build Update
 
 *Photo-first. Caption captures progress without over-describing.*
 
+- **2025-03-30** — Getting this thing out of an aw11 MR2 is not an easy task. But here it is. Let the rebuild begin #rxaw11 #seniordos
+- **2025-04-26** — Video link in the comments! The Goblin is back. After our Rallycross MR2 Señor Dos gave up at the end of last season, Ia…
 - **2025-04-29** — Dale (the car) is honored to have this trophy… because he probably won’t ever win many beauty contests but man he sure d…
-- **2025-05-02** — Loaded up.. for the last time. The #RXFX #FX16 is on its way to a new owner... but there's a trade involved... and I thi…
-- **2025-06-07** — Ian here with a recap of a big week of work on my boy Dale, the 72 Celica  What started as a mystery knock turned into a…
 
 ### Event Hype / Trash Talk
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2025-04-26** — Video link in the comments! The Goblin is back. After our Rallycross MR2 Señor Dos gave up at the end of last season, Ia…
 - **2025-09-04** — Ian is ready to go up against this beast of a rabbit in FSP at SCCA Solo Nats today and tomorrow in Lincoln. Looking to…
 - **2025-12-06** — Video link in the comments to the new Fit-Off! We gathered three Honda Fits, pointed them at the dirt, and let chaos and…
-- **2026-01-20** — New video link in the comments! Been a minute, so here’s the full shop catch-up.  Honda Fits, Celicas, an off-road Camry…
 - **2025-12-06** — Video link in the comments to the new Fit-Off! We gathered three Honda Fits, pointed them at the dirt, and let chaos and…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2025-05-05** — Endurocross is no ordinary rallycross. With three laps per run and 16 total runs per car, it’s a brutal test of machine,…
-- **2025-05-17** — New video live on our youtube channel. Link in the comments! Get behind the wheel with Ian as he takes the 2025 GR Corol…
-- **2025-06-30** — Video link in the comments! Ryan just upgraded the Toyota powered rallycross MGB GT with NA Miata seats, showing how you…
+- **2025-03-01** — Skidplate skidplate on the wall… who’s the toughest of them all. #sccarallycross #cars #automobile #diy
+- **2025-03-21** — New video link in the comments and live on YouTube Ryan’s Honda Fit gets a new cam and tune — then lines up against Ian’…
+- **2025-04-04** — Video link in the comments!  Just dropped a new video on youtube/@oioracing where we tackle one of Dale’s biggest handli…
 
 ### Enthusiast Take
 
 *Strong opinion. Insider-friendly. Should feel quotable.*
 
-- **2025-05-05** — Endurocross is no ordinary rallycross. With three laps per run and 16 total runs per car, it’s a brutal test of machine,…
-- **2025-10-24** — Ok. No offense to Lia Block, get what you can get out of life. But Toyota USA is out there giving away GR Corollas to mi…
-- **2025-11-16** — Fit off 3 rally battle! https://youtu.be/myCo423Bo_0?si=YUsayPYzyGRXqHhp
+- **2025-03-21** — New video link in the comments and live on YouTube Ryan’s Honda Fit gets a new cam and tune — then lines up against Ian’…
+- **2025-04-04** — Video link in the comments!  Just dropped a new video on youtube/@oioracing where we tackle one of Dale’s biggest handli…
+- **2025-04-10** — Video link in the comments! Back in the garage with Ryan and his GD3 Honda Fit as we dial in more rotation with Honed ca…
 
 ### Farewell / Milestone
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2025-05-16** — American Rally Association is just the best.
-- **2025-05-18** — THEM DUKE BOYS ARE AT IT AGAIN!
-- **2025-06-09** — Ryan’s got somethin’ cookin. #squatted #camryswiththreateningauras #gambler500
-- **2025-06-11** — Ryan has BIG plans for this Camry. #offroad #cars #diy
+- **2025-02-26** — 64 degrees in February. Time to drive. #ra21 #ta22 #18rg
+- **2025-03-12** — Oh my.
+- **2025-04-04** — Always good to get a bump from our friends at T3!
+- **2025-04-18** — This. On a continuous loop. All day. Every day.
 
 ### Storytelling / Sermon Mode
 
@@ -506,34 +506,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 125 posts:
+Top 25 hashtags across 150 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 31 |
-| #fitgang | 14 |
-| #rallycross | 11 |
+| #cars | 36 |
+| #fitgang | 17 |
+| #rallycross | 14 |
+| #scca | 12 |
+| #hondafit | 11 |
 | #mgbgts | 11 |
-| #hondafit | 9 |
-| #mr2 | 8 |
-| #sccarallycross | 7 |
-| #diy | 6 |
-| #toyota | 6 |
-| #ra21 | 5 |
+| #sccarallycross | 10 |
+| #diy | 10 |
+| #ra21 | 9 |
+| #mr2 | 9 |
+| #racing | 8 |
+| #automobile | 7 |
+| #toyota | 7 |
+| #18rg | 6 |
+| #grassrootsmotorsports | 6 |
+| #vintageracing | 6 |
+| #aw11 | 6 |
+| #ta22 | 5 |
+| #celica | 5 |
+| #ge8 | 5 |
 | #goblinmr2 | 5 |
-| #aw11 | 5 |
 | #dalesdragon | 5 |
-| #racing | 4 |
-| #scca | 4 |
-| #ge8 | 4 |
-| #vintageracing | 4 |
-| #gd3 | 3 |
-| #celica | 3 |
-| #oioracing | 3 |
-| #18rg | 3 |
-| #bodywork | 3 |
-| #honda | 2 |
-| #autocross | 2 |
-| #kcrscca | 2 |
+| #aftermarket | 4 |
+| #suspension | 4 |
+| #mechanic | 4 |
 
 <!-- social-voice-stats:end -->

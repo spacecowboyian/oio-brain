@@ -56,7 +56,7 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 23 posts
+**Social post mentions:** 31 posts
 
 - **Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)
 - **Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)
@@ -114,7 +114,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 15 posts
+**Social post mentions:** 19 posts
 
 - **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
 - **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
@@ -200,10 +200,11 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 3 posts
+**Social post mentions:** 4 posts
 
 **Recent posts:**
 
+- **2025-04-08** — Keegan says.. don’t sleep on the curb shopped oven. That’s a powder coating setup waiting to happen.
 - **2025-08-25** — Keegan is doing good things with his 3D printer.. it’s a good group to join too if you’re interested in people making ca…
 - **2025-09-16** — A lil something from Keegan’s corner of the world. Love these junkyard finds from Murliee.
 - **2025-10-17** — Congrats to Keegan on winning the “Off the Beaten Path” award at this year’s @lggpr for his work-in-progress first gen P…
