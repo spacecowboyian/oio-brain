@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-30 from 75 posts (75 Facebook, 0 Instagram) covering 2025-09-20 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-30 from 100 posts (100 Facebook, 0 Instagram) covering 2025-08-05 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,12 +409,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 2 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 29 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 33 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 41 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 39 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
-| Community Voice | 14 | 'Our Hudson', 'errbody in the pool' |
-| Self-Deprecating | 3 | Ian is wrong, underpowered, or bedazzled |
+| Community Voice | 17 | 'Our Hudson', 'errbody in the pool' |
+| Self-Deprecating | 4 | Ian is wrong, underpowered, or bedazzled |
 
 ---
 
@@ -422,15 +422,15 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 9 |
+| Video Tease | 11 |
 | Build Update | 8 |
-| Event Recap | 22 |
-| Event Hype | 5 |
+| Event Recap | 28 |
+| Event Hype | 6 |
 | Trash Talk | 6 |
 | Enthusiast Take | 4 |
 | Farewell / Milestone | 7 |
 | Community Celebration | 7 |
-| Acquisition | 5 |
+| Acquisition | 6 |
 
 ---
 
@@ -440,9 +440,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Short hook, 'link in the comments' closer, never explains too much.*
 
+- **2025-08-05** — New video link in the comments and live on youtube/@oioracing! We took a 1976 BMW 2002 out to our local SCCA Autocross a…
+- **2025-08-13** — New video link in the comments and in youtube.com/@oioracing!   Ian thought a set of wheel adapters would be the perfect…
 - **2025-10-06** — Video link in the comments! Because of a previous stupidity... Ian spent some time giving the MR2 a new set of lungs. A…
-- **2025-10-10** — It’s @lggpr time people!! Come join us for a fantastic weekend of fast cars and great people in Garnett Kansas. If you a…
-- **2025-10-19** — Find salvation through the new video link in the comments!  Gather round brothers and sisters, as we officially welcome…
 
 ### Build Update
 
@@ -456,18 +456,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2025-09-04** — Ian is ready to go up against this beast of a rabbit in FSP at SCCA Solo Nats today and tomorrow in Lincoln. Looking to…
 - **2025-12-06** — Video link in the comments to the new Fit-Off! We gathered three Honda Fits, pointed them at the dirt, and let chaos and…
 - **2026-01-20** — New video link in the comments! Been a minute, so here’s the full shop catch-up.  Honda Fits, Celicas, an off-road Camry…
-- **2026-02-28** — Making hay while the sun shines. Ryan has the #mgbgts off to get bodywork. Ian wrestled yet another steering rack out of…
 - **2025-12-06** — Video link in the comments to the new Fit-Off! We gathered three Honda Fits, pointed them at the dirt, and let chaos and…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2025-09-20** — Guess who’s back?! it’s the return of R2Dirt2 our navigation droid/tractor dirt air separator on the #goblinmr2! The gob…
-- **2025-10-04** — The venerable HONDA FIT! https://www.scca.com/articles/2019961-2025-runoffs-bspec-yagel-tears-of-joy
-- **2025-10-05** — Here's what a 4TH PLACE run in B Street SCCA autocross looks like. So many fast cars and fast drivers. Full autocross re…
+- **2025-08-05** — New video link in the comments and live on youtube/@oioracing! We took a 1976 BMW 2002 out to our local SCCA Autocross a…
+- **2025-09-04** — Ian is ready to go up against this beast of a rabbit in FSP at SCCA Solo Nats today and tomorrow in Lincoln. Looking to…
+- **2025-09-05** — Ian takes you on a quick tour of the FSP grid at the Tire Rack SCCA National Solo.
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2025-09-24** — Imagine this... but they're all for a Honda Fit.  #ballers
-- **2025-10-04** — ALL. BEEF. #cars #racing #hotdogs
-- **2025-10-04** — The venerable HONDA FIT! https://www.scca.com/articles/2019961-2025-runoffs-bspec-yagel-tears-of-joy
-- **2025-10-06** — Keep calm and carry speed.
+- **2025-08-05** — https://www.youtube.com/watch?v=3QMr3fgbyjA&ab_channel=OIORacing
+- **2025-08-11** — The perfect tattoo doesn't exis...
+- **2025-08-11** — Too cool. Racing for a great cause.
+- **2025-08-16** — Tomorrow. We race. #seniordos #mr2 #rxaw11
 
 ### Storytelling / Sermon Mode
 
@@ -506,34 +506,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 75 posts:
+Top 25 hashtags across 100 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 27 |
+| #fitgang | 13 |
 | #mgbgts | 11 |
 | #rallycross | 10 |
-| #fitgang | 10 |
-| #mr2 | 7 |
-| #hondafit | 6 |
+| #mr2 | 8 |
+| #hondafit | 8 |
+| #sccarallycross | 6 |
+| #goblinmr2 | 5 |
 | #aw11 | 5 |
-| #sccarallycross | 5 |
 | #dalesdragon | 5 |
-| #goblinmr2 | 4 |
 | #ra21 | 4 |
 | #toyota | 4 |
+| #vintageracing | 3 |
+| #oioracing | 3 |
 | #racing | 3 |
 | #ge8 | 3 |
 | #18rg | 3 |
 | #bodywork | 3 |
-| #vintageracing | 2 |
+| #scca | 2 |
+| #funwithcars | 2 |
+| #seniordos | 2 |
+| #rxaw11 | 2 |
+| #gd3 | 2 |
+| #cayawn | 2 |
 | #celica | 2 |
-| #oioracing | 2 |
-| #diy | 2 |
-| #mg | 2 |
-| #mgb | 2 |
-| #miata | 2 |
-| #ballers | 1 |
-| #hotdogs | 1 |
 
 <!-- social-voice-stats:end -->
