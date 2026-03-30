@@ -20,7 +20,7 @@ summary: Cross-cutting story arcs that span multiple drivers or cars.
 > Individual driver arcs live in `Team-Bios.md`.
 > This document is for stories that can't be told from one car's or one driver's perspective alone.
 >
-> Auto-generated 2026-03-30 from 200 posts covering 2024-10-19 → 2026-03-29.
+> Auto-generated 2026-03-30 from 225 posts covering 2024-07-19 → 2026-03-29.
 > Do not hand-edit — regenerated on every social post ingestion run.
 
 ---

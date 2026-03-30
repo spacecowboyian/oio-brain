@@ -56,7 +56,7 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 43 posts
+**Social post mentions:** 46 posts
 
 - **Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)
 - **Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)
@@ -114,7 +114,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 22 posts
+**Social post mentions:** 23 posts
 
 - **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
 - **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
@@ -200,7 +200,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 6 posts
+**Social post mentions:** 8 posts
 
 **Recent posts:**
 
@@ -288,10 +288,12 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 *Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 2 posts
+**Social post mentions:** 5 posts
 
 **Recent posts:**
 
+- **2024-08-24** — Thanks to a 3 day thrash, the #rxaw11 #mr2 #señiordos has a new quick steering rack from #flos via #technotoytuning and…
+- **2024-09-09** — Finally! A new OIO video. Find the link in the comments or subscribe on YouTube/@! Ian and Miles are back in the #rxaw11…
 - **2025-06-07** — Ian here with a recap of a big week of work on my boy Dale, the 72 Celica  What started as a mystery knock turned into a…
 - **2025-10-06** — Video link in the comments! Because of a previous stupidity... Ian spent some time giving the MR2 a new set of lungs. A…
 
