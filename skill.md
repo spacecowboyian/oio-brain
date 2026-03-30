@@ -5,7 +5,7 @@ description: Operational brain for OIO Outside Inside Outside Racing. Agent onbo
 type: reference
 status: active
 owner: Ian Jennings
-updated: 2026-03-29
+updated: 2026-03-30
 tags: [agents, onboarding, skill, reference]
 source_of_truth: true
 summary: The onboarding guide for new AI agents working in this repo. Covers orientation sequence, folder roles, document classes, read/write rules, key workflows, and standing rules. Read this before doing anything else.
@@ -174,8 +174,11 @@ When images are pushed to `picdump/`:
 
 - Facebook + Instagram posts are fetched automatically by `scripts/fetch_social_posts.py`
 - Stored in `OIO Brain/data/social-posts/facebook/` and `.../instagram/`
-- `scripts/analyze_social_posts.py` regenerates `Social-Post-Voice.md` and `Car-and-Driver-Story-Arcs.md` after each fetch
-- **Do not hand-edit** those two generated files — they are overwritten each run
+- `scripts/analyze_social_posts.py` runs after each fetch and injects arc data into car/driver files and a stats appendix into `Social-Post-Voice.md`
+- Arc data lives in each car's `Overview.md` and each driver's section of `Team-Bios.md` — injected via `<!-- social-arc:{key}:start/end -->` markers
+- Cross-cutting arcs (championship, Fit-Off) live in `OIO Brain/02 - Content/Season-Story-Arcs.md`
+- **`Social-Post-Voice.md` is hand-authored** (`source_of_truth: true`) — the script only updates the live stats appendix at the bottom (inside `<!-- social-voice-stats:start/end -->` markers). The guide content above those markers is never overwritten.
+- See `OIO Brain/01 - Brand/Social-Post-Voice.md` for the canonical voice guide, tone buckets, post patterns, CTAs, and hashtag strategy
 
 ---
 
