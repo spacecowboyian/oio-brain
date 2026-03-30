@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-29 from 50 posts (50 Facebook, 0 Instagram) covering 2025-11-11 → 2026-03-28. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-30 from 75 posts (75 Facebook, 0 Instagram) covering 2025-09-20 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,11 +409,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 2 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 17 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 22 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 29 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 33 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
-| Community Voice | 12 | 'Our Hudson', 'errbody in the pool' |
+| Community Voice | 14 | 'Our Hudson', 'errbody in the pool' |
 | Self-Deprecating | 3 | Ian is wrong, underpowered, or bedazzled |
 
 ---
@@ -422,12 +422,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 6 |
-| Build Update | 6 |
-| Event Recap | 14 |
+| Video Tease | 9 |
+| Build Update | 8 |
+| Event Recap | 22 |
 | Event Hype | 5 |
 | Trash Talk | 6 |
-| Enthusiast Take | 3 |
+| Enthusiast Take | 4 |
 | Farewell / Milestone | 7 |
 | Community Celebration | 7 |
 | Acquisition | 5 |
@@ -440,17 +440,17 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Short hook, 'link in the comments' closer, never explains too much.*
 
-- **2025-11-16** — Fit off 3 rally battle! https://youtu.be/myCo423Bo_0?si=YUsayPYzyGRXqHhp
-- **2025-11-17** — Latest video link in the comments. Ian's got a Goblin to bring back to life before the hard freeze. Let's jump in! #aw11…
-- **2025-12-06** — Video link in the comments to the new Fit-Off! We gathered three Honda Fits, pointed them at the dirt, and let chaos and…
+- **2025-10-06** — Video link in the comments! Because of a previous stupidity... Ian spent some time giving the MR2 a new set of lungs. A…
+- **2025-10-10** — It’s @lggpr time people!! Come join us for a fantastic weekend of fast cars and great people in Garnett Kansas. If you a…
+- **2025-10-19** — Find salvation through the new video link in the comments!  Gather round brothers and sisters, as we officially welcome…
 
 ### Build Update
 
 *Photo-first. Caption captures progress without over-describing.*
 
+- **2025-10-19** — Find salvation through the new video link in the comments!  Gather round brothers and sisters, as we officially welcome…
+- **2025-10-29** — SHO SWAP THE WORLD!
 - **2025-11-17** — Latest video link in the comments. Ian's got a Goblin to bring back to life before the hard freeze. Let's jump in! #aw11…
-- **2025-12-08** — The #mystery18rg is coming apart. Lots of great findings so far. No buyers remorse here. #cars #18rg
-- **2026-02-27** — Ryan’s striping paint off the #mgbgts and getting ready for some more metal work and a fresh coat. It’s all fun and game…
 
 ### Event Hype / Trash Talk
 
@@ -465,17 +465,17 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2025-11-11** — Ryan and Richard ran rallycross in KS this weekend with some other real fast folks!
-- **2025-11-17** — Errbody in the pool for Kansas City Region SCCA RallyCross! This was Corner Captain Ian's part of the world for heat 2 f…
-- **2025-11-17** — Latest video link in the comments. Ian's got a Goblin to bring back to life before the hard freeze. Let's jump in! #aw11…
+- **2025-09-20** — Guess who’s back?! it’s the return of R2Dirt2 our navigation droid/tractor dirt air separator on the #goblinmr2! The gob…
+- **2025-10-04** — The venerable HONDA FIT! https://www.scca.com/articles/2019961-2025-runoffs-bspec-yagel-tears-of-joy
+- **2025-10-05** — Here's what a 4TH PLACE run in B Street SCCA autocross looks like. So many fast cars and fast drivers. Full autocross re…
 
 ### Enthusiast Take
 
 *Strong opinion. Insider-friendly. Should feel quotable.*
 
+- **2025-10-24** — Ok. No offense to Lia Block, get what you can get out of life. But Toyota USA is out there giving away GR Corollas to mi…
 - **2025-11-16** — Fit off 3 rally battle! https://youtu.be/myCo423Bo_0?si=YUsayPYzyGRXqHhp
 - **2025-12-06** — Video link in the comments to the new Fit-Off! We gathered three Honda Fits, pointed them at the dirt, and let chaos and…
-- **2025-12-30** — Find the new video in the comments to join us once again for the Church of Combustion. This week’s sermon arrives… on bo…
 
 ### Farewell / Milestone
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2025-11-16** — Fit off 3 rally battle! https://youtu.be/myCo423Bo_0?si=YUsayPYzyGRXqHhp
-- **2025-11-21** — No better way to celebrate.
-- **2025-12-12** — This thing just gets better and better #mgbgts
-- **2025-12-16** — Hummina Hummina Hummina... HAWT.
+- **2025-09-24** — Imagine this... but they're all for a Honda Fit.  #ballers
+- **2025-10-04** — ALL. BEEF. #cars #racing #hotdogs
+- **2025-10-04** — The venerable HONDA FIT! https://www.scca.com/articles/2019961-2025-runoffs-bspec-yagel-tears-of-joy
+- **2025-10-06** — Keep calm and carry speed.
 
 ### Storytelling / Sermon Mode
 
@@ -506,34 +506,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 50 posts:
+Top 25 hashtags across 75 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 18 |
-| #rallycross | 8 |
-| #fitgang | 8 |
-| #mgbgts | 7 |
-| #mr2 | 5 |
-| #hondafit | 5 |
-| #aw11 | 3 |
-| #toyota | 3 |
+| #cars | 27 |
+| #mgbgts | 11 |
+| #rallycross | 10 |
+| #fitgang | 10 |
+| #mr2 | 7 |
+| #hondafit | 6 |
+| #aw11 | 5 |
+| #sccarallycross | 5 |
+| #dalesdragon | 5 |
+| #goblinmr2 | 4 |
+| #ra21 | 4 |
+| #toyota | 4 |
+| #racing | 3 |
+| #ge8 | 3 |
+| #18rg | 3 |
 | #bodywork | 3 |
-| #goblinmr2 | 3 |
+| #vintageracing | 2 |
+| #celica | 2 |
+| #oioracing | 2 |
+| #diy | 2 |
+| #mg | 2 |
 | #mgb | 2 |
-| #sccarallycross | 2 |
-| #ge8 | 2 |
 | #miata | 2 |
-| #4age | 1 |
-| #revival | 1 |
-| #winteriscoming | 1 |
-| #mystery18rg | 1 |
-| #18rg | 1 |
-| #fitoff | 1 |
-| #imnotcryingyourecrying | 1 |
-| #mg | 1 |
-| #hotwheels | 1 |
-| #xmas | 1 |
-| #fit4life | 1 |
+| #ballers | 1 |
+| #hotdogs | 1 |
 
 <!-- social-voice-stats:end -->

@@ -76,9 +76,9 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 
 ## Social Post Arc
 
-*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 2 posts
+**Posts mentioning this car:** 6 posts
 
 **Story arc from social posts:**
 
@@ -87,6 +87,9 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 
 **Recent social posts:**
 
+- **2025-10-12** — We out here @lggpr! #cars #celica #ra21 #dalesdragon #lggpr
+- **2025-10-19** — Find salvation through the new video link in the comments!  Gather round brothers and sisters, as we officially welcome…
+- **2025-11-02** — #dalesdragon’s dream girl. Someday. Somehow. Ian wants to find his way on track with this car in his own celica.
 - **2025-12-22** — Another 1st Generation Celica followed us home yesterday. This one was once destined to slide.. any thoughts about what…
 - **2026-02-28** — Making hay while the sun shines. Ryan has the #mgbgts off to get bodywork. Ian wrestled yet another steering rack out of…
 

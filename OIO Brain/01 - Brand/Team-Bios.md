@@ -54,9 +54,9 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 8 posts
+**Social post mentions:** 12 posts
 
 - **Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)
 - **Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)
@@ -112,9 +112,9 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 8 posts
+**Social post mentions:** 10 posts
 
 - **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
 - **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
@@ -151,7 +151,7 @@ Serious SCCA competitor. Lives in Manhattan, KS.
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 3 posts
 
@@ -198,11 +198,13 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 0 posts
+**Social post mentions:** 1 post
 
-*No social post arc data detected yet.*
+**Recent posts:**
+
+- **2025-10-17** — Congrats to Keegan on winning the “Off the Beaten Path” award at this year’s @lggpr for his work-in-progress first gen P…
 
 <!-- social-arc:keegan:end -->
 
@@ -224,14 +226,15 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 2 posts
+**Social post mentions:** 3 posts
 
 - **Breakout** — fastest novice run all day at KCRX E1 2026, faster than most non-novice (Mar 25, 2026)
 
 **Recent posts:**
 
+- **2025-10-06** — Video link in the comments! Because of a previous stupidity... Ian spent some time giving the MR2 a new set of lungs. A…
 - **2026-03-22** — Ian here… I haven’t been able to make a video response to Ryan and Larry’s trash talking.. so here’s cowboy Hudson ridin…
 - **2026-03-25** — Here's our Hudson in the #ge8 #hondafit gettin it done in the gravel at Kansas City Region SCCA RallyCross #1 for 2026!…
 
@@ -279,11 +282,13 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 0 posts
+**Social post mentions:** 1 post
 
-*No social post arc data detected yet.*
+**Recent posts:**
+
+- **2025-10-06** — Video link in the comments! Because of a previous stupidity... Ian spent some time giving the MR2 a new set of lungs. A…
 
 <!-- social-arc:miles:end -->
 

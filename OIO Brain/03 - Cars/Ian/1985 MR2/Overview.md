@@ -100,9 +100,9 @@ The Goblin's 2026 narrative has shifted from "rebuild in progress" to a document
 
 ## Social Post Arc
 
-*Auto-generated 2026-03-29 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-03-30 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 8 posts
+**Posts mentioning this car:** 10 posts
 
 **Story arc from social posts:**
 
