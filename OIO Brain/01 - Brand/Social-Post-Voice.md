@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-30 from 275 posts (275 Facebook, 0 Instagram) covering 2024-02-07 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-30 from 300 posts (300 Facebook, 0 Instagram) covering 2023-11-06 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 3 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 100 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 97 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 106 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 105 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 35 | 'Our Hudson', 'errbody in the pool' |
@@ -422,13 +422,13 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 47 |
-| Build Update | 28 |
-| Event Recap | 69 |
-| Event Hype | 15 |
+| Video Tease | 51 |
+| Build Update | 31 |
+| Event Recap | 79 |
+| Event Hype | 16 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
-| Farewell / Milestone | 13 |
+| Farewell / Milestone | 14 |
 | Community Celebration | 7 |
 | Acquisition | 6 |
 
@@ -440,34 +440,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Short hook, 'link in the comments' closer, never explains too much.*
 
-- **2024-02-16** — This week Ian visits OIO team member Keegan (@turbotoytercel) to take a tour of his shop where he keeps a bevy of dereli…
-- **2024-02-23** — Calling all 18RG Experts! We need your help! Video link in the comments! . In the second installment of our motor swap s…
-- **2024-03-01** — Ryan has gone and bought himself yet another $500 car to commute and race in. He has Ian stumped, but ultimately pleased…
+- **2024-01-08** — Another year.. another story from the Lake Garnett Grand Prix Revival! If you were there, you know how it went down for…
+- **2024-01-12** — It's new video time! This time we're back to the #rxaw11 #senordos to save some valuable rubber and hopefully go rallycr…
+- **2024-01-26** — Winter isn't over yet but this week Ian and his crew of small dudes are wrenching and wiping the FX16 to bring it out of…
 
 ### Build Update
 
 *Photo-first. Caption captures progress without over-describing.*
 
-- **2024-02-23** — Calling all 18RG Experts! We need your help! Video link in the comments! . In the second installment of our motor swap s…
-- **2024-04-04** — Ian is back this week with another how-NOT-to on the #rxfx 1987 Corolla FX16. Come along as he burns, pinches and gouges…
-- **2024-07-12** — Join Ian and his crew as they tackle crucial steps on the way to completing the 18rg engine swap in Dale, the 1972 Toyot…
+- **2024-01-05** — Another year.. another story from the Lake Garnett Grand Prix Revival! If you were there, you know how it went down for…
+- **2024-01-08** — Another year.. another story from the Lake Garnett Grand Prix Revival! If you were there, you know how it went down for…
+- **2024-02-03** — Here we go! It’s Ryan’s turn to tell you all about his build and racing glory in the Toyota powered 1973 MGB GT we call…
 
 ### Event Hype / Trash Talk
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2024-01-26** — Winter isn't over yet but this week Ian and his crew of small dudes are wrenching and wiping the FX16 to bring it out of…
 - **2024-02-10** — Friday is here and so is the newest chapter in the saga of #dalesdragon Ian’s 1972 Toyota Celica. The motor is coming ou…
 - **2024-03-07** — Video link in the comments. Ian and Ryan work out the kinks of the offseason and test out new setups while Miles takes h…
-- **2024-04-07** — Sunday, Sunday, Someday!! Tomorrow Ian, Miles and Ryan square off against fellow Fit jockey Niles in a battle of Honda F…
 - **2024-04-15** — Now editing… FIT OFF!!! A generational battle for Honda Fit autocross supremacy! GD vs GE vs GK. Tune in Friday 4/19 to…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2024-02-11** — RallyCross is coming. Less then a month away till first event. Any car will do. Let’s go race!!
-- **2024-03-07** — Video link in the comments. Ian and Ryan work out the kinks of the offseason and test out new setups while Miles takes h…
-- **2024-04-04** — Ian is back this week with another how-NOT-to on the #rxfx 1987 Corolla FX16. Come along as he burns, pinches and gouges…
+- **2023-11-06** — Ian's fastest run in #dalesdragon at the Kansas City Region - SCCA 2023 Halloweenie. This is for entertainment purposes…
+- **2023-11-19** — Ian’s last run fast run. 3 laps of endurocross with Kansas Region SCCA Good nuff for 1st in MR and 2nd overall. Sorry to…
+- **2023-11-20** — Hail hail the gang’s all here! Ryan set up an endurocross rallycross in the KS region and Ian and Richard came out to gi…
 
 ### Enthusiast Take
 
@@ -481,18 +481,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Cars leave. Places close. People move on. One or two lines, genuine.*
 
+- **2023-12-15** — Over 400 Youtube subscribers! Let's celebrate... by doing a half assed valve adjustment!
 - **2024-03-22** — Happy 16th birthday to OIOs newest driver and excellent team mechanic Miles! Look out for him on the track this year.. h…
 - **2024-05-10** — Happy 510 day!
-- **2024-08-06** — Happy 86 day from our yota family to yours!
 
 ### Punchy Single-Line Posts
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2024-02-12** — Same buddy. Same. Right Hot Hatch Racing?
-- **2024-02-17** — Wait for it
-- **2024-02-19** — One step closer to twin cam glory. #dalesdragon #ra21 #celica #18rg
-- **2024-03-25** — Ok.. yeah.. sold
+- **2023-12-08** — Let’s get stoichiometric!
+- **2024-01-08** — Daaaaaaang
+- **2024-01-22** — That front bumper is FIRE yo!
+- **2024-01-27** — All day long
 
 ### Storytelling / Sermon Mode
 
@@ -506,34 +506,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 275 posts:
+Top 25 hashtags across 300 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 63 |
+| #cars | 64 |
 | #racing | 32 |
+| #rallycross | 31 |
 | #fitgang | 31 |
-| #rallycross | 29 |
-| #toyota | 24 |
+| #toyota | 29 |
 | #diy | 23 |
 | #hondafit | 22 |
-| #scca | 20 |
-| #ra21 | 18 |
+| #ra21 | 21 |
+| #scca | 21 |
+| #dalesdragon | 19 |
+| #mgbgts | 19 |
 | #mr2 | 18 |
-| #dalesdragon | 16 |
-| #mgbgts | 16 |
+| #celica | 15 |
+| #rxaw11 | 14 |
+| #aw11 | 14 |
 | #18rg | 14 |
-| #aw11 | 13 |
+| #autocross | 12 |
 | #vintageracing | 12 |
 | #ta22 | 12 |
-| #celica | 12 |
-| #rxaw11 | 12 |
-| #autocross | 11 |
 | #sccarallycross | 11 |
 | #mechanic | 10 |
 | #fitisgo | 9 |
 | #automobile | 9 |
-| #jdm | 8 |
-| #4age | 7 |
+| #rxfx | 8 |
+| #fx16 | 8 |
 
 <!-- social-voice-stats:end -->
