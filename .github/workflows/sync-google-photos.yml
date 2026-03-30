@@ -1,0 +1,67 @@
+name: Sync Google Photos
+
+on:
+  # Every 5 hours to stay within the 4-6 hour requirement
+  schedule:
+    - cron: '0 */5 * * *'
+
+  workflow_dispatch:
+    inputs:
+      album_url:
+        description: 'Google Photos album URL (optional override)'
+        required: false
+        type: string
+
+jobs:
+  sync-photos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Sync photos from Google Photos album
+        run: |
+          ALBUM_URL="${{ github.event.inputs.album_url }}"
+          # Use default OIO Racing album if not provided
+          ALBUM_URL="${ALBUM_URL:-https://photos.app.goo.gl/W757cit6HfvKmCQh6}"
+          python scripts/sync_google_photos.py --album-url "$ALBUM_URL"
+
+      - name: Commit new photos
+        run: |
+          git config user.name "OIO Photo Sync Bot"
+          git config user.email "bot@oioracing.local"
+          git add picdump/
+          if git diff --cached --quiet; then
+            echo "No new photos to commit."
+          else
+            NEW_COUNT=$(git diff --cached --name-only | grep -E '\.(png|jpg|jpeg|heic|webp)$' | wc -l)
+            git commit -m "chore: sync ${NEW_COUNT} photo(s) from Google Photos [skip ci]
+
+Synced from OIO Racing Google Photos album.
+Photos will be processed by the picdump workflow.
+
+Co-Authored-By: Paperclip <noreply@paperclip.ing>"
+            git push
+            echo "✓ Pushed ${NEW_COUNT} new photo(s)"
+          fi
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::Google Photos sync failed. Check the logs for details."
+          echo "Possible issues:"
+          echo "  - Network connectivity"
+          echo "  - Album URL changed or became private"
+          echo "  - Google Photos HTML structure changed"
+          echo "  - Rate limiting"
