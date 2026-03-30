@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-30 from 300 posts (300 Facebook, 0 Instagram) covering 2023-11-06 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-30 from 325 posts (325 Facebook, 0 Instagram) covering 2023-09-07 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 3 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 106 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 105 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 110 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 107 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 35 | 'Our Hudson', 'errbody in the pool' |
@@ -423,9 +423,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 51 |
-| Build Update | 31 |
-| Event Recap | 79 |
-| Event Hype | 16 |
+| Build Update | 35 |
+| Event Recap | 87 |
+| Event Hype | 17 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
 | Farewell / Milestone | 14 |
@@ -448,26 +448,26 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Photo-first. Caption captures progress without over-describing.*
 
-- **2024-01-05** — Another year.. another story from the Lake Garnett Grand Prix Revival! If you were there, you know how it went down for…
-- **2024-01-08** — Another year.. another story from the Lake Garnett Grand Prix Revival! If you were there, you know how it went down for…
-- **2024-02-03** — Here we go! It’s Ryan’s turn to tell you all about his build and racing glory in the Toyota powered 1973 MGB GT we call…
+- **2023-10-13** — If you’re headed to the Lake Garnett Grand Prix Revival this weekend look for #dalesdragon here in the paddock or at the…
+- **2023-10-14** — Ian’s Lake Garnett Grand Prix Revival weekend is off to a bad start.
+- **2023-10-15** — Update on #dalesdragon at the Lake Garnett Grand Prix Revival  Friday night. First thing. Went to take it off the traile…
 
 ### Event Hype / Trash Talk
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2023-09-18** — #kaida86's rear wheel stud on the left is giving the one on the right a complex. Luckily Ian had a brand new PERRIN Perf…
 - **2024-01-26** — Winter isn't over yet but this week Ian and his crew of small dudes are wrenching and wiping the FX16 to bring it out of…
 - **2024-02-10** — Friday is here and so is the newest chapter in the saga of #dalesdragon Ian’s 1972 Toyota Celica. The motor is coming ou…
-- **2024-03-07** — Video link in the comments. Ian and Ryan work out the kinks of the offseason and test out new setups while Miles takes h…
 - **2024-04-15** — Now editing… FIT OFF!!! A generational battle for Honda Fit autocross supremacy! GD vs GE vs GK. Tune in Friday 4/19 to…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2023-11-06** — Ian's fastest run in #dalesdragon at the Kansas City Region - SCCA 2023 Halloweenie. This is for entertainment purposes…
-- **2023-11-19** — Ian’s last run fast run. 3 laps of endurocross with Kansas Region SCCA Good nuff for 1st in MR and 2nd overall. Sorry to…
-- **2023-11-20** — Hail hail the gang’s all here! Ryan set up an endurocross rallycross in the KS region and Ian and Richard came out to gi…
+- **2023-09-07** — Ryan rolls back into grid at the end of day 1 26th in XA class after having a rallycross style 3rd run because of course…
+- **2023-09-09** — Ryan ended up in 31st place in XA at the 2023 Tire Rack SCCA Solo Nationals Next year.. more Lincoln events for all of u…
+- **2023-09-10** — Quick video I made with my phone of our great day at KC Region SCCA Rallycross test and tune at Ray Rocks off-road park.
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2023-12-08** — Let’s get stoichiometric!
-- **2024-01-08** — Daaaaaaang
-- **2024-01-22** — That front bumper is FIRE yo!
-- **2024-01-27** — All day long
+- **2023-09-10** — Another day to send it for Charlie! fb.com/charlieskidney
+- **2023-10-13** — Moar chin than Leno. #dalesdragon
+- **2023-11-01** — Double Dragons #ra21 #gr86
+- **2023-11-04** — Without me… there is no you.
 
 ### Storytelling / Sermon Mode
 
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 300 posts:
+Top 25 hashtags across 325 posts:
 
 | Hashtag | Uses |
 |---|---|
@@ -515,12 +515,12 @@ Top 25 hashtags across 300 posts:
 | #rallycross | 31 |
 | #fitgang | 31 |
 | #toyota | 29 |
+| #dalesdragon | 25 |
 | #diy | 23 |
+| #scca | 22 |
+| #ra21 | 22 |
 | #hondafit | 22 |
-| #ra21 | 21 |
-| #scca | 21 |
-| #dalesdragon | 19 |
-| #mgbgts | 19 |
+| #mgbgts | 20 |
 | #mr2 | 18 |
 | #celica | 15 |
 | #rxaw11 | 14 |
