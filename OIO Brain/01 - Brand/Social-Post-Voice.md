@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-30 from 175 posts (175 Facebook, 0 Instagram) covering 2024-12-13 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-30 from 200 posts (200 Facebook, 0 Instagram) covering 2024-10-19 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 3 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 68 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 60 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 75 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 65 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 21 | 'Our Hudson', 'errbody in the pool' |
@@ -422,13 +422,13 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 27 |
-| Build Update | 17 |
-| Event Recap | 44 |
-| Event Hype | 9 |
+| Video Tease | 30 |
+| Build Update | 19 |
+| Event Recap | 50 |
+| Event Hype | 10 |
 | Trash Talk | 7 |
 | Enthusiast Take | 10 |
-| Farewell / Milestone | 9 |
+| Farewell / Milestone | 10 |
 | Community Celebration | 7 |
 | Acquisition | 6 |
 
@@ -440,34 +440,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Short hook, 'link in the comments' closer, never explains too much.*
 
-- **2024-12-13** — Full video on youtube, link in the comments!  With Señor Dos out of commission, the Hobgoblin, a 1985 Toyota MR2, steppe…
-- **2025-01-11** — The wait is over! To celebrate crossing the 1000 subscriber mark on youtube.com/@oioracing OIO T-Shirts are officially o…
-- **2025-01-17** — Video link in the comments. Ian’s got something a little different for you this week, and we hope it works out.. for his…
+- **2024-11-07** — Sooooo... we're pushing to 1000 subs on youtube.com/@oioracing. When we get there we're thinking of finally making some…
+- **2024-11-07** — This year at @lggpr we spell redemption... D. A. L. E! Join Ian and his crew (full video link in the comments) as they t…
+- **2024-11-21** — This week’s video (link in the comments) isn’t just about cleaning up; it’s about building something functional for wren…
 
 ### Build Update
 
 *Photo-first. Caption captures progress without over-describing.*
 
+- **2024-11-07** — This year at @lggpr we spell redemption... D. A. L. E! Join Ian and his crew (full video link in the comments) as they t…
+- **2024-11-09** — Ian - As a guy who grew up hiding incoming packages for his mom who secretly ordered junk from QVC… and who now still su…
 - **2025-02-01** — Video link in comments! After 7 months suspended in the air, Ian's Toyota Corolla FX16 is finally coming back down to ea…
-- **2025-02-08** — This week’s video (link in the comments) finds Ian and his crew diving in to Dale the 1972 Celica to get him shifting ge…
-- **2025-02-23** — Ian is at it today too … he just has to figure out what to hook this hoist to and this 4AGE will be lowered to the groun…
 
 ### Event Hype / Trash Talk
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2024-12-06** — Things are getting… kinky in the #hobgoblinmr2! Meeting rule requirements for SCCA rallycross when you have no driver si…
 - **2024-12-13** — Full video on youtube, link in the comments!  With Señor Dos out of commission, the Hobgoblin, a 1985 Toyota MR2, steppe…
 - **2025-02-01** — Video link in comments! After 7 months suspended in the air, Ian's Toyota Corolla FX16 is finally coming back down to ea…
-- **2025-04-26** — Video link in the comments! The Goblin is back. After our Rallycross MR2 Señor Dos gave up at the end of last season, Ia…
 - **2025-02-20** — Video link in the comments and live now on youtube/@oioracing!  It was too cold to wrench, so we stayed inside and playe…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2024-12-13** — Full video on youtube, link in the comments!  With Señor Dos out of commission, the Hobgoblin, a 1985 Toyota MR2, steppe…
-- **2025-02-08** — This week’s video (link in the comments) finds Ian and his crew diving in to Dale the 1972 Celica to get him shifting ge…
-- **2025-02-09** — We can’t… but maybe you can? Someone in KC needs to carry on this piece of KC/SCCA/Datsun history!
+- **2024-10-19** — Day one of #rallycrossnats looks real good for our KC Region boys! Keep at it fellas!
+- **2024-10-27** — Keegan ripped the turbo Tercel at the Halloweenie autocross today! Seriously good times on the grid. Let’s do it again n…
+- **2024-10-28** — Ian's least cuss filled Kansas City Region SCCA Halloweenie run in #dalesdragon. Drew Pfannenstiel rode along to be insp…
 
 ### Enthusiast Take
 
@@ -481,18 +481,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Cars leave. Places close. People move on. One or two lines, genuine.*
 
+- **2024-11-28** — Too good of a pic not to share. Happy turkey day y’all! Get out for a drive if you can!
 - **2024-12-25** — It’s finally time to post this. Happy Holidays!!!
 - **2025-01-11** — The wait is over! To celebrate crossing the 1000 subscriber mark on youtube.com/@oioracing OIO T-Shirts are officially o…
-- **2025-11-21** — No better way to celebrate.
 
 ### Punchy Single-Line Posts
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2024-12-20** — Oh we agree with that MR2… and the lotus
-- **2024-12-24** — From man who built the #killercorolla. Headed to 7 digits. #toyota
-- **2024-12-25** — It’s finally time to post this. Happy Holidays!!!
-- **2024-12-26** — Ian’s favorite gift of Xmas 2024. What’s yours?
+- **2024-11-12** — NO. JOKE. Subscribe to this fella!
+- **2024-11-28** — How to mini
+- **2024-11-28** — Snazzy merch coming soon!
+- **2024-11-28** — YouTube.com/@oioracing get on board!
 
 ### Storytelling / Sermon Mode
 
@@ -506,34 +506,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 175 posts:
+Top 25 hashtags across 200 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 41 |
+| #cars | 45 |
+| #rallycross | 18 |
 | #fitgang | 17 |
-| #rallycross | 16 |
-| #scca | 13 |
-| #diy | 13 |
+| #racing | 14 |
+| #scca | 14 |
+| #diy | 14 |
 | #hondafit | 13 |
+| #toyota | 12 |
+| #mgbgts | 12 |
+| #mr2 | 11 |
+| #ra21 | 11 |
 | #sccarallycross | 11 |
-| #mgbgts | 11 |
-| #racing | 10 |
-| #mr2 | 10 |
-| #toyota | 10 |
-| #ra21 | 10 |
+| #aw11 | 8 |
+| #vintageracing | 8 |
+| #18rg | 8 |
 | #automobile | 8 |
-| #aw11 | 7 |
-| #18rg | 7 |
+| #celica | 7 |
+| #ta22 | 7 |
+| #dalesdragon | 6 |
 | #suspension | 6 |
-| #ta22 | 6 |
-| #celica | 6 |
 | #grassrootsmotorsports | 6 |
-| #vintageracing | 6 |
-| #aftermarket | 5 |
-| #ge8 | 5 |
-| #goblinmr2 | 5 |
-| #dalesdragon | 5 |
-| #rxaw11 | 4 |
+| #autocross | 5 |
+| #oioracing | 5 |
+| #jdm | 5 |
+| #mechanic | 5 |
 
 <!-- social-voice-stats:end -->
