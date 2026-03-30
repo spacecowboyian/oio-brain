@@ -30,6 +30,7 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 ## Vehicles
 
+- [ ] **Tundra (Al): Oil + filter change — 4/3/26** — 0w-30, 7.9 qt, summer towing spec
 - [ ] Fully document Goblin rebuild — film every step for content
 - [ ] Identify and document the $100 mystery motor for Killer Corolla
 - [ ] Assess Geoffrey (Dauphine) — running or not, what's the condition
@@ -63,6 +64,11 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 ## Repo / Admin
 
+- [ ] **Add Google Calendar integration secrets** — see below for required keys. Enables agents to read/update video release calendar and car work schedule.
+  - `GOOGLE_SERVICE_ACCOUNT_JSON` — JSON key for a Google Cloud service account
+  - `GOOGLE_CALENDAR_VIDEO_RELEASE_ID` — Calendar ID for the video release schedule
+  - `GOOGLE_CALENDAR_CAR_WORK_ID` — Calendar ID for car work / garage scheduling
+  - See setup instructions in `OIO Brain/07 - Admin/Google-Calendar-Setup.md`
 - [ ] **Add 3 GitHub repo secrets for social media indexing:** `META_ACCESS_TOKEN`, `META_FACEBOOK_PAGE_ID`, `META_INSTAGRAM_ACCOUNT_ID` — see `OIO Brain/data/social-posts/README.md` for step-by-step setup (requires Meta Developer account + connecting Instagram Business account to Facebook Page)
 - [ ] Fill in confirmed 2026 event dates in `OIO Brain/04 - Events/Schedules.md`
 - [ ] Add specific 2026 Fit How-To topics to the Video Ideas Backlog as they're confirmed

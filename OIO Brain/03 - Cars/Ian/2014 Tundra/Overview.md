@@ -59,10 +59,14 @@ Al is the 2014 Tundra that keeps the OIO operation moving. It tows the race cars
 ### Maintenance
 | Task | Status |
 |---|---|
-| Oil/Filter + Air Filter (Quarterly) | Recurring |
+| **Oil/Filter Change** | **Scheduled 4/3/26** |
+| Air Filter | Open — check at next oil change |
+
+**Oil spec:** 0w-30 full synthetic — 7.9 qt with filter (summer towing season)
 
 ---
 
 ## Related Content
 
 → [Ian's Fleet](../README.md)
+→ [Maintenance Log](Maintenance-Log.md)
