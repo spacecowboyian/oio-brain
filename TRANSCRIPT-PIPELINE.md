@@ -2,11 +2,11 @@
 
 ## Overview
 
-Automated workflow that generates and commits YouTube video transcripts to the oio-brain repository.
+Automated workflow that generates YouTube video transcripts and clean readable scripts, committing them to the oio-brain repository.
 
-## Current Status: 90% Complete ✅
+## Current Status: Complete ✅
 
-### ✅ What Already Exists
+### ✅ What Exists
 
 #### 1. **Transcript Fetching Script** (`scripts/fetch_transcripts.py`)
 - **Primary method**: `youtube-transcript-api` (fast, no download)
@@ -19,77 +19,84 @@ Automated workflow that generates and commits YouTube video transcripts to the o
   - Tracks processed videos via metadata.json
   - Logs unavailable transcripts to `UNAVAILABLE.md`
 
-#### 2. **Output Structure**
-Each transcript saved to: `transcripts/YYYY-MM-DD_video-title/`
-- `transcript.md` — Full transcript with timestamps, YAML frontmatter
+#### 2. **Clean Script Generator** (`scripts/clean_transcripts.py`)
+- **Method**: Claude AI (Anthropic API)
+- **Features**:
+  - Removes filler words (um, uh, like, you know)
+  - Fixes incomplete sentences and thoughts
+  - Corrects speech-to-text errors
+  - Maintains authentic voice and style
+  - Generates readable script versions
+  - Processes all transcripts missing clean versions
+
+#### 3. **Output Structure**
+Each transcript saved to: `OIO Brain/02 - Content/Video Scripts/YYYY-MM-DD_video-title/`
+- `transcript.md` — Raw transcript with timestamps, YAML frontmatter
+- `clean-script.md` — Clean, readable version without filler words
 - `metadata.json` — Structured metadata (video_id, title, date, URL, segment count)
 
-#### 3. **GitHub Actions Workflow** (`.github/workflows/fetch-youtube-transcripts.yml`)
+#### 4. **Catalog Linker** (`scripts/update_catalog_transcripts.py`)
+- Updates `OIO-Video-Catalog.md` with transcript links
+- Adds "Transcript" column with links to available transcripts
+- Format: `[📄](OIO Brain/02 - Content/Video Scripts/YYYY-MM-DD_video-title/transcript.md)`
+
+#### 5. **GitHub Actions Workflow** (`.github/workflows/fetch-youtube-transcripts.yml`)
 - **Automatic**: Runs every 2 hours via cron schedule
 - **Triggers**:
   - Scheduled: Every 2 hours
   - Manual: workflow_dispatch with options
   - Automatic: On push to `OIO-Video-Catalog.md`
+- **Steps**:
+  1. Fetch transcripts (raw)
+  2. Generate clean scripts
+  3. Update catalog links
+  4. Commit all changes
 - **Commits**: Direct to main with `[skip ci]`
 - **Options**:
   - `batch_size` (default: 25)
   - `fetch_all` (re-fetch all transcripts)
 
-### ❌ Missing Feature: Catalog Linking
-
-**Requirement**: Link transcripts back in `OIO-Video-Catalog.md`
-
-The catalog currently has tables with columns:
-```
-| Date | Title | Duration | Views | Likes |
-```
-
-**Solution**: Add a "Transcript" column with links to generated transcripts.
-
-## Implementation Plan
-
-### Script: `scripts/update_catalog_transcripts.py`
-
-**Purpose**: Update `OIO-Video-Catalog.md` with transcript links after generation.
-
-**Algorithm**:
-1. Parse `OIO-Video-Catalog.md` to find all video tables
-2. Scan `transcripts/` folder for available transcripts
-3. Match videos to transcripts by video_id
-4. Add/update "Transcript" column in tables
-5. Insert links like: `[📄](transcripts/YYYY-MM-DD_video-title/transcript.md)`
-6. Preserve existing table structure and data
-
-**Workflow Integration**:
-Add step after "Fetch transcripts" in the workflow:
-```yaml
-- name: Update catalog with transcript links
-  run: python scripts/update_catalog_transcripts.py
-
-- name: Commit catalog updates
-  run: |
-    git add OIO-Video-Catalog.md
-    if ! git diff --cached --quiet; then
-      git commit -m "chore: update catalog with transcript links [skip ci]"
-      git push
-    fi
-```
-
-## Pipeline Flow (Complete)
+## Pipeline Flow
 
 1. **Trigger**: Cron (every 2 hours) OR manual dispatch OR catalog update
-2. **Fetch**: `fetch_transcripts.py` fetches up to 25 new transcripts
-3. **Commit**: Commits transcript files to `transcripts/`
+2. **Fetch**: `fetch_transcripts.py` fetches up to 25 new transcripts → `OIO Brain/02 - Content/Video Scripts/`
+3. **Clean**: `clean_transcripts.py` generates clean readable scripts
 4. **Link**: `update_catalog_transcripts.py` adds links to catalog
-5. **Commit**: Commits updated catalog
+5. **Commit**: Commits transcripts, clean scripts, and updated catalog
 6. **Repeat**: Next run picks up remaining videos
+
+## Setup
+
+### Prerequisites
+
+1. **Python dependencies** (install from `requirements.txt`):
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Anthropic API Key** (required for clean script generation):
+   - Get your API key from: https://console.anthropic.com/
+   - **For local use**: Set environment variable:
+     ```bash
+     export ANTHROPIC_API_KEY='your-api-key-here'
+     ```
+   - **For GitHub Actions**: Add as repository secret named `ANTHROPIC_API_KEY`
+     1. Go to repository Settings → Secrets and variables → Actions
+     2. Click "New repository secret"
+     3. Name: `ANTHROPIC_API_KEY`
+     4. Value: your API key
+     5. Click "Add secret"
+
+### Migration Status
+
+✅ All existing transcripts (26) have been migrated from `transcripts/` to `OIO Brain/02 - Content/Video Scripts/`
 
 ## Usage
 
 ### Automatic Operation
 - Pipeline runs every 2 hours automatically
-- Processes 25 videos per run
-- No intervention needed
+- Processes 25 videos per run (fetch + clean)
+- No intervention needed once API key is configured
 
 ### Manual Operation
 
@@ -103,7 +110,19 @@ python scripts/fetch_transcripts.py --batch-size 50
 python scripts/fetch_transcripts.py --all
 ```
 
-**Update catalog links** (after fetching):
+**Generate clean scripts** (requires ANTHROPIC_API_KEY):
+```bash
+# Clean all transcripts missing clean versions
+python scripts/clean_transcripts.py
+
+# Re-clean all transcripts
+python scripts/clean_transcripts.py --all
+
+# Clean specific video
+python scripts/clean_transcripts.py --video-id VIDEO_ID
+```
+
+**Update catalog links**:
 ```bash
 python scripts/update_catalog_transcripts.py
 ```
@@ -117,14 +136,52 @@ python scripts/update_catalog_transcripts.py
 ## Dependencies
 
 From `requirements.txt`:
-- `youtube-transcript-api` — Primary transcript fetching
-- `yt-dlp` — Fallback for videos without API transcripts
+- `youtube-transcript-api>=1.0.0` — Primary transcript fetching
+- `yt-dlp>=2026.02.21` — Fallback for videos without API transcripts
+- `requests>=2.31.0` — HTTP requests
+- `anthropic>=0.39.0` — Claude AI for clean script generation
+
+## File Structure
+
+```
+OIO Brain/
+└── 02 - Content/
+    └── Video Scripts/
+        ├── README.md
+        ├── 2024-03-01_can-we-race-a-honda-fit-jazz/
+        │   ├── transcript.md          # Raw transcript with timestamps
+        │   ├── clean-script.md         # Clean readable version
+        │   └── metadata.json           # Video metadata
+        ├── 2024-03-21_honda-fit-jazz-valve-adjustment/
+        │   ├── transcript.md
+        │   ├── clean-script.md
+        │   └── metadata.json
+        └── ...
+```
+
+## Next Steps
+
+To complete the clean script generation for all existing transcripts:
+
+1. **Set ANTHROPIC_API_KEY** (see Setup section above)
+2. **Run clean script generator**:
+   ```bash
+   cd /path/to/oio-brain
+   python scripts/clean_transcripts.py
+   ```
+3. **Commit the results**:
+   ```bash
+   git add "OIO Brain/02 - Content/Video Scripts/"
+   git commit -m "chore: generate clean scripts for existing transcripts"
+   git push
+   ```
 
 ## References
 
 - Video catalog: `OIO-Video-Catalog.md`
-- Transcripts folder: `transcripts/`
-- Unavailable log: `transcripts/UNAVAILABLE.md`
+- Video Scripts folder: `OIO Brain/02 - Content/Video Scripts/`
+- Unavailable log: `transcripts/UNAVAILABLE.md` (legacy location)
 - Fetch script: `scripts/fetch_transcripts.py`
-- Catalog update script: `scripts/update_catalog_transcripts.py` (to be created)
+- Clean script generator: `scripts/clean_transcripts.py`
+- Catalog linker: `scripts/update_catalog_transcripts.py`
 - Workflow: `.github/workflows/fetch-youtube-transcripts.yml`

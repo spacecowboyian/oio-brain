@@ -55,6 +55,11 @@ jobs:
             python scripts/fetch_transcripts.py --batch-size "$BATCH_SIZE"
           fi
 
+      - name: Generate clean scripts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/clean_transcripts.py
+
       - name: Update catalog with transcript links
         run: python scripts/update_catalog_transcripts.py
 
@@ -62,11 +67,11 @@ jobs:
         run: |
           git config user.name "OIO Transcript Bot"
           git config user.email "bot@oioracing.local"
-          git add transcripts/ OIO-Video-Catalog.md
+          git add "OIO Brain/02 - Content/Video Scripts/" OIO-Video-Catalog.md
           if git diff --cached --quiet; then
             echo "No new transcripts or catalog updates to commit."
           else
             NEW_COUNT=$(git diff --cached --name-only | grep 'transcript.md' | wc -l)
-            git commit -m "chore: add ${NEW_COUNT} transcript(s) and update catalog [skip ci]"
+            git commit -m "chore: add ${NEW_COUNT} transcript(s) and clean scripts, update catalog [skip ci]"
             git push
           fi
