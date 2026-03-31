@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-31 from 425 posts (425 Facebook, 0 Instagram) covering 2022-04-27 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-31 from 450 posts (450 Facebook, 0 Instagram) covering 2022-02-15 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -408,9 +408,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
-| Pit-Talk Casual | 4 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 139 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 117 | 3+ hashtags; copy is minimal |
+| Pit-Talk Casual | 5 | Short, direct, 1–3 sentences — 'this thing rules' |
+| Punchy / Short | 155 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 118 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 35 | 'Our Hudson', 'errbody in the pool' |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 56 |
 | Build Update | 41 |
-| Event Recap | 114 |
+| Event Recap | 117 |
 | Event Hype | 20 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2022-07-11** — If you are rocking a 4age.. we highly recommend that you tear your flex pipe in half. No more horsepower. Definite loss…
-- **2022-09-28** — Ian Here - I didn't take a whole lot of video at SCCA RallyCross Nationals this year. I was mostly focused on driving an…
-- **2022-10-13** — More celicas being rescued all the time. Once this one runs it will make someone a fine rallycross car. 1990 GTS. Up for…
+- **2022-02-22** — In a rallycross car it's just about the only clean spot on the dash...
+- **2022-03-31** — Hopefully coming soon to a rallycross near you :)
+- **2022-04-01** — Ian here. Today is all #GRCorolla. It's a Toyota fanboy's Corolla dream come true and I am 100% here for it. Can't wait…
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2022-04-27** — If the vape juice doesn't take them first...
-- **2022-04-29** — The exhaust manifold is a bit too... free flowing. #dalesdragon
-- **2022-05-02** — Swoon.
-- **2022-05-31** — YAAAASSS! QUICK! TO THE WOOD SHOP!
+- **2022-02-25** — That's real quick.
+- **2022-03-01** — 😮
+- **2022-03-03** — ▼●▼●▼▲ 😍
+- **2022-03-10** — Yas
 
 ### Storytelling / Sermon Mode
 
@@ -506,31 +506,31 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 425 posts:
+Top 25 hashtags across 450 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
-| #dalesdragon | 35 |
+| #dalesdragon | 39 |
 | #rallycross | 33 |
 | #racing | 32 |
 | #fitgang | 31 |
+| #ra21 | 30 |
 | #toyota | 29 |
-| #ra21 | 27 |
 | #rxaw11 | 25 |
 | #diy | 23 |
 | #mgbgts | 22 |
 | #scca | 22 |
 | #hondafit | 22 |
 | #mr2 | 20 |
-| #celica | 17 |
+| #celica | 19 |
 | #aw11 | 15 |
 | #18rg | 14 |
+| #sccarallycross | 13 |
 | #ta22 | 13 |
 | #autocross | 13 |
-| #sccarallycross | 12 |
 | #vintageracing | 12 |
-| #rxfx | 10 |
+| #rxfx | 11 |
 | #mechanic | 10 |
 | #fx16 | 9 |
 | #4age | 9 |
