@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-31 from 550 posts (550 Facebook, 0 Instagram) covering 2020-10-22 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-31 from 575 posts (575 Facebook, 0 Instagram) covering 2020-09-14 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 5 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 198 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 125 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 213 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 126 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 36 | 'Our Hudson', 'errbody in the pool' |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 56 |
 | Build Update | 42 |
-| Event Recap | 135 |
+| Event Recap | 139 |
 | Event Hype | 20 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2020-10-31** — Ryan and Ian worked late tonight at @bob_hindson_racing to give the #rxfx a bit more front end low, some @manonracing ba…
-- **2020-12-05** — Point. One. Four. Seven.  Ryan bested Ian at today’s rallycross by just .147 after 10 runs.   Fun. Fast. Great day of ra…
-- **2020-12-07** — 3 runs. 2 cameras to set up every time. Too much work for just 1:30 of video 🙂 Good send off for the Kansas City Region…
+- **2020-09-14** — A couple of our Kansas City Region SCCA RallyCross buddies are seasoned ARA rally drivers. The Rally Monkey kept them ro…
+- **2020-09-27** — Take a ride on the chin of Ian's #rxfx for his fastest time of the day today at the #kcrx event in Riverside, MO! Great…
+- **2020-10-10** — Team OIO represents. #ksrscca
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2020-10-24** — Keegan is out doing Tercel things with Tercel people this weekend.
-- **2020-10-30** — 😍
-- **2020-11-02** — Toyota just likes to watch us weep.
-- **2020-11-04** — Perfection in dash form.
+- **2020-09-25** — Tomorrow... we race! #hashtags
+- **2020-09-26** — #kcrx
+- **2020-10-03** — Be at peace... and rest in peace.
+- **2020-10-03** — Right helmet. Wrong car. @bob_hindson_racing #corvair
 
 ### Storytelling / Sermon Mode
 
@@ -506,17 +506,17 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 550 posts:
+Top 25 hashtags across 575 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
 | #dalesdragon | 39 |
 | #rallycross | 38 |
+| #rxfx | 34 |
 | #racing | 32 |
+| #ra21 | 31 |
 | #fitgang | 31 |
-| #ra21 | 30 |
-| #rxfx | 29 |
 | #toyota | 29 |
 | #rxaw11 | 25 |
 | #diy | 24 |
@@ -528,12 +528,12 @@ Top 25 hashtags across 550 posts:
 | #sccarallycross | 15 |
 | #aw11 | 15 |
 | #18rg | 14 |
+| #fx16 | 13 |
 | #ta22 | 13 |
 | #autocross | 13 |
-| #fx16 | 12 |
 | #vintageracing | 12 |
 | #kcrscca | 11 |
 | #mechanic | 10 |
-| #4age | 9 |
+| #kcrx | 9 |
 
 <!-- social-voice-stats:end -->
