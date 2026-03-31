@@ -77,6 +77,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 ## Repo / Operations
 
+- **Repo structure proposal awaiting review:** `00-core/structure-proposal.md` contains a full plan for a cleaner, flatter repo layout. Addresses 13+ friction points (spaces in paths, redundant nesting, duplicate indexes, split governance, etc.). **Ian needs to review the "Open Questions for Ian" section and approve or modify before implementation.** Nothing is changed yet.
 - **Who else has access to this repo?** Beyond Ian, who can read and write?
 - **Update cadence:** How often should `01-active/` files be reviewed and updated? Weekly? After each event?
 - **process-dailies false-positive trigger:** The `process-dailies` workflow triggers on any push to `docdump/` — including the permanent `docdump/dailies/README.md`. When that README was pushed as infrastructure, the automation opened a processing issue. The workflow should be scoped to ignore README.md files in the dailies folder to prevent future false-positives.

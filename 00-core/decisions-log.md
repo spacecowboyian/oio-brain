@@ -23,6 +23,25 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
+## 2026-03-31 — Repo Structure Proposal Created (Not Yet Implemented)
+
+**Decision:** Authored `00-core/structure-proposal.md` — a full proposal for a cleaner, flatter repo structure. Not implemented; pending Ian's review and approval.
+
+**Proposal summary:**
+- Flatten `OIO Brain/` — all domain sections promoted to root level (no spaces, no redundant nesting)
+- Drop numeric prefixes from folder names (`00-core/` → `core/`, `01-active/` → `active/`)
+- Consolidate 3 brand voice docs → 1; 2 indexes → 1; 2 priorities files → 1; 2 template folders → 1
+- Centralize all structured data under `data/`
+- Unify `docdump/`, `picdump/`, and `todo/` into a single `intake/` folder
+- Apply consistent nickname-slug naming to car folders (no spaces, no year prefix)
+- Move floating root files (`OIO-Video-Catalog.md`, `PHOTO-INDEX.md`) into their domain folders
+
+**Why:** The repo has 13+ identified friction points (split governance, redundant nesting, spaces in paths, scattered data, duplicate content). A clean structure will reduce agent confusion and human navigation overhead.
+
+**Implications:** Nothing is implemented yet. Review `00-core/structure-proposal.md` and answer the open questions before implementation begins.
+
+---
+
 ## 2026-03-31 — Repo Cleanup and Centralization Pass
 
 **Decision:** Performed a general cleanup pass to deduplicate content and centralize around the OIO Brain folder structure.
