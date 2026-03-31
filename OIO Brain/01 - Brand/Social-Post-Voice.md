@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-31 from 350 posts (350 Facebook, 0 Instagram) covering 2023-08-06 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-31 from 375 posts (375 Facebook, 0 Instagram) covering 2023-03-08 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 4 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 115 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 107 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 121 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 109 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 35 | 'Our Hudson', 'errbody in the pool' |
@@ -422,10 +422,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 51 |
+| Video Tease | 53 |
 | Build Update | 35 |
-| Event Recap | 97 |
-| Event Hype | 19 |
+| Event Recap | 105 |
+| Event Hype | 20 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
 | Farewell / Milestone | 14 |
@@ -440,9 +440,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Short hook, 'link in the comments' closer, never explains too much.*
 
+- **2023-03-21** — New video time! This week its a Techno Toy Tuning install video in the #rxaw11 Pt. 2 in the ongoing series on "The Offic…
+- **2023-05-22** — NEW VIDEO! It's been a while.. like it always is. But hey.. we did some racin! So what if it didn't all go exactly accor…
 - **2024-01-08** — Another year.. another story from the Lake Garnett Grand Prix Revival! If you were there, you know how it went down for…
-- **2024-01-12** — It's new video time! This time we're back to the #rxaw11 #senordos to save some valuable rubber and hopefully go rallycr…
-- **2024-01-26** — Winter isn't over yet but this week Ian and his crew of small dudes are wrenching and wiping the FX16 to bring it out of…
 
 ### Build Update
 
@@ -456,18 +456,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2023-04-13** — #rxaw11 has new properly sized rod bearings and is ready to rip again. Hopefully we get to rallycross on Sunday because…
 - **2023-08-16** — Ryan here! Today on the MGB GTS got the bar measured and cut. Cut out the shock mounts as well.  Had to shape the bar to…
 - **2023-08-27** — Ryan here.  The MGB GTS is ready to race tomorrow. We are going autocross! Thanks to Hot Hatch Racing and Niles Davis I…
-- **2023-09-18** — #kaida86's rear wheel stud on the left is giving the one on the right a complex. Luckily Ian had a brand new PERRIN Perf…
 - **2024-04-15** — Now editing… FIT OFF!!! A generational battle for Honda Fit autocross supremacy! GD vs GE vs GK. Tune in Friday 4/19 to…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2023-08-06** — Ian’s ride for the day with Snow Capped Motorsports at Colorado RallyCross
-- **2023-08-18** — Ian here, I WAS on the wait list but I just got word that my entry to #SCCASoloNationals was approved! #kaida86 will be…
-- **2023-08-23** — Glory, thy name be RE71RS.  #newtireday before #sccasolonats.  Now... we scrub em in.
+- **2023-03-08** — You probably saw it on Facebook already but.. here's a run from Ryan in the Red Bomber miata on Sunday with the Wichita…
+- **2023-04-13** — #rxaw11 has new properly sized rod bearings and is ready to rip again. Hopefully we get to rallycross on Sunday because…
+- **2023-04-20** — Very much worth a watch. Don't let the title fool you. It's more of a history of the super hatch.  Now.. all we need is…
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2023-08-11** — I’ll take the square with Dale please 😂
-- **2023-08-26** — So will it make a Japanese car… German? #pleasenothankyou
-- **2023-08-30** — Charlie Bigsby Needs a Kidney!!!
-- **2023-09-04** — #kaida86 has arrived at #sccasolonats
+- **2023-03-11** — Because 86
+- **2023-03-11** — How to get Keegan to slide into your DMs
+- **2023-04-20** — Tee hee. #dalesdragon
+- **2023-04-23** — Droooool
 
 ### Storytelling / Sermon Mode
 
@@ -506,24 +506,24 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 350 posts:
+Top 25 hashtags across 375 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
+| #rallycross | 32 |
 | #racing | 32 |
-| #rallycross | 31 |
 | #fitgang | 31 |
 | #toyota | 29 |
-| #dalesdragon | 25 |
+| #dalesdragon | 26 |
 | #diy | 23 |
+| #mgbgts | 22 |
 | #scca | 22 |
 | #ra21 | 22 |
 | #hondafit | 22 |
-| #mgbgts | 21 |
+| #rxaw11 | 20 |
 | #mr2 | 18 |
 | #celica | 15 |
-| #rxaw11 | 14 |
 | #aw11 | 14 |
 | #18rg | 14 |
 | #autocross | 12 |
@@ -531,9 +531,9 @@ Top 25 hashtags across 350 posts:
 | #ta22 | 12 |
 | #sccarallycross | 11 |
 | #mechanic | 10 |
+| #kcrscca | 9 |
 | #fitisgo | 9 |
 | #automobile | 9 |
 | #rxfx | 8 |
-| #fx16 | 8 |
 
 <!-- social-voice-stats:end -->
