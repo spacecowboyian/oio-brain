@@ -62,7 +62,7 @@ Get the 4A-G in, get it on track. Richard is also thinking about swapping in a M
 
 *Auto-generated 2026-03-31 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 1 post
+**Posts mentioning this car:** 2 posts
 
 **Story arc from social posts:**
 
@@ -70,6 +70,7 @@ Get the 4A-G in, get it on track. Richard is also thinking about swapping in a M
 
 **Recent social posts:**
 
+- **2020-09-13** — Ryan’s sidecar dnepr is pretty rad but Richard’s starlet wins the “look what followed me home” award this weekend. Can’t…
 - **2026-03-06** — Future Richard is calling. Time to get that 4age in the starlet.
 
 <!-- social-arc:starlet:end -->

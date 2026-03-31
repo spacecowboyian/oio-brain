@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-31 from 575 posts (575 Facebook, 0 Instagram) covering 2020-09-14 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-31 from 600 posts (600 Facebook, 0 Instagram) covering 2020-08-21 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -408,8 +408,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
-| Pit-Talk Casual | 5 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 213 | Single line. Sometimes one word. 'Approved.' |
+| Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
+| Punchy / Short | 226 | Single line. Sometimes one word. 'Approved.' |
 | Hashtag-Heavy | 126 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 56 |
 | Build Update | 42 |
-| Event Recap | 139 |
+| Event Recap | 145 |
 | Event Hype | 20 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2020-09-14** — A couple of our Kansas City Region SCCA RallyCross buddies are seasoned ARA rally drivers. The Rally Monkey kept them ro…
-- **2020-09-27** — Take a ride on the chin of Ian's #rxfx for his fastest time of the day today at the #kcrx event in Riverside, MO! Great…
-- **2020-10-10** — Team OIO represents. #ksrscca
+- **2020-08-21** — #justsubaruthings @ 2020 SCCA RallyCross Nationals
+- **2020-08-26** — New rallycross team!!! Good folks and a decent platform for mod front. Can’t wait to see it in action!
+- **2020-08-30** — A quick #howto for removing half dried kansas mud from your #sccarallycross car.
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2020-09-25** — Tomorrow... we race! #hashtags
-- **2020-09-26** — #kcrx
-- **2020-10-03** — Be at peace... and rest in peace.
-- **2020-10-03** — Right helmet. Wrong car. @bob_hindson_racing #corvair
+- **2020-08-21** — #justsubaruthings @ 2020 SCCA RallyCross Nationals
+- **2020-08-22** — 300hp. 1525lbs. Knobby tires.  Yes please.
+- **2020-08-24** — The sound... The fury... freaking love this thing.
+- **2020-08-25** — When in doubt... cut it out.
 
 ### Storytelling / Sermon Mode
 
@@ -506,14 +506,14 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 575 posts:
+Top 25 hashtags across 600 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
+| #rxfx | 39 |
 | #dalesdragon | 39 |
 | #rallycross | 38 |
-| #rxfx | 34 |
 | #racing | 32 |
 | #ra21 | 31 |
 | #fitgang | 31 |
@@ -525,7 +525,7 @@ Top 25 hashtags across 575 posts:
 | #hondafit | 22 |
 | #mr2 | 20 |
 | #celica | 19 |
-| #sccarallycross | 15 |
+| #sccarallycross | 16 |
 | #aw11 | 15 |
 | #18rg | 14 |
 | #fx16 | 13 |
@@ -533,7 +533,7 @@ Top 25 hashtags across 575 posts:
 | #autocross | 13 |
 | #vintageracing | 12 |
 | #kcrscca | 11 |
+| #rx86 | 10 |
 | #mechanic | 10 |
-| #kcrx | 9 |
 
 <!-- social-voice-stats:end -->
