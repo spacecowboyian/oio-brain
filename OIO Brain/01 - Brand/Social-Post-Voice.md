@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-31 from 600 posts (600 Facebook, 0 Instagram) covering 2020-08-21 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-31 from 625 posts (625 Facebook, 0 Instagram) covering 2020-07-30 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 226 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 126 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 239 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 131 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 36 | 'Our Hudson', 'errbody in the pool' |
@@ -424,11 +424,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 56 |
 | Build Update | 42 |
-| Event Recap | 145 |
+| Event Recap | 156 |
 | Event Hype | 20 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
-| Farewell / Milestone | 15 |
+| Farewell / Milestone | 16 |
 | Community Celebration | 9 |
 | Acquisition | 6 |
 
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2020-08-21** — #justsubaruthings @ 2020 SCCA RallyCross Nationals
-- **2020-08-26** — New rallycross team!!! Good folks and a decent platform for mod front. Can’t wait to see it in action!
-- **2020-08-30** — A quick #howto for removing half dried kansas mud from your #sccarallycross car.
+- **2020-07-30** — Join Ryan in the triumph of stiffening the chassis and installing some beautiful Techno Toy Tuning suspension parts... t…
+- **2020-08-05** — When you’re out of time, effort, and F!@&$. #sendit #rx86 #rallycross #rallycrossnationals
+- **2020-08-07** — Baby got new boots. #rxfx #fx16 #sccarallycross #rallycrossnats
 
 ### Enthusiast Take
 
@@ -481,18 +481,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Cars leave. Places close. People move on. One or two lines, genuine.*
 
+- **2020-08-07** — Happy late #86day from the #rx86 #ae86 . . . @bob_hindson_racing @wearekconstruction
 - **2020-12-30** — LOOKS LIKE WE MAAAADE IIIIT!  Happy Birthday you beautiful dragon.
 - **2023-12-15** — Over 400 Youtube subscribers! Let's celebrate... by doing a half assed valve adjustment!
-- **2024-03-22** — Happy 16th birthday to OIOs newest driver and excellent team mechanic Miles! Look out for him on the track this year.. h…
 
 ### Punchy Single-Line Posts
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2020-08-21** — #justsubaruthings @ 2020 SCCA RallyCross Nationals
-- **2020-08-22** — 300hp. 1525lbs. Knobby tires.  Yes please.
-- **2020-08-24** — The sound... The fury... freaking love this thing.
-- **2020-08-25** — When in doubt... cut it out.
+- **2020-08-03** — Full send never gets old.
+- **2020-08-07** — Baby got new boots. #rxfx #fx16 #sccarallycross #rallycrossnats
+- **2020-08-07** — #rallycrossnationals site prep.
+- **2020-08-09** — Rained out. On to nationals next weekend!
 
 ### Storytelling / Sermon Mode
 
@@ -506,14 +506,14 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 600 posts:
+Top 25 hashtags across 625 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
-| #rxfx | 39 |
+| #rxfx | 42 |
+| #rallycross | 39 |
 | #dalesdragon | 39 |
-| #rallycross | 38 |
 | #racing | 32 |
 | #ra21 | 31 |
 | #fitgang | 31 |
@@ -525,15 +525,15 @@ Top 25 hashtags across 600 posts:
 | #hondafit | 22 |
 | #mr2 | 20 |
 | #celica | 19 |
-| #sccarallycross | 16 |
+| #sccarallycross | 18 |
 | #aw11 | 15 |
+| #rx86 | 14 |
+| #fx16 | 14 |
 | #18rg | 14 |
-| #fx16 | 13 |
 | #ta22 | 13 |
 | #autocross | 13 |
 | #vintageracing | 12 |
 | #kcrscca | 11 |
-| #rx86 | 10 |
 | #mechanic | 10 |
 
 <!-- social-voice-stats:end -->
