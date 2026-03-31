@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-31 from 525 posts (525 Facebook, 0 Instagram) covering 2021-01-01 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-31 from 550 posts (550 Facebook, 0 Instagram) covering 2020-10-22 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,11 +409,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 5 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 187 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 124 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 198 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 125 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
-| Community Voice | 35 | 'Our Hudson', 'errbody in the pool' |
+| Community Voice | 36 | 'Our Hudson', 'errbody in the pool' |
 | Self-Deprecating | 4 | Ian is wrong, underpowered, or bedazzled |
 
 ---
@@ -424,12 +424,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 56 |
 | Build Update | 42 |
-| Event Recap | 131 |
+| Event Recap | 135 |
 | Event Hype | 20 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
-| Farewell / Milestone | 14 |
-| Community Celebration | 8 |
+| Farewell / Milestone | 15 |
+| Community Celebration | 9 |
 | Acquisition | 6 |
 
 ---
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2021-01-23** — Great info for those not in the know... but.. y'all probably know already :)  Got this from the great group RallyCross B…
-- **2021-03-22** — Ryan put the oppo lock on yesterday to lay down a class win and an overall top 5 showing at Rallycross Wichita Region Sc…
-- **2021-04-19** — Ian - Here's my best run of the morning heat at the first Kansas City Region SCCA RallyCross event of the season in beau…
+- **2020-10-31** — Ryan and Ian worked late tonight at @bob_hindson_racing to give the #rxfx a bit more front end low, some @manonracing ba…
+- **2020-12-05** — Point. One. Four. Seven.  Ryan bested Ian at today’s rallycross by just .147 after 10 runs.   Fun. Fast. Great day of ra…
+- **2020-12-07** — 3 runs. 2 cameras to set up every time. Too much work for just 1:30 of video 🙂 Good send off for the Kansas City Region…
 
 ### Enthusiast Take
 
@@ -481,18 +481,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Cars leave. Places close. People move on. One or two lines, genuine.*
 
+- **2020-12-30** — LOOKS LIKE WE MAAAADE IIIIT!  Happy Birthday you beautiful dragon.
 - **2023-12-15** — Over 400 Youtube subscribers! Let's celebrate... by doing a half assed valve adjustment!
 - **2024-03-22** — Happy 16th birthday to OIOs newest driver and excellent team mechanic Miles! Look out for him on the track this year.. h…
-- **2024-05-10** — Happy 510 day!
 
 ### Punchy Single-Line Posts
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2021-01-26** — The time has come. Rise, oh ye dragon.
-- **2021-01-26** — Yet another shameless repurposing of an old video.
-- **2021-02-10** — The next Celica cometh... with a flat 4.
-- **2021-02-11** — Our collective jaw... is dropped.
+- **2020-10-24** — Keegan is out doing Tercel things with Tercel people this weekend.
+- **2020-10-30** — 😍
+- **2020-11-02** — Toyota just likes to watch us weep.
+- **2020-11-04** — Perfection in dash form.
 
 ### Storytelling / Sermon Mode
 
@@ -506,18 +506,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 525 posts:
+Top 25 hashtags across 550 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
 | #dalesdragon | 39 |
-| #rallycross | 37 |
+| #rallycross | 38 |
 | #racing | 32 |
 | #fitgang | 31 |
 | #ra21 | 30 |
+| #rxfx | 29 |
 | #toyota | 29 |
-| #rxfx | 25 |
 | #rxaw11 | 25 |
 | #diy | 24 |
 | #mgbgts | 22 |
