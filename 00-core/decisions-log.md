@@ -3,7 +3,7 @@ title: OIO Brain — Decisions Log
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-29
+updated: 2026-03-31
 tags: [decisions, history, rationale]
 source_of_truth: true
 summary: Append-only log of significant decisions made about OIO — brand, operations, vehicles, content, business. Each entry records what was decided, why, and any follow-up implications.
@@ -23,7 +23,26 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
-## 2026-03-29 — 2025 Season Competition Results Processed Into Brain
+## 2026-03-31 — Repo Cleanup and Centralization Pass
+
+**Decision:** Performed a general cleanup pass to deduplicate content and centralize around the OIO Brain folder structure.
+
+**Changes made:**
+1. **Deleted `issue-report-paperclip-api.txt`** — Stale API bug report artifact with no ongoing value. Nothing referenced it.
+2. **Moved `TRANSCRIPT-PIPELINE.md` → `docs/transcript-pipeline.md`** — Technical pipeline documentation belongs with the other pipeline docs in `docs/`.
+3. **Added frontmatter to `OIO-Master-Brief.md`** — Marked `status: archived` and `source_of_truth: false`. All content has been migrated to the brain. The file is preserved but clearly labeled as the original source, not the current authority.
+4. **Fixed `OIO Brain/02 - Content/OIO-Brand-Voice-Guide.md`** — Set `source_of_truth: false`, changed owner from "AI Copywriter (Paperclip)" to Ian Jennings, added a note clarifying it is a social-media tool reference that defers to `Voice-and-Tone.md` as the canonical brand voice.
+5. **Renamed `OIO Brain/04 - Events/Results/oio-racing-results.json` → `oio-2026-season-results.json`** — Prevented name collision with the comprehensive `OIO Brain/data/oio_racing-results.json` (historical dataset, 9000+ lines). Updated Results README with a data files table explaining both.
+6. **Moved `todo/` user stories → `OIO Brain/07 - Admin/Backlog/`** — Development backlog stories now live in the brain. The `todo/` folder remains as a redirect stub.
+7. **Updated `README.md` and `INDEX.md`** — Reflect the `docs/` section and the move of TRANSCRIPT-PIPELINE.md.
+
+**Why:** The repo had accumulated several root-level artifacts that belonged elsewhere or had become stale. Two `source_of_truth: true` documents existed for brand voice (creating authority confusion). The `todo/` folder was isolated from the brain structure. The transcript pipeline doc was the only technical doc not in `docs/`.
+
+**Implications:** None of the changes affect active workflows or script paths. All referenced file paths remain valid.
+
+---
+
+
 
 **Decision:** Processed `docdump/oio_results.json` (252KB, 8,458 lines) into structured brain files. Two new canonical result files created. Source file deleted.
 

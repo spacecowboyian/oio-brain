@@ -1,3 +1,14 @@
+---
+title: OIO Racing — Master Brief
+type: reference
+status: archived
+owner: Ian Jennings
+updated: 2026-03-27
+tags: [brand, reference, original-source]
+source_of_truth: false
+summary: Original source brief for OIO Racing. Preserved for reference only — all content has been migrated to OIO Brain/00 - Start Here/OIO-Brand-Guide.md and related brain files. Do not overwrite or update this file.
+---
+
 # OIO Racing — Master Brief
 *Last updated: March 2026*
 

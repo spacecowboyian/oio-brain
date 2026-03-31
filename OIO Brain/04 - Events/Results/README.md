@@ -55,6 +55,15 @@ For each event, record:
 
 ---
 
+## Data Files
+
+| File | Purpose | Notes |
+|---|---|---|
+| [oio-2026-season-results.json](oio-2026-season-results.json) | 2026 current-season event results in structured JSON | Active/current season only |
+| `OIO Brain/data/oio_racing-results.json` | Comprehensive historical dataset (2017–2025) | Canonical source — do not edit directly, referenced by OIO-Combined-Achievements.md |
+
+---
+
 ## Historical Data
 
 | File | Coverage | Notes |
