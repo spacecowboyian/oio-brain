@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-31 from 450 posts (450 Facebook, 0 Instagram) covering 2022-02-15 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-31 from 475 posts (475 Facebook, 0 Instagram) covering 2021-10-11 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 5 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 155 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 118 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 170 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 119 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 35 | 'Our Hudson', 'errbody in the pool' |
@@ -423,13 +423,13 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 56 |
-| Build Update | 41 |
-| Event Recap | 117 |
+| Build Update | 42 |
+| Event Recap | 123 |
 | Event Hype | 20 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
 | Farewell / Milestone | 14 |
-| Community Celebration | 7 |
+| Community Celebration | 8 |
 | Acquisition | 6 |
 
 ---
@@ -448,9 +448,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Photo-first. Caption captures progress without over-describing.*
 
+- **2021-10-11** — Ian here. Presenting the 2021 Lake Garnett Grand Prix Revival as seen from my #rxfx in group B1, afternoon session. Lots…
 - **2022-10-06** — Dale update: Road to Lake Garnett Grand Prix Revival.  Clutch was finally repaired and I decided to replace the oil pan…
 - **2022-10-07** — Dale: The road to Lake Garnett Grand Prix Revival  Today was all carb. Erik from Hot Hatch Racing came over and helped m…
-- **2022-10-09** — Ian - 360 video of my last and best run in my 1972 RA21 Celica #dalesdragon at today's Lake Garnett Grand Prix Revival
 
 ### Event Hype / Trash Talk
 
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2022-02-22** — In a rallycross car it's just about the only clean spot on the dash...
-- **2022-03-31** — Hopefully coming soon to a rallycross near you :)
-- **2022-04-01** — Ian here. Today is all #GRCorolla. It's a Toyota fanboy's Corolla dream come true and I am 100% here for it. Can't wait…
+- **2021-10-16** — Coming up soon. The golden voice of Mr. Mark Hill will be announcing Ryan's first runs at the 2021 SCCA RallyCross Natio…
+- **2021-11-15** — Ian pilots the Misfits Racing Team civic sedan to his FTD at todays Kansas Region SCCA #rallycross in Carbondale KS. Sic…
+- **2021-11-15** — Ian pilots the Misfits Racing Team civic sedan to his personal FTD at todays Kansas Region SCCA #rallycross in Carbondal…
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2022-02-25** — That's real quick.
-- **2022-03-01** — 😮
-- **2022-03-03** — ▼●▼●▼▲ 😍
-- **2022-03-10** — Yas
+- **2021-10-12** — Turbo Hasslegren 4age sounds anyone?
+- **2021-11-08** — Stance. We haz it! #rx86
+- **2021-11-23** — His dad had good taste. 😭😭😭
+- **2021-12-13** — That's our boy!
 
 ### Storytelling / Sermon Mode
 
@@ -506,13 +506,13 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 450 posts:
+Top 25 hashtags across 475 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
 | #dalesdragon | 39 |
-| #rallycross | 33 |
+| #rallycross | 35 |
 | #racing | 32 |
 | #fitgang | 31 |
 | #ra21 | 30 |
@@ -524,16 +524,16 @@ Top 25 hashtags across 450 posts:
 | #hondafit | 22 |
 | #mr2 | 20 |
 | #celica | 19 |
+| #rxfx | 15 |
 | #aw11 | 15 |
+| #sccarallycross | 14 |
 | #18rg | 14 |
-| #sccarallycross | 13 |
 | #ta22 | 13 |
 | #autocross | 13 |
 | #vintageracing | 12 |
-| #rxfx | 11 |
+| #kcrscca | 10 |
 | #mechanic | 10 |
 | #fx16 | 9 |
 | #4age | 9 |
-| #kcrscca | 9 |
 
 <!-- social-voice-stats:end -->
