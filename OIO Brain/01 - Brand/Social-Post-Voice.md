@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-30 from 325 posts (325 Facebook, 0 Instagram) covering 2023-09-07 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-31 from 350 posts (350 Facebook, 0 Instagram) covering 2023-08-06 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -408,8 +408,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
-| Pit-Talk Casual | 3 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 110 | Single line. Sometimes one word. 'Approved.' |
+| Pit-Talk Casual | 4 | Short, direct, 1–3 sentences — 'this thing rules' |
+| Punchy / Short | 115 | Single line. Sometimes one word. 'Approved.' |
 | Hashtag-Heavy | 107 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
@@ -424,8 +424,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 51 |
 | Build Update | 35 |
-| Event Recap | 87 |
-| Event Hype | 17 |
+| Event Recap | 97 |
+| Event Hype | 19 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
 | Farewell / Milestone | 14 |
@@ -456,18 +456,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2023-08-16** — Ryan here! Today on the MGB GTS got the bar measured and cut. Cut out the shock mounts as well.  Had to shape the bar to…
+- **2023-08-27** — Ryan here.  The MGB GTS is ready to race tomorrow. We are going autocross! Thanks to Hot Hatch Racing and Niles Davis I…
 - **2023-09-18** — #kaida86's rear wheel stud on the left is giving the one on the right a complex. Luckily Ian had a brand new PERRIN Perf…
-- **2024-01-26** — Winter isn't over yet but this week Ian and his crew of small dudes are wrenching and wiping the FX16 to bring it out of…
-- **2024-02-10** — Friday is here and so is the newest chapter in the saga of #dalesdragon Ian’s 1972 Toyota Celica. The motor is coming ou…
 - **2024-04-15** — Now editing… FIT OFF!!! A generational battle for Honda Fit autocross supremacy! GD vs GE vs GK. Tune in Friday 4/19 to…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2023-09-07** — Ryan rolls back into grid at the end of day 1 26th in XA class after having a rallycross style 3rd run because of course…
-- **2023-09-09** — Ryan ended up in 31st place in XA at the 2023 Tire Rack SCCA Solo Nationals Next year.. more Lincoln events for all of u…
-- **2023-09-10** — Quick video I made with my phone of our great day at KC Region SCCA Rallycross test and tune at Ray Rocks off-road park.
+- **2023-08-06** — Ian’s ride for the day with Snow Capped Motorsports at Colorado RallyCross
+- **2023-08-18** — Ian here, I WAS on the wait list but I just got word that my entry to #SCCASoloNationals was approved! #kaida86 will be…
+- **2023-08-23** — Glory, thy name be RE71RS.  #newtireday before #sccasolonats.  Now... we scrub em in.
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2023-09-10** — Another day to send it for Charlie! fb.com/charlieskidney
-- **2023-10-13** — Moar chin than Leno. #dalesdragon
-- **2023-11-01** — Double Dragons #ra21 #gr86
-- **2023-11-04** — Without me… there is no you.
+- **2023-08-11** — I’ll take the square with Dale please 😂
+- **2023-08-26** — So will it make a Japanese car… German? #pleasenothankyou
+- **2023-08-30** — Charlie Bigsby Needs a Kidney!!!
+- **2023-09-04** — #kaida86 has arrived at #sccasolonats
 
 ### Storytelling / Sermon Mode
 
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 325 posts:
+Top 25 hashtags across 350 posts:
 
 | Hashtag | Uses |
 |---|---|
@@ -520,7 +520,7 @@ Top 25 hashtags across 325 posts:
 | #scca | 22 |
 | #ra21 | 22 |
 | #hondafit | 22 |
-| #mgbgts | 20 |
+| #mgbgts | 21 |
 | #mr2 | 18 |
 | #celica | 15 |
 | #rxaw11 | 14 |
