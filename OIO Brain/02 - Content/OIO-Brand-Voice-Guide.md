@@ -2,14 +2,16 @@
 title: OIO Racing Brand Voice Guide
 type: reference
 status: active
-owner: AI Copywriter (Paperclip)
+owner: Ian Jennings
 updated: 2026-03-29
 tags: [brand, voice, social-media, content, guidelines]
-source_of_truth: true
-summary: Comprehensive brand voice guidelines for OIO Racing social media content. Defines tone, style, vocabulary, messaging pillars, and examples for AI-generated captions.
+source_of_truth: false
+summary: Social-media-specific brand voice reference for OIO Racing, used by AI caption generation tools (Paperclip). For the canonical brand voice document, see OIO Brain/01 - Brand/Voice-and-Tone.md.
 ---
 
 # OIO Racing Brand Voice Guide
+
+> **Tool Reference** — This guide is optimized for AI caption generation (Paperclip). It is the social-media-specific companion to the canonical brand voice document: [`OIO Brain/01 - Brand/Voice-and-Tone.md`](../01%20-%20Brand/Voice-and-Tone.md). When there is a conflict, Voice-and-Tone.md is the authority.
 
 This document defines the brand voice for **Outside Inside Outside Racing (OIO)** social media content — Facebook, Instagram, and future platforms. Use this guide when drafting captions, replies, and social copy to ensure consistency with the OIO brand.
 

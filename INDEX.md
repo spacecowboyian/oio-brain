@@ -3,7 +3,7 @@ title: OIO Brain — Master Index
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-03-31
 tags: [navigation, index, overview]
 source_of_truth: true
 summary: Root-level navigation index for the OIO Brain. Contains quick navigation to all sections, active car roster, 2026 story arcs, and standing rules. Start here for a full map of the repo.
@@ -28,7 +28,8 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 | [04 - Events](OIO%20Brain/04%20-%20Events/) | Rallycross, autocross, schedules, results, travel |
 | [05 - Production](OIO%20Brain/05%20-%20Production/) | Shot lists, camera/audio workflow, editing SOPs, assets |
 | [06 - Business](OIO%20Brain/06%20-%20Business/) | Budget, expenses, sponsorships, merch, website |
-| [07 - Admin](OIO%20Brain/07%20-%20Admin/) | Contacts, accounts, policies, templates |
+| [07 - Admin](OIO%20Brain/07%20-%20Admin/) | Contacts, accounts, policies, templates, backlog |
+| [docs/](docs/) | Technical pipeline documentation (transcripts, social, photos) |
 
 ---
 

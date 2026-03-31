@@ -1,13 +1,6 @@
 # OIO Brain — Todo
 
-This folder holds user stories and feature ideas for tools Ian wants to build to better manage OIO data and social media presence.
+> **This folder has been consolidated.** Development backlog stories have moved to:
+> [`OIO Brain/07 - Admin/Backlog/`](../OIO%20Brain/07%20-%20Admin/Backlog/)
 
-**These are parked ideas. Nothing in here is actively being worked on unless Ian says so.**
-
-Stories are written in user-story format so that when the time comes, any agent or developer can pick one up and know exactly what is being asked for.
-
-## Stories
-
-| File | Summary | Status |
-|---|---|---|
-| [story-001-google-photos-to-social-pipeline.md](./story-001-google-photos-to-social-pipeline.md) | Google Photos → picdump → AI filing → caption generation → PostBridge scheduling interface | Not started |
+All user stories and feature ideas live there now.

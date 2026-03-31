@@ -42,10 +42,11 @@ OIO makes grassroots motorsports feel accessible to regular people — autocross
 ├── README.md              ← Start here
 ├── INDEX.md               ← Full section navigation
 ├── skill.md               ← Agent onboarding guide (start here if you're an AI)
-├── OIO-Master-Brief.md    ← Original source brief (reference only)
+├── OIO-Master-Brief.md    ← Original source brief (archived reference — do not overwrite)
 ├── .github/
 │   └── copilot-instructions.md   ← AI agent standing instructions
 ├── 00-core/               ← Governance, standards, templates, decisions log
 ├── 01-active/             ← Live memory layer
+├── docs/                  ← Technical pipeline documentation
 └── OIO Brain/             ← Canonical knowledge by domain (00–07)
 ```
