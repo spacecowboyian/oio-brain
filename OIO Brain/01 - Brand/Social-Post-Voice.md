@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-31 from 500 posts (500 Facebook, 0 Instagram) covering 2021-04-24 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-31 from 525 posts (525 Facebook, 0 Instagram) covering 2021-01-01 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,7 +409,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 5 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 178 | Single line. Sometimes one word. 'Approved.' |
+| Punchy / Short | 187 | Single line. Sometimes one word. 'Approved.' |
 | Hashtag-Heavy | 124 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 56 |
 | Build Update | 42 |
-| Event Recap | 128 |
+| Event Recap | 131 |
 | Event Hype | 20 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2021-04-24** — Thank you... Hotel hair dryer. #rallycross
-- **2021-07-25** — Tomorrow... We race. #kcrscca #sccarallycross #rxfx #fx16
-- **2021-07-26** — Just another day in the office. #rallycross
+- **2021-01-23** — Great info for those not in the know... but.. y'all probably know already :)  Got this from the great group RallyCross B…
+- **2021-03-22** — Ryan put the oppo lock on yesterday to lay down a class win and an overall top 5 showing at Rallycross Wichita Region Sc…
+- **2021-04-19** — Ian - Here's my best run of the morning heat at the first Kansas City Region SCCA RallyCross event of the season in beau…
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2021-04-24** — Ian's office for the weekend. A @poopycarteam joint.
-- **2021-04-24** — Thank you... Hotel hair dryer. #rallycross
-- **2021-06-18** — Well deserved.
-- **2021-07-25** — Tomorrow... We race. #kcrscca #sccarallycross #rxfx #fx16
+- **2021-01-26** — The time has come. Rise, oh ye dragon.
+- **2021-01-26** — Yet another shameless repurposing of an old video.
+- **2021-02-10** — The next Celica cometh... with a flat 4.
+- **2021-02-11** — Our collective jaw... is dropped.
 
 ### Storytelling / Sermon Mode
 
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 500 posts:
+Top 25 hashtags across 525 posts:
 
 | Hashtag | Uses |
 |---|---|
@@ -517,9 +517,9 @@ Top 25 hashtags across 500 posts:
 | #fitgang | 31 |
 | #ra21 | 30 |
 | #toyota | 29 |
+| #rxfx | 25 |
 | #rxaw11 | 25 |
 | #diy | 24 |
-| #rxfx | 22 |
 | #mgbgts | 22 |
 | #scca | 22 |
 | #hondafit | 22 |
