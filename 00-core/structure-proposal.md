@@ -168,7 +168,7 @@ The guiding principles:
 │   ├── contacts.md                  ← Was Contacts.md
 │   ├── accounts.md                  ← Was Accounts.md
 │   └── policies.md                  ← Was Policies.md
-│   (Backlog → move story cards to active/open-loops.md or a dedicated backlog.md)
+│   (Backlog — see "Open Questions for Ian" section below)
 │
 ├── data/                            ← Centralized structured data (was scattered)
 │   ├── README.md
@@ -280,7 +280,7 @@ Before implementing, these scripts and workflows reference paths that will need 
 |---|---|
 | `scripts/fetch_transcripts.py` | `transcripts/` — no change |
 | `scripts/fetch_social_posts.py` | `OIO Brain/data/social-posts/` → `data/social-posts/` |
-| `scripts/analyze_social_posts.py` | `OIO Brain/01 - Brand/Social-Post-Voice.md` → `brand/social-voice.md`; `OIO Brain/02 - Content/Car-and-Driver-Story-Arcs.md` (if exists) |
+| `scripts/analyze_social_posts.py` | `OIO Brain/01 - Brand/Social-Post-Voice.md` → `brand/social-voice.md`; `OIO Brain/02 - Content/Car-and-Driver-Story-Arcs.md` → `content/story-arcs.md` (verify file exists before implementation) |
 | `scripts/sync_google_photos.py` | `photos/Ian/`, etc. → `photos/ian/` |
 | `scripts/oio-video-fetcher.js` | `OIO-Video-Catalog.md` → `content/video-catalog.md` |
 | `scripts/update_catalog_transcripts.py` | `OIO-Video-Catalog.md` → `content/video-catalog.md` |
