@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-03-31 from 400 posts (400 Facebook, 0 Instagram) covering 2022-10-31 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-03-31 from 425 posts (425 Facebook, 0 Instagram) covering 2022-04-27 → 2026-03-29. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 4 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 129 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 112 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 139 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 117 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 35 | 'Our Hudson', 'errbody in the pool' |
@@ -423,8 +423,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 56 |
-| Build Update | 37 |
-| Event Recap | 111 |
+| Build Update | 41 |
+| Event Recap | 114 |
 | Event Hype | 20 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
@@ -448,9 +448,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Photo-first. Caption captures progress without over-describing.*
 
-- **2023-02-03** — New (old) video posted today of the #rxfx hustling it’s way around the Lake Garnett Grand Prix Revival in 2021 https://y…
-- **2023-03-03** — Sometimes failed seat brackets become battery hold downs… it’s science. #rxaw11 #rallycross #fabricationskillz
-- **2023-10-13** — If you’re headed to the Lake Garnett Grand Prix Revival this weekend look for #dalesdragon here in the paddock or at the…
+- **2022-10-06** — Dale update: Road to Lake Garnett Grand Prix Revival.  Clutch was finally repaired and I decided to replace the oil pan…
+- **2022-10-07** — Dale: The road to Lake Garnett Grand Prix Revival  Today was all carb. Erik from Hot Hatch Racing came over and helped m…
+- **2022-10-09** — Ian - 360 video of my last and best run in my 1972 RA21 Celica #dalesdragon at today's Lake Garnett Grand Prix Revival
 
 ### Event Hype / Trash Talk
 
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2022-12-31** — Project #rxaw11 begins. #midshiprallycross
-- **2023-01-18** — Ian's new favorite youtube channel Vice Grip Garage apparently does rallycross just like us normal fellers! :) A guy's g…
-- **2023-01-29** — Sometimes the rallycross tires are the only good rollers you have. Luckily the #ae92 wears them well.
+- **2022-07-11** — If you are rocking a 4age.. we highly recommend that you tear your flex pipe in half. No more horsepower. Definite loss…
+- **2022-09-28** — Ian Here - I didn't take a whole lot of video at SCCA RallyCross Nationals this year. I was mostly focused on driving an…
+- **2022-10-13** — More celicas being rescued all the time. Once this one runs it will make someone a fine rallycross car. 1990 GTS. Up for…
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2022-11-03** — Ryan spots a real life rally car IN THE WILD!
-- **2022-11-16** — SEXXY Rigs
-- **2022-12-31** — Project #rxaw11 begins. #midshiprallycross
-- **2023-01-04** — Dig. Rolla has it.
+- **2022-04-27** — If the vape juice doesn't take them first...
+- **2022-04-29** — The exhaust manifold is a bit too... free flowing. #dalesdragon
+- **2022-05-02** — Swoon.
+- **2022-05-31** — YAAAASSS! QUICK! TO THE WOOD SHOP!
 
 ### Storytelling / Sermon Mode
 
@@ -506,34 +506,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 400 posts:
+Top 25 hashtags across 425 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
+| #dalesdragon | 35 |
 | #rallycross | 33 |
 | #racing | 32 |
 | #fitgang | 31 |
 | #toyota | 29 |
-| #dalesdragon | 27 |
+| #ra21 | 27 |
 | #rxaw11 | 25 |
 | #diy | 23 |
 | #mgbgts | 22 |
 | #scca | 22 |
-| #ra21 | 22 |
 | #hondafit | 22 |
 | #mr2 | 20 |
+| #celica | 17 |
 | #aw11 | 15 |
-| #celica | 15 |
 | #18rg | 14 |
+| #ta22 | 13 |
+| #autocross | 13 |
 | #sccarallycross | 12 |
-| #autocross | 12 |
 | #vintageracing | 12 |
-| #ta22 | 12 |
+| #rxfx | 10 |
 | #mechanic | 10 |
-| #rxfx | 9 |
+| #fx16 | 9 |
+| #4age | 9 |
 | #kcrscca | 9 |
-| #fitisgo | 9 |
-| #automobile | 9 |
 
 <!-- social-voice-stats:end -->
