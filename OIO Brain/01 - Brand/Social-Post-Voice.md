@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-01 from 900 posts (900 Facebook, 0 Instagram) covering 2019-05-03 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-01 from 925 posts (925 Facebook, 0 Instagram) covering 2019-04-19 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 365 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 188 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 373 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 194 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 37 | 'Our Hudson', 'errbody in the pool' |
@@ -424,11 +424,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 46 |
-| Event Recap | 241 |
-| Event Hype | 22 |
+| Event Recap | 253 |
+| Event Hype | 23 |
 | Trash Talk | 9 |
 | Enthusiast Take | 16 |
-| Farewell / Milestone | 18 |
+| Farewell / Milestone | 19 |
 | Community Celebration | 10 |
 | Acquisition | 6 |
 
@@ -456,18 +456,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2019-04-27** — Happy race day eve! The #kconstruction #ae86 and the #axrxfx are ready to roll out to the Unnaturally Aspirated Spring R…
 - **2019-09-10** — Race day is looming at Bob Hindson Racing, Inc. as Ryan preps the #kconstruction #ae86 for Rallycross on Saturday and th…
 - **2020-07-26** — Ryan is ready to shred in Wichita. Tomorrow... we race! #sccarallycross #rx86 #bhrtribe
-- **2023-04-13** — #rxaw11 has new properly sized rod bearings and is ready to rip again. Hopefully we get to rallycross on Sunday because…
 - **2024-04-15** — Now editing… FIT OFF!!! A generational battle for Honda Fit autocross supremacy! GD vs GE vs GK. Tune in Friday 4/19 to…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2019-05-05** — Guess who has 2 thumbs and just ordered a full set of MaxSport Tires for rallycross? #axrxfx
-- **2019-05-05** — Ryan here. Got the pleasure of being the #tirewarmer for @aaronholstrom in the #redcar #autocross #corvair completely di…
-- **2019-05-08** — #sidequest along with Ryan as he battles the C Prepared competition in the Bob Hindson Racing, Inc. Corvair at the SCCA…
+- **2019-04-21** — In the battle of 86 vs 86.. there can be only one winner. Ryan let Brian have a go at the K-Construction AE86 today at t…
+- **2019-04-21** — This guy... Just had BOTH HIS FRIGGIN LUNGS REPLACED! What an absolute boss. Looking forward to hearing you yelling as l…
+- **2019-04-23** — ... in which. Ryan goes rallycrossing for the first time in 2019 in the K-Construction #ae86 and learns he needs to tigh…
 
 ### Enthusiast Take
 
@@ -481,18 +481,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Cars leave. Places close. People move on. One or two lines, genuine.*
 
+- **2019-04-27** — Happy race day eve! The #kconstruction #ae86 and the #axrxfx are ready to roll out to the Unnaturally Aspirated Spring R…
 - **2019-06-29** — Happy Binky Day! Bad Obsession Motorsport
 - **2019-08-06** — Happy 86 day from the #kconstruction #scca #rallycross #ae86!
-- **2020-08-07** — Happy late #86day from the #rx86 #ae86 . . . @bob_hindson_racing @wearekconstruction
 
 ### Punchy Single-Line Posts
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2019-05-04** — Want.
-- **2019-05-07** — Perfect.
-- **2019-05-08** — Pretty good sushi car... we prefer them slightly dirtier.
-- **2019-05-10** — Hey! That's our man Keegan Wilhelm!
+- **2019-04-19** — #ae86 rear bumper weight reduction. Job done. No tutorial required.
+- **2019-04-19** — I'd like to sign this fella up.
+- **2019-04-19** — ... in which. Ian finds a hole in his pipe. #axrxfx
+- **2019-04-25** — Mark X... we hardly knew ye.
 
 ### Storytelling / Sermon Mode
 
@@ -506,25 +506,25 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 900 posts:
+Top 25 hashtags across 925 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #rxfx | 68 |
 | #cars | 64 |
-| #rallycross | 58 |
+| #rallycross | 63 |
 | #dalesdragon | 39 |
+| #ae86 | 38 |
+| #toyota | 37 |
 | #ra21 | 34 |
-| #toyota | 34 |
 | #racing | 32 |
 | #fitgang | 31 |
-| #ae86 | 30 |
 | #scca | 30 |
+| #axrxfx | 29 |
 | #sccarallycross | 25 |
 | #diy | 25 |
 | #rxaw11 | 25 |
 | #kcrscca | 24 |
-| #axrxfx | 23 |
 | #mgbgts | 22 |
 | #hondafit | 22 |
 | #fx16 | 20 |
@@ -532,8 +532,8 @@ Top 25 hashtags across 900 posts:
 | #celica | 19 |
 | #bhrtribe | 18 |
 | #autocross | 17 |
+| #kconstruction | 16 |
 | #18rg | 16 |
 | #rx86 | 16 |
-| #aw11 | 15 |
 
 <!-- social-voice-stats:end -->
