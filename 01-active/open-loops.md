@@ -3,7 +3,7 @@ title: OIO Open Loops
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-29
+updated: 2026-04-01
 tags: [open-loops, decisions, unknowns, blockers]
 source_of_truth: false
 summary: All pending decisions, unanswered questions, missing information, and things waiting on money, parts, time, people, or research. Update as loops open and close.
@@ -58,8 +58,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 ## Business
 
-- **Website platform:** Squarespace, Webflow, or custom? Decision not made.
-- **Website domain:** Not confirmed. Is oioracing.com available and owned?
+- **Website deployment:** Website built (Astro 5 + Tailwind) but not yet deployed. Pending: YouTube API key + Channel ID, Instagram API token, GitHub push, Vercel/Netlify setup, domain DNS config. Comprehensive deployment guide in `/oio-racing/` README.
 - **Merch platform:** Printful/Printify, Fourthwall, or local print run? Decision not made.
 - **First merch designs:** Which 3–5 designs will launch with? Not decided.
 - **Sponsorship targets:** Beyond the categories in the pitch doc, which specific companies are being contacted first?
@@ -89,4 +88,6 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 <!-- Move resolved items here with ✅ [YYYY-MM-DD] — resolution note -->
 
+✅ 2026-03-31 — Website platform decided and built. Astro 5 + Tailwind CSS 4 chosen. Website completed and ready for deployment (Paperclip OUT-123). Deployment pending: API credentials and GitHub/Vercel setup.
+✅ 2026-03-30 — Brand voice document completed. OIO Racing Brand Voice Document finalized, defining tone, messaging, and content pillars (Paperclip OUT-19).
 ✅ 2026-03-27 — Fitty Cent nickname confirmed ("Fitty Cent" not "Fittty Scent"). Corrected throughout repo.

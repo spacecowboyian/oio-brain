@@ -3,7 +3,7 @@ title: OIO Next Actions
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-30
+updated: 2026-04-01
 tags: [actions, tasks, next-steps]
 source_of_truth: false
 summary: Concrete next actions organized by area. Short and actionable only — not a project plan. Update after completing actions and when new ones are identified.
@@ -11,7 +11,7 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 # Next Actions
 
-*As of March 2026 — keep this list short and current. Done items get removed, not accumulated.*
+*As of April 1, 2026 — keep this list short and current. Done items get removed, not accumulated.*
 
 ---
 
@@ -54,7 +54,9 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 - [x] Research website + merch platforms — ✅ 2026-03-30 CMO research complete (Paperclip OUT-104)
 - [x] Confirm domains owned — ✅ outsideinsideoutside.com + oioracing.com confirmed
-- [ ] **Decide: approve Shopify recommendation** — CMO research shows Shopify dominates (Vice Grip Garage, Hoonigan confirmed). Alternative: Squarespace/Webflow if simpler CMS preferred. See research doc.
+- [x] Build OIO Racing website — ✅ 2026-03-31 Website built with Astro 5 + Tailwind (Paperclip OUT-123)
+- [ ] **Deploy website to production** — Get YouTube API key + Channel ID, Instagram API token, push to GitHub, deploy to Vercel/Netlify, configure domain. See `/oio-racing/` README for deployment steps.
+- [ ] **Decide: approve Shopify recommendation** — CMO research shows Shopify dominates (Vice Grip Garage, Hoonigan confirmed). Alternative: Squarespace/Webflow if simpler CMS preferred.
 - [ ] **If Shopify approved:** Create Shopify Basic account ($39/mo), configure domains
 - [ ] **If Shopify approved:** Choose automotive theme (Motion, Impulse, Streamline recommended)
 - [ ] Enable YouTube Merch Shelf — requires 1K+ subs + YouTube Partner Program (current: 1.93K subs ✓, YPP status TBD)

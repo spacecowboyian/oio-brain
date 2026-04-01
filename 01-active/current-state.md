@@ -3,7 +3,7 @@ title: OIO Current State
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-30
+updated: 2026-04-01
 tags: [state, current, season-2026]
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
@@ -13,7 +13,7 @@ summary: Live snapshot of what OIO is focused on right now. Update this file whe
 
 > **AI agents: read this first.** This file is the current-state snapshot. It is not a permanent reference — it reflects reality as of the `updated` date above.
 
-*As of: March 2026 — season opening*
+*As of: April 1, 2026 — season in progress*
 
 ---
 
@@ -61,7 +61,7 @@ The 2026 motorsport season is opening. The primary focus is:
 | Killer Corolla | Mystery motor status unknown | Full rebuild required |
 | Geoffrey build direction | Too new — no plan yet | First step: assess condition |
 | Sponsorship revenue | No active sponsors | **Research complete** — media kit strategy + SEO keywords defined. Next: write outreach messages. |
-| Website | Not launched | **Platform research complete** — Shopify recommended (see Paperclip OUT-104). Decision + account setup pending. |
+| Website | **Built, pending deployment** | **Build complete** (Paperclip OUT-123, completed 2026-03-31) — Astro 5 + Tailwind CSS with YouTube/Instagram integration. Pending: API credentials, GitHub push, Vercel/Netlify setup, domain config. |
 | Merch | Not launched | **Platform research complete** — Shopify + Printful print-on-demand recommended. Decision + design selection pending. |
 | Parker racing | Awaiting driver's permit | Gets permit at 14; once he has it, he races |
 
@@ -69,6 +69,8 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
+- **2026-03-31:** Website build complete — OIO Racing website built and ready for deployment (Paperclip OUT-123). Tech stack: Astro 5 + Tailwind CSS 4 with TypeScript. Features: YouTube Data API v3 integration (with mock fallback), Instagram Basic Display API, auto-sitemap, SEO optimization (OpenGraph, Twitter Cards), mobile-first responsive design, Lighthouse 90+. Core pages ready: Homepage, Videos, Schedule, Sponsors, Merch (Ecwid-ready), Contact. Project location: `/Users/ian/.paperclip/instances/default/workspaces/8a3fa8e5-7267-4c99-8471-c89e355f6ffd/oio-racing/`. Deployment blockers: API credentials, GitHub setup, Vercel/Netlify config, domain DNS. Comprehensive README included with setup and deployment guides.
+- **2026-03-30:** Racing brand voice document complete — OIO Racing Brand Voice Document finalized (Paperclip OUT-19). Defines tone, messaging, and content pillars for the channel.
 - **2026-03-30:** Website + merch platform research complete — CMO completed comprehensive competitive analysis of 6 grassroots automotive YouTube channels (S/M/L/XL tiers). Key findings: Shopify dominates (95%+ market share), YouTube Merch Shelf integration critical, mobile-first UX required. Recommended stack: Shopify Basic ($39/mo) + Printful (print-on-demand) + YouTube Merch Shelf + automation (Zapier/RSS feeds). Sponsor strategy delivered: media kit components, SEO keywords, landing page structure. Full research filed in Paperclip task OUT-104. Next: platform decision + account setup.
 - **2026-03-29:** Social media post indexing system launched — `scripts/fetch_social_posts.py` + `.github/workflows/fetch-social-posts.yml` created. Posts fetched from Facebook Page and Instagram Business Account via Meta Graph API. Runs daily at 9 AM CDT; 25 posts/platform/run for conservative initial import. Posts stored as markdown in `OIO Brain/data/social-posts/facebook/` and `OIO Brain/data/social-posts/instagram/`. Requires 3 secrets: `META_ACCESS_TOKEN`, `META_FACEBOOK_PAGE_ID`, `META_INSTAGRAM_ACCOUNT_ID`. See `OIO Brain/data/social-posts/README.md` for setup.
 - **2026-03-29:** KCRX 2026 Event 1 results logged (March 22, Ray Rocks). **Corrected results:** Ryan 2nd MR (trophy), Miles 3rd MR (trophy), Hudson wins Novice (trophy). Ian DNF'd run 7 — official Pronto display shows him 1st (318.321, 6 runs) but DNF penalty corrects to 7th (393.784). Goblin post-race failure confirmed. `2026-Season-Results.md` and `oio-racing-results.json` created.
