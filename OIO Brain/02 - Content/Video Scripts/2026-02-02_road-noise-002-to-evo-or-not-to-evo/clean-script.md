@@ -1,0 +1,115 @@
+---
+title: "Road Noise - 002 - To Evo or not to Evo! — Clean Script"
+video_id: Scclz_OPo0U
+date: 2026-02-02
+url: https://www.youtube.com/watch?v=Scclz_OPo0U
+type: clean_script
+---
+
+# Road Noise - 002 - To Evo or not to Evo!
+
+Hello and welcome back to Outside Inside, Inside Outside Racing. I am Ian. This is Sammy.
+
+We're in my 2009 Honda Fit and this is the second edition and the first full video edition of a podcast. Is this a video podcast? I think that's what we'll call it that I'm calling Road Noise. Not only because my Fit has some of the worst NVH of any vehicle that I own. The whole premise of this is I go somewhere either alone or with a guest or guest stars, special guest appearances, cameos, etc. And we talk about the cars that we see, great or not. That's what we're doing. We're driving down the road. We're going to see if we see some cool cars. If we do, we'll talk about them. If we don't, we'll talk about the lack of them. We'll talk about dumb cars. We'll talk about gross cars. We'll talk about whatever. We'll listen to the terrible NVH coming from my Honda Fit. Maybe that's what you're into. Maybe you're here just for the NVH. 
+
+What is that? Is that some sort of Chevy over there? Look at all these boys. A lot of geese flying around today. They, for some reason, are not south. They're still hanging around and it's too cold for geese to be hanging around Missouri. They should be south already. I would be. They're just sitting around on frozen ponds. We got Thinsulate butts. You Thinsulate butt. 
+
+Oh, a Mitsubishi. Was that an Eclipse? I don't know. I really don't know Mitsubishis. You tell me what that was. I know that that's a Chrysler Pacifica and I don't care. Best rental car until the wheels try to fall off or the transmission breaks. A lot of things can go wrong, but Chrysler Pacificas are a hell of a good rental car if you have as many people in your family as we have. 
+
+I was driving on this road last time when I saw a GR Corolla, which is probably the maybe third GR Corolla, fourth that I've seen driving around on the streets. And before you say, man, I see them all the time, just I don't get out much. 
+
+A nice Camry. I like that generation of Camry. The early, let's see, it's probably after the early aughts. Maybe it's like an '07 to maybe like '13 or '14. Is it somewhere in there? I don't know. But I really like it. It's got a nice sporty-ish look. And I'll probably own one in the future. If not for me, then for one of my kids, I would assume because, you know, you can't kill a Camry.
+
+I've been building that house for a minute. It's quite majestic. The majesty of new homes in Rosewood Manor. Slow it on down now. I think that might actually be a cop, too. So, yeah, it is. It's a good thing that I slowed it down.
+
+It's a good Tundra there. Red. My turn. Me. I love a good Tundra. Mine is a 2014 Crewmax. And I am on the lookout for a 2020, 2021, whichever one is the last of the V8s. That's what I'm looking for. I like to have a truck that I feel okay about beating on, but mine is getting to the point now to where I'm like, I feel like somebody could still save it and make it decent. You know, it's just got a few rust bubbles and paint chips and whatnot here and there. And I can do that work and then sell it on to somebody who'll take good care of it and enjoy it in its, let it rest and let it be less of a workhorse in its later years. And that would make my heart happy. But it's only got 170,000 miles on it, so it's ready to go for another 170,000 miles. So, that's tough to say time to get a new one. You know?
+
+There's a good looking GMC unit. I like those full size. I like the GMCs and the Chevys. The newer body styles are real good. And of course, still a V8 in a lot of them. But I'll never own one because I have a Tundra and I will continue having Tundras until I die. 
+
+All right, now we're getting out where we might see some real good cars. I mean, or just more at least. Probably quantity over quality. Nope. Nope. Nope. Nope. All right, that makes sense. It's that Civic Sport. That's always worth talking about. I'm digging the newer body style Civics. I said this on the last podcast, but the previous one I don't like the body at all, but I've driven them and they are fantastic to drive. The Civic Sport Turbo and the Si, both great cars. It's the one that looks like a robot. I am a Japanese robot.
+
+Big Acura logo on that. The badge is gigantic on the front of those Acura SUVs. It was like big as my head. Might as big as the steering wheel. Bigger than Sammy, that's for sure.
+
+Oh, there was a blob eye Celica like Richard's ST205 and probably not a turbo one with, you know, that generation of Celica sitting in that driveway back there. Keep an eye on that as I'm driving by. I'll make sure that it doesn't end up out at the end of the driveway with a for sale sign on it. I have been known to buy a Celica if it comes up for sale. 
+
+What else do we have? Anything interesting in the QuikTrip? God bless a QuikTrip. Wish I could stop, but I can't. I'll get you later.
+
+All right, I hit those lights. Great. There's three stop lights in a row there. Normally, at least one of them is red. I got all three green. Hot dog. Here we go.
+
+Listen to that L15 sing. Sounds bad. 
+
+There's some sort of weird markings on that Mustang Mach-E up there. It almost look like a racing number on the side of it. I don't think I'll catch it though. It was going my way. Yeah, there is some stickers on it. It's from the Kansas City Zoo. Ah, cool. It's not a racing number, but that's kind of why I thought it was because it looked like double zero or whatever. Probably going to transport some sort of wild animal from Cameron. That's cold. Damn it. Warm me up. He is warm. He don't like that. He don't like my cold hand. Nope. Nope. Nope. Nope. Nope. Nope. No.
+
+There's a Beamer 5 series. Look kind of sneaky looking black like that. I would never own a modern Beamer, but I do like looking at them. Not too modern though because then they get the butt teeth and I, I mean they've always had some sort of butt teeth, but the new grills are just offensive. I mean, honestly, sorry if you have one, you like them or whatnot, but they are atrocious. I think maybe the newest Beamer that I would own would be like a, I like an E36. I like an E, what's the next one? E92. Oh, yeah. This good. No. No. What's that? No. No.
+
+Flatbed Mustang like a Nardo gray Mustang. That one might have been a hot one. I don't know what the hot ones are called. Oh man, it's a Dark Horse. Track pony. Dark fire little pony. Something like that.
+
+Here's a crew cab Tacoma. You got to like that. V6, of course. TRD Sport. School bus here. Trucking along at 68 miles an hour.
+
+Oh boy, look at that. He was, that was a load. Had the big John Deere with the quad, big tires on it, and a big old buckety. I don't know. This is where we need Miles. My oldest was here. He'd be very jealous what the truck was, what the tractor was, what the tires were.
+
+I just saw Maverick, Ford Maverick. I can speak about them for a while. I love them, especially the turbocharged ones. Man, they are right quick. Lots of good space inside of them, a decent enough bed to throw bikes in, and maybe a little bit of, you know, lumber 4x4 sheet of plywood. And for most people, that's all you need out of a pickup truck. And I think they're fantastic and I wish that Toyota would bring a Hilux to the States. Another small pickup truck. 
+
+I'm going to shut it down here and then I'll come back in the afternoon and we'll see what else we can see. 
+
+---
+
+Okay, we're back and it's time to drive home. The car's cold, isn't it, buddy? Oh, it's so cold. I love you so much.
+
+Father's errands have been run. Mother and I have had Arby's for lunch and I filed my taxes. So, all in all, a productive day. Now, I need to figure out a way to spend my tax refund, which is probably going to be on a Honda Fit. Not this one. A new one. Well, new to me. You know, they don't make new ones anymore because they're dumb. There is a Honda Fit in Europe, actually, in Japan, maybe just Japan. It's not pretty, I don't think. Not as good as the last generation GK and definitely not as good as the GE8 Honda Fit. The most glorious of all Honda Fits. I like them all, but the GE8 is my preference. The raspberry blue metallic, top of my list. Shortly followed by, I don't know, the orange. There's an orange in the GE8. That would be the second. And then probably a dark gray.
+
+Okay. Cars that are on the road. That is a Suburban. I don't care. Oh, there's a free candy van over here at the MFA oil. Getting some gas and maybe feeding their hostages. There's another one of those Mitsubishi Outlander things that I don't care about at all.
+
+A GMC Denali unit. It's quite the unit. The $110,000 pickup truck or so. Whoa, look at the camper on that Dodge Ram. Now that's something. Is that a camper? Is it a, I've had that's a fiber guy. Maybe like the guys who splice fiber. Ooh, look at that Tundra over there. That's good business.
+
+Anyway, it seems like I'm one of those fellas who slices fiber optic cable. Splices. Slices. Well, they slice and then they splice. 
+
+All right, let's hop out on I-35 and see what we can see.
+
+Oh, hello. It is a, not an Evo. Or is it an Evo? I have a lot of trouble with this because, you know, there are Lancers in the world that are not Evos, many of them. And a lot of people who have those make, they try to make them look like Evos. And this may be the case in that situation. I don't think that this is an Evo. It has some mud flaps on it. Let's see if it has a badge. And does the badge mean that it's an Evo? I'm going to probably get a lot of crap for not knowing that this is or isn't an Evo. I'm going to say that it is not. I think that it's just a Lancer. But it does, I think that badge on the left there is an evolution badge. Whoa. All right. Semi truck.
+
+I think this is an Evo. Well, I'll be if we haven't gotten an honest to God good car on the podcast. I'm passing him just for the sake of the video. I don't think this is an Evo. It's like a Ralliart or something. He's got some nice wheels though. That's not an Evo. See this? I'm going to get a whole lot of grief because this guy tried to make his car look like an Evo and he fooled a non-Mitsubishi guy into thinking that it was an Evo. Oh my god.
+
+Fit Gang. I see a purple Honda Fit GE8. They made it. It's not the only generation that they made in purple, but it is the best one. It's dirty. Its front wheel is different than its back wheel. Yes, Fit Gang. You got to get one of these. That means Fick gang. Because if you put it with the other part, it makes an F. Fick gang. 
+
+This guy's hauling some stuff that's loosely strapped in his GMC that looks kind of lifted, but it is a 4x4. Yeah, that's all looking to blow out of there. It's all going to blow out. I want to see what this Volkswagen is here. Is this a Passat? P-A-S-S-A-T. Yeah, that's a Passat. That's a newer one. That looks good. I can't fault Volkswagen. Oh, it's an R-Line, too. Yeah. Yeah, I'm sure that means that it's sporty in some way, right? I was going to say I can't fault Volkswagen for their design language. The bodies look great. They're fantastic. But the, you know, the running gear is a problem. I want nearly every one that I see from every generation of Volkswagen besides the Beetles. But I can't. I can't do it. I'm under strict orders.
+
+Whoa, hawk, did you see that? You see that freaking hawk dive bomb me? Whoa, hawk, did you see that? He was looking for something that wasn't me. Must have been something on the other side of the road. But if he hadn't stopped himself, he would have been a ride into us. He threw on the brakes. He was like, man, I'm excited. I mean, I know it wasn't an Evo, and that's kind of a bummer, but you know, it was still a pretty nice Lancer if that's a thing. And then we saw a Fit, and I'm happy about that. I got almost got dive bombed by a hawk. That's good. So, this podcast is picking up, right? It's really picking up. 
+
+Whoa. STI. Was it an STI? I don't think so. See, there I go again. Thinking everything's fancy. I think that one was just a WRX with some wheels on it. Pretty nice. Pretty nice. 
+
+There's a Range Rover I don't give a rat's ass about. Oh, nice Civic Si over there. The two generations back. I don't know what the chassis codes are on those. I have no idea.
+
+This Range Rover's got to pull up beside me, too. Just keep ruining my day. I don't even want to look at it. No, I don't. 
+
+There's another car. You know, Volkswagens. At least they aren't Range Rovers. Who buys this car? It's like Volkswagen, Audi, and Range Rover, cars most likely to not make it to 30,000 miles. And that's the order of how expensive they are, too. They go, you know, Volkswagen, Audi, Range Rover. More expensive they are, the least likely they are to make it an extended amount of miles. Am I wrong? Tell me I'm wrong.
+
+Oh, hey, over there. I'm just not even paying attention. We've got the race of the century lined up. It's a MX-5 Mazda Miata ND chassis and then some V6 Camaro and then a Ford F-250. And they're not off, but we are. We're racing this thing, whatever it is. Oh, we've won by a nose.
+
+I need to get over to the left lane. Oh, hey, the Lancer's back. He's behind me.
+
+Big freaking dually coming up. Dodge Ram. My god. Has a license plate that says feral.
+
+There's an STI. The real deal. Wait, did they make an STI in those years? God. See, these are things I just don't know or really care about. I think that was a legit STI, the red one that went by. But it could have also been a WRX with a wing on it. 
+
+Oh, my guts feel weird. Perhaps I should not have eaten two roast beef sandwiches for lunch. 
+
+Well, I mean, we can critique the cars that we see in the school pickup line, I suppose. Soccer mom vans, dad trucks. So, that'll be boring as hell. The student cars that are leaving the parking lot are more entertaining. Really? Whoa. Was that a Mitsubishi 3000 GT? No, it was not. It was a Del Sol. The Honda Del Sol.
+
+I'm really off on my first guesses. I should probably just keep the first guesses to myself. I think I'm actually kind of perpetually stuck in high school as far as cars are concerned. I mean, I like cars that high schoolers can afford, probably because I don't feel like it's worth it to pay the money for brand new cars ever. And I like, you know, lighter, funner, older cars. 
+
+I hope you've been able to see today. I never actually cleaned off the windshield. So, and I kind of spit on it last night when I put a suction cup up there. Is that any better? Is that better? Worse? I don't know. I'm just going to pepper the car behind me with the windshield washer fluid. Don't you love that you get free fluid sometimes from people in front of you?
+
+Volvo. That's it.
+
+Here we go. Yeah. I'm just going to hop right in here. Boop. Boop. Boop. Hopping in.
+
+Okay. I think I'll stop you for, well, let's see what we got sitting here in the line first while everything is sitting still. Good looking 4Runner over that way. That's a Lexus, I think, right there. Everything else is boring.
+
+Special guest star Hudson Smith going on. He will accompany me on the rest of this episode of Road Noise as we drive the 50 feet home and probably see nothing exciting.
+
+And like I said, they're all soccer mom vehicles. There's that good looking 4Runner, though. Look at that sage color. God, that's nice. And then a bright blue Prius. That's, you know, it is one. You can speak. Going on. That's what he says. If Hudson had an action figure and you pull the rope on its back to say something, it would lift its arm like that and say, "Going on." 
+
+There's that, you know, that thing that does nothing. $140,000. I don't know. That's a lot of truck for the money, I guess. But it's a lot of money for that truck. You know what? That's it. We're home now. We're not going to see anything else. 
+
+So, this has been another edition of Road Noise, edition number two. Tune in again if you want to. I hope you do. Until next time, you know, go out and find your own Apex because it is better late than never.

@@ -1,0 +1,161 @@
+---
+title: "New Wheels, Wrong Lug Pattern \| Wheel Adapter Install & FAIL \| ’83 Cressida — Clean Script"
+video_id: jzIowS47LIw
+date: 2025-08-10
+url: https://www.youtube.com/watch?v=jzIowS47LIw
+type: clean_script
+---
+
+# New Wheels, Wrong Lug Pattern | Wheel Adapter Install & FAIL | '83 Cressida
+
+That's not good enough. But hey, guess what? I'm putting this on anyway. Many of you are going to say you shouldn't be doing this without a hub adapter, and I agree.
+
+Oh yeah. Almost immediately, it rubbed. Can I ride this in? It doesn't really want to. Oh, that's right. It's broken. Fixed it.
+
+Hello and welcome back to Outside Inside Out Outside Racing. I'm Ian, and this is my 1982... 83 Cressida. Yeah, I can't really remember, but it's a Cressida wagon. It's had these Watanabe wheels on it. The tires are probably 25 years old and almost flat. I'm doing something about that today, but I have a master plan. 
+
+You see, this car is not meant to stay on four lug wheels. We're going to go for a Ford 8.8 or a 9-inch rear end in the future, and we're going to swap out the front suspension as well. The 8.8 has a bolt pattern of 5 on 4.5, and later model Cressida stuff that bolts right up to this for the front end also 5 on 4.5. So I have purchased wheels that have 5 on 4.5, and I'm going for a certain look. I want it to look kind of stock but kind of grandpa but kind of racy. And these are going to be our wheels that we stick with. We're going to start on the track with these two. So they had to be decent enough tires to where we can just drive it to the track and go down the strip and get a time anytime.
+
+I need to swap to the 5 on 4.5 for the eventual swapping of the front end and the rear end. And that means that I have to do adapters on these 4 on 4.5 lugs, which I don't really like adapters, but it's a temporary solution. I'm not even sure if they'll let us drag race on wheel adapters. I have no idea.
+
+The first thing that we'll remedy with this new wheel situation is the fact that this tire does not hold air. So we'll have four tires that hold air. There's already a good one on in the back back there. You can't see it yet because, you know, suspense and whatnot. Let's go through the process of removing a wheel. I don't know if you know how to do that, but you can take them off of your car. They come off. So we'll take this one off and then we'll go through all the steps required to fit the wheel adapter.
+
+It involves some pretty heavy stuff. If you're thinking about adapting to put on some different wheels, I would not suggest it. It's not for the faint of heart or the light of tools. You got to have all the tools and you got to be willing to use them. So we'll get the tools, we'll talk about them, and we will use them.
+
+Okay, I'm just going to use my freezer here to show you what these wheel adapters are made of because I don't have a better bench at the moment. So this is how they come in the box. They've got protective caps over the edge of the threads. They have some lug nuts on them that I'm not going to use, and they have these machine screws that hold two pieces together. Now, not all lug nut adapters are created equal, but this is how these are.
+
+So what I'm going to do first is take out the machine screws and show you the two different pieces of the adapter. You don't really need the impact to take it apart. I'm just lazy. Yeah, see? And four. Okay, and now the magic. Tada.
+
+This part is the piece that's going to attach to your four lug pattern that you already have right on an old Japanese car, 4 on 4.5. These four holes here, the big ones, they line up with your lug bolts on the car. The problem that you're going to have on your Japanese cars, at least, is that you would think these nuts here, you're like, "Oh, I'll just use those." This particular set is meant for American threads. What I have here is... it says it right on the nut. You probably won't be able to read it, but it says 1/2 inch by 20 thread.
+
+Japanese cars, especially old Toyotas, they're going to have 12mm by 1.5 threads. So these do not fit. However, you do need a nut that's going to fit down in this recess and not stick up past it because these two pieces get sandwiched together, right? So you have to get yourself some lug nuts that are super skinny. Luckily, I had some. Turns out that you needed about a half an inch. So these guys seem to fit the bill. They're very close. They do sit up just a slight bit proud, but that doesn't seem to matter once you've put the whole thing together. The two pieces, they seem to go together just fine without a gap with that nut in there.
+
+So yeah, very thin. These are half an inch because that's about how much space you have in here. Now, your mileage may vary on this. You might buy a different spacer. I would encourage you to buy one that is a 4x114.3 to a 5x114.3 adapter because then it's probably going to have metric threads instead of American threads. This is a 4 on 4.5 to 5 on 4.5 adapter and that's why we've got American threads here. So I'm going to be stuck with American threads from here on out, but that'll be the way that it is with the 8.8 that I have in the future anyway. And I'll probably just have to put different studs or an adapter into the fronts of the car later on. I don't know. But for now, this is what we got.
+
+So now let's move on to what tools we're going to need for this job. You've already seen this bad boy. It helps to have a cordless electric impact wrench like this, but an air impact wrench would work fine too. It's going to make it very easy to take your wheels off, put the things back on. If you don't have this, you probably shouldn't be doing this job in the first place. You can do it with hand tools, but come on. If you're here to learn how to do this and you don't own one of these, then you're probably not qualified to be doing this job. So take it to somebody who can do it for you.
+
+And here's another one of those tools that if you don't own, you shouldn't go buying it to do this job. This is the wheel of death. Mine is particularly death-defying at the moment. I've cut three wheels worth of studs already, so I'm going to have to replace this blade before I do the fourth. Always make sure you work with a fresh blade and not with a blade that's all frayed up like this because this blade is apt to come apart on you.
+
+What this is for: there's going to be four lug bolts on your car, you know, because it holds the wheels on with those nuts, remember? And they need to fit in that same half inch space that the little tiny slimline lug nuts fit into. So you're going to have to cut down your lug bolts to height because that's the way it is.
+
+Now, is this the right tool for that job? I don't know. It's working for me. Is it heating the lugs up? Should you be heating the lugs up? Yeah. Yes, it heats them up. Should you heat them up? Probably not. You could use a Sawzall for this, but I tried that yesterday and I beat my thumb up and almost cut my foot off. And this has been working very well for me. So I'm sticking with this. It also allows me to fine-tune things and shave down the little bit of extra on the nuts that's sticking up when they're done.
+
+You know what? You do it the way you want to do it. I'm doing it the way I want to do it. If it fails later, I'll come back and tell you. Hey, tell me in the comments right now: don't you dare drag race on that because it's going to fail. I'd like to know. But until then, I'm just going to keep running it.
+
+That concludes the power tools section. You're going to want impact sockets of varying sizes. In this case, I've needed 19s and 21s because those are the different sizes of the lug nuts. Also, you know, a thin-walled socket. If you've got a lug nut that is going to be too big, I've got some 21mm lug nuts. They're nice and thin, but they're pretty wide. So I ended up having to use a thin-walled socket to get that in there. And you'll see that when we get to that step.
+
+And essential for this process is your torque wrench. You must torque down the adapters. There is no leeway in that. You're putting eight more points of failure in your wheel attachment system. So this stuff has to be tight and it has to use... Where's that? Where is it? I've already opened another one of these, but these come with some red Loctite. All right. And I'm going to show you where to apply that red Loctite to all the fasteners that have to go on. And then we'll torque them down with the torque wrench, and it will be nice and tight.
+
+So again, you don't own a torque wrench, you don't own an electric impact, you don't own a wheel of death. This is probably not a job for you. Take it to someone who owns all of those things and they'll know how to use them. For now, I'm going to pretend like I know how to use them and we're going to go back over to the car and start work on this final wheel.
+
+All right, first up, find the appropriate jack point and we're going to jack our car up. I'm using a three-ton floor jack. It's probably overkill for this situation, but you know, you get your car up in the air. Whatever it takes. Want to get it far enough so the new wheels and tires will clear. And you haven't seen those yet, but you know, time's coming. You'll see them eventually.
+
+This is where the gun comes in handy. 19mm and you pop them off. You don't have to let your lug nuts fall to the floor, but you look like a real cool race car, NASCAR pit crew guy if you do that.
+
+Now that I have put a new blade on the wheel of death, we can proceed with cutting off the studs. This isn't a science as much as it is an art, but I wouldn't call myself an artist. My plan number one is to wear the safeties. Got to have the safeties.
+
+What I've done here is I've taken one of my nuts that I'm going to use to hold down the adapter, spun it on. And it would actually, you know, it pays dividends to get it as tight as you can get it because the wheel of death is going to try to spin it off. So what we do now with that nut in place, use it as a guide and cut right down the face of it. Now, you may cut into the nut face a little bit, but at least you're protecting the threads behind the nut, which is the biggest deal. And the nut face is fine to cut into. Here we go. We'll go with the first one.
+
+It's going to burn the hell out of your leg if you don't fit right. It's also real loud.
+
+Okay, don't worry if you nick the hub a little bit there. It's not a huge deal. So I know it looks scary. It looks like, "Oh man, I probably messed up the threads there and whatnot." You didn't. I'm even going to go back in and clean up the top of that a little bit because it's a little bit proud and I don't want it to be proud because I don't want it to sit into the adapter.
+
+Never use a cutting wheel like a grinding wheel. Don't do what I'm doing. It's bad. But there we go. Nice and flat. Not too proud. And that's gonna be hot as hell. So let me get my 21 millimeter. Now, I'm gonna go ahead and use the same nut for the other three and I'll flash through those and then we'll move on to the next step.
+
+I know how scary this is, but look. Hot. Very hot. I'll use one of these. Look, it still spins on just fine. And it's going to have threads enough to go all the way through this guy, right? All the way to the top of this nut. So fear not about that. Fear a little bit about heating them up too much. I'm not sure if that's good, but that's what I'm doing. So onward I go. I'm going to do the remaining three without burning myself or cutting myself, hopefully.
+
+Okay, now what you should have is four cut down lug studs and four chunks of thread sitting around on the floor. Don't pick those up yet. They're hot as hell. Now, we're going to get all four... first, you know what? For safety. You don't need her no more right at the moment. Always unplug your wheel of death so that it doesn't try to kill you when you're not looking. They're sneaky.
+
+All right. Now, your backing plate. Stick it up there. I can spin them down now. And it would probably be good for you, your first time doing this, spin them all the way on. Maybe not all four. But I want you to take a look at two of them and I want you to see how proud they are. I couldn't put a straight edge across that right now. Let's say that this is my straight edge because it is, and it doesn't go across that.
+
+In order to help them a little bit, what I'm going to do is I'm going to put all four of them on and I'm going to shave them down a little bit with the wheel of death. But before I put them on, kind of an essential thing to do with your spacers because you have added eight more points of failure to this. We're going to attempt to make sure that this part doesn't fail by using red Loctite. Red Loctite is the strongest stuff you can get. You got to realize this is going to make these very hard to pull off in the future. But I'm going to put a dab of red Loctite on the top of each of the studs at the front of them. And that way it'll shoot itself on when these push back. So let's spin on all four of these.
+
+All right, that's four spun on. Now I'm going to stick 21 on the end of the impact here. And I'm just going to go up snug. And then I'm going to go across and snug. Did you see how everything's sort of centered there when I did that? That's because they're conical. Now, what would be even better in this situation is if I had a hub adapter to put in the middle of this. And many of you are going to say you shouldn't be doing this without a hub adapter. And I agree.
+
+So that's not as tight as I'm going to get them, but I'm going to use the wheel of death and shave them down a little bit right now because I feel like they need it. It actually doesn't take a whole lot off either. So it's not the right tool for the job all around. It's more dangerous. It doesn't do as good of a job. That's not good enough. But hey, guess what? I'm putting this on anyway. The only problem's going to be is if it's not flat, the whole wheel wobbles because it's not flat. I'm just going to torque it down and put this on top of it and call it good. If everything's out of balance, then we'll know why.
+
+All right, I got my buddy coming and he's going to push on the brake whilst I do the important work of torquing these lug nuts. I've got my torque wrench set to 100 foot-pounds. All right, just press that brake down.
+
+"All the way. All the way. As much as you got."
+
+Good.
+
+Okay. Brake should be held now. And we can torque away. Oh my god.
+
+There's one, two, three, four. Going back around again. One, two, three, four.
+
+Now I'll ask my buddy to stay in the car for just a few more moments whilst I put on the plate.
+
+"Your buddy?"
+
+Well, yeah. I mean, everybody out there, they're going to have a buddy, but I don't know if that's going to be their kid, you know? I don't want to tell them to get their son and put in the car. What if they don't have a son? They might have a daughter, huh? That's what you have to do. You have to have a child, a male child first to do this job.
+
+"So he can sit in the seat."
+
+Now, that is sexist, my friend.
+
+What I just did there was remove the nuts and the caps off of here. No big deal. The next step is to take these machine screws and put them into the appropriate place. You see that there's a pattern on this, so it can only go one way. So line those up. And then you're going to want to once again dab the top of each of them with some thread locker. And these have an 8mm hex head on them. Again, whatever kit you buy, your mileage may vary on what size things are.
+
+So there's another drop there. And we'll spin that one in. Another drop here. And we'll spin this one in. And then another drop here. And we'll spin this one in. And now I need to... Are you still holding the brake, bud?
+
+"Yep."
+
+You don't need to. I'll tell you when again. So now I'm going to use the impact again, but I'm going to go slow. Seat that one. Seat that one. Seat that one. Seat that one. Now I'm going to give a little bit. Boom. Boom. Boom. Boom.
+
+Remember, you're going into aluminum threads here, so you got to be kind of careful. But I know the torque of my impact gun doesn't normally get over about 80 or 90. And I'll stand up again and I'll have my buddy hit the brakes. Go ahead there, good buddy. And I'm going 100 foot-pounds on these as well. Boy, that really feels like a lot. It's worrisome. Again, I don't want to strip the threads. And I feel like that's really gotten a lot on there. I guess I'm going to about 80 or 90 then. But I just don't want to strip these threads.
+
+Going back around again. Click, click, click. Yep, there we go. 100 on all four. The work of my buddy is done. Thank you, my buddy. That's the big torque wrench. Now, that's why you want to be easy on that using that big torque wrench. There. There's my buddy.
+
+And now it's finally time for the big reveal of the big wheel. Here it is. It's from a '90s Jeep Cherokee. You guys look at it. It's kind of got a sort of Trans Am, you know, Pontiac vibe. And it also has the right old man vibe at the same time. So that's what we're going with.
+
+One thing's necessary, though. This is not a Jeep. So pop that right out of there. Look at that. Look at that fitment. That's what the kids say. What it is is too big. It's way too big. Like, I'm not sure it'll turn. Honestly, I really wanted a 215. Why? Why did I want a 215? It's a seven-inch wheel and I wanted a 215 because I can and because that makes it look kind of balloon and sort of stockish that way. I don't know. I just got a feeling that this is right for this car.
+
+So there we go. Four out of the five lug nuts that I need. Where's the other one? Is this it? Boy, I hope that's it. Let's find out. Yes. Yikes. Thought I lost it. You only got 20 in a kit, you know.
+
+All right, these are 19mm again. Easy. We're seating it. It has to center itself on the cones on the lug nuts because it doesn't have a hub centering ring right now. It probably will in the future. Probably.
+
+It's the moment of truth for you. Not for me because I've already put three other wheels on the ground. But let's see it. Here it is, resplendent in all its glory. I also didn't mention that I swapped out the rear springs. The springs that were on it were some that I had sitting around. Actually, they came with the car and they were these not correct front springs for like an Infiniti G35. Swift springs, but I cut them and they were too stiff and et cetera. So now what I have on the car is some other springs that were sitting around that are also not correct but have lesser rate but a lot more height, which is going to probably end up with quite the rake. Here we go.
+
+Yep. I'd say that's raked. You know, somehow all the grass on the side fits it. This is a grandpa wagon and grandpa just mowed right up against it.
+
+The only thing that these diving board bumpers are good for is jumping up and down on your suspension to try to get it to settle out. There we go. A lot of shoe prints on my bumpers. I think it looks ridiculous. And I'm going to drive it around now and I'm going to see how it is. And it's probably going to be terrible in one way or the other. It probably will rub in the front and the rear. The rear won't rub. I mean, it's like up in the air. If I could get the front up that high, I think I'd be okay with it. Anyway, I'm going to clean up and then, you know, let's go for a ride.
+
+Okay. I will almost guarantee you that this will not go well, not just from the car's perspective, but you're probably going to fall over. We'll see if we can't make this thing roll.
+
+That's what it sounds like. That's just straight piped 5M-GE. If you're not familiar, if you haven't been here and heard it before, that's what it sounds like. Okay, here we go. Just rolling it first. Rolling appears to work. It doesn't feel wobbly.
+
+All right, I'm going to take it around the block once and then maybe I'll get my buddy to go with me for a ride. I'm not trying to go fast. I'm just trying to go. And you know what? We're going. We're rolling. Let's hear about the rubbing. Oh yeah. There. Almost immediately it rubbed. The fronts are going to rub. I need camber. The right one has camber. The left one does not have camber. So I mean it's got camber. It's just positive. Yeah. Listen to that. Just scrape that tread off of there is what we want. The... Yeah, the tires are too big. FYI.
+
+We're going to try some left-hand corners to try to rub the right tire. I figured it would rub. Okay, the right's good on left turns. The left is terrible all around. It's just not cambered. It's cambered out and it needs to be cambered in. You've fallen over. Maybe I get in there and mess with the camber right now. Like right now. Let's have a look and see what we can see.
+
+Presently I don't see the rubbing that's happening. I'm sure it's just the outside of the wheel. There's still a fender liner in there that's definitely going to rub on that. There's that hanging out down there. It's not going to last long. Yeah, that's got to go. Let's take a look around the other side.
+
+So I don't know if you can tell, but this one's definitely cambered in some. The wheels pointed to the right a little bit at the moment, but it's definitely got some camber to it. So I'm hoping that there are camber adjusters in there. If there are not, I'm going to have to get them. I do have some, but well, let's just get busy, I guess.
+
+Well, it turns out the joke's on me. There's going to be no way to put camber into it. I thought that this would be much more like a later '80s Toyota and would have, you know, two bolts and allow you to adjust camber, but there is no camber adjustment in the front. So I'm going to have to buy camber plates for the top or do something at the bottom. I wonder though why the passenger side does not rub and this side does. Probably because the springs are different heights.
+
+I think the actual solution is to get proper height springs for the front and kind of balance everything out. So Techno Toy Tuning, are you listening? I need coilovers front and rear for this thing. That's what I want so I can choose my spring rates. But that's money. Money that I had not intended on spending. I wanted to make spend money to go fast. But, you know, to go fast, you got to go safe. So it may just be what we have to do. I mean, in reality, I just bought the wrong tires, but I love them so much.
+
+So it's quite obvious that the right thing to do here would be to get the right coilovers or springs for the front and lift the car appropriately. But instead, I bought these rubber spring spacers and we're going to jam them up in the springs and give ourselves a little bit of a boost hopefully. It says up to one inch lift. I find that it's probably not going to be that much, but I'll try. We'll see what we can get at them. It's probably the third time I've gone into the same AutoZone, and every time they're in a different place, and every time the person who I ask about them is like, "What are you talking about?" But it's just this rubber doodad that you slide up into your coil springs, spin it up into place, and then it gives you a little extra boost. And I'll show you what it looks like when I'm done. I got to jack the car up first, though.
+
+We need the spring to be unloaded so we can slide this up into the coils and then we can load it back up again and it should give us the lift that we need. I don't know. There it is. You can see it up there hopefully. So it's unloaded right now. And the way you want to use these is get them up as far as you can in the coil because that's where it's going to pinch first. So... Booger's going to be getting it around the strut. It doesn't want to go. Okay, there it is.
+
+The best part is that these are made for like a five-inch spring and this spring is like six inches. So it doesn't really fit. Maybe I'll compress it a little bit and see if I can... Oh, probably not that much. I just want the spring to grab it. What a pain in the ass. I've got it right kind of in the middle of the coils. So I think it's actually in place now. I'm going to drop it and see what we got.
+
+Oh yeah. That's more clearance than we had. That's nice. Oh yeah. That's real good. I'm going to do the other side and then I'm going to be done.
+
+Okay. After painstakingly removing one terrible to remove fender liner, so many screws and bolts, and then adjusting the rubber donut a little bit more, I think that we are ready for another test drive. Second gear pull off.
+
+Ah, she's up now. Oil pressure has come around to next to nothing. You're looking at the ceiling. Great. I took a left turn with no rubbing. I like that. That was standard though. That was kind of standard issue from before. Left turn, no rub. Let's see if we can get a right turn, no rub. I bet we can't.
+
+Oh yeah. Oh yeah, it was the fender liner. I knew it. I knew it. I knew that noise. See, the rally crossers, we know. We know when we're hearing a fender liner rubbing.
+
+Here's some good news. I'm doing about 25. Nothing's going like... So the fear with those adapters is that you're going to be way out of shape. They're not going to have lined up properly, you know, or whatever. But right now, I'm pulling 30 going up to 35. Doing good.
+
+So this is a left turn through the roundabout. Obviously, you can only make left turns through a normal American roundabout, but it did good. And man, it's riding so much better in the rear with those Celica front springs in there. My apologies to Ron who wanted to buy those from me. For right now, they're being used. You shouldn't have come and reminded me that I had them, you know, and we came and looked at all the stuff that I had and I was like, "Oh yeah, look at those. Maybe they would fit." And sure enough, they do.
+
+Until the next video when I can show you that this thing is able to pull some straight line speed, I want you to go and get whatever tools you got and hammer out your own solutions to make your ride the way that you want it to be. And then once you got that squared away, you go out and take that ride out and find your own apex because it is better late than never. And I will catch you in the next episode. For now, I'm gonna go around and try not to pop these tires.
+
+Nature tunnel.
+
+Here's a follow-up to the video I just made. You would think that maybe the cheap adapters broke. Nope. I just didn't torque the lug nuts. So this is a lesson to all of y'all. Torque your lug nuts. And hopefully this kind of crap doesn't happen to you.
