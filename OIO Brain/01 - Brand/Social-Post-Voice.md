@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-01 from 725 posts (725 Facebook, 0 Instagram) covering 2019-11-13 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-01 from 750 posts (750 Facebook, 0 Instagram) covering 2019-10-17 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 280 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 147 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 297 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 153 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 36 | 'Our Hudson', 'errbody in the pool' |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 43 |
-| Event Recap | 181 |
+| Event Recap | 189 |
 | Event Hype | 21 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2019-11-16** — Richard shows us how to lose 50lb and keep it off! #hatchless #lexan #sccarallycross #modall #4agetercel #4wdtercel
-- **2019-11-19** — How we feel just thinking about rallycross this Sunday in Carbondale KS. RTR will be there with at least 3 cars. The #AE…
-- **2019-11-23** — #ae86 #4wdtercel and the #rxfx are loaded fer bear. Ready for #ksrscca/#kcrscca #rallycross tomorrow in Carbondale, KS!
+- **2019-10-19** — Church on Saturday. #sccarallycross #rxfx #fx16
+- **2019-10-20** — 2 days. 40+ runs. 2 class wins and 2 seconds for that little silver toyota! :) #rxfx #sccarallycross #kcrscca
+- **2019-10-20** — Church on Sunday #sccarallycross
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2019-11-13** — We call this... "practice".
-- **2019-11-22** — The best on the land or in the air.
-- **2019-12-04** — 🤤
-- **2019-12-05** — Well played.
+- **2019-10-17** — It finally happened!!!
+- **2019-10-19** — Church on Saturday. #sccarallycross #rxfx #fx16
+- **2019-10-20** — Church on Sunday #sccarallycross
+- **2019-10-21** — I want my 4ag to sound like this.
 
 ### Storytelling / Sermon Mode
 
@@ -506,34 +506,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 725 posts:
+Top 25 hashtags across 750 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
-| #rxfx | 50 |
-| #rallycross | 45 |
+| #rxfx | 57 |
+| #rallycross | 47 |
 | #dalesdragon | 39 |
-| #toyota | 33 |
+| #toyota | 34 |
 | #ra21 | 33 |
 | #racing | 32 |
 | #fitgang | 31 |
+| #sccarallycross | 25 |
 | #diy | 25 |
 | #rxaw11 | 25 |
 | #mgbgts | 22 |
 | #scca | 22 |
 | #hondafit | 22 |
-| #sccarallycross | 21 |
 | #mr2 | 20 |
 | #celica | 19 |
+| #fx16 | 16 |
+| #kcrscca | 16 |
 | #18rg | 16 |
 | #rx86 | 16 |
 | #aw11 | 15 |
-| #fx16 | 14 |
-| #kcrscca | 13 |
+| #ae86 | 14 |
 | #ta22 | 13 |
 | #autocross | 13 |
-| #vintageracing | 12 |
-| #ae86 | 11 |
+| #bhrtribe | 12 |
 
 <!-- social-voice-stats:end -->
