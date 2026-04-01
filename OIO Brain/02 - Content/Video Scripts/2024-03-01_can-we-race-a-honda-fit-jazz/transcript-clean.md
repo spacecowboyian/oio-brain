@@ -38,11 +38,11 @@ Did you do what I think you did?!
 
 ## Welcome to Fit Gang
 
-**IAN:** You know they say that Jesus arrived of his own Accord, right? But I think he probably just needed a commuter.
+**IAN:** You know they say that Jesus arrived in his own Accord, right? But I think he probably just needed a commuter.
 
 It's beautiful! It's a Sport! It has the little spoiler on the back. Nice!
 
-I believe these are lighter than my 2009. And they make like 10 less horsepower, so it makes me wonder how even they would be.
+I believe these are lighter than my 2009. And they make like 10 fewer horsepower, so it makes me wonder how even they would be.
 
 Whoa, you got the cool parcel shelf thingy with the cover for your stuff in the back. This thing's optioned!
 
@@ -62,7 +62,7 @@ Welcome, my friend, to an elite group that many strive to join, not few achieve.
 
 **IAN:** You have gobs of headroom, man. I mean, you're 4 inches away from that roof. You fit just fine! Get some lean on, man. Steering wheel position is great.
 
-**RYAN:** That's a slushy box, but at least it's a real auto, right? Not the CVT.
+**RYAN:** That's a slush box, but at least it's a real auto, right? Not the CVT.
 
 **IAN:** It's not the CVT! It's a 5-speed auto. Got a broken clip up there... got a glove box... some switches. I mean, relatively clean interior. There's cleaner in here already and it smells pretty good.
 
@@ -116,13 +116,13 @@ Like the CRV—it had the word "boobs" on the front window in mailbox letters. E
 
 It's perfect! And we could hit a rallycross with this tomorrow, fellow Honda friend.
 
-Oh my God, that sounds like the underpants to me—like the trays are dragging. I was also told they had like 150,000 on it... 209! Works!
+Oh my God, that sounds like the undercarriage to me—like the trays are dragging. I was also told they had like 150,000 on it... 209! Works!
 
 Yeah, something's definitely shimmying over here, and the brakes are a little draggy-smelling.
 
 **RYAN:** Well, there are copious amounts of brake dust all over the wheels, so they could be dragging. You don't normally get brake dust on your rears when you've got drums.
 
-**IAN:** Fig Gang! That's our symbol, too, by the way. It's sort of an F if you think about it. It's the top part of the F. I made it up!
+**IAN:** Fit Gang! That's our symbol, too, by the way. It's the letter F if you think about it—the top part of the F. I made it up!
 
 This thing makes some interesting noises when you turn.
 
@@ -140,7 +140,7 @@ But you know what? It is running, it is driving, it is a $500 car, and it's ever
 
 **RYAN:** I bet if you put it in Sport, it will hold.
 
-**IAN:** Touch the glove box—oh yeah, it's the inner fender on the left there. See if I can tie it up. If I get in there, you can see that it's hanging. If we zip-tie it up...
+**IAN:** Feel around by the glove box—oh wait, it's the inner fender on the left there. See if I can tie it up. If I get in there, you can see that it's hanging. If we zip-tie it up...
 
 Doesn't leak anything underneath, though. It looks pretty clean. It's got a little bit of schmutz on this side, not much. This one's doing the exact same thing, and it has zip ties on it already that have been broken.
 
@@ -248,7 +248,7 @@ For you to add camber in the rear of your car, you have to cut off the rear spin
 
 **IAN:** That's why so many people race these more than they race the GE in Sunday Cup and whatnot. With the cylinder head design, all of your exhaust ports are to a square port, whereas this has individual exhaust ports for each cylinder. It's like a standard cylinder head, whereas yours is kind of more optimized to bolt a turbo to—it all comes into a smaller space. Mine is not as optimal, as it could breathe naturally aspirated as well.
 
-If I'm going to do anything, that's what I'm going to do. I know a guy who's got an extra cylinder head, and it would make a good write-up or something. A guy who might have spent $400 on a rebuilt cylinder head from eBay that was the wrong cylinder head—that actually fits this car and not my car. Yeah, I did that!
+If I'm going to do anything, that's what I'm going to do. I know a guy who spent $400 on a rebuilt cylinder head from eBay that was the wrong cylinder head for his car—but it actually fits this car and not mine. Yeah, I've done that too!
 
 But you know what? Hey, it'll go to a good home now. We got one to start with for doing some race car stuff too! A fresh head—they said it was, anyway. I think it might just be a Craigslist rebuild, though, you know. Just a little bit of spray paint on the outside. But I'm going to take it all apart, put springs in it, port it, and have Nolan's check it out. I mean, I'm going to do all the stuff.
 

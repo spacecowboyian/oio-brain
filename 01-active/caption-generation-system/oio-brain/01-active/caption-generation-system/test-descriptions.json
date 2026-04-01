@@ -1,0 +1,184 @@
+{
+  "test_descriptions": [
+    {
+      "id": 1,
+      "video_title": "AW11 MR2 Engine Teardown - Finding the Problem",
+      "description": "The Goblin MR2 has been losing compression on cylinder 4. Time to tear down the 4AGE and see what's broken. Ian walks through the disassembly process.",
+      "cars": ["Goblin MR2"],
+      "content_type": "Build Update",
+      "expected_tone": "Pit-Talk Casual",
+      "key_details": ["engine teardown", "cylinder 4 failure", "4AGE motor", "mechanical diagnosis"]
+    },
+    {
+      "id": 2,
+      "video_title": "Three Honda Fits Battle at Rallycross - Fit Off Round 4",
+      "description": "We brought three Honda Fits to the dirt for another Fit Off showdown. Fitty Cent takes on two rival GD3s in rallycross competition. Cones were destroyed, times were compared, and one Fit proved superior.",
+      "cars": ["Fitty Cent", "Honda Fit"],
+      "content_type": "Video Tease",
+      "expected_tone": "Story Promo",
+      "key_details": ["three Honda Fits", "rallycross battle", "Fit Off series", "competitive"]
+    },
+    {
+      "id": 3,
+      "video_title": "Can We Fix the Celica Before the Championship Race?",
+      "description": "Dale's Dragon (RA21 Celica with 18RG motor) broke a spindle two weeks before the season finale. Ryan and Ian race against time to source parts and get it race-ready.",
+      "cars": ["Dale's Dragon", "RA21 Celica"],
+      "content_type": "Video Tease",
+      "expected_tone": "Story Promo",
+      "key_details": ["broken spindle", "championship race deadline", "parts sourcing", "time pressure"]
+    },
+    {
+      "id": 4,
+      "video_title": "MGB GT First Rallycross Run",
+      "description": "The MGB GT with Toyota motor swap hits the dirt for its maiden rallycross run. Richard takes it through tech, walks, and runs.",
+      "cars": ["MGB GT"],
+      "content_type": "Event Recap",
+      "expected_tone": "Story Promo",
+      "key_details": ["first rallycross run", "Toyota swap", "maiden voyage", "Richard driving"]
+    },
+    {
+      "id": 5,
+      "video_title": "Junkyard Honda Fit Rescue - Is It Worth Saving?",
+      "description": "We found another GD3 Honda Fit at a local junkyard for $800. It's rough, but it has potential. Ian evaluates whether this Fit can be saved or if it's parts car material.",
+      "cars": ["Honda Fit"],
+      "content_type": "Build Update",
+      "expected_tone": "Car Mythology",
+      "key_details": ["junkyard find", "$800 car", "rescue mission", "evaluation"]
+    },
+    {
+      "id": 6,
+      "video_title": "Autocross Nationals - FSP Class Battle",
+      "description": "Ian takes Fitty Cent to SCCA Solo Nationals in Lincoln, NE to compete in FSP class against heavily modified Rabbits, Civics, and other hot hatches.",
+      "cars": ["Fitty Cent"],
+      "content_type": "Event Recap",
+      "expected_tone": "Story Promo",
+      "key_details": ["Solo Nationals", "FSP class", "underdog battle", "Lincoln NE"]
+    },
+    {
+      "id": 7,
+      "video_title": "Installing Coilovers on the Goblin MR2",
+      "description": "Quick install video showing Ian swapping the stock suspension for coilovers on the AW11 MR2. No talking, just wrenching and time-lapse.",
+      "cars": ["Goblin MR2"],
+      "content_type": "Build Update",
+      "expected_tone": "Pit-Talk Casual",
+      "key_details": ["coilover install", "suspension upgrade", "time-lapse", "wrench video"]
+    },
+    {
+      "id": 8,
+      "video_title": "Why the Honda Fit is Better Than a Miata for Rallycross",
+      "description": "Ian makes the case for why the Honda Fit (GE8/GD3) is the superior grassroots rallycross platform compared to the Miata. Hot take with data from 2 seasons of racing.",
+      "cars": ["Honda Fit"],
+      "content_type": "Enthusiast Take",
+      "expected_tone": "Enthusiast Opinion",
+      "key_details": ["Fit vs Miata", "hot take", "rallycross platform", "data-backed opinion"]
+    },
+    {
+      "id": 9,
+      "video_title": "Lake Garnett Grand Prix Revival 2025 - Vintage Racing Chaos",
+      "description": "OIO brings Dale's Dragon Celica and the MGB GT to Lake Garnett for vintage racing. Beautiful cars, close racing, and questionable reliability. Church of Combustion sermon mode.",
+      "cars": ["Dale's Dragon", "MGB GT"],
+      "content_type": "Event Recap",
+      "expected_tone": "Story Promo",
+      "key_details": ["Lake Garnett", "vintage racing", "two cars", "church mode", "LGGPR"]
+    },
+    {
+      "id": 10,
+      "video_title": "Budget Brake Upgrade - Honda Fit DIY",
+      "description": "How to upgrade your Honda Fit brakes on a budget using junkyard parts and basic tools. Ian shows the step-by-step process.",
+      "cars": ["Honda Fit"],
+      "content_type": "How-To",
+      "expected_tone": "Pit-Talk Casual",
+      "key_details": ["brake upgrade", "budget build", "junkyard parts", "DIY tutorial"]
+    },
+    {
+      "id": 11,
+      "video_title": "MR2 vs Fit - Slowest Drag Race Ever",
+      "description": "The Goblin MR2 and Fitty Cent face off in a drag race. Both are slow. Both are loud. Only one can win (barely).",
+      "cars": ["Goblin MR2", "Fitty Cent"],
+      "content_type": "Trash Talk",
+      "expected_tone": "Enthusiast Opinion",
+      "key_details": ["drag race", "slow cars", "MR2 vs Fit", "self-deprecating"]
+    },
+    {
+      "id": 12,
+      "video_title": "Saying Goodbye to the 1982 Cressida Wagon",
+      "description": "After two seasons of rallycross abuse, the Cressida wagon is being retired. A look back at the best moments and worst failures.",
+      "cars": ["1982 Cressida"],
+      "content_type": "Farewell",
+      "expected_tone": "Pit-Talk Casual",
+      "key_details": ["retirement", "farewell", "two season recap", "memories"]
+    },
+    {
+      "id": 13,
+      "video_title": "Starlet Gets a 4AGE Swap - Budget JDM Build",
+      "description": "Ryan starts the 4AGE engine swap into the 1983 Starlet. This budget JDM build is destined for rallycross once it's running.",
+      "cars": ["Starlet"],
+      "content_type": "Build Update",
+      "expected_tone": "Story Promo",
+      "key_details": ["4AGE swap", "Starlet build", "Ryan project", "budget JDM"]
+    },
+    {
+      "id": 14,
+      "video_title": "Rallycross in the Rain - KCRSCCA Event Recap",
+      "description": "Wet, muddy, and chaotic. The Kansas City Region SCCA rallycross in the rain with the Goblin MR2 and Fitty Cent. Both cars survived (barely).",
+      "cars": ["Goblin MR2", "Fitty Cent"],
+      "content_type": "Event Recap",
+      "expected_tone": "Story Promo",
+      "key_details": ["rain racing", "mud", "KCRSCCA", "survival story"]
+    },
+    {
+      "id": 15,
+      "video_title": "Why We Race Cheap Old Cars",
+      "description": "Ian talks about why OIO focuses on budget builds, junkyard finds, and vintage Japanese cars instead of modern performance machines.",
+      "cars": [],
+      "content_type": "Enthusiast Take",
+      "expected_tone": "Enthusiast Opinion",
+      "key_details": ["philosophy", "budget racing", "why cheap cars", "grassroots manifesto"]
+    },
+    {
+      "id": 16,
+      "video_title": "ST205 Celica GT-Four Track Day Debut",
+      "description": "Richard brings the ST205 Celica GT-Four (3SGTE, AWD) to its first track day. Turbocharged JDM legend meets midwest road course.",
+      "cars": ["ST205 Celica"],
+      "content_type": "Event Recap",
+      "expected_tone": "Story Promo",
+      "key_details": ["ST205", "track day debut", "GT-Four", "Richard driving", "JDM"]
+    },
+    {
+      "id": 17,
+      "video_title": "Fitting 15x8 Wheels on a Stock Honda Fit",
+      "description": "Quick video showing the wheel fitment test on Fitty Cent. Testing how wide we can go on the stock GE8 Fit body without fender work.",
+      "cars": ["Fitty Cent"],
+      "content_type": "Build Update",
+      "expected_tone": "Pit-Talk Casual",
+      "key_details": ["wheel fitment", "15x8 wheels", "no fender work", "test fit"]
+    },
+    {
+      "id": 18,
+      "video_title": "Shop Tour - Where OIO Builds Race Cars",
+      "description": "Tour of the OIO shop where all the builds happen. See the tools, the lift, the parts pile, and the current projects in progress.",
+      "cars": [],
+      "content_type": "Behind the Scenes",
+      "expected_tone": "Pit-Talk Casual",
+      "key_details": ["shop tour", "behind the scenes", "workspace", "tools"]
+    },
+    {
+      "id": 19,
+      "video_title": "Pre-Race Prep - What We Do Before Every Event",
+      "description": "Ian walks through the pre-race checklist for the Goblin MR2. Fluids, tire pressure, safety gear, spares kit. The boring but critical stuff.",
+      "cars": ["Goblin MR2"],
+      "content_type": "How-To",
+      "expected_tone": "Pit-Talk Casual",
+      "key_details": ["pre-race prep", "checklist", "maintenance", "safety"]
+    },
+    {
+      "id": 20,
+      "video_title": "The Celica Lives - First Start After Engine Build",
+      "description": "After months of teardown and rebuild, Dale's Dragon Celica fires up for the first time. The 18RG motor is alive. Now it's time to race.",
+      "cars": ["Dale's Dragon"],
+      "content_type": "Build Update",
+      "expected_tone": "Car Mythology",
+      "key_details": ["first start", "engine rebuild complete", "resurrection moment", "18RG motor"]
+    }
+  ]
+}
