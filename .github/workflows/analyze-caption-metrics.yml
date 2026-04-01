@@ -1,0 +1,139 @@
+name: Analyze Caption Metrics
+
+on:
+  # Run daily at 8 AM CDT to provide morning reports
+  schedule:
+    - cron: '13 8 * * *'
+
+  # Allow manual trigger for on-demand analysis
+  workflow_dispatch:
+
+jobs:
+  analyze-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Analyze caption metrics
+        id: analyze
+        run: |
+          python scripts/analyze_caption_metrics.py --generate-reports
+
+      - name: Check for quality alerts
+        id: alerts
+        run: |
+          ALERTS=$(cat OIO\ Brain/data/caption-metrics/alerts.json 2>/dev/null || echo '{}')
+          echo "alerts=$ALERTS" >> "$GITHUB_OUTPUT"
+
+      - name: Alert if success rate dropped
+        if: |
+          steps.analyze.outputs.success_rate_dropped == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CURRENT="${{ steps.analyze.outputs.current_success_rate }}"
+          PREVIOUS="${{ steps.analyze.outputs.previous_success_rate }}"
+
+          gh issue create \
+            --title "⚠️ ALERT: Caption generation success rate dropped" \
+            --body "## Success Rate Alert
+
+**Current Success Rate:** ${CURRENT}%
+**Previous Success Rate:** ${PREVIOUS}%
+**Change:** Declined by $(echo "$PREVIOUS - $CURRENT" | bc)%
+
+### Action Items
+1. Check the caption generation service logs
+2. Review recent Paperclip API errors
+3. Verify network connectivity and API timeouts
+4. Test caption generation manually
+
+See: [CAPTION-MONITORING.md](/CAPTION-MONITORING.md) → Troubleshooting → Low Success Rate" \
+            --label "alert,caption-monitoring" \
+            --assignee "@oio-brain-maintainer" || true
+
+      - name: Alert if selection rate dropped
+        if: |
+          steps.analyze.outputs.selection_rate_dropped == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CURRENT="${{ steps.analyze.outputs.current_selection_rate }}"
+          PREVIOUS="${{ steps.analyze.outputs.previous_selection_rate }}"
+
+          gh issue create \
+            --title "⚠️ ALERT: Caption selection rate dropped below threshold" \
+            --body "## Caption Selection Alert
+
+**Current Selection Rate:** ${CURRENT}%
+**Previous Selection Rate:** ${PREVIOUS}%
+**Target Threshold:** ≥ 75%
+
+### What This Means
+Users are selecting fewer of the generated captions. This may indicate:
+- Generated captions don't match brand voice
+- Missing context about the photo/event
+- Captions are too generic or not engaging enough
+- Prompt refinement needed
+
+### Next Steps
+1. Review feedback from the past week
+2. Identify patterns in rejected captions
+3. Check if feedback threshold (3+ similar requests) was reached
+4. If threshold reached, create prompt refinement issue for AI Copywriter
+
+See: [CAPTION-MONITORING.md](/CAPTION-MONITORING.md) → Troubleshooting → Low Selection Rate" \
+            --label "alert,caption-quality,caption-feedback" || true
+
+      - name: Create weekly summary (Monday only)
+        if: github.event.schedule == '13 8 * * 1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          SUMMARY=$(cat OIO\ Brain/data/caption-metrics/weekly-summary.md 2>/dev/null || echo "No data")
+
+          gh issue create \
+            --title "📊 Weekly Caption Metrics Summary — $(date +%Y-W%U)" \
+            --body "## Weekly Caption Quality Report
+
+**Period:** $(date -d '7 days ago' +%Y-%m-%d) to $(date +%Y-%m-%d)
+
+$SUMMARY
+
+See: [CAPTION-MONITORING.md](/CAPTION-MONITORING.md) for full dashboard" \
+            --label "report,caption-metrics" || true
+
+      - name: Update monitoring dashboard
+        if: always()
+        run: |
+          # Update CAPTION-MONITORING.md with latest metrics
+          python scripts/update_caption_dashboard.py
+
+      - name: Commit updated metrics
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add "OIO Brain/data/caption-metrics/" CAPTION-MONITORING.md
+
+          if git diff --cached --quiet; then
+            echo "No metrics changes to commit."
+          else
+            git commit -m "chore: update caption metrics and analysis [skip ci]"
+            git push
+            echo "✓ Committed updated metrics"
+          fi

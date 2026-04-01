@@ -1,0 +1,116 @@
+name: Monitor Social Media Pipeline
+
+on:
+  # Trigger after photo filing completes
+  workflow_run:
+    workflows: ["File Picdump Photos"]
+    types: [completed]
+
+  # Allow manual trigger for testing
+  workflow_dispatch:
+
+jobs:
+  check-photo-status:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check for unfiled photos in picdump
+        id: check-unfiled
+        run: |
+          # Find photos in picdump that still need manual filing
+          UNFILED_COUNT=$(find picdump -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.heic' -o -iname '*.webp' \) | wc -l | tr -d ' ')
+
+          if [ "$UNFILED_COUNT" -gt 0 ]; then
+            echo "has_unfiled=true" >> "$GITHUB_OUTPUT"
+            echo "unfiled_count=$UNFILED_COUNT" >> "$GITHUB_OUTPUT"
+
+            # Get list of unfiled photos
+            UNFILED_LIST=$(find picdump -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.heic' -o -iname '*.webp' \) | sed 's|^picdump/||' | head -10)
+            {
+              echo "unfiled_list<<EOF"
+              echo "$UNFILED_LIST"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+          else
+            echo "has_unfiled=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Count filed photos
+        id: check-filed
+        run: |
+          # Count photos in library (for daily digest stats)
+          TOTAL_PHOTOS=$(find photos -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.heic' -o -iname '*.webp' \) | wc -l | tr -d ' ')
+          echo "total_photos=$TOTAL_PHOTOS" >> "$GITHUB_OUTPUT"
+
+          # Count photos ready for captions (no caption generated yet)
+          READY_FOR_CAPTION=$(find photos -type f -name "photo-log.md" | wc -l | tr -d ' ')
+          echo "ready_for_caption=$READY_FOR_CAPTION" >> "$GITHUB_OUTPUT"
+
+      - name: High Priority Alert - Unfiled Photos Need Manual Review
+        if: steps.check-unfiled.outputs.has_unfiled == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          COUNT="${{ steps.check-unfiled.outputs.unfiled_count }}"
+          LIST="${{ steps.check-unfiled.outputs.unfiled_list }}"
+
+          gh issue create \
+            --title "🚨 HIGH PRIORITY: $COUNT photo(s) in picdump need manual review" \
+            --body "## Photo Filing Status
+
+**Action Required:** $COUNT photo(s) could not be auto-filed by the AI agent and need manual review.
+
+**Photos requiring review:**
+\`\`\`
+${LIST}
+\`\`\`
+
+**Next Steps:**
+1. Review the photo(s) in the picdump folder
+2. Identify the car, driver, and event context
+3. File manually to photos/{Driver}/{Car}/ if known
+4. Otherwise, create an issue in open-loops.md for later review
+
+**Why this happened:**
+The AI Photo Filing Agent couldn't identify the photo with sufficient confidence (< 80% threshold). This might be due to:
+- Unusual angle or lighting
+- New/unfamiliar car or event
+- Unclear context
+- Need for prompt refinement
+
+See: [SOCIAL-MEDIA-ENGINEERING.md](/SOCIAL-MEDIA-ENGINEERING.md) for detailed workflow." \
+            --label "urgent,photo-filing" \
+            --assignee "@oio-brain-maintainer" || true
+
+      - name: Medium Priority Alert - Drafts Ready for Review (6-hour check)
+        if: github.event_name == 'schedule' || github.event.inputs.check_drafts == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Check PostBridge drafts age and alert if older than 6 hours
+          # This would require PostBridge API integration - for now, log status
+          echo "📋 Medium Priority: Check PostBridge for drafts >6 hours old"
+
+      - name: Low Priority - Daily Digest (photos ready for captions)
+        if: github.event_name == 'schedule'
+        run: |
+          TOTAL="${{ steps.check-filed.outputs.total_photos }}"
+          READY="${{ steps.check-filed.outputs.ready_for_caption }}"
+
+          echo "📊 Daily Social Media Pipeline Status"
+          echo "Total photos in library: $TOTAL"
+          echo "Photos with pending captions: $READY"
+          echo "Auto-filing success rate: $(echo "scale=1; (($TOTAL - $READY) / $TOTAL) * 100" | bc 2>/dev/null || echo 'N/A')%"
+
+      - name: Log Pipeline Health
+        run: |
+          echo "✅ Pipeline Health Check Complete"
+          echo "Unfiled photos: ${{ steps.check-unfiled.outputs.unfiled_count || 0 }}"
+          echo "Total photos in library: ${{ steps.check-filed.outputs.total_photos }}"
+          echo "Photos ready for captions: ${{ steps.check-filed.outputs.ready_for_caption }}"
