@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-01 from 675 posts (675 Facebook, 0 Instagram) covering 2020-03-04 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-01 from 700 posts (700 Facebook, 0 Instagram) covering 2020-01-24 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 258 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 140 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 268 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 143 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 36 | 'Our Hudson', 'errbody in the pool' |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 56 |
 | Build Update | 43 |
-| Event Recap | 170 |
+| Event Recap | 175 |
 | Event Hype | 21 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2020-03-26** — This girl can paint some wheels. She takes commissions. #justsayin #ae86 #kconstruction #bhrtribe #rallycross
-- **2020-04-03** — Forrest and his dad Larry our fixtures at our Rallycross events. Please help if you can.
-- **2020-04-03** — Here’s Keegan’s #7age #tercel doing an easyish pull. Still on breakin after the new high compression rebuild but the sou…
+- **2020-01-24** — KC Region rallycross schedule is out!
+- **2020-01-31** — Its a true pleasure to race along side SCCA RallyCross TripleCross winner... and champion hot dog griller.. Mr. Mark Hil…
+- **2020-02-09** — From a door... to a thing that looks a whole lot like a door but weighs 26lbs less. Modified class baby! #sccarx #rallyc…
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2020-03-06** — hmm
-- **2020-03-08** — The #4ag4wd #tercel is looking lighter and cooler by the day.
-- **2020-03-13** — Wait for it.
-- **2020-03-15** — 7A-GE going back together for Keegan’s Tercel. It’s gonna rip!
+- **2020-01-24** — KC Region rallycross schedule is out!
+- **2020-01-24** — Shoulda put on the rally tires. #misseditbythatmuch
+- **2020-01-28** — It always starts with a Toyota :)
+- **2020-01-29** — He's out there somewhere... all alone. #haveyouseenhim
 
 ### Storytelling / Sermon Mode
 
@@ -506,17 +506,17 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 675 posts:
+Top 25 hashtags across 700 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
-| #rxfx | 46 |
-| #rallycross | 42 |
+| #rxfx | 48 |
+| #rallycross | 43 |
 | #dalesdragon | 39 |
+| #ra21 | 33 |
 | #toyota | 32 |
 | #racing | 32 |
-| #ra21 | 31 |
 | #fitgang | 31 |
 | #diy | 25 |
 | #rxaw11 | 25 |
@@ -526,10 +526,10 @@ Top 25 hashtags across 675 posts:
 | #sccarallycross | 20 |
 | #mr2 | 20 |
 | #celica | 19 |
+| #18rg | 16 |
 | #rx86 | 16 |
 | #aw11 | 15 |
 | #fx16 | 14 |
-| #18rg | 14 |
 | #ta22 | 13 |
 | #autocross | 13 |
 | #kcrscca | 12 |
