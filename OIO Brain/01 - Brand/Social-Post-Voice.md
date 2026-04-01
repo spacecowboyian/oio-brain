@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-01 from 650 posts (650 Facebook, 0 Instagram) covering 2020-06-25 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-01 from 675 posts (675 Facebook, 0 Instagram) covering 2020-03-04 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 245 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 135 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 258 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 140 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 36 | 'Our Hudson', 'errbody in the pool' |
@@ -423,8 +423,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 56 |
-| Build Update | 42 |
-| Event Recap | 161 |
+| Build Update | 43 |
+| Event Recap | 170 |
 | Event Hype | 21 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
@@ -448,9 +448,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Photo-first. Caption captures progress without over-describing.*
 
+- **2020-04-03** — Here’s Keegan’s #7age #tercel doing an easyish pull. Still on breakin after the new high compression rebuild but the sou…
 - **2021-10-11** — Ian here. Presenting the 2021 Lake Garnett Grand Prix Revival as seen from my #rxfx in group B1, afternoon session. Lots…
 - **2022-10-06** — Dale update: Road to Lake Garnett Grand Prix Revival.  Clutch was finally repaired and I decided to replace the oil pan…
-- **2022-10-07** — Dale: The road to Lake Garnett Grand Prix Revival  Today was all carb. Erik from Hot Hatch Racing came over and helped m…
 
 ### Event Hype / Trash Talk
 
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2020-07-11** — Church on Saturday AND Sunday this weekend! Double header at @heartlandmotorsportspark with #kcrscca and #ksscca ryan is…
-- **2020-07-25** — #OIO is southbound and down. Wichita won’t know what hit it. #wichitascca #sccarallycross #rx86 #bhrtribe @wearekconstru…
-- **2020-07-26** — 2 days of Rallycross. 3 courses. 90second-ish runs. OIO will be there... will you?
+- **2020-03-26** — This girl can paint some wheels. She takes commissions. #justsayin #ae86 #kconstruction #bhrtribe #rallycross
+- **2020-04-03** — Forrest and his dad Larry our fixtures at our Rallycross events. Please help if you can.
+- **2020-04-03** — Here’s Keegan’s #7age #tercel doing an easyish pull. Still on breakin after the new high compression rebuild but the sou…
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2020-06-26** — Ian - fine... I’ll go work on my celica.
-- **2020-07-02** — Tonight’s mission. Trailer repair.
-- **2020-07-16** — Today’s lesson... don’t take advice from playground equipment. #friendsdontletfriendsbuyminis #definitelyalimit
-- **2020-07-18** — Poor lil 2TG. You’ll be better soon. #killercorolla #bhrtribe #te51
+- **2020-03-06** — hmm
+- **2020-03-08** — The #4ag4wd #tercel is looking lighter and cooler by the day.
+- **2020-03-13** — Wait for it.
+- **2020-03-15** — 7A-GE going back together for Keegan’s Tercel. It’s gonna rip!
 
 ### Storytelling / Sermon Mode
 
@@ -506,20 +506,20 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 650 posts:
+Top 25 hashtags across 675 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
-| #rxfx | 45 |
-| #rallycross | 39 |
+| #rxfx | 46 |
+| #rallycross | 42 |
 | #dalesdragon | 39 |
+| #toyota | 32 |
 | #racing | 32 |
 | #ra21 | 31 |
 | #fitgang | 31 |
-| #toyota | 30 |
+| #diy | 25 |
 | #rxaw11 | 25 |
-| #diy | 24 |
 | #mgbgts | 22 |
 | #scca | 22 |
 | #hondafit | 22 |
@@ -534,6 +534,6 @@ Top 25 hashtags across 650 posts:
 | #autocross | 13 |
 | #kcrscca | 12 |
 | #vintageracing | 12 |
-| #mechanic | 10 |
+| #bhrtribe | 10 |
 
 <!-- social-voice-stats:end -->
