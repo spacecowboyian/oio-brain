@@ -70,6 +70,7 @@ All caption drafts follow:
 ## Recent Batches
 
 - **2026-03-30:** Generated 17 caption drafts for 2025 video backlog (OUT-48 through OUT-64) covering November 2025 through March 2025 videos
+- **2026-04-01:** Cleaned up all legacy caption drafts (OUT-48–OUT-64) — workflow now creates captions on-demand as new videos are posted
 
 ---
 
