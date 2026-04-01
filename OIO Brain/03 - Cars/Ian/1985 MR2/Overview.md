@@ -102,7 +102,7 @@ The Goblin's 2026 narrative has shifted from "rebuild in progress" to a document
 
 *Auto-generated 2026-04-01 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 44 posts
+**Posts mentioning this car:** 45 posts
 
 **Story arc from social posts:**
 
@@ -114,11 +114,11 @@ The Goblin's 2026 narrative has shifted from "rebuild in progress" to a document
 
 **Recent social posts:**
 
-- **2026-03-21** — Ryan thinks he’s got the edge in the battle for modified rear wheel drive rallycross supremacy. But there ain’t a Miata…
 - **2026-03-22** — BONESAW… er.. the #goblinmr2 is READY! Ain’t no Miata gotta lotta chance in the gravel against mid-rear powa! That is..…
 - **2026-03-22** — The Miata gal pals brought their handbags…. Ian wishes he had a handbag. #miata #mx5 #cars #mr2
 - **2026-03-22** — World’s slowest drag race… it might not actually be but Ian gets to post the videos and he’s got to beat the Miata at ra…
 - **2026-03-28** — The goblin speaketh… cylinder four is done. Time to tear it down. #goblinMR2 #RXMR2 #rallycross #aw11
+- **2026-04-01** — We killed another rallycross car. So naturally, we made a questionable decision. 😅  The MR2 is done for the season. The…
 
 <!-- social-arc:goblin--mr2:end -->
 
