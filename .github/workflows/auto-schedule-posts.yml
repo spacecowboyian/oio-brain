@@ -1,0 +1,91 @@
+name: Auto-Schedule Social Media Posts
+
+on:
+  # Run daily at 7 AM CDT to schedule drafts for the day
+  schedule:
+    - cron: '12 7 * * *'
+
+  # Allow manual trigger for testing/debugging
+  workflow_dispatch:
+
+jobs:
+  analyze-and-schedule:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Analyze historical posting times
+        id: analyze
+        run: |
+          python scripts/analyze_posting_times.py --generate-schedule
+
+      - name: Auto-schedule posts at optimal times
+        id: schedule
+        env:
+          POSTBRIDGE_API_KEY: ${{ secrets.POSTBRIDGE_API_KEY }}
+        run: |
+          python scripts/auto_schedule_posts.py
+
+      - name: Check scheduling results
+        if: always()
+        run: |
+          if [ -f "OIO Brain/data/post-scheduling-log.jsonl" ]; then
+            echo "✅ Scheduling log created"
+            tail -5 "OIO Brain/data/post-scheduling-log.jsonl"
+          fi
+
+      - name: Alert if scheduling failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ Post auto-scheduling failed" \
+            --body "The daily post scheduling workflow encountered an error.
+
+Check the GitHub Actions logs for details:
+- Analyze posting times
+- Auto-schedule posts
+
+See: [Auto-Schedule Workflow](.github/workflows/auto-schedule-posts.yml)" \
+            --label "alert,post-scheduling" || true
+
+      - name: Commit updated schedule
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add "OIO Brain/data/optimal-posting-schedule.json" \
+                  "OIO Brain/data/post-scheduling-log.jsonl"
+
+          if git diff --cached --quiet; then
+            echo "No schedule changes to commit."
+          else
+            git commit -m "chore: update post schedule and scheduling log [skip ci]"
+            git push
+            echo "✓ Committed updated schedule"
+          fi
+
+      - name: Log scheduling summary
+        if: always()
+        run: |
+          echo "📊 Posting Time Analysis Summary"
+          echo "================================"
+          echo "Analyzed historical posts to determine optimal posting times."
+          echo "Schedule saved to: OIO Brain/data/optimal-posting-schedule.json"
+          echo ""
+          echo "Scheduling log available at: OIO Brain/data/post-scheduling-log.jsonl"
