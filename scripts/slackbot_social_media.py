@@ -9,6 +9,7 @@ Commands:
     /caption <photo-ids>     - Generate AI captions for photos
     /post <photo-ids> <caption> [schedule] - Schedule or publish post
     /posts list              - View scheduled and published posts
+    /feedback <type> <id> [msg] - Provide caption feedback (positive/negative/revise)
 
 Environment Variables:
     SLACK_BOT_TOKEN: Slack bot token (xoxb-...)
@@ -31,6 +32,7 @@ import os
 import sys
 import json
 import re
+import uuid
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from datetime import datetime
@@ -50,9 +52,10 @@ except ImportError:
     print("Run: pip install requests")
     sys.exit(1)
 
-# Import PostBridge client
+# Import PostBridge client and metrics logger
 sys.path.append(str(Path(__file__).parent))
 from postbridge_client import PostBridgeClient, PostBridgeError
+from caption_metrics_logger import CaptionMetricsLogger
 
 # Configuration
 SLACK_BOT_TOKEN = os.environ.get("SLACK_BOT_TOKEN", "")
@@ -65,6 +68,9 @@ PICDUMP_DIR = Path(__file__).parent.parent / "picdump"
 
 # Initialize Slack app
 app = App(token=SLACK_BOT_TOKEN)
+
+# Initialize metrics logger
+metrics_logger = CaptionMetricsLogger()
 
 
 # ---------------------------------------------------------------------------
@@ -371,6 +377,10 @@ def handle_caption_command(ack, command, respond):
     """
     ack()
 
+    # Generate request ID for tracking
+    user_id = command.get("user_id", "unknown")
+    request_id = f"slack-{user_id}-{uuid.uuid4().hex[:8]}"
+
     try:
         # Parse command text
         text = command.get("text", "").strip()
@@ -396,17 +406,48 @@ def handle_caption_command(ack, command, respond):
             respond("Please provide at least one photo name.")
             return
 
+        # Log generation start
+        metrics_logger.log_generation_started(
+            request_id=request_id,
+            media_ids=[],
+            media_urls=photo_names,
+            context=context or "",
+            caption_count=3,
+            triggered_by="slackbot"
+        )
+
         # Acknowledge the request
         respond(f"Generating captions for {len(photo_names)} photo(s)... This may take up to 2 minutes.")
 
         # Generate captions
+        start_time = datetime.utcnow()
         result = generate_captions(photo_names, context=context, caption_count=3)
+        duration = (datetime.utcnow() - start_time).total_seconds()
+
+        # Log generation completion
+        captions = result.get("captions", [])
+        metrics_logger.log_generation_completed(
+            request_id=request_id,
+            task_id=result.get("task_id", ""),
+            captions=captions,
+            duration_seconds=duration,
+            context_sources=result.get("context_sources", []),
+            status="success"
+        )
 
         # Format and send response
         message = format_captions_message(result)
         respond(message)
 
     except Exception as e:
+        # Log generation failure
+        duration = (datetime.utcnow() - start_time).total_seconds() if 'start_time' in locals() else 0
+        metrics_logger.log_generation_failed(
+            request_id=request_id,
+            task_id="",
+            error_message=str(e),
+            duration_seconds=duration
+        )
         respond(f"Error generating captions: {e}")
 
 
@@ -418,6 +459,8 @@ def handle_post_command(ack, command, respond):
     Usage: /post <photo-names> "<caption>" [schedule: YYYY-MM-DD HH:MM]
     """
     ack()
+
+    user_id = command.get("user_id", "unknown")
 
     try:
         # Parse command text
@@ -463,6 +506,16 @@ def handle_post_command(ack, command, respond):
         result = create_post(photo_names, caption, schedule=schedule)
 
         post_id = result.get("id", "unknown")
+
+        # Log caption selection (assuming Instagram for now)
+        metrics_logger.log_caption_selected(
+            request_id=f"slack-post-{post_id}",
+            caption_index=0,  # Custom caption, not from options
+            caption_text=caption,
+            selected_by=user_id,
+            selected_for_platform="instagram"
+        )
+
         respond(f"✓ Post created as draft (ID: {post_id})\n"
                 f"Caption: {caption}\n"
                 f"_Note: Photos need to be uploaded to PostBridge manually for now._")
@@ -505,6 +558,63 @@ def handle_posts_command(ack, command, respond):
         respond(f"PostBridge error: {e}")
     except Exception as e:
         respond(f"Error listing posts: {e}")
+
+
+@app.command("/feedback")
+def handle_feedback_command(ack, command, respond):
+    """
+    Handle /feedback command for caption quality feedback.
+
+    Usage: /feedback <positive|negative|revise> <request-id> [message]
+    """
+    ack()
+
+    user_id = command.get("user_id", "unknown")
+
+    try:
+        # Parse command text
+        text = command.get("text", "").strip()
+
+        if not text:
+            respond("Usage: `/feedback <positive|negative|revise> <request-id> [message]`\n"
+                   "Example: `/feedback positive slack-ian-1234567890 Great voice match!`\n"
+                   "Example: `/feedback revise slack-ian-1234567890 Need shorter captions`")
+            return
+
+        parts = text.split(maxsplit=2)
+
+        if len(parts) < 2:
+            respond("Please provide: `/feedback <positive|negative|revise> <request-id> [message]`")
+            return
+
+        feedback_type = parts[0].lower()
+        request_id = parts[1]
+        message = parts[2] if len(parts) > 2 else ""
+
+        # Validate feedback type
+        if feedback_type not in ["positive", "negative", "revise"]:
+            respond("Feedback type must be: positive, negative, or revise")
+            return
+
+        # Map "revise" to "revision_needed" for consistency with logger
+        logger_feedback_type = "revision_needed" if feedback_type == "revise" else feedback_type
+
+        # Log feedback
+        metrics_logger.log_caption_feedback(
+            request_id=request_id,
+            caption_index=0,  # Generic feedback on all captions from request
+            feedback_type=logger_feedback_type,
+            feedback_text=message,
+            feedback_by=user_id
+        )
+
+        emoji = "✅" if feedback_type == "positive" else ("⚠️" if feedback_type == "revise" else "❌")
+        respond(f"{emoji} Feedback logged: {feedback_type}\n"
+               f"Request ID: {request_id}\n"
+               f"_This helps improve future captions_")
+
+    except Exception as e:
+        respond(f"Error logging feedback: {e}")
 
 
 # ---------------------------------------------------------------------------
