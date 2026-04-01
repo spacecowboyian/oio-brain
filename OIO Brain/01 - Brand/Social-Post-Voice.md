@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-01 from 800 posts (800 Facebook, 0 Instagram) covering 2019-09-03 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-01 from 825 posts (825 Facebook, 0 Instagram) covering 2019-07-30 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 315 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 168 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 330 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 172 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 37 | 'Our Hudson', 'errbody in the pool' |
@@ -424,11 +424,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 46 |
-| Event Recap | 214 |
+| Event Recap | 221 |
 | Event Hype | 22 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
-| Farewell / Milestone | 16 |
+| Farewell / Milestone | 17 |
 | Community Celebration | 10 |
 | Acquisition | 6 |
 
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2019-09-09** — New to me @schrothracing Rallye 4 harness for the #rxfx aka #axrxfx on the road to the #sccarallycrossnationals
-- **2019-09-10** — Race day is looming at Bob Hindson Racing, Inc. as Ryan preps the #kconstruction #ae86 for Rallycross on Saturday and th…
-- **2019-09-12** — Sunday. Sunday. Sunday! #kcrscca #autocross in the #kckc #killercorolla #te51
+- **2019-08-06** — Happy 86 day from the #kconstruction #scca #rallycross #ae86!
+- **2019-08-18** — Church on Sunday #kcrscca
+- **2019-08-25** — Ian - half a day into this #kcrscca Rallycross event I'm running @ 3 second difference to wahoo racing for 1st in prepar…
 
 ### Enthusiast Take
 
@@ -481,18 +481,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Cars leave. Places close. People move on. One or two lines, genuine.*
 
+- **2019-08-06** — Happy 86 day from the #kconstruction #scca #rallycross #ae86!
 - **2020-08-07** — Happy late #86day from the #rx86 #ae86 . . . @bob_hindson_racing @wearekconstruction
 - **2020-12-30** — LOOKS LIKE WE MAAAADE IIIIT!  Happy Birthday you beautiful dragon.
-- **2023-12-15** — Over 400 Youtube subscribers! Let's celebrate... by doing a half assed valve adjustment!
 
 ### Punchy Single-Line Posts
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2019-09-03** — Droooool
-- **2019-09-11** — This'll be good.
-- **2019-09-12** — Sunday. Sunday. Sunday! #kcrscca #autocross in the #kckc #killercorolla #te51
-- **2019-09-13** — Freedom.
+- **2019-07-30** — Ian - I resemble this statement. #axrxfx
+- **2019-07-30** — Where do I sign?
+- **2019-08-06** — Happy 86 day from the #kconstruction #scca #rallycross #ae86!
+- **2019-08-10** — Hey! We know that duck!
 
 ### Storytelling / Sermon Mode
 
@@ -506,13 +506,13 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 800 posts:
+Top 25 hashtags across 825 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #rxfx | 68 |
 | #cars | 64 |
-| #rallycross | 48 |
+| #rallycross | 49 |
 | #dalesdragon | 39 |
 | #toyota | 34 |
 | #ra21 | 33 |
@@ -521,19 +521,19 @@ Top 25 hashtags across 800 posts:
 | #sccarallycross | 25 |
 | #diy | 25 |
 | #rxaw11 | 25 |
-| #scca | 23 |
+| #scca | 24 |
+| #kcrscca | 23 |
+| #ae86 | 22 |
 | #mgbgts | 22 |
 | #hondafit | 22 |
-| #kcrscca | 21 |
 | #mr2 | 20 |
-| #ae86 | 19 |
 | #fx16 | 19 |
 | #celica | 19 |
+| #bhrtribe | 16 |
 | #autocross | 16 |
 | #18rg | 16 |
 | #rx86 | 16 |
-| #bhrtribe | 15 |
 | #aw11 | 15 |
-| #ta22 | 13 |
+| #killercorolla | 13 |
 
 <!-- social-voice-stats:end -->
