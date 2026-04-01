@@ -54,9 +54,9 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-31 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-01 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 147 posts
+**Social post mentions:** 153 posts
 
 - **Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)
 - **Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)
@@ -112,9 +112,9 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-31 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-01 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 88 posts
+**Social post mentions:** 90 posts
 
 - **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
 - **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
@@ -151,7 +151,7 @@ Serious SCCA competitor. Lives in Manhattan, KS.
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-31 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-01 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 9 posts
 
@@ -199,9 +199,9 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-31 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-01 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 21 posts
+**Social post mentions:** 24 posts
 
 **Recent posts:**
 
@@ -230,7 +230,7 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-31 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-01 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 4 posts
 
@@ -287,7 +287,7 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 ### Social Post Arc
 
-*Auto-generated 2026-03-31 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-01 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 17 posts
 
