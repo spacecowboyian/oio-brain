@@ -3,10 +3,10 @@ title: Repo Structure Proposal — Cleaner Layout
 type: core
 status: draft
 owner: Ian Jennings
-updated: 2026-03-31
+updated: 2026-04-01
 tags: [repo, structure, proposal, governance]
 source_of_truth: false
-summary: Proposed cleaner repo structure to address fragmentation, redundant nesting, inconsistent naming, and scattered data. Not yet implemented. Review and approve before acting.
+summary: Proposed cleaner repo structure to address fragmentation, redundant nesting, inconsistent naming, and scattered data. Explicitly optimized for AI agent parsing. Not yet implemented. Review and approve before acting.
 ---
 
 # Repo Structure Proposal — Cleaner Layout
@@ -14,7 +14,44 @@ summary: Proposed cleaner repo structure to address fragmentation, redundant nes
 > **Status: DRAFT — Do not implement until approved by Ian.**
 > This is a proposal only. No files have been moved. All paths in the current repo still work.
 
-*Authored: 2026-03-31*
+*Authored: 2026-03-31 | Updated: 2026-04-01*
+
+---
+
+## AI Parsing Design
+
+This structure is explicitly designed for AI agents to navigate with minimum effort and maximum confidence. Every decision below maps to a specific AI-readability principle.
+
+### Principles Applied
+
+| Principle | What It Means | How This Structure Applies It |
+|---|---|---|
+| **Predictable paths** | An agent should be able to guess the path to any file without searching | `cars/{driver}/{car-slug}/overview.md` is always the car doc — no ambiguity |
+| **No spaces in paths** | Spaces require quoting or escaping in every tool call | All folders and files use kebab-case |
+| **No numeric prefixes** | `00-`, `01-` prefixes convey sort order, not semantics — agents ignore them | Folder names are pure semantic labels (`brand/`, `cars/`, `events/`) |
+| **Shallow nesting** | Every additional level is another hop for an agent to traverse | Max 3 levels deep for any content file |
+| **Flat domain folders at root** | Agents reading the root immediately know all top-level domains | Root lists: `brand/`, `cars/`, `content/`, `events/`, `production/`, `business/` |
+| **One source per concept** | Agents don't know which file to trust when two files cover the same thing | Consolidations below eliminate all duplicate docs |
+| **Driver → car ownership explicit in path** | An agent looking for a car should find the driver in the path itself | `cars/ian/mr2-goblin/`, `cars/ryan/ae86/` — owner is in the path, not just a README |
+| **Lowercase everything** | Case-sensitive filesystems + agents = silent misses | All folders and files are lowercase |
+| **Consistent file templates** | Agents processing car files should find the same fields every time | Every car folder has exactly: `overview.md`, `setup.md`, `mods.md`, `maintenance.md` |
+| **Structured data separated** | Agents processing JSON shouldn't scan markdown folders for it | All `.json` files live under `data/` only |
+| **Intake zones explicit** | Agents need to know where to watch for new inputs | All intake lives under `intake/` — agents watch one location |
+
+### What an Agent Can Infer Without Searching
+
+With this structure, an agent that knows nothing except the top-level layout can correctly predict:
+
+```
+"Where is Ian's MR2 car overview?"  →  cars/ian/mr2-goblin/overview.md
+"Where is the brand voice doc?"     →  brand/voice-and-tone.md
+"Where are the race results?"       →  events/results/
+"Where is the current state?"       →  active/current-state.md
+"Where is social post data?"        →  data/social-posts/
+"Is there a new file to process?"   →  intake/ (single location to check)
+```
+
+No path-guessing, no disambiguation, no asking which of two files is current.
 
 ---
 
@@ -98,41 +135,47 @@ The guiding principles:
 │   └── summaries/                   ← Was Summaries/ (daily video summaries, keep as-is)
 │
 ├── cars/                            ← Was OIO Brain/03 - Cars/
+│   │                                   Driver is in the PATH — no ambiguity about ownership
 │   ├── future-builds.md
-│   ├── ian/
-│   │   ├── README.md
-│   │   ├── mr2-goblin/              ← Was "1985 MR2" — nickname slug, no spaces
-│   │   │   ├── overview.md          ← Lowercase filenames
+│   │
+│   ├── ian/                         ← Ian Jennings — primary OIO driver
+│   │   ├── README.md                ← Ian's full fleet index
+│   │   ├── mr2-goblin/              ← 1985 Toyota MR2 AW11 "The Goblin" (was "1985 MR2")
+│   │   │   ├── overview.md
 │   │   │   ├── setup.md
 │   │   │   ├── mods.md
 │   │   │   └── maintenance.md
-│   │   ├── celica-dale/             ← Was "1972 Celica"
-│   │   ├── fit-fittycent/           ← Was "2009 Honda Fit"
-│   │   ├── cressida-nessie/         ← Was "1982 Cressida Wagon"
-│   │   ├── corolla-killer/          ← Was "1977 Corolla"
-│   │   ├── dauphine-geoffrey/       ← Was "1962 Dauphine"
-│   │   └── tundra/                  ← Was "2014 Tundra"
-│   ├── ryan/
+│   │   ├── celica-dale/             ← 1972 Toyota Celica "Dale"
+│   │   ├── fit-fittycent/           ← 2009 Honda Fit GE8 "Fitty Cent"
+│   │   ├── cressida-nessie/         ← 1982 Toyota Cressida Wagon "Nessie"
+│   │   ├── corolla-killer/          ← 1977 Toyota Corolla "Killer Corolla"
+│   │   ├── dauphine-geoffrey/       ← 1962 Renault Dauphine "Geoffrey"
+│   │   └── tundra/                  ← 2014 Toyota Tundra (daily/tow rig)
+│   │
+│   ├── ryan/                        ← Ryan Redenbaugh — co-driver / team member
 │   │   ├── README.md
-│   │   ├── ae86/                    ← Was "1985 AE86"
-│   │   ├── mgb-gt/                  ← Was "1973 MGB GT"
-│   │   └── camry/                   ← Was "2001 Camry"
-│   ├── keegan/
+│   │   ├── ae86/                    ← 1985 Toyota AE86 (V8 rallycross build)
+│   │   ├── mgb-gt/                  ← 1973 MGB GT
+│   │   └── camry/                   ← 2001 Toyota Camry
+│   │
+│   ├── keegan/                      ← Keegan — team member / congregation
 │   │   ├── README.md
-│   │   ├── tercel-81/               ← Was "1981 Tercel" (year suffix to disambiguate twins)
-│   │   ├── tercel-85/               ← Was "1985 Tercel"
-│   │   ├── prelude/                 ← Was "1982 Honda Prelude"
-│   │   ├── lumina-apv/              ← Was "1996 Lumina APV"
-│   │   ├── tundra/                  ← Was "2003 Tundra"
-│   │   └── lincoln/                 ← Was "1979 Lincoln Continental"
-│   ├── karen/
+│   │   ├── tercel-81/               ← 1981 Toyota Tercel (turbo 4A-G, orange)
+│   │   ├── tercel-85/               ← 1985 Toyota Tercel 4WD
+│   │   ├── prelude/                 ← 1982 Honda Prelude
+│   │   ├── lumina-apv/              ← 1996 Chevy Lumina APV "Dustbuster"
+│   │   ├── tundra/                  ← 2003 Toyota Tundra
+│   │   └── lincoln/                 ← 1979 Lincoln Continental
+│   │
+│   ├── karen/                       ← Karen — Ian's partner
 │   │   ├── README.md
-│   │   └── tootie/                  ← Was "1965 Suburban"
-│   └── richard/
+│   │   └── tootie/                  ← 1965 Chevrolet Suburban "Tootie"
+│   │
+│   └── richard/                     ← Richard — team member
 │       ├── README.md
-│       ├── st205/                   ← Was "ST205" (already no year — keep)
-│       ├── starlet/                 ← Was "1983 Starlet"
-│       └── miata/                   ← Was "2001 Miata"
+│       ├── st205/                   ← Toyota Celica GT-Four ST205
+│       ├── starlet/                 ← 1983 Toyota Starlet
+│       └── miata/                   ← 2001 Mazda Miata
 │
 ├── events/                          ← Was OIO Brain/04 - Events/
 │   ├── autocross.md
@@ -218,6 +261,22 @@ The guiding principles:
     ├── dailies/                     ← Was docdump/dailies/
     └── photos/                      ← Was picdump/
 ```
+
+---
+
+## Driver → Car Ownership Map
+
+An AI agent can derive this entirely from path structure without reading any file content:
+
+| Driver | Path Prefix | Cars |
+|---|---|---|
+| Ian Jennings | `cars/ian/` | mr2-goblin, celica-dale, fit-fittycent, cressida-nessie, corolla-killer, dauphine-geoffrey, tundra |
+| Ryan Redenbaugh | `cars/ryan/` | ae86, mgb-gt, camry |
+| Keegan | `cars/keegan/` | tercel-81, tercel-85, prelude, lumina-apv, tundra, lincoln |
+| Karen | `cars/karen/` | tootie |
+| Richard | `cars/richard/` | st205, starlet, miata |
+
+The driver is always the second path segment. `cars/ian/*` means Ian owns it. No README lookup required.
 
 ---
 
@@ -318,7 +377,7 @@ Each step should be a separate commit so it's easy to roll back.
 
 Before implementing, please confirm:
 
-1. **Car folder naming** — Nickname slug (`mr2-goblin`, `celica-dale`) vs year-model (`1985-mr2`, `1972-celica`)? Nicknames are more OIO-flavored but require knowing the nickname. Year-model is more discoverable for new team members.
+1. ~~**Car folder naming**~~ ✅ Confirmed — cars organized under driver/owner paths (`cars/ian/`, `cars/ryan/`, etc.) with nickname slugs (`mr2-goblin`, `celica-dale`).
 2. **Sponsorship docs** — Should `brand/sponsorship-pitch.md` and `business/sponsorship-leads.md` be fully merged or stay separate (pitch = brand asset, leads = working CRM)?
 3. **`OIO Brain/07 - Admin/Backlog/`** — Move story cards to `active/open-loops.md` or give them their own `ops/backlog.md`?
 4. **`OIO-Master-Brief.md`** — Archive into `core/archive/` or keep at root as a historical reference? It's read-only but useful for context.
