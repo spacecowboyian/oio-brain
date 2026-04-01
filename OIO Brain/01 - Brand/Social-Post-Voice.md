@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-01 from 750 posts (750 Facebook, 0 Instagram) covering 2019-10-17 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-01 from 775 posts (775 Facebook, 0 Instagram) covering 2019-09-21 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 297 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 153 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 304 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 161 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 36 | 'Our Hudson', 'errbody in the pool' |
@@ -423,8 +423,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 57 |
-| Build Update | 43 |
-| Event Recap | 189 |
+| Build Update | 46 |
+| Event Recap | 202 |
 | Event Hype | 21 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
@@ -448,9 +448,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Photo-first. Caption captures progress without over-describing.*
 
-- **2020-04-03** — Here’s Keegan’s #7age #tercel doing an easyish pull. Still on breakin after the new high compression rebuild but the sou…
-- **2021-10-11** — Ian here. Presenting the 2021 Lake Garnett Grand Prix Revival as seen from my #rxfx in group B1, afternoon session. Lots…
-- **2022-10-06** — Dale update: Road to Lake Garnett Grand Prix Revival.  Clutch was finally repaired and I decided to replace the oil pan…
+- **2019-09-30** — Lots of cool stuff happening in the RTR stable. Richard is getting ready to install the ported, polished, higher compres…
+- **2019-10-03** — This month is fixin to be BUSY. Here's what we have on the calendar at the moment:  10/6: Autocross in Topeka 10/13: Lak…
+- **2019-10-14** — Ian - A beautiful day for a track event yesterday in Garnett, KS at the Lake Garnett Grand Prix Revival. Had a great tim…
 
 ### Event Hype / Trash Talk
 
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2019-10-19** — Church on Saturday. #sccarallycross #rxfx #fx16
-- **2019-10-20** — 2 days. 40+ runs. 2 class wins and 2 seconds for that little silver toyota! :) #rxfx #sccarallycross #kcrscca
-- **2019-10-20** — Church on Sunday #sccarallycross
+- **2019-09-21** — We got a bit dirty today. #rallycrossnationals
+- **2019-09-22** — #rallycrossnationals update.  After a muddy morning and a missed gate in the afternoon session yesterday Ryan is set to…
+- **2019-09-23** — Ian's slowest run from a muddy weekend at #rallycrossnationals in the #unsponsored #rxfx #ae82 #fx16. The @maxsporttires…
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2019-10-17** — It finally happened!!!
-- **2019-10-19** — Church on Saturday. #sccarallycross #rxfx #fx16
-- **2019-10-20** — Church on Sunday #sccarallycross
-- **2019-10-21** — I want my 4ag to sound like this.
+- **2019-09-21** — I don't.. feel.. safe.
+- **2019-09-21** — We got a bit dirty today. #rallycrossnationals
+- **2019-09-24** — Ryan absolutely shredding in the #ae86.  Pic: GotCone.com  http://www.gotcone.com/photos/2019-rallycross/2019-scca-dirtf…
+- **2019-09-24** — These pics really capture the weekend perfectly. Awesome stuff.
 
 ### Storytelling / Sermon Mode
 
@@ -506,13 +506,13 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 750 posts:
+Top 25 hashtags across 775 posts:
 
 | Hashtag | Uses |
 |---|---|
+| #rxfx | 64 |
 | #cars | 64 |
-| #rxfx | 57 |
-| #rallycross | 47 |
+| #rallycross | 48 |
 | #dalesdragon | 39 |
 | #toyota | 34 |
 | #ra21 | 33 |
@@ -521,19 +521,19 @@ Top 25 hashtags across 750 posts:
 | #sccarallycross | 25 |
 | #diy | 25 |
 | #rxaw11 | 25 |
+| #scca | 23 |
 | #mgbgts | 22 |
-| #scca | 22 |
 | #hondafit | 22 |
 | #mr2 | 20 |
+| #fx16 | 19 |
 | #celica | 19 |
-| #fx16 | 16 |
+| #ae86 | 16 |
 | #kcrscca | 16 |
 | #18rg | 16 |
 | #rx86 | 16 |
 | #aw11 | 15 |
-| #ae86 | 14 |
+| #bhrtribe | 13 |
 | #ta22 | 13 |
 | #autocross | 13 |
-| #bhrtribe | 12 |
 
 <!-- social-voice-stats:end -->
