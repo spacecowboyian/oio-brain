@@ -227,13 +227,41 @@ SLACK_CHANNEL_ID=C...             # Notification channel
 
 #### A. Catalog Maintenance ✅
 - `CATALOG-MAINTENANCE.md` created with monitoring procedures
+- Photo filing monitoring via `.github/workflows/monitor-social-pipeline.yml` ✓
 - Photo catalogs synchronized ✓
 - Video catalogs synchronized ✓
 - picdump queue cleaned ✓
 - PHOTO-INDEX.md current ✓
 - OIO-Video-Catalog.md current ✓
 
-#### B. GitHub Secrets Setup ⏳
+#### B. Caption Quality Monitoring ✅
+- `caption_metrics_logger.py` — Event logging for generation, selection, feedback
+- `analyze_caption_metrics.py` — Automated metrics analysis and alerts
+- `update_caption_dashboard.py` — Dashboard updates with latest KPIs
+- `.github/workflows/analyze-caption-metrics.yml` — Daily analysis and reporting
+- `CAPTION-MONITORING.md` — Complete monitoring dashboard with KPIs and troubleshooting
+
+**Tracks:**
+- Caption generation requests, completions, failures
+- Selection rates (which captions are actually used)
+- User feedback (positive/negative/revision needed)
+- Performance metrics (generation time, success rate)
+- Platform usage breakdown
+- Context source effectiveness
+
+**Enables:**
+- Real-time quality monitoring
+- Automated alerts when metrics decline
+- Weekly summary reports for AI Copywriter
+- Data-driven prompt refinement decisions
+
+#### C. Photo Pipeline Monitoring ✅
+- `.github/workflows/monitor-social-pipeline.yml` — Post-filing notifications
+- HIGH PRIORITY: Unfiled photos needing manual review
+- MEDIUM PRIORITY: 6-hour draft age checks
+- LOW PRIORITY: Daily pipeline statistics
+
+#### D. GitHub Secrets Setup ⏳
 **Status:** Awaiting manual configuration
 
 **Required Secrets for Social Post Indexing:**
@@ -247,22 +275,26 @@ META_INSTAGRAM_ACCOUNT_ID   # Numeric account ID
 
 **Impact:** Once configured, enables automatic fetching of past social posts for voice/tone reference
 
-#### C. Testing & Validation ⏳
+#### E. Testing & Validation ⏳
 **Ready for Testing:**
 - Slackbot local setup (Socket Mode)
 - PostBridge API client
 - Caption generation service
 - Photo filing agent (with refined prompts)
+- Caption metrics logger integration
 
 **Pending:**
 - Full end-to-end test (photo → caption → draft → post)
 - Slackbot production deployment to Railway
 - Real photo filing with AI agent
+- Metrics integration with Slackbot commands
 
-#### D. Documentation ✅
+#### F. Documentation ✅
 - SLACKBOT_SETUP.md (complete)
 - POSTBRIDGE_INTEGRATION.md (complete)
 - CATALOG-MAINTENANCE.md (complete)
+- CAPTION-MONITORING.md (complete)
+- SOCIAL-MEDIA-ENGINEERING.md (this file)
 - All components documented
 
 ---
@@ -276,6 +308,8 @@ META_INSTAGRAM_ACCOUNT_ID   # Numeric account ID
 | Captions | `scripts/caption_generation_service.py` | ✅ Complete |
 | PostBridge | `scripts/postbridge_client.py`, `POSTBRIDGE_INTEGRATION.md` | ✅ Complete |
 | Slackbot | `scripts/slackbot_social_media.py`, `SLACKBOT_SETUP.md`, `Dockerfile`, `railway.json`, `.env.example` | ✅ Complete |
+| Caption Monitoring | `scripts/caption_metrics_logger.py`, `scripts/analyze_caption_metrics.py`, `scripts/update_caption_dashboard.py`, `.github/workflows/analyze-caption-metrics.yml`, `CAPTION-MONITORING.md` | ✅ Complete |
+| Photo Pipeline Monitoring | `.github/workflows/monitor-social-pipeline.yml` | ✅ Complete |
 | Maintenance | `CATALOG-MAINTENANCE.md`, `SOCIAL-MEDIA-ENGINEERING.md` | ✅ Complete |
 | Photo Index | `PHOTO-INDEX.md`, `photos/` directory structure | ✅ Complete |
 | Video Index | `OIO-Video-Catalog.md`, `OIO Brain/02 - Content/Published-Videos.md` | ✅ Current |
@@ -342,12 +376,19 @@ META_INSTAGRAM_ACCOUNT_ID   # Numeric account ID
 ✅ All infrastructure built and documented  
 ✅ All code tested and working  
 ✅ Photo and video catalogs synchronized  
+✅ Photo pipeline monitoring (unfiled photo alerts)  
+✅ Caption quality monitoring dashboard (with KPIs and alerts)  
 ✅ Slackbot ready to deploy to Railway  
 ✅ Complete setup guides available  
 
 ---
 
 ## What Needs Action
+
+⏳ **Slackbot Integration with Metrics Logger**
+- Update `scripts/slackbot_social_media.py` to log `/caption` requests and selections
+- Add `/feedback` command to capture user feedback
+- Connect Slackbot to CaptionMetricsLogger
 
 ⏳ **GitHub Secrets** (blocking social post indexing automation)
 - Need: META_ACCESS_TOKEN, META_FACEBOOK_PAGE_ID, META_INSTAGRAM_ACCOUNT_ID
@@ -357,10 +398,16 @@ META_INSTAGRAM_ACCOUNT_ID   # Numeric account ID
 - Current: Basic prompt working, filing at 80% confidence threshold
 - Needed: Refined prompts, few-shot examples, confidence adjustment
 
+⏳ **Auto-Scheduling for Optimal Post Times**
+- Next Phase 6 component: analyze historical engagement
+- Determine best posting times per platform
+- Automate scheduling via PostBridge
+
 ⏳ **End-to-End Testing**
 - Test full pipeline: photo → caption → draft → post
 - Verify Slackbot command flow
 - Validate PostBridge integration
+- Test metrics logging and reporting
 
 ⏳ **Slackbot Deployment**
 - Deploy to Railway when ready
