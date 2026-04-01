@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-01 from 775 posts (775 Facebook, 0 Instagram) covering 2019-09-21 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-01 from 800 posts (800 Facebook, 0 Instagram) covering 2019-09-03 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,11 +409,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 304 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 161 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 315 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 168 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
-| Community Voice | 36 | 'Our Hudson', 'errbody in the pool' |
+| Community Voice | 37 | 'Our Hudson', 'errbody in the pool' |
 | Self-Deprecating | 4 | Ian is wrong, underpowered, or bedazzled |
 
 ---
@@ -424,12 +424,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 46 |
-| Event Recap | 202 |
-| Event Hype | 21 |
+| Event Recap | 214 |
+| Event Hype | 22 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
 | Farewell / Milestone | 16 |
-| Community Celebration | 9 |
+| Community Celebration | 10 |
 | Acquisition | 6 |
 
 ---
@@ -456,18 +456,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2019-09-10** — Race day is looming at Bob Hindson Racing, Inc. as Ryan preps the #kconstruction #ae86 for Rallycross on Saturday and th…
 - **2020-07-26** — Ryan is ready to shred in Wichita. Tomorrow... we race! #sccarallycross #rx86 #bhrtribe
 - **2023-04-13** — #rxaw11 has new properly sized rod bearings and is ready to rip again. Hopefully we get to rallycross on Sunday because…
-- **2023-08-16** — Ryan here! Today on the MGB GTS got the bar measured and cut. Cut out the shock mounts as well.  Had to shape the bar to…
 - **2024-04-15** — Now editing… FIT OFF!!! A generational battle for Honda Fit autocross supremacy! GD vs GE vs GK. Tune in Friday 4/19 to…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2019-09-21** — We got a bit dirty today. #rallycrossnationals
-- **2019-09-22** — #rallycrossnationals update.  After a muddy morning and a missed gate in the afternoon session yesterday Ryan is set to…
-- **2019-09-23** — Ian's slowest run from a muddy weekend at #rallycrossnationals in the #unsponsored #rxfx #ae82 #fx16. The @maxsporttires…
+- **2019-09-09** — New to me @schrothracing Rallye 4 harness for the #rxfx aka #axrxfx on the road to the #sccarallycrossnationals
+- **2019-09-10** — Race day is looming at Bob Hindson Racing, Inc. as Ryan preps the #kconstruction #ae86 for Rallycross on Saturday and th…
+- **2019-09-12** — Sunday. Sunday. Sunday! #kcrscca #autocross in the #kckc #killercorolla #te51
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2019-09-21** — I don't.. feel.. safe.
-- **2019-09-21** — We got a bit dirty today. #rallycrossnationals
-- **2019-09-24** — Ryan absolutely shredding in the #ae86.  Pic: GotCone.com  http://www.gotcone.com/photos/2019-rallycross/2019-scca-dirtf…
-- **2019-09-24** — These pics really capture the weekend perfectly. Awesome stuff.
+- **2019-09-03** — Droooool
+- **2019-09-11** — This'll be good.
+- **2019-09-12** — Sunday. Sunday. Sunday! #kcrscca #autocross in the #kckc #killercorolla #te51
+- **2019-09-13** — Freedom.
 
 ### Storytelling / Sermon Mode
 
@@ -506,11 +506,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 775 posts:
+Top 25 hashtags across 800 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #rxfx | 64 |
+| #rxfx | 68 |
 | #cars | 64 |
 | #rallycross | 48 |
 | #dalesdragon | 39 |
@@ -524,16 +524,16 @@ Top 25 hashtags across 775 posts:
 | #scca | 23 |
 | #mgbgts | 22 |
 | #hondafit | 22 |
+| #kcrscca | 21 |
 | #mr2 | 20 |
+| #ae86 | 19 |
 | #fx16 | 19 |
 | #celica | 19 |
-| #ae86 | 16 |
-| #kcrscca | 16 |
+| #autocross | 16 |
 | #18rg | 16 |
 | #rx86 | 16 |
+| #bhrtribe | 15 |
 | #aw11 | 15 |
-| #bhrtribe | 13 |
 | #ta22 | 13 |
-| #autocross | 13 |
 
 <!-- social-voice-stats:end -->
