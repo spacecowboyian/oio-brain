@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-01 from 700 posts (700 Facebook, 0 Instagram) covering 2020-01-24 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-01 from 725 posts (725 Facebook, 0 Instagram) covering 2019-11-13 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 268 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 143 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 280 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 147 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 36 | 'Our Hudson', 'errbody in the pool' |
@@ -422,9 +422,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 56 |
+| Video Tease | 57 |
 | Build Update | 43 |
-| Event Recap | 175 |
+| Event Recap | 181 |
 | Event Hype | 21 |
 | Trash Talk | 9 |
 | Enthusiast Take | 13 |
@@ -440,9 +440,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Short hook, 'link in the comments' closer, never explains too much.*
 
+- **2019-11-27** — Come join us! Truck motor with every performance part available you can think of. Rear wheel drive with solid rear axle…
 - **2023-01-26** — https://www.youtube.com/watch?v=M9mDzgLDivo  New video is out! Spend a bit of your lunch with Ian and let him tell you a…
 - **2023-02-03** — New (old) video posted today of the #rxfx hustling it’s way around the Lake Garnett Grand Prix Revival in 2021 https://y…
-- **2023-02-10** — New video drops at 6am CST tomorrow! https://www.youtube.com/watch?v=dIjBelkt6gs
 
 ### Build Update
 
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2020-01-24** — KC Region rallycross schedule is out!
-- **2020-01-31** — Its a true pleasure to race along side SCCA RallyCross TripleCross winner... and champion hot dog griller.. Mr. Mark Hil…
-- **2020-02-09** — From a door... to a thing that looks a whole lot like a door but weighs 26lbs less. Modified class baby! #sccarx #rallyc…
+- **2019-11-16** — Richard shows us how to lose 50lb and keep it off! #hatchless #lexan #sccarallycross #modall #4agetercel #4wdtercel
+- **2019-11-19** — How we feel just thinking about rallycross this Sunday in Carbondale KS. RTR will be there with at least 3 cars. The #AE…
+- **2019-11-23** — #ae86 #4wdtercel and the #rxfx are loaded fer bear. Ready for #ksrscca/#kcrscca #rallycross tomorrow in Carbondale, KS!
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2020-01-24** — KC Region rallycross schedule is out!
-- **2020-01-24** — Shoulda put on the rally tires. #misseditbythatmuch
-- **2020-01-28** — It always starts with a Toyota :)
-- **2020-01-29** — He's out there somewhere... all alone. #haveyouseenhim
+- **2019-11-13** — We call this... "practice".
+- **2019-11-22** — The best on the land or in the air.
+- **2019-12-04** — 🤤
+- **2019-12-05** — Well played.
 
 ### Storytelling / Sermon Mode
 
@@ -506,16 +506,16 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 700 posts:
+Top 25 hashtags across 725 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 64 |
-| #rxfx | 48 |
-| #rallycross | 43 |
+| #rxfx | 50 |
+| #rallycross | 45 |
 | #dalesdragon | 39 |
+| #toyota | 33 |
 | #ra21 | 33 |
-| #toyota | 32 |
 | #racing | 32 |
 | #fitgang | 31 |
 | #diy | 25 |
@@ -523,17 +523,17 @@ Top 25 hashtags across 700 posts:
 | #mgbgts | 22 |
 | #scca | 22 |
 | #hondafit | 22 |
-| #sccarallycross | 20 |
+| #sccarallycross | 21 |
 | #mr2 | 20 |
 | #celica | 19 |
 | #18rg | 16 |
 | #rx86 | 16 |
 | #aw11 | 15 |
 | #fx16 | 14 |
+| #kcrscca | 13 |
 | #ta22 | 13 |
 | #autocross | 13 |
-| #kcrscca | 12 |
 | #vintageracing | 12 |
-| #bhrtribe | 10 |
+| #ae86 | 11 |
 
 <!-- social-voice-stats:end -->
