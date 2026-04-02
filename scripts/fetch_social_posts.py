@@ -24,11 +24,11 @@ Batching strategy:
   only forward sync runs (near-zero API cost).
 
 Saves each post to:
-  OIO Brain/data/social-posts/facebook/YYYY-MM-DD_slug.md
-  OIO Brain/data/social-posts/instagram/YYYY-MM-DD_slug.md
+  data/social-posts/facebook/YYYY-MM-DD_slug.md
+  data/social-posts/instagram/YYYY-MM-DD_slug.md
 
 Pagination state is stored in:
-  OIO Brain/data/social-posts/sync-state.json
+  data/social-posts/sync-state.json
 """
 
 import argparse
@@ -51,7 +51,7 @@ META_BASE_URL = f"https://graph.facebook.com/{META_API_VERSION}"
 
 RATE_LIMIT_SECONDS = 0.5  # pause between API calls — well under Meta's 200 req/hr limit
 
-SOCIAL_POSTS_DIR = os.path.join(os.path.dirname(__file__), "..", "OIO Brain", "data", "social-posts")
+SOCIAL_POSTS_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "social-posts")
 STATE_FILE = os.path.join(SOCIAL_POSTS_DIR, "sync-state.json")
 
 

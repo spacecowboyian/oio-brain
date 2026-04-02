@@ -64,7 +64,7 @@ POSTBRIDGE_API_KEY = os.environ.get("POSTBRIDGE_API_KEY", "")
 CAPTION_SERVICE_URL = os.environ.get("CAPTION_SERVICE_URL", "http://localhost:5000")
 
 # Paths
-PICDUMP_DIR = Path(__file__).parent.parent / "picdump"
+PICDUMP_DIR = Path(__file__).parent.parent / "intake" / "photos"
 
 # Initialize Slack app
 app = App(token=SLACK_BOT_TOKEN)
@@ -79,7 +79,7 @@ metrics_logger = CaptionMetricsLogger()
 
 def list_local_photos(filter_term: Optional[str] = None, limit: int = 20) -> List[Dict[str, Any]]:
     """
-    List photos from picdump directory.
+    List photos from intake/photos directory.
 
     Args:
         filter_term: Optional filter (e.g., "recent", date, or keyword)
@@ -93,7 +93,7 @@ def list_local_photos(filter_term: Optional[str] = None, limit: int = 20) -> Lis
 
     photos = []
 
-    # Get all image files from picdump
+    # Get all image files from intake/photos
     image_extensions = {".jpg", ".jpeg", ".png", ".heic", ".webp"}
     for photo_path in PICDUMP_DIR.iterdir():
         if photo_path.is_file() and photo_path.suffix.lower() in image_extensions:
@@ -137,7 +137,7 @@ def format_photos_message(photos: List[Dict[str, Any]]) -> str:
         Formatted Slack message string
     """
     if not photos:
-        return "No photos found. Upload photos to the `picdump/` directory or sync from Google Photos."
+        return "No photos found. Upload photos to the `intake/photos/` directory or sync from Google Photos."
 
     lines = [f"*Found {len(photos)} photo(s):*\n"]
 

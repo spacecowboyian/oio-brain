@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - 'OIO Brain/02 - Content/Video Scripts/*/transcript.md'
+      - 'transcripts/*/transcript.md'
 
   # Manual trigger - allows board to run it anytime
   workflow_dispatch:
@@ -53,7 +53,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "OIO Brain/02 - Content/Video Scripts/*/clean-script.md"
+          git add "transcripts/*/clean-script.md"
           if git diff --cached --quiet; then
             echo "No new clean scripts to commit."
           else

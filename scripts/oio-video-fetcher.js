@@ -4,12 +4,12 @@
 // Requires environment variable: YOUTUBE_API_KEY
 //
 // Behavior:
-//   - Reads the existing master video JSON from OIO Brain/02 - Content/oio-videos-master.json
+//   - Reads the existing master video JSON from content/oio-videos-master.json
 //   - Fetches all current video IDs from the YouTube uploads playlist
 //   - Detects new videos not yet in the master and fetches their full details
 //   - Refreshes view/like/comment counts for all existing videos
 //   - Saves the full updated master back in place
-//   - If new videos were found, writes them to docdump/oio_videos_raw.json
+//   - If new videos were found, writes them to intake/docs/oio_videos_raw.json
 //     so the Copilot agent can process just the delta into the brain files
 
 const https = require('https');
@@ -20,8 +20,8 @@ const API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_ID = 'UCA6AlnPQNu5u3Clq_hEmBKQ'; // retained for reference; playlist ID is derived from this
 const UPLOADS_PLAYLIST = 'UUA6AlnPQNu5u3Clq_hEmBKQ';
 
-const MASTER_FILE = path.join(__dirname, '..', 'OIO Brain', '02 - Content', 'oio-videos-master.json');
-const DOCDUMP_FILE = path.join(__dirname, '..', 'docdump', 'oio_videos_raw.json');
+const MASTER_FILE = path.join(__dirname, '..', 'content', 'oio-videos-master.json');
+const DOCDUMP_FILE = path.join(__dirname, '..', 'intake', 'docs', 'oio_videos_raw.json');
 
 if (!API_KEY) {
   console.error('Error: YOUTUBE_API_KEY environment variable is not set.');

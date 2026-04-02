@@ -43,10 +43,10 @@ class PostScheduler:
         self.dry_run = dry_run
         self.client = PostBridgeClient(api_key=self.api_key) if self.api_key else None
         self.schedule_file = (
-            Path(__file__).parent.parent / "OIO Brain" / "data" / "optimal-posting-schedule.json"
+            Path(__file__).parent.parent / "data" / "optimal-posting-schedule.json"
         )
         self.scheduling_log = (
-            Path(__file__).parent.parent / "OIO Brain" / "data" / "post-scheduling-log.jsonl"
+            Path(__file__).parent.parent / "data" / "post-scheduling-log.jsonl"
         )
 
     def schedule_posts(self) -> Dict:

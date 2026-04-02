@@ -2,7 +2,7 @@
 """
 OIO Racing - Google Photos Album Sync
 
-Downloads photos from a public Google Photos album to picdump/.
+Downloads photos from a public Google Photos album to intake/photos/.
 Tracks downloaded photos to avoid duplicates.
 
 Usage:
@@ -11,7 +11,7 @@ Usage:
 The script maintains a state file (.github/sync-state/google-photos.json) to track which
 photos have already been downloaded by their URL hash.
 
-When new photos are found, they are downloaded to picdump/ and the state
+When new photos are found, they are downloaded to intake/photos/ and the state
 file is updated. The GitHub Action will then commit these files, triggering
 the photo processing workflow.
 """
@@ -41,7 +41,7 @@ except ImportError:
     raise
 
 
-PICDUMP_DIR = os.path.join(os.path.dirname(__file__), "..", "picdump")
+PICDUMP_DIR = os.path.join(os.path.dirname(__file__), "..", "intake", "photos")
 SYNC_STATE_DIR = os.path.join(os.path.dirname(__file__), "..", ".github", "sync-state")
 STATE_FILE = os.path.join(SYNC_STATE_DIR, "google-photos.json")
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
@@ -199,7 +199,7 @@ def download_photo(photo_url, filename, output_dir):
 
 def sync_album(album_url):
     """
-    Sync photos from a public Google Photos album to picdump/.
+    Sync photos from a public Google Photos album to intake/photos/.
     Returns the number of new photos downloaded.
     """
     print(f"Fetching album: {album_url}")
@@ -256,7 +256,7 @@ def sync_album(album_url):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Sync photos from a public Google Photos album to picdump/."
+        description="Sync photos from a public Google Photos album to intake/photos/."
     )
     parser.add_argument(
         "--album-url",

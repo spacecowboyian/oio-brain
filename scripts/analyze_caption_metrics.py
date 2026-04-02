@@ -25,7 +25,7 @@ class CaptionMetricsAnalyzer:
     def __init__(self, metrics_dir: Optional[Path] = None):
         """Initialize analyzer."""
         if metrics_dir is None:
-            metrics_dir = Path(__file__).parent.parent / "OIO Brain" / "data" / "caption-metrics"
+            metrics_dir = Path(__file__).parent.parent / "data" / "caption-metrics"
         self.metrics_dir = metrics_dir
         self.events_file = self.metrics_dir / "events.jsonl"
         self.metrics_dir.mkdir(parents=True, exist_ok=True)

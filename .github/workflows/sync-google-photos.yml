@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "OIO Photo Sync Bot"
           git config user.email "bot@oioracing.local"
-          git add picdump/
+          git add intake/photos/
           if git diff --cached --quiet; then
             echo "No new photos to commit."
           else
@@ -49,7 +49,7 @@ jobs:
             git commit -m "chore: sync ${NEW_COUNT} photo(s) from Google Photos [skip ci]
 
 Synced from OIO Racing Google Photos album.
-Photos will be processed by the picdump workflow.
+Photos will be processed by the intake/photos workflow.
 
 Co-Authored-By: Paperclip <noreply@paperclip.ing>"
             git push

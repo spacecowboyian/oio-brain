@@ -64,11 +64,11 @@ PAPERCLIP_API_KEY = os.environ.get("PAPERCLIP_API_KEY", "")
 PAPERCLIP_COMPANY_ID = os.environ.get("PAPERCLIP_COMPANY_ID", "")
 
 # OIO Brain paths
-BRAIN_ROOT = Path(__file__).parent.parent / "OIO Brain"
-BRAND_VOICE_PATH = BRAIN_ROOT / "01 - Brand" / "Voice-and-Tone.md"
-BRAND_VOICE_GUIDE_PATH = BRAIN_ROOT / "02 - Content" / "OIO-Brand-Voice-Guide.md"
-CARS_PATH = BRAIN_ROOT / "03 - Cars"
-CONTENT_PATH = BRAIN_ROOT / "02 - Content"
+BRAIN_ROOT = Path(__file__).parent.parent
+BRAND_VOICE_PATH = BRAIN_ROOT / "brand" / "voice-and-tone.md"
+BRAND_VOICE_GUIDE_PATH = BRAIN_ROOT / "content" / "brand-voice-social.md"
+CARS_PATH = BRAIN_ROOT / "cars"
+CONTENT_PATH = BRAIN_ROOT / "content"
 
 # Flask app
 app = Flask(__name__)
@@ -145,7 +145,7 @@ def query_oio_brain_context(user_context: str) -> Dict[str, Any]:
 
     # Search for recent race event summaries
     if CONTENT_PATH.exists():
-        summaries_path = CONTENT_PATH / "Summaries"
+        summaries_path = CONTENT_PATH / "summaries"
         if summaries_path.exists():
             # Get most recent 3 summaries
             summary_files = sorted(summaries_path.glob("*.md"), reverse=True)[:3]

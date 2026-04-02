@@ -119,7 +119,7 @@ Once deployed, update slash command URLs in Slack to use Railway URL:
 ## Available Commands
 
 ### `/photos list [filter]`
-Browse recently synced photos from picdump.
+Browse recently synced photos from intake/photos.
 
 **Example:**
 ```

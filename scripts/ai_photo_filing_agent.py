@@ -2,7 +2,7 @@
 """
 OIO Racing - AI Photo Filing Agent
 
-Analyzes photos from picdump/ using Claude Vision API to identify:
+Analyzes photos from intake/photos/ using Claude Vision API to identify:
 - Which car is in the photo
 - Which driver owns it
 - What event/context
@@ -36,12 +36,12 @@ except ImportError:
 
 # Paths
 REPO_ROOT = Path(__file__).parent.parent
-PICDUMP_DIR = REPO_ROOT / "picdump"
+PICDUMP_DIR = REPO_ROOT / "intake" / "photos"
 PHOTOS_DIR = REPO_ROOT / "photos"
-OIO_BRAIN_DIR = REPO_ROOT / "OIO Brain"
+OIO_BRAIN_DIR = REPO_ROOT
 PHOTO_INDEX_FILE = REPO_ROOT / "PHOTO-INDEX.md"
-CARS_DIR = OIO_BRAIN_DIR / "03 - Cars"
-TEAM_BIOS_FILE = OIO_BRAIN_DIR / "01 - Brand" / "Team-Bios.md"
+CARS_DIR = REPO_ROOT / "cars"
+TEAM_BIOS_FILE = REPO_ROOT / "brand" / "team-bios.md"
 
 
 # ---------------------------------------------------------------------------
@@ -244,7 +244,7 @@ def file_photo(driver, car, source_path, analysis_result):
 
     try:
         # Create target directory
-        target_dir = PHOTOS_DIR / driver / car.replace(" ", "-")
+        target_dir = PHOTOS_DIR / driver.lower() / car.replace(" ", "-")
         target_dir.mkdir(parents=True, exist_ok=True)
 
         # Move file
@@ -329,10 +329,10 @@ def process_picdump():
     image_files = [f for f in image_files if f.suffix.lower() in [".jpg", ".jpeg", ".png", ".heic", ".webp"]]
 
     if not image_files:
-        print("No image files found in picdump/")
+        print("No image files found in intake/photos/")
         return 0
 
-    print(f"Found {len(image_files)} image(s) in picdump/\n")
+    print(f"Found {len(image_files)} image(s) in intake/photos/\n")
 
     # Initialize Anthropic client
     client = Anthropic()
