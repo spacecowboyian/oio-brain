@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-01 from 925 posts (925 Facebook, 0 Instagram) covering 2019-04-19 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-02 from 950 posts (950 Facebook, 0 Instagram) covering 2019-03-16 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 373 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 194 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 387 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 197 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 37 | 'Our Hudson', 'errbody in the pool' |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 46 |
-| Event Recap | 253 |
+| Event Recap | 261 |
 | Event Hype | 23 |
 | Trash Talk | 9 |
 | Enthusiast Take | 16 |
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2019-04-21** — In the battle of 86 vs 86.. there can be only one winner. Ryan let Brian have a go at the K-Construction AE86 today at t…
-- **2019-04-21** — This guy... Just had BOTH HIS FRIGGIN LUNGS REPLACED! What an absolute boss. Looking forward to hearing you yelling as l…
-- **2019-04-23** — ... in which. Ryan goes rallycrossing for the first time in 2019 in the K-Construction #ae86 and learns he needs to tigh…
+- **2019-04-01** — Since we didn't get to rallycross in Kansas City today I did something a little... Different. #axrxfx
+- **2019-04-03** — Born sideways. #rally #rallycross #wrc #scca
+- **2019-04-06** — Loaded fer bear. Tomorrow we pretend to race. #axrxfx #kcrscca #autocross #testandtune #scca #funwithcars
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2019-04-19** — #ae86 rear bumper weight reduction. Job done. No tutorial required.
-- **2019-04-19** — I'd like to sign this fella up.
-- **2019-04-19** — ... in which. Ian finds a hole in his pipe. #axrxfx
-- **2019-04-25** — Mark X... we hardly knew ye.
+- **2019-03-18** — I love this crazy livery.
+- **2019-03-19** — Want.
+- **2019-03-20** — The #axrxfx has gone to summer tires. Expect ice.
+- **2019-03-23** — It demands a German heart!
 
 ### Storytelling / Sermon Mode
 
@@ -506,32 +506,32 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 925 posts:
+Top 25 hashtags across 950 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #rxfx | 68 |
+| #rallycross | 64 |
 | #cars | 64 |
-| #rallycross | 63 |
+| #ae86 | 40 |
 | #dalesdragon | 39 |
-| #ae86 | 38 |
 | #toyota | 37 |
+| #axrxfx | 36 |
 | #ra21 | 34 |
+| #scca | 32 |
 | #racing | 32 |
 | #fitgang | 31 |
-| #scca | 30 |
-| #axrxfx | 29 |
+| #kcrscca | 28 |
 | #sccarallycross | 25 |
 | #diy | 25 |
 | #rxaw11 | 25 |
-| #kcrscca | 24 |
 | #mgbgts | 22 |
 | #hondafit | 22 |
 | #fx16 | 20 |
 | #mr2 | 20 |
+| #autocross | 19 |
 | #celica | 19 |
 | #bhrtribe | 18 |
-| #autocross | 17 |
 | #kconstruction | 16 |
 | #18rg | 16 |
 | #rx86 | 16 |

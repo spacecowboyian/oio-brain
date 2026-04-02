@@ -87,7 +87,7 @@ Ryan began running the MGB GT at KCRSCCA rallycross in 2024, in class MR (Mid-si
 
 ## Social Post Arc
 
-*Auto-generated 2026-04-01 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-02 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Posts mentioning this car:** 46 posts
 
