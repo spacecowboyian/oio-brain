@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-02 from 1025 posts (1025 Facebook, 0 Instagram) covering 2019-01-18 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-02 from 1050 posts (1050 Facebook, 0 Instagram) covering 2018-11-29 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,7 +409,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 424 | Single line. Sometimes one word. 'Approved.' |
+| Punchy / Short | 434 | Single line. Sometimes one word. 'Approved.' |
 | Hashtag-Heavy | 203 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
@@ -424,8 +424,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 51 |
-| Event Recap | 270 |
-| Event Hype | 24 |
+| Event Recap | 273 |
+| Event Hype | 25 |
 | Trash Talk | 9 |
 | Enthusiast Take | 16 |
 | Farewell / Milestone | 20 |
@@ -456,18 +456,18 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2018-12-12** — Barring a few minor hitches the RTR Racing Crapcan Challenge Celica is ready to roll for KS Region Final Destination Ral…
 - **2019-01-26** — Oh... SuperPro Europe follows us now.. we didn't notice at all :)  New #axrxfx video all about bushings coming next week…
 - **2019-04-27** — Happy race day eve! The #kconstruction #ae86 and the #axrxfx are ready to roll out to the Unnaturally Aspirated Spring R…
-- **2019-09-10** — Race day is looming at Bob Hindson Racing, Inc. as Ryan preps the #kconstruction #ae86 for Rallycross on Saturday and th…
 - **2024-04-15** — Now editing… FIT OFF!!! A generational battle for Honda Fit autocross supremacy! GD vs GE vs GK. Tune in Friday 4/19 to…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2019-01-23** — Swiped and modified from SBX Racing... Here's where you can possibly expect to catch RTR in action in the 2019 season.…
-- **2019-01-27** — I think I found our next rallycross vehicle you guys!  JK. The fella talking in this video is as dumb as this idea.
-- **2019-01-27** — Useful techniques for rallycross.
+- **2018-12-10** — Rd and Toby: Rallycross Celica update!!! It runs. New (used) starter and 3 year old gas first start!!
+- **2018-12-12** — Barring a few minor hitches the RTR Racing Crapcan Challenge Celica is ready to roll for KS Region Final Destination Ral…
+- **2019-01-15** — Not sure how I'd never seen this before... really nicely done video from an Arkansas region rallycross event in 2017.
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2019-01-18** — All day. Err day.
-- **2019-01-18** — Richard getting tilty in the Tercel.
-- **2019-01-18** — The Supra we all deserve.
-- **2019-01-19** — Put some #rattletrapsounddeadener on the #axrxfx muffler heat shield.. is gud.
+- **2018-12-07** — Ian - Custom, modular, socket storage. V1.0.0 is underway.
+- **2018-12-08** — Congratulations to Ian!! You da man!!
+- **2018-12-10** — New steering wheel/tooth removal time for the #axrxfx
+- **2018-12-11** — Toby getting that axle off with the farmer pliers!! #crapcanchallenge
 
 ### Storytelling / Sermon Mode
 
@@ -506,14 +506,14 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1025 posts:
+Top 25 hashtags across 1050 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #rxfx | 68 |
 | #rallycross | 65 |
 | #cars | 64 |
-| #axrxfx | 57 |
+| #axrxfx | 61 |
 | #ae86 | 44 |
 | #dalesdragon | 39 |
 | #toyota | 38 |
