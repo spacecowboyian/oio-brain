@@ -1,16 +1,29 @@
-name: Sync Google Photos
+name: Sync Google Photos Album to Picdump
 
 on:
-  # Every 5 hours to stay within the 4-6 hour requirement
+  # Run every 6 hours
   schedule:
-    - cron: '0 */5 * * *'
+    - cron: '0 */6 * * *'
 
+  # Manual trigger with optional inputs
   workflow_dispatch:
     inputs:
-      album_url:
-        description: 'Google Photos album URL (optional override)'
+      force_sync:
+        description: 'Force sync even if photos already downloaded'
         required: false
-        type: string
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+  # Also trigger on push to main branch (for testing)
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/sync-google-photos.yml'
+      - 'scripts/sync_google_photos.py'
 
 jobs:
   sync-photos:
@@ -28,40 +41,58 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install requests beautifulsoup4
+
+      - name: Validate configuration
+        run: |
+          if [ -z "${{ secrets.GOOGLE_PHOTOS_ALBUM_URL }}" ]; then
+            echo "❌ ERROR: GOOGLE_PHOTOS_ALBUM_URL secret is not configured"
+            echo ""
+            echo "To fix this:"
+            echo "1. Go to: GitHub → Settings → Secrets and variables → Actions"
+            echo "2. Create new secret: GOOGLE_PHOTOS_ALBUM_URL"
+            echo "3. Set value to your public Google Photos album URL"
+            echo "   Example: https://photos.app.goo.gl/W757cit6HfvKmCQh6"
+            echo ""
+            exit 1
+          fi
+          echo "✓ GOOGLE_PHOTOS_ALBUM_URL is configured"
 
       - name: Sync photos from Google Photos album
         run: |
-          ALBUM_URL="${{ github.event.inputs.album_url }}"
-          # Use default OIO Racing album if not provided
-          ALBUM_URL="${ALBUM_URL:-https://photos.app.goo.gl/W757cit6HfvKmCQh6}"
-          python scripts/sync_google_photos.py --album-url "$ALBUM_URL"
+          python3 scripts/sync_google_photos.py
+        env:
+          GOOGLE_PHOTOS_ALBUM_URL: ${{ secrets.GOOGLE_PHOTOS_ALBUM_URL }}
+          DEBUG: 'true'
 
       - name: Commit new photos
         run: |
           git config user.name "OIO Photo Sync Bot"
           git config user.email "bot@oioracing.local"
-          git add intake/photos/
-          if git diff --cached --quiet; then
+
+          # Check if there are new photos to commit
+          if [ -z "$(git status --porcelain intake/photos/)" ]; then
             echo "No new photos to commit."
           else
-            NEW_COUNT=$(git diff --cached --name-only | grep -E '\.(png|jpg|jpeg|heic|webp)$' | wc -l)
-            git commit -m "chore: sync ${NEW_COUNT} photo(s) from Google Photos [skip ci]
+            echo "Found new photos in intake/photos/"
+            git add intake/photos/ .github/sync-state/ 2>/dev/null || true
 
-Synced from OIO Racing Google Photos album.
-Photos will be processed by the intake/photos workflow.
+            # Count new photos
+            NEW_COUNT=$(git diff --cached --name-only intake/photos/ | grep -E '\.(jpg|jpeg|png|heic|webp)$' | wc -l)
 
-Co-Authored-By: Paperclip <noreply@paperclip.ing>"
-            git push
-            echo "✓ Pushed ${NEW_COUNT} new photo(s)"
+            if [ "$NEW_COUNT" -gt 0 ]; then
+              git commit -m "chore: sync $NEW_COUNT photo(s) from Google Photos album
+
+Auto-downloaded new photos from the shared Google Photos album.
+Photos are staged in intake/photos/ for AI filing workflow.
+
+Co-Authored-By: Paperclip <noreply@paperclip.ing>" || true
+              git push
+              echo "✓ Committed $NEW_COUNT new photos"
+            fi
           fi
 
       - name: Notify on failure
         if: failure()
         run: |
-          echo "::error::Google Photos sync failed. Check the logs for details."
-          echo "Possible issues:"
-          echo "  - Network connectivity"
-          echo "  - Album URL changed or became private"
-          echo "  - Google Photos HTML structure changed"
-          echo "  - Rate limiting"
+          echo "❌ Photo sync failed. Check workflow logs for details."

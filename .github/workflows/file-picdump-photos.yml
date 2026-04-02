@@ -22,6 +22,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Validate required secrets
+        run: |
+          if [ -z "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "❌ ERROR: ANTHROPIC_API_KEY secret is not configured"
+            echo "Please set this secret in repository Settings → Secrets and variables → Actions"
+            exit 1
+          fi
+          echo "✓ ANTHROPIC_API_KEY is configured"
+
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:

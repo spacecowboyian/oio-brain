@@ -1,288 +1,306 @@
 #!/usr/bin/env python3
 """
-OIO Racing - Google Photos Album Sync
+OIO Racing - Google Photos Sync
 
-Downloads photos from a public Google Photos album to intake/photos/.
-Tracks downloaded photos to avoid duplicates.
+Automatically fetches photos from a shared Google Photos album
+and stages them in intake/photos/ for AI filing.
+
+The shared album URL must be public and accessible without authentication.
 
 Usage:
-  python scripts/sync_google_photos.py --album-url https://photos.app.goo.gl/W757cit6HfvKmCQh6
+  GOOGLE_PHOTOS_ALBUM_URL=https://photos.app.goo.gl/... python scripts/sync_google_photos.py
 
-The script maintains a state file (.github/sync-state/google-photos.json) to track which
-photos have already been downloaded by their URL hash.
-
-When new photos are found, they are downloaded to intake/photos/ and the state
-file is updated. The GitHub Action will then commit these files, triggering
-the photo processing workflow.
+Environment Variables:
+  GOOGLE_PHOTOS_ALBUM_URL - Required: Public Google Photos album URL
+  DEBUG - Optional: Set to 'true' for verbose output
 """
 
-import argparse
-import hashlib
 import json
 import os
 import re
 import sys
-import time
 from datetime import datetime
-from urllib.parse import urlparse, parse_qs
+from pathlib import Path
 
-try:
-    import requests
-except ImportError:
-    print("Error: requests is not installed.")
-    print("Run: pip install requests")
-    raise
+import requests
+from bs4 import BeautifulSoup
 
-try:
-    from bs4 import BeautifulSoup
-except ImportError:
-    print("Error: beautifulsoup4 is not installed.")
-    print("Run: pip install beautifulsoup4")
-    raise
+# Configuration
+DEBUG = os.getenv("DEBUG", "false").lower() == "true"
+REPO_ROOT = Path(__file__).parent.parent
+PICDUMP_DIR = REPO_ROOT / "intake" / "photos"
+SYNC_STATE_DIR = REPO_ROOT / ".github" / "sync-state"
+SYNC_STATE_FILE = SYNC_STATE_DIR / "google-photos.json"
 
-
-PICDUMP_DIR = os.path.join(os.path.dirname(__file__), "..", "intake", "photos")
-SYNC_STATE_DIR = os.path.join(os.path.dirname(__file__), "..", ".github", "sync-state")
-STATE_FILE = os.path.join(SYNC_STATE_DIR, "google-photos.json")
-USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+# Create directories if needed
+PICDUMP_DIR.mkdir(exist_ok=True)
+SYNC_STATE_DIR.mkdir(parents=True, exist_ok=True)
 
 
-# ---------------------------------------------------------------------------
-# State management
-# ---------------------------------------------------------------------------
-
-def load_state():
-    """Load sync state from disk, or return a fresh default state."""
-    if os.path.isfile(STATE_FILE):
-        with open(STATE_FILE, encoding="utf-8") as f:
-            return json.load(f)
-    return {
-        "downloaded_hashes": [],
-        "last_sync": None,
-        "total_downloaded": 0
-    }
+def log(message, level="INFO"):
+    """Print timestamped log message to stdout."""
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    output = f"[{timestamp}] {level}: {message}"
+    print(output, flush=True)
+    # Also print errors to stderr for better visibility in logs
+    if level in ("ERROR", "FATAL"):
+        print(output, file=sys.stderr, flush=True)
 
 
-def save_state(state):
-    """Write sync state to disk."""
-    os.makedirs(SYNC_STATE_DIR, exist_ok=True)
-    state["last_sync"] = datetime.utcnow().isoformat() + "Z"
-    with open(STATE_FILE, "w", encoding="utf-8") as f:
+def debug(message):
+    """Print debug message if DEBUG is enabled."""
+    if DEBUG:
+        log(message, "DEBUG")
+
+
+def load_sync_state():
+    """Load previously synced photo URLs to avoid duplicates."""
+    if not SYNC_STATE_FILE.exists():
+        debug("No previous sync state found")
+        return {}
+
+    try:
+        with open(SYNC_STATE_FILE, "r") as f:
+            state = json.load(f)
+            debug(f"Loaded sync state: {len(state.get('synced_urls', []))} synced URLs")
+            return state
+    except json.JSONDecodeError as e:
+        log(f"Warning: Could not parse sync state file: {e}", "WARN")
+        return {}
+
+
+def save_sync_state(state):
+    """Save synced photos state."""
+    with open(SYNC_STATE_FILE, "w") as f:
         json.dump(state, f, indent=2)
-        f.write("\n")
+    debug(f"Saved sync state: {len(state.get('synced_urls', []))} URLs")
 
 
-def photo_hash(url):
-    """Generate a stable hash for a photo URL to track downloads."""
-    # Use the photo ID from the URL if available, otherwise hash the full URL
-    parsed = urlparse(url)
-    # Google Photos URLs often have the photo ID in the path
-    photo_id = parsed.path.split("/")[-1] if parsed.path else url
-    return hashlib.sha256(photo_id.encode()).hexdigest()[:16]
+def get_album_url():
+    """Get Google Photos album URL from environment."""
+    url = os.getenv("GOOGLE_PHOTOS_ALBUM_URL")
+    if not url:
+        log("ERROR: GOOGLE_PHOTOS_ALBUM_URL environment variable not set", "ERROR")
+        log("This is required for the sync workflow to run", "ERROR")
+        log("Set it in GitHub Secrets → GOOGLE_PHOTOS_ALBUM_URL", "ERROR")
+        return None
+
+    debug(f"Album URL (first 50 chars): {url[:50]}...")
+
+    # Handle short URLs: https://photos.app.goo.gl/...
+    # Need to expand to full album URL if using short link
+    if "photos.app.goo.gl" in url:
+        try:
+            debug("Resolving Google Photos short URL...")
+            response = requests.head(url, allow_redirects=True, timeout=10)
+            url = response.url
+            debug(f"Resolved to: {url[:100]}...")
+        except requests.RequestException as e:
+            log(f"ERROR: Could not resolve Google Photos URL: {e}", "ERROR")
+            return None
+
+    return url
 
 
-# ---------------------------------------------------------------------------
-# Google Photos scraping
-# ---------------------------------------------------------------------------
-
-def fetch_album_page(album_url):
+def extract_photo_urls(album_html):
     """
-    Fetch the HTML of a public Google Photos album.
-    Returns the response object.
+    Extract photo download URLs from Google Photos album HTML.
+
+    Returns list of (filename, url) tuples.
     """
-    headers = {"User-Agent": USER_AGENT}
+    soup = BeautifulSoup(album_html, "html.parser")
+    photos = []
+
+    # Google Photos uses data-src attributes for images
+    # Look for image elements with srcset or data attributes
+    for img in soup.find_all("img"):
+        src = img.get("src") or img.get("data-src") or ""
+
+        # Filter to photos only (not thumbnails, UI elements)
+        if "/photo/" in src or "/image/" in src or "/media/" in src:
+            # Try to extract filename from URL
+            filename = extract_filename_from_url(src)
+            if filename:
+                photos.append((filename, src))
+
+    # Alternative: Look for download links
+    for link in soup.find_all("a", href=True):
+        href = link.get("href", "")
+        if "/photo/" in href or "download" in href.lower():
+            filename = extract_filename_from_url(href)
+            if filename and (filename, href) not in photos:
+                photos.append((filename, href))
+
+    return photos
+
+
+def extract_filename_from_url(url):
+    """Extract a reasonable filename from a URL."""
+    # Try to get filename from URL parameters
+    if "filename=" in url:
+        match = re.search(r"filename=([^&]+)", url)
+        if match:
+            return match.group(1).strip('"\'')
+
+    # Extract from path
+    path = url.split("?")[0].split("#")[0]
+    name = path.split("/")[-1]
+
+    # Sanitize
+    if name and "." in name:
+        return name
+
+    # Generate a name if we can't extract one
+    ext = ".jpg"
+    if ".png" in url:
+        ext = ".png"
+    elif ".heic" in url:
+        ext = ".heic"
+    elif ".webp" in url:
+        ext = ".webp"
+
+    return f"photo_{int(datetime.now().timestamp())}{ext}"
+
+
+def download_photo(url, filepath, timeout=30):
+    """Download a photo from URL to filepath."""
     try:
-        resp = requests.get(album_url, headers=headers, timeout=30, allow_redirects=True)
-        resp.raise_for_status()
-        return resp
-    except requests.RequestException as exc:
-        raise RuntimeError(f"Failed to fetch album page: {exc}") from exc
+        response = requests.get(url, timeout=timeout, stream=True)
+        response.raise_for_status()
 
+        with open(filepath, "wb") as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                if chunk:
+                    f.write(chunk)
 
-def extract_photo_urls(html_content):
-    """
-    Extract photo URLs from the Google Photos album HTML.
-
-    Google Photos embeds photo data in the page source. This function
-    uses multiple strategies to extract photo URLs:
-    1. Look for JSON data in script tags
-    2. Parse img tags with high-resolution photo URLs
-    3. Find data attributes that contain photo URLs
-
-    Returns a list of (photo_url, filename) tuples.
-    """
-    soup = BeautifulSoup(html_content, "html.parser")
-    photo_urls = []
-
-    # Strategy 1: Extract from script tags containing JSON data
-    # Google Photos often embeds photo data in script tags with AF_initDataCallback
-    scripts = soup.find_all("script")
-    for script in scripts:
-        if script.string and "AF_initDataCallback" in script.string:
-            # Look for URLs that match Google's user content pattern
-            matches = re.findall(r'https://lh3\.googleusercontent\.com/[^"]+', script.string)
-            for match in matches:
-                # Google Photos URLs often have size parameters - get the largest size
-                # Replace size parameters with =d to get original size
-                photo_url = re.sub(r'=w\d+-h\d+', '=d', match)
-                photo_url = re.sub(r'=s\d+', '=d', photo_url)
-
-                # Extract a filename from the URL or generate one
-                url_parts = urlparse(photo_url)
-                path_parts = url_parts.path.split("/")
-                filename = path_parts[-1] if path_parts[-1] else f"photo_{photo_hash(photo_url)}"
-
-                # Ensure it has an image extension
-                if not any(filename.lower().endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.heic', '.webp']):
-                    filename += ".jpg"
-
-                photo_urls.append((photo_url, filename))
-
-    # Strategy 2: Look for img tags (fallback)
-    if not photo_urls:
-        for img in soup.find_all("img"):
-            src = img.get("src", "")
-            if "googleusercontent.com" in src:
-                # Upgrade to full size
-                photo_url = re.sub(r'=w\d+-h\d+', '=d', src)
-                photo_url = re.sub(r'=s\d+', '=d', photo_url)
-
-                filename = f"photo_{photo_hash(photo_url)}.jpg"
-                photo_urls.append((photo_url, filename))
-
-    # Remove duplicates by URL
-    seen = set()
-    unique_photos = []
-    for url, filename in photo_urls:
-        url_hash = photo_hash(url)
-        if url_hash not in seen:
-            seen.add(url_hash)
-            unique_photos.append((url, filename))
-
-    return unique_photos
-
-
-def download_photo(photo_url, filename, output_dir):
-    """
-    Download a photo from a URL to the output directory.
-    Returns True if successful, False otherwise.
-    """
-    output_path = os.path.join(output_dir, filename)
-
-    # Skip if file already exists
-    if os.path.isfile(output_path):
-        print(f"  ⊙ Exists: {filename}")
-        return False
-
-    headers = {"User-Agent": USER_AGENT}
-    try:
-        resp = requests.get(photo_url, headers=headers, timeout=60, stream=True)
-        resp.raise_for_status()
-
-        # Write the file
-        os.makedirs(output_dir, exist_ok=True)
-        with open(output_path, "wb") as f:
-            for chunk in resp.iter_content(chunk_size=8192):
-                f.write(chunk)
-
-        print(f"  ✓ Downloaded: {filename} ({len(resp.content) // 1024} KB)")
         return True
 
-    except requests.RequestException as exc:
-        print(f"  ✗ Failed: {filename} — {exc}")
+    except requests.RequestException as e:
+        print(f"  ✗ Failed to download {url}: {e}")
         return False
 
 
-# ---------------------------------------------------------------------------
-# Main sync logic
-# ---------------------------------------------------------------------------
+def sync_google_photos():
+    """Main sync function."""
+    log("Starting Google Photos sync...")
 
-def sync_album(album_url):
-    """
-    Sync photos from a public Google Photos album to intake/photos/.
-    Returns the number of new photos downloaded.
-    """
-    print(f"Fetching album: {album_url}")
+    # Get album URL
+    album_url = get_album_url()
+    if not album_url:
+        log("FATAL: No album URL configured", "ERROR")
+        return -1
 
-    # Fetch the album page
-    resp = fetch_album_page(album_url)
-    print(f"Album loaded (status: {resp.status_code})")
+    log(f"Album URL configured (first 50 chars): {album_url[:50]}...")
+
+    # Fetch album page
+    try:
+        log("Fetching album page...")
+        response = requests.get(album_url, timeout=15)
+        response.raise_for_status()
+        album_html = response.text
+        log(f"Album page fetched successfully ({len(album_html)} bytes)")
+        debug(f"Response status: {response.status_code}")
+    except requests.exceptions.Timeout:
+        log("ERROR: Request timed out fetching album (15 seconds)", "ERROR")
+        return -1
+    except requests.exceptions.ConnectionError as e:
+        log(f"ERROR: Network connection failed: {e}", "ERROR")
+        return -1
+    except requests.RequestException as e:
+        log(f"ERROR: Failed to fetch album page: {e}", "ERROR")
+        return -1
 
     # Extract photo URLs
-    photo_urls = extract_photo_urls(resp.text)
-    print(f"Found {len(photo_urls)} photo(s) in album")
+    log("Extracting photo URLs from album HTML...")
+    photo_list = extract_photo_urls(album_html)
+    log(f"Found {len(photo_list)} photos in album")
 
-    if not photo_urls:
-        print("\nWarning: No photos found in album.")
-        print("This could mean:")
-        print("  - The album is empty")
-        print("  - The album URL is incorrect")
-        print("  - Google Photos changed their HTML structure")
-        print("  - The album requires authentication")
+    if not photo_list:
+        log("WARNING: No photos found in album", "WARN")
+        log("This could mean:", "WARN")
+        log("  1. Album is empty", "WARN")
+        log("  2. Album is not publicly accessible", "WARN")
+        log("  3. Album URL is incorrect", "WARN")
         return 0
 
-    # Load state to check for duplicates
-    state = load_state()
-    downloaded_hashes = set(state.get("downloaded_hashes", []))
+    # Load previous sync state
+    log("Loading previous sync state...")
+    state = load_sync_state()
+    synced = state.get("synced_urls", [])
+    synced_files = state.get("synced_files", [])
+    log(f"Previous sync tracked {len(synced)} photos")
 
     # Download new photos
-    new_downloads = 0
-    print(f"\nDownloading new photos to {PICDUMP_DIR}/")
+    log("Checking for new photos...")
+    downloaded_count = 0
 
-    for photo_url, filename in photo_urls:
-        url_hash = photo_hash(photo_url)
-
-        # Skip if already downloaded
-        if url_hash in downloaded_hashes:
+    for filename, url in photo_list:
+        # Skip if already synced
+        if url in synced or filename in synced_files:
+            debug(f"Skipping {filename} (already synced)")
             continue
 
-        # Download the photo
-        if download_photo(photo_url, filename, PICDUMP_DIR):
-            downloaded_hashes.add(url_hash)
-            new_downloads += 1
-            time.sleep(0.5)  # Rate limiting
+        # Download
+        filepath = PICDUMP_DIR / filename
+        log(f"Downloading: {filename}")
 
-    # Update state
-    state["downloaded_hashes"] = list(downloaded_hashes)
-    state["total_downloaded"] = state.get("total_downloaded", 0) + new_downloads
-    save_state(state)
+        if download_photo(url, filepath):
+            log(f"✓ Saved to intake/photos/{filename}")
+            synced.append(url)
+            synced_files.append(filename)
+            downloaded_count += 1
+        else:
+            log(f"✗ Failed to download {filename}", "WARN")
 
-    return new_downloads
+    # Save updated state
+    state = {
+        "synced_urls": synced,
+        "synced_files": synced_files,
+        "last_sync": datetime.now().isoformat(),
+    }
+    save_sync_state(state)
 
+    # Summary
+    already_synced = len(photo_list) - downloaded_count
+    log(f"\n{'='*60}")
+    log(f"Sync Summary:")
+    log(f"  ✓ Downloaded: {downloaded_count}")
+    log(f"  ⊘ Already synced: {already_synced}")
+    log(f"  Total in state: {len(synced)}")
+    log(f"{'='*60}")
 
-# ---------------------------------------------------------------------------
-# Entry point
-# ---------------------------------------------------------------------------
-
-def main():
-    parser = argparse.ArgumentParser(
-        description="Sync photos from a public Google Photos album to intake/photos/."
-    )
-    parser.add_argument(
-        "--album-url",
-        required=True,
-        help="Public Google Photos album URL (e.g., https://photos.app.goo.gl/...)",
-    )
-    args = parser.parse_args()
-
-    print("OIO Racing - Google Photos Album Sync\n")
-
-    try:
-        new_count = sync_album(args.album_url)
-        print(f"\nDone. {new_count} new photo(s) downloaded.")
-
-        if new_count > 0:
-            print("\nNext steps:")
-            print("  1. Commit and push these photos to main")
-            print("  2. The process-picdump-photos workflow will automatically trigger")
-            print("  3. A Copilot agent will identify and file each photo")
-
-        sys.exit(0)
-
-    except RuntimeError as exc:
-        print(f"\nError: {exc}")
-        sys.exit(1)
+    return downloaded_count
 
 
 if __name__ == "__main__":
-    main()
+    log("=" * 60)
+    log("OIO Racing - Google Photos Sync")
+    log("=" * 60)
+
+    if DEBUG:
+        log("DEBUG MODE ENABLED", "DEBUG")
+        log(f"GOOGLE_PHOTOS_ALBUM_URL set: {bool(os.getenv('GOOGLE_PHOTOS_ALBUM_URL'))}", "DEBUG")
+
+    try:
+        count = sync_google_photos()
+
+        if count < 0:
+            log("\nFATAL: Sync failed - check error messages above", "ERROR")
+            sys.exit(1)
+        else:
+            log(f"\nSUCCESS: Sync completed (downloaded {count} new photos)", "INFO")
+            sys.exit(0)
+
+    except KeyboardInterrupt:
+        log("\nInterrupted by user", "WARN")
+        sys.exit(130)
+    except Exception as e:
+        log(f"\nUNEXPECTED ERROR: {type(e).__name__}: {e}", "ERROR")
+        import traceback
+        log("Traceback:", "ERROR")
+        # Always log full traceback for visibility
+        tb_lines = traceback.format_exc().split('\n')
+        for line in tb_lines:
+            if line.strip():
+                log(line, "ERROR")
+        sys.exit(1)
