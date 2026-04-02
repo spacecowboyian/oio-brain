@@ -131,12 +131,15 @@ def get_album_url():
     return url
 
 
-def extract_photo_urls(album_html):
+def extract_photo_urls(album_html, base_url=None):
     """
     Extract photo download URLs from Google Photos album HTML.
 
+    Converts relative URLs to absolute URLs using the base_url.
     Returns list of (filename, url) tuples.
     """
+    from urllib.parse import urljoin
+
     soup = BeautifulSoup(album_html, "html.parser")
     photos = []
 
@@ -147,6 +150,10 @@ def extract_photo_urls(album_html):
 
         # Filter to photos only (not thumbnails, UI elements)
         if "/photo/" in src or "/image/" in src or "/media/" in src:
+            # Convert relative URLs to absolute
+            if base_url and src.startswith("./"):
+                src = urljoin(base_url, src)
+
             # Try to extract filename from URL
             filename = extract_filename_from_url(src)
             if filename:
@@ -156,6 +163,10 @@ def extract_photo_urls(album_html):
     for link in soup.find_all("a", href=True):
         href = link.get("href", "")
         if "/photo/" in href or "download" in href.lower():
+            # Convert relative URLs to absolute
+            if base_url and href.startswith("./"):
+                href = urljoin(base_url, href)
+
             filename = extract_filename_from_url(href)
             if filename and (filename, href) not in photos:
                 photos.append((filename, href))
@@ -250,7 +261,7 @@ def sync_google_photos():
 
     # Extract photo URLs
     log("Extracting photo URLs from album HTML...")
-    photo_list = extract_photo_urls(album_html)
+    photo_list = extract_photo_urls(album_html, base_url=album_url)
     log(f"Found {len(photo_list)} photos in album")
 
     if not photo_list:
