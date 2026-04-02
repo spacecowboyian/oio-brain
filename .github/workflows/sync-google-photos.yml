@@ -44,20 +44,19 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Validate configuration
+      - name: Check configuration
         run: |
           if [ -z "${{ secrets.GOOGLE_PHOTOS_ALBUM_URL }}" ]; then
-            echo "❌ ERROR: GOOGLE_PHOTOS_ALBUM_URL secret is not configured"
+            echo "ℹ️  No custom album URL configured (GOOGLE_PHOTOS_ALBUM_URL secret)"
+            echo "Using default OIO Racing album"
             echo ""
-            echo "To fix this:"
+            echo "To use a different album:"
             echo "1. Go to: GitHub → Settings → Secrets and variables → Actions"
             echo "2. Create new secret: GOOGLE_PHOTOS_ALBUM_URL"
             echo "3. Set value to your public Google Photos album URL"
-            echo "   Example: https://photos.app.goo.gl/W757cit6HfvKmCQh6"
-            echo ""
-            exit 1
+          else
+            echo "✓ Custom album URL configured via GOOGLE_PHOTOS_ALBUM_URL secret"
           fi
-          echo "✓ GOOGLE_PHOTOS_ALBUM_URL is configured"
 
       - name: Sync photos from Google Photos album
         run: |

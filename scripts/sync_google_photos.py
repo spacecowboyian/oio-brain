@@ -77,13 +77,16 @@ def save_sync_state(state):
 
 
 def get_album_url():
-    """Get Google Photos album URL from environment."""
+    """Get Google Photos album URL from environment or use default OIO Racing album."""
+    # Check environment variable first (allows override)
     url = os.getenv("GOOGLE_PHOTOS_ALBUM_URL")
+
     if not url:
-        log("ERROR: GOOGLE_PHOTOS_ALBUM_URL environment variable not set", "ERROR")
-        log("This is required for the sync workflow to run", "ERROR")
-        log("Set it in GitHub Secrets → GOOGLE_PHOTOS_ALBUM_URL", "ERROR")
-        return None
+        # Use default OIO Racing public album
+        url = "https://photos.app.goo.gl/W757cit6HfvKmCQh6"
+        log(f"Using default OIO Racing album (no GOOGLE_PHOTOS_ALBUM_URL override)", "INFO")
+    else:
+        log(f"Using custom album URL from GOOGLE_PHOTOS_ALBUM_URL", "INFO")
 
     debug(f"Album URL (first 50 chars): {url[:50]}...")
 
