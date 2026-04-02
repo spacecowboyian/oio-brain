@@ -175,8 +175,17 @@ def download_photo(url, filepath, timeout=30):
 
         return True
 
+    except requests.Timeout:
+        log(f"ERROR: Timeout downloading photo (>{timeout}s)", "ERROR")
+        return False
+    except requests.HTTPError as e:
+        log(f"ERROR: HTTP {e.response.status_code} downloading photo", "ERROR")
+        return False
     except requests.RequestException as e:
-        print(f"  ✗ Failed to download {url}: {e}")
+        log(f"ERROR: Network error downloading photo: {e}", "ERROR")
+        return False
+    except IOError as e:
+        log(f"ERROR: Failed to save photo file: {e}", "ERROR")
         return False
 
 
