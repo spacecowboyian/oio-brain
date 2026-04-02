@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-02 from 950 posts (950 Facebook, 0 Instagram) covering 2019-03-16 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-02 from 975 posts (975 Facebook, 0 Instagram) covering 2019-02-24 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 387 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 197 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 401 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 199 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 37 | 'Our Hudson', 'errbody in the pool' |
@@ -423,8 +423,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 57 |
-| Build Update | 46 |
-| Event Recap | 261 |
+| Build Update | 47 |
+| Event Recap | 262 |
 | Event Hype | 23 |
 | Trash Talk | 9 |
 | Enthusiast Take | 16 |
@@ -448,9 +448,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Photo-first. Caption captures progress without over-describing.*
 
+- **2019-02-27** — Book says seatS.. but only shows one. Imma thinkin they're the same.. and I think that means I can swap the backs and ge…
 - **2019-09-30** — Lots of cool stuff happening in the RTR stable. Richard is getting ready to install the ported, polished, higher compres…
 - **2019-10-03** — This month is fixin to be BUSY. Here's what we have on the calendar at the moment:  10/6: Autocross in Topeka 10/13: Lak…
-- **2019-10-14** — Ian - A beautiful day for a track event yesterday in Garnett, KS at the Lake Garnett Grand Prix Revival. Had a great tim…
 
 ### Event Hype / Trash Talk
 
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
+- **2019-03-03** — Rallycross practice complete. #axrxfx
 - **2019-04-01** — Since we didn't get to rallycross in Kansas City today I did something a little... Different. #axrxfx
 - **2019-04-03** — Born sideways. #rally #rallycross #wrc #scca
-- **2019-04-06** — Loaded fer bear. Tomorrow we pretend to race. #axrxfx #kcrscca #autocross #testandtune #scca #funwithcars
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2019-03-18** — I love this crazy livery.
-- **2019-03-19** — Want.
-- **2019-03-20** — The #axrxfx has gone to summer tires. Expect ice.
-- **2019-03-23** — It demands a German heart!
+- **2019-02-24** — Axis powers unite! #axrxfx
+- **2019-02-25** — Richard is getting cranky with the #4ag in the #AWD #Tercel
+- **2019-02-27** — Look who's coming to Modified class! #axrxfx :)
+- **2019-02-27** — Weight reduction 101 #axrxfx
 
 ### Storytelling / Sermon Mode
 
@@ -506,17 +506,17 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 950 posts:
+Top 25 hashtags across 975 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #rxfx | 68 |
 | #rallycross | 64 |
 | #cars | 64 |
+| #axrxfx | 43 |
 | #ae86 | 40 |
 | #dalesdragon | 39 |
-| #toyota | 37 |
-| #axrxfx | 36 |
+| #toyota | 38 |
 | #ra21 | 34 |
 | #scca | 32 |
 | #racing | 32 |

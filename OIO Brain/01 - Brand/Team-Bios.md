@@ -153,7 +153,7 @@ Serious SCCA competitor. Lives in Manhattan, KS.
 
 *Auto-generated 2026-04-02 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 23 posts
+**Social post mentions:** 26 posts
 
 - **ST205 reveal** — arrives at a Church of Combustion event with the ST205; publicly established as a real competitor (Dec 2025)
 - **Starlet 4A-GE telegraphed** — social post hints at next build project (Mar 2026)
