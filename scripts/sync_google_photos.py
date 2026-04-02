@@ -11,7 +11,7 @@ Usage:
   GOOGLE_PHOTOS_ALBUM_URL=https://photos.app.goo.gl/... python scripts/sync_google_photos.py
 
 Environment Variables:
-  GOOGLE_PHOTOS_ALBUM_URL - Required: Public Google Photos album URL
+  GOOGLE_PHOTOS_ALBUM_URL - Optional: Custom album URL (defaults to OIO Racing album)
   DEBUG - Optional: Set to 'true' for verbose output
 """
 
@@ -22,8 +22,17 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-import requests
-from bs4 import BeautifulSoup
+# Print startup message immediately to ensure we get output
+print("=== OIO Racing Google Photos Sync ===", flush=True)
+print(f"Python {sys.version}", flush=True)
+
+try:
+    import requests
+    from bs4 import BeautifulSoup
+    print("✓ Dependencies loaded successfully", flush=True)
+except ImportError as e:
+    print(f"✗ Failed to import dependencies: {e}", flush=True)
+    sys.exit(1)
 
 # Configuration
 DEBUG = os.getenv("DEBUG", "false").lower() == "true"
@@ -32,9 +41,17 @@ PICDUMP_DIR = REPO_ROOT / "intake" / "photos"
 SYNC_STATE_DIR = REPO_ROOT / ".github" / "sync-state"
 SYNC_STATE_FILE = SYNC_STATE_DIR / "google-photos.json"
 
+print(f"Repository root: {REPO_ROOT}", flush=True)
+print(f"Output directory: {PICDUMP_DIR}", flush=True)
+
 # Create directories if needed
-PICDUMP_DIR.mkdir(exist_ok=True)
-SYNC_STATE_DIR.mkdir(parents=True, exist_ok=True)
+try:
+    PICDUMP_DIR.mkdir(exist_ok=True, parents=True)
+    SYNC_STATE_DIR.mkdir(exist_ok=True, parents=True)
+    print("✓ Directories created/verified", flush=True)
+except Exception as e:
+    print(f"✗ Failed to create directories: {e}", flush=True)
+    sys.exit(1)
 
 
 def log(message, level="INFO"):
