@@ -1,0 +1,16 @@
+name: Simple Test Workflow
+on:
+  push:
+    paths:
+      - '.github/workflows/test-simple.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo test
+        run: |
+          echo "=== SIMPLE TEST ==="
+          echo "If you see this, GitHub Actions is working"
+          echo "Timestamp: $(date)"
+          ls -la
