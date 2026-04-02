@@ -3,7 +3,7 @@ title: OIO Brain — Decisions Log
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-31
+updated: 2026-04-02
 tags: [decisions, history, rationale]
 source_of_truth: true
 summary: Append-only log of significant decisions made about OIO — brand, operations, vehicles, content, business. Each entry records what was decided, why, and any follow-up implications.
@@ -22,6 +22,28 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 ```
 
 ---
+
+## 2026-04-02 — Repository Restructure Executed (Flat Structure)
+
+**Decision:** Implemented the full repo restructure proposed in `core/structure-proposal.md`. The nested `OIO Brain/` folder structure has been replaced with a flat, human-readable layout.
+
+**New structure:**
+- `active/` — live memory layer (replaces `01-active/`)
+- `core/` — governance, standards, templates (replaces `00-core/`)
+- `brand/` — voice, tone, mission, audience, team bios
+- `cars/{driver}/` — all builds per driver
+- `content/` — video backlog, schedule, summaries
+- `events/` — schedules, results, notes
+- `production/` — shot lists, workflow, SOPs
+- `business/` — budget, sponsors, merch
+- `ops/` — contacts, accounts, policies, operating system
+- `data/` — JSON data files
+- `intake/` — unified inbound queue (replaces `docdump/` + `picdump/`)
+- `transcripts/` — YouTube transcripts + video scripts
+
+**Why:** The `OIO Brain/00 - Start Here` folder structure was confusing for AI agents and humans alike. Flat paths are easier to reference, update, and navigate. Duplicate documents were consolidated.
+
+**Implications:** All scripts, workflows, and documentation updated. Git history preserved via `git mv`.
 
 ## 2026-03-31 — Repo Structure Proposal Created (Not Yet Implemented)
 
