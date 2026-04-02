@@ -92,17 +92,17 @@ summary: Template for AI-generated summaries from raw daily video transcripts dr
 
 [List any files in the OIO Brain that should be updated based on this transcript. Check them off as done.]
 
-- [ ] `OIO Brain/03 - Cars/[Car]/Overview.md` — [what to update]
-- [ ] `OIO Brain/03 - Cars/[Car]/Maintenance-Log.md` — [what to update]
-- [ ] `OIO Brain/02 - Content/Published-Videos.md` — add entry
-- [ ] `OIO Brain/04 - Events/Results/` — [if event results are mentioned]
-- [ ] `01-active/current-state.md` — [if current state changed]
-- [ ] `01-active/open-loops.md` — [if new open loops surfaced]
+- [ ] `cars/[driver]/[car-slug]/overview.md` — [what to update]
+- [ ] `cars/[driver]/[car-slug]/maintenance.md` — [what to update]
+- [ ] `content/published-videos.md` — add entry
+- [ ] `events/results/` — [if event results are mentioned]
+- [ ] `active/current-state.md` — [if current state changed]
+- [ ] `active/open-loops.md` — [if new open loops surfaced]
 
 ---
 
 ## Source Transcript
 
-**Processed from:** `docdump/dailies/[filename]`
+**Processed from:** `intake/dailies/[filename]`
 **Processed on:** YYYY-MM-DD
-**Summary stored at:** `OIO Brain/02 - Content/Summaries/[YYYY-MM-DD_description].md`
+**Summary stored at:** `content/summaries/[YYYY-MM-DD_description].md`

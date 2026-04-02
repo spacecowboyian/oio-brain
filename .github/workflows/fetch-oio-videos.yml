@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "content/oio-videos-master.json"
+          git add "data/oio-videos-master.json"
           # Only stage the intake/docs delta if the script wrote one (new videos found)
           if [ -f intake/docs/oio_videos_raw.json ]; then
             git add intake/docs/oio_videos_raw.json

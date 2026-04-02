@@ -6,12 +6,12 @@ owner: Ian Jennings
 updated: YYYY-MM-DD
 tags: [template, decision]
 source_of_truth: false
-summary: Template for a single decision entry to be added to 00-core/decisions-log.md. Copy the formatted block below and append it to the log, newest first.
+summary: Template for a single decision entry to be added to core/decisions-log.md. Copy the formatted block below and append it to the log, newest first.
 ---
 
 # Decision Entry Template
 
-Copy the block below and paste it at the top of `00-core/decisions-log.md` (below the format instructions and above the previous entry).
+Copy the block below and paste it at the top of `core/decisions-log.md` (below the format instructions and above the previous entry).
 
 ```markdown
 ## YYYY-MM-DD — [Decision Title]
@@ -41,6 +41,6 @@ Copy the block below and paste it at the top of `00-core/decisions-log.md` (belo
 
 ## Where to Log It
 
-File: [`00-core/decisions-log.md`](../decisions-log.md)
+File: [`core/decisions-log.md`](../decisions-log.md)
 
 Add newest entries at the top, below the format instructions block.
