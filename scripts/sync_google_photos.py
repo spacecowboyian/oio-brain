@@ -55,13 +55,22 @@ except Exception as e:
 
 
 def log(message, level="INFO"):
-    """Print timestamped log message to stdout."""
+    """Print timestamped log message to stdout and optional log file."""
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     output = f"[{timestamp}] {level}: {message}"
     print(output, flush=True)
     # Also print errors to stderr for better visibility in logs
     if level in ("ERROR", "FATAL"):
         print(output, file=sys.stderr, flush=True)
+
+    # Also write to a log file as backup (in case stdout isn't captured)
+    try:
+        log_file = SYNC_STATE_DIR / "sync.log"
+        with open(log_file, "a") as f:
+            f.write(output + "\n")
+            f.flush()
+    except Exception:
+        pass  # Silently ignore log file errors
 
 
 def debug(message):
