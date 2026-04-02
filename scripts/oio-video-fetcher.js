@@ -161,15 +161,15 @@ async function run() {
   fs.writeFileSync(MASTER_FILE, JSON.stringify(updated, null, 2));
   console.log(`\nMaster updated: ${updated.length} videos → ${MASTER_FILE}`);
 
-  // Write delta to docdump only if there are new videos
+  // Write delta to intake/docs only if there are new videos
   if (newVideos.length > 0) {
     newVideos.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
     fs.mkdirSync(path.dirname(DOCDUMP_FILE), { recursive: true });
     fs.writeFileSync(DOCDUMP_FILE, JSON.stringify(newVideos, null, 2));
-    console.log(`\n${newVideos.length} new video(s) written to docdump for agent processing:`);
+    console.log(`\n${newVideos.length} new video(s) written to intake/docs for agent processing:`);
     newVideos.forEach(v => console.log(`  + [${v.publishedAt}] ${v.title}`));
   } else {
-    console.log('\nNo new videos found. docdump not written.');
+    console.log('\nNo new videos found. intake/docs not written.');
   }
 
   console.log('\nTop 5 most viewed:');

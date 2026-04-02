@@ -21,7 +21,7 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Detect new image files in picdump
+      - name: Detect new image files in intake/photos
         id: detect
         run: |
           # For manual dispatch, list all current images; for push, find newly added files
