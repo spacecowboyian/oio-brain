@@ -1,3 +1,14 @@
+---
+title: OIO Slackbot Setup Guide
+type: operations
+status: active
+owner: Ian Jennings
+updated: 2026-04-02
+tags: [operations, slackbot, social-media, setup, slack]
+source_of_truth: false
+summary: Setup guide for the OIO Racing Slackbot — mobile-first Slack interface for managing social media posts, approvals, and publishing via PostBridge.
+---
+
 # OIO Slackbot Setup Guide
 
 Mobile-first Slack interface for managing OIO Racing social media posts.

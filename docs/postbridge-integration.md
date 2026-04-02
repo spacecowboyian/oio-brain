@@ -1,3 +1,14 @@
+---
+title: PostBridge API Integration Guide
+type: operations
+status: active
+owner: Ian Jennings
+updated: 2026-04-02
+tags: [operations, postbridge, social-media, api, integration]
+source_of_truth: false
+summary: Complete integration guide for PostBridge API — draft creation, scheduling, and publishing to Instagram and Facebook via the postbridge_client.py library.
+---
+
 # PostBridge API Integration Guide
 
 Complete integration with PostBridge API for draft creation, scheduling, and publishing to Instagram and Facebook.
