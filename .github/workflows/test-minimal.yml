@@ -1,0 +1,14 @@
+name: Minimal Bash Test
+on:
+  push:
+    paths:
+      - 'test-minimal.sh'
+      - '.github/workflows/test-minimal.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run minimal bash test
+        run: ./test-minimal.sh
