@@ -42,20 +42,37 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
-
-      - name: Check configuration
         run: |
-          if [ -z "${{ secrets.GOOGLE_PHOTOS_ALBUM_URL }}" ]; then
-            echo "ℹ️  No custom album URL configured (GOOGLE_PHOTOS_ALBUM_URL secret)"
-            echo "Using default OIO Racing album"
-            echo ""
-            echo "To use a different album:"
-            echo "1. Go to: GitHub → Settings → Secrets and variables → Actions"
-            echo "2. Create new secret: GOOGLE_PHOTOS_ALBUM_URL"
-            echo "3. Set value to your public Google Photos album URL"
+          echo "Installing dependencies..."
+          pip install requests beautifulsoup4
+          echo "Verifying dependencies..."
+          python3 -c "import requests; print(f'✓ requests {requests.__version__}')"
+          python3 -c "import bs4; print(f'✓ beautifulsoup4 {bs4.__version__}')"
+          echo "All dependencies verified"
+
+      - name: Verify script and environment
+        run: |
+          echo "=== Environment Check ==="
+          echo "Current directory: $(pwd)"
+          echo "Python: $(which python3)"
+          echo "Python version: $(python3 --version)"
+          echo ""
+          echo "=== Script Check ==="
+          if [ -f "scripts/sync_google_photos.py" ]; then
+            echo "✓ Script found: scripts/sync_google_photos.py"
+            echo "Script size: $(wc -c < scripts/sync_google_photos.py) bytes"
+            echo "Script is executable: $(test -x scripts/sync_google_photos.py && echo 'yes' || echo 'no')"
           else
-            echo "✓ Custom album URL configured via GOOGLE_PHOTOS_ALBUM_URL secret"
+            echo "✗ Script NOT found at scripts/sync_google_photos.py"
+            ls -la scripts/
+            exit 1
+          fi
+          echo ""
+          echo "=== Configuration Check ==="
+          if [ -z "${{ secrets.GOOGLE_PHOTOS_ALBUM_URL }}" ]; then
+            echo "ℹ️  Using default OIO Racing album"
+          else
+            echo "✓ Custom album URL configured"
           fi
 
       - name: Sync photos from Google Photos album
