@@ -3,7 +3,7 @@ title: OIO Brain — Master Index
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-31
+updated: 2026-04-02
 tags: [navigation, index, overview]
 source_of_truth: true
 summary: Root-level navigation index for the OIO Brain. Contains quick navigation to all sections, active car roster, 2026 story arcs, and standing rules. Start here for a full map of the repo.
@@ -13,23 +13,48 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 
 > **The knowledge base for OIO Racing.** Everything a human or AI agent needs to understand, operate, and grow the brand.
 
-*Last updated: March 2026*
+*Last updated: April 2026*
+
+---
+
+## Repo Structure
+
+```
+active/           — Live memory layer (current state, priorities, open loops, next actions)
+brand/            — Mission, voice, tone, audience, team bios, sponsorship
+business/         — Budget, expenses, sponsorships, merch, website
+cars/             — Every build by driver (ian/, ryan/, keegan/, karen/, richard/)
+content/          — Video ideas, schedule, published log, titles, shorts, summaries
+core/             — Governance, standards, decisions log, templates
+data/             — JSON data files (social posts, video catalog, race results)
+docs/             — Technical pipeline documentation
+events/           — Rallycross, autocross, schedules, results, travel
+intake/           — Inbound intake: docs/, photos/, dailies/
+ops/              — Contacts, accounts, policies, operating system, backlog
+photos/           — Filed photo library by driver
+production/       — Shot lists, camera/audio workflow, editing SOPs, assets
+transcripts/      — YouTube transcript archives + video scripts
+```
 
 ---
 
 ## Quick Navigation
 
-| Section | Description |
-|---|---|
-| [00 - Start Here](OIO%20Brain/00%20-%20Start%20Here/) | What OIO is, how it operates, current priorities |
-| [01 - Brand](OIO%20Brain/01%20-%20Brand/) | Mission, audience, voice, sponsorship, team bios |
-| [02 - Content](OIO%20Brain/02%20-%20Content/) | Video ideas, scripts, published log, titles, shorts |
-| [03 - Cars](OIO%20Brain/03%20-%20Cars/) | Every build — setup notes, maintenance logs, status |
-| [04 - Events](OIO%20Brain/04%20-%20Events/) | Rallycross, autocross, schedules, results, travel |
-| [05 - Production](OIO%20Brain/05%20-%20Production/) | Shot lists, camera/audio workflow, editing SOPs, assets |
-| [06 - Business](OIO%20Brain/06%20-%20Business/) | Budget, expenses, sponsorships, merch, website |
-| [07 - Admin](OIO%20Brain/07%20-%20Admin/) | Contacts, accounts, policies, templates, backlog |
-| [docs/](docs/) | Technical pipeline documentation (transcripts, social, photos) |
+| Section | Path | Description |
+|---|---|---|
+| Active State | [active/](active/) | What's happening now, priorities, open loops, next actions |
+| Brand | [brand/](brand/) | Voice, tone, mission, audience, sponsorship, team bios |
+| Cars | [cars/](cars/) | Every build — setup notes, maintenance logs, status |
+| Content | [content/](content/) | Video ideas, scripts, published log, titles, shorts |
+| Events | [events/](events/) | Rallycross, autocross, schedules, results, travel |
+| Production | [production/](production/) | Shot lists, camera/audio workflow, editing SOPs, assets |
+| Business | [business/](business/) | Budget, expenses, sponsorships, merch, website |
+| Ops | [ops/](ops/) | Contacts, accounts, policies, templates, backlog |
+| Core | [core/](core/) | Governance, standards, decisions log, templates |
+| Intake | [intake/](intake/) | Drop docs, photos, and dailies here for processing |
+| Transcripts | [transcripts/](transcripts/) | YouTube transcript archives and video scripts |
+| Data | [data/](data/) | JSON data (social posts, video catalog, race results) |
+| Docs | [docs/](docs/) | Technical pipeline documentation |
 
 ---
 
@@ -47,15 +72,25 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 
 | Document | Purpose |
 |---|---|
-| [OIO Operating System](OIO%20Brain/00%20-%20Start%20Here/OIO-Operating-System.md) | Content schedule, workflows, standing rules |
-| [OIO Brand Guide](OIO%20Brain/00%20-%20Start%20Here/OIO-Brand-Guide.md) | Voice, tone, Church of Combustion, message pillars |
-| [Current Priorities](OIO%20Brain/00%20-%20Start%20Here/OIO-Current-Priorities.md) | 2026 season story arcs and active goals |
-| [Team Bios](OIO%20Brain/01%20-%20Brand/Team-Bios.md) | Ian, Ryan, Richard, Keegan, the kids, extended congregation |
-| [Audience Personas](OIO%20Brain/01%20-%20Brand/Audience-Personas.md) | Who watches and why |
-| [Video Ideas Backlog](OIO%20Brain/02%20-%20Content/Video-Ideas-Backlog.md) | All ideas, categorized and ready to pull from |
-| [Voice and Tone](OIO%20Brain/01%20-%20Brand/Voice-and-Tone.md) | How OIO writes, speaks, and sounds |
-| [Photo Index](PHOTO-INDEX.md) | Master index of every OIO photo — filing, post history, visual ID |
+| [Operating System](ops/operating-system.md) | Content schedule, workflows, standing rules |
+| [Voice and Tone](brand/voice-and-tone.md) | How OIO writes, speaks, and sounds |
+| [Current Priorities](active/priorities.md) | 2026 season story arcs and active goals |
+| [Team Bios](brand/team-bios.md) | Ian, Ryan, Richard, Keegan, the kids, extended congregation |
+| [Audience Personas](brand/audience.md) | Who watches and why |
+| [Video Ideas Backlog](content/video-backlog.md) | All ideas, categorized and ready to pull from |
+| [Photo Index](photos/README.md) | Master index of every OIO photo — filing, post history, visual ID |
 | [Agent Skill Guide](skill.md) | How AI agents should orient and operate in this repo |
+
+---
+
+## Document Conventions
+
+- All files are written in Markdown (`.md`)
+- Dates use `YYYY-MM-DD` format
+- Car nicknames are used consistently (Goblin, Dale, Fitty Cent, Nessie, Killer Corolla, Geoffrey)
+- Section headers use `##` for top level, `###` for sub-sections
+- Tables preferred for structured data (car specs, schedules, contacts)
+- Status fields: `Active` / `Building` / `Down` / `Sold`
 
 ---
 
@@ -70,7 +105,7 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 | 1977 Toyota Corolla | Killer Corolla | Ian | Down — 6-year resurrection in progress |
 | 1962 Renault Dauphine | Geoffrey | Ian | Recent acquisition — future rally replica |
 
-→ [Full car details in 03 - Cars](OIO%20Brain/03%20-%20Cars/)
+→ [Full car details](cars/)
 
 ---
 
@@ -84,7 +119,7 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 6. **Ryan's AE86** — V8 national rallycross push.
 7. **Richard's ST205** — SCCA debut. The dirt will judge.
 
-→ [Full priorities](OIO%20Brain/00%20-%20Start%20Here/OIO-Current-Priorities.md)
+→ [Full priorities](active/priorities.md)
 
 ---
 
@@ -98,4 +133,4 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 
 ---
 
-*This brain is maintained by the OIO team. When in doubt, check [00 - Start Here](OIO%20Brain/00%20-%20Start%20Here/).*
+*This brain is maintained by the OIO team. When in doubt, check [active/](active/).*

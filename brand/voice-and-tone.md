@@ -1,19 +1,30 @@
 ---
-title: OIO Voice and Tone
+title: OIO Brand Guide — Voice, Tone & Identity
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-29
-tags: [voice, tone, writing, brand, style, social]
+updated: 2026-04-02
+tags: [brand, voice, tone, church-of-combustion, identity, writing, style, social]
 source_of_truth: true
-summary: How OIO writes, speaks, and sounds. Covers the core voice qualities, tone by format (How-To, Vlog, Church of Combustion, Social), brand personality markers, language patterns, things to never do, and a writing checklist. Read before writing any OIO content. For social-specific tone buckets, post patterns, CTAs, and hashtag strategy see Social-Post-Voice.md.
+summary: Definitive reference for how OIO looks, sounds, and behaves. Covers brand identity, voice, tone by format, the Church of Combustion framework, message pillars, visual identity, the Rallycross ≠ Autocross rule, and writing checklist. Read before writing, filming, or designing anything.
 ---
 
-# Voice and Tone
+# OIO Brand Guide — Voice, Tone & Identity
 
-> How OIO writes, speaks, and sounds. Use this before writing any script, post, title, description, or caption.
+> The definitive reference for how OIO looks, sounds, and behaves. Read this before writing, filming, or designing anything.
 
-*Last updated: March 2026*
+*Last updated: April 2026*
+
+---
+
+## What OIO Is
+
+**Outside Inside Outside Racing** is Ian Jennings' grassroots motorsports brand and YouTube channel out of Kansas City, MO. Focused on autocross, rallycross, car builds, race prep, and automotive DIY content — aimed at making motorsports feel accessible to regular people.
+
+- **Channel:** @oioracing
+- **Subscribers:** 1.93K | **Videos:** 358
+- **One-line description:** OIO is a grassroots motorsports brand built around practical car prep, budget-minded racing, project-car storytelling, and making autocross and rallycross feel accessible to regular people.
+- **Sign-off line:** *"Until next time, remember to go out and find your own apex, because it's better late than never."*
 
 ---
 
@@ -37,7 +48,7 @@ These patterns define OIO's identity and should be protected across all content 
 
 ---
 
-
+## Brand Voice Qualities
 
 | Quality | What It Means | What It Sounds Like |
 |---|---|---|
@@ -47,6 +58,83 @@ These patterns define OIO's identity and should be protected across all content 
 | **Mildly irreverent** | Knowledgeable garage talk. Never corporate. | "She makes a noise like a bag of loose change" |
 | **Encouraging** | You can do this too. Seriously. | Acknowledge the fear, then show it's fine |
 | **Self-deprecating** | Ian gets it wrong. A lot. | "That's not right. That's incredibly not right." |
+
+**Not:** Corporate marketing. Influencer fluff. Technical-breakdown-only content. Hardcore motorsport gatekeeping.
+
+---
+
+## Target Audience
+
+**Comedy-first people who happen to like cars** — not hardcore motorsport fans looking for technical breakdowns.
+
+The community finds OIO through practical Honda Fit maintenance videos, then falls into the comedy universe.
+
+→ [Full audience personas](audience.md)
+
+---
+
+## The Church of Combustion
+
+The entire channel is wrapped in a sustained bit:
+
+> OIO operates as a **Southern Baptist-style church** where combustion engines are worshipped and racing is an act of faith.
+
+### Core Elements
+
+| Element | What It Is |
+|---|---|
+| Ian | The Reverend |
+| Racing events | Sunday services |
+| Lake Garnett Grand Prix Revival | The annual revival meeting — the cathedral moment of the season |
+| *Sportsmanlike Driving* | A vintage AAA driver's ed manual repurposed as the church's sacred scripture |
+| Congregation | The audience and racing crew |
+| Church of Combustion episodes | Scripted racing recaps — always drop on Sunday |
+
+### Visual Language
+- Sepia-toned aesthetic
+- Ian in a flat cap and checkered tie
+- Ian holding *Sportsmanlike Driving*
+- Project Board doubles as stained glass window in Church of Combustion edits
+
+### Rules for Church of Combustion Content
+- Always drops on **Sunday**
+- Scripted — not casual vlog energy
+- Big production: 12–15 hour edit budget
+- Drops 1–2 weeks after the event (not same-day)
+
+---
+
+## Message Pillars
+
+These are the beliefs OIO consistently communicates:
+
+| Pillar | Core Statement |
+|---|---|
+| **Access** | Motorsports is more accessible than people think |
+| **Learn by doing** | You don't need to know everything to get started |
+| **Prep matters** | Reliability, maintenance, and smart setup beat fantasy mod lists |
+| **Small cars can be heroes** | The Honda Fit, old Toyotas, and underdogs deserve attention |
+| **Build the space, build the habit** | A better garage and better workflow make more racing possible |
+| **Family / team / community** | Grassroots motorsports is more fun when it includes the people around you |
+
+---
+
+## The Honda Fit Is the Secret Weapon
+
+Fit how-to content dramatically outperforms everything else in raw views.
+
+> *"The Honda Fit is the next Miata of grassroots motorsports. It hauls gear like a truck, corners like a nervous housecat, and attacks a rallycross course with the determination of a caffeinated squirrel."*
+
+**Standing rule: One Honda Fit How-To per month, every month, forever.**
+
+**Top performers:**
+| Video | Views |
+|---|---|
+| GD3 Armrest Hack | 42K |
+| Valve Adjustment | 27K |
+| Battery Swap | 13K |
+| Throttle Body Upgrade | 11K |
+| Rear Drum Brakes | 8.7K |
 
 ---
 
@@ -72,7 +160,7 @@ These patterns define OIO's identity and should be protected across all content 
 
 ### Social / Shorts
 
-> For full social voice detail — tone buckets, post patterns, CTAs, hashtag strategy, language patterns — see **`Social-Post-Voice.md`**. What follows is the summary layer for this doc.
+> For full social voice detail — tone buckets, post patterns, CTAs, hashtag strategy, language patterns — see **`brand-voice-social.md`**. What follows is the summary layer for this doc.
 
 - **Tone:** Quick, punchy, direct. Pit-talk energy. The racer talking to another racer.
 - **Energy:** High for event/race content. Dry and deadpan for shop/casual posts.
@@ -92,6 +180,39 @@ These patterns define OIO's identity and should be protected across all content 
 
 ---
 
+## Rallycross ≠ Autocross
+
+**This matters. Never flatten them together.**
+
+| | Rallycross | Autocross |
+|---|---|---|
+| Surface | Dirt/gravel/mixed | Paved parking lot |
+| Tire needs | Aggressive, puncture-resistant | Soft, high-grip |
+| Setup priorities | Durability, suspension travel | Precision, low roll |
+| Driving demands | Momentum, commitment, loose feel | Accuracy, late apex |
+| Prep decisions | Protect the car | Optimize the car |
+
+→ [Full discipline notes](../events/rallycross.md)
+
+---
+
+## Visual Identity
+
+### Website Direction
+- **Background:** Black
+- **Headings/CTAs:** Helvetica Neue style
+- **Body font:** IBM Plex Sans
+- **Palette:** High-contrast — black, white, yellow, red, orange
+- **Hero:** Fast-cut video montage
+- **CTA:** "Take the Ride" — styled as a vintage orange carnival ticket, rips on click, shows subscriber count + 1 for the viewer
+
+### Video Aesthetic
+- Lower-polish but high-energy editing is appropriate for vlogs
+- Church of Combustion: sepia-toned, scripted, cinematic
+- Honda Fit How-Tos: clean, practical, kids doing the work
+
+---
+
 ## Things to Never Do
 
 - **Never be corporate.** No brand-voice copy. No "We're passionate about delivering..."
@@ -105,7 +226,7 @@ These patterns define OIO's identity and should be protected across all content 
 
 ## Signature Phrases and Patterns
 
-- Sign-off: *"Until next time, remember to go out and find your own apex, because it's better late than better late than never."*
+- Sign-off: *"Until next time, remember to go out and find your own apex, because it's better late than never."*
 - *"The congregation..."* — referring to the audience
 - *"Sportsmanlike Driving says..."* — referencing the sacred text
 - The Project Board is opened and closed every vlog. Always.

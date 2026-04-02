@@ -3,7 +3,7 @@ title: OIO Brain — Templates Index
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-04-02
 tags: [templates, index]
 source_of_truth: true
 summary: Index of all reusable document templates. Use these when creating a new document of a given type to ensure consistent structure and frontmatter.
@@ -11,13 +11,13 @@ summary: Index of all reusable document templates. Use these when creating a new
 
 # Templates
 
-Copy the relevant template, rename the file per the naming conventions in `00-core/repo-standards.md`, and fill in the brackets.
+Copy the relevant template, rename the file per the naming conventions in `core/repo-standards.md`, and fill in the brackets.
 
 Always add proper frontmatter when creating a new file from a template.
 
 ---
 
-## Core Templates (00-core/templates/)
+## Core Templates (core/templates/)
 
 | Template | Use For |
 |---|---|
@@ -31,17 +31,16 @@ Always add proper frontmatter when creating a new file from a template.
 | [sponsor-lead.md](sponsor-lead.md) | Individual sponsorship lead tracking |
 | [decision-entry.md](decision-entry.md) | How to format an entry for decisions-log.md |
 | [project-plan.md](project-plan.md) | Multi-step project with goals, milestones, and tasks |
+| [transcript-summary.md](transcript-summary.md) | Structured summary generated from a daily transcript |
 
 ---
 
-## Specialized Templates (OIO Brain/07 - Admin/Templates/)
-
-These templates live in the Admin section and are more OIO-specific:
+## OIO-Specific Templates (core/templates/)
 
 | Template | Use For |
 |---|---|
-| [Sponsorship-Outreach-Email.md](../../OIO%20Brain/07%20-%20Admin/Templates/Sponsorship-Outreach-Email.md) | Cold outreach email to a potential sponsor |
-| [Video-Script-Template.md](../../OIO%20Brain/07%20-%20Admin/Templates/Video-Script-Template.md) | Full video script structure |
-| [Shot-List-Template.md](../../OIO%20Brain/07%20-%20Admin/Templates/Shot-List-Template.md) | Shot-by-shot filming plan |
-| [Event-Note-Template.md](../../OIO%20Brain/07%20-%20Admin/Templates/Event-Note-Template.md) | Quick event notes (shorter than full recap) |
-| [Congregation-Car-Feature.md](../../OIO%20Brain/07%20-%20Admin/Templates/Congregation-Car-Feature.md) | Feature on a congregation member's car |
+| [sponsorship-outreach-email.md](sponsorship-outreach-email.md) | Cold outreach email to a potential sponsor |
+| [video-script.md](video-script.md) | Full video script structure |
+| [shot-list.md](shot-list.md) | Shot-by-shot filming plan |
+| [event-note.md](event-note.md) | Quick event notes (shorter than full recap) |
+| [congregation-car-feature.md](congregation-car-feature.md) | Feature on a congregation member's car |
