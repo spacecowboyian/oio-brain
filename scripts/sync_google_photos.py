@@ -125,7 +125,7 @@ def get_album_url():
             url = response.url
             debug(f"Resolved to: {url[:100]}...")
         except requests.RequestException as e:
-            log(f"ERROR: Could not resolve Google Photos URL: {e}", "ERROR")
+            log(f"Could not resolve Google Photos URL: {e}", "ERROR")
             return None
 
     return url
@@ -205,16 +205,16 @@ def download_photo(url, filepath, timeout=30):
         return True
 
     except requests.Timeout:
-        log(f"ERROR: Timeout downloading photo (>{timeout}s)", "ERROR")
+        log(f"Timeout downloading photo (>{timeout}s)", "ERROR")
         return False
     except requests.HTTPError as e:
-        log(f"ERROR: HTTP {e.response.status_code} downloading photo", "ERROR")
+        log(f"HTTP {e.response.status_code} downloading photo", "ERROR")
         return False
     except requests.RequestException as e:
-        log(f"ERROR: Network error downloading photo: {e}", "ERROR")
+        log(f"Network error downloading photo: {e}", "ERROR")
         return False
     except IOError as e:
-        log(f"ERROR: Failed to save photo file: {e}", "ERROR")
+        log(f"Failed to save photo file: {e}", "ERROR")
         return False
 
 
@@ -239,13 +239,13 @@ def sync_google_photos():
         log(f"Album page fetched successfully ({len(album_html)} bytes)")
         debug(f"Response status: {response.status_code}")
     except requests.exceptions.Timeout:
-        log("ERROR: Request timed out fetching album (15 seconds)", "ERROR")
+        log("Request timed out fetching album (15 seconds)", "ERROR")
         return -1
     except requests.exceptions.ConnectionError as e:
-        log(f"ERROR: Network connection failed: {e}", "ERROR")
+        log(f"Network connection failed: {e}", "ERROR")
         return -1
     except requests.RequestException as e:
-        log(f"ERROR: Failed to fetch album page: {e}", "ERROR")
+        log(f"Failed to fetch album page: {e}", "ERROR")
         return -1
 
     # Extract photo URLs
