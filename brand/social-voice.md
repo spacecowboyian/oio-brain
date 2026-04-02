@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-02 from 1000 posts (1000 Facebook, 0 Instagram) covering 2019-02-06 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-02 from 1025 posts (1025 Facebook, 0 Instagram) covering 2019-01-18 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 410 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 201 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 424 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 203 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 37 | 'Our Hudson', 'errbody in the pool' |
@@ -423,9 +423,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 57 |
-| Build Update | 49 |
-| Event Recap | 267 |
-| Event Hype | 23 |
+| Build Update | 51 |
+| Event Recap | 270 |
+| Event Hype | 24 |
 | Trash Talk | 9 |
 | Enthusiast Take | 16 |
 | Farewell / Milestone | 20 |
@@ -448,26 +448,26 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Photo-first. Caption captures progress without over-describing.*
 
+- **2019-01-23** — Swiped and modified from SBX Racing... Here's where you can possibly expect to catch RTR in action in the 2019 season.…
+- **2019-02-01** — A much needed front end rebuild is underway on the #axrxfx #ae82 #fx16 bushings, ball joints and tie rod ends. @superpro…
 - **2019-02-20** — #axrxfx update 1. Rear camber bolts are installed 2. Clutch pedal now has a proper stroke thanks to Jeff at Team NitroSp…
-- **2019-02-22** — It sounds like the #ksscca Modified All wheel drive Rallycross champ will be going under the knife soon for some quick p…
-- **2019-02-27** — Book says seatS.. but only shows one. Imma thinkin they're the same.. and I think that means I can swap the backs and ge…
 
 ### Event Hype / Trash Talk
 
 *Playful antagonism. Ian always at a disadvantage. Audience is in on the joke.*
 
+- **2019-01-26** — Oh... SuperPro Europe follows us now.. we didn't notice at all :)  New #axrxfx video all about bushings coming next week…
 - **2019-04-27** — Happy race day eve! The #kconstruction #ae86 and the #axrxfx are ready to roll out to the Unnaturally Aspirated Spring R…
 - **2019-09-10** — Race day is looming at Bob Hindson Racing, Inc. as Ryan preps the #kconstruction #ae86 for Rallycross on Saturday and th…
-- **2020-07-26** — Ryan is ready to shred in Wichita. Tomorrow... we race! #sccarallycross #rx86 #bhrtribe
 - **2024-04-15** — Now editing… FIT OFF!!! A generational battle for Honda Fit autocross supremacy! GD vs GE vs GK. Tune in Friday 4/19 to…
 
 ### Event Recap
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
-- **2019-02-10** — In which Ryan reveals the new headlights and... more importantly... the overall weight of the modified rear wheel drive…
-- **2019-02-13** — The @competitionclutch on the #axrxfx @toyotausa #fx16 is damn near ready to rumble. #rallycross #autocross
-- **2019-02-17** — Ryan took 1st in Modified Rear Wheel Drive class of the 2018 Kansas Region - SCCA Rallycross season in the K-Constructio…
+- **2019-01-23** — Swiped and modified from SBX Racing... Here's where you can possibly expect to catch RTR in action in the 2019 season.…
+- **2019-01-27** — I think I found our next rallycross vehicle you guys!  JK. The fella talking in this video is as dumb as this idea.
+- **2019-01-27** — Useful techniques for rallycross.
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
-- **2019-02-06** — The #axrxfx just shed 3lbs of mustache!
-- **2019-02-07** — Didn't even spill the cup of water.
-- **2019-02-11** — And now... engine noises.
-- **2019-02-11** — Rollin through Monday like...
+- **2019-01-18** — All day. Err day.
+- **2019-01-18** — Richard getting tilty in the Tercel.
+- **2019-01-18** — The Supra we all deserve.
+- **2019-01-19** — Put some #rattletrapsounddeadener on the #axrxfx muffler heat shield.. is gud.
 
 ### Storytelling / Sermon Mode
 
@@ -506,15 +506,15 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1000 posts:
+Top 25 hashtags across 1025 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #rxfx | 68 |
 | #rallycross | 65 |
 | #cars | 64 |
-| #axrxfx | 49 |
-| #ae86 | 42 |
+| #axrxfx | 57 |
+| #ae86 | 44 |
 | #dalesdragon | 39 |
 | #toyota | 38 |
 | #ra21 | 34 |
@@ -525,9 +525,9 @@ Top 25 hashtags across 1000 posts:
 | #sccarallycross | 25 |
 | #diy | 25 |
 | #rxaw11 | 25 |
+| #fx16 | 23 |
 | #mgbgts | 22 |
 | #hondafit | 22 |
-| #fx16 | 21 |
 | #autocross | 20 |
 | #mr2 | 20 |
 | #celica | 19 |
