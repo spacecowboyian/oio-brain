@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-02 from 1050 posts (1050 Facebook, 0 Instagram) covering 2018-11-29 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-02 from 1057 posts (1057 Facebook, 0 Instagram) covering 2018-11-19 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,7 +409,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 434 | Single line. Sometimes one word. 'Approved.' |
+| Punchy / Short | 437 | Single line. Sometimes one word. 'Approved.' |
 | Hashtag-Heavy | 203 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 51 |
-| Event Recap | 273 |
+| Event Recap | 274 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
 | Enthusiast Take | 16 |
@@ -465,9 +465,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *Outcome-first. Congratulatory when teammates win, rueful when the Goblin fails.*
 
+- **2018-11-19** — RTR's first team event was yesterday at the Jurassic RallyCross-Nov 18, 2018 We walked away with a 1st place in Modified…
 - **2018-12-10** — Rd and Toby: Rallycross Celica update!!! It runs. New (used) starter and 3 year old gas first start!!
 - **2018-12-12** — Barring a few minor hitches the RTR Racing Crapcan Challenge Celica is ready to roll for KS Region Final Destination Ral…
-- **2019-01-15** — Not sure how I'd never seen this before... really nicely done video from an Arkansas region rallycross event in 2017.
 
 ### Enthusiast Take
 
@@ -489,10 +489,10 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 *The shortest format. One idea. Sometimes one word. Fully intentional.*
 
+- **2018-11-20** — #goals
+- **2018-11-25** — Happy Tercel-mas!!!
+- **2018-11-25** — Inspiration in a blizzard!
 - **2018-12-07** — Ian - Custom, modular, socket storage. V1.0.0 is underway.
-- **2018-12-08** — Congratulations to Ian!! You da man!!
-- **2018-12-10** — New steering wheel/tooth removal time for the #axrxfx
-- **2018-12-11** — Toby getting that axle off with the farmer pliers!! #crapcanchallenge
 
 ### Storytelling / Sermon Mode
 
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1050 posts:
+Top 25 hashtags across 1057 posts:
 
 | Hashtag | Uses |
 |---|---|
