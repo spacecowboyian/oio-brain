@@ -17,6 +17,14 @@ on:
           - 'false'
           - 'true'
 
+  # Also trigger on push to main branch (for testing)
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/sync-google-photos.yml'
+      - 'scripts/sync_google_photos.py'
+
 jobs:
   sync-photos:
     runs-on: ubuntu-latest
