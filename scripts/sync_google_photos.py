@@ -3,7 +3,7 @@
 OIO Racing - Google Photos Sync
 
 Automatically fetches photos from a shared Google Photos album
-and stages them in picdump/ for AI filing.
+and stages them in intake/photos/ for AI filing.
 
 The shared album URL must be public and accessible without authentication.
 
@@ -28,7 +28,7 @@ from bs4 import BeautifulSoup
 # Configuration
 DEBUG = os.getenv("DEBUG", "false").lower() == "true"
 REPO_ROOT = Path(__file__).parent.parent
-PICDUMP_DIR = REPO_ROOT / "picdump"
+PICDUMP_DIR = REPO_ROOT / "intake" / "photos"
 SYNC_STATE_DIR = REPO_ROOT / ".github" / "sync-state"
 SYNC_STATE_FILE = SYNC_STATE_DIR / "google-photos.json"
 
@@ -245,7 +245,7 @@ def sync_google_photos():
         log(f"Downloading: {filename}")
 
         if download_photo(url, filepath):
-            log(f"✓ Saved to picdump/{filename}")
+            log(f"✓ Saved to intake/photos/{filename}")
             synced.append(url)
             synced_files.append(filename)
             downloaded_count += 1

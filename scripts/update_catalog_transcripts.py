@@ -24,8 +24,8 @@ import re
 from pathlib import Path
 
 
-CATALOG_FILE = Path(__file__).parent.parent / "OIO-Video-Catalog.md"
-TRANSCRIPTS_DIR = Path(__file__).parent.parent / "OIO Brain" / "02 - Content" / "Video Scripts"
+CATALOG_FILE = Path(__file__).parent.parent / "content" / "video-catalog.md"
+TRANSCRIPTS_DIR = Path(__file__).parent.parent / "transcripts"
 
 
 def get_transcript_mapping():
@@ -54,7 +54,7 @@ def get_transcript_mapping():
 
             video_id = meta.get("video_id")
             if video_id:
-                transcript_path = f"OIO Brain/02 - Content/Video Scripts/{folder.name}/transcript.md"
+                transcript_path = f"transcripts/{folder.name}/transcript.md"
                 mapping[video_id] = transcript_path
         except (json.JSONDecodeError, KeyError):
             continue

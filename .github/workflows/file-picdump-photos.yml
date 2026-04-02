@@ -53,15 +53,15 @@ jobs:
           git config user.email "bot@oioracing.local"
 
           # Add any new filed photos and updated index
-          git add photos/ PHOTO-INDEX.md "OIO Brain/03 - Cars/" 2>/dev/null || true
+          git add photos/ photos/README.md "cars/" 2>/dev/null || true
 
           if git diff --cached --quiet; then
             echo "No new photos to commit."
           else
-            git commit -m "chore: file picdump photos with AI
+            git commit -m "chore: file intake/photos photos with AI
 
-Auto-filed and organized photos from picdump into photo library.
-Updated PHOTO-INDEX.md and car descriptions.
+Auto-filed and organized photos from intake/photos into photo library.
+Updated photos/README.md and car descriptions.
 
 Co-Authored-By: Paperclip <noreply@paperclip.ing>" || true
             git push
@@ -71,4 +71,4 @@ Co-Authored-By: Paperclip <noreply@paperclip.ing>" || true
         if: failure()
         run: |
           echo "Some photos could not be auto-filed and require manual review."
-          echo "Check Slack notifications or picdump folder for images."
+          echo "Check Slack notifications or intake/photos folder for images."

@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'docdump/**'
-      - '!docdump/transcripts/**'
+      - 'intake/docs/**'
+      - '!intake/docs/transcripts/**'
   workflow_dispatch:
 
 jobs:
@@ -22,25 +22,25 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Detect new files in docdump
+      - name: Detect new files in intake/docs
         id: detect
         run: |
           # For manual dispatch, list all current files; for push, find newly added files
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            FILES=$(find docdump/ -maxdepth 1 -type f \
+            FILES=$(find intake/docs/ -maxdepth 1 -type f \
               | grep -v 'README\.md$' || true)
           else
             # Find files added in this push (exclude README.md and transcripts subfolder)
-            FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'docdump/**' 2>/dev/null \
-              | grep -Ev '^docdump/(README\.md|transcripts/)' || true)
+            FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'intake/docs/**' 2>/dev/null \
+              | grep -Ev '^intake/docs/(README\.md|transcripts/)' || true)
           fi
 
           if [ -z "$FILES" ]; then
-            echo "No new files detected in docdump."
+            echo "No new files detected in intake/docs."
             echo "has_files=false" >> "$GITHUB_OUTPUT"
           else
             COUNT=$(echo "$FILES" | wc -l | tr -d ' ')
-            echo "Detected $COUNT new file(s) in docdump:"
+            echo "Detected $COUNT new file(s) in intake/docs:"
             echo "$FILES"
             echo "has_files=true" >> "$GITHUB_OUTPUT"
             echo "file_count=$COUNT" >> "$GITHUB_OUTPUT"
@@ -64,7 +64,7 @@ jobs:
             --color "6e40c9" \
             --force
 
-      - name: Spawn Copilot agent to process docdump files
+      - name: Spawn Copilot agent to process intake/docs files
         if: steps.detect.outputs.has_files == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -73,8 +73,8 @@ jobs:
           FILE_LIST="${{ steps.detect.outputs.file_list }}"
 
           gh issue create \
-            --title "Process ${COUNT} new file(s) from docdump" \
-            --body "@copilot New file(s) have been pushed to \`docdump/\` and need to be processed into the OIO Brain.
+            --title "Process ${COUNT} new file(s) from intake/docs" \
+            --body "@copilot New file(s) have been pushed to \`intake/docs/\` and need to be processed into the OIO Brain.
 
           **Files to process:**
           ${FILE_LIST}
@@ -83,20 +83,20 @@ jobs:
 
           1. **Read each file in full** before deciding where the data belongs
           2. **Identify all relevant destinations** across the brain structure:
-             - \`01-active/\` for current state, priorities, open loops, or next actions
-             - \`OIO Brain/\` canonical domain folders (vehicles, content, events, finance, etc.)
-             - \`00-core/decisions-log.md\` for any decisions that should be logged
+             - \`active/\` for current state, priorities, open loops, or next actions
+             - Appropriate brain folders (\`brand/\`, \`content/\`, \`cars/\`, \`events/\`, \`business/\`, \`ops/\`, etc.)
+             - \`core/decisions-log.md\` for any decisions that should be logged
           3. **Distribute the data** — update existing files first; create new files only if no appropriate file exists
           4. **Follow all repo standards**:
              - Add frontmatter to any new file (title, type, status, owner, updated, tags, source_of_truth, summary)
              - Update the \`updated:\` date on any file you modify
-             - Log significant decisions in \`00-core/decisions-log.md\`
-          5. **Delete the original file(s)** from \`docdump/\` after all data has been successfully written
-          6. **Update \`01-active/\`** files as needed to reflect any state changes
+             - Log significant decisions in \`core/decisions-log.md\`
+          5. **Delete the original file(s)** from \`intake/docs/\` after all data has been successfully written
+          6. **Update \`active/\`** files as needed to reflect any state changes
           7. **Confirm deletion** in your progress report — state which file was processed and deleted
 
-          If a file cannot be fully processed (ambiguous data, incomplete information), document what was done and what remains as open loops in \`01-active/open-loops.md\` — then still delete the source file.
+          If a file cannot be fully processed (ambiguous data, incomplete information), document what was done and what remains as open loops in \`active/open-loops.md\` — then still delete the source file.
 
-          Do not treat docdump files as source of truth until their data has been validated and written into a canonical brain file." \
+          Do not treat intake/docs files as source of truth until their data has been validated and written into a canonical brain file." \
             --label "copilot" \
             --assignee "Copilot"

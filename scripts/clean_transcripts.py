@@ -27,7 +27,7 @@ except ImportError:
     print("Run: pip install anthropic")
     sys.exit(1)
 
-TRANSCRIPTS_DIR = os.path.join(os.path.dirname(__file__), "..", "OIO Brain", "02 - Content", "Video Scripts")
+TRANSCRIPTS_DIR = os.path.join(os.path.dirname(__file__), "..", "transcripts")
 
 
 def find_transcript_folders(transcripts_dir):

@@ -24,13 +24,13 @@ Every agent session must start with orientation. Do not skip or reorder these re
 | Step | File | What You Learn |
 |---|---|---|
 | 1 | [`README.md`](README.md) | What OIO is and how this repo is organized |
-| 2 | [`01-active/current-state.md`](01-active/current-state.md) | What is happening right now — vehicles, content, blockers |
-| 3 | [`01-active/active-priorities.md`](01-active/active-priorities.md) | What matters most and why |
-| 4 | [`01-active/open-loops.md`](01-active/open-loops.md) | Unresolved questions and pending decisions |
-| 5 | [`01-active/next-actions.md`](01-active/next-actions.md) | Concrete next steps by area |
+| 2 | [`active/current-state.md`](active/current-state.md) | What is happening right now — vehicles, content, blockers |
+| 3 | [`active/priorities.md`](active/priorities.md) | What matters most and why |
+| 4 | [`active/open-loops.md`](active/open-loops.md) | Unresolved questions and pending decisions |
+| 5 | [`active/next-actions.md`](active/next-actions.md) | Concrete next steps by area |
 | 6 | [`INDEX.md`](INDEX.md) | Full map of the repo — use this to navigate to domain files |
 
-Only after orienting yourself should you read domain-specific files in `OIO Brain/`.
+Only after orienting yourself should you read domain-specific files in ``.
 
 ---
 
@@ -48,18 +48,18 @@ Only after orienting yourself should you read domain-specific files in `OIO Brai
 ├── .github/
 │   └── copilot-instructions.md  ← Full standing instructions for agents (authoritative)
 │
-├── 00-core/                     ← Governance, standards, decisions log, templates
+├── core/                     ← Governance, standards, decisions log, templates
 │   ├── repo-standards.md        ← The operational manual for this repo
 │   ├── decisions-log.md         ← Log of significant decisions
 │   └── templates/               ← File templates (use these when creating new docs)
 │
-├── 01-active/                   ← Live memory layer — read first, update constantly
+├── active/                   ← Live memory layer — read first, update constantly
 │   ├── current-state.md
-│   ├── active-priorities.md
+│   ├── priorities.md
 │   ├── open-loops.md
 │   └── next-actions.md
 │
-├── OIO Brain/                   ← Canonical knowledge organized by domain
+├──                    ← Canonical knowledge organized by domain
 │   ├── 00 - Start Here/         ← Brand identity, operating system, standing rules
 │   ├── 01 - Brand/              ← Mission, audience, voice, tone, team bios
 │   ├── 02 - Content/            ← Video pipeline, ideas, published log, summaries
@@ -70,11 +70,11 @@ Only after orienting yourself should you read domain-specific files in `OIO Brai
 │   ├── 07 - Admin/              ← Contacts, accounts, policies
 │   └── data/                    ← Structured data (social posts, results JSON)
 │
-├── docdump/                     ← Intake zone for raw documents from Ian
+├── intake/docs/                     ← Intake zone for raw documents from Ian
 │   └── dailies/                 ← Raw daily video transcripts from Ian
 │
 ├── photos/                      ← Photo library organized by driver/car
-├── picdump/                     ← Intake queue for new photos
+├── intake/photos/                     ← Intake queue for new photos
 ├── transcripts/                 ← Auto-fetched YouTube video transcripts
 └── scripts/                     ← Data processing scripts
 ```
@@ -101,14 +101,14 @@ Every file in this repo belongs to one of four classes. This determines how much
 Before creating a new file, check if the content belongs in an existing one. Creating near-duplicate files is a violation of repo standards.
 
 - New facts about a car → update the car's `Overview.md` or `Maintenance-Log.md`
-- New decisions → log in `00-core/decisions-log.md`
-- New open questions → add to `01-active/open-loops.md`
-- New completed actions → update `01-active/next-actions.md`
-- New video ideas → add to `OIO Brain/02 - Content/Video-Ideas-Backlog.md`
+- New decisions → log in `core/decisions-log.md`
+- New open questions → add to `active/open-loops.md`
+- New completed actions → update `active/next-actions.md`
+- New video ideas → add to `content/video-backlog.md`
 
 ### Frontmatter Is Required
 
-All new files in `OIO Brain/`, `00-core/`, and `01-active/` must include this frontmatter block:
+All new files in ``, `core/`, and `active/` must include this frontmatter block:
 
 ```yaml
 ---
@@ -125,7 +125,7 @@ summary: 1–3 sentences describing what this file contains and when to use it.
 
 ### After Any Task — Update the Memory Layer
 
-When you finish work, update the relevant `01-active/` file to reflect what changed. Do not let the memory layer go stale.
+When you finish work, update the relevant `active/` file to reflect what changed. Do not let the memory layer go stale.
 
 ---
 
@@ -133,31 +133,31 @@ When you finish work, update the relevant `01-active/` file to reflect what chan
 
 ### Docdump Processing
 
-When Ian drops a file in `docdump/`:
+When Ian drops a file in `intake/docs/`:
 
 1. Read the full file
 2. Identify where the data belongs in the brain
 3. Distribute data — update existing files first, create new ones only if needed
-4. Delete the source file from `docdump/` when done
+4. Delete the source file from `intake/docs/` when done
 5. Confirm deletion in your progress report
-6. Update `01-active/` files to reflect any state changes
+6. Update `active/` files to reflect any state changes
 
-**Rules:** Always delete source files after processing. If a file can't be fully processed, document gaps in `01-active/open-loops.md`, then still delete the source.
+**Rules:** Always delete source files after processing. If a file can't be fully processed, document gaps in `active/open-loops.md`, then still delete the source.
 
 ### Dailies Processing
 
-When Ian drops a raw daily transcript in `docdump/dailies/`:
+When Ian drops a raw daily transcript in `intake/dailies/`:
 
 1. Read the full transcript
-2. Generate a structured summary using the template at `00-core/templates/transcript-summary.md`
-3. Save the summary to `OIO Brain/02 - Content/Summaries/YYYY-MM-DD_description.md`
+2. Generate a structured summary using the template at `core/templates/transcript-summary.md`
+3. Save the summary to `content/summaries/YYYY-MM-DD_description.md`
 4. Update relevant brain files (car overviews, maintenance logs, video ideas, events, active state)
-5. Delete the source file from `docdump/dailies/` when done
-6. **Never delete** `docdump/dailies/` itself or `docdump/dailies/README.md`
+5. Delete the source file from `intake/dailies/` when done
+6. **Never delete** `intake/dailies/` itself or `intake/dailies/README.md`
 
 ### Photo Processing
 
-When images are pushed to `picdump/`:
+When images are pushed to `intake/photos/`:
 
 - A GitHub Action (`process-picdump-photos.yml`) auto-spawns a Copilot agent to file them
 - Photos are organized into `photos/[Driver]/[Car]/`
@@ -173,12 +173,12 @@ When images are pushed to `picdump/`:
 ### Social Posts
 
 - Facebook + Instagram posts are fetched automatically by `scripts/fetch_social_posts.py`
-- Stored in `OIO Brain/data/social-posts/facebook/` and `.../instagram/`
-- `scripts/analyze_social_posts.py` runs after each fetch and injects arc data into car/driver files and a stats appendix into `Social-Post-Voice.md`
+- Stored in `data/social-posts/facebook/` and `.../instagram/`
+- `scripts/analyze_social_posts.py` runs after each fetch and injects arc data into car/driver files and a stats appendix into `brand/social-voice.md`
 - Arc data lives in each car's `Overview.md` and each driver's section of `Team-Bios.md` — injected via `<!-- social-arc:{key}:start/end -->` markers
-- Cross-cutting arcs (championship, Fit-Off) live in `OIO Brain/02 - Content/Season-Story-Arcs.md`
-- **`Social-Post-Voice.md` is hand-authored** (`source_of_truth: true`) — the script only updates the live stats appendix at the bottom (inside `<!-- social-voice-stats:start/end -->` markers). The guide content above those markers is never overwritten.
-- See `OIO Brain/01 - Brand/Social-Post-Voice.md` for the canonical voice guide, tone buckets, post patterns, CTAs, and hashtag strategy
+- Cross-cutting arcs (championship, Fit-Off) live in `content/story-arcs.md`
+- **`brand/social-voice.md` is hand-authored** (`source_of_truth: true`) — the script only updates the live stats appendix at the bottom (inside `<!-- social-voice-stats:start/end -->` markers). The guide content above those markers is never overwritten.
+- See `brand/social-voice.md` for the canonical voice guide, tone buckets, post patterns, CTAs, and hashtag strategy
 
 ---
 
@@ -201,9 +201,9 @@ When images are pushed to `picdump/`:
 3. **Do not delete content — archive it.** Mark as `status: archived` and move to `archive/` if needed.
 4. **Do not treat capture notes as source of truth.**
 5. **Do not skip frontmatter** on new files in governed folders.
-6. **Do not let `01-active/` files go stale.** They are the memory layer — update them when things change.
-7. **Log significant decisions** in `00-core/decisions-log.md` with date and rationale.
-8. **Always delete source files** from `docdump/` and `docdump/dailies/` after processing.
+6. **Do not let `active/` files go stale.** They are the memory layer — update them when things change.
+7. **Log significant decisions** in `core/decisions-log.md` with date and rationale.
+8. **Always delete source files** from `intake/docs/` and `intake/dailies/` after processing.
 
 ---
 
@@ -211,19 +211,19 @@ When images are pushed to `picdump/`:
 
 | Type of content | Where it lives |
 |---|---|
-| Brand voice, tone, persona | `OIO Brain/01 - Brand/` |
-| Video ideas and pipeline | `OIO Brain/02 - Content/` |
-| Car builds and maintenance | `OIO Brain/03 - Cars/[Driver]/[Car]/` |
-| Race results and events | `OIO Brain/04 - Events/` |
-| Filming and editing SOPs | `OIO Brain/05 - Production/` |
-| Budget and business | `OIO Brain/06 - Business/` |
-| Contacts and accounts | `OIO Brain/07 - Admin/` |
-| Current state snapshot | `01-active/current-state.md` |
-| New decisions | `00-core/decisions-log.md` |
-| Open questions | `01-active/open-loops.md` |
-| Next concrete steps | `01-active/next-actions.md` |
-| New video ideas | `OIO Brain/02 - Content/Video-Ideas-Backlog.md` |
-| Daily transcript summaries | `OIO Brain/02 - Content/Summaries/` |
+| Brand voice, tone, persona | `brand/` |
+| Video ideas and pipeline | `content/` |
+| Car builds and maintenance | `cars/[driver]/[car-slug]/` |
+| Race results and events | `events/` |
+| Filming and editing SOPs | `production/` |
+| Budget and business | `business/` |
+| Contacts and accounts | `ops/` |
+| Current state snapshot | `active/current-state.md` |
+| New decisions | `core/decisions-log.md` |
+| Open questions | `active/open-loops.md` |
+| Next concrete steps | `active/next-actions.md` |
+| New video ideas | `content/video-backlog.md` |
+| Daily transcript summaries | `content/Summaries/` |
 | Photos | `photos/[Driver]/[Car]/` |
 
 ---

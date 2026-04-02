@@ -20,18 +20,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check for unfiled photos in picdump
+      - name: Check for unfiled photos in intake/photos
         id: check-unfiled
         run: |
-          # Find photos in picdump that still need manual filing
-          UNFILED_COUNT=$(find picdump -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.heic' -o -iname '*.webp' \) | wc -l | tr -d ' ')
+          # Find photos in intake/photos that still need manual filing
+          UNFILED_COUNT=$(find intake/photos -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.heic' -o -iname '*.webp' \) | wc -l | tr -d ' ')
 
           if [ "$UNFILED_COUNT" -gt 0 ]; then
             echo "has_unfiled=true" >> "$GITHUB_OUTPUT"
             echo "unfiled_count=$UNFILED_COUNT" >> "$GITHUB_OUTPUT"
 
             # Get list of unfiled photos
-            UNFILED_LIST=$(find picdump -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.heic' -o -iname '*.webp' \) | sed 's|^picdump/||' | head -10)
+            UNFILED_LIST=$(find intake/photos -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.heic' -o -iname '*.webp' \) | sed 's|^intake/photos/||' | head -10)
             {
               echo "unfiled_list<<EOF"
               echo "$UNFILED_LIST"
@@ -61,7 +61,7 @@ jobs:
           LIST="${{ steps.check-unfiled.outputs.unfiled_list }}"
 
           gh issue create \
-            --title "🚨 HIGH PRIORITY: $COUNT photo(s) in picdump need manual review" \
+            --title "🚨 HIGH PRIORITY: $COUNT photo(s) in intake/photos need manual review" \
             --body "## Photo Filing Status
 
 **Action Required:** $COUNT photo(s) could not be auto-filed by the AI agent and need manual review.
@@ -72,7 +72,7 @@ ${LIST}
 \`\`\`
 
 **Next Steps:**
-1. Review the photo(s) in the picdump folder
+1. Review the photo(s) in the intake/photos folder
 2. Identify the car, driver, and event context
 3. File manually to photos/{Driver}/{Car}/ if known
 4. Otherwise, create an issue in open-loops.md for later review

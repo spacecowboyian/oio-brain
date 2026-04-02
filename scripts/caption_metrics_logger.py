@@ -9,7 +9,7 @@ Tracks caption generation metrics for quality monitoring and iterative refinemen
 - Error rates and failure analysis
 - Quality feedback from team members
 
-Metrics are logged to: OIO Brain/data/caption-metrics/events.jsonl
+Metrics are logged to: data/caption-metrics/events.jsonl
 """
 
 import json
@@ -25,7 +25,7 @@ class CaptionMetricsLogger:
 
     def __init__(self):
         """Initialize the metrics logger."""
-        self.metrics_dir = Path(__file__).parent.parent / "OIO Brain" / "data" / "caption-metrics"
+        self.metrics_dir = Path(__file__).parent.parent / "data" / "caption-metrics"
         self.events_file = self.metrics_dir / "events.jsonl"
         self.metrics_dir.mkdir(parents=True, exist_ok=True)
 

@@ -54,10 +54,10 @@ Feedback Loop (AI Copywriter refinement)
 
 ### Storage Location
 
-All metrics are stored in: `OIO Brain/data/caption-metrics/`
+All metrics are stored in: `data/caption-metrics/`
 
 ```
-OIO Brain/data/caption-metrics/
+data/caption-metrics/
   events.jsonl              — Complete event stream (append-only)
   metrics-summary.json      — Latest 7-day metrics
   weekly-trends.json        — Week-over-week comparison
@@ -281,7 +281,7 @@ Generated issues in Paperclip with:
 
 ### Low Success Rate (< 90%)
 
-1. **Check error logs:** `OIO Brain/data/caption-metrics/errors.log`
+1. **Check error logs:** `data/caption-metrics/errors.log`
 2. **Common causes:**
    - Paperclip API timeout (check network)
    - Task taking > 120 seconds (prompt too complex)
@@ -316,7 +316,7 @@ Generated issues in Paperclip with:
 | `scripts/caption_generation_service.py` | Integrates logger (updates needed) |
 | `scripts/slackbot_social_media.py` | Integrates logger for feedback |
 | `.github/workflows/analyze-caption-metrics.yml` | Automated analysis (to create) |
-| `OIO Brain/data/caption-metrics/events.jsonl` | Event stream (created automatically) |
+| `data/caption-metrics/events.jsonl` | Event stream (created automatically) |
 | `CAPTION-MONITORING.md` | This file |
 
 ---

@@ -71,20 +71,20 @@ jobs:
           git config user.email "bot@oioracing.local"
 
           # Check if there are new photos to commit
-          if [ -z "$(git status --porcelain picdump/)" ]; then
+          if [ -z "$(git status --porcelain intake/photos/)" ]; then
             echo "No new photos to commit."
           else
-            echo "Found new photos in picdump/"
-            git add picdump/ .github/sync-state/ 2>/dev/null || true
+            echo "Found new photos in intake/photos/"
+            git add intake/photos/ .github/sync-state/ 2>/dev/null || true
 
             # Count new photos
-            NEW_COUNT=$(git diff --cached --name-only picdump/ | grep -E '\.(jpg|jpeg|png|heic|webp)$' | wc -l)
+            NEW_COUNT=$(git diff --cached --name-only intake/photos/ | grep -E '\.(jpg|jpeg|png|heic|webp)$' | wc -l)
 
             if [ "$NEW_COUNT" -gt 0 ]; then
               git commit -m "chore: sync $NEW_COUNT photo(s) from Google Photos album
 
 Auto-downloaded new photos from the shared Google Photos album.
-Photos are staged in picdump/ for AI filing workflow.
+Photos are staged in intake/photos/ for AI filing workflow.
 
 Co-Authored-By: Paperclip <noreply@paperclip.ing>" || true
               git push
