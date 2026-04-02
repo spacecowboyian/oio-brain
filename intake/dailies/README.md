@@ -34,7 +34,7 @@ Drop a raw daily transcript here and Copilot will automatically:
 
 1. Read the transcript in full
 2. Generate a structured summary using the `transcript-summary` template
-3. File the summary into `OIO Brain/02 - Content/Summaries/`
+3. File the summary into `content/summaries/`
 4. Update any relevant brain files (car overviews, maintenance logs, event logs, video backlog)
 5. Delete the source transcript file from this folder
 
@@ -48,7 +48,7 @@ Drop a raw daily transcript here and Copilot will automatically:
 2. **Name the file** using the format: `YYYY-MM-DD_description.md` (or `.txt`)
    - Example: `2026-03-22_goblin-rallycross-e1.md`
    - If date is unknown: `undated_description.md`
-3. **Drop the file** into this `docdump/dailies/` folder
+3. **Drop the file** into this `intake/dailies/` folder
 4. **Push to main** — the `process-dailies` workflow will auto-trigger
 5. **Done** — Copilot handles the rest
 
@@ -58,11 +58,11 @@ Drop a raw daily transcript here and Copilot will automatically:
 
 - Reads the full transcript
 - Identifies car(s), people, events, build/mechanical details, and key topics
-- Generates a summary using `00-core/templates/transcript-summary.md`
-- Saves the summary to `OIO Brain/02 - Content/Summaries/YYYY-MM-DD_title.md`
+- Generates a summary using `core/templates/transcript-summary.md`
+- Saves the summary to `content/summaries/YYYY-MM-DD_title.md`
 - Updates relevant brain files (car Overview, Maintenance-Log, Video-Ideas-Backlog, etc.)
 - Deletes the source transcript file from this folder
-- Updates `01-active/` as needed
+- Updates `active/` as needed
 
 ---
 
@@ -80,7 +80,7 @@ Drop a raw daily transcript here and Copilot will automatically:
 
 | Type | Location | Source | Purpose |
 |---|---|---|---|
-| **Dailies** | `docdump/dailies/` | Raw working clips / audio dumps | Drive brain data + create summary for future scripting |
+| **Dailies** | `intake/dailies/` | Raw working clips / audio dumps | Drive brain data + create summary for future scripting |
 | **Final transcripts** | `transcripts/` (repo root) | Published YouTube videos (auto-fetched) | Full text archive of published content |
 
 ---

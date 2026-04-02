@@ -46,7 +46,7 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 - [ ] Film Kids' First Autocross (Apr 12) for Apr 24 vlog
 - [ ] Line up May Fit How-To topic: Kids prep the GE8
 - [ ] Capture shorts at every event and garage session — minimum 2–3 per month
-- [ ] See full schedule: `OIO Brain/02 - Content/2026-Content-Schedule.md`
+- [ ] See full schedule: `content/schedule.md`
 
 ---
 
@@ -69,10 +69,10 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 ## Repo / Admin
 
-- [ ] **Add 3 GitHub repo secrets for social media indexing:** `META_ACCESS_TOKEN`, `META_FACEBOOK_PAGE_ID`, `META_INSTAGRAM_ACCOUNT_ID` — see `OIO Brain/data/social-posts/README.md` for step-by-step setup (requires Meta Developer account + connecting Instagram Business account to Facebook Page)
-- [ ] Fill in confirmed 2026 event dates in `OIO Brain/04 - Events/Schedules.md`
+- [ ] **Add 3 GitHub repo secrets for social media indexing:** `META_ACCESS_TOKEN`, `META_FACEBOOK_PAGE_ID`, `META_INSTAGRAM_ACCOUNT_ID` — see `data/social-posts/README.md` for step-by-step setup (requires Meta Developer account + connecting Instagram Business account to Facebook Page)
+- [ ] Fill in confirmed 2026 event dates in `events/schedules.md`
 - [ ] Add specific 2026 Fit How-To topics to the Video Ideas Backlog as they're confirmed
 - [ ] Fill in real data in Budget.md once racing costs are known
-- [ ] Add contact info to `OIO Brain/07 - Admin/Contacts.md` for key people
-- [ ] Upload more car photos to `picdump/` — agent will auto-file and index them
-- [ ] Add social media post history to `PHOTO-INDEX.md` as photos get posted
+- [ ] Add contact info to `ops/contacts.md` for key people
+- [ ] Upload more car photos to `intake/photos/` — agent will auto-file and index them
+- [ ] Add social media post history to `photos/README.md` as photos get posted

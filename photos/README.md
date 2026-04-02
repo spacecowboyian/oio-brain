@@ -13,7 +13,7 @@ summary: Master index of every photo in the OIO photo library. Organized by driv
 
 > Every photo that has ever been filed into the OIO photo library — organized by driver and car, with posting history.
 >
-> **How to add photos:** Drop image files into the `picdump/` folder and push to main. A GitHub Action will spawn a Copilot agent to identify the car, file the photo in the right folder, update this index, and update the car's description.
+> **How to add photos:** Drop image files into the `intake/photos/` folder and push to main. A GitHub Action will spawn a Copilot agent to identify the car, file the photo in the right folder, update this index, and update the car's description.
 
 ---
 
@@ -35,11 +35,11 @@ summary: Master index of every photo in the OIO photo library. Organized by driv
 
 ### 1985 Toyota MR2 AW11 — The Goblin
 
-📁 [photos/Ian/1985-MR2-Goblin/](photos/Ian/1985-MR2-Goblin/)
+📁 [photos/ian/1985-MR2-Goblin/](photos/ian/1985-MR2-Goblin/)
 
 | # | Filename | Thumbnail | Date | Event | Subject | Posted |
 |---|---|---|---|---|---|---|
-| 1 | [IMG_8181.png](photos/Ian/1985-MR2-Goblin/IMG_8181.png) | — | Unknown | KCRSCCA Rallycross | Action shot — sliding on dirt, dust rooster tail, marshal in bg, "2MR" door graphics | No |
+| 1 | [IMG_8181.png](photos/ian/1985-MR2-Goblin/IMG_8181.png) | — | Unknown | KCRSCCA Rallycross | Action shot — sliding on dirt, dust rooster tail, marshal in bg, "2MR" door graphics | No |
 
 **Visual ID markers for The Goblin:**
 Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4-spoke cross alloys. "2MR" red/white door number. Slatted rear engine cover. Rear spoiler.
@@ -48,7 +48,7 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ### 1972 Toyota Celica — Dale's Dragon
 
-📁 [photos/Ian/1972-Celica-Dales-Dragon/](photos/Ian/1972-Celica-Dales-Dragon/)
+📁 [photos/ian/1972-Celica-Dales-Dragon/](photos/ian/1972-Celica-Dales-Dragon/)
 
 *No photos yet.*
 
@@ -56,7 +56,7 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ### 1977 Toyota Corolla
 
-📁 [photos/Ian/1977-Corolla/](photos/Ian/1977-Corolla/)
+📁 [photos/ian/1977-Corolla/](photos/ian/1977-Corolla/)
 
 *No photos yet.*
 
@@ -64,7 +64,7 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ### 1982 Toyota Cressida Wagon
 
-📁 [photos/Ian/1982-Cressida-Wagon/](photos/Ian/1982-Cressida-Wagon/)
+📁 [photos/ian/1982-Cressida-Wagon/](photos/ian/1982-Cressida-Wagon/)
 
 *No photos yet.*
 
@@ -72,7 +72,7 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ### 2009 Honda Fit — Fitty Cent
 
-📁 [photos/Ian/2009-Honda-Fit/](photos/Ian/2009-Honda-Fit/)
+📁 [photos/ian/2009-Honda-Fit/](photos/ian/2009-Honda-Fit/)
 
 *No photos yet.*
 
@@ -80,7 +80,7 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ### 2014 Toyota Tundra
 
-📁 [photos/Ian/2014-Tundra/](photos/Ian/2014-Tundra/)
+📁 [photos/ian/2014-Tundra/](photos/ian/2014-Tundra/)
 
 *No photos yet.*
 
@@ -88,7 +88,7 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ### 1962 Renault Dauphine
 
-📁 [photos/Ian/1962-Dauphine/](photos/Ian/1962-Dauphine/)
+📁 [photos/ian/1962-Dauphine/](photos/ian/1962-Dauphine/)
 
 *No photos yet.*
 
@@ -96,7 +96,7 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ## Ryan
 
-📁 [photos/Ryan/](photos/Ryan/)
+📁 [photos/ryan/](photos/ryan/)
 
 *No photos yet.*
 
@@ -104,7 +104,7 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ## Keegan
 
-📁 [photos/Keegan/](photos/Keegan/)
+📁 [photos/keegan/](photos/keegan/)
 
 *No photos yet.*
 
@@ -112,7 +112,7 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ## Richard
 
-📁 [photos/Richard/](photos/Richard/)
+📁 [photos/richard/](photos/richard/)
 
 *No photos yet.*
 
@@ -120,7 +120,7 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ## Karen
 
-📁 [photos/Karen/](photos/Karen/)
+📁 [photos/karen/](photos/karen/)
 
 *No photos yet.*
 
@@ -138,13 +138,13 @@ Steel/medium blue AW11 coupe. T-top roof. Pop-up headlights. Black door vents. 4
 
 ## How This Index Is Maintained
 
-This file is updated automatically by the Copilot agent whenever new photos are processed from `picdump/`. The agent:
+This file is updated automatically by the Copilot agent whenever new photos are processed from `intake/photos/`. The agent:
 
 1. Identifies the car in each photo using visual AI and cross-references it against known OIO fleet data
 2. Moves the photo to the correct `photos/{Driver}/{Car}/` folder
 3. Creates or updates the per-car `photo-log.md`
 4. Adds the photo to this master index
-5. Updates the car's `Overview.md` in `OIO Brain/03 - Cars/` with visual description data
-6. Clears the processed image from `picdump/`
+5. Updates the car's `Overview.md` in `cars/ian/` with visual description data
+6. Clears the processed image from `intake/photos/`
 
 To manually update: edit the relevant section above and update the Quick Stats table.
