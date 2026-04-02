@@ -38,9 +38,13 @@ SYNC_STATE_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def log(message, level="INFO"):
-    """Print timestamped log message."""
+    """Print timestamped log message to stdout."""
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"[{timestamp}] {level}: {message}")
+    output = f"[{timestamp}] {level}: {message}"
+    print(output, flush=True)
+    # Also print errors to stderr for better visibility in logs
+    if level in ("ERROR", "FATAL"):
+        print(output, file=sys.stderr, flush=True)
 
 
 def debug(message):
@@ -291,9 +295,12 @@ if __name__ == "__main__":
         log("\nInterrupted by user", "WARN")
         sys.exit(130)
     except Exception as e:
-        log(f"\nUNEXPECTED ERROR: {e}", "ERROR")
+        log(f"\nUNEXPECTED ERROR: {type(e).__name__}: {e}", "ERROR")
         import traceback
-        if DEBUG:
-            log("Full traceback:", "DEBUG")
-            log(traceback.format_exc(), "DEBUG")
+        log("Traceback:", "ERROR")
+        # Always log full traceback for visibility
+        tb_lines = traceback.format_exc().split('\n')
+        for line in tb_lines:
+            if line.strip():
+                log(line, "ERROR")
         sys.exit(1)
