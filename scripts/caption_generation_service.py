@@ -64,7 +64,7 @@ PAPERCLIP_API_KEY = os.environ.get("PAPERCLIP_API_KEY", "")
 PAPERCLIP_COMPANY_ID = os.environ.get("PAPERCLIP_COMPANY_ID", "")
 
 # OIO Brain paths
-BRAIN_ROOT = Path(__file__).parent.parent / "OIO Brain"
+BRAIN_ROOT = Path(__file__).parent.parent
 BRAND_VOICE_PATH = BRAIN_ROOT / "01 - Brand" / "Voice-and-Tone.md"
 BRAND_VOICE_GUIDE_PATH = BRAIN_ROOT / "02 - Content" / "OIO-Brand-Voice-Guide.md"
 CARS_PATH = BRAIN_ROOT / "03 - Cars"

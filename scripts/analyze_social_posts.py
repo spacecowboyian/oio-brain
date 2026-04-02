@@ -2,29 +2,29 @@
 """
 OIO Racing - Social Posts Analyzer
 
-Reads all social media posts from OIO Brain/data/social-posts/
+Reads all social media posts from data/social-posts/
 and updates brain documents in-place:
 
   VOICE DOC: injects a live stats appendix into the hand-authored guide
-    OIO Brain/01 - Brand/Social-Post-Voice.md
+    brand/social-voice.md
     The guide content (tone, rules, patterns, CTAs) is hand-authored and
     preserved. Only the <!-- social-voice-stats:start/end --> block is
     regenerated. Do not hand-edit that block.
 
   PER-CAR: injects a ## Social Post Arc block into each car's Overview.md
-    OIO Brain/03 - Cars/Ian/1985 MR2/Overview.md           ← Goblin
-    OIO Brain/03 - Cars/Ian/2009 Honda Fit/Overview.md     ← Fitty Cent
-    OIO Brain/03 - Cars/Ian/1972 Celica/Overview.md        ← Dale
-    OIO Brain/03 - Cars/Ryan/1973 MGB GT/Overview.md       ← MGBGT
-    OIO Brain/03 - Cars/Richard/ST205/Overview.md          ← ST205
-    OIO Brain/03 - Cars/Richard/1983 Starlet/Overview.md   ← Starlet
+    cars/ian/mr2-goblin/Overview.md           ← Goblin
+    cars/ian/fit-fittycent/Overview.md     ← Fitty Cent
+    cars/ian/celica-dale/Overview.md        ← Dale
+    cars/ryan/mgb-gt/Overview.md       ← MGBGT
+    cars/richard/st205/Overview.md          ← ST205
+    cars/richard/starlet/Overview.md   ← Starlet
 
   PER-DRIVER: injects a ### Social Post Arc block into Team-Bios.md
     under each driver's section (Ian, Ryan, Richard, Hudson, Miles)
 
   CROSS-CUTTING: regenerates one aggregate doc for arcs that span
     multiple drivers/cars (e.g. the 2026 MR class season campaign)
-    OIO Brain/02 - Content/Season-Story-Arcs.md
+    content/story-arcs.md
 
 All injected blocks are wrapped in per-key HTML comment markers so they
 can be safely replaced on every run without touching any other content.
@@ -49,10 +49,10 @@ from datetime import date
 # Paths
 # ---------------------------------------------------------------------------
 REPO_ROOT   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SOCIAL_DIR  = os.path.join(REPO_ROOT, "OIO Brain", "data", "social-posts")
-BRAND_DIR   = os.path.join(REPO_ROOT, "OIO Brain", "01 - Brand")
-CONTENT_DIR = os.path.join(REPO_ROOT, "OIO Brain", "02 - Content")
-CARS_DIR    = os.path.join(REPO_ROOT, "OIO Brain", "03 - Cars")
+SOCIAL_DIR  = os.path.join(REPO_ROOT, "data", "social-posts")
+BRAND_DIR   = os.path.join(REPO_ROOT, "brand")
+CONTENT_DIR = os.path.join(REPO_ROOT, "content")
+CARS_DIR    = os.path.join(REPO_ROOT, "cars")
 
 VOICE_DOC   = os.path.join(BRAND_DIR, "Social-Post-Voice.md")
 SEASON_DOC  = os.path.join(CONTENT_DIR, "Season-Story-Arcs.md")

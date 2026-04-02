@@ -2,7 +2,7 @@
 """
 OIO Racing - AI Photo Filing Agent
 
-Analyzes photos from picdump/ using Claude Vision API to identify:
+Analyzes photos from intake/photos/ using Claude Vision API to identify:
 - Which car is in the photo
 - Which driver owns it
 - What event/context
@@ -36,10 +36,10 @@ except ImportError:
 
 # Paths
 REPO_ROOT = Path(__file__).parent.parent
-PICDUMP_DIR = REPO_ROOT / "picdump"
+PICDUMP_DIR = REPO_ROOT / "intake" / "photos"
 PHOTOS_DIR = REPO_ROOT / "photos"
-OIO_BRAIN_DIR = REPO_ROOT / "OIO Brain"
-PHOTO_INDEX_FILE = REPO_ROOT / "PHOTO-INDEX.md"
+OIO_BRAIN_DIR = REPO_ROOT
+PHOTO_INDEX_FILE = REPO_ROOT / "photos/README.md"
 CARS_DIR = OIO_BRAIN_DIR / "03 - Cars"
 TEAM_BIOS_FILE = OIO_BRAIN_DIR / "01 - Brand" / "Team-Bios.md"
 
@@ -317,11 +317,11 @@ def notify_slack(filename, analysis_result, reason="uncertain"):
 # Main Processing
 # ---------------------------------------------------------------------------
 
-def process_picdump():
-    """Process all photos in picdump directory."""
+def process_intake/photos():
+    """Process all photos in intake/photos directory."""
 
     if not PICDUMP_DIR.exists():
-        print(f"Error: picdump directory not found at {PICDUMP_DIR}")
+        print(f"Error: intake/photos directory not found at {PICDUMP_DIR}")
         return 0
 
     # Find image files
@@ -329,10 +329,10 @@ def process_picdump():
     image_files = [f for f in image_files if f.suffix.lower() in [".jpg", ".jpeg", ".png", ".heic", ".webp"]]
 
     if not image_files:
-        print("No image files found in picdump/")
+        print("No image files found in intake/photos/")
         return 0
 
-    print(f"Found {len(image_files)} image(s) in picdump/\n")
+    print(f"Found {len(image_files)} image(s) in intake/photos/\n")
 
     # Initialize Anthropic client
     client = Anthropic()
@@ -399,14 +399,14 @@ def process_picdump():
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Analyze and auto-file photos from picdump using Claude Vision."
+        description="Analyze and auto-file photos from intake/photos using Claude Vision."
     )
     args = parser.parse_args()
 
     print("OIO Racing - AI Photo Filing Agent\n")
 
     try:
-        filed = process_picdump()
+        filed = process_intake/photos()
         sys.exit(0)
 
     except RuntimeError as e:

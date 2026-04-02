@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 OIO Racing - YouTube Transcript Fetcher
-Fetches auto-generated YouTube transcripts for videos listed in OIO-Video-Catalog.md.
+Fetches auto-generated YouTube transcripts for videos listed in content/video-catalog.md.
 
 Usage:
   python scripts/fetch_transcripts.py                        # Fetch only new transcripts (up to batch-size)
@@ -43,8 +43,8 @@ try:
 except ImportError:
     _YTDLP_AVAILABLE = False
 
-CATALOG_FILE = os.path.join(os.path.dirname(__file__), "..", "OIO-Video-Catalog.md")
-TRANSCRIPTS_DIR = os.path.join(os.path.dirname(__file__), "..", "OIO Brain", "02 - Content", "Video Scripts")
+CATALOG_FILE = os.path.join(os.path.dirname(__file__), "..", "content/video-catalog.md")
+TRANSCRIPTS_DIR = os.path.join(os.path.dirname(__file__), "..", "transcripts")
 RATE_LIMIT_SECONDS = 1  # 1 request per second
 
 
@@ -87,7 +87,7 @@ def duration_to_seconds(duration_str):
 
 def parse_catalog(catalog_path):
     """
-    Parse OIO-Video-Catalog.md and extract video entries.
+    Parse content/video-catalog.md and extract video entries.
 
     Returns a list of dicts with keys: video_id, title, date, url, duration, is_short
     """
@@ -299,7 +299,7 @@ def write_transcript(video, segments, transcripts_dir):
         "title": video["title"],
         "date": video["date"],
         "url": video["url"],
-        "transcript_path": os.path.join("OIO Brain", "02 - Content", "Video Scripts", folder_name, "transcript.md"),
+        "transcript_path": os.path.join("transcripts", folder_name, "transcript.md"),
         "segment_count": len(segments),
         "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }

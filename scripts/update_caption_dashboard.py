@@ -18,7 +18,7 @@ class DashboardUpdater:
     def __init__(self):
         """Initialize updater."""
         self.repo_root = Path(__file__).parent.parent
-        self.metrics_dir = self.repo_root / "OIO Brain" / "data" / "caption-metrics"
+        self.metrics_dir = self.repo_root / "data" / "caption-metrics"
         self.dashboard_file = self.repo_root / "CAPTION-MONITORING.md"
 
     def update(self) -> None:

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
 OIO Racing - Catalog Transcript Linker
-Updates OIO-Video-Catalog.md with links to available transcripts.
+Updates content/video-catalog.md with links to available transcripts.
 
 Usage:
   python scripts/update_catalog_transcripts.py
 
 Process:
-1. Parse OIO-Video-Catalog.md for video tables
+1. Parse content/video-catalog.md for video tables
 2. Scan transcripts/ folder for available transcripts
 3. Add "Transcript" column to tables (if not exists)
 4. Insert links to available transcripts
@@ -24,8 +24,8 @@ import re
 from pathlib import Path
 
 
-CATALOG_FILE = Path(__file__).parent.parent / "OIO-Video-Catalog.md"
-TRANSCRIPTS_DIR = Path(__file__).parent.parent / "OIO Brain" / "02 - Content" / "Video Scripts"
+CATALOG_FILE = Path(__file__).parent.parent / "content/video-catalog.md"
+TRANSCRIPTS_DIR = Path(__file__).parent.parent / "transcripts"
 
 
 def get_transcript_mapping():
@@ -54,7 +54,7 @@ def get_transcript_mapping():
 
             video_id = meta.get("video_id")
             if video_id:
-                transcript_path = f"OIO Brain/02 - Content/Video Scripts/{folder.name}/transcript.md"
+                transcript_path = f"transcripts/{folder.name}/transcript.md"
                 mapping[video_id] = transcript_path
         except (json.JSONDecodeError, KeyError):
             continue
@@ -162,7 +162,7 @@ def update_catalog(catalog_path, transcript_map):
     Update catalog file with transcript links.
 
     Args:
-        catalog_path: Path to OIO-Video-Catalog.md
+        catalog_path: Path to content/video-catalog.md
         transcript_map: dict of video_id -> transcript_path
 
     Returns:

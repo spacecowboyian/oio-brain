@@ -30,16 +30,16 @@ This repository is the canonical operating brain for OIO Racing. It is designed 
 
 | Folder | Role | Mutability |
 |---|---|---|
-| `00-core/` | Governance, standards, decisions log, shared templates | Low — change deliberately |
-| `01-active/` | Live memory layer — current state, priorities, loops, actions | High — update constantly |
-| `OIO Brain/00 - Start Here/` | Brand identity, operating system, standing rules | Low — stable reference |
-| `OIO Brain/01 - Brand/` | Mission, audience, voice, team | Low — update when reality changes |
-| `OIO Brain/02 - Content/` | Video pipeline, ideas, published log | Medium — ideas grow, log is append-only |
-| `OIO Brain/03 - Cars/` | All vehicles — overview, setup, maintenance | Medium — evolves with builds |
-| `OIO Brain/04 - Events/` | Schedules, results, event notes | Medium to High — append each season |
-| `OIO Brain/05 - Production/` | SOPs, workflows, camera, assets | Low — update when process changes |
-| `OIO Brain/06 - Business/` | Budget, sponsors, merch, website | Medium — active during season |
-| `OIO Brain/07 - Admin/` | Contacts, accounts, policies, templates | Low to Medium |
+| `core/` | Governance, standards, decisions log, shared templates | Low — change deliberately |
+| `active/` | Live memory layer — current state, priorities, loops, actions | High — update constantly |
+| `brand/`, `ops/` | Brand identity, operating system, standing rules | Low — stable reference |
+| `brand/` | Mission, audience, voice, team | Low — update when reality changes |
+| `content/` | Video pipeline, ideas, published log | Medium — ideas grow, log is append-only |
+| `cars/` | All vehicles — overview, setup, maintenance | Medium — evolves with builds |
+| `events/` | Schedules, results, event notes | Medium to High — append each season |
+| `production/` | SOPs, workflows, camera, assets | Low — update when process changes |
+| `business/` | Budget, sponsors, merch, website | Medium — active during season |
+| `ops/` | Contacts, accounts, policies, templates | Low to Medium |
 | `.github/` | AI agent instructions | Low — change only when governance changes |
 
 ---
@@ -50,7 +50,7 @@ This repository is the canonical operating brain for OIO Racing. It is designed 
 Authoritative, durable reference documents. The official answer for their topic.
 
 - Marked: `source_of_truth: true`
-- Lives in: `OIO Brain/` (primary), `00-core/`
+- Lives in: the relevant domain folder (`brand/`, `cars/`, etc.), `core/`
 - Examples: Brand Guide, Team Bios, Voice and Tone, Car Overviews, Operating System, Policies
 - **Rules:** Update when reality changes. Log significant changes in `decisions-log.md`. Never silently overwrite without reason.
 
@@ -58,7 +58,7 @@ Authoritative, durable reference documents. The official answer for their topic.
 Active, in-progress documents. Accurate now but expected to evolve.
 
 - Marked: `status: active` or `status: draft`, without `source_of_truth: true`
-- Lives in: `01-active/`, or `OIO Brain/` for longer-lived working docs
+- Lives in: `active/`, or the relevant domain folder for longer-lived working docs
 - Examples: Video Ideas Backlog, Budget, Schedules, current-state.md, Sponsorship Leads
 - **Rules:** Update freely. Flag stale entries. Do not treat as permanent reference.
 
@@ -78,7 +78,7 @@ Outdated content preserved for reference. Not current.
 
 ## Frontmatter Requirements
 
-All documents in `OIO Brain/`, `00-core/`, and `01-active/` must include this frontmatter block:
+All documents in `brand/`, `cars/`, `content/`, `events/`, `production/`, `business/`, `ops/`, `core/`, and `active/` must include this frontmatter block:
 
 ```yaml
 ---
@@ -138,13 +138,13 @@ Raw capture note
        ↓
 Validate: is this fact confirmed?
        ↓ yes
-Working document (01-active/ or working section of relevant OIO Brain file)
+Working document (active/ or working section of relevant OIO Brain file)
        ↓
 Has it stabilized? Is it durable?
        ↓ yes
-Canonical document in OIO Brain/ with frontmatter
+Canonical document in  with frontmatter
        ↓
-If it's a significant decision: log in 00-core/decisions-log.md
+If it's a significant decision: log in core/decisions-log.md
 ```
 
 When in doubt, use a `TODO:` placeholder and note the gap rather than inventing content.
@@ -189,5 +189,5 @@ These apply to any agent or human making changes to this repo:
 3. Do not delete content — archive it.
 4. Do not treat capture notes as source of truth.
 5. Do not skip frontmatter on new files.
-6. Do not let `01-active/` files grow stale — they are the memory layer.
-7. Log significant decisions in `00-core/decisions-log.md`.
+6. Do not let `active/` files grow stale — they are the memory layer.
+7. Log significant decisions in `core/decisions-log.md`.

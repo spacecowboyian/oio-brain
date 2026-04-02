@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name "OIO Social Bot"
           git config user.email "bot@oioracing.local"
-          git add "OIO Brain/data/social-posts/"
+          git add "data/social-posts/"
           if git diff --cached --quiet; then
             echo "No new posts to commit."
           else
@@ -72,15 +72,15 @@ jobs:
       - name: Commit brain doc updates
         run: |
           git add \
-            "OIO Brain/01 - Brand/Social-Post-Voice.md" \
-            "OIO Brain/01 - Brand/Team-Bios.md" \
-            "OIO Brain/02 - Content/Season-Story-Arcs.md" \
-            "OIO Brain/03 - Cars/Ian/1985 MR2/Overview.md" \
-            "OIO Brain/03 - Cars/Ian/2009 Honda Fit/Overview.md" \
-            "OIO Brain/03 - Cars/Ian/1972 Celica/Overview.md" \
-            "OIO Brain/03 - Cars/Ryan/1973 MGB GT/Overview.md" \
-            "OIO Brain/03 - Cars/Richard/ST205/Overview.md" \
-            "OIO Brain/03 - Cars/Richard/1983 Starlet/Overview.md"
+            "brand/social-voice.md" \
+            "brand/team-bios.md" \
+            "content/story-arcs.md" \
+            "cars/ian/mr2-goblin/Overview.md" \
+            "cars/ian/fit-fittycent/Overview.md" \
+            "cars/ian/celica-dale/Overview.md" \
+            "cars/ryan/mgb-gt/Overview.md" \
+            "cars/richard/st205/Overview.md" \
+            "cars/richard/starlet/Overview.md"
           if git diff --cached --quiet; then
             echo "Brain docs unchanged — nothing to commit."
           else

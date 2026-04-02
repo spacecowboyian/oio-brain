@@ -33,10 +33,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "OIO Brain/02 - Content/oio-videos-master.json"
+          git add "data/oio-videos-master.json"
           # Only stage the docdump delta if the script wrote one (new videos found)
-          if [ -f docdump/oio_videos_raw.json ]; then
-            git add docdump/oio_videos_raw.json
+          if [ -f intake/docs/oio_videos_raw.json ]; then
+            git add intake/docs/oio_videos_raw.json
             git diff --cached --quiet || git commit -m "chore: update video master + queue new videos for agent [skip ci]"
             git push
             echo "has_new_videos=true" >> "$GITHUB_OUTPUT"
@@ -51,15 +51,15 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          NEW_COUNT=$(node -e "const f=require('./docdump/oio_videos_raw.json'); console.log(f.length);")
+          NEW_COUNT=$(node -e "const f=require('./intake/docs/oio_videos_raw.json'); console.log(f.length);")
           gh issue create \
             --title "Process ${NEW_COUNT} new OIO video(s) from docdump" \
-            --body "@copilot New video data has been written to \`docdump/oio_videos_raw.json\` (${NEW_COUNT} video(s)).
+            --body "@copilot New video data has been written to \`intake/docs/oio_videos_raw.json\` (${NEW_COUNT} video(s)).
 
           Please follow the docdump workflow:
-          1. Read \`docdump/oio_videos_raw.json\`
-          2. Distribute the data to the appropriate brain files (e.g. \`OIO Brain/02 - Content/Published-Videos.md\`, \`OIO Brain/02 - Content/Video-Ideas-Backlog.md\`, etc.)
-          3. Update \`01-active/\` files as needed to reflect any state changes
-          4. Delete \`docdump/oio_videos_raw.json\` once all data has been written" \
+          1. Read \`intake/docs/oio_videos_raw.json\`
+          2. Distribute the data to the appropriate brain files (e.g. \`content/published-videos.md\`, \`content/video-backlog.md\`, etc.)
+          3. Update \`active/\` files as needed to reflect any state changes
+          4. Delete \`intake/docs/oio_videos_raw.json\` once all data has been written" \
             --label "copilot" \
             --assignee "Copilot"

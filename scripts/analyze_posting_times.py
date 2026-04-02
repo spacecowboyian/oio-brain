@@ -27,10 +27,10 @@ class PostingTimeAnalyzer:
     def __init__(self, social_posts_dir: Optional[Path] = None):
         """Initialize analyzer."""
         if social_posts_dir is None:
-            social_posts_dir = Path(__file__).parent.parent / "OIO Brain" / "data" / "social-posts"
+            social_posts_dir = Path(__file__).parent.parent / "data" / "social-posts"
         self.social_posts_dir = social_posts_dir
         self.schedule_file = (
-            Path(__file__).parent.parent / "OIO Brain" / "data" / "optimal-posting-schedule.json"
+            Path(__file__).parent.parent / "data" / "optimal-posting-schedule.json"
         )
 
     def analyze(self, platform: Optional[str] = None) -> Dict[str, Dict[str, any]]:

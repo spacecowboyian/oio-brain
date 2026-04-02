@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'docdump/dailies/**'
+      - 'intake/dailies/**'
   workflow_dispatch:
 
 jobs:
@@ -21,27 +21,27 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Detect new daily transcript files in docdump/dailies
+      - name: Detect new daily transcript files in intake/docs/dailies
         id: detect
         run: |
           # For manual dispatch, list all current files; for push, find newly added files
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            FILES=$(find docdump/dailies/ -maxdepth 1 -type f \
+            FILES=$(find intake/dailies/ -maxdepth 1 -type f \
               \( -iname '*.md' -o -iname '*.txt' -o -iname '*.vtt' \) \
               | grep -v 'README\.md$' || true)
           else
             # Find files added in this push (exclude README.md)
-            FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'docdump/dailies/**' 2>/dev/null \
-              | grep -v '^docdump/dailies/README\.md$' \
+            FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'intake/dailies/**' 2>/dev/null \
+              | grep -v '^intake/dailies/README\.md$' \
               | grep -E '\.(md|txt|vtt)$' || true)
           fi
 
           if [ -z "$FILES" ]; then
-            echo "No new daily transcript files detected in docdump/dailies."
+            echo "No new daily transcript files detected in intake/docs/dailies."
             echo "has_files=false" >> "$GITHUB_OUTPUT"
           else
             COUNT=$(echo "$FILES" | wc -l | tr -d ' ')
-            echo "Detected $COUNT new daily transcript file(s) in docdump/dailies:"
+            echo "Detected $COUNT new daily transcript file(s) in intake/docs/dailies:"
             echo "$FILES"
             echo "has_files=true" >> "$GITHUB_OUTPUT"
             echo "file_count=$COUNT" >> "$GITHUB_OUTPUT"
@@ -74,8 +74,8 @@ jobs:
           FILE_LIST="${{ steps.detect.outputs.file_list }}"
 
           gh issue create \
-            --title "Process ${COUNT} new daily transcript(s) from docdump/dailies" \
-            --body "@copilot New raw daily transcript(s) have been pushed to \`docdump/dailies/\` and need to be processed into the OIO Brain.
+            --title "Process ${COUNT} new daily transcript(s) from intake/docs/dailies" \
+            --body "@copilot New raw daily transcript(s) have been pushed to \`intake/dailies/\` and need to be processed into the OIO Brain.
 
           **What are dailies?** These are raw audio transcripts from Ian's working video files — not final published YouTube videos. The goal is to use the audio to drive data into the brain and create a structured summary that can inform future video outlines and scripts.
 
@@ -85,7 +85,7 @@ jobs:
           **Instructions — follow these steps exactly:**
 
           1. **Read each transcript file in full** before starting
-          2. **Generate a structured summary** for each transcript using the template at \`00-core/templates/transcript-summary.md\` as your guide:
+          2. **Generate a structured summary** for each transcript using the template at \`core/templates/transcript-summary.md\` as your guide:
              - Summarize what the video/clip is about in 2–4 sentences
              - List key topics, cars, people, events, and locations mentioned
              - Pull out key quotes or memorable moments
@@ -93,27 +93,27 @@ jobs:
              - Identify how this clip fits into the OIO story arc
              - Generate follow-up content ideas if any are obvious
              - Note: YouTube ID is not required for dailies — leave blank or mark \`[unknown]\` if not a published video
-          3. **Save the summary** to \`OIO Brain/02 - Content/Summaries/\` as a new file:
+          3. **Save the summary** to \`content/summaries/\` as a new file:
              - Use the filename format: \`YYYY-MM-DD_description.md\`
              - Create the \`Summaries/\` folder if it doesn't exist
              - Add proper frontmatter (title, type: content, status: active, owner, updated, tags, source_of_truth: false, summary)
           4. **Update relevant brain files** based on what the transcript reveals:
-             - \`OIO Brain/03 - Cars/[Driver]/[Car]/Overview.md\` — if car details are mentioned
-             - \`OIO Brain/03 - Cars/[Driver]/[Car]/Maintenance-Log.md\` — if mechanical work is mentioned
-             - \`OIO Brain/02 - Content/Video-Ideas-Backlog.md\` — if content ideas surface
-             - \`OIO Brain/04 - Events/Results/\` — if event results are mentioned
-             - \`01-active/current-state.md\` — if the state of any vehicle or project changed
-             - \`01-active/open-loops.md\` — if unresolved questions were surfaced
+             - \`cars/[Driver]/[Car]/Overview.md\` — if car details are mentioned
+             - \`cars/[Driver]/[Car]/Maintenance-Log.md\` — if mechanical work is mentioned
+             - \`content/video-backlog.md\` — if content ideas surface
+             - \`events/results/\` — if event results are mentioned
+             - \`active/current-state.md\` — if the state of any vehicle or project changed
+             - \`active/open-loops.md\` — if unresolved questions were surfaced
           5. **Follow all repo standards**:
              - Add frontmatter to any new file (title, type, status, owner, updated, tags, source_of_truth, summary)
              - Update the \`updated:\` date on any file you modify
-             - Log significant decisions in \`00-core/decisions-log.md\`
-          6. **Delete the original daily transcript file(s)** from \`docdump/dailies/\` after the summary has been successfully written
-             - **Do NOT delete the \`docdump/dailies/\` folder itself** — only delete the individual transcript files
-             - **Do NOT delete \`docdump/dailies/README.md\`**
+             - Log significant decisions in \`core/decisions-log.md\`
+          6. **Delete the original daily transcript file(s)** from \`intake/dailies/\` after the summary has been successfully written
+             - **Do NOT delete the \`intake/dailies/\` folder itself** — only delete the individual transcript files
+             - **Do NOT delete \`intake/dailies/README.md\`**
           7. **Confirm deletion** in your progress report — state which file was processed and deleted
 
-          If a transcript cannot be fully processed (ambiguous data, missing metadata), document what was done and note the open items in \`01-active/open-loops.md\` — then still delete the source file.
+          If a transcript cannot be fully processed (ambiguous data, missing metadata), document what was done and note the open items in \`active/open-loops.md\` — then still delete the source file.
 
           Do not treat transcript files as source of truth until their data has been validated and written into canonical brain files." \
             --label "copilot" \

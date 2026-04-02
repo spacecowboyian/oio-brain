@@ -42,9 +42,9 @@ jobs:
       - name: Check scheduling results
         if: always()
         run: |
-          if [ -f "OIO Brain/data/post-scheduling-log.jsonl" ]; then
+          if [ -f "data/post-scheduling-log.jsonl" ]; then
             echo "✅ Scheduling log created"
-            tail -5 "OIO Brain/data/post-scheduling-log.jsonl"
+            tail -5 "data/post-scheduling-log.jsonl"
           fi
 
       - name: Alert if scheduling failed
@@ -69,8 +69,8 @@ See: [Auto-Schedule Workflow](.github/workflows/auto-schedule-posts.yml)" \
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add "OIO Brain/data/optimal-posting-schedule.json" \
-                  "OIO Brain/data/post-scheduling-log.jsonl"
+          git add "data/optimal-posting-schedule.json" \
+                  "data/post-scheduling-log.jsonl"
 
           if git diff --cached --quiet; then
             echo "No schedule changes to commit."
@@ -86,6 +86,6 @@ See: [Auto-Schedule Workflow](.github/workflows/auto-schedule-posts.yml)" \
           echo "📊 Posting Time Analysis Summary"
           echo "================================"
           echo "Analyzed historical posts to determine optimal posting times."
-          echo "Schedule saved to: OIO Brain/data/optimal-posting-schedule.json"
+          echo "Schedule saved to: data/optimal-posting-schedule.json"
           echo ""
-          echo "Scheduling log available at: OIO Brain/data/post-scheduling-log.jsonl"
+          echo "Scheduling log available at: data/post-scheduling-log.jsonl"

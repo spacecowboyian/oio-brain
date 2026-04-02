@@ -15,22 +15,22 @@ The repo must remain useful to both **humans** and **AI agents** over time. Agen
 ## Core Behavioral Rules
 
 ### Do
-- **Read `01-active/` first.** These files hold the current state. Start there before reading anything else.
+- **Read `active/` first.** These files hold the current state. Start there before reading anything else.
 - **Update existing files instead of creating new ones** when the content logically belongs in an existing document.
-- **Promote learnings properly.** Capture notes belong in `01-active/` or a dated working file. Durable facts belong in canonical docs in `OIO Brain/`.
+- **Promote learnings properly.** Capture notes belong in `active/` or a dated working file. Durable facts belong in canonical docs in the canonical domain folders (`brand/`, `cars/`, `content/`, etc.).
 - **Mark uncertainty with `TODO:` or `[unknown]` placeholders.** Never invent facts.
-- **Add frontmatter** to any new file you create. See `00-core/repo-standards.md` for the required format.
-- **Log significant decisions** in `00-core/decisions-log.md` with date and rationale.
-- **Keep `01-active/` files concise and current.** These are the memory layer — they decay if they grow too long.
+- **Add frontmatter** to any new file you create. See `core/repo-standards.md` for the required format.
+- **Log significant decisions** in `core/decisions-log.md` with date and rationale.
+- **Keep `active/` files concise and current.** These are the memory layer — they decay if they grow too long.
 - **Archive, don't delete.** Mark outdated content as archived rather than removing it.
 
 ### Do Not
 - Do not create near-duplicate files. If something similar exists, update it.
 - Do not invent facts, stats, or details that are not confirmed. Use `TODO:` instead.
 - Do not overwrite human-written content just to standardize tone.
-- Do not let `01-active/` files grow stale — update them whenever the state changes.
+- Do not let `active/` files grow stale — update them whenever the state changes.
 - Do not treat capture notes or working docs as source of truth.
-- Do not create files without frontmatter in folders that require it (all of `OIO Brain/`, `00-core/`, `01-active/`).
+- Do not create files without frontmatter in folders that require it (all of the canonical domain folders (`brand/`, `cars/`, `content/`, etc.), `core/`, `active/`).
 - Do not remove standing rules or canonical decisions without logging the change.
 
 ---
@@ -67,23 +67,23 @@ Every document in this repo belongs to one of four classes. The class determines
 
 ## The Memory Layer
 
-The files in `01-active/` are the short-term memory of this repo. They must be kept current.
+The files in `active/` are the short-term memory of this repo. They must be kept current.
 
 | File | Purpose |
 |---|---|
-| `01-active/current-state.md` | What is happening right now |
-| `01-active/active-priorities.md` | What matters most and why |
-| `01-active/open-loops.md` | Unresolved questions, pending decisions, waiting-ons |
-| `01-active/next-actions.md` | Concrete next steps, grouped by area |
-| `00-core/decisions-log.md` | Log of significant decisions with rationale |
+| `active/current-state.md` | What is happening right now |
+| `active/priorities.md` | What matters most and why |
+| `active/open-loops.md` | Unresolved questions, pending decisions, waiting-ons |
+| `active/next-actions.md` | Concrete next steps, grouped by area |
+| `core/decisions-log.md` | Log of significant decisions with rationale |
 
-When you complete work, update the relevant `01-active/` file. Do not let the memory layer go stale.
+When you complete work, update the relevant `active/` file. Do not let the memory layer go stale.
 
 ---
 
 ## Frontmatter Requirements
 
-All documents in `OIO Brain/`, `00-core/`, and `01-active/` must include a frontmatter block at the top:
+All documents in the canonical domain folders (`brand/`, `cars/`, `content/`, etc.), `core/`, and `active/` must include a frontmatter block at the top:
 
 ```yaml
 ---
@@ -102,9 +102,9 @@ summary: 1–3 sentences describing what this file contains and when to use it.
 
 ## Repo Navigation
 
-- **`00-core/`** — Governance, standards, decisions log, templates
-- **`01-active/`** — Live memory layer. Read this first.
-- **`OIO Brain/`** — Canonical knowledge organized by domain
+- **`core/`** — Governance, standards, decisions log, templates
+- **`active/`** — Live memory layer. Read this first.
+- **the canonical domain folders (`brand/`, `cars/`, `content/`, etc.)** — Canonical knowledge organized by domain
 - **`INDEX.md`** — Root-level navigation table
 - **`README.md`** — Human-facing entry point
 - **`OIO-Master-Brief.md`** — Original source document (do not overwrite)
@@ -120,11 +120,11 @@ These rules apply when Copilot is responding to questions or executing tasks in 
 Before answering any question about OIO Racing, always orient yourself using the repo:
 
 1. **`README.md`** — Entry point. Understand what OIO is and where things live.
-2. **`01-active/current-state.md`** — What is happening right now.
-3. **`01-active/active-priorities.md`** — What matters most.
-4. **`01-active/open-loops.md`** — Unresolved questions and pending decisions.
-5. **`01-active/next-actions.md`** — Concrete next steps.
-6. **`OIO Brain/`** — Canonical domain knowledge (vehicles, content, brand, finance, etc.).
+2. **`active/current-state.md`** — What is happening right now.
+3. **`active/priorities.md`** — What matters most.
+4. **`active/open-loops.md`** — Unresolved questions and pending decisions.
+5. **`active/next-actions.md`** — Concrete next steps.
+6. **the canonical domain folders (`brand/`, `cars/`, `content/`, etc.)** — Canonical domain knowledge (vehicles, content, brand, finance, etc.).
 7. **`INDEX.md`** — Use this to navigate to specific domain files when needed.
 
 Do not answer questions about OIO from general knowledge alone. Always ground answers in what is actually written in the repo.
@@ -142,11 +142,11 @@ You are not a neutral assistant. You are an embedded collaborator for OIO Racing
 
 When a conversation produces new information, decisions, or findings, write them back to the repo. This is not optional — it is how the repo stays useful.
 
-- New facts or status changes → update the relevant file in `01-active/` or `OIO Brain/`
-- Decisions made during a conversation → log in `00-core/decisions-log.md`
-- Open questions raised → add to `01-active/open-loops.md`
-- Completed actions → update `01-active/next-actions.md`
-- Significant new knowledge about the brand, cars, or operations → update or create a canonical doc in `OIO Brain/`
+- New facts or status changes → update the relevant file in `active/` or the canonical domain folders (`brand/`, `cars/`, `content/`, etc.)
+- Decisions made during a conversation → log in `core/decisions-log.md`
+- Open questions raised → add to `active/open-loops.md`
+- Completed actions → update `active/next-actions.md`
+- Significant new knowledge about the brand, cars, or operations → update or create a canonical doc in the canonical domain folders (`brand/`, `cars/`, `content/`, etc.)
 
 Always prefer updating an existing file over creating a new one. Follow frontmatter and document class rules when writing.
 
@@ -165,23 +165,23 @@ Never present invented facts as real. Never fill `[unknown]` fields with guesses
 
 ## Docdump Workflow
 
-The `docdump/` folder at the repo root is the intake zone for raw documents that Ian wants processed into the brain.
+The `intake/docs/` folder at the repo root is the intake zone for raw documents that Ian wants processed into the brain.
 
-### When Ian drops a file in docdump:
+### When Ian drops a file in intake/docs:
 
 1. **Read the full file** before deciding where the data belongs
 2. **Identify all relevant destinations** in the brain structure
 3. **Distribute the data** — update existing files first, create new files only if no appropriate file exists
 4. **Follow all repo standards** — frontmatter, document classes, source of truth rules apply
-5. **Delete the original file** from `docdump/` once all data has been successfully written
+5. **Delete the original file** from `intake/docs/` once all data has been successfully written
 6. **Confirm the deletion** in your progress report — state which file was processed and deleted
-7. **Update `01-active/`** files as needed to reflect any state changes
+7. **Update `active/`** files as needed to reflect any state changes
 
 ### Rules
 
-- **Always delete the source file after processing.** Do not leave originals in `docdump/`. The folder should be empty when you're done.
-- **If a file cannot be fully processed** (ambiguous data, incomplete information), document what was done and what remains as open loops in `01-active/open-loops.md` — then still delete the source file.
-- **Do not treat docdump files as source of truth** until their data has been validated and written into a canonical brain file.
+- **Always delete the source file after processing.** Do not leave originals in `intake/docs/`. The folder should be empty when you're done.
+- **If a file cannot be fully processed** (ambiguous data, incomplete information), document what was done and what remains as open loops in `active/open-loops.md` — then still delete the source file.
+- **Do not treat intake/docs files as source of truth** until their data has been validated and written into a canonical brain file.
 
 ---
 
@@ -192,7 +192,7 @@ There are two distinct types of transcripts in this repo. Do not confuse them.
 | Type | Location | Source | Purpose |
 |---|---|---|---|
 | **Final YouTube transcripts** | `transcripts/` (repo root) | Published YouTube videos — auto-fetched by `fetch-youtube-transcripts` workflow | Full text archive of published content |
-| **Dailies** | `docdump/dailies/` | Raw audio from Ian's working video files (unedited clips) | Drive brain data updates + create summary for future scripting/outlining |
+| **Dailies** | `intake/dailies/` | Raw audio from Ian's working video files (unedited clips) | Drive brain data updates + create summary for future scripting/outlining |
 
 **Final transcripts** are auto-fetched from YouTube and stored in `transcripts/YYYY-MM-DD_title/`. They require no manual action.
 
@@ -202,29 +202,29 @@ There are two distinct types of transcripts in this repo. Do not confuse them.
 
 ## Dailies Workflow
 
-The `docdump/dailies/` subfolder is the intake zone for raw daily video transcripts.
+The `intake/dailies/` subfolder is the intake zone for raw daily video transcripts.
 
-### When Ian drops a daily in docdump/dailies/:
+### When Ian drops a daily in intake/dailies/:
 
 1. **Read the full transcript** before starting
-2. **Generate a structured summary** using `00-core/templates/transcript-summary.md` as the template
+2. **Generate a structured summary** using `core/templates/transcript-summary.md` as the template
    - Note: YouTube ID is not required for dailies — leave blank or mark `[unknown]` if not yet published
-3. **Save the summary** to `OIO Brain/02 - Content/Summaries/YYYY-MM-DD_description.md`
+3. **Save the summary** to `content/summaries/YYYY-MM-DD_description.md`
 4. **Update relevant brain files** — car overviews, maintenance logs, video ideas backlog, events, active state as appropriate
-5. **Delete the source daily file** from `docdump/dailies/` after the summary has been successfully written
+5. **Delete the source daily file** from `intake/dailies/` after the summary has been successfully written
 6. **Confirm the deletion** in your progress report
 
 ### Rules
 
-- **Delete only the transcript file, not the folder.** `docdump/dailies/` and `docdump/dailies/README.md` must never be deleted.
-- **If a daily cannot be fully processed**, document what was done in `01-active/open-loops.md` — then still delete the source file.
+- **Delete only the transcript file, not the folder.** `intake/dailies/` and `intake/dailies/README.md` must never be deleted.
+- **If a daily cannot be fully processed**, document what was done in `active/open-loops.md` — then still delete the source file.
 - **Do not treat daily files as source of truth** until their data has been validated and written into a canonical brain file.
 
 ---
 
 ## Data Processing Scripts
 
-Any script written to process data from this repo (or from `docdump/`) must include a step to delete the original source data file after processing is complete.
+Any script written to process data from this repo (or from `intake/docs/`) must include a step to delete the original source data file after processing is complete.
 
 ### Rules for Processing Scripts
 
@@ -233,4 +233,4 @@ Any script written to process data from this repo (or from `docdump/`) must incl
 - **Log what was deleted** — output the name and path of the deleted file in the script's completion message
 - **Do not leave orphaned source files** — a processing script that exits without deleting its source file is incomplete
 
-This applies to all scripts regardless of language (Python, bash, JavaScript, etc.) and regardless of whether the source is in `docdump/`, a temp file, or any other location in or adjacent to this repo.
+This applies to all scripts regardless of language (Python, bash, JavaScript, etc.) and regardless of whether the source is in `intake/docs/`, a temp file, or any other location in or adjacent to this repo.

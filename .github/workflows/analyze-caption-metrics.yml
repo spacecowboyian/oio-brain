@@ -128,7 +128,7 @@ See: [CAPTION-MONITORING.md](/CAPTION-MONITORING.md) for full dashboard" \
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add "OIO Brain/data/caption-metrics/" CAPTION-MONITORING.md
+          git add "data/caption-metrics/" CAPTION-MONITORING.md
 
           if git diff --cached --quiet; then
             echo "No metrics changes to commit."
