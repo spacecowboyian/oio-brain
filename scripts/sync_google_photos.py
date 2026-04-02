@@ -274,7 +274,7 @@ def main():
         if new_count > 0:
             print("\nNext steps:")
             print("  1. Commit and push these photos to main")
-            print("  2. The process-picdump-photos workflow will automatically trigger")
+            print("  2. The process-intake-photos workflow will automatically trigger")
             print("  3. A Copilot agent will identify and file each photo")
 
         sys.exit(0)
