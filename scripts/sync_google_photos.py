@@ -135,41 +135,50 @@ def extract_photo_urls(album_html, base_url=None):
     """
     Extract photo download URLs from Google Photos album HTML.
 
-    Converts relative URLs to absolute URLs using the base_url.
+    Google Photos uses a complex JavaScript-based rendering system.
+    We look for image URLs in script tags (JSON data) and image attributes.
     Returns list of (filename, url) tuples.
     """
     from urllib.parse import urljoin
+    import json as json_module
 
     soup = BeautifulSoup(album_html, "html.parser")
     photos = []
+    seen_urls = set()
 
-    # Google Photos uses data-src attributes for images
-    # Look for image elements with srcset or data attributes
+    # Strategy 1: Look for image URLs in script tags (Google Photos stores URLs in JSON)
+    for script in soup.find_all("script"):
+        if script.string:
+            content = script.string
+            # Look for URLs that look like Google Photos CDN or media URLs
+            # Pattern: https://lh3.googleusercontent.com/... or similar
+            url_patterns = [
+                r'https://lh\d\.googleusercontent\.com/[^"\s]+',
+                r'https://[a-z0-9.-]*google[a-z0-9.-]*\.com/[^"\s]*(?:media|photo|image)[^"\s]*',
+            ]
+
+            for pattern in url_patterns:
+                matches = re.findall(pattern, content)
+                for url in matches:
+                    # Clean up URL (remove trailing punctuation/quotes)
+                    url = url.rstrip('",;:])')
+                    if url not in seen_urls and url.startswith('http'):
+                        filename = extract_filename_from_url(url)
+                        if filename:
+                            photos.append((filename, url))
+                            seen_urls.add(url)
+
+    # Strategy 2: Look for img elements
     for img in soup.find_all("img"):
         src = img.get("src") or img.get("data-src") or ""
 
-        # Filter to photos only (not thumbnails, UI elements)
-        if "/photo/" in src or "/image/" in src or "/media/" in src:
-            # Convert relative URLs to absolute
-            if base_url and src.startswith("./"):
-                src = urljoin(base_url, src)
-
-            # Try to extract filename from URL
-            filename = extract_filename_from_url(src)
-            if filename:
-                photos.append((filename, src))
-
-    # Alternative: Look for download links
-    for link in soup.find_all("a", href=True):
-        href = link.get("href", "")
-        if "/photo/" in href or "download" in href.lower():
-            # Convert relative URLs to absolute
-            if base_url and href.startswith("./"):
-                href = urljoin(base_url, href)
-
-            filename = extract_filename_from_url(href)
-            if filename and (filename, href) not in photos:
-                photos.append((filename, href))
+        # Look for Google Photos CDN URLs
+        if "googleusercontent.com" in src or "photos.app.goo.gl" in src:
+            if src not in seen_urls:
+                filename = extract_filename_from_url(src)
+                if filename:
+                    photos.append((filename, src))
+                    seen_urls.add(src)
 
     return photos
 
@@ -205,7 +214,15 @@ def extract_filename_from_url(url):
 def download_photo(url, filepath, timeout=30):
     """Download a photo from URL to filepath."""
     try:
-        response = requests.get(url, timeout=timeout, stream=True)
+        # Add proper headers for Google Photos CDN
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Referer': 'https://photos.google.com/',
+            'Accept': 'image/webp,image/apng,image/jpeg,image/*,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+        }
+
+        response = requests.get(url, timeout=timeout, stream=True, headers=headers, allow_redirects=True)
         response.raise_for_status()
 
         with open(filepath, "wb") as f:
