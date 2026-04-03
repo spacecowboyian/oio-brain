@@ -58,12 +58,11 @@ jobs:
           if git diff --cached --quiet; then
             echo "No new photos to commit."
           else
-            git commit -m "chore: file intake/photos photos with AI
-
-Auto-filed and organized photos from intake/photos into photo library.
-Updated photos/README.md and car descriptions.
-
-Co-Authored-By: Paperclip <noreply@paperclip.ing>" || true
+            git commit -m "chore: file intake/photos photos with AI" \
+              -m "Auto-filed and organized photos from intake/photos into photo library." \
+              -m "Updated photos/README.md and car descriptions." \
+              -m "" \
+              -m "Co-Authored-By: Paperclip <noreply@paperclip.ing>" || true
             git push
           fi
 
