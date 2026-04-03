@@ -270,46 +270,158 @@ def file_photo(driver, car, source_path, analysis_result):
 # Slack Notifications
 # ---------------------------------------------------------------------------
 
-def notify_slack(filename, analysis_result, reason="uncertain"):
-    """Send Slack notification about photo filing decision."""
+def notify_slack(filename, analysis_result, reason="uncertain", image_path=None):
+    """Send Slack notification about photo filing decision with optional image attachment."""
 
     slack_token = os.getenv("SLACK_BOT_TOKEN")
     slack_channel = os.getenv("SLACK_CHANNEL_ID")
+    slack_webhook = os.getenv("SLACK_WEBHOOK_URL")
 
-    if not slack_token or not slack_channel:
+    if not slack_token and not slack_webhook:
         # No Slack config — skip notification
+        print(f"  ℹ No Slack credentials configured (set SLACK_BOT_TOKEN or SLACK_WEBHOOK_URL)")
+        return False
+
+    if slack_token and not slack_channel:
+        print(f"  ⚠ Slack bot token set but SLACK_CHANNEL_ID not configured")
         return False
 
     try:
         import requests
 
-        message = f"""🖼️ Photo Filing Update
+        emoji = "⚠️" if reason == "uncertain" else ("✅" if reason == "auto_filed" else "❌")
+        confidence = analysis_result.get("confidence", 0)
 
-**File:** `{filename}`
-**Result:** {reason.upper()}
-
-**Analysis:**
-- Car: {analysis_result.get('car', 'unknown')}
-- Driver: {analysis_result.get('driver', 'unknown')}
-- Event: {analysis_result.get('event_context', 'unknown')}
-- Confidence: {analysis_result.get('confidence', 0):.0%}
-
-**Reasoning:**
-{analysis_result.get('reasoning', 'N/A')}"""
-
-        requests.post(
-            "https://slack.com/api/chat.postMessage",
-            headers={"Authorization": f"Bearer {slack_token}"},
-            json={
-                "channel": slack_channel,
-                "text": message,
+        # Build message blocks for rich formatting
+        blocks = [
+            {
+                "type": "header",
+                "text": {
+                    "type": "plain_text",
+                    "text": f"{emoji} Photo Filing Update",
+                    "emoji": True,
+                },
             },
-        )
+            {
+                "type": "section",
+                "fields": [
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*File:*\n`{filename}`",
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*Status:*\n{reason.upper()}",
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*Car:*\n{analysis_result.get('car', 'unknown')}",
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*Driver:*\n{analysis_result.get('driver', 'unknown')}",
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*Event:*\n{analysis_result.get('event_context', 'unknown')}",
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*Confidence:*\n{confidence:.0%}",
+                    },
+                ],
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": f"*Reasoning:*\n{analysis_result.get('reasoning', 'N/A')}",
+                },
+            },
+        ]
 
-        return True
+        # Add image block if image path provided
+        if image_path and Path(image_path).exists():
+            # For webhook, we can include image_url in blocks
+            # For bot token API, we'll add the image as an initial comment
+            if slack_webhook:
+                image_url = f"file://{image_path}"  # Local file URL for testing
+                blocks.append(
+                    {
+                        "type": "image",
+                        "image_url": image_url,
+                        "alt_text": f"Photo: {filename}",
+                    }
+                )
 
-    except Exception as e:
+        # Send via appropriate method
+        if slack_webhook:
+            # Use incoming webhook (simpler, works with basic auth)
+            response = requests.post(
+                slack_webhook,
+                json={
+                    "blocks": blocks,
+                    "text": f"Photo Filing Update: {filename}",
+                },
+                timeout=10,
+            )
+            response.raise_for_status()
+            print(f"  ✓ Slack notification sent via webhook")
+            return True
+
+        elif slack_token and slack_channel:
+            # Use bot API with files.upload for images
+            response = requests.post(
+                "https://slack.com/api/chat.postMessage",
+                headers={"Authorization": f"Bearer {slack_token}"},
+                json={
+                    "channel": slack_channel,
+                    "blocks": blocks,
+                    "text": f"Photo Filing Update: {filename}",
+                },
+                timeout=10,
+            )
+            response.raise_for_status()
+            response_data = response.json()
+
+            if not response_data.get("ok"):
+                error = response_data.get("error", "Unknown error")
+                print(f"  ⚠ Slack API error: {error}")
+                return False
+
+            # If we have an image, upload it as a comment
+            if image_path and Path(image_path).exists():
+                ts = response_data.get("ts")
+                with open(image_path, "rb") as f:
+                    files_response = requests.post(
+                        "https://slack.com/api/files.upload",
+                        headers={"Authorization": f"Bearer {slack_token}"},
+                        files={"file": f},
+                        data={
+                            "channels": slack_channel,
+                            "title": filename,
+                            "initial_comment": f"Uncertain photo requiring manual review",
+                        },
+                        timeout=30,
+                    )
+                    files_response.raise_for_status()
+                    files_data = files_response.json()
+                    if files_data.get("ok"):
+                        print(f"  ✓ Image uploaded to Slack")
+                    else:
+                        print(f"  ⚠ Failed to upload image: {files_data.get('error')}")
+
+            print(f"  ✓ Slack notification sent via bot API")
+            return True
+
+    except requests.Timeout:
+        print(f"  ⚠ Slack notification timed out")
+        return False
+    except requests.RequestException as e:
         print(f"  ⚠ Slack notification failed: {e}")
+        return False
+    except Exception as e:
+        print(f"  ⚠ Unexpected error sending Slack notification: {e}")
         return False
 
 
@@ -369,14 +481,15 @@ def process_picdump():
                 if success:
                     print(f"  ✓ Filed to {dest}")
                     filed_count += 1
-                    notify_slack(image_path.name, result, "auto_filed")
+                    notify_slack(image_path.name, result, "auto_filed", image_path=image_path)
                 else:
                     print(f"  ✗ Filing failed: {dest}")
                     failed_count += 1
+                    notify_slack(image_path.name, result, "failed", image_path=image_path)
             else:
                 print(f"  ⚠ Uncertain — flagging for manual review")
                 uncertain_count += 1
-                notify_slack(image_path.name, result, "uncertain")
+                notify_slack(image_path.name, result, "uncertain", image_path=image_path)
 
         except Exception as e:
             print(f"  ✗ Error: {e}")
