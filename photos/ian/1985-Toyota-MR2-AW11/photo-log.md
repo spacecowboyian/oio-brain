@@ -13,3 +13,18 @@
 - Date: 2026-04-03
 - Event: rallycross
 - Notes: Blue AW11 MR2 shown in profile from the driver's side, mid-turn on a dirt/gravel surface with dust trailing behind. The car has its characteristic mid-engine louvers on the rear quarter panel clearly visible. Race number '2' with 'MR' class designation is displayed on the door area in red/white. Stock-style wheels with period-correct design. The car appears to have some battle wear consistent with rallycross use — slightly rough body condition. A traffic cone marks the course in the foreground. A course worker in a yellow/green high-vis vest stands behind the car near the rear. Background shows bare winter trees and a flat, open dirt venue with a dust cloud from other competitors or the course. The hood/front trunk lid appears slightly misaligned or popped, which may indicate rough terrain impact or a loose latch. Environment suggests a cold-weather early-season or late-season event in the Kansas City area.
+
+## test_photo_1.png
+- Date: 2026-04-03
+- Event: rallycross
+- Notes: Blue AW11 MR2 viewed from the passenger side, mid-turn on a dirt/gravel rallycross course. Dust is being kicked up behind the rear wheels. The car has number '2' with 'MR' class designation on the door in red/white lettering. Distinctive AW11 rear quarter louvers clearly visible. Stock-style alloy wheels. A course worker in a yellow/green high-vis vest stands behind the car near the right rear. An orange cone is positioned near the front-right of the car. The environment is a flat, open dirt area with bare deciduous trees in the background and a dust cloud from other competitors visible in the distance. The car appears to have some battle wear consistent with rallycross use — the hood/front clip looks slightly rough. This is consistent with The Goblin before its engine failure.
+
+## test_photo_2.png
+- Date: 2026-04-03
+- Event: rallycross
+- Notes: Blue AW11 MR2 shown in profile (driver's side), mid-turn on loose dirt/gravel surface. Dust being kicked up from the rear. Orange traffic cone near the right-front wheel area. Door has red/white number '2' and 'MR' lettering. Black multi-spoke period-correct wheels. Rear quarter louvers clearly visible. A person in a yellow/green hi-vis safety vest stands behind the car — likely a course worker. Background shows flat terrain with bare deciduous trees (late fall/winter/early spring), dirt berms, and hazy overcast sky. The car appears to have some wear and battle damage consistent with rallycross use — slightly rough body condition, functional rather than cosmetic. The pop-up headlights are down. Hood/frunk area appears standard AW11 profile.
+
+## test_photo_3.png
+- Date: 2026-04-03
+- Event: rallycross
+- Notes: Driver's side profile view of a blue AW11 MR2 mid-slide on a dirt rallycross course. The car shows competition wear — slightly rough body, possible front bumper damage or missing trim on the right front. Door livery reads '2 MR' in red/white lettering. Characteristic AW11 side vents/louvers visible behind the door. Factory-style alloy wheels (cross-spoke pattern). Dust is being kicked up behind the rear wheels suggesting active driving. An orange traffic cone marks a course point near the front-right of the car. A course worker in a yellow/green high-vis vest stands behind the car observing. The background shows a flat, open dirt venue with dust haze, mounded earth berms, and leafless winter trees — typical of a Midwest rallycross venue during the colder months. The 'Crop' watermark in the upper right suggests this is a screenshot or cropped frame from video footage.
