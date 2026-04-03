@@ -98,12 +98,10 @@ jobs:
             NEW_COUNT=$(git diff --cached --name-only intake/photos/ | grep -E '\.(jpg|jpeg|png|heic|webp)$' | wc -l)
 
             if [ "$NEW_COUNT" -gt 0 ]; then
-              git commit -m "chore: sync $NEW_COUNT photo(s) from Google Photos album
-
-Auto-downloaded new photos from the shared Google Photos album.
-Photos are staged in intake/photos/ for AI filing workflow.
-
-Co-Authored-By: Paperclip <noreply@paperclip.ing>" || true
+              git commit -m "chore: sync $NEW_COUNT photo(s) from Google Photos album" \
+                -m "Auto-downloaded new photos from the shared Google Photos album." \
+                -m "Photos are staged in intake/photos/ for AI filing workflow." \
+                -m "Co-Authored-By: Paperclip <noreply@paperclip.ing>" || true
               git push
               echo "✓ Committed $NEW_COUNT new photos"
             fi
