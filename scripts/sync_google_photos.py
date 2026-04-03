@@ -281,7 +281,21 @@ def sync_google_photos():
     # Fetch album page
     try:
         log("Fetching album page...")
-        response = requests.get(album_url, timeout=15)
+        # Use browser-like headers to get full content
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'DNT': '1',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'none',
+            'Cache-Control': 'max-age=0',
+        }
+        response = requests.get(album_url, timeout=15, headers=headers)
         response.raise_for_status()
         album_html = response.text
         log(f"Album page fetched successfully ({len(album_html)} bytes)")
