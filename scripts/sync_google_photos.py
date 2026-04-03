@@ -137,40 +137,38 @@ def extract_photo_urls(album_html, base_url=None):
 
     Google Photos uses a complex JavaScript-based rendering system.
     We look for image URLs in script tags (JSON data) and image attributes.
-    Returns list of (filename, url) tuples, deduplicated by image ID.
+    Returns list of (filename, url) tuples, deduplicated at the URL level.
     """
     from urllib.parse import urljoin, urlparse, parse_qs
     import json as json_module
 
     soup = BeautifulSoup(album_html, "html.parser")
-    photos = []
-    seen_image_ids = set()
+    # Collect ALL URLs first, deduplicate by full URL
+    unique_urls = {}  # Maps normalized URL to original URL
 
-    def extract_image_id(url):
-        """Extract unique image identifier from Google Photos URL."""
-        # Google Photos CDN URLs have the format:
-        # https://lh3.googleusercontent.com/pw/<encoded-id>
-        # or
-        # https://lh3.googleusercontent.com/<base64-id>
-        # The image ID is the part after the last slash and before any query params
-
+    def normalize_url_for_dedup(url):
+        """Normalize URL for deduplication by removing dynamic params."""
         parsed = urlparse(url)
-        path_parts = parsed.path.split('/')
+        # For Google Photos CDN URLs, keep only the essential parts
+        # Remove common dynamic parameters: w, h, sz, zk, crop, fife, token
+        params = parse_qs(parsed.query)
+        keep_params = {k: v for k, v in params.items()
+                       if k not in ('w', 'h', 'sz', 'zk', 'crop', 'fife', 'token')}
 
-        # Get the last meaningful path component (the image ID)
-        for part in reversed(path_parts):
-            if part and not part.startswith('lh'):
-                return part
+        if keep_params:
+            from urllib.parse import urlencode
+            query_str = urlencode(keep_params, doseq=True)
+            normalized = f"{parsed.scheme}://{parsed.netloc}{parsed.path}?{query_str}".lower()
+        else:
+            normalized = f"{parsed.scheme}://{parsed.netloc}{parsed.path}".lower()
 
-        # Fallback: use the full path as ID
-        return parsed.path
+        return normalized
 
     # Strategy 1: Look for image URLs in script tags (Google Photos stores URLs in JSON)
     for script in soup.find_all("script"):
         if script.string:
             content = script.string
             # Look for URLs that look like Google Photos CDN or media URLs
-            # Pattern: https://lh3.googleusercontent.com/... or similar
             url_patterns = [
                 r'https://lh\d\.googleusercontent\.com/[^"\s]+',
                 r'https://[a-z0-9.-]*google[a-z0-9.-]*\.com/[^"\s]*(?:media|photo|image)[^"\s]*',
@@ -179,28 +177,28 @@ def extract_photo_urls(album_html, base_url=None):
             for pattern in url_patterns:
                 matches = re.findall(pattern, content)
                 for url in matches:
-                    # Clean up URL (remove trailing punctuation/quotes)
+                    # Clean up URL (remove trailing punctuation)
                     url = url.rstrip('",;:])')
                     if url.startswith('http'):
-                        image_id = extract_image_id(url)
-                        if image_id not in seen_image_ids:
-                            filename = extract_filename_from_url(url)
-                            if filename:
-                                photos.append((filename, url))
-                                seen_image_ids.add(image_id)
+                        normalized = normalize_url_for_dedup(url)
+                        # Store only if we haven't seen this normalized URL
+                        if normalized not in unique_urls:
+                            unique_urls[normalized] = url
 
     # Strategy 2: Look for img elements
     for img in soup.find_all("img"):
         src = img.get("src") or img.get("data-src") or ""
-
-        # Look for Google Photos CDN URLs
         if "googleusercontent.com" in src or "photos.app.goo.gl" in src:
-            image_id = extract_image_id(src)
-            if image_id not in seen_image_ids:
-                filename = extract_filename_from_url(src)
-                if filename:
-                    photos.append((filename, src))
-                    seen_image_ids.add(image_id)
+            normalized = normalize_url_for_dedup(src)
+            if normalized not in unique_urls:
+                unique_urls[normalized] = src
+
+    # Convert to list of (filename, url) tuples
+    photos = []
+    for url in unique_urls.values():
+        filename = extract_filename_from_url(url)
+        if filename:
+            photos.append((filename, url))
 
     return photos
 
