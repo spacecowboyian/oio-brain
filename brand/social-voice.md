@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-03 from 1057 posts (1057 Facebook, 0 Instagram) covering 2018-11-19 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-03 from 1058 posts (1058 Facebook, 0 Instagram) covering 2018-11-19 → 2026-04-03. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -423,7 +423,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 57 |
-| Build Update | 51 |
+| Build Update | 52 |
 | Event Recap | 274 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1057 posts:
+Top 25 hashtags across 1058 posts:
 
 | Hashtag | Uses |
 |---|---|
