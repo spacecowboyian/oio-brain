@@ -137,14 +137,33 @@ def extract_photo_urls(album_html, base_url=None):
 
     Google Photos uses a complex JavaScript-based rendering system.
     We look for image URLs in script tags (JSON data) and image attributes.
-    Returns list of (filename, url) tuples.
+    Returns list of (filename, url) tuples, deduplicated by base URL.
     """
-    from urllib.parse import urljoin
+    from urllib.parse import urljoin, urlparse, parse_qs
     import json as json_module
 
     soup = BeautifulSoup(album_html, "html.parser")
     photos = []
     seen_urls = set()
+
+    def normalize_url(url):
+        """Normalize URL for deduplication by removing dynamic parameters."""
+        # Remove certain query parameters that don't affect the actual image
+        parsed = urlparse(url)
+        params = parse_qs(parsed.query)
+
+        # Keep only essential params, remove dynamic ones like 'sz', 'w', 'h', 'zk'
+        keep_params = {k: v for k, v in params.items()
+                       if k not in ('sz', 'w', 'h', 'zk', 'token')}
+
+        if keep_params:
+            from urllib.parse import urlencode
+            query_str = urlencode(keep_params, doseq=True)
+            normalized = f"{parsed.scheme}://{parsed.netloc}{parsed.path}?{query_str}"
+        else:
+            normalized = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+
+        return normalized
 
     # Strategy 1: Look for image URLs in script tags (Google Photos stores URLs in JSON)
     for script in soup.find_all("script"):
@@ -162,11 +181,13 @@ def extract_photo_urls(album_html, base_url=None):
                 for url in matches:
                     # Clean up URL (remove trailing punctuation/quotes)
                     url = url.rstrip('",;:])')
-                    if url not in seen_urls and url.startswith('http'):
-                        filename = extract_filename_from_url(url)
-                        if filename:
-                            photos.append((filename, url))
-                            seen_urls.add(url)
+                    if url.startswith('http'):
+                        normalized = normalize_url(url)
+                        if normalized not in seen_urls:
+                            filename = extract_filename_from_url(url)
+                            if filename:
+                                photos.append((filename, url))
+                                seen_urls.add(normalized)
 
     # Strategy 2: Look for img elements
     for img in soup.find_all("img"):
@@ -174,11 +195,12 @@ def extract_photo_urls(album_html, base_url=None):
 
         # Look for Google Photos CDN URLs
         if "googleusercontent.com" in src or "photos.app.goo.gl" in src:
-            if src not in seen_urls:
+            normalized = normalize_url(src)
+            if normalized not in seen_urls:
                 filename = extract_filename_from_url(src)
                 if filename:
                     photos.append((filename, src))
-                    seen_urls.add(src)
+                    seen_urls.add(normalized)
 
     return photos
 
