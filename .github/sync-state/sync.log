@@ -374,3 +374,50 @@ SUCCESS: Sync completed (downloaded 1 new photos)
 [2026-04-03 12:11:02] INFO: ============================================================
 [2026-04-03 12:11:02] INFO: 
 SUCCESS: Sync completed (downloaded 1 new photos)
+[2026-04-03 18:10:50] INFO: ============================================================
+[2026-04-03 18:10:50] INFO: OIO Racing - Google Photos Sync
+[2026-04-03 18:10:50] INFO: ============================================================
+[2026-04-03 18:10:50] DEBUG: DEBUG MODE ENABLED
+[2026-04-03 18:10:50] DEBUG: GOOGLE_PHOTOS_ALBUM_URL set: True
+[2026-04-03 18:10:50] INFO: Starting Google Photos sync...
+[2026-04-03 18:10:50] INFO: Using custom album URL from GOOGLE_PHOTOS_ALBUM_URL
+[2026-04-03 18:10:50] DEBUG: Album URL (first 50 chars): https://photos.app.goo.gl/W757cit6HfvKmCQh6...
+[2026-04-03 18:10:50] DEBUG: Resolving Google Photos short URL...
+[2026-04-03 18:10:50] DEBUG: Resolved to: https://photos.google.com/share/AF1QipMW1KCdIEBo2rMA--SpBF2pOt3pf0LkJp5X51DLN21brlvqmYanlJ1_YB11IEKn...
+[2026-04-03 18:10:50] INFO: Album URL configured (first 50 chars): https://photos.google.com/share/AF1QipMW1KCdIEBo2r...
+[2026-04-03 18:10:50] INFO: Fetching album page...
+[2026-04-03 18:10:51] INFO: Album page fetched successfully (1177752 bytes)
+[2026-04-03 18:10:51] DEBUG: Response status: 200
+[2026-04-03 18:10:51] INFO: Extracting photo URLs from album HTML...
+[2026-04-03 18:10:51] INFO: Found 16 photos in album
+[2026-04-03 18:10:51] INFO: Loading previous sync state...
+[2026-04-03 18:10:51] DEBUG: Loaded sync state: 8 synced URLs
+[2026-04-03 18:10:51] INFO: Previous sync tracked 8 photos
+[2026-04-03 18:10:51] INFO: Checking for new photos...
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] INFO: Downloading: photo_1775239851.jpg
+[2026-04-03 18:10:51] INFO: ✓ Saved to intake/photos/photo_1775239851.jpg
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Skipping photo_1775239851.jpg (already synced)
+[2026-04-03 18:10:51] DEBUG: Saved sync state: 9 URLs
+[2026-04-03 18:10:51] INFO: 
+============================================================
+[2026-04-03 18:10:51] INFO: Sync Summary:
+[2026-04-03 18:10:51] INFO:   ✓ Downloaded: 1
+[2026-04-03 18:10:51] INFO:   ⊘ Already synced: 15
+[2026-04-03 18:10:51] INFO:   Total in state: 9
+[2026-04-03 18:10:51] INFO: ============================================================
+[2026-04-03 18:10:51] INFO: 
+SUCCESS: Sync completed (downloaded 1 new photos)
