@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-04-03 from 1057 posts (1057 Facebook, 0 Instagram) covering 2018-11-19 → 2026-04-01. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-04-04 from 1059 posts (1059 Facebook, 0 Instagram) covering 2018-11-19 → 2026-04-04. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -410,7 +410,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
 | Punchy / Short | 437 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 203 | 3+ hashtags; copy is minimal |
+| Hashtag-Heavy | 204 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 37 | 'Our Hudson', 'errbody in the pool' |
@@ -423,7 +423,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 57 |
-| Build Update | 51 |
+| Build Update | 53 |
 | Event Recap | 274 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1057 posts:
+Top 25 hashtags across 1059 posts:
 
 | Hashtag | Uses |
 |---|---|
@@ -522,8 +522,8 @@ Top 25 hashtags across 1057 posts:
 | #racing | 32 |
 | #fitgang | 31 |
 | #kcrscca | 28 |
+| #diy | 26 |
 | #sccarallycross | 25 |
-| #diy | 25 |
 | #rxaw11 | 25 |
 | #fx16 | 23 |
 | #mgbgts | 22 |

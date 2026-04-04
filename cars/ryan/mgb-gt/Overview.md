@@ -87,9 +87,9 @@ Ryan began running the MGB GT at KCRSCCA rallycross in 2024, in class MR (Mid-si
 
 ## Social Post Arc
 
-*Auto-generated 2026-04-03 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-04 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 46 posts
+**Posts mentioning this car:** 47 posts
 
 **Story arc from social posts:**
 
@@ -101,11 +101,11 @@ Ryan began running the MGB GT at KCRSCCA rallycross in 2024, in class MR (Mid-si
 
 **Recent social posts:**
 
-- **2025-12-22** — The MGBGTS prepares to rip. #mgbgts #cars #mg #toyota #rallycross
 - **2026-02-27** — Ryan’s striping paint off the #mgbgts and getting ready for some more metal work and a fresh coat. It’s all fun and game…
 - **2026-02-28** — Making hay while the sun shines. Ryan has the #mgbgts off to get bodywork. Ian wrestled yet another steering rack out of…
 - **2026-03-07** — Ryan’s #mgbgts inches ever closer. #cars #bodywork #sandingforever
 - **2026-03-21** — Hole in the roof equals hole in the floor. Ryan's fixing the problem.  Big patch panel over the sunroof opening on the ,…
+- **2026-04-04** — Hole in the roof equals hole in the floor. Ryan's fixing the problem.  Big patch panel over the sunroof opening on the M…
 
 <!-- social-arc:mgb-gt:end -->
 

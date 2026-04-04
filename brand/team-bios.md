@@ -54,7 +54,7 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-03 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-04 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 202 posts
 
@@ -112,19 +112,19 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-03 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-04 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 130 posts
+**Social post mentions:** 131 posts
 
 - **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
 - **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
 
 **Recent posts:**
 
-- **2026-03-07** — Ryan’s #mgbgts inches ever closer. #cars #bodywork #sandingforever
 - **2026-03-21** — Hole in the roof equals hole in the floor. Ryan's fixing the problem.  Big patch panel over the sunroof opening on the ,…
 - **2026-03-21** — Ryan thinks he’s got the edge in the battle for modified rear wheel drive rallycross supremacy. But there ain’t a Miata…
 - **2026-03-22** — Ian here… I haven’t been able to make a video response to Ryan and Larry’s trash talking.. so here’s cowboy Hudson ridin…
+- **2026-04-04** — Hole in the roof equals hole in the floor. Ryan's fixing the problem.  Big patch panel over the sunroof opening on the M…
 
 <!-- social-arc:ryan:end -->
 
@@ -151,7 +151,7 @@ Serious SCCA competitor. Lives in Manhattan, KS.
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-03 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-04 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 30 posts
 
@@ -199,7 +199,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-03 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-04 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 37 posts
 
@@ -230,7 +230,7 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-03 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-04 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 5 posts
 
@@ -287,7 +287,7 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-03 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-04 from social posts by `scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 17 posts
 
