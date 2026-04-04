@@ -1,124 +1,31 @@
-name: Sync Google Photos Album to Picdump
-# Trigger test: 2026-04-02T07:40:00Z
+name: Sync OIO Photos from Google Photos
 
 on:
-  # Run every 6 hours
   schedule:
     - cron: '0 */6 * * *'
-
-  # Manual trigger with optional inputs
   workflow_dispatch:
-    inputs:
-      force_sync:
-        description: 'Force sync even if photos already downloaded'
-        required: false
-        default: 'false'
-        type: choice
-        options:
-          - 'false'
-          - 'true'
-
-  # Also trigger on push to main branch (for testing)
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/sync-google-photos.yml'
-      - 'scripts/sync_google_photos.py'
 
 jobs:
-  sync-photos:
+  sync:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          echo "Installing dependencies..."
-          pip install requests beautifulsoup4
-          echo "Verifying dependencies..."
-          python3 -c "import requests; print(f'✓ requests {requests.__version__}')"
-          python3 -c "import bs4; print(f'✓ beautifulsoup4 {bs4.__version__}')"
-          echo "All dependencies verified"
+        run: pip install requests anthropic google-auth google-auth-httplib2
 
-      - name: Verify script and environment
-        run: |
-          echo "=== Environment Check ==="
-          echo "Current directory: $(pwd)"
-          echo "Python: $(which python3)"
-          echo "Python version: $(python3 --version)"
-          echo ""
-          echo "=== Script Check ==="
-          if [ -f "scripts/sync_google_photos.py" ]; then
-            echo "✓ Script found: scripts/sync_google_photos.py"
-            echo "Script size: $(wc -c < scripts/sync_google_photos.py) bytes"
-            echo "Script is executable: $(test -x scripts/sync_google_photos.py && echo 'yes' || echo 'no')"
-          else
-            echo "✗ Script NOT found at scripts/sync_google_photos.py"
-            ls -la scripts/
-            exit 1
-          fi
-          echo ""
-          echo "=== Configuration Check ==="
-          if [ -z "${{ secrets.GOOGLE_PHOTOS_ALBUM_URL }}" ]; then
-            echo "ℹ️  Using default OIO Racing album"
-          else
-            echo "✓ Custom album URL configured"
-          fi
-
-      - name: Sync photos from Google Photos album
-        run: |
-          python3 scripts/sync_google_photos.py
+      - name: Run photo sync
         env:
-          GOOGLE_PHOTOS_ALBUM_URL: ${{ secrets.GOOGLE_PHOTOS_ALBUM_URL }}
-          DEBUG: 'true'
-
-      - name: Commit new photos
-        run: |
-          git config user.name "OIO Photo Sync Bot"
-          git config user.email "bot@oioracing.local"
-
-          # Check if there are new photos to commit
-          if [ -z "$(git status --porcelain intake/photos/)" ]; then
-            echo "No new photos to commit."
-          else
-            echo "Found new photos in intake/photos/"
-            git add intake/photos/ .github/sync-state/ 2>/dev/null || true
-
-            # Count new photos
-            NEW_COUNT=$(git diff --cached --name-only intake/photos/ | grep -E '\.(jpg|jpeg|png|heic|webp)$' | wc -l)
-
-            if [ "$NEW_COUNT" -gt 0 ]; then
-              git commit -m "chore: sync $NEW_COUNT photo(s) from Google Photos album" \
-                -m "Auto-downloaded new photos from the shared Google Photos album." \
-                -m "Photos are staged in intake/photos/ for AI filing workflow." \
-                -m "Co-Authored-By: Paperclip <noreply@paperclip.ing>" || true
-              git push
-              echo "✓ Committed $NEW_COUNT new photos"
-            fi
-          fi
-
-      - name: Notify on failure
-        if: failure()
-        run: |
-          echo "::error::Photo sync failed"
-          echo ""
-          echo "::group::Troubleshooting Steps"
-          echo "Check the workflow logs above for error messages with [ERROR] or [FATAL] prefix"
-          echo ""
-          echo "Common issues and solutions:"
-          echo "  • Network timeout: Album URL may be slow or unreachable"
-          echo "  • Album not public: Verify the Google Photos album is publicly shared"
-          echo "  • Secret not configured: Set GOOGLE_PHOTOS_ALBUM_URL in GitHub Secrets"
-          echo "  • HTML structure changed: Google Photos UI updates may require scraper updates"
-          echo "  • Rate limiting: Wait and retry if Google is blocking requests"
-          echo "::endgroup::"
+          GOOGLE_PHOTOS_CREDENTIALS: ${{ secrets.GOOGLE_PHOTOS_CREDENTIALS }}
+          GOOGLE_PHOTOS_ALBUM_ID: ${{ secrets.GOOGLE_PHOTOS_ALBUM_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python scripts/sync_google_photos.py

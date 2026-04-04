@@ -1,355 +1,471 @@
 #!/usr/bin/env python3
 """
-OIO Racing - Google Photos Sync
+OIO Racing - Google Photos to Supabase Sync Pipeline
 
-Automatically fetches photos from a shared Google Photos album
-and stages them in intake/photos/ for AI filing.
+Syncs photos from a Google Photos album to Supabase storage and database,
+runs Claude Vision analysis, and maintains photo metadata.
 
-The shared album URL must be public and accessible without authentication.
+This replaces the old git-based photo ingest system with a cloud-native
+architecture:
+  Google Photos → Supabase storage + database → Claude Vision → Triage UI
+
+Environment Variables (required):
+  GOOGLE_PHOTOS_CREDENTIALS - JSON string with client_id, client_secret, refresh_token
+  GOOGLE_PHOTOS_ALBUM_ID - Album ID from Google Photos URL
+  ANTHROPIC_API_KEY - For Claude Vision analysis
+  SUPABASE_URL - Project URL (https://zdjughkxryhabduhsdgg.supabase.co)
+  SUPABASE_SERVICE_ROLE_KEY - Service role key (not anon key)
 
 Usage:
-  GOOGLE_PHOTOS_ALBUM_URL=https://photos.app.goo.gl/... python scripts/sync_google_photos.py
-
-Environment Variables:
-  GOOGLE_PHOTOS_ALBUM_URL - Optional: Custom album URL (defaults to OIO Racing album)
-  DEBUG - Optional: Set to 'true' for verbose output
+  python scripts/sync_google_photos.py
 """
 
 import json
 import os
-import re
 import sys
 from datetime import datetime
 from pathlib import Path
 
-# Print startup message immediately to ensure we get output
-print("=== OIO Racing Google Photos Sync ===", flush=True)
-print(f"Python {sys.version}", flush=True)
+import requests
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
 
-try:
-    import requests
-    from bs4 import BeautifulSoup
-    print("✓ Dependencies loaded successfully", flush=True)
-except ImportError as e:
-    print(f"✗ Failed to import dependencies: {e}", flush=True)
-    sys.exit(1)
-
-# Configuration
-DEBUG = os.getenv("DEBUG", "false").lower() == "true"
+# Ensure repo context is available
 REPO_ROOT = Path(__file__).parent.parent
-PICDUMP_DIR = REPO_ROOT / "intake" / "photos"
-SYNC_STATE_DIR = REPO_ROOT / ".github" / "sync-state"
-SYNC_STATE_FILE = SYNC_STATE_DIR / "google-photos.json"
-
-print(f"Repository root: {REPO_ROOT}", flush=True)
-print(f"Output directory: {PICDUMP_DIR}", flush=True)
-
-# Create directories if needed
-try:
-    PICDUMP_DIR.mkdir(exist_ok=True, parents=True)
-    SYNC_STATE_DIR.mkdir(exist_ok=True, parents=True)
-    print("✓ Directories created/verified", flush=True)
-except Exception as e:
-    print(f"✗ Failed to create directories: {e}", flush=True)
-    sys.exit(1)
 
 
 def log(message, level="INFO"):
-    """Print timestamped log message to stdout and optional log file."""
+    """Print timestamped log message."""
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     output = f"[{timestamp}] {level}: {message}"
     print(output, flush=True)
-    # Also print errors to stderr for better visibility in logs
     if level in ("ERROR", "FATAL"):
         print(output, file=sys.stderr, flush=True)
 
-    # Also write to a log file as backup (in case stdout isn't captured)
-    try:
-        log_file = SYNC_STATE_DIR / "sync.log"
-        with open(log_file, "a") as f:
-            f.write(output + "\n")
-            f.flush()
-    except Exception:
-        pass  # Silently ignore log file errors
 
-
-def debug(message):
-    """Print debug message if DEBUG is enabled."""
-    if DEBUG:
-        log(message, "DEBUG")
-
-
-def load_sync_state():
-    """Load previously synced photo URLs to avoid duplicates."""
-    if not SYNC_STATE_FILE.exists():
-        debug("No previous sync state found")
-        return {}
+def load_credentials():
+    """Load and refresh Google Photos credentials."""
+    creds_json = os.getenv("GOOGLE_PHOTOS_CREDENTIALS")
+    if not creds_json:
+        log("Missing GOOGLE_PHOTOS_CREDENTIALS environment variable", "FATAL")
+        sys.exit(1)
 
     try:
-        with open(SYNC_STATE_FILE, "r") as f:
-            state = json.load(f)
-            debug(f"Loaded sync state: {len(state.get('synced_urls', []))} synced URLs")
-            return state
+        creds_dict = json.loads(creds_json)
     except json.JSONDecodeError as e:
-        log(f"Warning: Could not parse sync state file: {e}", "WARN")
-        return {}
+        log(f"Invalid GOOGLE_PHOTOS_CREDENTIALS JSON: {e}", "FATAL")
+        sys.exit(1)
+
+    # Create credentials object
+    credentials = Credentials(
+        token=None,  # Will be refreshed
+        refresh_token=creds_dict.get("refresh_token"),
+        token_uri=creds_dict.get("token_uri", "https://oauth2.googleapis.com/token"),
+        client_id=creds_dict.get("client_id"),
+        client_secret=creds_dict.get("client_secret"),
+    )
+
+    # Refresh to get a fresh access token
+    try:
+        credentials.refresh(Request())
+        log("Google Photos credentials refreshed")
+    except Exception as e:
+        log(f"Failed to refresh Google Photos credentials: {e}", "FATAL")
+        sys.exit(1)
+
+    return credentials
 
 
-def save_sync_state(state):
-    """Save synced photos state."""
-    with open(SYNC_STATE_FILE, "w") as f:
-        json.dump(state, f, indent=2)
-    debug(f"Saved sync state: {len(state.get('synced_urls', []))} URLs")
+def fetch_album_photos(credentials):
+    """Fetch all photos from the configured Google Photos album."""
+    album_id = os.getenv("GOOGLE_PHOTOS_ALBUM_ID")
+    if not album_id:
+        log("Missing GOOGLE_PHOTOS_ALBUM_ID environment variable", "FATAL")
+        sys.exit(1)
 
+    all_items = []
+    next_page_token = None
+    url = "https://photoslibrary.googleapis.com/v1/mediaItems:search"
 
-def get_album_url():
-    """Get Google Photos album URL from environment or use default OIO Racing album."""
-    # Check environment variable first (allows override)
-    url = os.getenv("GOOGLE_PHOTOS_ALBUM_URL")
+    while True:
+        payload = {"albumId": album_id, "pageSize": 100}
+        if next_page_token:
+            payload["pageToken"] = next_page_token
 
-    if not url:
-        # Use default OIO Racing public album
-        url = "https://photos.app.goo.gl/W757cit6HfvKmCQh6"
-        log(f"Using default OIO Racing album (no GOOGLE_PHOTOS_ALBUM_URL override)", "INFO")
-    else:
-        log(f"Using custom album URL from GOOGLE_PHOTOS_ALBUM_URL", "INFO")
+        headers = {"Authorization": f"Bearer {credentials.token}"}
 
-    debug(f"Album URL (first 50 chars): {url[:50]}...")
-
-    # Handle short URLs: https://photos.app.goo.gl/...
-    # Need to expand to full album URL if using short link
-    if "photos.app.goo.gl" in url:
         try:
-            debug("Resolving Google Photos short URL...")
-            response = requests.head(url, allow_redirects=True, timeout=10)
-            url = response.url
-            debug(f"Resolved to: {url[:100]}...")
+            response = requests.post(url, json=payload, headers=headers, timeout=30)
+            response.raise_for_status()
         except requests.RequestException as e:
-            log(f"Could not resolve Google Photos URL: {e}", "ERROR")
-            return None
+            log(f"Failed to fetch album photos: {e}", "ERROR")
+            return []
 
-    return url
+        data = response.json()
+        all_items.extend(data.get("mediaItems", []))
 
+        next_page_token = data.get("nextPageToken")
+        if not next_page_token:
+            break
 
-def extract_photo_urls(album_html, base_url=None):
-    """
-    Extract photo download URLs from Google Photos album HTML.
-
-    Converts relative URLs to absolute URLs using the base_url.
-    Returns list of (filename, url) tuples.
-    """
-    from urllib.parse import urljoin
-
-    soup = BeautifulSoup(album_html, "html.parser")
-    photos = []
-
-    # Google Photos uses data-src attributes for images
-    # Look for image elements with srcset or data attributes
-    for img in soup.find_all("img"):
-        src = img.get("src") or img.get("data-src") or ""
-
-        # Filter to photos only (not thumbnails, UI elements)
-        if "/photo/" in src or "/image/" in src or "/media/" in src:
-            # Convert relative URLs to absolute
-            if base_url and src.startswith("./"):
-                src = urljoin(base_url, src)
-
-            # Try to extract filename from URL
-            filename = extract_filename_from_url(src)
-            if filename:
-                photos.append((filename, src))
-
-    # Alternative: Look for download links
-    for link in soup.find_all("a", href=True):
-        href = link.get("href", "")
-        if "/photo/" in href or "download" in href.lower():
-            # Convert relative URLs to absolute
-            if base_url and href.startswith("./"):
-                href = urljoin(base_url, href)
-
-            filename = extract_filename_from_url(href)
-            if filename and (filename, href) not in photos:
-                photos.append((filename, href))
-
-    return photos
+    log(f"Fetched {len(all_items)} photos from Google Photos album")
+    return all_items
 
 
-def extract_filename_from_url(url):
-    """Extract a reasonable filename from a URL."""
-    # Try to get filename from URL parameters
-    if "filename=" in url:
-        match = re.search(r"filename=([^&]+)", url)
-        if match:
-            return match.group(1).strip('"\'')
+def supabase_request(method, path, json_data=None, headers=None):
+    """Make a request to Supabase REST API."""
+    supabase_url = os.getenv("SUPABASE_URL")
+    service_role_key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
 
-    # Extract from path
-    path = url.split("?")[0].split("#")[0]
-    name = path.split("/")[-1]
+    if not supabase_url or not service_role_key:
+        log("Missing Supabase environment variables", "FATAL")
+        sys.exit(1)
 
-    # Sanitize
-    if name and "." in name:
-        return name
+    url = f"{supabase_url}/rest/v1{path}"
+    default_headers = {
+        "Authorization": f"Bearer {service_role_key}",
+        "apikey": service_role_key,
+        "Content-Type": "application/json",
+    }
+    if headers:
+        default_headers.update(headers)
 
-    # Generate a name if we can't extract one
-    ext = ".jpg"
-    if ".png" in url:
-        ext = ".png"
-    elif ".heic" in url:
-        ext = ".heic"
-    elif ".webp" in url:
-        ext = ".webp"
-
-    return f"photo_{int(datetime.now().timestamp())}{ext}"
-
-
-def download_photo(url, filepath, timeout=30):
-    """Download a photo from URL to filepath."""
     try:
-        response = requests.get(url, timeout=timeout, stream=True)
+        if method == "GET":
+            response = requests.get(url, headers=default_headers, timeout=30)
+        elif method == "POST":
+            response = requests.post(url, json=json_data, headers=default_headers, timeout=30)
+        elif method == "PATCH":
+            response = requests.patch(url, json=json_data, headers=default_headers, timeout=30)
+        else:
+            raise ValueError(f"Unsupported method: {method}")
+
         response.raise_for_status()
+        return response.json() if response.text else None
+    except requests.RequestException as e:
+        log(f"Supabase API error ({method} {path}): {e}", "ERROR")
+        return None
 
-        with open(filepath, "wb") as f:
-            for chunk in response.iter_content(chunk_size=8192):
-                if chunk:
-                    f.write(chunk)
 
+def upload_to_storage(photo_bytes, path):
+    """Upload photo bytes to Supabase Storage."""
+    supabase_url = os.getenv("SUPABASE_URL")
+    service_role_key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+
+    if not supabase_url or not service_role_key:
+        log("Missing Supabase environment variables", "FATAL")
+        sys.exit(1)
+
+    url = f"{supabase_url}/storage/v1/object/oio-photos/{path}"
+    headers = {
+        "Authorization": f"Bearer {service_role_key}",
+        "x-upsert": "false",
+    }
+
+    try:
+        response = requests.post(url, data=photo_bytes, headers=headers, timeout=60)
+        response.raise_for_status()
         return True
-
-    except requests.Timeout:
-        log(f"Timeout downloading photo (>{timeout}s)", "ERROR")
-        return False
-    except requests.HTTPError as e:
-        log(f"HTTP {e.response.status_code} downloading photo", "ERROR")
-        return False
     except requests.RequestException as e:
-        log(f"Network error downloading photo: {e}", "ERROR")
-        return False
-    except IOError as e:
-        log(f"Failed to save photo file: {e}", "ERROR")
+        log(f"Failed to upload photo to storage: {e}", "ERROR")
         return False
 
 
-def sync_google_photos():
-    """Main sync function."""
-    log("Starting Google Photos sync...")
-
-    # Get album URL
-    album_url = get_album_url()
-    if not album_url:
-        log("FATAL: No album URL configured", "ERROR")
-        return -1
-
-    log(f"Album URL configured (first 50 chars): {album_url[:50]}...")
-
-    # Fetch album page
+def download_photo(base_url):
+    """Download photo from Google Photos base URL."""
+    url = f"{base_url}=d"  # =d flag gets full resolution
     try:
-        log("Fetching album page...")
-        response = requests.get(album_url, timeout=15)
+        response = requests.get(url, timeout=30)
         response.raise_for_status()
-        album_html = response.text
-        log(f"Album page fetched successfully ({len(album_html)} bytes)")
-        debug(f"Response status: {response.status_code}")
-    except requests.exceptions.Timeout:
-        log("Request timed out fetching album (15 seconds)", "ERROR")
-        return -1
-    except requests.exceptions.ConnectionError as e:
-        log(f"Network connection failed: {e}", "ERROR")
-        return -1
+        return response.content
     except requests.RequestException as e:
-        log(f"Failed to fetch album page: {e}", "ERROR")
-        return -1
+        log(f"Failed to download photo: {e}", "ERROR")
+        return None
 
-    # Extract photo URLs
-    log("Extracting photo URLs from album HTML...")
-    photo_list = extract_photo_urls(album_html, base_url=album_url)
-    log(f"Found {len(photo_list)} photos in album")
 
-    if not photo_list:
-        log("WARNING: No photos found in album", "WARN")
-        log("This could mean:", "WARN")
-        log("  1. Album is empty", "WARN")
-        log("  2. Album is not publicly accessible", "WARN")
-        log("  3. Album URL is incorrect", "WARN")
-        return 0
+def sync_photos(media_items):
+    """Sync photos from Google Photos to Supabase."""
+    log(f"Starting sync of {len(media_items)} photos")
 
-    # Load previous sync state
-    log("Loading previous sync state...")
-    state = load_sync_state()
-    synced = state.get("synced_urls", [])
-    synced_files = state.get("synced_files", [])
-    log(f"Previous sync tracked {len(synced)} photos")
+    # Fetch existing photos to check for duplicates
+    existing = supabase_request("GET", "/photos?select=id,google_photos_id,description,ai_status")
+    if existing is None:
+        existing = []
 
-    # Download new photos
-    log("Checking for new photos...")
-    downloaded_count = 0
+    existing_by_google_id = {p.get("google_photos_id"): p for p in existing if p.get("google_photos_id")}
 
-    for filename, url in photo_list:
-        # Skip if already synced
-        if url in synced or filename in synced_files:
-            debug(f"Skipping {filename} (already synced)")
+    new_count = 0
+    update_count = 0
+    skip_count = 0
+
+    for item in media_items:
+        google_id = item.get("id")
+        filename = item.get("filename", "photo.jpg")
+        description = item.get("description")
+        base_url = item.get("baseUrl")
+
+        if not google_id or not base_url:
             continue
 
-        # Download
-        filepath = PICDUMP_DIR / filename
-        log(f"Downloading: {filename}")
-
-        if download_photo(url, filepath):
-            log(f"✓ Saved to intake/photos/{filename}")
-            synced.append(url)
-            synced_files.append(filename)
-            downloaded_count += 1
+        if google_id in existing_by_google_id:
+            # Case 2: Already in database
+            existing_photo = existing_by_google_id[google_id]
+            if existing_photo.get("ai_status") == "unknown":
+                # Only update if description changed
+                old_description = existing_photo.get("description")
+                if description and description != old_description:
+                    log(f"[UPDATE description] {filename}")
+                    supabase_request(
+                        "PATCH",
+                        f"/photos?google_photos_id=eq.{google_id}",
+                        {
+                            "google_description": description,
+                            # Only update description if it was null before
+                            "description": description if old_description is None else old_description,
+                        },
+                    )
+                    update_count += 1
+                else:
+                    log(f"[SKIP] {filename}")
+                    skip_count += 1
+            else:
+                # Case 3: Already identified or skipped
+                log(f"[SKIP] {filename} (already processed)")
+                skip_count += 1
         else:
-            log(f"✗ Failed to download {filename}", "WARN")
+            # Case 1: New photo
+            log(f"[NEW] {filename}")
 
-    # Save updated state
-    state = {
-        "synced_urls": synced,
-        "synced_files": synced_files,
-        "last_sync": datetime.now().isoformat(),
-    }
-    save_sync_state(state)
+            # Download photo
+            photo_bytes = download_photo(base_url)
+            if not photo_bytes:
+                continue
 
-    # Summary
-    already_synced = len(photo_list) - downloaded_count
-    log(f"\n{'='*60}")
-    log(f"Sync Summary:")
-    log(f"  ✓ Downloaded: {downloaded_count}")
-    log(f"  ⊘ Already synced: {already_synced}")
-    log(f"  Total in state: {len(synced)}")
-    log(f"{'='*60}")
+            # Upload to Supabase Storage
+            storage_path = f"{google_id}/{filename}"
+            if not upload_to_storage(photo_bytes, storage_path):
+                continue
 
-    return downloaded_count
+            # Construct public URL
+            supabase_url = os.getenv("SUPABASE_URL")
+            public_url = f"{supabase_url}/storage/v1/object/public/oio-photos/{storage_path}"
+
+            # Insert into database
+            photo_record = {
+                "filename": filename,
+                "url": public_url,
+                "size_bytes": len(photo_bytes),
+                "google_photos_id": google_id,
+                "google_description": description,
+                "description": description,  # Use Google description as initial description
+                "ai_status": "unknown",
+            }
+
+            result = supabase_request("POST", "/photos", photo_record)
+            if result:
+                new_count += 1
+            else:
+                skip_count += 1
+
+    log(f"Sync complete: {new_count} new, {update_count} updated, {skip_count} skipped")
+    return new_count, update_count, skip_count
+
+
+def analyze_with_vision(photo_id, photo_url, description):
+    """Run Claude Vision analysis on a photo."""
+    try:
+        from anthropic import Anthropic
+    except ImportError:
+        log("anthropic package not installed", "ERROR")
+        return None
+
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+    if not api_key:
+        log("Missing ANTHROPIC_API_KEY", "ERROR")
+        return None
+
+    client = Anthropic(api_key=api_key)
+
+    # Load OIO context from repo files
+    context_parts = []
+
+    # Load team bios
+    team_bios_path = REPO_ROOT / "brand" / "Team-Bios.md"
+    if team_bios_path.exists():
+        try:
+            context_parts.append(team_bios_path.read_text()[:1000])
+        except Exception:
+            pass
+
+    # Load car overviews
+    cars_dir = REPO_ROOT / "cars"
+    if cars_dir.exists():
+        for driver_dir in cars_dir.glob("*"):
+            for car_dir in driver_dir.glob("*"):
+                overview_path = car_dir / "Overview.md"
+                if overview_path.exists():
+                    try:
+                        context_parts.append(overview_path.read_text()[:500])
+                    except Exception:
+                        pass
+
+    context = "\n\n".join(context_parts) if context_parts else "OIO Racing fleet information not available"
+
+    prompt = f"""Analyze this photo from an OIO Racing archive.
+
+{context}
+
+The OIO Racing fleet consists of grassroots motorsport vehicles driven by Ian Jennings and his crew in Kansas City, MO. Events include KCRSCCA Rallycross (dirt/gravel, cones, jumps) and Autocross (asphalt, tight cones).
+
+Your task:
+1. Identify which car is in the photo using visual cues (color, body shape, wheels, livery, decals, era, unique features)
+2. Determine the driver
+3. Estimate the event/context (rallycross, autocross, shop, travel, street, portrait, unknown)
+4. Provide a confidence score 0.0–1.0
+
+Respond with JSON only, no prose:
+{{
+  "car": "car name/model or unknown",
+  "driver": "first name or unknown",
+  "event_context": "rallycross|autocross|shop|travel|street|portrait|unknown",
+  "confidence": 0.85,
+  "reasoning": "brief explanation of visual clues",
+  "visual_notes": "detailed natural language description of what is visible — suitable as an Instagram caption context"
+}}
+
+Be conservative. Only assign confidence >= 0.8 if you can clearly identify the specific car and driver from the fleet above."""
+
+    try:
+        response = client.messages.create(
+            model="claude-opus-4-6",
+            max_tokens=1024,
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "image",
+                            "source": {
+                                "type": "url",
+                                "url": photo_url,
+                            },
+                        },
+                        {
+                            "type": "text",
+                            "text": prompt,
+                        },
+                    ],
+                }
+            ],
+        )
+
+        result_text = response.content[0].text
+        # Extract JSON from response
+        try:
+            result = json.loads(result_text)
+            return result
+        except json.JSONDecodeError:
+            log(f"Failed to parse Vision response as JSON: {result_text[:100]}", "ERROR")
+            return None
+
+    except Exception as e:
+        log(f"Vision analysis failed for {photo_id}: {e}", "ERROR")
+        return None
+
+
+def run_vision_analysis():
+    """Run Claude Vision analysis on photos without descriptions."""
+    log("Running Claude Vision analysis")
+
+    # Fetch photos needing analysis
+    photos_to_analyze = supabase_request(
+        "GET",
+        "/photos?ai_status=eq.unknown&description=is.null&select=id,url,description",
+    )
+
+    if not photos_to_analyze:
+        log("No photos needing Vision analysis")
+        return
+
+    analyzed_count = 0
+    uncertain_count = 0
+
+    for photo in photos_to_analyze:
+        photo_id = photo.get("id")
+        photo_url = photo.get("url")
+
+        if not photo_id or not photo_url:
+            continue
+
+        result = analyze_with_vision(photo_id, photo_url, photo.get("description"))
+        if not result:
+            continue
+
+        confidence = result.get("confidence", 0)
+        if confidence >= 0.8:
+            # Update with analysis results
+            log(f"[VISION identified {int(confidence*100)}%] {photo_id}")
+            supabase_request(
+                "PATCH",
+                f"/photos?id=eq.{photo_id}",
+                {
+                    "car": result.get("car"),
+                    "description": result.get("visual_notes"),
+                    "ai_raw": result,
+                    "ai_status": "identified",
+                },
+            )
+            analyzed_count += 1
+        else:
+            # Keep as unknown but save analysis
+            log(f"[VISION uncertain {int(confidence*100)}%] {photo_id}")
+            supabase_request(
+                "PATCH",
+                f"/photos?id=eq.{photo_id}",
+                {
+                    "ai_raw": result,
+                },
+            )
+            uncertain_count += 1
+
+    log(f"Vision analysis complete: {analyzed_count} identified, {uncertain_count} uncertain")
+
+    # Also mark photos with existing descriptions as identified
+    photos_with_desc = supabase_request(
+        "GET",
+        "/photos?ai_status=eq.unknown&description=not.is.null&select=id",
+    )
+    if photos_with_desc:
+        for photo in photos_with_desc:
+            supabase_request(
+                "PATCH",
+                f"/photos?id=eq.{photo.get('id')}",
+                {"ai_status": "identified"},
+            )
+        log(f"Marked {len(photos_with_desc)} photos with descriptions as identified")
+
+
+def main():
+    """Main sync workflow."""
+    log("=== OIO Racing Photo Sync ===")
+
+    # Load credentials
+    credentials = load_credentials()
+
+    # Fetch photos from Google Photos
+    media_items = fetch_album_photos(credentials)
+    if not media_items:
+        log("No photos to sync", "WARN")
+        return
+
+    # Sync to Supabase
+    sync_photos(media_items)
+
+    # Run Vision analysis
+    run_vision_analysis()
+
+    log("=== Sync Complete ===")
 
 
 if __name__ == "__main__":
-    log("=" * 60)
-    log("OIO Racing - Google Photos Sync")
-    log("=" * 60)
-
-    if DEBUG:
-        log("DEBUG MODE ENABLED", "DEBUG")
-        log(f"GOOGLE_PHOTOS_ALBUM_URL set: {bool(os.getenv('GOOGLE_PHOTOS_ALBUM_URL'))}", "DEBUG")
-
-    try:
-        count = sync_google_photos()
-
-        if count < 0:
-            log("\nFATAL: Sync failed - check error messages above", "ERROR")
-            sys.exit(1)
-        else:
-            log(f"\nSUCCESS: Sync completed (downloaded {count} new photos)", "INFO")
-            sys.exit(0)
-
-    except KeyboardInterrupt:
-        log("\nInterrupted by user", "WARN")
-        sys.exit(130)
-    except Exception as e:
-        log(f"\nUNEXPECTED ERROR: {type(e).__name__}: {e}", "ERROR")
-        import traceback
-        log("Traceback:", "ERROR")
-        # Always log full traceback for visibility
-        tb_lines = traceback.format_exc().split('\n')
-        for line in tb_lines:
-            if line.strip():
-                log(line, "ERROR")
-        sys.exit(1)
+    main()
