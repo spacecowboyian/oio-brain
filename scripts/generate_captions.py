@@ -2,20 +2,22 @@
 """
 OIO Racing - Caption Generation
 
-Generates polished social media captions for photos that are ready.
+Generates polished social media captions for photos that are ready, reading
+workflow state from photo-log.md files in the OIO brain and writing results
+back to those same files.
 
-A photo is ready for caption generation when:
-  - workflow_status is 'auto_identified' or 'needs_triage' with vehicle_key set
-  - OR workflow_status is 'metadata_complete'
+A photo is eligible for caption generation when:
+  - workflow_status is 'auto_identified' (vehicle already known)
+  - OR workflow_status is 'metadata_complete' (human triaged, vehicle_key set)
 
-Context used for each caption:
-  - The photo itself (via Claude Vision)
+Context used per caption:
+  - The photo (via Claude Vision/URL)
   - Vehicle overview from cars/{driver}/{slug}/overview.md
   - Season story arcs from content/story-arcs.md
   - Brand voice from brand/voice-and-tone.md
   - Content schedule from content/schedule.md
-  - Rough caption / source description if available
-  - Recent approved captions from caption_history table (for style tuning)
+  - rough_caption / source_description from the photo-log entry
+  - Recent approved captions from caption_history.md for style tuning
 
 Caption rules (enforced by prompt):
   - No emoji
@@ -24,31 +26,31 @@ Caption rules (enforced by prompt):
   - Grounded in vehicle history and current context
   - Improve on the rough caption rather than ignore it
 
+After generation, the script writes final_caption and updates workflow_status
+to 'caption_generated' in the photo-log.md. The calling workflow commits and
+pushes the changes.
+
 Environment variables:
-  ANTHROPIC_API_KEY           Claude API key
-  SUPABASE_URL                Supabase project URL
-  SUPABASE_SERVICE_ROLE_KEY   Supabase service-role key
+  ANTHROPIC_API_KEY   Claude API key
 
 Usage:
   python scripts/generate_captions.py
-  python scripts/generate_captions.py --photo-id <uuid>   # single photo
-  python scripts/generate_captions.py --dry-run            # print captions, no write
+  python scripts/generate_captions.py --google-id <google_photos_id>  # single photo
+  python scripts/generate_captions.py --dry-run                         # print, no save
 """
 
 import argparse
-import json
 import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
+sys.path.insert(0, str(Path(__file__).parent))
+import photo_log as pl
 
 REPO_ROOT = Path(__file__).parent.parent
 
-# Supabase statuses that are eligible for caption generation
-CAPTION_ELIGIBLE_STATUSES = ["auto_identified", "metadata_complete"]
-
+ELIGIBLE_STATUSES = ("auto_identified", "metadata_complete")
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -63,58 +65,21 @@ def log(message: str, level: str = "INFO") -> None:
 
 
 # ---------------------------------------------------------------------------
-# Supabase helpers
-# ---------------------------------------------------------------------------
-
-def supabase(method: str, path: str, json_data=None) -> list | dict | None:
-    url = os.getenv("SUPABASE_URL")
-    key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
-    if not url or not key:
-        log("Missing Supabase environment variables", "FATAL")
-        sys.exit(1)
-
-    headers = {
-        "Authorization": f"Bearer {key}",
-        "apikey": key,
-        "Content-Type": "application/json",
-        "Prefer": "return=representation",
-    }
-
-    full_url = f"{url}/rest/v1{path}"
-    try:
-        if method == "GET":
-            resp = requests.get(full_url, headers=headers, timeout=30)
-        elif method == "POST":
-            resp = requests.post(full_url, json=json_data, headers=headers, timeout=30)
-        elif method == "PATCH":
-            resp = requests.patch(full_url, json=json_data, headers=headers, timeout=30)
-        else:
-            raise ValueError(f"Unsupported method: {method}")
-        resp.raise_for_status()
-        return resp.json() if resp.text else None
-    except requests.RequestException as exc:
-        log(f"Supabase {method} {path} failed: {exc}", "ERROR")
-        return None
-
-
-# ---------------------------------------------------------------------------
 # OIO Brain context loaders
 # ---------------------------------------------------------------------------
 
-def load_brand_voice() -> str:
-    path = REPO_ROOT / "brand" / "voice-and-tone.md"
+def _read(path: Path, limit: int) -> str:
     if path.exists():
-        return path.read_text()[:3000]
+        return path.read_text()[:limit]
     return ""
 
 
-def load_vehicle_context(vehicle_key: str) -> str:
-    """Return the overview text for the given vehicle_key."""
-    if not vehicle_key:
-        return ""
+def load_brand_voice() -> str:
+    return _read(REPO_ROOT / "brand" / "voice-and-tone.md", 3000)
 
-    # Map vehicle_key → car slug directory pattern
-    key_to_slug = {
+
+def load_vehicle_context(vehicle_key: str) -> str:
+    key_to_path = {
         "goblin": ("ian", "mr2-goblin"),
         "dale": ("ian", "celica-dale"),
         "fittycent": ("ian", "fit-fittycent"),
@@ -125,57 +90,52 @@ def load_vehicle_context(vehicle_key: str) -> str:
         "mgb-gt": ("ryan", "mgb-gt"),
         "ae86": ("ryan", "ae86"),
     }
-
-    match = key_to_slug.get(vehicle_key.lower())
+    match = key_to_path.get(vehicle_key.lower(), ())
     if not match:
         return ""
-
     driver, slug = match
     overview = REPO_ROOT / "cars" / driver / slug / "overview.md"
     if not overview.exists():
         overview = REPO_ROOT / "cars" / driver / slug / "Overview.md"
-    if overview.exists():
-        return overview.read_text()[:3000]
-    return ""
+    return _read(overview, 3000)
 
 
 def load_story_arcs() -> str:
-    path = REPO_ROOT / "content" / "story-arcs.md"
-    if path.exists():
-        return path.read_text()[:2000]
-    return ""
+    return _read(REPO_ROOT / "content" / "story-arcs.md", 2000)
 
 
 def load_content_schedule() -> str:
-    path = REPO_ROOT / "content" / "schedule.md"
-    if path.exists():
-        return path.read_text()[:1500]
-    return ""
+    return _read(REPO_ROOT / "content" / "schedule.md", 1500)
 
 
-def load_approved_caption_examples(vehicle_key: str | None, limit: int = 5) -> list[str]:
-    """Pull recent approved captions from Supabase caption_history for style examples."""
-    filter_part = ""
-    if vehicle_key:
-        filter_part = f"&photo_id=in.(select id from photos where vehicle_key=eq.{vehicle_key})"
+def load_approved_captions(vehicle_key: str) -> list[str]:
+    """
+    Read approved captions from caption_history.md for style examples.
 
-    rows = supabase(
-        "GET",
-        f"/caption_history?approved=eq.true{filter_part}&order=created_at.desc&limit={limit}&select=caption",
-    ) or []
-
-    return [r["caption"] for r in rows if r.get("caption")]
+    The caption_history.md file lives at photos/{driver}/{slug}/caption_history.md
+    and contains past approved captions as a simple bulleted list.
+    """
+    examples: list[str] = []
+    log_path = pl.log_path_for_vehicle(vehicle_key)
+    history_path = log_path.parent / "caption_history.md"
+    if not history_path.exists():
+        return examples
+    for line in history_path.read_text().splitlines():
+        line = line.strip()
+        if line.startswith("- ") and len(line) > 10:
+            examples.append(line[2:])
+    return examples[:5]
 
 
 # ---------------------------------------------------------------------------
 # Caption generation
 # ---------------------------------------------------------------------------
 
-def generate_caption(photo: dict, dry_run: bool = False) -> str | None:
+def generate_caption(entry: dict[str, str]) -> str | None:
     """
-    Generate a polished social caption for a single photo.
+    Generate a polished social caption for a single photo entry.
 
-    Returns the generated caption text, or None on failure.
+    Returns the caption text, or None on failure.
     """
     try:
         from anthropic import Anthropic
@@ -188,26 +148,32 @@ def generate_caption(photo: dict, dry_run: bool = False) -> str | None:
         log("Missing ANTHROPIC_API_KEY", "FATAL")
         sys.exit(1)
 
-    photo_id = photo.get("id", "unknown")
-    image_url = photo.get("image_url", "")
-    vehicle_key = photo.get("vehicle_key") or photo.get("auto_identified_vehicle_key") or ""
-    rough_caption = photo.get("rough_caption") or photo.get("source_description") or ""
+    google_id = entry.get("google_photos_id", "unknown")
+    image_url = entry.get("supabase_url", "")
+    vehicle_key = (entry.get("vehicle_key") or "").strip()
+    if vehicle_key in ("none", ""):
+        vehicle_key = entry.get("auto_identified_vehicle_key", "unknown") or "unknown"
 
-    # Gather context
+    rough_caption = entry.get("rough_caption", "none")
+    if rough_caption in ("none", ""):
+        rough_caption = entry.get("source_description", "none")
+    rough_block = (
+        f"\nRough caption to improve upon:\n{rough_caption}\n"
+        if rough_caption not in ("none", "")
+        else ""
+    )
+
     brand_voice = load_brand_voice()
     vehicle_context = load_vehicle_context(vehicle_key)
     story_arcs = load_story_arcs()
     schedule = load_content_schedule()
-    examples = load_approved_caption_examples(vehicle_key)
+    examples = load_approved_captions(vehicle_key)
 
-    # Build examples block
     examples_block = ""
     if examples:
-        examples_block = "\n\nApproved caption examples (use for style reference only):\n"
+        examples_block = "\n\nApproved past captions for style reference:\n"
         for i, ex in enumerate(examples, 1):
             examples_block += f"{i}. {ex}\n"
-
-    rough_block = f"\nRough caption / description to improve upon:\n{rough_caption}\n" if rough_caption else ""
 
     prompt = f"""You are writing a social media caption for OIO Racing.
 
@@ -217,13 +183,13 @@ Cars are treated like characters with names and story arcs.
 
 CAPTION RULES — follow these strictly:
 - No emoji of any kind
-- No em dashes (—)
+- No em dashes (-- or —)
 - Write like a real human, not marketing copy
-- Keep it concise and readable (1-4 sentences is ideal)
-- Ground every claim in the actual vehicle history and current context below
-- Improve upon the rough caption — do not ignore it, do not just restate it
-- Do not invent facts that are not supported by the context provided
-- No fake hype. No "thrilling" or "exciting" or "incredible"
+- 1-4 sentences is ideal; do not pad or over-explain
+- Ground every claim in the actual vehicle history and context below
+- Improve on the rough caption — do not ignore it, do not just restate it word for word
+- Do not invent facts not supported by the context provided
+- No fake hype ("thrilling", "exciting", "incredible")
 
 Vehicle: {vehicle_key or "unknown"}
 
@@ -237,15 +203,15 @@ Vehicle: {vehicle_key or "unknown"}
 {schedule or "No schedule context available."}
 
 --- Brand voice reference ---
-{brand_voice or "See brand/voice-and-tone.md"}
-{rough_block}{examples_block}
+{brand_voice or "See brand/voice-and-tone.md"}{rough_block}{examples_block}
 
-Analyze the photo and write a single polished social media caption. Output the caption text only — no quotes, no labels, no explanation."""
+Analyze the photo and write a single polished social media caption.
+Output the caption text only — no quotes, no labels, no explanation."""
 
     client = Anthropic(api_key=api_key)
 
     try:
-        if image_url:
+        if image_url and image_url != "none":
             response = client.messages.create(
                 model="claude-opus-4-6",
                 max_tokens=400,
@@ -268,21 +234,19 @@ Analyze the photo and write a single polished social media caption. Output the c
 
         caption = response.content[0].text.strip()
 
-        # Basic validation
         if not caption:
-            log(f"Empty caption returned for {photo_id}", "ERROR")
+            log(f"Empty caption returned for {google_id}", "ERROR")
             return None
 
-        # Warn if rules were violated (don't block, just flag)
         if any(c in caption for c in ["—", "–"]):
-            log(f"Caption for {photo_id} contains em/en dash — check output", "WARN")
+            log(f"Caption for {google_id} contains em/en dash — check output", "WARN")
         if any(ord(c) > 127 for c in caption):
-            log(f"Caption for {photo_id} may contain emoji — check output", "WARN")
+            log(f"Caption for {google_id} may contain emoji — check output", "WARN")
 
         return caption
 
     except Exception as exc:
-        log(f"Caption generation failed for {photo_id}: {exc}", "ERROR")
+        log(f"Caption generation failed for {google_id}: {exc}", "ERROR")
         return None
 
 
@@ -290,78 +254,75 @@ Analyze the photo and write a single polished social media caption. Output the c
 # Main workflow
 # ---------------------------------------------------------------------------
 
-def process_photos(photo_id: str | None = None, dry_run: bool = False) -> None:
-    """Generate captions for eligible photos."""
+def process(google_id: str | None = None, dry_run: bool = False) -> None:
+    """Generate captions for eligible photos and update photo-log.md files."""
 
-    if photo_id:
-        photos = supabase("GET", f"/photos?id=eq.{photo_id}&select=*") or []
-        if not photos:
-            log(f"Photo {photo_id} not found", "ERROR")
+    if google_id:
+        entry = pl.all_entries().get(google_id)
+        if not entry:
+            log(f"Photo with google_photos_id={google_id} not found in brain", "ERROR")
             return
+        photos = [entry]
     else:
-        # Photos eligible for captioning:
-        # - auto_identified (vehicle known, needs caption)
-        # - metadata_complete (human has triaged and marked ready)
-        # Also require vehicle_key to be set
-        eligible_filter = "workflow_status=in.(auto_identified,metadata_complete)&caption_status=neq.generated&vehicle_key=not.is.null"
-        photos = supabase("GET", f"/photos?{eligible_filter}&select=*") or []
+        photos = pl.entries_by_status(*ELIGIBLE_STATUSES)
 
     if not photos:
         log("No photos ready for caption generation")
         return
 
     log(f"Generating captions for {len(photos)} photo(s)")
-
     success = 0
     failed = 0
 
-    for photo in photos:
-        pid = photo.get("id", "unknown")
-        vehicle = photo.get("vehicle_key", "unknown")
-        log(f"[CAPTION] {pid[:12]}... ({vehicle})")
+    for entry in photos:
+        gid = entry.get("google_photos_id", "unknown")
+        vehicle = entry.get("vehicle_key", "unknown")
+        filename = entry.get("_filename", gid)
+        log(f"[CAPTION] {filename} ({vehicle})")
 
-        caption = generate_caption(photo, dry_run=dry_run)
-
+        caption = generate_caption(entry)
         if not caption:
             failed += 1
             continue
 
         if dry_run:
-            print(f"\n--- Caption for {pid[:12]}... ---")
+            print(f"\n--- Caption for {filename} ---")
             print(caption)
             print()
             success += 1
             continue
 
-        # Write final_caption to Supabase
-        supabase("PATCH", f"/photos?id=eq.{pid}", {
+        # Update photo-log.md
+        log_path = Path(entry["_log_path"])
+        updated = pl.update_entry(log_path, gid, {
             "final_caption": caption,
-            "caption_status": "generated",
             "workflow_status": "caption_generated",
         })
-
-        # Store in caption_history for future style tuning
-        supabase("POST", "/caption_history", {
-            "photo_id": pid,
-            "caption": caption,
-            "model": "claude-opus-4-6",
-            "approved": False,
-        })
-
-        success += 1
-        log(f"[DONE] {pid[:12]}... caption saved")
+        if updated:
+            success += 1
+            log(f"[DONE] {filename} — caption saved to {log_path.relative_to(REPO_ROOT)}")
+        else:
+            log(f"Failed to update photo-log for {gid}", "ERROR")
+            failed += 1
 
     log(f"Caption generation complete: {success} generated, {failed} failed")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate OIO social media captions")
-    parser.add_argument("--photo-id", help="Generate caption for a single photo by UUID")
-    parser.add_argument("--dry-run", action="store_true", help="Print captions without saving")
+    parser.add_argument(
+        "--google-id",
+        help="Process a single photo by Google Photos ID",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print captions without saving",
+    )
     args = parser.parse_args()
 
     log("=== OIO Caption Generation ===")
-    process_photos(photo_id=args.photo_id, dry_run=args.dry_run)
+    process(google_id=args.google_id, dry_run=args.dry_run)
     log("=== Done ===")
 
 

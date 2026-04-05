@@ -1,13 +1,13 @@
 name: Generate OIO Photo Captions
 
 on:
-  # Run daily after the morning ingestion
+  # Run daily after the morning ingestion cycle
   schedule:
     - cron: '30 8 * * *'
   workflow_dispatch:
     inputs:
-      photo_id:
-        description: 'Single photo UUID (optional — leave blank to process all eligible)'
+      google_id:
+        description: 'Google Photos ID of a single photo (optional — leave blank to process all eligible)'
         required: false
       dry_run:
         description: 'Print captions without saving (true/false)'
@@ -18,7 +18,7 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write   # needed to commit updated photo-log.md files
 
     steps:
       - uses: actions/checkout@v4
@@ -33,14 +33,26 @@ jobs:
       - name: Generate captions
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
           ARGS=""
-          if [ -n "${{ github.event.inputs.photo_id }}" ]; then
-            ARGS="--photo-id ${{ github.event.inputs.photo_id }}"
+          if [ -n "${{ github.event.inputs.google_id }}" ]; then
+            ARGS="--google-id ${{ github.event.inputs.google_id }}"
           fi
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             ARGS="$ARGS --dry-run"
           fi
           python scripts/generate_captions.py $ARGS
+
+      - name: Commit updated photo logs
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add photos/
+          if git diff --cached --quiet; then
+            echo "No caption changes to commit."
+          else
+            git commit -m "chore: add generated captions to photo logs [skip ci]"
+            git push
+            echo "Photo logs updated and pushed."
+          fi
