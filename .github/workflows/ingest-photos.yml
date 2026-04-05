@@ -1,4 +1,4 @@
-name: Ingest OIO Photos from Google Photos
+name: Ingest OIO Photos (Picker + Album Fallback)
 
 on:
   schedule:
@@ -30,15 +30,16 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: python scripts/ingest_photos.py
 
-      - name: Commit updated photo logs
+      - name: Commit updated photo logs and picker selections
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add photos/
+          git add intake/selected-photos.json
           if git diff --cached --quiet; then
-            echo "No new photos to log."
+            echo "No ingestion state changes to commit."
           else
-            git commit -m "chore: ingest new photos from Google Photos album [skip ci]"
+            git commit -m "chore: ingest selected/new photos [skip ci]"
             git push
-            echo "Photo logs updated and pushed."
+            echo "Ingestion updates pushed."
           fi

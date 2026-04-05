@@ -47,6 +47,7 @@ import photo_log as pl
 
 REPO_ROOT = Path(__file__).parent.parent
 AUTO_IDENTIFY_THRESHOLD = 0.8
+SELECTED_PHOTOS_PATH = REPO_ROOT / "intake" / "selected-photos.json"
 
 
 # ---------------------------------------------------------------------------
@@ -118,6 +119,13 @@ def fetch_album_photos(creds: Credentials) -> list:
             resp.raise_for_status()
         except requests.RequestException as exc:
             log(f"Failed to fetch album photos: {exc}", "ERROR")
+            # 403 indicates a policy/access constraint, not an empty album.
+            if getattr(exc.response, "status_code", None) == 403:
+                raise RuntimeError(
+                    "Google Photos album search returned 403. "
+                    "Use Picker-based intake (intake/selected-photos.json) "
+                    "or update access policy."
+                ) from exc
             return items
 
         data = resp.json()
@@ -139,6 +147,80 @@ def download_photo(base_url: str) -> bytes | None:
     except requests.RequestException as exc:
         log(f"Failed to download photo: {exc}", "ERROR")
         return None
+
+
+def load_selected_photos() -> list[dict]:
+    """
+    Load pending selected photo items from intake/selected-photos.json.
+    """
+    if not SELECTED_PHOTOS_PATH.exists():
+        return []
+
+    try:
+        data = json.loads(SELECTED_PHOTOS_PATH.read_text())
+    except Exception as exc:
+        log(f"Failed to read {SELECTED_PHOTOS_PATH}: {exc}", "ERROR")
+        return []
+
+    sessions = data.get("sessions", [])
+    pending: list[dict] = []
+    for session in sessions:
+        for item in session.get("items", []):
+            if item.get("status") == "ingested" or item.get("processed_at"):
+                continue
+            if item.get("id"):
+                pending.append(item)
+
+    log(f"Loaded {len(pending)} pending selected photos from intake/selected-photos.json")
+    return pending
+
+
+def fetch_media_item_by_id(creds: Credentials, media_id: str) -> dict | None:
+    """
+    Fetch a single media item from Google Photos by media item id.
+    """
+    url = f"https://photoslibrary.googleapis.com/v1/mediaItems/{media_id}"
+    headers = {"Authorization": f"Bearer {creds.token}"}
+    try:
+        resp = requests.get(url, headers=headers, timeout=30)
+        resp.raise_for_status()
+        return resp.json()
+    except requests.RequestException as exc:
+        log(f"Failed to fetch selected media item {media_id}: {exc}", "ERROR")
+        return None
+
+
+def mark_selected_photos_processed(processed_ids: set[str]) -> None:
+    """
+    Mark selected photo items as ingested after successful processing.
+    """
+    if not processed_ids or not SELECTED_PHOTOS_PATH.exists():
+        return
+
+    try:
+        data = json.loads(SELECTED_PHOTOS_PATH.read_text())
+    except Exception as exc:
+        log(f"Failed to update {SELECTED_PHOTOS_PATH}: {exc}", "ERROR")
+        return
+
+    now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    updated = 0
+    for session in data.get("sessions", []):
+        for item in session.get("items", []):
+            item_id = item.get("id")
+            if item_id in processed_ids:
+                item["status"] = "ingested"
+                item["processed_at"] = now
+                updated += 1
+        session_items = session.get("items", [])
+        if session_items and all(
+            i.get("status") == "ingested" or i.get("processed_at") for i in session_items
+        ):
+            session["processed"] = True
+
+    data["last_updated"] = now
+    SELECTED_PHOTOS_PATH.write_text(json.dumps(data, indent=2) + "\n")
+    log(f"Marked {updated} selected photos as ingested in intake/selected-photos.json")
 
 
 # ---------------------------------------------------------------------------
@@ -303,6 +385,7 @@ def ingest(media_items: list) -> dict:
     new_count = 0
     skip_count = 0
     error_count = 0
+    processed_ids: set[str] = set()
 
     for item in media_items:
         photo_id = item.get("id")
@@ -390,10 +473,12 @@ def ingest(media_items: list) -> dict:
 
         pl.append_entry(log_path, entry)
         known_ids.add(photo_id)
+        processed_ids.add(photo_id)
         new_count += 1
         log(f"[LOGGED] {filename} → {log_path.relative_to(REPO_ROOT)} ({workflow_status})")
 
     log(f"Ingestion complete: {new_count} new, {skip_count} skipped, {error_count} errors")
+    mark_selected_photos_processed(processed_ids)
     return {"new": new_count, "skipped": skip_count, "errors": error_count}
 
 
@@ -431,11 +516,23 @@ def main() -> None:
     log("=== OIO Racing Photo Ingestion ===")
 
     creds = load_credentials()
-    media_items = fetch_album_photos(creds)
+    selected_items = load_selected_photos()
 
-    if not media_items:
-        log("No photos found in album")
-        return
+    media_items: list[dict] = []
+    if selected_items:
+        for selected in selected_items:
+            media = fetch_media_item_by_id(creds, selected["id"])
+            if media:
+                # Preserve any custom description captured during picker selection.
+                if selected.get("description"):
+                    media["description"] = selected["description"]
+                media_items.append(media)
+        log(f"Using {len(media_items)} selected photos for ingestion")
+    else:
+        media_items = fetch_album_photos(creds)
+        if not media_items:
+            log("No photos found from selected-photos.json or album polling")
+            return
 
     ingest(media_items)
     log("=== Ingestion Complete ===")
