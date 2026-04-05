@@ -7,7 +7,7 @@ the sync_google_photos.py script to access your Google Photos library
 without requiring user interaction.
 
 Run this once:
-  python scripts/auth_google_photos.py
+  python dev/scripts/auth_google_photos.py
 
 Then save the output credentials as a GitHub secret named GOOGLE_PHOTOS_CREDENTIALS.
 

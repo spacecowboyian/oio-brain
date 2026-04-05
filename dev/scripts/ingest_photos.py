@@ -28,7 +28,7 @@ Environment variables:
   SUPABASE_SERVICE_ROLE_KEY   Supabase service-role key (storage only)
 
 Usage:
-  python scripts/ingest_photos.py
+  python dev/scripts/ingest_photos.py
 """
 
 import json

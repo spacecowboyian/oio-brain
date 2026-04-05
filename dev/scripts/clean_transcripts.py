@@ -4,9 +4,9 @@ OIO Racing - Transcript Cleaner
 Generates clean, readable script versions from raw transcripts using Claude AI.
 
 Usage:
-  python scripts/clean_transcripts.py                        # Clean all transcripts missing clean versions
-  python scripts/clean_transcripts.py --all                  # Re-clean ALL transcripts
-  python scripts/clean_transcripts.py --video-id VIDEO_ID    # Clean specific video
+  python dev/scripts/clean_transcripts.py                        # Clean all transcripts missing clean versions
+  python dev/scripts/clean_transcripts.py --all                  # Re-clean ALL transcripts
+  python dev/scripts/clean_transcripts.py --video-id VIDEO_ID    # Clean specific video
 
 Requires:
   ANTHROPIC_API_KEY environment variable set

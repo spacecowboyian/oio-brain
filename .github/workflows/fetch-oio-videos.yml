@@ -26,7 +26,7 @@ jobs:
       - name: Fetch OIO YouTube videos
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: node scripts/oio-video-fetcher.js
+        run: node dev/scripts/oio-video-fetcher.js
 
       - name: Commit updated master + delta
         id: commit

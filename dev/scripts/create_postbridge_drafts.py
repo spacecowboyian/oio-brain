@@ -25,9 +25,9 @@ Environment variables:
   POSTBRIDGE_ACCOUNT_IDS  Comma-separated social account IDs (optional)
 
 Usage:
-  python scripts/create_postbridge_drafts.py
-  python scripts/create_postbridge_drafts.py --google-id <id>   # single photo
-  python scripts/create_postbridge_drafts.py --dry-run           # print, no create
+  python dev/scripts/create_postbridge_drafts.py
+  python dev/scripts/create_postbridge_drafts.py --google-id <id>   # single photo
+  python dev/scripts/create_postbridge_drafts.py --dry-run           # print, no create
 """
 
 import argparse

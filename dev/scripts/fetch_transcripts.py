@@ -4,10 +4,10 @@ OIO Racing - YouTube Transcript Fetcher
 Fetches auto-generated YouTube transcripts for videos listed in OIO-Video-Catalog.md.
 
 Usage:
-  python scripts/fetch_transcripts.py                        # Fetch only new transcripts (up to batch-size)
-  python scripts/fetch_transcripts.py --batch-size 25        # Limit this run to 25 videos (default)
-  python scripts/fetch_transcripts.py --all                  # Re-fetch ALL transcripts (ignores already-processed)
-  python scripts/fetch_transcripts.py --all --batch-size 25  # Re-fetch, but only 25 per run
+  python dev/scripts/fetch_transcripts.py                        # Fetch only new transcripts (up to batch-size)
+  python dev/scripts/fetch_transcripts.py --batch-size 25        # Limit this run to 25 videos (default)
+  python dev/scripts/fetch_transcripts.py --all                  # Re-fetch ALL transcripts (ignores already-processed)
+  python dev/scripts/fetch_transcripts.py --all --batch-size 25  # Re-fetch, but only 25 per run
 
 Batching strategy:
   Run with a scheduled cron workflow. Each run fetches --batch-size new videos and commits them.

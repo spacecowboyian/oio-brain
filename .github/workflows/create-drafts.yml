@@ -42,7 +42,7 @@ jobs:
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             ARGS="$ARGS --dry-run"
           fi
-          python scripts/create_postbridge_drafts.py $ARGS
+          python dev/scripts/create_postbridge_drafts.py $ARGS
 
       - name: Commit updated photo logs
         if: github.event.inputs.dry_run != 'true'

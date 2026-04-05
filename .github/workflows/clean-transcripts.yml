@@ -44,10 +44,10 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.all }}" = "true" ]; then
             # Manual dispatch with --all flag
-            python scripts/clean_transcripts.py --all
+            python dev/scripts/clean_transcripts.py --all
           else
             # Automatic push trigger or manual dispatch without --all: clean only new transcripts
-            python scripts/clean_transcripts.py
+            python dev/scripts/clean_transcripts.py
 
       - name: Commit generated clean scripts
         run: |

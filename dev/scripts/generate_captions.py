@@ -34,9 +34,9 @@ Environment variables:
   ANTHROPIC_API_KEY   Claude API key
 
 Usage:
-  python scripts/generate_captions.py
-  python scripts/generate_captions.py --google-id <google_photos_id>  # single photo
-  python scripts/generate_captions.py --dry-run                         # print, no save
+  python dev/scripts/generate_captions.py
+  python dev/scripts/generate_captions.py --google-id <google_photos_id>  # single photo
+  python dev/scripts/generate_captions.py --dry-run                         # print, no save
 """
 
 import argparse

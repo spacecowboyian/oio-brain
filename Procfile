@@ -1,1 +1,1 @@
-web: python scripts/slackbot_social_media.py
+web: python dev/scripts/slackbot_social_media.py

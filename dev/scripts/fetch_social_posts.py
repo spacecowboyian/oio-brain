@@ -9,10 +9,10 @@ These posts are used as a reference library to inform tone, content, and
 voice when drafting new posts.
 
 Usage:
-  python scripts/fetch_social_posts.py                          # Sync both platforms (default)
-  python scripts/fetch_social_posts.py --batch-size 25         # Max posts per platform per run
-  python scripts/fetch_social_posts.py --platform facebook     # Facebook only
-  python scripts/fetch_social_posts.py --platform instagram    # Instagram only
+  python dev/scripts/fetch_social_posts.py                          # Sync both platforms (default)
+  python dev/scripts/fetch_social_posts.py --batch-size 25         # Max posts per platform per run
+  python dev/scripts/fetch_social_posts.py --platform facebook     # Facebook only
+  python dev/scripts/fetch_social_posts.py --platform instagram    # Instagram only
 
 Batching strategy:
   Each run performs two phases per platform:

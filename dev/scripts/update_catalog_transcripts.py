@@ -4,7 +4,7 @@ OIO Racing - Catalog Transcript Linker
 Updates OIO-Video-Catalog.md with links to available transcripts.
 
 Usage:
-  python scripts/update_catalog_transcripts.py
+  python dev/scripts/update_catalog_transcripts.py
 
 Process:
 1. Parse OIO-Video-Catalog.md for video tables
