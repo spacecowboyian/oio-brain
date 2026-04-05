@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OIO Photo Intake Picker</title>
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 2rem; max-width: 980px; }
+      h1 { margin-bottom: 0.25rem; }
+      .muted { color: #555; }
+      .row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.75rem 0; }
+      button { padding: 0.55rem 0.9rem; border-radius: 8px; border: 1px solid #bbb; background: #fafafa; cursor: pointer; }
+      textarea { width: 100%; min-height: 180px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+      .card { border: 1px solid #e0e0e0; border-radius: 12px; padding: 1rem; margin: 1rem 0; }
+      .ok { color: #0a7a35; }
+      .warn { color: #9c5d00; }
+      .error { color: #ad1a1a; }
+      code { background: #f5f5f5; padding: 0.12rem 0.3rem; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <h1>OIO Google Photos Intake</h1>
+    <p class="muted">
+      Option B intake path: capture explicit media selections and save them to
+      <code>intake/selected-photos.json</code>.
+    </p>
+
+    <div class="card">
+      <h2>1) Configure</h2>
+      <p class="muted">Set these once in the browser to enable save-to-GitHub from this page.</p>
+      <div class="row">
+        <button id="saveConfig">Save Config</button>
+        <button id="loadConfig">Load Config</button>
+      </div>
+      <label>GitHub owner/repo (example: <code>spacecowboyian/oio-brain</code>)</label>
+      <textarea id="repo" style="min-height: 42px"></textarea>
+      <label>GitHub token (repo scope)</label>
+      <textarea id="token" style="min-height: 70px"></textarea>
+      <label>Git branch for commit</label>
+      <textarea id="branch" style="min-height: 42px">main</textarea>
+      <div id="cfgStatus" class="muted"></div>
+    </div>
+
+    <div class="card">
+      <h2>2) Paste Selected Media JSON</h2>
+      <p class="muted">
+        Paste an array of media items from your Picker response. Minimum fields per item:
+        <code>id</code>, optional: <code>filename</code>, <code>description</code>, <code>baseUrl</code>, <code>creationTime</code>.
+      </p>
+      <textarea id="selectedJson" placeholder='[{"id":"AMx...","filename":"IMG_1234.JPG"}]'></textarea>
+      <div class="row">
+        <button id="previewBtn">Preview Session JSON</button>
+        <button id="downloadBtn">Download selected-photos.json</button>
+        <button id="commitBtn">Commit to GitHub</button>
+      </div>
+      <div id="runStatus" class="muted"></div>
+    </div>
+
+    <div class="card">
+      <h2>3) Generated Session Payload</h2>
+      <textarea id="outputJson"></textarea>
+    </div>
+
+    <script src="./picker.js"></script>
+  </body>
+</html>

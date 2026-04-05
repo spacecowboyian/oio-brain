@@ -1,16 +1,18 @@
 # OIO Racing Photo Workflow
 
-Automated pipeline from Google Photos album to PostBridge draft social posts,
+Automated pipeline from Google Photos picker/album intake to PostBridge draft social posts,
 with photo metadata tracked in the OIO brain.
 
 ## Architecture
 
 ```
-Google Photos Album
+Google Photos Picker (preferred) OR Google Photos Album (fallback)
         ↓
 [ingest-photos.yml — every 6h]
         ↓
 Google Photos Library API
+  → first process intake/selected-photos.json pending selections
+  → fallback to album polling if no pending selections
   → upload binary to Supabase oio-photos bucket (storage only, no DB)
   → Claude Vision (auto vehicle identification)
   → write entry to photos/{driver}/{vehicle-slug}/photo-log.md
@@ -40,6 +42,7 @@ Ian reviews draft in PostBridge → approves → publishes
 
 | Data | Location |
 |---|---|
+| Picker-selected intake queue | `intake/selected-photos.json` |
 | Binary photo files | Supabase Storage — `oio-photos` bucket |
 | Photo metadata and workflow state | `photos/{driver}/{vehicle-slug}/photo-log.md` |
 | Unidentified / triage photos | `photos/triage/photo-log.md` |
@@ -88,7 +91,7 @@ Each photo entry has a `workflow_status` field that tracks progress:
 | Script | Purpose |
 |---|---|
 | `scripts/photo_log.py` | Shared utility — reads and writes photo-log.md entries |
-| `scripts/ingest_photos.py` | Google Photos → Supabase Storage + photo-log.md |
+| `scripts/ingest_photos.py` | `selected-photos.json`/album → Supabase Storage + photo-log.md |
 | `scripts/generate_captions.py` | Caption generation via Claude + OIO brain context |
 | `scripts/create_postbridge_drafts.py` | PostBridge draft creation with Tue/Fri scheduling |
 | `scripts/postbridge_client.py` | PostBridge API client library |
@@ -98,7 +101,7 @@ Each photo entry has a `workflow_status` field that tracks progress:
 
 | Workflow | Schedule | Purpose |
 |---|---|---|
-| `ingest-photos.yml` | Every 6 hours | Detect new photos, upload to Supabase Storage, run Vision, write photo-log.md |
+| `ingest-photos.yml` | Every 6 hours | Process selected intake first, then fallback album polling, run Vision, write photo-log.md |
 | `generate-captions.yml` | Daily at 8:30 AM UTC | Generate captions, update photo-log.md |
 | `create-drafts.yml` | Daily at 9:00 AM UTC | Create PostBridge drafts, update photo-log.md |
 
@@ -140,7 +143,18 @@ python scripts/auth_google_photos.py
 
 Save the output JSON as the `GOOGLE_PHOTOS_CREDENTIALS` GitHub secret.
 
-### 3. Google Photos album
+### 3. Intake path
+
+Preferred:
+
+- Use `intake/web/` to prepare and commit `intake/selected-photos.json`.
+- The ingestion workflow consumes pending selected IDs and marks them ingested.
+
+Fallback:
+
+- Keep `GOOGLE_PHOTOS_ALBUM_ID` configured to use album polling when no pending selected items exist.
+
+### 4. Google Photos album
 
 Create a dedicated Google Photos album for OIO social posting.
 Copy the album ID from the URL and save it as `GOOGLE_PHOTOS_ALBUM_ID`.
