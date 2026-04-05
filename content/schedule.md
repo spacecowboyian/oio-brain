@@ -76,8 +76,8 @@ summary: Rebooted 2026 video release schedule starting March 31. Replaces the or
 
 | Date | Format | Topic | Notes |
 |---|---|---|---|
-| **Thu Apr 2** | 🔧 Fit How-To | **Home Alignment on a Honda Fit — Does the Gyraline Actually Work?** | Originally Feb 26 — still timely for season prep. Do this first. |
-| **Thu Apr 10** | 📹 Vlog | **Season reboot: what happened in March + kids autocross prep (Apr 12 is days away)** | Honest accounting of March gap. Builds anticipation for Apr 12 debut. |
+| **Thu Apr 10** | 🔧 Fit How-To | **Fit clutch video** | Replaces Apr 2 slot. Clutch bleed/replacement on the Fit. Do this first. |
+| **Flexible (Apr 12–19)** | 📹 Vlog | **Catch-up vlog — April reset** | Flexible slot between Apr 10–19. Film before COC drops. |
 | **Sun Apr 20** | ⛪ COC | **KCRX E1 RayRocks — The 2026 Championship Begins** | Season premiere COC. ~4 weeks post-event. If footage from Mar 22 is strong, this is the opener. |
 | **Thu Apr 24** | 📹 Vlog | **Kids' first autocross (Apr 12). The shop foreman becomes a spectator.** | Flagship kids racing content. Miles and Hudson debut. |
 
