@@ -3,7 +3,7 @@ title: OIO Current State
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-01
+updated: 2026-04-05
 tags: [state, current, season-2026]
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
@@ -13,7 +13,7 @@ summary: Live snapshot of what OIO is focused on right now. Update this file whe
 
 > **AI agents: read this first.** This file is the current-state snapshot. It is not a permanent reference — it reflects reality as of the `updated` date above.
 
-*As of: April 1, 2026 — season in progress*
+*As of: April 5, 2026 — content machine recovery*
 
 ---
 
@@ -21,10 +21,10 @@ summary: Live snapshot of what OIO is focused on right now. Update this file whe
 
 The 2026 motorsport season is opening. The primary focus is:
 
-1. **Getting the Goblin ready** — motor is shot, rebuild is in progress. Season-long question: will it make it?
-2. **Fitty Cent dual-duty season** — kids (Miles, Hudson) are racing Ian's daily driver in both autocross and rallycross
-3. **Dale's Lake Garnett pilgrimage** — Celica is active, season-long build arc toward October's cathedral moment
-4. **Content machine running** — Fit How-To pipeline must not stop; vlog and CoC cadence needs to hold
+1. **Content machine recovery** — Fit How-To pipeline and vlog cadence fell behind in March. April reset underway: Fit clutch video due Apr 10, catch-up vlog before Apr 20, COC season premiere on Apr 20.
+2. **Getting the Goblin ready** — motor is shot, rebuild is in progress. Season-long question: will it make it?
+3. **Fitty Cent dual-duty season** — kids (Miles, Hudson) are racing Ian's daily driver in both autocross and rallycross
+4. **Dale's Lake Garnett pilgrimage** — Celica is active, season-long build arc toward October's cathedral moment
 
 ---
 
@@ -77,6 +77,7 @@ The 2026 motorsport season is opening. The primary focus is:
 - **2026-03-29:** 2025 season competition results processed — full KCR RallyCross (8 events) and KS Region RallyCross (5 events) results filed. New files: `events/results/2025-Season-Results.md` and `KSRX-Historical-2018-2024.md`. Notable: Hudson Smith debuted at KCRX E8 (Novice, 2nd place), Ian switched to Honda Fit for season finale (MR2 sidelined), Ryan won E9 driving the MGB GT. Source `oio_results.json` deleted from docdump.
 - **2026-03-29:** Transcript system clarified — two types distinguished: (1) final YouTube video transcripts (`transcripts/` repo root, auto-fetched) and (2) raw dailies (`intake/dailies/`, manual intake). `intake/docs/transcripts/` renamed to `intake/dailies/`. `process-transcripts.yml` replaced with `process-dailies.yml`. Rogue daily `failedfit lutchbleeddrive.txt` processed and deleted — summary filed at `content/summaries/2026-03-29_failed-fit-clutch-bleed-drive.md`. Honda Fit Maintenance-Log.md created.
 - **2026-03-29:** Racing result links processed — comprehensive KCRSCCA + KSRX URL reference (2017–2024, AX + RX) filed as `events/results/KCRSCCA-Results-Links.md`. All direct links to every individual event result page now in the brain. Source deleted from docdump.
+- **2026-04-05:** April content reset — schedule updated: Fit clutch video moved to Apr 10 (replaces Apr 2 Fit How-To slot), flexible catch-up vlog inserted before Apr 20, COC season premiere unchanged. Focus shift to content machine recovery.
 - **2026-04-01:** Legacy caption drafts cleaned up — 17 pre-generated caption drafts (OUT-48–OUT-64) for 2025 video backlog removed from `content/caption-drafts/`. Workflow shift: captions now generated on-demand as new videos are posted rather than pre-batched. README updated to document cleanup. Changes pushed to GitHub (Paperclip OUT-166).
 - **2026-03-29:** MR2 quick rack recovery documented — Ian recovered the quick steering rack from the old rallycross MR2 at Alex's house on 2026-03-18 and installed it on the Goblin same day before KCRX E1 (Mar 22, Ray Rocks). Steering Rack Swap marked done in MR2 Overview.md. U-joint connector lesson logged in Setup-Notes.md. Video idea added to backlog. Source deleted from docdump.
 - **2026-03-28:** Goblin engine diagnostic complete — post-rallycross inspection done. Confirmed bearing failure (lock-up), cylinder 4 at 35 PSI, oil contamination across all cylinders (heaviest cyl 1), heavy valve carbon, loose cyl 1 plug wire. Root cause not yet isolated. Rebuild vs. replace decision pending. See `cars/ian/mr2-goblin/Maintenance-Log.md`.
