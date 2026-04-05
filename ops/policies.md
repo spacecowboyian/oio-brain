@@ -68,6 +68,14 @@ summary: Standing operating policies for OIO — content rules, brand standards,
 - Revenue tracked separately from personal finances
 - Sponsorship payments invoiced and documented
 
+## Repository Workflow
+
+- All agent-driven repo edits must happen in the dedicated `paperclip` worktree based on `main`.
+- Leave the default repository worktree untouched for local human use.
+- Document-only changes may be pushed directly to `main` after approval.
+- Code and script changes must go to a branch first, then a PR, then approval before merge.
+- Finished repo work should be pushed promptly instead of sitting locally.
+
 ---
 
 ## Data and Security Policies

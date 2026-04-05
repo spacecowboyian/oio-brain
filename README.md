@@ -8,6 +8,9 @@ The canonical operational brain for **Outside Inside Outside Racing (OIO)** — 
 
 Start with [`skill.md`](skill.md) — it explains how to use this brain. Then read [`active/current-state.md`](active/current-state.md) and [`active/next-actions.md`](active/next-actions.md). Full standing instructions in [`.github/copilot-instructions.md`](.github/copilot-instructions.md).
 
+- Use the dedicated `paperclip` worktree based on `main` for repo edits.
+- Leave the default repo worktree alone unless explicitly told otherwise.
+
 ## If you are a human
 
 Start at [`core/README.md`](core/README.md) or [`INDEX.md`](INDEX.md) for navigation.
