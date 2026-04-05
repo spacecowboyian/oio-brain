@@ -30,6 +30,7 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 | [06 - Business](business/) | Budget, expenses, sponsorships, merch, website |
 | [07 - Admin](ops/) | Contacts, accounts, policies, templates, backlog |
 | [docs/](docs/) | Technical pipeline documentation (transcripts, social, photos) |
+| [user-stories/](user-stories/) | Agent work queue — check `backlog/` for ready stories before taking action |
 
 ---
 
