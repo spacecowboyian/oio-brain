@@ -32,15 +32,15 @@ summary: Master photo log for The Goblin (1985 Toyota MR2 AW11). Tracks every ph
 **Source:** picdump intake — uploaded via GitHub
 
 **What's in the shot:**
-The Goblin mid-run on a dirt rallycross course. The car is sliding slightly, kicking up a large dust cloud and rooster tail from the rear-left wheel. A rally safety marshal in a hi-vis yellow vest stands watching in the background. A single orange traffic cone marks the course edge near the front wheel.
+The Goblin jumping off the starting line on a dirt rallycross course. The car is spinning the rear tires, kicking up a large dust cloud and rooster tail from the rear-left wheel. A rally safety marshal in a hi-vis yellow vest stands watching in the background. A single orange traffic cone marks the course edge near the front wheel.
 
 **Visual identification markers:**
 - Body: 1985 Toyota MR2 AW11 — low, wedge-shaped two-door coupe with trademark slatted rear engine cover
 - Color: Steel/medium blue (original AW11 factory blue tone)
-- Roof: T-top configuration (removable panels, characteristic AW11 feature)
+- Roof: Sunroof
 - Headlights: Pop-up units, retracted (flush) during run
-- Wheels: Stock AW11 cross-spoke 4-spoke alloys, silver/white finish
-- Tires: All-terrain / aggressive off-road pattern for rallycross
+- Wheels: BMW E30 bottlecap wheels
+- Tires: Alpha Eurocross Medium Rallycross tires
 - Door graphics: "2MR" race number in red/white block lettering on driver-side door
 - Additional: Black vertical door vent slats (mid-body), rear spoiler visible
 - Course: Loose dirt/gravel, overcast winter sky, bare deciduous trees in background
