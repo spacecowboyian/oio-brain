@@ -33,6 +33,14 @@ OIO makes grassroots motorsports feel accessible to regular people — autocross
 | [`active/next-actions.md`](active/next-actions.md) | Concrete next steps |
 | [`core/decisions-log.md`](core/decisions-log.md) | Decision history |
 
+## Execution Reality (Planning Guardrail)
+
+OIO execution is heavily DIY and bottlenecked by Ian's available hours.
+
+- Assume only one major hands-on execution track can move at full speed at once.
+- Treat additional parallel work as staggered, delegated, or lower confidence until named owner/time exists.
+- Default planning to conservative throughput so recommendations stay runnable in real life.
+
 ---
 
 ## Repo Structure

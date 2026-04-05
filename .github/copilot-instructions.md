@@ -22,6 +22,7 @@ The repo must remain useful to both **humans** and **AI agents** over time. Agen
 - **Add frontmatter** to any new file you create. See `core/repo-standards.md` for the required format.
 - **Log significant decisions** in `core/decisions-log.md` with date and rationale.
 - **Keep `active/` files concise and current.** These are the memory layer — they decay if they grow too long.
+- **Apply capacity realism in planning.** Default to conservative throughput because OIO is highly DIY and Ian is usually the primary execution bottleneck unless additional owners/time are explicitly documented.
 - **Archive, don't delete.** Mark outdated content as archived rather than removing it.
 
 ### Do Not

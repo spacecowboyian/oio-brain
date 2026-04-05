@@ -3,7 +3,7 @@ title: OIO Brain — Master Index
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-31
+updated: 2026-04-05
 tags: [navigation, index, overview]
 source_of_truth: true
 summary: Root-level navigation index for the OIO Brain. Contains quick navigation to all sections, active car roster, 2026 story arcs, and standing rules. Start here for a full map of the repo.
@@ -95,6 +95,7 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 - **Church of Combustion episodes drop on Sunday.**
 - **Ian is always the butt of the joke. The cars humble him.**
 - **6-hour edit cap** on How-Tos and vlogs. **12–15 hours** on Church of Combustion.
+- **Plan for DIY reality:** assume Ian is the primary execution bottleneck; avoid multi-track plans unless owners and time are explicitly named.
 
 ---
 

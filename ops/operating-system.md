@@ -3,7 +3,7 @@ title: OIO Operating System
 type: sop
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-04-05
 tags: [content, schedule, workflow, standing-rules, production]
 source_of_truth: true
 summary: How the OIO channel runs. Defines the four-week content rotation, standing rules, the Project Board system, content bucket rotation, upload checklist, and seasonal calendar. The canonical reference for content operations.
@@ -77,6 +77,7 @@ Use these buckets to ensure variety across the calendar:
 - **6-hour edit cap** on How-Tos and Vlogs.
 - **12–15 hour edit budget** for Church of Combustion.
 - **Church of Combustion drops 1–2 weeks after the event** — never same-day.
+- **Capacity realism rule:** default plans to one major hands-on execution track at a time unless additional owners and time blocks are explicitly assigned.
 
 ---
 

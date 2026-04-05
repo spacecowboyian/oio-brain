@@ -3,7 +3,7 @@ title: OIO Active Priorities
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-04-05
 tags: [priorities, season-2026, planning]
 source_of_truth: false
 summary: Current top priorities for OIO, with rationale, definition of done, dependencies, and risks. Update when priorities shift. Not a permanent document — reflects current season focus.
@@ -14,6 +14,13 @@ summary: Current top priorities for OIO, with rationale, definition of done, dep
 *Season 2026 — as of March 2026*
 
 Ranked roughly by urgency and impact. Reassess at the start of each month.
+
+## Capacity Guardrails (Apply To All Priority Plans)
+
+- Plan from a conservative baseline: Ian is the primary execution bottleneck.
+- Keep one major execution track active at a time; defer or sequence the rest.
+- If proposing parallel major tracks, name explicit owners and calendar blocks for each.
+- If owners/time are unknown, mark those tracks as contingent rather than committed.
 
 ---
 

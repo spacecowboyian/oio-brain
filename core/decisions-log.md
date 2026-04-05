@@ -65,6 +65,16 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
+## 2026-04-05 — Encode DIY Capacity Constraints as Planning Baseline
+
+**Decision:** Added explicit planning guardrails across core context files so agents assume conservative execution capacity by default: OIO is highly DIY and Ian is the primary hands-on execution bottleneck unless additional owners/time are explicitly named.
+
+**Why:** Planning recommendations were at risk of overcommitting parallel execution lanes. Board direction required codifying operating reality directly in the brain so strategy and execution choices stay runnable.
+
+**Implications:** Agents should now sequence major work by default, treat unstaffed parallel tracks as contingent, and only commit multi-track plans when ownership and calendar capacity are explicitly documented.
+
+---
+
 ## 2026-03-31 — Repo Cleanup and Centralization Pass
 
 **Decision:** Performed a general cleanup pass to deduplicate content and centralize around the OIO Brain folder structure.

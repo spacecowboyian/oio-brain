@@ -26,6 +26,12 @@ The 2026 motorsport season is opening. The primary focus is:
 3. **Fitty Cent dual-duty season** — kids (Miles, Hudson) are racing Ian's daily driver in both autocross and rallycross
 4. **Dale's Lake Garnett pilgrimage** — Celica is active, season-long build arc toward October's cathedral moment
 
+## Execution Capacity Constraint (Planning Baseline)
+
+- OIO remains a highly DIY operation with Ian as the primary hands-on executor across wrenching, filming, editing, and publishing.
+- Default assumption: only one major execution lane can run at full pace at a time (example: Goblin rebuild **or** major web/sponsor buildout), with smaller supporting tasks around it.
+- Any plan that assumes multiple simultaneous major lanes must identify explicit additional owners and protected time blocks, or it is treated as over-capacity risk.
+
 ---
 
 ## Active Vehicles
@@ -71,6 +77,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 - **2026-03-31:** Website build complete — OIO Racing website built and ready for deployment (Paperclip OUT-123). Tech stack: Astro 5 + Tailwind CSS 4 with TypeScript. Features: YouTube Data API v3 integration (with mock fallback), Instagram Basic Display API, auto-sitemap, SEO optimization (OpenGraph, Twitter Cards), mobile-first responsive design, Lighthouse 90+. Core pages ready: Homepage, Videos, Schedule, Sponsors, Merch (Ecwid-ready), Contact. Project location: `/Users/ian/.paperclip/instances/default/workspaces/8a3fa8e5-7267-4c99-8471-c89e355f6ffd/oio-racing/`. Deployment blockers: API credentials, GitHub setup, Vercel/Netlify config, domain DNS. Comprehensive README included with setup and deployment guides.
 - **2026-03-30:** Racing brand voice document complete — OIO Racing Brand Voice Document finalized (Paperclip OUT-19). Defines tone, messaging, and content pillars for the channel.
+- **2026-04-05:** Added explicit DIY execution-capacity guardrails across the brain (`README.md`, `INDEX.md`, `active/`, `core/`, and operating instructions) so agents default to conservative, runnable planning assumptions instead of multi-track optimistic plans.
 - **2026-03-30:** Website + merch platform research complete — CMO completed comprehensive competitive analysis of 6 grassroots automotive YouTube channels (S/M/L/XL tiers). Key findings: Shopify dominates (95%+ market share), YouTube Merch Shelf integration critical, mobile-first UX required. Recommended stack: Shopify Basic ($39/mo) + Printful (print-on-demand) + YouTube Merch Shelf + automation (Zapier/RSS feeds). Sponsor strategy delivered: media kit components, SEO keywords, landing page structure. Full research filed in Paperclip task OUT-104. Next: platform decision + account setup.
 - **2026-03-29:** Social media post indexing system launched — `scripts/fetch_social_posts.py` + `.github/workflows/fetch-social-posts.yml` created. Posts fetched from Facebook Page and Instagram Business Account via Meta Graph API. Runs daily at 9 AM CDT; 25 posts/platform/run for conservative initial import. Posts stored as markdown in `data/social-posts/facebook/` and `data/social-posts/instagram/`. Requires 3 secrets: `META_ACCESS_TOKEN`, `META_FACEBOOK_PAGE_ID`, `META_INSTAGRAM_ACCOUNT_ID`. See `data/social-posts/README.md` for setup.
 - **2026-03-29:** KCRX 2026 Event 1 results logged (March 22, Ray Rocks). **Corrected results:** Ryan 2nd MR (trophy), Miles 3rd MR (trophy), Hudson wins Novice (trophy). Ian DNF'd run 7 — official Pronto display shows him 1st (318.321, 6 runs) but DNF penalty corrects to 7th (393.784). Goblin post-race failure confirmed. `2026-Season-Results.md` and `oio-racing-results.json` created.

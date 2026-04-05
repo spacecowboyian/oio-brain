@@ -3,7 +3,7 @@ title: OIO Brain — Repo Standards
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-03-27
+updated: 2026-04-05
 tags: [standards, governance, repo, agents]
 source_of_truth: true
 summary: The operational manual for this repository. Defines purpose, folder roles, document classes, frontmatter requirements, naming conventions, and how to decide whether to update an existing file or create a new one.
@@ -191,3 +191,4 @@ These apply to any agent or human making changes to this repo:
 5. Do not skip frontmatter on new files.
 6. Do not let `active/` files grow stale — they are the memory layer.
 7. Log significant decisions in `core/decisions-log.md`.
+8. For planning guidance, assume DIY capacity constraints by default: Ian is the primary hands-on execution bottleneck unless explicit additional owners/time are documented.
