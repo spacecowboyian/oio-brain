@@ -3,7 +3,7 @@ title: Nessie — 1982 Toyota Cressida Wagon
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-04-04
 tags: [vehicle, cressida, nessie, drag, building]
 source_of_truth: true
 summary: Overview of Nessie — Ian's 1982 Cressida Wagon. Currently building for drag racing. Dragstrip debut planned for 2026, with drag-and-drive in 2027 as the long-term goal.
@@ -13,7 +13,7 @@ summary: Overview of Nessie — Ian's 1982 Cressida Wagon. Currently building fo
 
 > The Drag Cressie. A wagon with ambitions above its station.
 
-*Last updated: March 2026*
+*Last updated: April 2026*
 
 ---
 
@@ -26,7 +26,7 @@ summary: Overview of Nessie — Ian's 1982 Cressida Wagon. Currently building fo
 | Driver | Ian Jennings |
 | Status | **Building** — drag setup in progress |
 | Primary Use | Drag racing (2026), drag-and-drive (2027) |
-| 2026 Arc | First rites at the dragstrip. Long road toward drag-and-drive in 2027. |
+| 2026 Arc | First rites at the dragstrip. Targeting Thunder Valley on May 15, with Mo-Kan on May 29 as fallback. |
 
 ---
 
@@ -40,7 +40,7 @@ Calling it "The Drag Cressie." A wagon built to go fast in a straight line. Clas
 
 ## 2026 Story Arc
 
-Nessie's 2026 debut is at the dragstrip. The arc is: will it make it down the track, and what happens when it does?
+Nessie's 2026 debut is at the dragstrip. The current target is Thunder Valley on May 15, 2026, with Mo-Kan on May 29, 2026 as fallback. The arc is still the same: will it make it down the track, and what happens when it does?
 
 **2027 goal:** Drag-and-drive event.
 
@@ -62,7 +62,7 @@ Nessie's 2026 debut is at the dragstrip. The arc is: will it make it down the tr
 ### Events / Usage
 | Task | Status |
 |---|---|
-| Drag Season Open Nights (Calendar + Prep) | Open |
+| Drag Season Open Nights (Calendar + Prep) | In progress |
 
 ### Drivetrain Planning
 | Task | Status |

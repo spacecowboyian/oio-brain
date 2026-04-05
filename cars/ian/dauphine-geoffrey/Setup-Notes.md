@@ -2,7 +2,7 @@
 
 > Early-stage notes for the 1962 Renault Dauphine build.
 
-*Last updated: March 2026*
+*Last updated: April 2026*
 
 ---
 
@@ -11,8 +11,8 @@
 | Field | Value |
 |---|---|
 | Acquisition | Recent — March 2026 |
-| Condition | [Assess and update] |
-| Running | [Yes / No / Unknown] |
+| Condition | Not running — engine locked solid |
+| Running | No |
 
 ---
 
@@ -32,6 +32,7 @@
 - **Goal:** Rally car replica
 - **Style:** [Period-correct? Inspired? TBD]
 - **Timeline:** TBD
+- **Latest assessment:** Spark plugs rusted in place; hand crank would not turn the motor
 
 ---
 
@@ -39,6 +40,7 @@
 
 | Task | Status | Notes |
 |---|---|---|
-| Assess current condition | Not started | First step |
+| Assess current condition | Done | Engine locked solid; plugs rusted in place |
 | Determine build direction | Not started | |
 | Document acquisition for content | Not started | Origin story video potential |
+| Free seized plugs / confirm rotation | Open | Bring Free All; retry after soak |

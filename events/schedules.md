@@ -93,7 +93,8 @@ summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCR
 | Date | Event | Cars / Drivers | Notes |
 |---|---|---|---|
 | Sat–Sun May 22–25 | SCCA Spring Nationals | Doug's BMW 2002 | Congregation arc — coverage TBD |
-| Apr–May TBD | Cressida first dragstrip outing | Nessie (Ian) | First rites at the strip |
+| Fri May 15 | Cressida first dragstrip outing (primary) | Nessie (Ian) | Thunder Valley Friday Night Test & Tune; first shakedown target |
+| Fri May 29 | Cressida first dragstrip outing (fallback) | Nessie (Ian) | Mo-Kan Fun Drags if Thunder Valley slips; still inside the 4-8 week window |
 | Apr TBD | Kansas Gambler 500 | Ryan's 2001 Camry | Short series content |
 | Labor Day Week | SCCA Solo Nationals | Doug's BMW 2002 | Congregation arc — coverage TBD |
 | Oct (2nd weekend) | **Lake Garnett Grand Prix Revival** | Dale (Ian) | **THE REVIVAL — Season centerpiece COC** |

@@ -17,65 +17,26 @@ The OIO Racing Social Media System is an end-to-end automated pipeline for manag
 │                        OIO Social Media Pipeline                         │
 └─────────────────────────────────────────────────────────────────────────┘
 
-┌──────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│ Google Photos│────▶│  Sync Workflow   │────▶│   picdump/      │
-│   Album      │     │ (GitHub Action)  │     │  (Staging Dir)  │
-└──────────────┘     └──────────────────┘     └────────┬────────┘
-                                                        │
-                     ┌──────────────────────────────────┘
-                     │
-                     ▼
-              ┌──────────────────┐
-              │ Picdump Process  │
-              │ (GitHub Action)  │
-              │ + AI Filing Agent│
-              └────────┬─────────┘
+┌──────────────┐     ┌──────────────────┐     ┌──────────────────────────┐
+│ Google Photos│────▶│  Sync Workflow   │────▶│  Supabase                │
+│   Album      │     │ (GitHub Action)  │     │  oio-photos bucket       │
+└──────────────┘     └──────────────────┘     │  photos table (metadata) │
+                                              └────────────┬─────────────┘
+                                                           │
+                                                           │ Public URLs
+                                                           ▼
+                                                 ┌──────────────────┐
+                                                 │ Claude Vision    │
+                                                 │ (auto-identify)  │
+                                                 └────────┬─────────┘
+                                                          │
+                       ┌──────────────────────────────────┘
                        │
-       ┌───────────────┴───────────────┐
-       │                               │
-       ▼                               ▼
-┌─────────────┐              ┌──────────────────┐
-│  photos/    │              │  Notification    │
-│  {Driver}/  │              │  (Unidentified   │
-│  {Car}/     │              │   photos)        │
-└──────┬──────┘              └──────────────────┘
-       │
-       │ Photo filed and logged
-       │
-       ▼
-┌──────────────────────────────────────────────────────┐
-│              User Posts from Track/Event             │
-│              (Mobile-First Workflow)                 │
-└──────────────────────────────────────────────────────┘
-       │
-       ▼
-┌─────────────────────┐
-│   Slack Interface   │
-│   (Mobile App)      │
-├─────────────────────┤
-│ Commands:           │
-│  /photos list       │◀────┐
-│  /caption <photo>   │     │
-│  /post <caption>    │     │
-│  /posts list        │     │
-└────────┬────────────┘     │
-         │                  │
-         ├──────────────────┘
-         │
-         ├─────────────────▶ Caption Generation Service
-         │                         │
-         │                         ├─▶ AI Copywriter Agent
-         │                         │   (Paperclip API)
-         │                         │
-         │                         └─▶ OIO Brain Context
-         │                             • Brand voice
-         │                             • Car details
-         │                             • Race history
-         │
-         └─────────────────▶ PostBridge API
-                                   │
-                                   ├─▶ Instagram
-                                   └─▶ Facebook
+                       ▼
+              ┌──────────────────┐
+              │  Slack Interface │
+              │  (Mobile App)    │
+              └────────┬─────────┘
 ```
 
 ## Components
@@ -89,46 +50,19 @@ The OIO Racing Social Media System is an end-to-end automated pipeline for manag
 
 **Function:**
 - Monitors shared Google Photos album for new photos
-- Downloads new photos that haven't been processed
-- Commits photos to `picdump/` directory
-- Triggers picdump processing workflow
+- Downloads new photos
+- Uploads to Supabase `oio-photos` storage bucket
+- Stores metadata (`id`, `filename`, `url`, `google_photos_id`, `description`, `ai_status`) in Supabase `photos` table
+- Runs Claude Vision auto-identification (car, driver, event context)
+- Sets `ai_status = "identified"` when confidence ≥ 0.8
 
-**Authentication:** Public album (no auth required)
-
-**Commit Message Format:**
-```
-chore: sync {N} photo(s) from Google Photos [skip ci]
+**Authentication:** OAuth2 refresh token (stored as GitHub Secret `GOOGLE_PHOTOS_CREDENTIALS`)
 
 Synced from OIO Racing Google Photos album.
 Photos will be processed by the picdump workflow.
 ```
 
-### 2. Picdump Processing (Automated)
-
-**File:** `.github/workflows/process-picdump-photos.yml`
-**Trigger:** New files in `picdump/` directory
-**Agent:** GitHub Copilot (via issue creation)
-
-**Function:**
-- Detects new images in picdump
-- Creates GitHub issue assigned to @copilot
-- Agent identifies car from visual cues
-- Files photo to `photos/{Driver}/{Car}/`
-- Updates photo logs and index
-- Moves unidentified photos to open-loops
-
-**Visual Identification:**
-- Cross-references OIO fleet in `OIO Brain/03 - Cars/`
-- Uses PHOTO-INDEX.md visual markers
-- Applies automotive knowledge for make/model recognition
-
-**Output:**
-- Filed photos in driver/car directories
-- Updated `photo-log.md` per car
-- Updated `PHOTO-INDEX.md`
-- Updated car `Overview.md` Visual Identification sections
-
-### 3. Caption Generation Service
+### 2. Caption Generation Service
 
 **File:** `scripts/caption_generation_service.py`
 **Type:** Flask REST API
@@ -143,8 +77,9 @@ Generate AI-powered captions using OIO Brain context.
 **Request:**
 ```json
 {
-  "media_urls": ["photo_race_001.jpg", "photo_race_002.jpg"],
-  "context": "KCRX Event 1, Hudson won Novice class",
+  "media_urls": ["https://supabase.co/storage/v1/object/public/oio-photos/..."],
+  "media_ids": ["supabase-uuid-1"],
+  "context": "KCRX Event 1, Ian in the Goblin",
   "caption_count": 3
 }
 ```
@@ -181,34 +116,38 @@ Generate AI-powered captions using OIO Brain context.
 **File:** `scripts/slackbot_social_media.py`
 **Type:** Slack Bolt (Socket Mode)
 **Dependencies:** slack-bolt, requests
+**Source of Truth for Photos:** Supabase `photos` table
 
 **Commands:**
 
 #### /photos list [filter]
-Browse photos from picdump directory.
+Browse photos from the Supabase `photos` table.
 
 **Examples:**
-- `/photos list` - List recent photos
-- `/photos list 2026-03-30` - Filter by date
-- `/photos list race` - Filter by keyword
+- `/photos list` - List 20 most recent photos
+- `/photos list goblin` - Filter by car, filename, or description keyword
 
-#### /caption <photo-names> [context: ...]
+**Output:** Each photo shows its Supabase UUID, which you pass to `/caption` and `/post`.
+
+#### /caption <photo-ids> [context: ...]
 Generate AI captions using Caption Generation Service.
+Resolves each ID to a Supabase public URL before calling the service.
 
 **Examples:**
-- `/caption photo_race_001.jpg`
-- `/caption photo_trophy.jpg context: KCRX E1, Hudson won Novice`
+- `/caption a1b2c3d4-...`
+- `/caption a1b2c3d4-... context: KCRX E1, Ian in the Goblin`
 
 **Response Time:** 30-120 seconds (AI generation)
+**Output:** Caption options with copy-ready `/post` commands pre-filled.
 
-#### /post <photo-names> "<caption>" [schedule: ...]
-Create post via PostBridge (draft or scheduled).
+#### /post <photo-ids> "<caption>" [schedule: ...]
+Create PostBridge draft with Supabase photo URLs auto-attached as `media_urls`.
 
 **Examples:**
-- `/post photo_race_001.jpg "Great race day! #ChurchOfCombustion"`
-- `/post photo_trophy.jpg "First win!" schedule: 2026-04-01 09:00`
+- `/post a1b2c3d4-... "Great race day! #ChurchOfCombustion"`
+- `/post a1b2c3d4-... "First win!" schedule: 2026-04-01T09:00:00Z`
 
-**Current Behavior:** Creates drafts; manual photo upload to PostBridge required
+**Output:** PostBridge draft ID; media is attached automatically from Supabase URLs.
 
 #### /posts list [status]
 View scheduled and published posts from PostBridge.
@@ -222,6 +161,8 @@ View scheduled and published posts from PostBridge.
 - Slack Bot Token: `SLACK_BOT_TOKEN`
 - Slack App Token: `SLACK_APP_TOKEN` (Socket Mode)
 - PostBridge API Key: `POSTBRIDGE_API_KEY`
+- Supabase URL: `SUPABASE_URL`
+- Supabase Service Role Key: `SUPABASE_SERVICE_ROLE_KEY`
 - Caption Service URL: `CAPTION_SERVICE_URL` (default: localhost:5000)
 
 ### 5. PostBridge API Client

@@ -15,6 +15,18 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 ---
 
+## 7-Day Cadence
+
+*April 4-10, 2026 — re-establish the content/marketing operating rhythm.*
+
+- Apr 4: lock the Fit How-To outline and filming checklist. Output: final shot list + gear/tool list.
+- Apr 5: stage the garage and thumbnail direction. Output: filming space ready + thumbnail concept chosen.
+- Apr 6: film the Fit How-To. Output: A-roll, B-roll, and detail shots captured.
+- Apr 7: assemble the rough cut. Output: first edit pass complete.
+- Apr 8: finish edit and metadata. Output: upload-ready draft with title/description.
+- Apr 9: finalize the Apr 10 vlog notes. Output: talking points and shot list ready.
+- Apr 10: publish the season reboot vlog. Output: video live + first-day performance check started.
+
 ## Racing
 
 - [x] Diagnose Goblin motor — ✅ 2026-03-28 diagnostic complete (see Maintenance-Log.md)
@@ -24,7 +36,7 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 - [ ] Confirm 2026 autocross event schedule
 - [ ] Confirm Lake Garnett Grand Prix Revival date for October
 - [ ] Assess Dale's current mechanical condition before first 2026 event
-- [ ] Identify which track Nessie will make her dragstrip debut at, and get tech requirements
+- [ ] Book Nessie's first dragstrip outing: Thunder Valley Friday Night Test & Tune on May 15, 2026; keep Mo-Kan Fun Drags on May 29, 2026 as fallback
 
 ---
 
@@ -32,9 +44,10 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 - [ ] Fully document Goblin rebuild — film every step for content
 - [ ] Identify and document the $100 mystery motor for Killer Corolla
-- [ ] Assess Geoffrey (Dauphine) — running or not, what's the condition
+- [x] Assess Geoffrey (Dauphine) — ✅ 2026-04-05 engine is not running; plugs rusted in place; motor locked by hand crank
 - [ ] Complete TRD parts inventory on Killer Corolla
 - [ ] Define Geoffrey build direction — what kind of rally replica and to what spec
+- [ ] Free Geoffrey's spark plugs and confirm engine rotation — bring Free All, retry after soak, then document whether the motor frees up
 
 ---
 

@@ -53,7 +53,7 @@ def main():
                 "client_secret": client_secret,
                 "auth_uri": "https://accounts.google.com/o/oauth2/auth",
                 "token_uri": "https://oauth2.googleapis.com/token",
-                "redirect_uris": ["http://localhost"],
+                "redirect_uris": ["http://localhost:8080/"],
             }
         },
         scopes=["https://www.googleapis.com/auth/photoslibrary.readonly"],

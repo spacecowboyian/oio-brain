@@ -2,11 +2,11 @@
 
 ## Overview
 
-The Slackbot Social Media Interface provides mobile-first social media management through Slack commands. It integrates with PostBridge for cross-platform posting, the Caption Generation Service for AI-powered captions, and local photo management.
+The Slackbot Social Media Interface provides mobile-first social media management through Slack commands. It integrates with PostBridge for cross-platform posting, the Caption Generation Service for AI-powered captions, and Supabase for photo storage and metadata.
 
 ## Features
 
-1. **Photo Browsing** - List and filter recently synced photos from Google Photos
+1. **Photo Browsing** - List and filter photos from Supabase (synced from Google Photos)
 2. **AI Caption Generation** - Generate brand-voice captions using AI Copywriter
 3. **Post Scheduling** - Schedule or publish posts to Instagram/Facebook
 4. **Post Management** - View and manage scheduled posts
@@ -37,8 +37,15 @@ The Slackbot Social Media Interface provides mobile-first social media managemen
 │  Caption Generation │  │  • Instagram    │
 │  Service (Flask)    │  │  • Facebook     │
 │  • AI Copywriter    │  │  • Scheduling   │
-│  • Brand Voice      │  │  • Media        │
-│  • OIO Brain Context│  └─────────────────┘
+│  • Brand Voice      │  │  • Media (URLs) │
+│  • OIO Brain Context│  └────────┬────────┘
+└─────────────────────┘           │
+                                  │ media_urls
+┌─────────────────────┐           │
+│  Supabase           │───────────┘
+│  photos table       │
+│  • Public URLs      │
+│  • AI metadata      │
 └─────────────────────┘
 ```
 
@@ -61,7 +68,7 @@ The Slackbot Social Media Interface provides mobile-first social media managemen
 3. **Required Services:**
    - Caption Generation Service running on http://localhost:5000
    - PostBridge account with connected Instagram/Facebook accounts
-   - Google Photos sync workflow (for photo uploads)
+   - Supabase project with `photos` table populated (via Google Photos sync workflow)
 
 ### Environment Variables
 
@@ -72,6 +79,10 @@ export SLACK_APP_TOKEN="xapp-your-app-token"
 
 # PostBridge Configuration
 export POSTBRIDGE_API_KEY="your-postbridge-api-key"
+
+# Supabase Configuration (for photo lookup)
+export SUPABASE_URL="https://zdjughkxryhabduhsdgg.supabase.co"
+export SUPABASE_SERVICE_ROLE_KEY="your-service-role-key"
 
 # Caption Service (optional, defaults to localhost:5000)
 export CAPTION_SERVICE_URL="http://localhost:5000"
@@ -93,37 +104,40 @@ The bot will connect to Slack via Socket Mode and listen for commands.
 
 ### `/photos list [filter]`
 
-Browse photos from the picdump directory (synced from Google Photos).
+Browse photos from the Supabase `photos` table (synced from Google Photos via the sync workflow).
 
 **Usage:**
 ```
 /photos list              # List recent photos
-/photos list 2026-03-30   # Filter by date
-/photos list race         # Filter by keyword in filename
+/photos list goblin       # Filter by car, filename, or description keyword
+/photos list rallycross   # Filter by keyword
 ```
 
 **Response:**
 ```
 Found 5 photo(s):
 
-1. `photo_race_001.jpg` — 2,456 KB — 2026-03-30 14:23
-2. `photo_race_002.jpg` — 1,890 KB — 2026-03-30 14:25
-3. `photo_trophy.jpg` — 3,120 KB — 2026-03-30 15:01
-4. `photo_car_123.jpg` — 2,678 KB — 2026-03-29 18:45
-5. `photo_pits.jpg` — 1,234 KB — 2026-03-29 17:30
+1. *photo_race_001.jpg / Goblin* [identified]
+   ID: `a1b2c3d4-0001-0000-0000-000000000000`
+   _Goblin airborne over jump 3, Ian driving, KCRX E1_
+2. *photo_race_002.jpg / Fitty Cent* [identified]
+   ID: `a1b2c3d4-0002-0000-0000-000000000000`
+3. *photo_trophy.jpg* [unknown]
+   ID: `a1b2c3d4-0003-0000-0000-000000000000`
 
-Use `/caption <photo-names>` to generate captions
+Use `/caption <id>` to generate captions
 ```
 
-### `/caption <photo-names> [context: ...]`
+### `/caption <photo-ids> [context: ...]`
 
 Generate AI-powered captions for photos using the Caption Generation Service.
+Pass photo IDs from `/photos list`. The slackbot resolves each ID to a Supabase public URL before calling the caption service, so the AI Copywriter receives real image URLs.
 
 **Usage:**
 ```
-/caption photo_race_001.jpg photo_race_002.jpg
+/caption a1b2c3d4-0001-... a1b2c3d4-0002-...
 
-/caption photo_trophy.jpg context: KCRX E1, Hudson won Novice class
+/caption a1b2c3d4-0001-... context: KCRX E1, Ian in the Goblin
 ```
 
 **Response:**
@@ -142,7 +156,7 @@ Option 3 (134 chars):
 Sunday service at Ray Rocks. Hudson's first trophy. The Goblin's final sermon before the bearing failure. Amen. #ChurchOfCombustion
 Hashtags: #ChurchOfCombustion
 
-Use `/post <photo-names> <caption>` to schedule or publish
+To post option 1: `/post a1b2c3d4-0001-... "Hudson won Novice at KCRX E1! #ChurchOfCombustion"`
 ```
 
 **Notes:**
@@ -151,36 +165,26 @@ Use `/post <photo-names> <caption>` to schedule or publish
 - Includes context from car details and race history
 - Returns 3 caption variations by default
 
-### `/post <photo-names> "<caption>" [schedule: ...]`
+### `/post <photo-ids> "<caption>" [schedule: ...]`
 
-Create a post via PostBridge (draft, scheduled, or immediate publish).
+Create a PostBridge draft with the photo(s) attached. Photo IDs are resolved against
+Supabase to get public URLs, which are sent to PostBridge as `media_urls` — no manual upload required.
 
 **Usage:**
 ```
-# Create draft post (immediate)
-/post photo_race_001.jpg "Hudson won Novice at KCRX E1! #ChurchOfCombustion"
+# Create draft post
+/post a1b2c3d4-0001-... "Hudson won Novice at KCRX E1! #ChurchOfCombustion"
 
-# Schedule for future (not yet implemented)
-/post photo_trophy.jpg "First trophy!" schedule: 2026-04-01 09:00
+# Schedule for future publishing
+/post a1b2c3d4-0001-... "First trophy!" schedule: 2026-04-01T09:00:00Z
 ```
 
 **Response:**
 ```
-✓ Post created as draft (ID: abc123-def456-ghi789)
+✓ PostBridge draft created (ID: abc123-def456-ghi789)
 Caption: Hudson won Novice at KCRX E1! #ChurchOfCombustion
-Note: Photos need to be uploaded to PostBridge manually for now.
+Media attached from Supabase.
 ```
-
-**Current Limitations:**
-- Creates posts as drafts in PostBridge
-- Photos must be uploaded to PostBridge media library manually
-- Scheduling syntax not yet implemented
-
-**Future Enhancements:**
-- Automatic photo upload to PostBridge
-- Proper scheduling with datetime parsing
-- Preview before publishing
-- Multi-platform caption customization
 
 ### `/posts list [status]`
 
@@ -239,15 +243,11 @@ The Slackbot uses the PostBridge client library to:
 - List scheduled and published posts
 
 **Current Flow:**
-1. User requests post creation via `/post`
-2. Slackbot creates draft in PostBridge with caption
-3. User manually uploads photos to PostBridge UI
-4. User publishes draft from PostBridge
-
-**Future Flow:**
-1. User requests post creation via `/post`
-2. Slackbot uploads photos to PostBridge media library
-3. Slackbot creates post with media attached
+1. User runs `/photos list` — photos loaded from Supabase
+2. User runs `/caption <id>` — slackbot resolves Supabase URL, caption service calls AI Copywriter with real image URL
+3. Caption response includes copy-ready `/post <id> "<caption>"` command per option
+4. User runs `/post <id> "<caption>"` — slackbot resolves URL from Supabase, creates PostBridge draft with `media_urls` attached
+5. User reviews and publishes from PostBridge
 4. Post publishes immediately or at scheduled time
 
 ## Workflow Example

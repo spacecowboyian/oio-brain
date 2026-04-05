@@ -56,3 +56,13 @@ summary: Running maintenance log for Fitty Cent — 2009 Honda Fit GE8. Document
 | Koni Shock Install | Open | When acquired |
 | Home Alignment (Gyroline) | Open | Next How-To content target |
 | Rear Spring Experiment | Open | If needed |
+
+### 2026-04-05 — Master Cylinder Replacement (In progress)
+
+**Summary:** Slave replacement did not cure the low-contact pedal — engagement still starts around the bottom inch of travel. Swapped in a 2001‑2005 Civic master cylinder (same 5/8-inch bore, no OEM delay valve) to replace the failing Chinese master. Hudson worked the under-dash hard line while Ian tightened the fitting one tiny wrench movement at a time. Master is now benched in but still being bled; waiting to verify whether the Civic unit plus new bleed yields a normal clutch feel.
+
+**Parts / Fluids:**
+- Master cylinder: 2001‑2005 Civic (5/8" bore, delay valve deleted)
+- Fluid: DOT 3 — gravity bleed + pedal bleed in progress
+
+**Next steps:** Finish bleeding the new master, test drive to confirm clutch travel, monitor for return of the low-engagement symptom (plan to repeat bleed/adjust if needed).

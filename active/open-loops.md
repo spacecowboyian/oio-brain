@@ -29,7 +29,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 - **Goblin rebuild budget:** Diagnostic complete but budget still unknown — depends on rebuild vs. replace decision. Once that's made, parts list and cost estimate needed.
 - **Mystery motor for Killer Corolla:** What is it? Does it run? Is it actually the right engine for the car? How long is the full rebuild?
 - **Killer Corolla TRD parts inventory:** No documented inventory yet. What TRD parts are on the car?
-- **Geoffrey (Dauphine) condition:** Just acquired. Running or not? What's the actual condition? How far is it from being a working car?
+- **Geoffrey (Dauphine) condition:** ✅ 2026-04-05 — Assessment complete. Spark plugs are rusted in place, the engine would not budge by hand crank, and the car is not running. Next step: Free All soak, then retry extraction or use an induction heater/tool if needed.
 - **Geoffrey build direction:** "Rally car replica" is the stated goal but no details defined. What era? What spec? What rally?
 - **Keegan's full collection — needs audit:** Keegan has roughly 8–9 cars total. The repo only covers the 1985 Tercel and Lincoln Town Car. The rest of his collection (Dustbuster vans and any other builds) need to be documented — which cars are active, which have appeared on OIO, and what years/models they are. Year confirmed for Tercel (1985); Lincoln Town Car year still unknown.
 
@@ -40,7 +40,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 - **2026 rallycross schedule:** Which events is the OIO crew attending this season? Dates and locations not yet confirmed in the repo.
 - **2026 autocross schedule:** Same — no confirmed event list yet.
 - **Lake Garnett Grand Prix Revival date:** October is known but the specific date is not confirmed in the repo.
-- **Dragstrip for Nessie:** Which track? When? What are the tech requirements?
+- **Dragstrip for Nessie:** ✅ 2026-04-04 — Primary target set to Thunder Valley Friday Night Test & Tune on Friday, May 15, 2026. Fallback is Mo-Kan Fun Drags on Friday, May 29, 2026. Tech requirements captured in `cars/ian/cressida-nessie/Setup-Notes.md`.
 - **FIT OFF timing:** "Mid-season" is noted but no specific date or format details are defined.
 
 ---

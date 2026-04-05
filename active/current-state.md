@@ -43,7 +43,7 @@ The 2026 motorsport season is opening. The primary focus is:
 | Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Dual-duty workload on one car |
 | Nessie | 1982 Toyota Cressida Wagon | Ian | Building | Drag setup not complete |
 | Killer Corolla | 1977 Toyota Corolla | Ian | **Down** | 6-year resurrection, $100 mystery motor |
-| Geoffrey | 1962 Renault Dauphine | Ian | Just acquired | Build direction not yet defined |
+| Geoffrey | 1962 Renault Dauphine | Ian | Not running — engine locked solid | Build direction not yet defined |
 
 ---
 
@@ -75,6 +75,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
+- **2026-04-04:** Content cadence re-established for Apr 4-10. The Fit How-To and season-reboot vlog are locked in `content/schedule.md`, and the 7-day operating cadence is now captured in `active/next-actions.md`.
 - **2026-03-31:** Website build complete — OIO Racing website built and ready for deployment (Paperclip OUT-123). Tech stack: Astro 5 + Tailwind CSS 4 with TypeScript. Features: YouTube Data API v3 integration (with mock fallback), Instagram Basic Display API, auto-sitemap, SEO optimization (OpenGraph, Twitter Cards), mobile-first responsive design, Lighthouse 90+. Core pages ready: Homepage, Videos, Schedule, Sponsors, Merch (Ecwid-ready), Contact. Project location: `/Users/ian/.paperclip/instances/default/workspaces/8a3fa8e5-7267-4c99-8471-c89e355f6ffd/oio-racing/`. Deployment blockers: API credentials, GitHub setup, Vercel/Netlify config, domain DNS. Comprehensive README included with setup and deployment guides.
 - **2026-03-30:** Racing brand voice document complete — OIO Racing Brand Voice Document finalized (Paperclip OUT-19). Defines tone, messaging, and content pillars for the channel.
 - **2026-04-05:** Added explicit DIY execution-capacity guardrails across the brain (`README.md`, `INDEX.md`, `active/`, `core/`, and operating instructions) so agents default to conservative, runnable planning assumptions instead of multi-track optimistic plans.
@@ -98,7 +99,7 @@ The 2026 motorsport season is opening. The primary focus is:
 - **2026-03-28:** Channel gap identified — no uploads since Mar 4. First priority: Fit How-To on Apr 2 (overdue by 4+ weeks).
 - **2026-03-27:** OIO Brain repository established — canonical operational brain created
 - **2026-03-27:** Fitty Cent nickname confirmed and corrected throughout
-- **2026 (pre-season):** Geoffrey (1962 Renault Dauphine) recently acquired
+- **2026-04-05:** Geoffrey (1962 Renault Dauphine) initial assessment — spark plugs rusted in place, hand crank would not turn the motor, and the cover had blown off onto the boat next to it. Next attempt: Free All soak and retry.
 
 ---
 
