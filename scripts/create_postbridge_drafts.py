@@ -38,8 +38,11 @@ import requests
 
 REPO_ROOT = Path(__file__).parent.parent
 
-# Default posting cadence: Tue + Fri at 10:00 AM CT (UTC-5 in winter, UTC-6 in summer)
-# Stored in UTC — approximate for CT
+# Default posting cadence: Tue + Fri at 10:00 AM CT.
+# Stored in UTC. CT is UTC-6 during CDT (Mar-Nov) and UTC-5 during CST (Nov-Mar).
+# DEFAULT_POST_HOUR_UTC=16 approximates 10 AM CT standard time.
+# Note: This will be 1 hour off during daylight saving time. Adjust manually
+# or update POSTBRIDGE_ACCOUNT_IDS and reschedule if precise timing matters.
 DEFAULT_POST_DAYS = [1, 4]   # Monday=0, Tuesday=1, Friday=4
 DEFAULT_POST_HOUR_UTC = 16   # 10:00 AM CT = 16:00 UTC (CT standard)
 DEFAULT_POST_MINUTE = 0
@@ -51,7 +54,6 @@ MIN_LEAD_HOURS = 2           # Minimum hours from now before scheduling
 # ---------------------------------------------------------------------------
 
 def log(message: str, level: str = "INFO") -> None:
-    from datetime import datetime, timezone
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
     line = f"[{ts}] {level}: {message}"
     print(line, flush=True)

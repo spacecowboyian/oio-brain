@@ -139,3 +139,18 @@ The scheduler avoids placing two photos on the same day.
 
 Dates are stored in `tentative_publish_at` in Supabase and passed to PostBridge
 as the scheduled date on the draft. All posts go to draft status — not immediate publishing.
+
+## Post-Publish State Sync
+
+After a draft is published in PostBridge (manually, after Ian's review), the
+`posted_at` field in Supabase is **not** updated automatically in the first version.
+
+To mark a photo as posted, update the record manually in Supabase:
+```sql
+UPDATE photos
+SET workflow_status = 'posted', posted_at = NOW()
+WHERE postbridge_draft_id = '<postbridge-post-id>';
+```
+
+A future version may add a PostBridge webhook listener or a polling workflow
+to sync publish status back to Supabase automatically.

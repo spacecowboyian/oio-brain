@@ -464,7 +464,7 @@ def run_identification() -> dict:
         result = identify_photo(photo_id, image_url, description)
 
         if result is None:
-            # Cannot analyse — mark for triage
+            # Cannot analyze — mark for triage
             supabase("PATCH", f"/photos?id=eq.{photo_id}", {
                 "workflow_status": "needs_triage",
                 "needs_triage": True,
