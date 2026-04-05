@@ -1,279 +1,141 @@
 # OIO Racing Photo Workflow
 
-Automated photo ingestion from Google Photos to Supabase with AI-powered identification.
+Automated pipeline from Google Photos album to PostBridge draft social posts.
 
 ## Overview
 
-The OIO Racing photo workflow is a cloud-native system that:
+Photos added to the OIO Google Photos album move through a structured workflow:
 
-1. **Syncs photos** from a Google Photos album every 6 hours
-2. **Stores photos** in Supabase cloud storage (never in git)
-3. **Manages metadata** in Supabase database (descriptions, AI results, status)
-4. **Analyzes with Claude Vision** for car and driver identification
-5. **Provides a triage UI** for manual labeling of uncertain photos
-
-Architecture:
 ```
 Google Photos Album
         ↓
-[GitHub Actions - every 6h]
+[ingest-photos.yml — every 6h]
         ↓
 Google Photos Library API
         ↓
-Supabase oio-photos bucket + photos table
+Supabase storage (oio-photos bucket) + photos table
         ↓
-Claude Vision (auto-identification)
+Claude Vision (auto vehicle identification)
         ↓
-Triage UI (photo-library for uncertain)
+[generate-captions.yml — daily]
+        ↓
+Claude caption generation using OIO brain context
+        ↓
+[create-drafts.yml — daily]
+        ↓
+PostBridge draft post with tentative schedule date
+        ↓
+Human review → approve → publish
 ```
 
-## How a Photo Moves Through the System
+## Workflow States
 
-### 1. Add to Google Photos (Manual)
-
-You add a photo to the OIO Racing Google Photos album in the cloud.
-
-### 2. Sync Cycle (Automatic - Every 6 Hours)
-
-The GitHub Actions workflow runs on a schedule:
-- Fetches all photos from the Google Photos album
-- For each new photo:
-  - Downloads the image
-  - Uploads to Supabase `oio-photos` storage bucket
-  - Stores metadata in Supabase `photos` table
-  - Records `google_photos_id` for deduplication
-  - Records `google_description` (the caption from Google Photos)
-
-### 3. Caption Re-ingestion (Automatic)
-
-If you add a caption in Google Photos after sync:
-- Next sync cycle picks up the new caption
-- Updates `google_description` and `description` (if not yet human-labeled)
-- Marks photo as ready for Vision analysis
-
-### 4. Claude Vision Analysis (Automatic)
-
-For each photo without a description:
-- Claude Vision analyzes the image
-- Identifies: car, driver, event context, visual details
-- Sets confidence score (0.0–1.0)
-- If confidence ≥ 0.8:
-  - Auto-marks as "identified"
-  - Stores: car, description (visual notes), full analysis JSON, status
-- If confidence < 0.8:
-  - Marks as "unknown"
-  - Stores analysis for review
-  - Photo appears in triage UI
-
-### 5. Triage (Manual - When Needed)
-
-You open the triage UI to review low-confidence photos:
-- See all photos marked "unknown"
-- Add or edit descriptions
-- Correct car identifications
-- Mark as "identified" when done
-
-### 6. Ready for Use
-
-Photos are now fully identified and ready for:
-- Caption generation
-- Social media posting
-- Archive organization
-
-## GitHub Secrets Required
-
-Before the workflow can run, you must set up these secrets in the GitHub repository.
-
-### 1. **GOOGLE_PHOTOS_CREDENTIALS** (Required)
-
-JSON string from the one-time auth setup. Contains refresh token, client ID/secret.
-
-**To set up:**
-1. Run locally: `python scripts/auth_google_photos.py`
-   - Set env vars: `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`
-   - Follow browser prompt to authorize
-2. Copy the printed JSON
-3. GitHub → Settings → Secrets and variables → Actions
-4. New secret name: `GOOGLE_PHOTOS_CREDENTIALS`
-5. Paste the JSON as the value
-
-### 2. **GOOGLE_PHOTOS_ALBUM_ID** (Required)
-
-The album ID from the Google Photos URL (e.g., `AL9nkcK...`).
-
-**To find:**
-1. Open the Google Photos album in your browser
-2. Copy the URL, it looks like: `https://photos.app.goo.gl/AL9nkcK...`
-3. The part after the last `/` is the album ID
-4. Create a GitHub secret: `GOOGLE_PHOTOS_ALBUM_ID`
-
-### 3. **ANTHROPIC_API_KEY** (Required)
-
-Your Anthropic API key for Claude Vision analysis.
-
-**To set up:**
-1. Go to https://console.anthropic.com/account/keys
-2. Create or copy your API key
-3. GitHub → Settings → Secrets → New secret
-4. Name: `ANTHROPIC_API_KEY`
-5. Paste the key
-
-### 4. **SUPABASE_URL** (Required)
-
-The Supabase project URL (fixed):
-- URL: `https://zdjughkxryhabduhsdgg.supabase.co`
-
-Create a GitHub secret with this URL. Or it can be hardcoded in the workflow.
-
-### 5. **SUPABASE_SERVICE_ROLE_KEY** (Required)
-
-The Supabase service role key (not the anon key).
-
-**To find:**
-1. Supabase → Project → Settings → API
-2. Copy the **Service Role Key** (NOT the anon key)
-3. GitHub → Settings → Secrets → New secret
-4. Name: `SUPABASE_SERVICE_ROLE_KEY`
-5. Paste the key
-
-## Understanding Photo Status
-
-Each photo in the database has an `ai_status` field:
+Each photo record in Supabase has a `workflow_status` field:
 
 | Status | Meaning |
 |---|---|
-| `unknown` | Not yet analyzed or analysis was uncertain (<0.8 confidence) |
-| `identified` | Fully processed and identified (high confidence or human-labeled) |
-| `skipped` | Intentionally skipped (reserved for future use) |
+| `ingested` | New photo stored in Supabase — awaiting identification |
+| `auto_identified` | Claude Vision identified the vehicle at ≥80% confidence |
+| `needs_triage` | Low confidence — needs human to assign vehicle/category |
+| `metadata_complete` | Human has reviewed, vehicle assigned, rough caption set |
+| `caption_generated` | AI-generated caption saved to `final_caption` |
+| `draft_created` | PostBridge draft created with tentative publish date |
+| `approved` | Ian has approved the draft for publishing |
+| `posted` | Published to social media |
 
-## Re-ingesting Captions from Google Photos
+## Scripts
 
-If you add a description to a photo in Google Photos *after* it was synced:
+| Script | Purpose |
+|---|---|
+| `scripts/ingest_photos.py` | Google Photos → Supabase ingestion + Claude Vision identification |
+| `scripts/generate_captions.py` | Caption generation using Claude + OIO brain context |
+| `scripts/create_postbridge_drafts.py` | PostBridge draft creation with tentative scheduling |
+| `scripts/postbridge_client.py` | PostBridge API client library |
+| `scripts/auth_google_photos.py` | One-time Google Photos OAuth2 setup helper |
 
-1. The next sync cycle (every 6h) will detect the new caption
-2. Updates `google_description` in the database
-3. Also updates `description` (unless it was already human-edited)
-4. Marks the photo as `identified` (since it now has a description)
+## GitHub Actions Workflows
 
-This is useful for bulk-captioning in Google Photos, then letting the sync system pick it up.
+| Workflow | Schedule | Purpose |
+|---|---|---|
+| `ingest-photos.yml` | Every 6 hours | Detects new photos, uploads to Supabase, runs Vision |
+| `generate-captions.yml` | Daily at 8:30 AM UTC | Generates captions for eligible photos |
+| `create-drafts.yml` | Daily at 9:00 AM UTC | Creates PostBridge drafts for captioned photos |
 
-## One-Time Setup
+All three workflows can also be triggered manually via GitHub Actions → workflow_dispatch.
 
-### Step 1: Supabase Migration
+## Required Secrets
 
-The database schema has been updated with new columns:
-- `google_photos_id` — stable unique ID for deduplication
-- `google_description` — raw caption from Google Photos
+| Secret | Used By |
+|---|---|
+| `GOOGLE_PHOTOS_CREDENTIALS` | JSON blob with OAuth2 client_id, client_secret, refresh_token |
+| `GOOGLE_PHOTOS_ALBUM_ID` | Target album ID from Google Photos URL |
+| `ANTHROPIC_API_KEY` | Claude Vision + caption generation |
+| `SUPABASE_URL` | Supabase project URL |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service-role key |
+| `POSTBRIDGE_API_KEY` | PostBridge API key |
+| `POSTBRIDGE_ACCOUNT_IDS` | Comma-separated social account IDs (optional) |
 
-These were added via migration. No action needed unless you're setting up fresh.
+## Initial Setup
 
-### Step 2: Create OAuth2 Credentials
+### 1. Supabase database schema
 
-1. Go to https://console.cloud.google.com/
-2. Create a new project or select an existing one
-3. Enable the **Google Photos Library API**
-4. Create **OAuth2 credentials** (Desktop application)
-5. Download the JSON file
-6. Extract `client_id` and `client_secret`
-7. Run: `GOOGLE_CLIENT_ID=... GOOGLE_CLIENT_SECRET=... python scripts/auth_google_photos.py`
-8. Save the output as a GitHub secret
+Run `data/supabase-schema.sql` once in the Supabase SQL editor.
 
-### Step 3: Configure GitHub Secrets
+This creates:
+- `photos` table with full workflow state machine fields
+- `caption_history` table for style tuning over time
+- `photo_processing_runs` table for run audit logs
 
-Add all required secrets (see "GitHub Secrets Required" above).
+### 2. Supabase storage bucket
 
-### Step 4: Verify the Workflow
+Create a public bucket named `oio-photos` in Supabase Storage.
 
-Push a dummy commit to trigger the workflow:
+### 3. Google Photos OAuth2
+
+Run the auth helper locally to generate a refresh token:
+
 ```bash
-git commit --allow-empty -m "test: trigger photo sync"
-git push
+export GOOGLE_CLIENT_ID=<your-client-id>
+export GOOGLE_CLIENT_SECRET=<your-client-secret>
+pip install google-auth-oauthlib
+python scripts/auth_google_photos.py
 ```
 
-Check **Actions** tab to verify the workflow runs without errors.
+Save the output JSON as the `GOOGLE_PHOTOS_CREDENTIALS` GitHub secret.
 
-## Troubleshooting
+### 4. Google Photos album
 
-### "GOOGLE_PHOTOS_CREDENTIALS not found"
+Create a dedicated Google Photos album for OIO social posting.
+Copy the album ID from the URL and save it as `GOOGLE_PHOTOS_ALBUM_ID`.
 
-**Problem:** Workflow fails immediately
+## Manual Triage
 
-**Solution:**
-1. GitHub → Settings → Secrets and variables → Actions
-2. Verify `GOOGLE_PHOTOS_CREDENTIALS` exists
-3. Verify the JSON is valid (use a JSON validator)
-4. Re-run the workflow
+Photos flagged `needs_triage` require human input before captioning.
 
-### "Failed to refresh Google Photos credentials"
+For each triage photo in Supabase, set:
+- `vehicle_key` — one of: `goblin`, `dale`, `fittycent`, `nessie`, `killer-corolla`,
+  `geoffrey`, `tootie`, `mgb-gt`, `ae86`, `other`
+- `rough_caption` — a brief description or caption seed
+- `workflow_status` → `metadata_complete` when ready for caption generation
 
-**Problem:** Refresh token is invalid or expired
+Human edits always override automation. The system will not overwrite
+`vehicle_key` or `rough_caption` once they are set by a human.
 
-**Solution:**
-1. Re-run the auth script locally: `python scripts/auth_google_photos.py`
-2. Update the GitHub secret with the new JSON
+## Caption Rules
 
-### "No photos to sync" but Google Photos has photos
+Generated captions follow strict OIO brand voice rules:
+- No emoji
+- No em dashes
+- Write like a real human
+- Grounded in vehicle history and current season context
+- Improves on the rough caption rather than ignoring it
 
-**Problem:** Album ID might be incorrect
+See `brand/voice-and-tone.md` for the full brand voice reference.
 
-**Solution:**
-1. Open the Google Photos album in browser
-2. Check the URL
-3. Update `GOOGLE_PHOTOS_ALBUM_ID` secret
+## Scheduling
 
-### Photos uploaded but Vision analysis doesn't run
+Tentative publish dates default to Tuesday and Friday at 10:00 AM CT.
+The scheduler avoids placing two photos on the same day.
 
-**Problem:** ANTHROPIC_API_KEY might be invalid
-
-**Solution:**
-1. Verify API key at https://console.anthropic.com/account/keys
-2. Ensure billing is active
-3. Confirm Claude Opus 4.6 access
-4. Update the GitHub secret
-
-### Photos in Supabase but not showing in triage UI
-
-**Problem:** SUPABASE_URL or service role key might be wrong
-
-**Solution:**
-1. Check Supabase → Settings → API
-2. Verify the URL and service role key
-3. Update GitHub secrets
-4. Run the workflow again
-
-## Files Reference
-
-| File | Purpose |
-|---|---|
-| `scripts/auth_google_photos.py` | One-time OAuth2 setup (run locally) |
-| `scripts/sync_google_photos.py` | Main sync script (runs in GitHub Actions) |
-| `.github/workflows/sync-google-photos.yml` | Scheduled workflow (every 6h) |
-| `intake/photos/.gitkeep` | Directory marker (no photos stored here) |
-| `/PHOTO-WORKFLOW.md` | This file |
-
-Photos themselves live only in:
-- Google Photos (original)
-- Supabase Storage `oio-photos` bucket (working copy)
-- Supabase `photos` table (metadata)
-
-## Integration with Downstream Systems
-
-Once photos are identified in Supabase, other systems can use them:
-
-- **Caption generation:** Query identified photos, generate captions
-- **Social posting:** PostBridge queries photo metadata, creates posts
-- **Analytics:** Photo filing reports use `ai_status` and `car` fields
-
-## Next Steps
-
-1. ✅ **Schema ready** — Database columns added
-2. ⏳ **Setup Google OAuth** — Run auth script
-3. ⏳ **Configure GitHub secrets** — Add 5 required secrets
-4. ⏳ **Test sync** — Push a commit to trigger workflow
-5. ⏳ **Review first sync** — Check Supabase for photos
-6. ⏳ **Review triage UI** — Check for uncertain photos
-
----
-
-**Last Updated:** April 4, 2026  
-**Status:** PRODUCTION-READY
+Dates are stored in `tentative_publish_at` in Supabase and passed to PostBridge
+as the scheduled date on the draft. All posts go to draft status — not immediate publishing.

@@ -1,12 +1,12 @@
-name: Sync OIO Photos from Google Photos
+name: Ingest OIO Photos from Google Photos
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */6 * * *'   # Every 6 hours
   workflow_dispatch:
 
 jobs:
-  sync:
+  ingest:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -21,11 +21,11 @@ jobs:
       - name: Install dependencies
         run: pip install requests anthropic google-auth google-auth-httplib2
 
-      - name: Run photo sync
+      - name: Ingest photos and run identification
         env:
           GOOGLE_PHOTOS_CREDENTIALS: ${{ secrets.GOOGLE_PHOTOS_CREDENTIALS }}
           GOOGLE_PHOTOS_ALBUM_ID: ${{ secrets.GOOGLE_PHOTOS_ALBUM_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: python scripts/sync_google_photos.py
+        run: python scripts/ingest_photos.py

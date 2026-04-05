@@ -1,0 +1,47 @@
+name: Create OIO PostBridge Drafts
+
+on:
+  # Run daily after caption generation
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+    inputs:
+      photo_id:
+        description: 'Single photo UUID (optional — leave blank to process all eligible)'
+        required: false
+      dry_run:
+        description: 'Print draft info without creating (true/false)'
+        required: false
+        default: 'false'
+
+jobs:
+  create-drafts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Create PostBridge drafts
+        env:
+          POSTBRIDGE_API_KEY: ${{ secrets.POSTBRIDGE_API_KEY }}
+          POSTBRIDGE_ACCOUNT_IDS: ${{ secrets.POSTBRIDGE_ACCOUNT_IDS }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.photo_id }}" ]; then
+            ARGS="--photo-id ${{ github.event.inputs.photo_id }}"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          python scripts/create_postbridge_drafts.py $ARGS
