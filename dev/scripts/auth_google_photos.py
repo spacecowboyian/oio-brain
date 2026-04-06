@@ -70,6 +70,7 @@ def main():
         "client_secret": client_secret,
         "refresh_token": credentials.refresh_token,
         "token_uri": "https://oauth2.googleapis.com/token",
+        "scopes": ["https://www.googleapis.com/auth/photoslibrary.readonly"],
     }
 
     # Print the JSON blob for saving
