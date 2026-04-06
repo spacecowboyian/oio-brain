@@ -1,0 +1,161 @@
+name: Process User Stories
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'user-stories/backlog/**'
+      - 'user-stories/in-progress/**'
+  workflow_dispatch:
+
+jobs:
+  process-user-stories:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect user story changes
+        id: detect
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # On manual dispatch: collect all ready stories in backlog
+            ADDED=$(find user-stories/backlog/ -maxdepth 1 -name 'US-*.md' | sort || true)
+            MODIFIED=""
+            DELETED=""
+          else
+            # Added or renamed story files (covers new files and moves from backlog → in-progress)
+            ADDED=$(git diff --name-only --diff-filter=AR HEAD~1 HEAD \
+              -- 'user-stories/backlog/US-*.md' 'user-stories/in-progress/US-*.md' \
+              2>/dev/null || true)
+
+            # Modified story files
+            MODIFIED=$(git diff --name-only --diff-filter=M HEAD~1 HEAD \
+              -- 'user-stories/backlog/US-*.md' 'user-stories/in-progress/US-*.md' \
+              2>/dev/null || true)
+
+            # Deleted story files (stories removed — mark as cancelled/dropped)
+            DELETED=$(git diff --name-only --diff-filter=D HEAD~1 HEAD \
+              -- 'user-stories/backlog/US-*.md' 'user-stories/in-progress/US-*.md' \
+              2>/dev/null || true)
+          fi
+
+          HAS_CHANGES=false
+
+          if [ -n "$ADDED" ]; then
+            echo "New stories:"
+            echo "$ADDED"
+            HAS_CHANGES=true
+          fi
+          if [ -n "$MODIFIED" ]; then
+            echo "Modified stories:"
+            echo "$MODIFIED"
+            HAS_CHANGES=true
+          fi
+          if [ -n "$DELETED" ]; then
+            echo "Deleted stories:"
+            echo "$DELETED"
+            HAS_CHANGES=true
+          fi
+
+          if [ "$HAS_CHANGES" = "false" ]; then
+            echo "No user story changes detected."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+
+          # Build combined change summary for the issue body
+          SUMMARY=""
+          if [ -n "$ADDED" ]; then
+            SUMMARY="${SUMMARY}**New stories added:**\n$(echo "$ADDED" | sed 's/^/- /')\n\n"
+          fi
+          if [ -n "$MODIFIED" ]; then
+            SUMMARY="${SUMMARY}**Stories modified:**\n$(echo "$MODIFIED" | sed 's/^/- /')\n\n"
+          fi
+          if [ -n "$DELETED" ]; then
+            SUMMARY="${SUMMARY}**Stories deleted/dropped:**\n$(echo "$DELETED" | sed 's/^/- /')\n\n"
+          fi
+
+          {
+            echo "change_summary<<US_EOF"
+            printf "%b" "$SUMMARY"
+            echo "US_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+          # Count total changed files
+          ALL_CHANGED=$(printf "%s\n%s\n%s" "$ADDED" "$MODIFIED" "$DELETED" | grep -c 'US-' || true)
+          echo "change_count=$ALL_CHANGED" >> "$GITHUB_OUTPUT"
+
+      - name: Ensure copilot label exists
+        if: steps.detect.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "copilot" \
+            --description "Assign to GitHub Copilot agent" \
+            --color "6e40c9" \
+            --force
+
+      - name: Spawn Copilot agent to process user stories
+        if: steps.detect.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          SUMMARY="${{ steps.detect.outputs.change_summary }}"
+          COUNT="${{ steps.detect.outputs.change_count }}"
+
+          gh issue create \
+            --title "Process user story changes (${COUNT} file(s))" \
+            --body "@copilot Changes have been detected in \`user-stories/\`. You are the agentic implementation engine for this repo. Read each changed story and take the required action.
+
+          **Changed stories:**
+          ${SUMMARY}
+
+          ---
+
+          ## Your Job
+
+          For each story listed above, follow these steps exactly:
+
+          ### For new or modified stories in \`backlog/\` with \`status: ready\`
+
+          1. **Read the full story file** — acceptance criteria, technical notes, out-of-scope boundaries, all of it. Do not start work until you have read the entire file.
+          2. **Move the story to \`in-progress/\`** — git mv the file from \`user-stories/backlog/\` to \`user-stories/in-progress/\`, update frontmatter \`status\` to \`in-progress\`, and commit the move before starting implementation.
+          3. **Implement the story** — satisfy every acceptance criterion listed. Make the actual code or documentation changes required.
+          4. **Verify your work** — check each AC item one by one. Do not move to done until all are satisfied.
+          5. **Move to \`done/\`** — when all ACs are verified, git mv the file from \`user-stories/in-progress/\` to \`user-stories/done/\`, update frontmatter \`status\` to \`done\`, and add \`completed: $(date +%Y-%m-%d)\`.
+          6. **Log the decision** — add a brief entry to \`core/decisions-log.md\` with the date, story ID, and a 1–2 sentence summary of what was done.
+          7. **Update \`active/\`** — update \`active/current-state.md\`, \`active/next-actions.md\`, or \`active/open-loops.md\` as appropriate to reflect completed work.
+
+          ### For modified stories in \`in-progress/\`
+
+          The story changed mid-stream. Read the new version of the story and adjust your implementation to match the updated acceptance criteria. The story stays in \`in-progress/\` until all updated ACs are satisfied.
+
+          ### For stories with \`status: draft\`
+
+          Do not pick up draft stories. Leave them in \`backlog/\` and note them as skipped in your progress report.
+
+          ### For deleted stories
+
+          The story has been dropped. No implementation action needed. If you had already started work on it (it was in \`in-progress/\`), stop that work and note the cancellation in \`core/decisions-log.md\`.
+
+          ---
+
+          ## Repo Standards (Required)
+
+          - Add frontmatter to any new file you create (title, type, status, owner, updated, tags, source_of_truth, summary)
+          - Update the \`updated:\` date on any file you modify
+          - Follow all conventions in \`skill.md\` and \`core/repo-standards.md\`
+          - Code and scripts belong in \`dev/scripts/\` — not in the root \`scripts/\` folder
+          - Do not delete the original story files — move them, never delete" \
+            --label "copilot" \
+            --assignee "Copilot"

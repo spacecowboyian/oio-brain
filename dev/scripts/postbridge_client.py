@@ -523,7 +523,7 @@ class PostBridgeClient:
 def main():
     """
     Simple CLI example showing basic usage.
-    Run: python scripts/postbridge_client.py
+    Run: python dev/scripts/postbridge_client.py
     """
     try:
         client = PostBridgeClient()

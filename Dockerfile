@@ -10,4 +10,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run Slackbot
-CMD ["python", "scripts/slackbot_social_media.py"]
+CMD ["python", "dev/scripts/slackbot_social_media.py"]

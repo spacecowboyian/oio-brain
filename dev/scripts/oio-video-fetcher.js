@@ -1,5 +1,5 @@
 // OIO Racing - YouTube Video Fetcher
-// Run with: node scripts/oio-video-fetcher.js
+// Run with: node dev/scripts/oio-video-fetcher.js
 // Requires Node.js (no extra packages needed - uses built-in https)
 // Requires environment variable: YOUTUBE_API_KEY
 //

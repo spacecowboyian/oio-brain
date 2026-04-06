@@ -48,5 +48,5 @@ The UI writes `intake/selected-photos.json` in the target branch.
 ## Notes
 
 - This UI intentionally avoids build tooling to keep adoption simple.
-- Ingestion is handled by `scripts/ingest_photos.py`.
+- Ingestion is handled by `dev/scripts/ingest_photos.py`.
 - Marking items as processed happens during ingestion.

@@ -19,9 +19,10 @@ This is where new work is defined and picked up. Every user story here represent
 
 1. **Check `backlog/` first.** Before doing any work in this repo, scan this folder for user stories with `status: ready`.
 2. **Pick up a story.** Read the full file — including acceptance criteria, technical notes, and out-of-scope boundaries — before starting.
-3. **Execute against the acceptance criteria.** Every AC item should be satisfied before the story is considered done.
-4. **Update the story status.** When work is complete, update frontmatter `status` to `done` and add `completed: YYYY-MM-DD`. Do not delete the file.
-5. **Log the decision.** Add a brief entry to `core/decisions-log.md` noting what was done.
+3. **Move to `in-progress/`.** Before beginning work, move the story file from `backlog/` to `in-progress/` and update frontmatter `status` to `in-progress`.
+4. **Execute against the acceptance criteria.** Every AC item should be satisfied before the story is considered done.
+5. **Move to `done/` when complete.** Move the story file from `in-progress/` to `done/`, update frontmatter `status` to `done`, and add `completed: YYYY-MM-DD`.
+6. **Log the decision.** Add a brief entry to `core/decisions-log.md` noting what was done.
 
 ---
 
@@ -30,7 +31,8 @@ This is where new work is defined and picked up. Every user story here represent
 | Folder | Contents |
 |---|---|
 | `backlog/` | Stories ready to be picked up (`status: ready`) or under review (`status: draft`) |
-| `done/` | Completed stories — archived for reference |
+| `in-progress/` | Stories an agent is actively working on (`status: in-progress`) |
+| `done/` | Completed stories — archived for reference (`status: done`) |
 
 ---
 
