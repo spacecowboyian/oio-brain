@@ -64,9 +64,11 @@ AUTO_IDENTIFY_THRESHOLD = 0.8
 def log(message: str, level: str = "INFO") -> None:
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
     line = f"[{ts}] {level}: {message}"
-    print(line, flush=True)
+    # Print to stderr for errors so they surface clearly; suppress stdout duplicate.
     if level in ("ERROR", "FATAL"):
         print(line, file=sys.stderr, flush=True)
+    else:
+        print(line, flush=True)
 
 
 # ---------------------------------------------------------------------------
@@ -128,10 +130,13 @@ def fetch_album_photos(creds: Credentials) -> list:
             log(f"Failed to fetch album photos: {exc}", "ERROR")
             if getattr(getattr(exc, "response", None), "status_code", None) == 403:
                 log(
-                    "Google Photos album search returned 403. "
-                    "Check album sharing / API access policy. Skipping photo fetch.",
-                    "WARN",
+                    "Google Photos album search returned 403 (Forbidden). "
+                    "Verify that GOOGLE_PHOTOS_ALBUM_ID belongs to the authenticated "
+                    "account and that the OAuth credentials include the "
+                    "'photoslibrary.readonly' scope.",
+                    "FATAL",
                 )
+                sys.exit(1)
             return items
 
         data = resp.json()
