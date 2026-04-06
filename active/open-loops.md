@@ -3,7 +3,7 @@ title: OIO Open Loops
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-01
+updated: 2026-04-06
 tags: [open-loops, decisions, unknowns, blockers]
 source_of_truth: false
 summary: All pending decisions, unanswered questions, missing information, and things waiting on money, parts, time, people, or research. Update as loops open and close.
@@ -82,6 +82,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 - **process-dailies false-positive trigger:** The `process-dailies` workflow triggers on any push to `intake/dailies/` — including the permanent `intake/dailies/README.md`. When that README was pushed as infrastructure, the automation opened a processing issue. The workflow should be scoped to ignore README.md files in the dailies folder to prevent future false-positives.
 - **2025 autocross results missing:** The `oio_results.json` file did not include 2025 KCRSCCA autocross data. No 2025 AX results are in the brain. Confirm whether Ian, Ryan, or others competed in 2025 AX and source that data.
 - **KSRX BDR 2025 — Ian's car listed as "1985 Toyota Celica":** Source data shows Ian racing a "1985 Toyota Celica" in the O4 class at the December 2025 BDR event. Ian's known Celica is Dale (1972, HCS). This may be a source data error, or Ian drove a different car at this event. Needs confirmation. See `events/results/2025-Season-Results.md`.
+- **GOOGLE_PHOTOS_CREDENTIALS scope issue — action required:** The `process-photos` workflow fails with a 403 Forbidden error because the OAuth refresh_token in `GOOGLE_PHOTOS_CREDENTIALS` was generated without the `photoslibrary.readonly` scope. The secret IS present but the scope is wrong. Fix: run `python dev/scripts/auth_google_photos.py` locally (requires `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` env vars), complete the browser OAuth consent flow, copy the output JSON, and update the `GOOGLE_PHOTOS_CREDENTIALS` GitHub repository secret. See [workflow run](https://github.com/spacecowboyian/oio-brain/actions/runs/24018183898/job/70041588984).
 
 ---
 

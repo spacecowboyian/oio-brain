@@ -48,6 +48,7 @@ import photo_log as pl
 REPO_ROOT = Path(__file__).parent.parent
 AUTO_IDENTIFY_THRESHOLD = 0.8
 SELECTED_PHOTOS_PATH = REPO_ROOT / "intake" / "selected-photos.json"
+REQUIRED_SCOPES = ["https://www.googleapis.com/auth/photoslibrary.readonly"]
 
 
 # ---------------------------------------------------------------------------
@@ -79,12 +80,17 @@ def load_credentials() -> Credentials:
         log(f"Invalid GOOGLE_PHOTOS_CREDENTIALS JSON: {exc}", "FATAL")
         sys.exit(1)
 
+    # Use scopes stored in the credentials JSON when available; otherwise fall
+    # back to the required scopes so the intent is explicit.
+    stored_scopes = creds_dict.get("scopes") or REQUIRED_SCOPES
+
     creds = Credentials(
         token=None,
         refresh_token=creds_dict.get("refresh_token"),
         token_uri=creds_dict.get("token_uri", "https://oauth2.googleapis.com/token"),
         client_id=creds_dict.get("client_id"),
         client_secret=creds_dict.get("client_secret"),
+        scopes=stored_scopes,
     )
 
     try:
@@ -93,6 +99,20 @@ def load_credentials() -> Credentials:
     except Exception as exc:
         log(f"Failed to refresh credentials: {exc}", "FATAL")
         sys.exit(1)
+
+    # Early scope validation — catch missing photoslibrary scope before the
+    # first API call so the failure message is unambiguous.
+    if creds.scopes:
+        missing = [s for s in REQUIRED_SCOPES if s not in creds.scopes]
+        if missing:
+            log(
+                f"OAuth token is missing required scope(s): {missing}. "
+                "Re-generate GOOGLE_PHOTOS_CREDENTIALS by running "
+                "'python dev/scripts/auth_google_photos.py' locally, "
+                "then update the GitHub repository secret.",
+                "FATAL",
+            )
+            sys.exit(1)
 
     return creds
 
@@ -122,9 +142,12 @@ def fetch_album_photos(creds: Credentials) -> list:
             # 403 indicates a policy/access constraint, not an empty album.
             if getattr(exc.response, "status_code", None) == 403:
                 raise RuntimeError(
-                    "Google Photos album search returned 403. "
-                    "Use Picker-based intake (intake/selected-photos.json) "
-                    "or update access policy."
+                    "Google Photos album search returned 403 (Forbidden). "
+                    "The OAuth credentials are missing the 'photoslibrary.readonly' scope "
+                    "or GOOGLE_PHOTOS_ALBUM_ID does not belong to the authenticated account. "
+                    "Re-generate GOOGLE_PHOTOS_CREDENTIALS by running "
+                    "'python dev/scripts/auth_google_photos.py' locally, "
+                    "then update the GitHub repository secret."
                 ) from exc
             return items
 
