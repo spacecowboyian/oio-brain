@@ -15,7 +15,7 @@ summary: Rebuild the photo ingestion pipeline to poll the OIO Google Photos albu
 
 **As** Ian (and agents acting on Ian's behalf),  
 **I want** photos added to my Google Photos album to be automatically identified, logged to the correct car's photo log, and pushed to PostBridge as a draft social post,  
-**So that** I only need to add photos to Google Photos — and optionally write a description — for the entire pipeline to run without any manual intervention beyond review in PostBridge.
+**So that** I only need to add photos to a Google Photos album — and optionally write a description — for the entire pipeline to run without any manual intervention beyond review in PostBridge.
 
 ---
 
