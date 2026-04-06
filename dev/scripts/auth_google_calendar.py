@@ -64,10 +64,13 @@ def main() -> None:
         sys.exit(1)
 
     payload = {
-        "client_id": client_id,
-        "client_secret": client_secret,
+        "token": credentials.token,
         "refresh_token": credentials.refresh_token,
-        "token_uri": "https://oauth2.googleapis.com/token",
+        "token_uri": credentials.token_uri,
+        "client_id": credentials.client_id,
+        "client_secret": credentials.client_secret,
+        "scopes": list(credentials.scopes),
+        "expiry": credentials.expiry.isoformat() if credentials.expiry else None,
     }
 
     print("\nSuccess. Google Calendar credentials:\n")

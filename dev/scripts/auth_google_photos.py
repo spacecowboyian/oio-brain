@@ -62,15 +62,27 @@ def main():
     # Run the local server flow (opens browser for consent)
     print("Opening browser for Google Photos authorization...")
     print("If no browser opens, visit the URL printed below.\n")
-    credentials = flow.run_local_server(port=8080)
+    credentials = flow.run_local_server(
+        host="localhost",
+        port=8080,
+        open_browser=False,
+        access_type="offline",
+        prompt="consent",
+    )
+
+    if not credentials.refresh_token:
+        print("ERROR: No refresh token returned. Re-run with a fresh consent flow.")
+        sys.exit(1)
 
     # Extract the refresh token and credentials
     credentials_dict = {
-        "client_id": client_id,
-        "client_secret": client_secret,
+        "token": credentials.token,
         "refresh_token": credentials.refresh_token,
-        "token_uri": "https://oauth2.googleapis.com/token",
-        "scopes": ["https://www.googleapis.com/auth/photoslibrary.readonly"],
+        "token_uri": credentials.token_uri,
+        "client_id": credentials.client_id,
+        "client_secret": credentials.client_secret,
+        "scopes": list(credentials.scopes),
+        "expiry": credentials.expiry.isoformat() if credentials.expiry else None,
     }
 
     # Print the JSON blob for saving
