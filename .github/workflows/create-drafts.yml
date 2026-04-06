@@ -1,9 +1,8 @@
 name: Create OIO PostBridge Drafts
 
+# DEPRECATED: superseded by process-photos.yml (US-001, 2026-04-06)
+# Kept for reference only — all active scheduling removed.
 on:
-  # Run daily after caption generation
-  schedule:
-    - cron: '0 9 * * *'
   workflow_dispatch:
     inputs:
       google_id:

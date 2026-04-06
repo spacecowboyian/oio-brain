@@ -7,26 +7,22 @@ Photo metadata and workflow state are stored as markdown in the repo under:
   photos/{driver}/{vehicle-slug}/photo-log.md
 
 Unidentified photos land in:
-  photos/triage/photo-log.md
-
-Actual photo binaries are stored in Supabase Storage (oio-photos bucket).
+  photos/unknown/photo-log.md
 
 Entry format inside a photo-log.md file:
 
   ## IMG_1234.JPG
   - google_photos_id: ABC123
-  - supabase_url: https://...
-  - thumbnail_url: https://...
+  - google_photos_url: https://photos.google.com/photo/...
   - captured_at: 2026-04-01T12:00:00+00:00
   - source_description: Ian sliding through turn 3
-  - rough_caption: Ian sliding through turn 3
+  - last_description: Ian sliding through turn 3
   - vehicle_key: goblin
   - auto_identified_vehicle_key: goblin
   - identification_confidence: 0.92
-  - workflow_status: caption_generated
+  - workflow_status: auto_identified
   - final_caption: The Goblin doing what it does best at RayRocks.
   - postbridge_draft_id: pb_abc123
-  - tentative_publish_at: 2026-04-08T16:00:00+00:00
   - posted_at: none
   - notes: Blue AW11 MR2 mid-slide on dirt, 2MR door graphics, dust trail.
 """
@@ -38,9 +34,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).parent.parent.parent
 PHOTOS_ROOT = REPO_ROOT / "photos"
-TRIAGE_LOG = PHOTOS_ROOT / "triage" / "photo-log.md"
+UNKNOWN_LOG = PHOTOS_ROOT / "unknown" / "photo-log.md"
 
 # vehicle_key → (driver, folder-slug)
 VEHICLE_FOLDERS: dict[str, tuple[str, str]] = {
@@ -53,15 +49,16 @@ VEHICLE_FOLDERS: dict[str, tuple[str, str]] = {
     "tootie": ("karen", "tootie"),
     "mgb-gt": ("ryan", "mgb-gt"),
     "ae86": ("ryan", "ae86"),
+    "unknown": ("unknown", ""),
 }
 
 
 def log_path_for_vehicle(vehicle_key: Optional[str]) -> Path:
-    """Return the photo-log.md path for a vehicle_key, or the triage log if unknown."""
-    if vehicle_key and vehicle_key in VEHICLE_FOLDERS:
+    """Return the photo-log.md path for a vehicle_key, or the unknown log if unidentified."""
+    if vehicle_key and vehicle_key in VEHICLE_FOLDERS and vehicle_key != "unknown":
         driver, slug = VEHICLE_FOLDERS[vehicle_key]
         return PHOTOS_ROOT / driver / slug / "photo-log.md"
-    return TRIAGE_LOG
+    return UNKNOWN_LOG
 
 
 def ensure_log_exists(log_path: Path, vehicle_key: Optional[str] = None) -> None:
@@ -72,15 +69,14 @@ def ensure_log_exists(log_path: Path, vehicle_key: Optional[str] = None) -> None
     log_path.parent.mkdir(parents=True, exist_ok=True)
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    if log_path == TRIAGE_LOG:
-        title = "Triage — Photo Log"
-        tags = "[photos, triage, unidentified]"
+    if log_path == UNKNOWN_LOG:
+        title = "Unknown — Photo Log"
+        tags = "[photos, unknown, needs-identification]"
         summary = (
             "Photos ingested from Google Photos that could not be auto-identified. "
-            "Assign vehicle_key and set workflow_status to metadata_complete when ready "
-            "for caption generation."
+            "Add a description in the Google Photos app and the next pipeline run will retry identification."
         )
-    elif vehicle_key and vehicle_key in VEHICLE_FOLDERS:
+    elif vehicle_key and vehicle_key in VEHICLE_FOLDERS and vehicle_key != "unknown":
         driver, slug = VEHICLE_FOLDERS[vehicle_key]
         display = slug.replace("-", " ").title()
         title = f"{display} — Photo Log"
@@ -104,8 +100,8 @@ summary: {summary}
 
 # {title}
 
-> Photo entries are written by the ingestion workflow.
-> To advance a triage photo: set `vehicle_key`, optionally update `rough_caption`, then change `workflow_status` to `metadata_complete`.
+> Photo entries are written by the photo pipeline workflow.
+> Unknown photos are retried automatically when their Google Photos description changes.
 
 ---
 """
@@ -241,6 +237,44 @@ def entries_by_status(*statuses: str) -> list[dict[str, str]]:
         for entry in all_entries().values()
         if entry.get("workflow_status") in statuses
     ]
+
+
+def remove_entry(log_path: Path, google_photos_id: str) -> bool:
+    """
+    Remove an entry from a photo-log.md by google_photos_id.
+
+    Returns True if found and removed, False otherwise.
+    """
+    if not log_path.exists():
+        return False
+
+    text = log_path.read_text()
+    parts = re.split(r"^(## .+)$", text, flags=re.MULTILINE)
+    # parts[0] = preamble; then alternating ['## heading', body, ...]
+
+    found = False
+    result = [parts[0]]
+
+    i = 1
+    while i + 1 < len(parts):
+        heading = parts[i]
+        body = parts[i + 1]
+
+        if f"google_photos_id: {google_photos_id}" in body:
+            found = True
+            # Skip this entry entirely
+        else:
+            result.append(heading)
+            result.append(body)
+
+        i += 2
+
+    if not found:
+        return False
+
+    log_path.write_text("".join(result))
+    _touch_updated(log_path)
+    return True
 
 
 def _touch_updated(log_path: Path) -> None:

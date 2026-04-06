@@ -3,7 +3,7 @@ title: OIO Current State
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-05
+updated: 2026-04-06
 tags: [state, current, season-2026]
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
@@ -75,7 +75,8 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
-- **2026-04-04:** Content cadence re-established for Apr 4-10. The Fit How-To and season-reboot vlog are locked in `content/schedule.md`, and the 7-day operating cadence is now captured in `active/next-actions.md`.
+- **2026-04-06:** Photo pipeline rebuilt (US-001) — unified `dev/scripts/process_photos.py` replaces three separate scripts and the picker intake step. Polls OIO Google Photos album directly, runs Claude Vision for vehicle identification, generates captions, and creates PostBridge drafts in one run. Supabase dependency removed. Low-confidence photos route to `photos/unknown/photo-log.md` and are automatically retried when their descriptions change. Old workflows deprecated. New workflow: `.github/workflows/process-photos.yml` (every 6 hours).
+- **2026-04-04:** Content cadence re-established for Apr 4-10.
 - **2026-03-31:** Website build complete — OIO Racing website built and ready for deployment (Paperclip OUT-123). Tech stack: Astro 5 + Tailwind CSS 4 with TypeScript. Features: YouTube Data API v3 integration (with mock fallback), Instagram Basic Display API, auto-sitemap, SEO optimization (OpenGraph, Twitter Cards), mobile-first responsive design, Lighthouse 90+. Core pages ready: Homepage, Videos, Schedule, Sponsors, Merch (Ecwid-ready), Contact. Project location: `/Users/ian/.paperclip/instances/default/workspaces/8a3fa8e5-7267-4c99-8471-c89e355f6ffd/oio-racing/`. Deployment blockers: API credentials, GitHub setup, Vercel/Netlify config, domain DNS. Comprehensive README included with setup and deployment guides.
 - **2026-03-30:** Racing brand voice document complete — OIO Racing Brand Voice Document finalized (Paperclip OUT-19). Defines tone, messaging, and content pillars for the channel.
 - **2026-04-05:** Added explicit DIY execution-capacity guardrails across the brain (`README.md`, `INDEX.md`, `active/`, `core/`, and operating instructions) so agents default to conservative, runnable planning assumptions instead of multi-track optimistic plans.

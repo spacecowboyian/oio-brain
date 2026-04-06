@@ -3,7 +3,7 @@ title: OIO Brain — Decisions Log
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-05-30
+updated: 2026-04-06
 tags: [decisions, history, rationale]
 source_of_truth: true
 summary: Append-only log of significant decisions made about OIO — brand, operations, vehicles, content, business. Each entry records what was decided, why, and any follow-up implications.
@@ -20,6 +20,14 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 **Why:** Rationale.
 **Implications:** Follow-up actions or consequences, if any.
 ```
+
+---
+
+## 2026-04-06 — US-001: Album-Driven Photo Pipeline with AI Vision and PostBridge Drafts
+
+**Decision:** Rebuilt the photo ingestion pipeline as a single unified script (`dev/scripts/process_photos.py`) that polls the OIO Google Photos album, identifies vehicles via Claude Vision, generates captions, and creates PostBridge drafts — all in one run. Removed Supabase dependency entirely. Low-confidence photos route to `photos/unknown/photo-log.md` and are retried automatically when their description changes.
+**Why:** The picker-based intake (`intake/selected-photos.json`) was not being used. Three separate scripts and workflows created operational friction. This unification closes the loop from photo-add to PostBridge draft without any manual steps beyond adding a description to unknown photos.
+**Implications:** Old workflows (`ingest-photos.yml`, `generate-captions.yml`, `create-drafts.yml`) are deprecated and disabled (workflow_dispatch only). `photo_log.py` schema updated: removed `supabase_url`, `thumbnail_url`, `rough_caption`; added `google_photos_url`, `last_description`. `photos/unknown/photo-log.md` created. New workflow: `.github/workflows/process-photos.yml` runs every 6 hours.
 
 ---
 

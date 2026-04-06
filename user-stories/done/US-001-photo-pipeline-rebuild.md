@@ -1,12 +1,13 @@
 ---
 title: "US-001: Album-Driven Photo Pipeline with AI Vision and PostBridge Drafts"
 type: reference
-status: in-progress
+status: done
 owner: Ian Jennings
-updated: 2026-04-05
+updated: 2026-04-06
 tags: [photo-pipeline, google-photos, ai-vision, postbridge, agents]
 source_of_truth: false
 summary: Rebuild the photo ingestion pipeline to poll the OIO Google Photos album directly, identify cars via Claude Vision and photo descriptions, write to car photo logs, and create PostBridge draft posts — all in one unified script run.
+completed: 2026-04-06
 ---
 
 # US-001: Album-Driven Photo Pipeline with AI Vision and PostBridge Drafts
