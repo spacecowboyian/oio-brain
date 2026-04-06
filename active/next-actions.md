@@ -3,7 +3,7 @@ title: OIO Next Actions
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-05
+updated: 2026-04-06
 tags: [actions, tasks, next-steps]
 source_of_truth: false
 summary: Concrete next actions organized by area. Short and actionable only — not a project plan. Update after completing actions and when new ones are identified.
@@ -79,7 +79,10 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 ## Repo / Admin
 
-- [ ] **Add 3 GitHub repo secrets for social media indexing:** `META_ACCESS_TOKEN`, `META_FACEBOOK_PAGE_ID`, `META_INSTAGRAM_ACCOUNT_ID` — see `data/social-posts/README.md` for step-by-step setup (requires Meta Developer account + connecting Instagram Business account to Facebook Page)
+- [x] **Photo pipeline rebuilt (US-001)** — ✅ 2026-04-06: unified `process_photos.py` + new workflow live
+- [ ] **Add GitHub repo secret:** `GOOGLE_PHOTOS_ALBUM_ID` = `AF1QipMW1KCdIEBo2rMA--SpBF2pOt3pf0LkJp5X51DLN21brlvqmYanlJ1_YB11IEKnmA` — needed for new photo pipeline workflow
+- [ ] **Remove stale secrets** (no longer needed): `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`
+- [ ] **Add 3 GitHub repo secrets for social media indexing:** `META_ACCESS_TOKEN`, `META_FACEBOOK_PAGE_ID`, `META_INSTAGRAM_ACCOUNT_ID` — see `data/social-posts/README.md` for step-by-step setup
 - [ ] Fill in confirmed 2026 event dates in `events/schedules.md`
 - [ ] Add specific 2026 Fit How-To topics to the Video Ideas Backlog as they're confirmed
 - [ ] Fill in real data in Budget.md once racing costs are known

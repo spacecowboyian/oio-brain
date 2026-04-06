@@ -1,12 +1,12 @@
-name: Ingest OIO Photos (Picker + Album Fallback)
+name: Process OIO Photos (Unified Pipeline)
 
-# DEPRECATED: superseded by process-photos.yml (US-001, 2026-04-06)
-# Kept for reference only — all active scheduling removed.
 on:
+  schedule:
+    - cron: '0 */6 * * *'   # Every 6 hours
   workflow_dispatch:
 
 jobs:
-  ingest:
+  process-photos:
     runs-on: ubuntu-latest
     permissions:
       contents: write   # needed to commit updated photo-log.md files
@@ -21,25 +21,24 @@ jobs:
       - name: Install dependencies
         run: pip install requests anthropic google-auth google-auth-httplib2
 
-      - name: Ingest photos and run identification
+      - name: Run photo pipeline
         env:
           GOOGLE_PHOTOS_CREDENTIALS: ${{ secrets.GOOGLE_PHOTOS_CREDENTIALS }}
           GOOGLE_PHOTOS_ALBUM_ID: ${{ secrets.GOOGLE_PHOTOS_ALBUM_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: python dev/scripts/ingest_photos.py
+          POSTBRIDGE_API_KEY: ${{ secrets.POSTBRIDGE_API_KEY }}
+          POSTBRIDGE_ACCOUNT_IDS: ${{ secrets.POSTBRIDGE_ACCOUNT_IDS }}
+        run: python dev/scripts/process_photos.py
 
-      - name: Commit updated photo logs and picker selections
+      - name: Commit updated photo logs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add photos/
-          git add intake/selected-photos.json
           if git diff --cached --quiet; then
-            echo "No ingestion state changes to commit."
+            echo "No photo log changes to commit."
           else
-            git commit -m "chore: ingest selected/new photos [skip ci]"
+            git commit -m "chore: update photo logs from pipeline run [skip ci]"
             git push
-            echo "Ingestion updates pushed."
+            echo "Photo logs updated and pushed."
           fi

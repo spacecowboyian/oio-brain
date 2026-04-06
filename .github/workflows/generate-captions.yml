@@ -1,9 +1,8 @@
 name: Generate OIO Photo Captions
 
+# DEPRECATED: superseded by process-photos.yml (US-001, 2026-04-06)
+# Kept for reference only — all active scheduling removed.
 on:
-  # Run daily after the morning ingestion cycle
-  schedule:
-    - cron: '30 8 * * *'
   workflow_dispatch:
     inputs:
       google_id:
