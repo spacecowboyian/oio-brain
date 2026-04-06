@@ -132,7 +132,6 @@ def fetch_album_photos(creds: Credentials) -> list:
                     "Check album sharing / API access policy. Skipping photo fetch.",
                     "WARN",
                 )
-                return items
             return items
 
         data = resp.json()
