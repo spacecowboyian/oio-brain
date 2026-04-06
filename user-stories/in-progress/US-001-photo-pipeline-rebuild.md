@@ -1,7 +1,7 @@
 ---
 title: "US-001: Album-Driven Photo Pipeline with AI Vision and PostBridge Drafts"
 type: reference
-status: ready
+status: in-progress
 owner: Ian Jennings
 updated: 2026-04-05
 tags: [photo-pipeline, google-photos, ai-vision, postbridge, agents]
