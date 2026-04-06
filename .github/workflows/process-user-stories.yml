@@ -157,5 +157,4 @@ jobs:
           - Follow all conventions in \`skill.md\` and \`core/repo-standards.md\`
           - Code and scripts belong in \`dev/scripts/\` — not in the root \`scripts/\` folder
           - Do not delete the original story files — move them, never delete" \
-            --label "copilot" \
-            --assignee "Copilot"
+            --label "copilot"
