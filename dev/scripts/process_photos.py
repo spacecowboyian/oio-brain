@@ -127,10 +127,11 @@ def fetch_album_photos(creds: Credentials) -> list:
         except requests.RequestException as exc:
             log(f"Failed to fetch album photos: {exc}", "ERROR")
             if getattr(getattr(exc, "response", None), "status_code", None) == 403:
-                raise RuntimeError(
+                log(
                     "Google Photos album search returned 403. "
-                    "Check album sharing / API access policy."
-                ) from exc
+                    "Check album sharing / API access policy. Skipping photo fetch.",
+                    "WARN",
+                )
             return items
 
         data = resp.json()
