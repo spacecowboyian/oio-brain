@@ -3,10 +3,10 @@ title: Geoffrey — 1962 Renault Dauphine
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-04-05
+updated: 2026-04-07
 tags: [vehicle, dauphine, geoffrey, rally, new-acquisition]
 source_of_truth: true
-summary: Overview of Geoffrey — Ian's 1962 Renault Dauphine. Build direction is still a future rally car replica, but the car is currently not running and the engine is locked solid.
+summary: Overview of Geoffrey — Ian's 1962 Renault Dauphine. Build direction is a future rally car replica. Spark plugs removed as of April 2026; Marvel Mystery Oil soaking in cylinders and valve cover; next step is hand-crank attempt to free the locked engine.
 ---
 
 # Geoffrey — 1962 Renault Dauphine
@@ -24,7 +24,7 @@ summary: Overview of Geoffrey — Ian's 1962 Renault Dauphine. Build direction i
 | Nickname | Geoffrey |
 | Year / Make / Model | 1962 Renault Dauphine |
 | Driver | Ian Jennings |
-| Status | **Not running — engine locked** |
+| Status | **Not running — engine locked; MMO soaking; plugs + valve cover removed** |
 | Primary Use | Future rally car replica |
 | 2026 Arc | Assessment and unfreeing attempt |
 
@@ -42,7 +42,7 @@ The Dauphine is an air-cooled, rear-engine French economy car from the early 196
 
 - Acquisition date: Recent as of March 2026
 - Build direction: Rally car replica (details TBD)
-- Current condition: Not running; engine locked solid; spark plugs rusted in place
+- Current condition: Not running; engine locked solid; spark plugs removed (Apr 2026); ~895 ccs Marvel Mystery Oil soaking in cylinders; valve cover removed, interior very rusty, MMO poured in
 - Content potential: Origin story, build reveal, what-is-this-car explainer
 
 ---

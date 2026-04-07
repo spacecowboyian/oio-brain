@@ -3,7 +3,7 @@ title: OIO Current State
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-06
+updated: 2026-04-07
 tags: [state, current, season-2026]
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
@@ -43,7 +43,7 @@ The 2026 motorsport season is opening. The primary focus is:
 | Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Dual-duty workload on one car |
 | Nessie | 1982 Toyota Cressida Wagon | Ian | Building | Drag setup not complete |
 | Killer Corolla | 1977 Toyota Corolla | Ian | **Down** | 6-year resurrection, $100 mystery motor |
-| Geoffrey | 1962 Renault Dauphine | Ian | Not running — engine locked solid | Build direction not yet defined |
+| Geoffrey | 1962 Renault Dauphine | Ian | Not running — MMO soaking, plugs out | Engine locked; next: hand-crank attempt |
 
 ---
 
@@ -75,6 +75,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
+- **2026-04-07:** Geoffrey (1962 Renault Dauphine) — Free All soak worked. All four spark plugs removed (with coaxing). Distributor pulled. ~895 ccs Marvel Mystery Oil poured into spark plug holes via old 1960s metal funnel. Valve cover removed — interior very rusty. MMO also poured into valve cover to seep past seals. Engine is still locked but next attempt is hand crank with plugs out; if that fails, put in gear and push back and forth to use transmission to help break it loose. Goal: get motor running for first time in ~40 years.
 - **2026-04-06:** Photo pipeline rebuilt (US-001) — unified `dev/scripts/process_photos.py` replaces three separate scripts and the picker intake step. Polls OIO Google Photos album directly, runs Claude Vision for vehicle identification, generates captions, and creates PostBridge drafts in one run. Supabase dependency removed. Low-confidence photos route to `photos/unknown/photo-log.md` and are automatically retried when their descriptions change. Old workflows deprecated. New workflow: `.github/workflows/process-photos.yml` (every 6 hours).
 - **2026-04-04:** Content cadence re-established for Apr 4-10.
 - **2026-03-31:** Website build complete — OIO Racing website built and ready for deployment (Paperclip OUT-123). Tech stack: Astro 5 + Tailwind CSS 4 with TypeScript. Features: YouTube Data API v3 integration (with mock fallback), Instagram Basic Display API, auto-sitemap, SEO optimization (OpenGraph, Twitter Cards), mobile-first responsive design, Lighthouse 90+. Core pages ready: Homepage, Videos, Schedule, Sponsors, Merch (Ecwid-ready), Contact. Project location: `/Users/ian/.paperclip/instances/default/workspaces/8a3fa8e5-7267-4c99-8471-c89e355f6ffd/oio-racing/`. Deployment blockers: API credentials, GitHub setup, Vercel/Netlify config, domain DNS. Comprehensive README included with setup and deployment guides.

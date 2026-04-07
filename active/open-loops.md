@@ -3,7 +3,7 @@ title: OIO Open Loops
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-06
+updated: 2026-04-07
 tags: [open-loops, decisions, unknowns, blockers]
 source_of_truth: false
 summary: All pending decisions, unanswered questions, missing information, and things waiting on money, parts, time, people, or research. Update as loops open and close.
@@ -29,7 +29,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 - **Goblin rebuild budget:** Diagnostic complete but budget still unknown — depends on rebuild vs. replace decision. Once that's made, parts list and cost estimate needed.
 - **Mystery motor for Killer Corolla:** What is it? Does it run? Is it actually the right engine for the car? How long is the full rebuild?
 - **Killer Corolla TRD parts inventory:** No documented inventory yet. What TRD parts are on the car?
-- **Geoffrey (Dauphine) condition:** ✅ 2026-04-05 — Assessment complete. Spark plugs are rusted in place, the engine would not budge by hand crank, and the car is not running. Next step: Free All soak, then retry extraction or use an induction heater/tool if needed.
+- **Geoffrey (Dauphine) condition:** ✅ 2026-04-07 — Spark plugs removed after Free All soak. Distributor out. ~895 ccs Marvel Mystery Oil added through plug holes. Valve cover off (very rusty inside), MMO poured in. Engine still locked. Next: hand-crank attempt with plugs out; if fails, try transmission push method.
 - **Geoffrey build direction:** "Rally car replica" is the stated goal but no details defined. What era? What spec? What rally?
 - **Keegan's full collection — needs audit:** Keegan has roughly 8–9 cars total. The repo only covers the 1985 Tercel and Lincoln Town Car. The rest of his collection (Dustbuster vans and any other builds) need to be documented — which cars are active, which have appeared on OIO, and what years/models they are. Year confirmed for Tercel (1985); Lincoln Town Car year still unknown.
 
