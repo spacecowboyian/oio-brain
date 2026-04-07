@@ -3,7 +3,7 @@ title: OIO Next Actions
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-06
+updated: 2026-04-07
 tags: [actions, tasks, next-steps]
 source_of_truth: false
 summary: Concrete next actions organized by area. Short and actionable only — not a project plan. Update after completing actions and when new ones are identified.
@@ -44,10 +44,11 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 - [ ] Fully document Goblin rebuild — film every step for content
 - [ ] Identify and document the $100 mystery motor for Killer Corolla
-- [x] Assess Geoffrey (Dauphine) — ✅ 2026-04-05 engine is not running; plugs rusted in place; motor locked by hand crank
 - [ ] Complete TRD parts inventory on Killer Corolla
+- [x] Assess Geoffrey (Dauphine) — ✅ 2026-04-05 engine is not running; plugs rusted in place; motor locked by hand crank
+- [x] Free Geoffrey's spark plugs — ✅ 2026-04-07 plugs removed after Free All soak; ~895 ccs MMO soaking in cylinders + valve cover
+- [ ] Attempt hand crank on Geoffrey with plugs out — if locked, try putting in gear and pushing back and forth to use transmission to help break it loose
 - [ ] Define Geoffrey build direction — what kind of rally replica and to what spec
-- [ ] Free Geoffrey's spark plugs and confirm engine rotation — bring Free All, retry after soak, then document whether the motor frees up
 
 ---
 
