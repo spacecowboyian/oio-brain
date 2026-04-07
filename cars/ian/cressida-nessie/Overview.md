@@ -1,15 +1,15 @@
 ---
-title: Nessie — 1982 Toyota Cressida Wagon
+title: Nessie — 1983 Toyota Cressida Wagon
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-04-04
+updated: 2026-04-07
 tags: [vehicle, cressida, nessie, drag, building]
 source_of_truth: true
-summary: Overview of Nessie — Ian's 1982 Cressida Wagon. Currently building for drag racing. Dragstrip debut planned for 2026, with drag-and-drive in 2027 as the long-term goal.
+summary: Overview of Nessie — Ian's 1983 Cressida Wagon. Currently building for drag racing. Dragstrip debut planned for 2026, with drag-and-drive in 2027 as the long-term goal. Not a restoration — a functional build trending toward drag use with future V8 swap planned.
 ---
 
-# Nessie — 1982 Toyota Cressida Wagon
+# Nessie — 1983 Toyota Cressida Wagon
 
 > The Drag Cressie. A wagon with ambitions above its station.
 
@@ -22,19 +22,34 @@ summary: Overview of Nessie — Ian's 1982 Cressida Wagon. Currently building fo
 | Field | Value |
 |---|---|
 | Nickname | Nessie |
-| Year / Make / Model | 1982 Toyota Cressida Wagon |
+| Year / Make / Model | 1983 Toyota Cressida Wagon |
 | Driver | Ian Jennings |
 | Status | **Building** — drag setup in progress |
 | Primary Use | Drag racing (2026), drag-and-drive (2027) |
+| Current Engine | 5M-GE (inline-six, Toyota) |
+| Future Direction | V8 swap, higher horsepower, drag-and-drive capability |
+| Build Philosophy | Practical over perfect; future-proof key systems; solve constraints first |
 | 2026 Arc | First rites at the dragstrip. Targeting Thunder Valley on May 15, with Mo-Kan on May 29 as fallback. |
 
 ---
 
 ## Background
 
-A 1982 Toyota Cressida Wagon being built for the dragstrip. First strip events coming in 2026. The long game is drag-and-drive in 2027.
+A 1983 Toyota Cressida Wagon being built for the dragstrip. First strip events coming in 2026. The long game is drag-and-drive in 2027.
 
 Calling it "The Drag Cressie." A wagon built to go fast in a straight line. Classic OIO — unexpected car, unexpected discipline, documented chaos.
+
+**Not a restoration.** This is a functional build trending toward drag use, with decisions made to support:
+- Future power upgrades
+- Potential engine swap (V8 direction)
+- Simplified, serviceable systems
+- Solving foundational mechanical constraints first
+
+**Role in Fleet:**
+Nessie is one of Ian's more experimental builds. Unlike Dale (track/autocross) or the Fit (dual-purpose), Nessie is:
+- Less constrained by rules
+- More open to major drivetrain changes
+- Positioned for straight-line performance and fabrication freedom
 
 ---
 
@@ -48,32 +63,81 @@ Nessie's 2026 debut is at the dragstrip. The current target is Thunder Valley on
 
 ## Open Work / 2026 Tasks
 
-### Suspension / Drivability
-| Task | Status |
-|---|---|
-| Front Suspension (Springs + Fender Clearance) | Open |
-| Belt Tension Fix | Open |
+### Tier 1 — Must Solve to Move Forward
+| Task | Status | Priority |
+|---|---|---|
+| Fix belt/tensioning reliability | Open | Critical |
+| Resolve front ride height | In Progress | Critical |
+| Eliminate fender rubbing | Open | Critical |
 
-### Fuel / Safety
-| Task | Status |
-|---|---|
-| Fuel System Overhaul (V8-Compatible) | Open |
+### Tier 2 — Foundational System Work
+| Task | Status | Priority |
+|---|---|---|
+| Fuel System Overhaul (V8-Compatible) | In Progress | High |
+| Rear End Plan (Welded vs Stock vs 8.8) | Open | High |
+| Ford 8.8 / 9-Inch Swap (Winter 2026) | Planned | Medium |
 
-### Events / Usage
-| Task | Status |
-|---|---|
-| Drag Season Open Nights (Calendar + Prep) | In progress |
-
-### Drivetrain Planning
-| Task | Status |
-|---|---|
-| Rear End Plan (Welded vs Stock vs 8.8) | Open |
-| Ford 8.8 / 9-Inch Swap (Winter 2026) | Open |
+### Tier 3 — Event Preparation
+| Task | Status | Priority |
+|---|---|---|
+| Drag Season Open Nights (Calendar + Prep) | In Progress | High |
+| Battery replacement | Open | High |
+| Shakedown / baseline timing | Open | High |
+| Fluids / nut-and-bolt check | Open | Medium |
 
 ### Maintenance
 | Task | Status |
 |---|---|
 | Oil/Filter + Air Filter (Quarterly) | Recurring |
+
+---
+
+## Known Unknowns / Data Gaps
+
+These are major pieces that need documentation as the build progresses:
+
+### Drivetrain
+- Current engine condition and modifications
+- Transmission type and condition
+- Differential setup and condition
+
+### Suspension Details
+- Current springs (actual installed specs)
+- Shocks/struts type and condition
+- Exact wheel and tire specifications
+- Final ride height measurements
+
+### Fuel System (Current State)
+- Stock vs modified baseline
+- Current pump type
+- Tank condition
+
+### Electrical
+- Current wiring condition
+- Fuel system wiring plan
+- Ignition setup
+
+### Body / Chassis
+- Rust condition assessment
+- Structural integrity check
+- Any prior damage history
+
+### Performance Goals
+- Defined horsepower target (TBD)
+- Defined class or competition goal (TBD)
+
+---
+
+## Risks / Watchouts
+
+### Rework Risk
+If fuel system is not designed correctly now, it will need to be redone for V8. Building it right the first time is the priority.
+
+### Geometry Compounding Problems
+Ride height + wheel spec + springs all interact. Fixing one without addressing the others can create loops. Need to solve these together.
+
+### Unknown Baseline
+Without a full baseline inspection, issues may stack unexpectedly. Document as you go.
 
 ---
 
