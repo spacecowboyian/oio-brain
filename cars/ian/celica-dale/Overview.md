@@ -3,17 +3,17 @@ title: Dale — 1972 Toyota Celica
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
-tags: [vehicle, celica, dale, track, lake-garnett]
+updated: 2026-04-06
+tags: [vehicle, celica, dale, track, lake-garnett, 18rg]
 source_of_truth: true
-summary: Overview of Dale — Ian's 1972 Celica with 18R-G motor. Active, track-setup, long-term time attack goal. 2026 arc is a season-long pilgrimage toward Lake Garnett Grand Prix Revival in October.
+summary: Overview of Dale — Ian's 1972 Celica with 18R-G motor. Active track/autocross project undergoing continuous development. Major 18RG swap completed, with ongoing tuning and reliability work. Long-term goal: time attack capability.
 ---
 
 # Dale — 1972 Toyota Celica
 
-> Ian's track car and 2026 pilgrimage vehicle. Destination: Lake Garnett.
+> Ian's track car and content flagship. A vintage Toyota race car that sits at the intersection of track-day car, autocross competitor, long-term development project, and rolling test bed for old-school Toyota performance ideas.
 
-*Last updated: March 2026*
+*Last updated: April 2026*
 
 ---
 
@@ -24,17 +24,41 @@ summary: Overview of Dale — Ian's 1972 Celica with 18R-G motor. Active, track-
 | Nickname | Dale |
 | Year / Make / Model | 1972 Toyota Celica |
 | Driver | Ian Jennings |
-| Status | **Active** — track setup |
+| Status | **Active** — ongoing development |
 | Primary Use | Track / Autocross / Time Attack (long-term goal) |
-| 2026 Arc | Season-long pilgrimage toward Lake Garnett Grand Prix Revival (October) |
+| Engine | 18R-G twin-cam inline-four (swapped) |
+| Key Events | Halloweenie Autocross, Lake Garnett Grand Prix Revival |
+| 2026 Arc | Higher-compression 18RG rebuild, oiling/cooling upgrades, suspension geometry improvements |
+
+---
+
+## Identity & Role
+
+Dale is one of the cornerstone cars in Ian's automotive ecosystem. Within Ian's vehicle lineup, Dale represents:
+
+- **Vintage Toyota Character** — Driving feel and personality of classic Japanese performance
+- **Fabrication & Problem-Solving** — Hands-on mechanical learning platform
+- **Engine & Chassis Experimentation** — Rolling test bed for vintage Toyota performance ideas
+- **Content Flagship** — One of the most narrative-rich cars for Outside Inside Outside Racing
+
+Compared with the Fit or the MR2, Dale is less about cheap accessibility and more about serious performance intent combined with vintage motorsports personality. It is not treated as a static restoration — it is being actively evolved into a more capable and sorted competition-oriented machine while retaining the personality of a vintage Celica.
 
 ---
 
 ## Background
 
-Dale is Ian's long-game car — an early Toyota Celica running an 18R-G motor with a track-oriented setup. The long-term goal is time attack. The 2026 story is getting Dale to Lake Garnett Grand Prix Revival in October.
+Dale is Ian's long-game car — a 1972 Toyota Celica that has undergone a major 18RG engine swap documented as a six-part video series. The car has been transformed from a barn find into an active track and autocross competitor.
 
-The Lake Garnett LGPR is OIO's annual cathedral moment. Dale going there is the season arc.
+The build has involved substantial setbacks, victories, tuning lessons, and first-event milestones after major changes. Dale's story is best understood as phases, not isolated repairs:
+
+1. Pre-swap / older setup
+2. 18RG swap and initial startup
+3. Post-swap debugging and sorting
+4. First autocross reintroduction
+5. Track-event preparation and continued refinement
+6. Future higher-compression / more fully optimized 18RG phase
+
+The Lake Garnett Grand Prix Revival is OIO's annual cathedral moment, and Dale has been a featured car at this event multiple times.
 
 ---
 
