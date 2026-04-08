@@ -40,7 +40,7 @@ The 2026 motorsport season is opening. The primary focus is:
 |---|---|---|---|---|
 | The Goblin | 1985 Toyota MR2 AW11 | Ian | **Non-operational** | Diagnostic complete — bearing failure + cyl 4 at 35 PSI. Rebuild vs. replace TBD. |
 | Dale | 1972 Toyota Celica | Ian | Active — out for work | Motor at Clay County Engine Rebuilders (high-comp rebuild); body at Gary Rod and Chassis (rockers + AW11 rack). Both targeting end of May / mid-June return. |
-| Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Dual-duty workload on one car |
+| Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Clutch worn (~60k miles) but functional after bleed; will need replacement before next season |
 | Nessie | 1982 Toyota Cressida Wagon | Ian | Building | Drag setup not complete |
 | Killer Corolla | 1977 Toyota Corolla | Ian | **Down** | 6-year resurrection, $100 mystery motor |
 | Geoffrey | 1962 Renault Dauphine | Ian | Not running — MMO soaking, plugs out | Engine locked; next: hand-crank attempt |
