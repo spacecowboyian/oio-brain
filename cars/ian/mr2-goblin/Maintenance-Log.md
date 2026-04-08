@@ -25,7 +25,7 @@ summary: Maintenance and diagnostic history for The Goblin (1985 MR2 AW11). Appe
 
 - **Source:** Another 3-rib 4age from Henry — cost $350, with the melted-down motor included as part of the exchange
 - **Approach:** Tear the new motor down before installing it. Do not assume it's clean. Inspect and refresh.
-- **Transmission differential:** Still under consideration for this rebuild window — not confirmed yet
+- **Transmission differential:** ✅ Not happening — cost prohibitive and not needed to win locally
 
 ---
 

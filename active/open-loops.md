@@ -23,7 +23,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 - **Goblin — oil source in cylinder 4:** Upper area suspected but not confirmed. Valve seals? Head gasket? Rings? Oil reconfirmed present after follow-up inspection.
 - **Goblin — top-end vs. bottom-end failure relationship:** Valve motion confirmed normal (no stuck valves). Carbon buildup significant but cannot visually confirm sealing. Relationship to bearing failure still unknown.
 - **Goblin 4AG assessment status:** ✅ 2026-03-28 — Diagnostic complete. ✅ 2026-04-08 — Rebuild vs. replace decision made: replace. Sourcing 3-rib 4age from Henry for $350 + melted motor trade.
-- **Goblin differential:** Is adding a differential to the transmission during this rebuild a firm plan or still exploratory? Decision still needed — this is the right window if it's going to happen.
+- **Goblin differential:** ✅ 2026-04-08 — No limited slip differential. Cost prohibitive and not needed to win locally. Not part of this rebuild.
 - **Goblin rebuild timeline:** Target is the 3rd Kansas City rallycross event of 2026. Is that date confirmed? What is the date?
 - **Goblin rebuild budget:** Base motor cost is $350. Bearings TBD pending teardown inspection. Stock pistons assumed. New clutch needed. Hot tank cost TBD. Oil flow mod cost TBD. Full parts list not yet finalized.
 - **Goblin — 4age oil flow under G-forces:** What cheap modifications will help the engine oil better than stock under extreme lateral G-forces? Research needed before rebuild is buttoned up. See `active/next-actions.md`.
