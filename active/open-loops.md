@@ -3,7 +3,7 @@ title: OIO Open Loops
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [open-loops, decisions, unknowns, blockers]
 source_of_truth: false
 summary: All pending decisions, unanswered questions, missing information, and things waiting on money, parts, time, people, or research. Update as loops open and close.
@@ -39,7 +39,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 - **2026 rallycross schedule:** Which events is the OIO crew attending this season? Dates and locations not yet confirmed in the repo.
 - **2026 autocross schedule:** Same — no confirmed event list yet.
-- **Lake Garnett Grand Prix Revival date:** October is known but the specific date is not confirmed in the repo.
+- **Lake Garnett Grand Prix Revival date:** ✅ 2026-04-08 — Confirmed: second weekend of October 2026.
 - **Dragstrip for Nessie:** ✅ 2026-04-04 — Primary target set to Thunder Valley Friday Night Test & Tune on Friday, May 15, 2026. Fallback is Mo-Kan Fun Drags on Friday, May 29, 2026. Tech requirements captured in `cars/ian/cressida-nessie/Setup-Notes.md`.
 - **FIT OFF timing:** "Mid-season" is noted but no specific date or format details are defined.
 

@@ -12,6 +12,35 @@ Dale's maintenance history is heavily focused on cooling system reliability — 
 
 ---
 
+## Motor Rebuild — April 2026
+
+**Facility:** Clay County Engine Rebuilders
+**Motor Source:** 18RG from Hilux acquisition
+**Status:** High-compression rebuild in progress
+
+### Block Issue
+
+- Cylinders discovered to have wallowed out
+- Cannot be bored to .010 over for the high-compression pistons included in the rebuild kit
+- **Resolution:** New block sourced
+
+### Parts & Sourcing
+
+- **Primary Supplier:** Kameri (Japan) — nearly every part for the rebuild ordered from Kameri
+- **Valve Work:** Valves custom cut down from stainless steel Chevy valves by Clay County Engine Rebuilders
+
+### Post-Rebuild Configuration
+
+- Dual 45mm Weber DCOE carburetors (existing setup)
+- Rebuild and tune on the carburetors after installation
+
+### Timeline
+
+- Target completion: end of May / mid-June 2026
+- All parts expected by end of May for assembly
+
+---
+
 ## Cooling System History
 
 Cooling is one of the most repeated themes in Dale's history and has had real competitive consequences.
@@ -133,6 +162,9 @@ This kind of inspection after initial miles on a fresh engine swap is important 
 | Oct 25, 2024 | Planned oil/filter change | Before autocross event |
 | Oct 26, 2024 | Timing set to 32° BTDC | Current running configuration |
 | Oct 26, 2024 | Accelerator pump to middle position | Tuning adjustment |
+| Early 2026 | 18RG sent to Clay County Engine Rebuilders | High-compression rebuild; block wallowed out, new block sourced |
+| Apr 2026 | Kameri (Japan) parts ordered for rebuild | Nearly all rebuild parts ordered |
+| Apr 2026 | Custom valves being cut from stainless Chevy valves | By Clay County Engine Rebuilders |
 | Future | Accusump installation | 2026 strategic plan |
 | Future | Oil cooler plumbing | 2026 strategic plan |
 

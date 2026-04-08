@@ -3,10 +3,10 @@ title: Dale — 1972 Toyota Celica
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-04-06
+updated: 2026-04-08
 tags: [vehicle, celica, dale, track, lake-garnett, 18rg]
 source_of_truth: true
-summary: Overview of Dale — Ian's 1972 Celica with 18R-G motor. Active track/autocross project undergoing continuous development. Major 18RG swap completed, with ongoing tuning and reliability work. Long-term goal: time attack capability.
+summary: Overview of Dale — Ian's 1972 Celica with 18R-G motor. Active track/autocross project undergoing continuous development. Major 18RG swap completed, with ongoing tuning and reliability work. High-compression 18RG rebuild and rocker/steering rack work in progress for 2026. Long-term goal: time attack capability.
 ---
 
 # Dale — 1972 Toyota Celica
@@ -67,6 +67,28 @@ The Lake Garnett Grand Prix Revival is OIO's annual cathedral moment, and Dale h
 - **Motor:** 18R-G (twin-cam inline-four)
 - This engine is notable and worth explaining on camera — the 18R-G is not a common choice and Ian chose it for reasons worth documenting
 
+### April 2026 — High-Compression Rebuild in Progress
+
+**Rebuild Facility:** Clay County Engine Rebuilders
+**Motor Source:** 18RG from Hilux acquisition
+**Status:** High-compression rebuild in progress
+
+**Block Issue:**
+- Discovery: Cylinders have wallowed out
+- Severity: Cannot be bored to .010 over for the high-compression pistons in the rebuild kit
+- Resolution: New block sourced
+
+**Parts & Sourcing:**
+- Parts Supplier: Kameri (Japan)
+- Nearly every part for the rebuild has been ordered from Kameri
+- Valves: Custom cut down from stainless steel Chevy valves by Clay County Engine Rebuilders
+
+**Post-Rebuild Setup:**
+- Configuration: Dual 45mm Weber DCOE carburetors (existing setup)
+- Rebuild and tune on the carburetors after installation
+
+**Target Completion:** End of May / mid-June 2026
+
 ---
 
 ## KCRSCCA Competition History
@@ -126,9 +148,9 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 ### Core Build / Timeline
 | Task | Status |
 |---|---|
-| 18RG Machine Shop Drop + Parts Ordering | Open |
-| 18RG Block Search (48-Hour Decision) | Open |
-| Engine Assembly (18RG + Accusump + Oil Cooler) | Open |
+| 18RG Machine Shop Drop + Parts Ordering | **In Progress** — Clay County Engine Rebuilders; nearly all parts ordered from Kameri (Japan) |
+| 18RG Block Search (48-Hour Decision) | **Resolved** — Wallowed cylinders found; new block sourced |
+| Engine Assembly (18RG + Accusump + Oil Cooler) | Open — target end of May / mid-June 2026 |
 | Engine Install + Throttle Pull (Webers) | Open |
 | Cooling System Final Validation | Open |
 | Exhaust System (Seeburg, Post-Swap) | Open |
@@ -137,9 +159,12 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 ### Fabrication / Body
 | Task | Status |
 |---|---|
-| Rocker Panel Replacement | Open |
+| Rocker Panel Replacement | **In Progress** — KlassicFab inner + outer rockers; installation underway at Gary Rod and Chassis; target end of May / mid-June 2026 |
+| Steering Rack Conversion | **In Progress** — AW11 manual rack; custom bracket by Thomas Gary; target end of May / mid-June 2026 |
+| Fiberglass work around rockers | Pending rocker installation |
 | Hood Vent / Flute Cut + Paint | Open |
 | Paint Bumpers (Silver) | Open |
+| Paint work (post-rockers/rack) | Pending rocker + rack completion |
 | Front Fog Lights (Round) | Open |
 
 ### Reliability / Prep

@@ -3,7 +3,7 @@ title: OIO Next Actions
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [actions, tasks, next-steps]
 source_of_truth: false
 summary: Concrete next actions organized by area. Short and actionable only — not a project plan. Update after completing actions and when new ones are identified.
@@ -34,8 +34,8 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 - [ ] Get a parts cost estimate for Goblin rebuild (or source a replacement 4AG if rebuild not viable)
 - [ ] Confirm 2026 rallycross event schedule — which events, which dates
 - [ ] Confirm 2026 autocross event schedule
-- [ ] Confirm Lake Garnett Grand Prix Revival date for October
-- [ ] Assess Dale's current mechanical condition before first 2026 event
+- [x] Lake Garnett Grand Prix Revival date — ✅ 2026-04-08 second weekend of October 2026
+- [ ] Assess Dale's current mechanical condition before first 2026 event (car is currently out for work — motor at Clay County, body at Gary Rod and Chassis; check in around end of May)
 - [ ] Book Nessie's first dragstrip outing: Thunder Valley Friday Night Test & Tune on May 15, 2026; keep Mo-Kan Fun Drags on May 29, 2026 as fallback
 
 ---

@@ -3,7 +3,7 @@ title: OIO Current State
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [state, current, season-2026]
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
@@ -39,7 +39,7 @@ The 2026 motorsport season is opening. The primary focus is:
 | Nickname | Car | Driver | Status | Blocker |
 |---|---|---|---|---|
 | The Goblin | 1985 Toyota MR2 AW11 | Ian | **Non-operational** | Diagnostic complete — bearing failure + cyl 4 at 35 PSI. Rebuild vs. replace TBD. |
-| Dale | 1972 Toyota Celica | Ian | Active | None currently |
+| Dale | 1972 Toyota Celica | Ian | Active — out for work | Motor at Clay County Engine Rebuilders (high-comp rebuild); body at Gary Rod and Chassis (rockers + AW11 rack). Both targeting end of May / mid-June return. |
 | Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Dual-duty workload on one car |
 | Nessie | 1982 Toyota Cressida Wagon | Ian | Building | Drag setup not complete |
 | Killer Corolla | 1977 Toyota Corolla | Ian | **Down** | 6-year resurrection, $100 mystery motor |
@@ -75,6 +75,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
+- **2026-04-08:** Dale April 2026 update entered — (1) **Motor rebuild:** 18RG from Hilux at Clay County Engine Rebuilders. Block wallowed out; new block sourced. All parts (nearly) ordered from Kameri (Japan). Custom stainless valves cut by Clay County. Target: end of May / mid-June. Post-rebuild config: dual 45mm Weber DCOE. (2) **Body work:** at Gary Rod and Chassis (Thomas Gary) — KlassicFab inner + outer rockers being installed; AW11 manual steering rack conversion with custom bracket. Both targeting end of May / mid-June. Fiberglass + paint to follow. Historical note: Thomas Gary previously installed the Ford 8.8 rear end in Dale. (3) **Lake Garnett:** confirmed second weekend of October 2026. Both workstreams coordinated to complete together as a full package.
 - **2026-04-07:** Geoffrey (1962 Renault Dauphine) — Free All soak worked. All four spark plugs removed (with coaxing). Distributor pulled. ~895 ccs Marvel Mystery Oil poured into spark plug holes via old 1960s metal funnel. Valve cover removed — interior very rusty. MMO also poured into valve cover to seep past seals. Engine is still locked but next attempt is hand crank with plugs out; if that fails, put in gear and push back and forth to use transmission to help break it loose. Goal: get motor running for first time in ~40 years.
 - **2026-04-06:** Photo pipeline rebuilt (US-001) — unified `dev/scripts/process_photos.py` replaces three separate scripts and the picker intake step. Polls OIO Google Photos album directly, runs Claude Vision for vehicle identification, generates captions, and creates PostBridge drafts in one run. Supabase dependency removed. Low-confidence photos route to `photos/unknown/photo-log.md` and are automatically retried when their descriptions change. Old workflows deprecated. New workflow: `.github/workflows/process-photos.yml` (every 6 hours).
 - **2026-04-04:** Content cadence re-established for Apr 4-10.
