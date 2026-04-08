@@ -3,7 +3,7 @@ title: OIO Brain — Decisions Log
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-04-06
+updated: 2026-04-08
 tags: [decisions, history, rationale]
 source_of_truth: true
 summary: Append-only log of significant decisions made about OIO — brand, operations, vehicles, content, business. Each entry records what was decided, why, and any follow-up implications.
@@ -20,6 +20,14 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 **Why:** Rationale.
 **Implications:** Follow-up actions or consequences, if any.
 ```
+
+---
+
+## 2026-04-08 — Goblin: Replace 4AG with 3-Rib Motor from Henry
+
+**Decision:** Source a replacement 3-rib 4age from Henry for $350, with the melted-down motor included as part of the exchange. The new motor will be torn down, inspected, and rebuilt before installation — not installed as-is.
+**Why:** The current 4AG has confirmed bearing failure and near-total cylinder 4 compression loss. A full rebuild of the failed motor is not the right call. A 3-rib unit from Henry is available now at a known cost ($350), and trading the melted motor as part of the deal keeps costs controlled. The 2AR swap is a long way off and the Renault (Geoffrey) is not a viable on-track replacement. This is the fastest path back to the rallycross grid.
+**Implications:** Ian needs to: (1) acquire motor from Henry, (2) tear down the new motor and assess it before rebuild, (3) build a parts list (stock pistons assumed; bearings need inspection before ordering), (4) order a new clutch, (5) get block and head hot-tanked at C-TEC (Miles's automotive program at North Kansas City High School), (6) research cheap oil flow improvements for the 4age under extreme G-forces, (7) rebuild and reinstall with a target of being ready for the 3rd Kansas City rallycross event of 2026.
 
 ---
 

@@ -4,7 +4,6 @@ type: state
 status: active
 owner: Ian Jennings
 updated: 2026-04-08
-tags: [state, current, season-2026]
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
 ---
@@ -38,7 +37,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Nickname | Car | Driver | Status | Blocker |
 |---|---|---|---|---|
-| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Non-operational** | Diagnostic complete — bearing failure + cyl 4 at 35 PSI. Rebuild vs. replace TBD. |
+| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Non-operational — motor swap in progress** | Decision made: source 3-rib 4age from Henry ($350 + melted motor trade); new motor will be torn down and rebuilt |
 | Dale | 1972 Toyota Celica | Ian | Active — out for work | Motor at Clay County Engine Rebuilders (high-comp rebuild); body at Gary Rod and Chassis (rockers + AW11 rack). Both targeting end of May / mid-June return. |
 | Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Dual-duty workload on one car |
 | Nessie | 1982 Toyota Cressida Wagon | Ian | Building | Drag setup not complete |
@@ -62,7 +61,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Item | Blocker | Notes |
 |---|---|---|
-| Goblin on track | Motor rebuild not complete — rebuild vs. replace decision pending | Diagnostic done: bearing failure, cyl 4 at 35 PSI |
+| Goblin on track | Motor swap not yet complete | Decision made 2026-04-08: source 3-rib 4age from Henry ($350 + melted motor trade). New motor tear down + rebuild + hot tank at C-TEC required before install. |
 | Nessie drag debut | Setup not complete | 2026 dragstrip appearance is goal |
 | Killer Corolla | Mystery motor status unknown | Full rebuild required |
 | Geoffrey build direction | Too new — no plan yet | First step: assess condition |
@@ -75,6 +74,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 ## Recent Changes
 
+- **2026-04-08:** Goblin motor swap decision made — rebuild vs. replace resolved. Ian will source a 3-rib 4age from Henry for $350 + melted motor in trade. New motor will be torn down, refreshed, and hot-tanked at C-TEC (Miles's automotive program at North Kansas City High School) before installation. New clutch required. Stock pistons assumed; bearings TBD pending inspection. Research needed on cheap oil flow improvements for the 4age under G-forces. Target: Goblin on track by the 3rd Kansas City rallycross event of 2026. Decision logged in `core/decisions-log.md`; build plan in `cars/ian/mr2-goblin/Modifications.md`.
 - **2026-04-08:** Dale April 2026 update entered — (1) **Motor rebuild:** 18RG from Hilux at Clay County Engine Rebuilders. Block wallowed out; new block sourced. All parts (nearly) ordered from Kameri (Japan). Custom stainless valves cut by Clay County. Target: end of May / mid-June. Post-rebuild config: dual 45mm Weber DCOE. (2) **Body work:** at Gary Rod and Chassis (Thomas Gary) — KlassicFab inner + outer rockers being installed; AW11 manual steering rack conversion with custom bracket. Both targeting end of May / mid-June. Fiberglass + paint to follow. Historical note: Thomas Gary previously installed the Ford 8.8 rear end in Dale. (3) **Lake Garnett:** confirmed second weekend of October 2026. Both workstreams coordinated to complete together as a full package.
 - **2026-04-07:** Geoffrey (1962 Renault Dauphine) — Free All soak worked. All four spark plugs removed (with coaxing). Distributor pulled. ~895 ccs Marvel Mystery Oil poured into spark plug holes via old 1960s metal funnel. Valve cover removed — interior very rusty. MMO also poured into valve cover to seep past seals. Engine is still locked but next attempt is hand crank with plugs out; if that fails, put in gear and push back and forth to use transmission to help break it loose. Goal: get motor running for first time in ~40 years.
 - **2026-04-06:** Photo pipeline rebuilt (US-001) — unified `dev/scripts/process_photos.py` replaces three separate scripts and the picker intake step. Polls OIO Google Photos album directly, runs Claude Vision for vehicle identification, generates captions, and creates PostBridge drafts in one run. Supabase dependency removed. Low-confidence photos route to `photos/unknown/photo-log.md` and are automatically retried when their descriptions change. Old workflows deprecated. New workflow: `.github/workflows/process-photos.yml` (every 6 hours).
