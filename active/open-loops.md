@@ -16,7 +16,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 ## Vehicles
 
-- **Fitty Cent clutch hydraulics:** ✅ 2026-04-07 — Pressure bleed completed at Ryan's shop. Pedal functional — no longer sucks to floor. Clutch disc worn (~60k miles) but usable for 2026. Replace before 2027 season. See `cars/ian/fit-fittycent/Maintenance-Log.md`.
+- **Fitty Cent clutch hydraulics:** ✅ 2026-04-07 — Brake master replaced. Pressure bleed completed. Pedal functional — no longer sucks to floor. Clutch disc worn (~60k miles) but usable for 2026. Replace before 2027 season. See `cars/ian/fit-fittycent/Maintenance-Log.md`.
 - **Goblin motor diagnosis:** ✅ 2026-03-28 — Two-stage diagnostic complete. Initial inspection confirmed bearing failure (lock-up), cyl 4 at 35 PSI, oil contamination across all cylinders, heavy valve carbon, loose cyl 1 plug wire. Follow-up wet compression test showed cyl 4 rising to ~60 PSI (partial recovery). Root cause not yet isolated. See `cars/ian/mr2-goblin/Maintenance-Log.md`.
 - **Goblin — cyl 4 compression loss root cause:** Partially narrowed. Wet test (35→60 PSI) confirms ring sealing is a factor, but partial recovery means valve sealing may also be compromised. Heavy carbon on valve faces prevents visual confirmation of sealing surfaces.
 - **Goblin — ring sealing vs. valve sealing contribution in cyl 4:** Wet compression test is consistent with partial ring failure, but cannot rule out carbon-fouled valve sealing. Both may be active failure modes.
