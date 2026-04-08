@@ -22,11 +22,13 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 - **Goblin — ring sealing vs. valve sealing contribution in cyl 4:** Wet compression test is consistent with partial ring failure, but cannot rule out carbon-fouled valve sealing. Both may be active failure modes.
 - **Goblin — oil source in cylinder 4:** Upper area suspected but not confirmed. Valve seals? Head gasket? Rings? Oil reconfirmed present after follow-up inspection.
 - **Goblin — top-end vs. bottom-end failure relationship:** Valve motion confirmed normal (no stuck valves). Carbon buildup significant but cannot visually confirm sealing. Relationship to bearing failure still unknown.
-- **Goblin 4AG assessment status:** ✅ 2026-03-28 — Diagnostic complete. ✅ 2026-04-08 — Rebuild vs. replace decision made: replace. Sourcing 3-rib 4age from Henry for $350 + melted motor trade.
+- **Goblin 4AG assessment status:** ✅ 2026-03-28 — Diagnostic complete. ✅ 2026-04-08 — Rebuild vs. replace decision made: replace. Sourcing 3-rib 4age from Henry for $350 + melted motor trade. ✅ 2026-04-08 — Pickup confirmed Friday April 9, 2026.
 - **Goblin differential:** ✅ 2026-04-08 — No limited slip differential. Cost prohibitive and not needed to win locally. Not part of this rebuild.
-- **Goblin rebuild timeline:** Target is the 3rd Kansas City rallycross event of 2026. Is that date confirmed? What is the date?
-- **Goblin rebuild budget:** Base motor cost is $350. Bearings TBD pending teardown inspection. Stock pistons assumed. New clutch needed. Hot tank cost TBD. Oil flow mod cost TBD. Full parts list not yet finalized.
-- **Goblin — 4age oil flow under G-forces:** What cheap modifications will help the engine oil better than stock under extreme lateral G-forces? Research needed before rebuild is buttoned up. See `active/next-actions.md`.
+- **Goblin rebuild timeline:** Target is the 3rd Kansas City rallycross event of 2026. KCRX E3 = May 25 (Thunder Valley). Is that confirmed on the family calendar?
+- **Goblin rebuild budget:** Base motor cost is $350. Bearings TBD pending teardown sizing. Stock pistons confirmed. Slightly higher comp head gasket needed. Full rebuild kit + rings required. New clutch (spec TBD). Hot tank cost TBD. Oil flow mod cost TBD. Full parts list not yet finalized — research best value for dollar.
+- **Goblin — 4age oiling system under rally G-forces:** Research needed before rebuild is buttoned up: oil pickup upgrade, better oil pump, possibly 20-valve pump upgrade. Confirm if 20v pump is the standard upgrade path or if better options exist. Cost-effective solutions prioritized.
+- **Goblin motor condition (from Henry):** Main caps show light rust; no other visible wear; no signs of major damage. Bearings TBD after sizing — Henry pulled and inspected main caps. Await teardown findings.
+- **Euro Speedworks swap weekend scheduling:** Arrange with Ryan — Ian helps Ryan on MGB rebuild in exchange for lift access. Estimated 1 day swap with lift. Timing TBD after motor pickup on Apr 9.
 - **Mystery motor for Killer Corolla:** What is it? Does it run? Is it actually the right engine for the car? How long is the full rebuild?
 - **Killer Corolla TRD parts inventory:** No documented inventory yet. What TRD parts are on the car?
 - **Geoffrey (Dauphine) condition:** ✅ 2026-04-07 — Spark plugs removed after Free All soak. Distributor out. ~895 ccs Marvel Mystery Oil added through plug holes. Valve cover off (very rusty inside), MMO poured in. Engine still locked. Next: hand-crank attempt with plugs out; if fails, try transmission push method.
@@ -39,6 +41,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 - **2026 rallycross schedule:** Which events is the OIO crew attending this season? Dates and locations not yet confirmed in the repo.
 - **2026 autocross schedule:** KCR E2 (Sat Apr 25), E3 (Sun Apr 26), E5 (Sat Aug 16), E8 (Sun Sep 27), E9 (Sat Oct 24) confirmed. ⚠️ E6 date TBD (between May 17 and Sep 26).
+- **KCRX E2 (Apr 19, Holsworth Farm) — driver lineup confirmed:** Ian driving MGB GTS (Ryan's car, prepped with Ian's help at Euro Speedworks); Miles driving red bomber Miata with Larry as co-driver. Event status: ❓ Questionable — verify before committing.
 - **Lake Garnett Grand Prix Revival date:** ✅ 2026-04-07 — Oct 9–11, 2026 confirmed (8 track sessions). Updated in `events/schedules.md`.
 - **KCRX E3 May 25:** Not yet on family calendar — add when confirmed.
 - **Dragstrip for Nessie:** ✅ 2026-04-04 — Primary target set to Thunder Valley Friday Night Test & Tune on Friday, May 15, 2026. Fallback is Mo-Kan Fun Drags on Friday, May 29, 2026. Tech requirements captured in `cars/ian/cressida-nessie/Setup-Notes.md`.

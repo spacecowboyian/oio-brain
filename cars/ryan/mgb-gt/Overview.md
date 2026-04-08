@@ -3,11 +3,11 @@ title: Ryan's MGB GT — 1973 MGB GT-S
 type: vehicle
 status: active
 owner: Ryan Redenbaugh
-updated: 2026-03-28
+updated: 2026-04-08
 
 tags: [vehicle, mgb, mgb-gt, ryan, rallycross, congregation, british]
 source_of_truth: true
-summary: Overview of Ryan Redenbaugh's 1973 MGB GT-S with Toyota 4A-C motor and Corolla transmission. Active rallycross car with extensive suspension mods. Stripped to bare metal and being rebuilt — orange paint incoming, returning to rallycross soon. 11 published OIO videos.
+summary: Overview of Ryan Redenbaugh's 1973 MGB GT-S with Toyota 4A-C motor and Corolla transmission. Active rallycross car with extensive suspension mods. Stripped to bare metal and rebuilt — Ian helping Ryan finish prep for KCRX E2 (Apr 19, Holsworth Farm). Ian will drive the MGB GTS at that event. 11 published OIO videos.
 ---
 
 # Ryan's MGB GT — 1973 MGB GT-S
@@ -25,7 +25,7 @@ summary: Overview of Ryan Redenbaugh's 1973 MGB GT-S with Toyota 4A-C motor and 
 | Nickname | The MGBGT |
 | Car | 1973 MGB GT-S |
 | Driver / Owner | Ryan Redenbaugh |
-| Status | **Building** — stripped to bare metal, orange paint incoming |
+| Status | **Prepping for Apr 19 KCRX E2** — Ian helping Ryan finish build; Ian will drive at the event |
 | Engine | Toyota 4A-C with Corolla transmission |
 | Primary Use | Rallycross |
 | 2026 Arc | Active competitor; Kansas Gambler 500 |
@@ -57,7 +57,7 @@ Extensive suspension modifications. As of March 2026, the car has been stripped 
 
 ## 2026 Story Arc
 
-Ryan stripped the MGB GT to bare metal for a full rebuild — Bondo, new metal pieces, new design cues, and a fresh coat of orange paint. The car returns to rallycross competition as soon as paint is done. Kansas Gambler 500 remains on the arc as well.
+Ryan stripped the MGB GT to bare metal for a full rebuild — Bondo, new metal pieces, new design cues, and a fresh coat of orange paint. The car returns to rallycross competition at KCRX E2 (April 19, Holsworth Farm). Ian is helping Ryan finish the prep in exchange for lift access at Euro Speedworks for the Goblin motor swap. Ian will drive the MGB GTS at the Apr 19 event while the Goblin rebuild is in progress. Kansas Gambler 500 remains on the arc as well.
 
 ---
 

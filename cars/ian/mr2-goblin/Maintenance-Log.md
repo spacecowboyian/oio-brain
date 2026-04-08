@@ -4,7 +4,7 @@ type: vehicle
 status: active
 owner: Ian Jennings
 updated: 2026-04-08
-tags: [vehicle, mr2, goblin, maintenance, engine, diagnostic, steering, quick-rack, motor-swap]
+tags: [vehicle, mr2, goblin, maintenance, engine, diagnostic, steering, quick-rack, motor-swap, euro-speedworks]
 source_of_truth: true
 summary: Maintenance and diagnostic history for The Goblin (1985 MR2 AW11). Append-only log — new entries go at the top.
 ---
@@ -12,6 +12,63 @@ summary: Maintenance and diagnostic history for The Goblin (1985 MR2 AW11). Appe
 # The Goblin — Maintenance Log
 
 > Append-only. New entries go at the top.
+
+---
+
+## 2026-04-08 — Motor Acquisition Confirmed + Swap Logistics
+
+**Context:** Motor acquisition from Henry locked in for this Friday (April 9). Motor condition assessed by Henry prior to sale. Euro Speedworks identified as swap location — lift access dramatically speeds up the job.
+
+---
+
+### Motor Details (Henry's Unit)
+
+| Attribute | Value |
+|---|---|
+| Motor | 3-rib 4AGE — 1st generation, 16-valve |
+| Cost | $350 + melted motor in trade |
+| Pickup date | Friday, April 9, 2026 |
+| Condition | Set outside for a while |
+| Main caps | Light rust on main caps — no other visible wear |
+| Overall assessment | No signs of major damage |
+| Bearings | TBD after sizing — main caps pulled and inspected by Henry |
+
+---
+
+### Motor Swap Logistics
+
+| Item | Detail |
+|---|---|
+| Location | Euro Speedworks (lift access) |
+| Timeline | One weekend — estimated 1 day with a lift |
+| Arrangement | Ian helping Ryan on MGB rebuild in exchange for lift access |
+| Advantage | Lift dramatically speeds up swap vs. garage floor setup |
+
+---
+
+### Rebuild Requirements (Updated)
+
+| Area | Spec |
+|---|---|
+| Pistons | Stock-sized (confirmed) |
+| Head gasket | Slightly higher compression |
+| Rebuild kit | Full kit — all gaskets, seals, everything |
+| Rings | Standard-sized pistons |
+| Bearings | TBD after teardown inspection and sizing |
+| Clutch | New clutch required (spec TBD) |
+| Parts sourcing | Research best value for dollar on all components |
+
+---
+
+### Oiling System Research Needed
+
+The factory 4AGE oiling system is inadequate for the lateral G-forces seen in rally competition. Research required before rebuild is buttoned up:
+
+- Oil pickup upgrade
+- Better oil pump
+- Possibly: 20-valve pump upgrade (confirm if this is the standard upgrade path or if better options exist)
+- Goal: reliable oil delivery under competition conditions
+- Cost-effective solutions prioritized
 
 ---
 

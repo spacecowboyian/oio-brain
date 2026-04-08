@@ -53,7 +53,7 @@ summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCR
 |---|------|----------|--------|-------|
 | TnT | Sun Mar 8 | RayRocks | ✅ Done (non-scored) | Season shakedown — no COC |
 | E1 | Sun Mar 22 | RayRocks | ✅ Done | **COC due — Season Premiere** |
-| E2 | Sun Apr 19 | Holsworth Farm (w/ KSRX) | ❓ Questionable | Joint event with KSRX E1 |
+| E2 | Sun Apr 19 | Holsworth Farm (w/ KSRX) | ❓ Questionable | Joint event with KSRX E1. **Ian: MGB GTS (Ryan's car). Miles: red bomber Miata (Larry co-driver). MGB prep underway at Euro Speedworks.** |
 | E3 | Sun May 25 | Thunder Valley | ⚠️ Not on family calendar | Add to calendar |
 | E4 | Sun Jun 28 | I-35 Speedway | ✅ Confirmed | COC planned Jul 19 |
 | E5 | Sun Jul 19 | I-35 Speedway | ✅ Confirmed | COC planned Aug 16 |

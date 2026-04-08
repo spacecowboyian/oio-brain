@@ -82,11 +82,13 @@ Miles runs car #12 in class MR (Mid-size Rear-wheel drive). Known event results 
 ## Current Status
 
 - **Decision made 2026-04-08:** Replace the failed 4AG. Sourcing a 3-rib 4age from Henry for $350 + melted motor as trade.
+- **Motor pickup: Friday, April 9, 2026** — confirmed acquisition from Henry
+- **Motor condition:** Set outside for a while. Main caps show light rust; no other visible wear; no signs of major damage. Bearings TBD after sizing (main caps pulled and inspected by Henry).
 - New motor will be torn down and rebuilt before installation — not dropped in as-is
 - Block and head to be hot-tanked at C-TEC (Miles's automotive program at North Kansas City High School) to ensure clean oil passages
-- Parts list in progress: stock-sized pistons assumed; bearings TBD pending inspection
-- New clutch required
-- Research pending: cheap methods to improve 4age oil flow under extreme G-forces
+- **Parts list confirmed:** Stock-sized pistons; slightly higher compression head gasket; full rebuild kit (all gaskets, seals, everything); rings for standard-sized pistons; bearings TBD after inspection; new clutch (spec TBD). Research: best value for dollar on all parts.
+- **Oiling system research needed:** Factory oiling inadequate for rally G-forces. Research oil pickup, better oil pump, and possibly 20-valve pump upgrade before buttoning up rebuild.
+- **Swap location: Euro Speedworks** — Ian helping Ryan on MGB rebuild in exchange for lift access. Estimated 1 day with lift.
 - **Target:** Goblin running and racing by the 3rd Kansas City rallycross event of 2026
 - **2AR swap and Renault (Geoffrey) are not viable paths** — both long-term / off the table as solutions for this season
 

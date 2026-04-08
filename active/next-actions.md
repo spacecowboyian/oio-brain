@@ -30,11 +30,13 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 - [x] Diagnose Goblin motor — ✅ 2026-03-28 diagnostic complete (see Maintenance-Log.md)
 - [x] **Goblin: decide rebuild vs. replace** — ✅ 2026-04-08 Decision made: replace. Source 3-rib 4age from Henry for $350 + melted motor trade.
-- [ ] **Acquire Goblin motor from Henry** — $350 + melted motor as exchange; arrange pickup
+- [ ] **Acquire Goblin motor from Henry** — ✅ Scheduled Friday April 9, 2026. $350 + melted motor in trade.
+- [ ] **Coordinate Euro Speedworks swap weekend** — Arrange with Ryan; Ian helps Ryan on MGB rebuild in exchange for lift access; ~1 day swap with lift
 - [ ] **Tear down new Goblin motor** — inspect before any parts are ordered; do not assume it's clean
-- [ ] **Goblin parts list** — stock pistons assumed; bearings TBD pending inspection; new clutch confirmed needed
+- [ ] **Goblin parts list** — stock pistons confirmed; slightly higher comp head gasket; full rebuild kit; rings for std pistons; bearings TBD pending sizing; new clutch (spec TBD); research best value for dollar on all parts
 - [ ] **Schedule hot tank at C-TEC** — coordinate with Miles; block + head need to go through the automotive program at North Kansas City High School
-- [ ] **Research: 4age oil flow improvements under G-forces** — identify cheap mods to help the engine oil better than stock under extreme lateral loads
+- [ ] **Research: 4age oiling system upgrades** — oil pickup, better oil pump, 20-valve pump upgrade; confirm if 20v pump is standard path or if better options exist; cost-effective solutions prioritized
+- [ ] **Prep MGB GTS for Apr 19 KCRX E2** — Ian helping Ryan at Euro Speedworks; Ian driving at the event
 - [ ] Confirm 2026 rallycross event schedule — which events, which dates (need to identify the 3rd KC event as the Goblin target)
 - [ ] Confirm 2026 autocross event schedule
 - [x] Lake Garnett Grand Prix Revival date — ✅ 2026-04-07 **Oct 9–11, 2026 (8 track sessions) confirmed**
