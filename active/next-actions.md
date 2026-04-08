@@ -3,8 +3,7 @@ title: OIO Next Actions
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-07
-tags: [actions, tasks, next-steps]
+updated: 2026-04-08
 source_of_truth: false
 summary: Concrete next actions organized by area. Short and actionable only — not a project plan. Update after completing actions and when new ones are identified.
 ---
@@ -30,9 +29,13 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 ## Racing
 
 - [x] Diagnose Goblin motor — ✅ 2026-03-28 diagnostic complete (see Maintenance-Log.md)
-- [ ] **Goblin: decide rebuild vs. replace** — diagnostic confirms bearing failure + cyl 4 at 35 PSI. Is the 4AG worth rebuilding or does it need a replacement?
-- [ ] Get a parts cost estimate for Goblin rebuild (or source a replacement 4AG if rebuild not viable)
-- [ ] Confirm 2026 rallycross event schedule — which events, which dates
+- [x] **Goblin: decide rebuild vs. replace** — ✅ 2026-04-08 Decision made: replace. Source 3-rib 4age from Henry for $350 + melted motor trade.
+- [ ] **Acquire Goblin motor from Henry** — $350 + melted motor as exchange; arrange pickup
+- [ ] **Tear down new Goblin motor** — inspect before any parts are ordered; do not assume it's clean
+- [ ] **Goblin parts list** — stock pistons assumed; bearings TBD pending inspection; new clutch confirmed needed
+- [ ] **Schedule hot tank at C-TEC** — coordinate with Miles; block + head need to go through the automotive program at North Kansas City High School
+- [ ] **Research: 4age oil flow improvements under G-forces** — identify cheap mods to help the engine oil better than stock under extreme lateral loads
+- [ ] Confirm 2026 rallycross event schedule — which events, which dates (need to identify the 3rd KC event as the Goblin target)
 - [ ] Confirm 2026 autocross event schedule
 - [ ] Confirm Lake Garnett Grand Prix Revival date for October
 - [ ] Assess Dale's current mechanical condition before first 2026 event

@@ -3,8 +3,7 @@ title: OIO Open Loops
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-07
-tags: [open-loops, decisions, unknowns, blockers]
+updated: 2026-04-08
 source_of_truth: false
 summary: All pending decisions, unanswered questions, missing information, and things waiting on money, parts, time, people, or research. Update as loops open and close.
 ---
@@ -23,10 +22,11 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 - **Goblin — ring sealing vs. valve sealing contribution in cyl 4:** Wet compression test is consistent with partial ring failure, but cannot rule out carbon-fouled valve sealing. Both may be active failure modes.
 - **Goblin — oil source in cylinder 4:** Upper area suspected but not confirmed. Valve seals? Head gasket? Rings? Oil reconfirmed present after follow-up inspection.
 - **Goblin — top-end vs. bottom-end failure relationship:** Valve motion confirmed normal (no stuck valves). Carbon buildup significant but cannot visually confirm sealing. Relationship to bearing failure still unknown.
-- **Goblin 4AG assessment status:** ✅ 2026-03-28 — Diagnostic complete, but rebuild vs. replace decision not yet made. Waiting on cost assessment.
-- **Goblin differential:** Is adding a differential to the transmission during rebuild a firm plan or still exploratory?
-- **Goblin rebuild timeline:** Can it be ready for any 2026 rallycross events? What's the realistic first event if the 4AG is salvageable?
-- **Goblin rebuild budget:** Diagnostic complete but budget still unknown — depends on rebuild vs. replace decision. Once that's made, parts list and cost estimate needed.
+- **Goblin 4AG assessment status:** ✅ 2026-03-28 — Diagnostic complete. ✅ 2026-04-08 — Rebuild vs. replace decision made: replace. Sourcing 3-rib 4age from Henry for $350 + melted motor trade.
+- **Goblin differential:** Is adding a differential to the transmission during this rebuild a firm plan or still exploratory? Decision still needed — this is the right window if it's going to happen.
+- **Goblin rebuild timeline:** Target is the 3rd Kansas City rallycross event of 2026. Is that date confirmed? What is the date?
+- **Goblin rebuild budget:** Base motor cost is $350. Bearings TBD pending teardown inspection. Stock pistons assumed. New clutch needed. Hot tank cost TBD. Oil flow mod cost TBD. Full parts list not yet finalized.
+- **Goblin — 4age oil flow under G-forces:** What cheap modifications will help the engine oil better than stock under extreme lateral G-forces? Research needed before rebuild is buttoned up. See `active/next-actions.md`.
 - **Mystery motor for Killer Corolla:** What is it? Does it run? Is it actually the right engine for the car? How long is the full rebuild?
 - **Killer Corolla TRD parts inventory:** No documented inventory yet. What TRD parts are on the car?
 - **Geoffrey (Dauphine) condition:** ✅ 2026-04-07 — Spark plugs removed after Free All soak. Distributor out. ~895 ccs Marvel Mystery Oil added through plug holes. Valve cover off (very rusty inside), MMO poured in. Engine still locked. Next: hand-crank attempt with plugs out; if fails, try transmission push method.

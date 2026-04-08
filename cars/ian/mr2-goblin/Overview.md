@@ -3,17 +3,17 @@ title: The Goblin — 1985 Toyota MR2 AW11
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-29
-tags: [vehicle, mr2, goblin, rallycross, rebuild, miles-smith]
+updated: 2026-04-08
+tags: [vehicle, mr2, goblin, rallycross, rebuild, miles-smith, 4age]
 source_of_truth: true
-summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Engine non-operational as of March 2026. Full diagnostic completed 2026-03-28: confirmed bearing failure + cylinder 4 at 35 PSI. Rebuild vs. replace decision pending. Quick rack installed 2026-03-18; car competed at KCRX E1 on March 22 before engine failure.
+summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Engine non-operational as of March 2026. Decision made 2026-04-08: sourcing a replacement 3-rib 4age from Henry for $350 + melted motor trade. New motor will be torn down, refreshed, hot-tanked at C-TEC, and rebuilt. Target: ready by 3rd Kansas City rallycross event of 2026.
 ---
 
 # The Goblin — 1985 Toyota MR2 (AW11)
 
 > Ian's rallycross car. Named with appropriate menace.
 
-*Last updated: March 2026*
+*Last updated: April 2026*
 
 ---
 
@@ -24,7 +24,7 @@ summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Engine n
 | Nickname | The Goblin |
 | Year / Make / Model | 1985 Toyota MR2 AW11 |
 | Driver | Ian Jennings |
-| Status | **Non-operational** — 4AG has confirmed bearing failure + cyl 4 compression loss (35 PSI) |
+| Status | **Non-operational — motor swap in progress** — sourcing 3-rib 4age from Henry ($350 + melted motor trade); new motor will be torn down and rebuilt before install |
 | Primary Use | Rallycross |
 | 2026 Arc | Championship run or death. Season-long survival question. |
 
@@ -34,7 +34,9 @@ summary: Overview of The Goblin — Ian's 1985 MR2 AW11 rallycross car. Engine n
 
 The Goblin is Ian's rallycross car and primary source of on-camera suffering. A mid-engine AW11 MR2 that regularly reminds Ian that motorsports is humbling. Engine is non-operational as of March 2026 following a rallycross failure.
 
-Full diagnostic completed 2026-03-28. Confirmed: bearing failure (lock-up), cylinder 4 compression at 35 PSI, oil contamination across all cylinders (heaviest in cyl 1), heavy valve carbon buildup, and a loose plug wire on cylinder 1. Root cause not yet isolated. Rebuild vs. replace decision pending.
+Full diagnostic completed 2026-03-28. Confirmed: bearing failure (lock-up), cylinder 4 compression at 35 PSI, oil contamination across all cylinders (heaviest in cyl 1), heavy valve carbon buildup, and a loose plug wire on cylinder 1. Root cause not yet isolated.
+
+**Decision made 2026-04-08:** Pull the failed motor. Source a replacement 3-rib 4age from Henry for $350, with the melted-down motor traded as part of the deal. The new motor will be torn down, inspected, and rebuilt before installation. Hot tank cleaning of block and head at C-TEC (Miles's automotive program at North Kansas City High School) is planned to clear oil passages. Target: Goblin back on track by the 3rd Kansas City rallycross event of 2026.
 
 ---
 
@@ -79,20 +81,20 @@ Miles runs car #12 in class MR (Mid-size Rear-wheel drive). Known event results 
 
 ## Current Status
 
-- **Diagnostic complete as of 2026-03-28** — full engine MRI performed post-rallycross failure
-- Confirmed: bearing failure (lock-up during event), cylinder 4 at 35 PSI compression, oil in all cylinders (increasing from cyl 4 → 1), heavy valve carbon buildup
-- Also found: loose plug wire on cylinder 1 (contributing factor or pre-existing unknown)
-- Root cause not yet isolated — top-end and bottom-end failure relationship unclear
-- **Next decision:** rebuild this 4AG or replace it
-- **If rebuild:** pull engine, rebuild as cheaply as possible
-- **Also considering:** adding a differential to the transmission during the rebuild
-- Target: return to rallycross — timeline uncertain pending rebuild/replace decision
+- **Decision made 2026-04-08:** Replace the failed 4AG. Sourcing a 3-rib 4age from Henry for $350 + melted motor as trade.
+- New motor will be torn down and rebuilt before installation — not dropped in as-is
+- Block and head to be hot-tanked at C-TEC (Miles's automotive program at North Kansas City High School) to ensure clean oil passages
+- Parts list in progress: stock-sized pistons assumed; bearings TBD pending inspection
+- New clutch required
+- Research pending: cheap methods to improve 4age oil flow under extreme G-forces
+- **Target:** Goblin running and racing by the 3rd Kansas City rallycross event of 2026
+- **2AR swap and Renault (Geoffrey) are not viable paths** — both long-term / off the table as solutions for this season
 
 ---
 
 ## 2026 Story Arc
 
-The Goblin's 2026 narrative has shifted from "rebuild in progress" to a documented failure investigation. The engine MRI on March 28 confirmed bearing failure and near-total cylinder 4 compression loss. The next chapter is the rebuild-vs-replace decision — and then executing whichever path is chosen. Either way, it gets documented.
+The Goblin's 2026 narrative has escalated. After the March 28 engine MRI confirmed catastrophic failure, the rebuild-vs-replace question is now answered: another 3-rib 4age from Henry, $350, with the melted motor in trade. The new motor doesn't get a free pass — it gets torn down, inspected, refreshed, and hot-tanked before it ever sees the inside of the car. The goal is to be on track by the 3rd Kansas City event of 2026. Every step of this rebuild is content.
 
 ---
 

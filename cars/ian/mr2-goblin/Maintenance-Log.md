@@ -3,8 +3,8 @@ title: The Goblin — Maintenance Log
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-29
-tags: [vehicle, mr2, goblin, maintenance, engine, diagnostic, steering, quick-rack]
+updated: 2026-04-08
+tags: [vehicle, mr2, goblin, maintenance, engine, diagnostic, steering, quick-rack, motor-swap]
 source_of_truth: true
 summary: Maintenance and diagnostic history for The Goblin (1985 MR2 AW11). Append-only log — new entries go at the top.
 ---
@@ -12,6 +12,54 @@ summary: Maintenance and diagnostic history for The Goblin (1985 MR2 AW11). Appe
 # The Goblin — Maintenance Log
 
 > Append-only. New entries go at the top.
+
+---
+
+## 2026-04-08 — Motor Swap Decision + Rebuild Plan
+
+**Context:** Following the March 28 diagnostic that confirmed bearing failure and near-total cylinder 4 compression loss, Ian evaluated the options and made the call: don't rebuild the failed motor. Pull it, source a replacement, and rebuild that instead.
+
+---
+
+### Decision
+
+- **Source:** Another 3-rib 4age from Henry — cost $350, with the melted-down motor included as part of the exchange
+- **Approach:** Tear the new motor down before installing it. Do not assume it's clean. Inspect and refresh.
+- **Transmission differential:** Still under consideration for this rebuild window — not confirmed yet
+
+---
+
+### Rebuild Plan
+
+| Area | Plan |
+|---|---|
+| Block / Head cleaning | Hot tank at C-TEC — Miles's automotive program at North Kansas City High School |
+| Pistons | Assume stock sized; verify during teardown |
+| Bearings | TBD — inspect during teardown before ordering |
+| Clutch | New clutch required |
+| Oil system | Research needed: cheap mods to improve 4age oil flow under extreme G-forces |
+
+---
+
+### Target
+
+- Goblin rebuilt and back on track by the **3rd Kansas City rallycross event of 2026**
+
+---
+
+### Context: Why This Path
+
+- The 2AR engine swap is a long-term project — not a 2026 solution
+- The Renault (Geoffrey) is not a viable on-track replacement for the Goblin
+- Sourcing another 3-rib 4age from Henry at $350 with the melted motor in trade is the fastest and most cost-effective path back to racing
+
+---
+
+### Status
+
+- **Engine: Non-operational**
+- Decision made — execution has not yet started
+- Next step: acquire motor from Henry, begin teardown
 
 ---
 
