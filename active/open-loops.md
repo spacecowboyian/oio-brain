@@ -16,7 +16,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 ## Vehicles
 
-- **Fitty Cent clutch hydraulics:** Slave cylinder replaced but clutch still engages near the floor. Air likely in master cylinder. Cheap Chinese master installed years ago, possibly wrong spec. Next step: pressure bleed at Ryan's shop. If that fails: bench bleed or master cylinder replacement. See `cars/ian/fit-fittycent/Maintenance-Log.md`.
+- **Fitty Cent clutch hydraulics:** ✅ 2026-04-07 — Pressure bleed completed at Ryan's shop. Pedal functional — no longer sucks to floor. Clutch disc worn (~60k miles) but usable for 2026. Replace before 2027 season. See `cars/ian/fit-fittycent/Maintenance-Log.md`.
 - **Goblin motor diagnosis:** ✅ 2026-03-28 — Two-stage diagnostic complete. Initial inspection confirmed bearing failure (lock-up), cyl 4 at 35 PSI, oil contamination across all cylinders, heavy valve carbon, loose cyl 1 plug wire. Follow-up wet compression test showed cyl 4 rising to ~60 PSI (partial recovery). Root cause not yet isolated. See `cars/ian/mr2-goblin/Maintenance-Log.md`.
 - **Goblin — cyl 4 compression loss root cause:** Partially narrowed. Wet test (35→60 PSI) confirms ring sealing is a factor, but partial recovery means valve sealing may also be compromised. Heavy carbon on valve faces prevents visual confirmation of sealing surfaces.
 - **Goblin — ring sealing vs. valve sealing contribution in cyl 4:** Wet compression test is consistent with partial ring failure, but cannot rule out carbon-fouled valve sealing. Both may be active failure modes.
@@ -38,8 +38,9 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 ## Events
 
 - **2026 rallycross schedule:** Which events is the OIO crew attending this season? Dates and locations not yet confirmed in the repo.
-- **2026 autocross schedule:** Same — no confirmed event list yet.
-- **Lake Garnett Grand Prix Revival date:** October is known but the specific date is not confirmed in the repo.
+- **2026 autocross schedule:** KCR E2 (Sat Apr 25), E3 (Sun Apr 26), E5 (Sat Aug 16), E8 (Sun Sep 27), E9 (Sat Oct 24) confirmed. ⚠️ E6 date TBD (between May 17 and Sep 26).
+- **Lake Garnett Grand Prix Revival date:** ✅ 2026-04-07 — Oct 9–11, 2026 confirmed (8 track sessions). Updated in `events/schedules.md`.
+- **KCRX E3 May 25:** Not yet on family calendar — add when confirmed.
 - **Dragstrip for Nessie:** ✅ 2026-04-04 — Primary target set to Thunder Valley Friday Night Test & Tune on Friday, May 15, 2026. Fallback is Mo-Kan Fun Drags on Friday, May 29, 2026. Tech requirements captured in `cars/ian/cressida-nessie/Setup-Notes.md`.
 - **FIT OFF timing:** "Mid-season" is noted but no specific date or format details are defined.
 

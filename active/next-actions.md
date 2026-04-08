@@ -37,7 +37,7 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 - [ ] **Research: 4age oil flow improvements under G-forces** — identify cheap mods to help the engine oil better than stock under extreme lateral loads
 - [ ] Confirm 2026 rallycross event schedule — which events, which dates (need to identify the 3rd KC event as the Goblin target)
 - [ ] Confirm 2026 autocross event schedule
-- [x] Lake Garnett Grand Prix Revival date — ✅ 2026-04-08 second weekend of October 2026
+- [x] Lake Garnett Grand Prix Revival date — ✅ 2026-04-07 **Oct 9–11, 2026 (8 track sessions) confirmed**
 - [ ] Assess Dale's current mechanical condition before first 2026 event (car is currently out for work — motor at Clay County, body at Gary Rod and Chassis; check in around end of May)
 - [ ] Book Nessie's first dragstrip outing: Thunder Valley Friday Night Test & Tune on May 15, 2026; keep Mo-Kan Fun Drags on May 29, 2026 as fallback
 
@@ -87,7 +87,7 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 - [ ] **Add GitHub repo secret:** `GOOGLE_PHOTOS_ALBUM_ID` = `AF1QipMW1KCdIEBo2rMA--SpBF2pOt3pf0LkJp5X51DLN21brlvqmYanlJ1_YB11IEKnmA` — needed for new photo pipeline workflow
 - [ ] **Remove stale secrets** (no longer needed): `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`
 - [ ] **Add 3 GitHub repo secrets for social media indexing:** `META_ACCESS_TOKEN`, `META_FACEBOOK_PAGE_ID`, `META_INSTAGRAM_ACCOUNT_ID` — see `data/social-posts/README.md` for step-by-step setup
-- [ ] Fill in confirmed 2026 event dates in `events/schedules.md`
+- [x] Fill in confirmed 2026 event dates in `events/schedules.md` — ✅ 2026-04-07 KCR E2/E3/E5 + Lake Garnett confirmed. Remaining: KCR E6 + E8-9 verify.
 - [ ] Add specific 2026 Fit How-To topics to the Video Ideas Backlog as they're confirmed
 - [ ] Fill in real data in Budget.md once racing costs are known
 - [ ] Add contact info to `ops/contacts.md` for key people
