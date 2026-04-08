@@ -32,6 +32,14 @@ Ian developed an 11-month plan for Dale covering roughly the period from early 2
   - June assembly
   - August 1 engine install
 
+**April 2026 Update — Rebuild In Progress:**
+- Facility: Clay County Engine Rebuilders
+- Motor: 18RG from Hilux acquisition
+- Block issue confirmed: cylinders wallowed out, cannot bore .010 over — new block sourced
+- Parts supplier: Kameri (Japan) — nearly all parts ordered
+- Valves: custom cut from stainless Chevy valves by Clay County Engine Rebuilders
+- Target completion: end of May / mid-June 2026
+
 ### Oiling
 
 - Accusump installation in engine bay
@@ -96,8 +104,22 @@ Heavy teardown work is best done when the car doesn't need to be event-ready. Th
 **Focus: Fabrication & Body Work**
 
 **Rocker Panel Replacement**
-- Status: Open
-- Important for structural integrity and appearance
+- Status: **In Progress** — at Gary Rod and Chassis
+- Parts: KlassicFab inner and outer rockers
+- Installation underway; target end of May / mid-June 2026
+- Fiberglass work around rockers after installation
+- Paint work to follow rocker + steering rack completion
+
+**Steering Rack Conversion**
+- Status: **In Progress** — at Gary Rod and Chassis
+- Original system: old steering system
+- New system: AW11 manual steering rack
+- Custom bracket: fabricated by Thomas Gary
+- Target end of May / mid-June 2026
+
+**Fabrication Facility Note:**
+- Facility: Gary Rod and Chassis, contact: Thomas Gary
+- Thomas Gary previously installed the Ford 8.8 rear end in Dale
 
 **Hood Vent / Flute Cut + Paint**
 - Status: Open
@@ -189,7 +211,7 @@ Completing assembly by June allows time for installation and shakedown before la
 
 **Focus: Competition Season**
 
-- Lake Garnett Grand Prix Revival (October)
+- Lake Garnett Grand Prix Revival — **second weekend of October 2026** (confirmed)
 - Halloweenie Autocross (late October)
 - Other KCRSCCA events as schedule permits
 
@@ -204,9 +226,9 @@ By targeting August 1 for engine install completion and using August-September f
 
 | Item | Status | Timeline |
 |---|---|---|
-| 18RG Machine Shop Drop + Parts Ordering | Open | Early January |
-| 18RG Block Search (48-Hour Decision) | Open | With machine shop inspection |
-| Engine Assembly (18RG + Accusump + Oil Cooler) | Open | June target |
+| 18RG Machine Shop Drop + Parts Ordering | **In Progress** — Clay County Engine Rebuilders; Kameri parts ordered | Early January → end of May / mid-June |
+| 18RG Block Search (48-Hour Decision) | **Resolved** — new block sourced (original wallowed out) | Complete |
+| Engine Assembly (18RG + Accusump + Oil Cooler) | Open | June target → end of May / mid-June |
 | Engine Install + Throttle Pull (Webers) | Open | July-August |
 | Cooling System Final Validation | Open | August |
 | Exhaust System (Seeburg, Post-Swap) | Open | August |
@@ -223,7 +245,7 @@ By targeting August 1 for engine install completion and using August-September f
 
 | Item | Status | Timeline |
 |---|---|---|
-| Rocker Panel Replacement | Open | Spring |
+| Rocker Panel Replacement | **In Progress** — Gary Rod and Chassis; KlassicFab rockers | End of May / mid-June |
 | Hood Vent / Flute Cut + Paint | Open | Spring |
 | Paint Bumpers (Silver) | Open | Spring |
 | Front Fog Lights (Round) | Open | Spring |
@@ -265,6 +287,7 @@ By targeting August 1 for engine install completion and using August-September f
 
 **Machine Shop Delays:**
 - Risk: Block out of spec, requiring bore or new block search
+- **April 2026 Update:** Block issue confirmed — cylinders wallowed out, could not bore .010 over. New block sourced. Clay County Engine Rebuilders handling build.
 - Mitigation: Early January drop-off provides buffer time
 
 **Parts Availability:**

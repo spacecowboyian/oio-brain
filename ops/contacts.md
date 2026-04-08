@@ -43,7 +43,9 @@
 
 | Company | Category | Contact | Account # | Notes |
 |---|---|---|---|---|
-| | Parts supplier | | | |
+| Gary Rod and Chassis | Fabrication / Body Work | Thomas Gary | | Dale's rockers + AW11 rack; previously installed Ford 8.8 rear end |
+| Clay County Engine Rebuilders | Engine Machine Shop | | | Dale's 18RG high-compression rebuild; custom valve work |
+| Kameri | Parts Supplier (Japan) | | | Primary source for Dale's 18RG rebuild parts |
 | | Tire supplier | | | |
 | | Music license | | | |
 
