@@ -37,7 +37,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Nickname | Car | Driver | Status | Blocker |
 |---|---|---|---|---|
-| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Non-operational — motor swap in progress** | Decision made: source 3-rib 4age from Henry ($350 + melted motor trade); new motor will be torn down and rebuilt |
+| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Non-operational — motor swap in progress** | Motor confirmed: 3-rib 4AGE from Henry, $350 + melted motor trade. Pickup: Apr 9. Swap at Euro Speedworks with lift. |
 | Dale | 1972 Toyota Celica | Ian | Active — out for work | Motor at Clay County Engine Rebuilders (high-comp rebuild); body at Gary Rod and Chassis (rockers + AW11 rack). Both targeting end of May / mid-June return. |
 | Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Dual-duty workload on one car |
 | Nessie | 1982 Toyota Cressida Wagon | Ian | Building | Drag setup not complete |
@@ -61,7 +61,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Item | Blocker | Notes |
 |---|---|---|
-| Goblin on track | Motor swap not yet complete | Decision made 2026-04-08: source 3-rib 4age from Henry ($350 + melted motor trade). New motor tear down + rebuild + hot tank at C-TEC required before install. |
+| Goblin on track | Motor swap not yet complete | Motor confirmed: 3-rib 4AGE from Henry (pickup Apr 9, $350 + melted motor trade). Swap at Euro Speedworks (lift, ~1 day). New motor tear down + rebuild + hot tank at C-TEC required before install. |
 | Nessie drag debut | Setup not complete | 2026 dragstrip appearance is goal |
 | Killer Corolla | Mystery motor status unknown | Full rebuild required |
 | Geoffrey build direction | Too new — no plan yet | First step: assess condition |
@@ -73,6 +73,9 @@ The 2026 motorsport season is opening. The primary focus is:
 ---
 
 ## Recent Changes
+
+- **2026-04-08:** Goblin 4AGE sourcing confirmed — motor pickup from Henry locked in for Friday, April 9. Motor is a 3-rib 4AGE (1st gen, 16-valve), set outside for a while; main caps show light rust but no other visible wear and no signs of major damage. Henry pulled and inspected main caps; bearings TBD after sizing. Rebuild requirements updated: stock-sized pistons confirmed, slightly higher compression head gasket, full rebuild kit, rings for standard-sized pistons, bearings TBD, new clutch (spec TBD). Research needed: best value for dollar on all components + oiling system (oil pickup, better oil pump, possibly 20-valve pump upgrade). Motor swap at Euro Speedworks — Ian helping Ryan on MGB rebuild in exchange for lift access; estimated 1 day with lift. See `cars/ian/mr2-goblin/Maintenance-Log.md`.
+- **2026-04-08:** KCRX E2 (Apr 19, Holsworth Farm) driver lineup confirmed — Ian driving MGB GTS (Ryan's car, prepped with Ian's help); Miles driving red bomber Miata with Larry as co-driver. MGB prep underway at Euro Speedworks. See `events/schedules.md`.
 
 - **2026-04-07:** Fitty Cent clutch hydraulics **RESOLVED** — pressure bleed performed at Ryan's shop. Pedal is functional; clutch no longer sucks to the floor. Clutch disc worn (~60k miles) but usable for 2026 season. Replacement required before 2027. Log updated in `cars/ian/fit-fittycent/Maintenance-Log.md`.
 - **2026-04-07:** 2026 event dates confirmed — Lake Garnett Grand Prix Revival: **Oct 9–11, 2026 (8 track sessions)**. KCR Autocross: E2 Sat Apr 25, E3 Sun Apr 26, E5 Sat Aug 16 all confirmed. Remaining open: KCR E6 (TBD), E8-9 (verify Sep 27/Oct 24), KCRX E3 May 25 (not on family calendar), FIT OFF (mid-season TBD). Updated in `events/schedules.md`.
@@ -121,7 +124,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Driver | Car | Arc | Status |
 |---|---|---|---|
-| Ryan | MGB GT | Stripped to bare metal, rebuilt with Bondo + new metal + new design cues. Orange paint imminent. Returns to rallycross after paint. | Nearly ready |
+| Ryan | MGB GT | Stripped to bare metal, rebuilt with Bondo + new metal + new design cues. Orange paint imminent. **Ian helping Ryan finish prep for KCRX E2 (Apr 19). Ian will drive at that event.** | Prepping for Apr 19 |
 | Ryan | The 2001 Car | Gambler 500 Kansas run — slowly building, target later in 2026 | Building |
 | Ryan | AE86 | 1UZ V8 swap — national rallycross push | In progress |
 | Richard | ST205 | Bits and bobs; active SCCA competitor | Ongoing |

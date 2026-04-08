@@ -23,11 +23,19 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
+## 2026-04-08 — Goblin Motor Swap at Euro Speedworks + Ian Drives MGB GTS at KCRX E2
+
+**Decision:** Do the Goblin motor swap at Euro Speedworks using their lift, in exchange for Ian helping Ryan Redenbaugh finish the MGB GT build. Ian will drive Ryan's MGB GTS at KCRX E2 (April 19, Holsworth Farm) while the Goblin rebuild is in progress.
+**Why:** Euro Speedworks has a lift. Doing the swap on a lift vs. the garage floor is dramatically faster and easier — estimated 1 day. Ian helping Ryan on the MGB prep is a fair exchange that benefits both. Since the Goblin won't be ready by Apr 19, the MGB GTS gives Ian a car to race at that event.
+**Implications:** (1) Coordinate swap weekend with Ryan at Euro Speedworks after picking up motor on Apr 9. (2) Ian helps Ryan finish MGB GTS prep before Apr 19. (3) Miles drives the red bomber Miata at Apr 19 with Larry as co-driver.
+
+---
+
 ## 2026-04-08 — Goblin: Replace 4AG with 3-Rib Motor from Henry
 
 **Decision:** Source a replacement 3-rib 4age from Henry for $350, with the melted-down motor included as part of the exchange. The new motor will be torn down, inspected, and rebuilt before installation — not installed as-is.
 **Why:** The current 4AG has confirmed bearing failure and near-total cylinder 4 compression loss. A full rebuild of the failed motor is not the right call. A 3-rib unit from Henry is available now at a known cost ($350), and trading the melted motor as part of the deal keeps costs controlled. The 2AR swap is a long way off and the Renault (Geoffrey) is not a viable on-track replacement. This is the fastest path back to the rallycross grid.
-**Implications:** Ian needs to: (1) acquire motor from Henry, (2) tear down the new motor and assess it before rebuild, (3) build a parts list (stock pistons assumed; bearings need inspection before ordering), (4) order a new clutch, (5) get block and head hot-tanked at C-TEC (Miles's automotive program at North Kansas City High School), (6) research cheap oil flow improvements for the 4age under extreme G-forces, (7) rebuild and reinstall with a target of being ready for the 3rd Kansas City rallycross event of 2026.
+**Implications:** Ian needs to: (1) acquire motor from Henry (confirmed Friday April 9), (2) tear down the new motor and assess it before rebuild, (3) build a parts list (stock pistons confirmed; slightly higher comp head gasket; full rebuild kit; rings for std pistons; bearings TBD after sizing; new clutch spec TBD; research best value for dollar), (4) research oiling system upgrades (oil pickup, better oil pump, 20-valve pump option), (5) get block and head hot-tanked at C-TEC (Miles's automotive program at North Kansas City High School), (6) rebuild and reinstall with a target of being ready for the 3rd Kansas City rallycross event of 2026 (KCRX E3, May 25).
 
 ---
 
