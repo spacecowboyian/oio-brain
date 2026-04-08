@@ -38,7 +38,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 ## Events
 
 - **2026 rallycross schedule:** Which events is the OIO crew attending this season? Dates and locations not yet confirmed in the repo.
-- **2026 autocross schedule:** KCR E2 (Sat Apr 25), E3 (Sun Apr 26), E5 (Sat Aug 16) confirmed. ⚠️ E6 date TBD (between May 17 and Sep 26). ❓ E8-9 (Sep 27 and Oct 24 — verify if these are separate events or typos; currently back-to-back with E7 on Sat/Sun).
+- **2026 autocross schedule:** KCR E2 (Sat Apr 25), E3 (Sun Apr 26), E5 (Sat Aug 16), E8 (Sun Sep 27), E9 (Sat Oct 24) confirmed. ⚠️ E6 date TBD (between May 17 and Sep 26).
 - **Lake Garnett Grand Prix Revival date:** ✅ 2026-04-07 — Oct 9–11, 2026 confirmed (8 track sessions). Updated in `events/schedules.md`.
 - **KCRX E3 May 25:** Not yet on family calendar — add when confirmed.
 - **Dragstrip for Nessie:** ✅ 2026-04-04 — Primary target set to Thunder Valley Friday Night Test & Tune on Friday, May 15, 2026. Fallback is Mo-Kan Fun Drags on Friday, May 29, 2026. Tech requirements captured in `cars/ian/cressida-nessie/Setup-Notes.md`.

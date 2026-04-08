@@ -39,11 +39,11 @@ summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCR
 | 5 | Sat Aug 16 | ✅ Confirmed | |
 | 6 | TBD | ⚠️ Not on family calendar | Add to family calendar when date confirmed |
 | 7 | Sat Sep 26 | ✅ Confirmed | |
-| 8 | Sun Sep 27 | ❓ Questionable | Back-to-back with E7 |
-| 9 | Sat Oct 24 | ❓ Questionable | |
+| 8 | Sun Sep 27 | ✅ Confirmed | |
+| 9 | Sat Oct 24 | ✅ Confirmed | |
 | 10 (Halloweenie) | Sun Oct 25 | ✅ Confirmed | Annual Halloweenie event |
 
-**Confirmed: 8 of 10 · Questionable: 2 (Events #8 and #9 — verify if back-to-back or separate) · Missing from calendar: 1 (Event #6)**
+**Confirmed: 10 of 10 · Missing from calendar: 1 (Event #6 — date TBD)**
 
 ---
 
