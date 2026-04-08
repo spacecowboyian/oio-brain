@@ -150,7 +150,7 @@ summary: Rebooted 2026 video release schedule starting March 31. Replaces the or
 
 ## OCTOBER — Cathedral Month
 
-*Racing: KCRX E8/KSRX E8 Oct 4 at Holsworth ✅ · Lake Garnett Grand Prix Revival (2nd weekend — Oct 10–11 TBC) · KCR AX #9 Oct 24 ❓ · Halloweenie Oct 25 ✅*
+*Racing: KCRX E8/KSRX E8 Oct 4 at Holsworth ✅ · **Lake Garnett Grand Prix Revival Oct 9–11, 2026 ✅ Confirmed (8 track sessions)** · KCR AX #9 Oct 24 ❓ · Halloweenie Oct 25 ✅*
 
 | Date | Format | Topic | Notes |
 |---|---|---|---|

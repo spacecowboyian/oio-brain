@@ -3,7 +3,7 @@ title: Event Schedules — 2026
 type: event
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-04-07
 tags: [schedule, events, season-2026, calendar]
 source_of_truth: true
 summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCRX Rallycross (9 scored events), KSRX Rallycross (11 events), and other key events. Updated from Ian's family calendar and official schedules.
@@ -13,7 +13,7 @@ summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCR
 
 > Full 2026 racing season calendar. Sourced from Ian's family calendar and official KCRX/KSRX/KCR schedules.
 
-*Last updated: March 28, 2026*
+*Last updated: April 7, 2026*
 
 ---
 
@@ -33,19 +33,17 @@ summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCR
 | # | Date | Status | Notes |
 |---|------|--------|-------|
 | 1 | Sun Apr 12 | ✅ Confirmed | Kids' first autocross |
-| 2 | Sat Apr 25 | ❓ Questionable | Back-to-back with E3 — verify on KCR schedule |
-| 3 | Sun Apr 26 | ❓ Questionable | Back-to-back with E2 — verify on KCR schedule |
+| 2 | Sat Apr 25 | ✅ Confirmed | |
+| 3 | Sun Apr 26 | ✅ Confirmed | |
 | 4 | Sun May 17 | ✅ Confirmed | |
-| 5 | TBD | ⚠️ Not on family calendar | Add to family calendar when date confirmed |
+| 5 | Sat Aug 16 | ✅ Confirmed | |
 | 6 | TBD | ⚠️ Not on family calendar | Add to family calendar when date confirmed |
 | 7 | Sat Sep 26 | ✅ Confirmed | |
 | 8 | Sun Sep 27 | ❓ Questionable | Back-to-back with E7 |
 | 9 | Sat Oct 24 | ❓ Questionable | |
 | 10 (Halloweenie) | Sun Oct 25 | ✅ Confirmed | Annual Halloweenie event |
 
-**Confirmed: 5 of 10 · Questionable: 4 · Missing from calendar: 2 (Events #5 and #6)**
-
-> ⚠️ Events #2 and #3 are back-to-back Sat/Sun — verify these dates are correct on the official KCR schedule.
+**Confirmed: 8 of 10 · Questionable: 2 (Events #8 and #9 — verify if back-to-back or separate) · Missing from calendar: 1 (Event #6)**
 
 ---
 
@@ -97,7 +95,7 @@ summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCR
 | Fri May 29 | Cressida first dragstrip outing (fallback) | Nessie (Ian) | Mo-Kan Fun Drags if Thunder Valley slips; still inside the 4-8 week window |
 | Apr TBD | Kansas Gambler 500 | Ryan's 2001 Camry | Short series content |
 | Labor Day Week | SCCA Solo Nationals | Doug's BMW 2002 | Congregation arc — coverage TBD |
-| Oct (2nd weekend) | **Lake Garnett Grand Prix Revival** | Dale (Ian) | **THE REVIVAL — Season centerpiece COC** |
+| Oct 9–11, 2026 | **Lake Garnett Grand Prix Revival** | Dale (Ian) | **✅ Confirmed — 8 track sessions. THE REVIVAL — Season centerpiece COC** |
 
 ---
 

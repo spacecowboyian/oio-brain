@@ -3,7 +3,7 @@ title: Fitty Cent — Maintenance Log
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-29
+updated: 2026-04-07
 tags: [vehicle, honda-fit, fitty-cent, maintenance, log]
 source_of_truth: true
 summary: Running maintenance log for Fitty Cent — 2009 Honda Fit GE8. Documents all maintenance, repairs, and parts work done on the car.
@@ -49,7 +49,8 @@ summary: Running maintenance log for Fitty Cent — 2009 Honda Fit GE8. Document
 
 | Item | Priority | Notes |
 |---|---|---|
-| Clutch hydraulic pressure bleed | **HIGH** | Air in master — pressure bleed at Ryan's shop or replace master |
+| ~~Clutch hydraulic pressure bleed~~ | ~~**HIGH**~~ | ✅ 2026-04-07 — Pressure bleed complete at Ryan's shop. Pedal functional. |
+| **Clutch disc replacement** | Medium (before 2027) | Clutch worn (~60k miles) — usable for 2026, replace before 2027 |
 | Pre-season nut & bolt + brakes + fluids | High | Before first race event 2026 |
 | Oil/Filter + Air Filter | Recurring (quarterly) | |
 | 15×7.5 Wheels + 225 Tire Selection | Open | EST setup |
@@ -66,3 +67,17 @@ summary: Running maintenance log for Fitty Cent — 2009 Honda Fit GE8. Document
 - Fluid: DOT 3 — gravity bleed + pedal bleed in progress
 
 **Next steps:** Finish bleeding the new master, test drive to confirm clutch travel, monitor for return of the low-engagement symptom (plan to repeat bleed/adjust if needed).
+
+---
+
+### 2026-04-07 — Clutch Hydraulics RESOLVED — Pressure Bleed Complete
+
+**Summary:** Pressure bleed performed at Ryan's shop. Result: pedal is now functional — no longer sucks to the floor. Clutch hydraulics are resolved for the 2026 season.
+
+**Findings:**
+- Clutch disc at ~60,000 miles — worn but not slipping; usable for 2026
+- Clutch disc replacement **required before 2027 season**
+
+**Outcome:** ✅ Clutch hydraulics resolved. Car is race-ready for 2026.
+
+**Performed by:** Ian Jennings (pressure bleed at Ryan's shop)
