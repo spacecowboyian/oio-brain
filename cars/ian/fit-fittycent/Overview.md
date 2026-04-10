@@ -3,7 +3,7 @@ title: Fitty Cent — 2009 Honda Fit GE8
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-03-28
+updated: 2026-04-10
 tags: [vehicle, honda-fit, fitty-cent, autocross, rallycross, daily-driver, kids-racing]
 source_of_truth: true
 summary: Overview of Fitty Cent — Ian's 2009 Honda Fit GE8. Active daily driver, autocross car, and rallycross car. The kids (Miles and Hudson) race it in both disciplines. The How-To content subject. 2026 arc is dual-discipline double duty.
@@ -153,6 +153,7 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 ### Reliability
 | Task | Status |
 |---|---|
+| **Outer Tie Rod Replacement** | **URGENT — parts in hand, must be done by 2026-04-11. Hudson/Miles race Sunday 2026-04-12. No work = no race.** |
 | Pre-Season Nut & Bolt + Brakes + Fluids | Open |
 | Rear Spring Experiment (If Needed) | Open |
 
