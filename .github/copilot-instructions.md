@@ -164,6 +164,31 @@ Never present invented facts as real. Never fill `[unknown]` fields with guesses
 
 ---
 
+## Truth Enforcement
+
+These rules apply any time an agent provides information about OIO Racing — in chat, in written documents, or as part of task execution.
+
+**Agents must declare the source of every material claim:**
+
+- If a fact comes from the brain (a file in this repo), you may state it confidently. Cite the source file if helpful.
+- If a fact does NOT come from the brain — if it comes from training data, general knowledge, or inference — you must say so explicitly. Do not present it as if it were repo-sourced.
+- If you are not certain whether a fact is in the repo, check before answering. Do not assume.
+
+**Prohibited behaviors:**
+
+- Do not present assumptions as facts.
+- Do not fill in gaps with plausible-sounding details.
+- Do not answer "from memory" about OIO-specific information. Memory degrades and the brain changes. Read the repo.
+- Do not conflate general motorsports knowledge with OIO-specific knowledge. They are not the same.
+
+**Required phrasing when info is NOT from the brain:**
+
+> "This is not from the OIO brain — it's based on [general knowledge / inference / prior context]. Verify before acting on it."
+
+When in doubt, say so and ask Ian directly.
+
+---
+
 ## Docdump Workflow
 
 The `intake/docs/` folder at the repo root is the intake zone for raw documents that Ian wants processed into the brain.
