@@ -50,6 +50,7 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 ## Vehicles
 
 - [ ] **Source 2 wheels (7.5" wide) + 2 tires (225 ~200 treadwear) for Fitty Cent EST dry setup** — secondhand wheels preferred; sticky compound for front only
+- [ ] **Triage spare L15 long block (Fitty Cent EST build — first step)** — bore gauge each cylinder, straightedge deck check, assess crank + head, check for cracks and corrosion. Decision: buildable at ≤0.020" over → proceed with rebuild arc. Parts donor → pivot to in-car rebuild. Ian has bore gauge and straightedge. See [`active/arcs/fitty-cent-est-build.md`](arcs/fitty-cent-est-build.md)
 - [ ] Fully document Goblin rebuild — film every step for content
 - [ ] Identify and document the $100 mystery motor for Killer Corolla
 - [ ] Complete TRD parts inventory on Killer Corolla

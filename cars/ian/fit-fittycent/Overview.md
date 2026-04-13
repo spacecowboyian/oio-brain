@@ -4,16 +4,16 @@ type: vehicle
 status: active
 owner: Ian Jennings
 updated: 2026-04-13
-tags: [vehicle, honda-fit, fitty-cent, autocross, rallycross, daily-driver, kids-racing]
+tags: [vehicle, honda-fit, fitty-cent, autocross, rallycross, daily-driver, kids-racing, est, scca]
 source_of_truth: true
-summary: Overview of Fitty Cent — Ian's 2009 Honda Fit GE8. Active daily driver, autocross car, and rallycross car. The kids (Miles and Hudson) race it in both disciplines. The How-To content subject. 2026 arc is dual-discipline double duty.
+summary: Overview of Fitty Cent — Ian's 2009 Honda Fit GE8. Active daily driver, autocross car, and rallycross car. The kids (Miles and Hudson) race it in both disciplines. SCCA class is EST (E Street Touring). 2026 arc is the EST rebuild arc — spare L15 motor being built in parallel while car stays on road.
 ---
 
 # Fitty Cent — 2009 Honda Fit (GE8)
 
 > Ian's daily driver, autocross car, rallycross car, and the kids' race vehicle. It does everything.
 
-*Last updated: March 2026*
+*Last updated: April 2026*
 
 ---
 
@@ -22,17 +22,24 @@ summary: Overview of Fitty Cent — Ian's 2009 Honda Fit GE8. Active daily drive
 | Field | Value |
 |---|---|
 | Nickname | Fitty Cent |
-| Year / Make / Model | 2009 Honda Fit GE8 |
+| Year / Make / Model | 2009 Honda Fit Sport GE8 |
+| Chassis | GE8 (2nd generation US Fit) |
+| Engine | L15A7, 1.5L SOHC i-VTEC, ~117 hp stock |
+| Transmission | 5-speed manual |
+| Drivetrain | FWD |
+| Mileage | ~208,000 miles (as of April 2026) |
 | Driver | Ian Jennings / Miles Smith / Hudson Smith |
 | Status | **Active** — daily driver + both motorsport disciplines |
+| SCCA Solo Class | **E Street Touring (EST)** — 2026 rename of STF |
+| KCRX Class | TBD / verify |
 | Primary Use | Daily driver, autocross, rallycross |
-| 2026 Arc | Double duty: kids race it in both autocross AND rallycross |
+| 2026 Arc | EST rebuild arc — spare L15 built in parallel; kids racing at AX and RX events |
 
 ---
 
 ## Background
 
-Fitty Cent is the Honda Fit that does everything. Ian's daily driver. The kids' autocross car. The rallycross car. Lightly modified suspension. The GE8 generation.
+Fitty Cent is the Honda Fit that does everything. Ian's daily driver. The kids' autocross car. The rallycross car. The GE8 generation with 208k miles on the original motor.
 
 This car is the subject of the How-To content that drives most of OIO's top-of-funnel views. It is the content workhorse and the racing workhorse simultaneously.
 
@@ -46,16 +53,64 @@ This car is the subject of the How-To content that drives most of OIO's top-of-f
 - **Standing rule:** One Fit How-To per month, every month, forever
 - **Real car:** It is genuinely Ian's daily driver. The maintenance content is real.
 - **The kids race it:** Miles and Hudson are documented competitors in this car
+- **SEO engine:** Primary top-of-funnel car for OIO's Honda Fit SEO content strategy
 
 ---
 
-## Current Modifications
+## Current State (as of April 2026)
+
+### Condition
+
+- 208k miles, original motor, tired
+- **Clutch:** ~50k miles since last replacement — worn out, needs replacement
+- **Rear shocks:** OEM-stiffness KYB replacements
+- **Front shocks:** Koni Oranges planned, not yet installed
+
+### Current Modifications
 
 | System | Modification | Notes |
 |---|---|---|
-| Suspension | Lightly modified | [Update specifics as known] |
-| Tires | Continental DWS O6 (500 treadwear) | Street/event tires; note: no longer available in 15" |
-| | | |
+| Engine mount — driver's side | Hasport | Installed |
+| Engine mount — dogbone | Stiffer inserts | Not the strongest option |
+| Engine mount — passenger side | Hasport | On shelf — removed due to NVH; reinstallable |
+| Tires | Continental DWS06 (500 treadwear) | Street/event tires; no longer available in 15" |
+| Interior | Stock | — |
+| Wheels/Tires (race) | Stock or near-stock | Verify current setup |
+| ECU | Stock | FlashPro/KTuner planned for EST build |
+
+### Spare Parts Available
+
+- **Spare L15 long block** (head and block separated, sitting on shop floor)
+  - Stripped #3 spark plug hole (needs retap / Time-Sert)
+  - One intake valve bent (needs replacement)
+  - Full condition unknown — needs triage before rebuild commitment
+  - No accessories, no intake manifold
+
+---
+
+## The Dual Role
+
+Fitty Cent has to survive BOTH autocross AND rallycross. This constrains setup decisions:
+
+- Can't run ultra-stiff rallycross-hostile suspension
+- Koni Oranges are the right compromise — rebuildable, compliant enough for dirt, firm enough for pavement
+- Tire choice needs to work on both surfaces (or accept seasonal swaps)
+- Expect annual shock replacement cycle due to dirt event wear
+
+---
+
+## SCCA EST Class Notes
+
+Fitty Cent competes in **E Street Touring (EST)** — the 2026 rename of what was previously STF. Key constraints:
+
+- Max tire: 225mm / 7.5" wheel
+- No aftermarket LSD of any kind (class effectively runs open-diff)
+- No lightweight flywheel — biggest accidental DQ trap in clutch replacements
+- 0.020" max overbore with OE-type pistons
+- ECU reflash allowed; intake/header/exhaust/Koni Oranges/camber plates all legal
+
+→ Full rules reference: [`resources/scca-est-rules-reference.md`](../../../resources/scca-est-rules-reference.md)
+→ Active build arc: [`active/arcs/fitty-cent-est-build.md`](../../../active/arcs/fitty-cent-est-build.md)
 
 ---
 
@@ -68,11 +123,21 @@ OIO's Fit is the **GE8** (2009). Ryan's Fit is a **GD3** (2007). They are differ
 
 ---
 
-## 2026 Story Arc
+## 2026 Story Arc — EST Build Arc
 
-The kids are racing Fitty Cent in both autocross AND rallycross. That's a big ask of one small daily-driver car. The dual-discipline, kids-are-racing arc is a 2026 storyline.
+The 2026 arc is the **Fitty Cent EST Build Arc**: 4-episode series covering the rebuild of the spare L15 long block, the engine swap, the tune, and the kids driving the refreshed car at a real race weekend. The arc is deliberately loaded with Honda Fit SEO content the community actively searches for.
 
-**Mid-2026 target:** Miles and Hudson's documented autocross debut.
+**Arc episodes:**
+1. "The Cheapest Legal Honda Fit Race Car" — Fit How-To, rulebook episode, sets up the arc
+2. "Refreshing A Honda Fit Engine Without Cheating The Rulebook" — Vlog, rebuild + swap
+3. "Tuned. Headered. Intaked. Dyno Day." — Fit How-To, first dyno data on legal EST L15
+4. "The Tires Came To Me In A Vision" — COC episode, kids race the refreshed car
+
+**Target window:** Summer–Fall 2026. Episode 4 must land on a real race weekend after swap and tune complete.
+
+→ Full arc details: [`active/arcs/fitty-cent-est-build.md`](../../../active/arcs/fitty-cent-est-build.md)
+
+**After Episode 4:** Fitty Cent becomes "the kids' car" narratively. Frees Ian to focus on Dale, Goblin, and Killer Corolla arcs without Fitty Cent competing for screen time.
 
 ---
 
@@ -151,11 +216,21 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 ## Open Work / 2026 Tasks
 
+### EST Build Arc
+| Task | Status |
+|---|---|
+| **Triage spare L15 long block** (off-camera, normal shop work) | **Active** — measure bore, check deck, assess crank + head. Decision point: buildable or parts donor? |
+| Machine shop + rebuild (overbore, Time-Sert #3, valve job, balance) | Pending triage |
+| Clutch replacement — **MUST use OE-weight flywheel** | Pending (tied to motor swap) |
+| Header + intake + high-flow cat + cat-back install | Pending motor swap |
+| FlashPro or KTuner tune on fresh motor | Pending bolt-ons |
+
 ### Performance Setup
 | Task | Status |
 |---|---|
-| 15×7.5 Wheels + 225 Tire Selection (EST) | **Active** — AX E1 confirmed plan: 225 sticky (~200 treadwear) on 7.5" wide wheel at front; 205 340 treadwear at rear. Budget: 2 wheels + 2 tires (secondhand wheels if possible). Implement before next dry event. |
-| Koni Shock Install | Open |
+| **Source 2 wheels (15x7.5") + 2 tires (225 ~200 treadwear) for EST dry setup** | **Active** — AX E1 confirmed: 225 sticky front, 205 340 rear. Secondhand wheels preferred. Before next dry event. |
+| Koni Orange shocks all four corners | Open |
+| Front camber plates or camber bolts | Open |
 | Home Alignment (Gyroline) + Video Verify | Open |
 
 ### Reliability
@@ -163,18 +238,12 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 |---|---|
 | **Outer Tie Rod Replacement** | ✅ **DONE 2026-04-11** — Inspected Saturday before AX E1. Tie rods were fine; nothing wrong with steering. Rock found and freed from front driver-side rotor. Swapped to 15" wheels + 205 Continental 340 treadwear. |
 | Pre-Season Nut & Bolt + Brakes + Fluids | Open |
-| Rear Spring Experiment (If Needed) | Open |
 
-### Future / Acquisition
+### Mount Reassessment (post-refresh)
 | Task | Status |
 |---|---|
-| Search for Clean 09–12 Sport Manual | Open |
-| L15 High-Power Build Option (Research Gate) | Open |
-
-### Maintenance
-| Task | Status |
-|---|---|
-| Oil/Filter + Air Filter (Quarterly) | Recurring |
+| Reintroduce stiffer Hasport passenger mount after fresh motor install | Pending motor swap |
+| Upgrade dogbone inserts to full Hasport dogbone if wheel hop persists | Pending |
 
 ---
 

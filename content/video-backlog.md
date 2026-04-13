@@ -48,6 +48,14 @@ summary: Master list of all video ideas organized across 7 content buckets. Pull
 *Honda Fit mods, MR2 maintenance, Celica build, suspension/tires/alignment*
 
 ### Honda Fit How-Tos (Standing: One Per Month Forever)
+
+**EST Build Arc (4 episodes, locked — Summer–Fall 2026):**
+- [ ] **[Arc Ep 1] "The Cheapest Legal Honda Fit Race Car"** — Fit How-To, Week 1. EST rulebook explained, full build stack plan, spare motor reveal teaser. SEO: "Honda Fit SCCA autocross," "E Street Touring Honda Fit," "Honda Fit EST rules." See [`active/arcs/fitty-cent-est-build.md`](../active/arcs/fitty-cent-est-build.md)
+- [ ] **[Arc Ep 2] "Refreshing A Honda Fit Engine Without Cheating The Rulebook"** — Vlog, Week 2/4. Rebuild + swap episode. 6-hour edit cap. SEO: "Honda Fit engine rebuild," "Honda L15 rebuild," "Honda Fit clutch replacement."
+- [ ] **[Arc Ep 3] "Tuned. Headered. Intaked. Dyno Day."** — Fit How-To, Week 1. First dyno data on legal EST L15 build. Independent SEO value — nobody else making this content. SEO: "Honda Fit dyno," "Honda Fit Hondata," "GE8 horsepower."
+- [ ] **[Arc Ep 4] Church of Combustion — "The Tires Came To Me In A Vision"** — COC Sunday drop, Week 3. Kids drive refreshed Fitty Cent at real race. Scripted COC format. Runs in COC slot, not How-To.
+
+**Other Fit How-Tos (evergreen backlog):**
 - [ ] Fit alignment for autocross — what numbers, how to set them
 - [ ] Fit tire swap for rallycross — what to use, how to mount
 - [ ] Fit suspension upgrade on a budget

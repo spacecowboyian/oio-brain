@@ -23,6 +23,27 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
+## 2026-04-13 — Fitty Cent EST Build Arc Locked and Imported Into Brain
+
+**Decision:** Committed to the Fitty Cent EST Build Arc as an active 4-episode content arc for Summer–Fall 2026. Arc documents imported into brain across three files: car profile update, EST rules reference, and active arc document.
+
+**Key locked decisions within the arc:**
+1. Triage the spare L15 long block as normal shop work (off-camera), not a content moment
+2. Episode 2 (rebuild + swap) runs as a vlog — not a scripted How-To — hard 6-hour edit cap
+3. Episode 4 IS a full scripted COC episode, not a vlog with a COC cold open
+4. No baseline dyno pull on the tired motor — savings vs. tired-motor dyno session
+
+**Why:** Arc gives the Fitty Cent a proper narrative arc that converts SEO search traffic (Fit How-To episodes) into brand investment (COC payoff). Having the spare motor on the shop floor enables parallel build with no downtime to the car.
+
+**Files created/updated:**
+- `cars/ian/fit-fittycent/Overview.md` — updated with April 2026 state, EST class, spare motor, dual-role notes
+- `resources/scca-est-rules-reference.md` — new file, 2026 EST rulebook reference
+- `active/arcs/fitty-cent-est-build.md` — new file, full arc document
+
+**Implications:** Next step is spare motor triage. Everything else in the arc is blocked on that decision point.
+
+---
+
 ## 2026-04-12 — Fitty Cent EST Dry Tire Strategy Decided
 
 **Decision:** For dry autocross events in EST class, run a sticky ~200 treadwear 225 tire on 7.5" wide wheels at the front only; keep the 205 Continental 340 treadwear tires on the rear. Budget: 2 wheels and 2 tires (secondhand wheels preferred).

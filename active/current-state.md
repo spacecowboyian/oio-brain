@@ -72,6 +72,7 @@ The 2026 motorsport season is underway. KCR Autocross E1 completed April 12. Pri
 | Vlog | Active | Opens/closes at Project Board each episode |
 | Church of Combustion | Pending first event | Season opener CoC episode not yet started |
 | Kids racing documentary | Planning | Debut target: mid-2026 |
+| **Fitty Cent EST Build Arc** | **Active — planning** | 4-episode arc: rulebook ep → rebuild/swap vlog → dyno How-To → COC payoff. Spare L15 triage is first step. See [`active/arcs/fitty-cent-est-build.md`](arcs/fitty-cent-est-build.md) |
 
 ---
 
@@ -92,6 +93,7 @@ The 2026 motorsport season is underway. KCR Autocross E1 completed April 12. Pri
 
 ## Recent Changes
 
+- **2026-04-13:** Fitty Cent EST Build Arc imported into brain. Car profile updated (`cars/ian/fit-fittycent/Overview.md`), EST rules reference created (`resources/scca-est-rules-reference.md`), and full 4-episode arc document created (`active/arcs/fitty-cent-est-build.md`). Triage of spare L15 long block is first action.
 - **2026-04-13:** KCR Autocross E1 (April 12) results processed. Hudson Smith 3rd EST in Fitty Cent (57.4 best, rain). Miles Smith ~5–7th EST (59.1 best, steady improvement). Ian co-drove Doug's BMW 2002 "Fergus" in FSP — Doug won (58.4). Ian's first-ever drive of Fergus revealed: spongy brakes, dead shifter, engine misfiring, heavy white smoke late in event. Doug dismissive of mechanical issues. Results in `events/results/2026-Season-Results.md`.
 - **2026-04-13:** 4AG motor pickup confirmed complete. Motor arrived Friday April 9 from Henry. Now on engine stand in garage. Plugs likely frozen, main caps loose — minimal rotation. Parts to be ordered from Battle Garage per prior research kit. Miles Smith assigned as teardown lead. Work to begin ASAP. Log in `cars/ian/mr2-goblin/Maintenance-Log.md`.
 - **2026-04-13:** Fitty Cent dry tire strategy finalized — 225 sticky (~200 treadwear) on 7.5" front wheel, 205 340 treadwear on rear. Budget: 2 wheels + 2 tires. Secondhand wheels if possible. Updated in `cars/ian/fit-fittycent/Overview.md`.
