@@ -3,8 +3,8 @@ title: The Goblin — Maintenance Log
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-04-08
-tags: [vehicle, mr2, goblin, maintenance, engine, diagnostic, steering, quick-rack, motor-swap, euro-speedworks]
+updated: 2026-04-13
+tags: [vehicle, mr2, goblin, maintenance, engine, diagnostic, steering, quick-rack, motor-swap, euro-speedworks, 4ag-rebuild, battle-garage]
 source_of_truth: true
 summary: Maintenance and diagnostic history for The Goblin (1985 MR2 AW11). Append-only log — new entries go at the top.
 ---
@@ -12,6 +12,40 @@ summary: Maintenance and diagnostic history for The Goblin (1985 MR2 AW11). Appe
 # The Goblin — Maintenance Log
 
 > Append-only. New entries go at the top.
+
+---
+
+## 2026-04-12 — 4AG Motor on Stand; Initial Inspection
+
+**Context:** Motor arrived Friday April 9 as scheduled. Now on the engine stand in the garage.
+
+---
+
+### Initial Visual Inspection
+
+| Observation | Detail |
+|---|---|
+| Spark plugs | Likely frozen in place — there is debris/stuff down in the plug holes |
+| Rotation | Turns over very easily (main caps are loose) |
+| Rotation caution | Minimal rotation only — do not turn over much to avoid scoring bearings |
+| Other visible issues | None noted yet — full teardown required |
+
+---
+
+### Parts Plan
+
+- **Primary source:** Battle Garage — confirmed as main parts source
+- **Parts kit:** Based on previously assembled research list (should be in the brain)
+- **Action:** Ian to place parts order ASAP; verify kit details before ordering
+
+---
+
+### Teardown Leadership
+
+- **Miles Smith** assigned as project lead for teardown, assessment, measuring, and bearing spec work
+- **Ian's role:** CEO and grunt — buying the parts, supporting Miles's technical lead
+- Miles instructed to begin teardown ASAP
+- Prerequisites before teardown: get a table set up in the garage
 
 ---
 

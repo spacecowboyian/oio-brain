@@ -32,7 +32,7 @@ summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCR
 
 | # | Date | Status | Notes |
 |---|------|--------|-------|
-| 1 | Sun Apr 12 | ✅ Confirmed | Kids' first autocross |
+| 1 | Sun Apr 12 | ✅ Done | Kids' first autocross — Hudson 3rd EST (57.4 best), Miles ~5–7th EST (59.1 best). Rainy. Co-driving Fergus with Doug in FSP. |
 | 2 | Sat Apr 25 | ✅ Confirmed | |
 | 3 | Sun Apr 26 | ✅ Confirmed | |
 | 4 | Sun May 17 | ✅ Confirmed | |

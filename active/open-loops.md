@@ -3,7 +3,7 @@ title: OIO Open Loops
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-08
+updated: 2026-04-13
 source_of_truth: false
 summary: All pending decisions, unanswered questions, missing information, and things waiting on money, parts, time, people, or research. Update as loops open and close.
 ---
@@ -16,6 +16,10 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 ## Vehicles
 
+- **4AG teardown table setup:** Need to get a table set up in the garage before Miles can start the teardown. Blocker for teardown start.
+- **4AG parts order:** Parts kit was previously researched — confirm the kit is still in the brain and place the order from Battle Garage ASAP.
+- **Fitty Cent dry tire setup:** Strategy confirmed: 225 on 7.5" wide wheel at front (sticky ~200 treadwear), 205 340 treadwear at rear. Need to source 2 wheels + 2 tires before next dry autocross. Secondhand wheels preferred to save money.
+- **Fergus (BMW 2002) — Ian/Doug working relationship on car improvements:** Ian raised three specific issues after AX E1 (spongy brakes, dead shifter, engine misfiring + white smoke). Doug dismissed all three as "old car" things. Ian's position: it's a race car and needs to be treated like one. Ian plans to make one more attempt to bring specific research and proposals to Doug. If Doug continues to dismiss input, Ian will not commit to national events (Spring Nationals, Solo Nationals) in a non-competitive car. **Decision point pending.**
 - **Fitty Cent clutch hydraulics:** ✅ 2026-04-07 — Brake master replaced. Pressure bleed completed. Pedal functional — no longer sucks to floor. Clutch disc worn (~60k miles) but usable for 2026. Replace before 2027 season. See `cars/ian/fit-fittycent/Maintenance-Log.md`.
 - **Goblin motor diagnosis:** ✅ 2026-03-28 — Two-stage diagnostic complete. Initial inspection confirmed bearing failure (lock-up), cyl 4 at 35 PSI, oil contamination across all cylinders, heavy valve carbon, loose cyl 1 plug wire. Follow-up wet compression test showed cyl 4 rising to ~60 PSI (partial recovery). Root cause not yet isolated. See `cars/ian/mr2-goblin/Maintenance-Log.md`.
 - **Goblin — cyl 4 compression loss root cause:** Partially narrowed. Wet test (35→60 PSI) confirms ring sealing is a factor, but partial recovery means valve sealing may also be compromised. Heavy carbon on valve faces prevents visual confirmation of sealing surfaces.
@@ -39,6 +43,7 @@ Active as of March 2026. Mark items as resolved by adding `✅ [YYYY-MM-DD] — 
 
 ## Events
 
+- **KCRX E2 (Apr 19) — driver lineup TBD:** Ian hoping to drive Ryan's MGB. Miles hoping to drive the red bomber Miata. Neither is confirmed. Close the loop before Sunday or consider skipping rather than driving far south without a confirmed ride.
 - **2026 rallycross schedule:** Which events is the OIO crew attending this season? Dates and locations not yet confirmed in the repo.
 - **2026 autocross schedule:** KCR E2 (Sat Apr 25), E3 (Sun Apr 26), E5 (Sat Aug 16), E8 (Sun Sep 27), E9 (Sat Oct 24) confirmed. ⚠️ E6 date TBD (between May 17 and Sep 26).
 - **KCRX E2 (Apr 19, Holsworth Farm) — driver lineup confirmed:** Ian driving MGB GTS (Ryan's car, prepped with Ian's help at Euro Speedworks); Miles driving red bomber Miata with Larry as co-driver. Event status: ❓ Questionable — verify before committing.

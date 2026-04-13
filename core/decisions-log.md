@@ -3,7 +3,7 @@ title: OIO Brain — Decisions Log
 type: core
 status: active
 owner: Ian Jennings
-updated: 2026-04-08
+updated: 2026-04-13
 tags: [decisions, history, rationale]
 source_of_truth: true
 summary: Append-only log of significant decisions made about OIO — brand, operations, vehicles, content, business. Each entry records what was decided, why, and any follow-up implications.
@@ -20,6 +20,22 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 **Why:** Rationale.
 **Implications:** Follow-up actions or consequences, if any.
 ```
+
+---
+
+## 2026-04-12 — Fitty Cent EST Dry Tire Strategy Decided
+
+**Decision:** For dry autocross events in EST class, run a sticky ~200 treadwear 225 tire on 7.5" wide wheels at the front only; keep the 205 Continental 340 treadwear tires on the rear. Budget: 2 wheels and 2 tires (secondhand wheels preferred).
+**Why:** Hudson and Miles both need and want rotation from the rear. Sticky tires all around would tighten the rear too much and require suspension adjustments. Budget doesn't support 4 sticky tires right now. Front grip improvement is the biggest bang for buck. The approach lets the rear slide while providing turning grip up front.
+**Implications:** Source 2 wheels (7.5" wide) and 2 tires (~200 treadwear, 225 width) before the next dry event. Secondhand wheels preferred to save money. If this setup proves suboptimal, revisit with suspension tuning.
+
+---
+
+## 2026-04-12 — Miles Smith Assigned as 4AG Teardown Lead
+
+**Decision:** Miles Smith takes the technical lead on the 4AG spare motor teardown, assessment, and measurement (bearing sizing, etc.). Ian acts as "CEO and grunt" — makes the decisions, buys the parts, provides labor support.
+**Why:** Ian wants Miles to develop ownership over the project and gain the mechanical experience. Ian will be the execution resource and financial backer. Miles needs to step up and lead.
+**Implications:** Miles needs to begin the teardown ASAP. Prerequisite: workbench/table in the garage. Ian must order parts from Battle Garage — verify the existing research kit first.
 
 ---
 

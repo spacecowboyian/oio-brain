@@ -3,7 +3,7 @@ title: Fitty Cent — 2009 Honda Fit GE8
 type: vehicle
 status: active
 owner: Ian Jennings
-updated: 2026-04-10
+updated: 2026-04-13
 tags: [vehicle, honda-fit, fitty-cent, autocross, rallycross, daily-driver, kids-racing]
 source_of_truth: true
 summary: Overview of Fitty Cent — Ian's 2009 Honda Fit GE8. Active daily driver, autocross car, and rallycross car. The kids (Miles and Hudson) race it in both disciplines. The How-To content subject. 2026 arc is dual-discipline double duty.
@@ -87,13 +87,21 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 | 2021 | E3 | 2021-07-31 | HS | 6 | DNS | — | — | |
 | 2022 | E2 | 2022-05-01 | STS | 6 | 4th | 9 | 49.059 | |
 | 2024 | E1 | 2024-04-07 | STS | 6 | 2nd | 8 | 54.068 | |
+| 2026 | E1 | 2026-04-12 | FSP | — | — | — | — | Ian co-driving Doug's BMW 2002 "Fergus" this event — not in Fitty Cent |
 
-### AUTOCROSS — Miles Smith (Novice 2024)
+### AUTOCROSS — Hudson Smith
 
-| Year | Event | Date | Class | # | Result | Notes |
-|---|---|---|---|---|---|---|
-| 2024 | E1 | 2024-04-07 | Novice-STS | 6 | 13th (Novice) | PAX 46.508 |
-| 2024 | E4 MidDiv | 2024-06-29 | Novice-STS | 6 | 9th (Novice) | PAX 43.809 |
+| Year | Event | Date | Class | # | P | Entries | Best Time | Notes |
+|---|---|---|---|---|---|---|---|---|
+| 2026 | E1 | 2026-04-12 | EST | 6 | **3rd** | — | **57.4** | R2 57.4 was fastest in class at time of run; hit cones R3+R4 chasing pace. Rain, 340 treadwear tires. |
+
+### AUTOCROSS — Miles Smith
+
+| Year | Event | Date | Class | # | P | Entries | Best Time | Notes |
+|---|---|---|---|---|---|---|---|---|
+| 2024 | E1 | 2024-04-07 | Novice-STS | 6 | 13th (Novice) | — | PAX 46.508 | |
+| 2024 | E4 MidDiv | 2024-06-29 | Novice-STS | 6 | 9th (Novice) | — | PAX 43.809 | |
+| 2026 | E1 | 2026-04-12 | EST | 6 | ~5th–7th | — | **59.1** | Ran 68.7→63.7→59.2→59.1 — steady incremental improvement all day. Rain, 340 treadwear tires. |
 
 ### RALLYCROSS — Ian Jennings
 
@@ -146,14 +154,14 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 ### Performance Setup
 | Task | Status |
 |---|---|
-| 15×7.5 Wheels + 225 Tire Selection (EST) | Open |
+| 15×7.5 Wheels + 225 Tire Selection (EST) | **Active** — AX E1 confirmed plan: 225 sticky (~200 treadwear) on 7.5" wide wheel at front; 205 340 treadwear at rear. Budget: 2 wheels + 2 tires (secondhand wheels if possible). Implement before next dry event. |
 | Koni Shock Install | Open |
 | Home Alignment (Gyroline) + Video Verify | Open |
 
 ### Reliability
 | Task | Status |
 |---|---|
-| **Outer Tie Rod Replacement** | **URGENT — parts in hand, must be done by 2026-04-11. Hudson/Miles race Sunday 2026-04-12. No work = no race.** |
+| **Outer Tie Rod Replacement** | ✅ **DONE 2026-04-11** — Inspected Saturday before AX E1. Tie rods were fine; nothing wrong with steering. Rock found and freed from front driver-side rotor. Swapped to 15" wheels + 205 Continental 340 treadwear. |
 | Pre-Season Nut & Bolt + Brakes + Fluids | Open |
 | Rear Spring Experiment (If Needed) | Open |
 
