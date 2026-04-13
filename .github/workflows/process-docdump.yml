@@ -83,19 +83,19 @@ jobs:
 
           1. **Read each file in full** before deciding where the data belongs
           2. **Identify all relevant destinations** across the brain structure:
-             - \`active/\` for current state, priorities, open loops, or next actions
-             - Appropriate brain folders (\`brand/\`, \`content/\`, \`cars/\`, \`events/\`, \`business/\`, \`ops/\`, etc.)
-             - \`core/decisions-log.md\` for any decisions that should be logged
+             - \`brain/active/\` for current state, priorities, open loops, or next actions
+             - Appropriate brain folders (\`brain/brand/\`, \`brain/content/\`, \`brain/cars/\`, \`brain/events/\`, \`brain/business/\`, \`brain/ops/\`, etc.)
+             - \`brain/core/decisions-log.md\` for any decisions that should be logged
           3. **Distribute the data** — update existing files first; create new files only if no appropriate file exists
           4. **Follow all repo standards**:
              - Add frontmatter to any new file (title, type, status, owner, updated, tags, source_of_truth, summary)
              - Update the \`updated:\` date on any file you modify
-             - Log significant decisions in \`core/decisions-log.md\`
+             - Log significant decisions in \`brain/core/decisions-log.md\`
           5. **Delete the original file(s)** from \`intake/docs/\` after all data has been successfully written
-          6. **Update \`active/\`** files as needed to reflect any state changes
+          6. **Update \`brain/active/\`** files as needed to reflect any state changes
           7. **Confirm deletion** in your progress report — state which file was processed and deleted
 
-          If a file cannot be fully processed (ambiguous data, incomplete information), document what was done and what remains as open loops in \`active/open-loops.md\` — then still delete the source file.
+          If a file cannot be fully processed (ambiguous data, incomplete information), document what was done and what remains as open loops in \`brain/active/open-loops.md\` — then still delete the source file.
 
           Do not treat intake/docs files as source of truth until their data has been validated and written into a canonical brain file." \
             --label "copilot" \

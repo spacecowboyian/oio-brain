@@ -85,7 +85,7 @@ jobs:
           **Instructions — follow these steps exactly:**
 
           1. **Read each transcript file in full** before starting
-          2. **Generate a structured summary** for each transcript using the template at \`core/templates/transcript-summary.md\` as your guide:
+          2. **Generate a structured summary** for each transcript using the template at \`brain/core/templates/transcript-summary.md\` as your guide:
              - Summarize what the video/clip is about in 2–4 sentences
              - List key topics, cars, people, events, and locations mentioned
              - Pull out key quotes or memorable moments
@@ -93,27 +93,27 @@ jobs:
              - Identify how this clip fits into the OIO story arc
              - Generate follow-up content ideas if any are obvious
              - Note: YouTube ID is not required for dailies — leave blank or mark \`[unknown]\` if not a published video
-          3. **Save the summary** to \`content/summaries/\` as a new file:
+          3. **Save the summary** to \`brain/content/summaries/\` as a new file:
              - Use the filename format: \`YYYY-MM-DD_description.md\`
              - Create the \`Summaries/\` folder if it doesn't exist
              - Add proper frontmatter (title, type: content, status: active, owner, updated, tags, source_of_truth: false, summary)
           4. **Update relevant brain files** based on what the transcript reveals:
-             - \`cars/[driver]/[car-slug]/Overview.md\` — if car details are mentioned
-             - \`cars/[driver]/[car-slug]/Maintenance-Log.md\` — if mechanical work is mentioned
-             - \`content/video-backlog.md\` — if content ideas surface
-             - \`events/results/\` — if event results are mentioned
-             - \`active/current-state.md\` — if the state of any vehicle or project changed
-             - \`active/open-loops.md\` — if unresolved questions were surfaced
+             - \`brain/cars/[driver]/[car-slug]/Overview.md\` — if car details are mentioned
+             - \`brain/cars/[driver]/[car-slug]/Maintenance-Log.md\` — if mechanical work is mentioned
+             - \`brain/content/video-backlog.md\` — if content ideas surface
+             - \`brain/events/results/\` — if event results are mentioned
+             - \`brain/active/current-state.md\` — if the state of any vehicle or project changed
+             - \`brain/active/open-loops.md\` — if unresolved questions were surfaced
           5. **Follow all repo standards**:
              - Add frontmatter to any new file (title, type, status, owner, updated, tags, source_of_truth, summary)
              - Update the \`updated:\` date on any file you modify
-             - Log significant decisions in \`core/decisions-log.md\`
+             - Log significant decisions in \`brain/core/decisions-log.md\`
           6. **Delete the original daily transcript file(s)** from \`intake/dailies/\` after the summary has been successfully written
              - **Do NOT delete the \`intake/dailies/\` folder itself** — only delete the individual transcript files
              - **Do NOT delete \`intake/dailies/README.md\`**
           7. **Confirm deletion** in your progress report — state which file was processed and deleted
 
-          If a transcript cannot be fully processed (ambiguous data, missing metadata), document what was done and note the open items in \`active/open-loops.md\` — then still delete the source file.
+          If a transcript cannot be fully processed (ambiguous data, missing metadata), document what was done and note the open items in \`brain/active/open-loops.md\` — then still delete the source file.
 
           Do not treat transcript files as source of truth until their data has been validated and written into canonical brain files." \
             --label "copilot" \

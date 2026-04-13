@@ -21,14 +21,14 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 
 | Section | Description |
 |---|---|
-| [00 - Start Here](ops/) | What OIO is, how it operates, current priorities |
-| [01 - Brand](brand/) | Mission, audience, voice, sponsorship, team bios |
-| [02 - Content](content/) | Video ideas, scripts, published log, titles, shorts |
-| [03 - Cars](cars/) | Every build — setup notes, maintenance logs, status |
-| [04 - Events](events/) | Rallycross, autocross, schedules, results, travel |
-| [05 - Production](production/) | Shot lists, camera/audio workflow, editing SOPs, assets |
-| [06 - Business](business/) | Budget, expenses, sponsorships, merch, website |
-| [07 - Admin](ops/) | Contacts, accounts, policies, templates, backlog |
+| [00 - Start Here](brain/ops/) | What OIO is, how it operates, current priorities |
+| [01 - Brand](brain/brand/) | Mission, audience, voice, sponsorship, team bios |
+| [02 - Content](brain/content/) | Video ideas, scripts, published log, titles, shorts |
+| [03 - Cars](brain/cars/) | Every build — setup notes, maintenance logs, status |
+| [04 - Events](brain/events/) | Rallycross, autocross, schedules, results, travel |
+| [05 - Production](brain/production/) | Shot lists, camera/audio workflow, editing SOPs, assets |
+| [06 - Business](brain/business/) | Budget, expenses, sponsorships, merch, website |
+| [07 - Admin](brain/ops/) | Contacts, accounts, policies, templates, backlog |
 | [docs/](docs/) | Technical pipeline documentation (transcripts, social, photos) |
 | [user-stories/](user-stories/) | Agent work queue — check `backlog/` for ready stories before taking action |
 
@@ -48,13 +48,13 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 
 | Document | Purpose |
 |---|---|
-| [OIO Operating System](ops/OIO-Operating-System.md) | Content schedule, workflows, standing rules |
-| [OIO Brand Guide](ops/OIO-Brand-Guide.md) | Voice, tone, Church of Combustion, message pillars |
-| [Current Priorities](ops/OIO-Current-Priorities.md) | 2026 season story arcs and active goals |
-| [Team Bios](brand/Team-Bios.md) | Ian, Ryan, Richard, Keegan, the kids, extended congregation |
-| [Audience Personas](brand/Audience-Personas.md) | Who watches and why |
-| [Video Ideas Backlog](content/Video-Ideas-Backlog.md) | All ideas, categorized and ready to pull from |
-| [Voice and Tone](brand/Voice-and-Tone.md) | How OIO writes, speaks, and sounds |
+| [OIO Operating System](brain/ops/OIO-Operating-System.md) | Content schedule, workflows, standing rules |
+| [OIO Brand Guide](brain/ops/OIO-Brand-Guide.md) | Voice, tone, Church of Combustion, message pillars |
+| [Current Priorities](brain/ops/OIO-Current-Priorities.md) | 2026 season story arcs and active goals |
+| [Team Bios](brain/brand/Team-Bios.md) | Ian, Ryan, Richard, Keegan, the kids, extended congregation |
+| [Audience Personas](brain/brand/Audience-Personas.md) | Who watches and why |
+| [Video Ideas Backlog](brain/content/Video-Ideas-Backlog.md) | All ideas, categorized and ready to pull from |
+| [Voice and Tone](brain/brand/Voice-and-Tone.md) | How OIO writes, speaks, and sounds |
 | [Photo Index](photos/README.md) | Master index of every OIO photo — filing, post history, visual ID |
 | [Agent Skill Guide](skill.md) | How AI agents should orient and operate in this repo |
 
@@ -71,7 +71,7 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 | 1977 Toyota Corolla | Killer Corolla | Ian | Down — 6-year resurrection in progress |
 | 1962 Renault Dauphine | Geoffrey | Ian | Recent acquisition — future rally replica |
 
-→ [Full car details in 03 - Cars](cars/)
+→ [Full car details in 03 - Cars](brain/cars/)
 
 ---
 
@@ -85,7 +85,7 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 6. **Ryan's AE86** — V8 national rallycross push.
 7. **Richard's ST205** — SCCA debut. The dirt will judge.
 
-→ [Full priorities](ops/OIO-Current-Priorities.md)
+→ [Full priorities](brain/ops/OIO-Current-Priorities.md)
 
 ---
 
@@ -100,4 +100,4 @@ summary: Root-level navigation index for the OIO Brain. Contains quick navigatio
 
 ---
 
-*This brain is maintained by the OIO team. When in doubt, check [00 - Start Here](ops/).*
+*This brain is maintained by the OIO team. When in doubt, check [00 - Start Here](brain/ops/).*

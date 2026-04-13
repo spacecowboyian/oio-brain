@@ -45,7 +45,7 @@ from google.oauth2.credentials import Credentials
 sys.path.insert(0, str(Path(__file__).parent))
 import photo_log as pl
 
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).parent.parent.parent
 AUTO_IDENTIFY_THRESHOLD = 0.8
 SELECTED_PHOTOS_PATH = REPO_ROOT / "intake" / "selected-photos.json"
 REQUIRED_SCOPES = ["https://www.googleapis.com/auth/photoslibrary.readonly"]
@@ -368,7 +368,7 @@ Respond with JSON only — no prose:
 def _build_fleet_context() -> str:
     """Load a compact fleet summary from car overview files in the brain."""
     lines = []
-    cars_root = REPO_ROOT / "cars"
+    cars_root = REPO_ROOT / "brain" / "cars"
     if not cars_root.exists():
         return "Fleet context unavailable"
 

@@ -401,3 +401,35 @@ Mixing these under the generic "transcripts" label created confusion about purpo
 **Implications:** Future car folders should follow `YYYY Model` naming. Nicknames live inside files, not in folder names.
 
 ---
+
+## 2026-04-13 — Moved brain docs to /brain/ and added Google Drive sync
+
+**Decision:** All OIO brain documentation (knowledge/memory layer) moved from repo root into a dedicated `brain/` directory. Google Drive sync added so active brain docs can be read/written directly in Drive and kept in sync with the repo.
+
+**What moved to brain/:**
+- `active/` → `brain/active/`
+- `brand/` → `brain/brand/`
+- `business/` → `brain/business/`
+- `cars/` → `brain/cars/`
+- `content/` → `brain/content/`
+- `core/` → `brain/core/`
+- `data/` → `brain/data/`
+- `events/` → `brain/events/`
+- `ops/` → `brain/ops/`
+- `production/` → `brain/production/`
+- `resources/` → `brain/resources/`
+
+**What stayed at root:** `.github/`, `dev/`, `docs/`, `intake/`, `photos/`, `transcripts/`, `user-stories/`, root markdown files (`README.md`, `INDEX.md`, `skill.md`, etc.)
+
+**Google Drive sync added:**
+- `dev/scripts/auth_google_drive.py` — one-time OAuth2 auth helper
+- `dev/scripts/sync_brain_to_gdrive.py` — push brain/ to Google Drive
+- `dev/scripts/sync_brain_from_gdrive.py` — pull brain/ from Google Drive
+- `.github/workflows/sync-brain-to-gdrive.yml` — triggers on `brain/**/*.md` push to main
+- `.github/workflows/sync-brain-from-gdrive.yml` — cron every 30 min to pull from Drive
+
+**Required secrets (GitHub):** `GOOGLE_DRIVE_CREDENTIALS`, `GOOGLE_DRIVE_BRAIN_FOLDER_ID`
+
+**Why:** Cleaner separation of brain documentation from repo tooling. Google Drive provides easier mobile read/write access to the active memory layer without requiring a git client.
+
+---

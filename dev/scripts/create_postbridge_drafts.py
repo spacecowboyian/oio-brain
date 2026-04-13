@@ -40,7 +40,7 @@ from typing import Optional
 sys.path.insert(0, str(Path(__file__).parent))
 import photo_log as pl
 
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).parent.parent.parent
 
 # Default posting cadence: Tuesday (1) and Friday (4) at 10:00 AM CT.
 # CT is UTC-6 during CDT (Mar-Nov) and UTC-5 during CST (Nov-Mar).

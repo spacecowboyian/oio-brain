@@ -26,4 +26,4 @@ These docs cover the operational details of the automated workflows that feed da
 
 ---
 
-*For brain content, data, and editorial docs, see [`OIO Brain/`](../OIO%20Brain/) and [`INDEX.md`](../INDEX.md).*
+*For brain content, data, and editorial docs, see [`brain/`](../brain/) and [`INDEX.md`](../INDEX.md).*

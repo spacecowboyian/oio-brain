@@ -43,7 +43,7 @@ try:
 except ImportError:
     _YTDLP_AVAILABLE = False
 
-CATALOG_FILE = os.path.join(os.path.dirname(__file__), "..", "content", "video-catalog.md")
+CATALOG_FILE = os.path.join(os.path.dirname(__file__), "..", "..", "brain", "content", "video-catalog.md")
 TRANSCRIPTS_DIR = os.path.join(os.path.dirname(__file__), "..", "transcripts")
 RATE_LIMIT_SECONDS = 1  # 1 request per second
 

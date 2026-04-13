@@ -133,8 +133,8 @@ jobs:
           3. **Implement the story** — satisfy every acceptance criterion listed. Make the actual code or documentation changes required.
           4. **Verify your work** — check each AC item one by one. Do not move to done until all are satisfied.
           5. **Move to \`done/\`** — when all ACs are verified, git mv the file from \`user-stories/in-progress/\` to \`user-stories/done/\`, update frontmatter \`status\` to \`done\`, and add \`completed: $(date +%Y-%m-%d)\`.
-          6. **Log the decision** — add a brief entry to \`core/decisions-log.md\` with the date, story ID, and a 1–2 sentence summary of what was done.
-          7. **Update \`active/\`** — update \`active/current-state.md\`, \`active/next-actions.md\`, or \`active/open-loops.md\` as appropriate to reflect completed work.
+          6. **Log the decision** — add a brief entry to \`brain/core/decisions-log.md\` with the date, story ID, and a 1–2 sentence summary of what was done.
+          7. **Update \`brain/active/\`** — update \`brain/active/current-state.md\`, \`brain/active/next-actions.md\`, or \`brain/active/open-loops.md\` as appropriate to reflect completed work.
 
           ### For modified stories in \`in-progress/\`
 
@@ -146,7 +146,7 @@ jobs:
 
           ### For deleted stories
 
-          The story has been dropped. No implementation action needed. If you had already started work on it (it was in \`in-progress/\`), stop that work and note the cancellation in \`core/decisions-log.md\`.
+          The story has been dropped. No implementation action needed. If you had already started work on it (it was in \`in-progress/\`), stop that work and note the cancellation in \`brain/core/decisions-log.md\`.
 
           ---
 
@@ -154,7 +154,7 @@ jobs:
 
           - Add frontmatter to any new file you create (title, type, status, owner, updated, tags, source_of_truth, summary)
           - Update the \`updated:\` date on any file you modify
-          - Follow all conventions in \`skill.md\` and \`core/repo-standards.md\`
+          - Follow all conventions in \`skill.md\` and \`brain/core/repo-standards.md\`
           - Code and scripts belong in \`dev/scripts/\` — not in the root \`scripts/\` folder
           - Do not delete the original story files — move them, never delete" \
             --label "copilot"

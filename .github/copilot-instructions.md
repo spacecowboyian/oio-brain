@@ -15,13 +15,13 @@ The repo must remain useful to both **humans** and **AI agents** over time. Agen
 ## Core Behavioral Rules
 
 ### Do
-- **Read `active/` first.** These files hold the current state. Start there before reading anything else.
+- **Read `brain/active/` first.** These files hold the current state. Start there before reading anything else.
 - **Update existing files instead of creating new ones** when the content logically belongs in an existing document.
-- **Promote learnings properly.** Capture notes belong in `active/` or a dated working file. Durable facts belong in canonical docs in domain folders (`brand/`, `content/`, `cars/`, etc.).
+- **Promote learnings properly.** Capture notes belong in `brain/active/` or a dated working file. Durable facts belong in canonical docs in domain folders (`brain/brand/`, `brain/content/`, `brain/cars/`, etc.).
 - **Mark uncertainty with `TODO:` or `[unknown]` placeholders.** Never invent facts.
-- **Add frontmatter** to any new file you create. See `core/repo-standards.md` for the required format.
-- **Log significant decisions** in `core/decisions-log.md` with date and rationale.
-- **Keep `active/` files concise and current.** These are the memory layer — they decay if they grow too long.
+- **Add frontmatter** to any new file you create. See `brain/core/repo-standards.md` for the required format.
+- **Log significant decisions** in `brain/core/decisions-log.md` with date and rationale.
+- **Keep `brain/active/` files concise and current.** These are the memory layer — they decay if they grow too long.
 - **Apply capacity realism in planning.** Default to conservative throughput because OIO is highly DIY and Ian is usually the primary execution bottleneck unless additional owners/time are explicitly documented.
 - **Archive, don't delete.** Mark outdated content as archived rather than removing it.
 
@@ -29,9 +29,9 @@ The repo must remain useful to both **humans** and **AI agents** over time. Agen
 - Do not create near-duplicate files. If something similar exists, update it.
 - Do not invent facts, stats, or details that are not confirmed. Use `TODO:` instead.
 - Do not overwrite human-written content just to standardize tone.
-- Do not let `active/` files grow stale — update them whenever the state changes.
+- Do not let `brain/active/` files grow stale — update them whenever the state changes.
 - Do not treat capture notes or working docs as source of truth.
-- Do not create files without frontmatter in folders that require it (all of `brand/`, `content/`, `cars/`, `events/`, `core/`, `active/`, etc.).
+- Do not create files without frontmatter in folders that require it (all of `brain/brand/`, `brain/content/`, `brain/cars/`, `brain/events/`, `brain/core/`, `brain/active/`, etc.).
 - Do not remove standing rules or canonical decisions without logging the change.
 
 ---
@@ -68,23 +68,23 @@ Every document in this repo belongs to one of four classes. The class determines
 
 ## The Memory Layer
 
-The files in `active/` are the short-term memory of this repo. They must be kept current.
+The files in `brain/active/` are the short-term memory of this repo. They must be kept current.
 
 | File | Purpose |
 |---|---|
-| `active/current-state.md` | What is happening right now |
-| `active/priorities.md` | What matters most and why |
-| `active/open-loops.md` | Unresolved questions, pending decisions, waiting-ons |
-| `active/next-actions.md` | Concrete next steps, grouped by area |
-| `core/decisions-log.md` | Log of significant decisions with rationale |
+| `brain/active/current-state.md` | What is happening right now |
+| `brain/active/priorities.md` | What matters most and why |
+| `brain/active/open-loops.md` | Unresolved questions, pending decisions, waiting-ons |
+| `brain/active/next-actions.md` | Concrete next steps, grouped by area |
+| `brain/core/decisions-log.md` | Log of significant decisions with rationale |
 
-When you complete work, update the relevant `active/` file. Do not let the memory layer go stale.
+When you complete work, update the relevant `brain/active/` file. Do not let the memory layer go stale.
 
 ---
 
 ## Frontmatter Requirements
 
-All documents in canonical brain folders, `core/`, and `active/` must include a frontmatter block at the top:
+All documents in canonical brain folders, `brain/core/`, and `brain/active/` must include a frontmatter block at the top:
 
 ```yaml
 ---
@@ -103,8 +103,8 @@ summary: 1–3 sentences describing what this file contains and when to use it.
 
 ## Repo Navigation
 
-- **`core/`** — Governance, standards, decisions log, templates
-- **`active/`** — Live memory layer. Read this first.
+- **`brain/core/`** — Governance, standards, decisions log, templates
+- **`brain/active/`** — Live memory layer. Read this first.
 - **canonical brain folders** — Canonical knowledge organized by domain
 - **`INDEX.md`** — Root-level navigation table
 - **`README.md`** — Human-facing entry point
@@ -121,10 +121,10 @@ These rules apply when Copilot is responding to questions or executing tasks in 
 Before answering any question about OIO Racing, always orient yourself using the repo:
 
 1. **`README.md`** — Entry point. Understand what OIO is and where things live.
-2. **`active/current-state.md`** — What is happening right now.
-3. **`active/priorities.md`** — What matters most.
-4. **`active/open-loops.md`** — Unresolved questions and pending decisions.
-5. **`active/next-actions.md`** — Concrete next steps.
+2. **`brain/active/current-state.md`** — What is happening right now.
+3. **`brain/active/priorities.md`** — What matters most.
+4. **`brain/active/open-loops.md`** — Unresolved questions and pending decisions.
+5. **`brain/active/next-actions.md`** — Concrete next steps.
 6. **canonical brain folders** — Canonical domain knowledge (vehicles, content, brand, finance, etc.).
 7. **`INDEX.md`** — Use this to navigate to specific domain files when needed.
 
@@ -143,10 +143,10 @@ You are not a neutral assistant. You are an embedded collaborator for OIO Racing
 
 When a conversation produces new information, decisions, or findings, write them back to the repo. This is not optional — it is how the repo stays useful.
 
-- New facts or status changes → update the relevant file in `active/` or canonical brain folders
-- Decisions made during a conversation → log in `core/decisions-log.md`
-- Open questions raised → add to `active/open-loops.md`
-- Completed actions → update `active/next-actions.md`
+- New facts or status changes → update the relevant file in `brain/active/` or canonical brain folders
+- Decisions made during a conversation → log in `brain/core/decisions-log.md`
+- Open questions raised → add to `brain/active/open-loops.md`
+- Completed actions → update `brain/active/next-actions.md`
 - Significant new knowledge about the brand, cars, or operations → update or create a canonical doc in canonical brain folders
 
 Always prefer updating an existing file over creating a new one. Follow frontmatter and document class rules when writing.
@@ -177,7 +177,7 @@ These rules apply any time an agent provides information about OIO Racing — in
 
 - If conflicting data exists:
   - Surface the conflict
-  - Prefer `active/current-state.md`
+  - Prefer `brain/active/current-state.md`
   - Ask for clarification if needed
 
 - If no repo data is used → response is invalid.
@@ -215,12 +215,12 @@ The `intake/docs/` folder at the repo root is the intake zone for raw documents 
 4. **Follow all repo standards** — frontmatter, document classes, source of truth rules apply
 5. **Delete the original file** from `intake/docs/` once all data has been successfully written
 6. **Confirm the deletion** in your progress report — state which file was processed and deleted
-7. **Update `active/`** files as needed to reflect any state changes
+7. **Update `brain/active/`** files as needed to reflect any state changes
 
 ### Rules
 
 - **Always delete the source file after processing.** Do not leave originals in `intake/docs/`. The folder should be empty when you're done.
-- **If a file cannot be fully processed** (ambiguous data, incomplete information), document what was done and what remains as open loops in `active/open-loops.md` — then still delete the source file.
+- **If a file cannot be fully processed** (ambiguous data, incomplete information), document what was done and what remains as open loops in `brain/active/open-loops.md` — then still delete the source file.
 - **Do not treat intake/docs files as source of truth** until their data has been validated and written into a canonical brain file.
 
 ---
@@ -247,9 +247,9 @@ The `intake/dailies/` subfolder is the intake zone for raw daily video transcrip
 ### When Ian drops a daily in intake/dailies/:
 
 1. **Read the full transcript** before starting
-2. **Generate a structured summary** using `core/templates/transcript-summary.md` as the template
+2. **Generate a structured summary** using `brain/core/templates/transcript-summary.md` as the template
    - Note: YouTube ID is not required for dailies — leave blank or mark `[unknown]` if not yet published
-3. **Save the summary** to `content/summaries/YYYY-MM-DD_description.md`
+3. **Save the summary** to `brain/content/summaries/YYYY-MM-DD_description.md`
 4. **Update relevant brain files** — car overviews, maintenance logs, video ideas backlog, events, active state as appropriate
 5. **Delete the source daily file** from `intake/dailies/` after the summary has been successfully written
 6. **Confirm the deletion** in your progress report
@@ -257,7 +257,7 @@ The `intake/dailies/` subfolder is the intake zone for raw daily video transcrip
 ### Rules
 
 - **Delete only the transcript file, not the folder.** `intake/dailies/` and `intake/dailies/README.md` must never be deleted.
-- **If a daily cannot be fully processed**, document what was done in `active/open-loops.md` — then still delete the source file.
+- **If a daily cannot be fully processed**, document what was done in `brain/active/open-loops.md` — then still delete the source file.
 - **Do not treat daily files as source of truth** until their data has been validated and written into a canonical brain file.
 
 ---

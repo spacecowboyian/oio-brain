@@ -1,0 +1,74 @@
+name: Sync Brain to Google Drive
+
+on:
+  # Trigger whenever brain/ docs are updated in the repo.
+  push:
+    paths:
+      - 'brain/**/*.md'
+    branches:
+      - main
+
+  workflow_dispatch:
+    inputs:
+      path:
+        description: 'Subdirectory to push (e.g. "brain/active" — leave blank for all of brain/)'
+        required: false
+        default: ''
+        type: string
+      dry_run:
+        description: 'Dry run (print what would be uploaded without changes)'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  sync-to-gdrive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required secrets
+        id: check-secrets
+        run: |
+          if [ -z "${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}" ] || \
+             [ -z "${{ secrets.GOOGLE_DRIVE_BRAIN_FOLDER_ID }}" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::GOOGLE_DRIVE_CREDENTIALS or GOOGLE_DRIVE_BRAIN_FOLDER_ID not configured — skipping sync."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python 3.11
+        if: steps.check-secrets.outputs.skip == 'false'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check-secrets.outputs.skip == 'false'
+        run: |
+          pip install \
+            google-auth \
+            google-auth-httplib2 \
+            google-api-python-client
+
+      - name: Push brain docs to Google Drive
+        if: steps.check-secrets.outputs.skip == 'false'
+        env:
+          GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
+          GOOGLE_DRIVE_BRAIN_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_BRAIN_FOLDER_ID }}
+        run: |
+          PATH_ARG="${{ github.event.inputs.path }}"
+          DRY_ARG="${{ github.event.inputs.dry_run }}"
+
+          CMD="python dev/scripts/sync_brain_to_gdrive.py"
+          if [ -n "$PATH_ARG" ]; then
+            CMD="$CMD --path '$PATH_ARG'"
+          fi
+          if [ "$DRY_ARG" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+
+          eval "$CMD"
