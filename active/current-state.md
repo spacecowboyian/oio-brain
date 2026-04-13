@@ -3,7 +3,7 @@ title: OIO Current State
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-08
+updated: 2026-04-13
 source_of_truth: false
 summary: Live snapshot of what OIO is focused on right now. Update this file whenever the state changes. AI agents should read this first before any other file.
 ---
@@ -29,18 +29,19 @@ If you have not read all six startup files (`README.md`, `active/current-state.m
 
 ---
 
-*As of: April 5, 2026 — content machine recovery*
+*As of: April 13, 2026 — post-AX E1 / 4AG motor in hand*
 
 ---
 
 ## What OIO Is Focused On Right Now
 
-The 2026 motorsport season is opening. The primary focus is:
+The 2026 motorsport season is underway. KCR Autocross E1 completed April 12. Primary focus:
 
-1. **Content machine recovery** — Fit How-To pipeline and vlog cadence fell behind in March. April reset underway: Fit clutch video due Apr 10, catch-up vlog before Apr 20, COC season premiere on Apr 20.
-2. **Getting the Goblin ready** — motor is shot, rebuild is in progress. Season-long question: will it make it?
-3. **Fitty Cent dual-duty season** — kids (Miles, Hudson) are racing Ian's daily driver in both autocross and rallycross
-4. **Dale's Lake Garnett pilgrimage** — Celica is active, season-long build arc toward October's cathedral moment
+1. **4AG motor teardown** — Motor picked up from Henry April 9, now on stand. Miles assigned as teardown/assessment lead. Parts to be ordered from Battle Garage. Need a table in the garage first.
+2. **Fitty Cent dry tire setup** — AX E1 confirmed strategy: 225 sticky on 7.5" front, 205 340 treadwear on rear. Need 2 wheels + 2 tires (secondhand wheels if possible) before next dry event.
+3. **Content machine recovery** — Autocross E1 vlog needs editing. Fit clutch How-To still pending. COC season premiere target April 20.
+4. **Rallycross this Sunday (Apr 19 KCRX E2)** — Ian hoping to drive Ryan's MGB. Miles driving Miata. Both unconfirmed. Close the loop before committing to the drive.
+5. **Fergus co-driving relationship** — Ian to discuss car improvement with Doug directly. Outcome will determine level of commitment to national events.
 
 ## Execution Capacity Constraint (Planning Baseline)
 
@@ -54,7 +55,7 @@ The 2026 motorsport season is opening. The primary focus is:
 
 | Nickname | Car | Driver | Status | Blocker |
 |---|---|---|---|---|
-| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Non-operational — motor swap in progress** | Motor confirmed: 3-rib 4AGE from Henry, $350 + melted motor trade. Pickup: Apr 9. Swap at Euro Speedworks with lift. |
+| The Goblin | 1985 Toyota MR2 AW11 | Ian | **Non-operational — motor on stand** | 4AG picked up from Henry April 9. On stand in garage. Plugs likely frozen, main caps loose. Miles leads teardown. Parts to order from Battle Garage. Target: KCRX E3 (May 25). |
 | Dale | 1972 Toyota Celica | Ian | Active — out for work | Motor at Clay County Engine Rebuilders (high-comp rebuild); body at Gary Rod and Chassis (rockers + AW11 rack). Both targeting end of May / mid-June return. |
 | Fitty Cent | 2009 Honda Fit GE8 | Ian / Kids | Active | Dual-duty workload on one car |
 | Nessie | 1982 Toyota Cressida Wagon | Ian | Building | Drag setup not complete |
@@ -90,6 +91,11 @@ The 2026 motorsport season is opening. The primary focus is:
 ---
 
 ## Recent Changes
+
+- **2026-04-13:** KCR Autocross E1 (April 12) results processed. Hudson Smith 3rd EST in Fitty Cent (57.4 best, rain). Miles Smith ~5–7th EST (59.1 best, steady improvement). Ian co-drove Doug's BMW 2002 "Fergus" in FSP — Doug won (58.4). Ian's first-ever drive of Fergus revealed: spongy brakes, dead shifter, engine misfiring, heavy white smoke late in event. Doug dismissive of mechanical issues. Results in `events/results/2026-Season-Results.md`.
+- **2026-04-13:** 4AG motor pickup confirmed complete. Motor arrived Friday April 9 from Henry. Now on engine stand in garage. Plugs likely frozen, main caps loose — minimal rotation. Parts to be ordered from Battle Garage per prior research kit. Miles Smith assigned as teardown lead. Work to begin ASAP. Log in `cars/ian/mr2-goblin/Maintenance-Log.md`.
+- **2026-04-13:** Fitty Cent dry tire strategy finalized — 225 sticky (~200 treadwear) on 7.5" front wheel, 205 340 treadwear on rear. Budget: 2 wheels + 2 tires. Secondhand wheels if possible. Updated in `cars/ian/fit-fittycent/Overview.md`.
+- **2026-04-13:** Upcoming rallycross Sunday April 19 (KCRX E2 Holsworth Farm) — Ian may drive Ryan's MGB; Miles may drive Miata. Both unconfirmed. Open loop added to `active/open-loops.md`.
 
 - **2026-04-08:** Goblin 4AGE sourcing confirmed — motor pickup from Henry locked in for Friday, April 9. Motor is a 3-rib 4AGE (1st gen, 16-valve), set outside for a while; main caps show light rust but no other visible wear and no signs of major damage. Henry pulled and inspected main caps; bearings TBD after sizing. Rebuild requirements updated: stock-sized pistons confirmed, slightly higher compression head gasket, full rebuild kit, rings for standard-sized pistons, bearings TBD, new clutch (spec TBD). Research needed: best value for dollar on all components + oiling system (oil pickup, better oil pump, possibly 20-valve pump upgrade). Motor swap at Euro Speedworks — Ian helping Ryan on MGB rebuild in exchange for lift access; estimated 1 day with lift. See `cars/ian/mr2-goblin/Maintenance-Log.md`.
 - **2026-04-08:** KCRX E2 (Apr 19, Holsworth Farm) driver lineup confirmed — Ian driving MGB GTS (Ryan's car, prepped with Ian's help); Miles driving red bomber Miata with Larry as co-driver. MGB prep underway at Euro Speedworks. See `events/schedules.md`.

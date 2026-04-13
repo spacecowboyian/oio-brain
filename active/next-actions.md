@@ -3,42 +3,44 @@ title: OIO Next Actions
 type: state
 status: active
 owner: Ian Jennings
-updated: 2026-04-08
+updated: 2026-04-13
 source_of_truth: false
 summary: Concrete next actions organized by area. Short and actionable only — not a project plan. Update after completing actions and when new ones are identified.
 ---
 
 # Next Actions
 
-*As of April 5, 2026 — keep this list short and current. Done items get removed, not accumulated.*
+*As of April 13, 2026 — post-AX E1, 4AG on stand, rallycross Sunday TBD*
 
 ---
 
 ## 7-Day Cadence
 
-*April 4-10, 2026 — re-establish the content/marketing operating rhythm.*
+*April 12–19, 2026 — autocross done, rallycross Sunday TBD*
 
-- Apr 4: lock the Fit How-To outline and filming checklist. Output: final shot list + gear/tool list.
-- Apr 5: stage the garage and thumbnail direction. Output: filming space ready + thumbnail concept chosen.
-- Apr 6: film the Fit How-To. Output: A-roll, B-roll, and detail shots captured.
-- Apr 7: assemble the rough cut. Output: first edit pass complete.
-- Apr 8: finish edit and metadata. Output: upload-ready draft with title/description.
-- Apr 9: finalize the Apr 10 vlog notes. Output: talking points and shot list ready.
-- Apr 10: publish the season reboot vlog. Output: video live + first-day performance check started.
+- [x] Apr 12: KCR Autocross E1 — attended, raced, filmed (Parker on camera).
+- [ ] Apr 13: Order 4AG parts from Battle Garage. Verify kit against prior research. Place order.
+- [ ] Apr 13: Set up table in garage for 4AG teardown.
+- [ ] Apr 13–14: Tell Miles to start 4AG teardown/assessment ASAP.
+- [ ] **Confirm Sunday Apr 19 KCRX E2 driver status** — Is Ian driving Ryan's MGB? Is Miles driving the Miata? Confirm before committing to drive far south. Or skip.
+- [ ] Edit and publish AX E1 vlog (action footage from Parker).
+- [ ] Fit clutch How-To video — still pending.
+- [ ] COC season premiere edit (Apr 20 target).
 
 ## Racing
 
 - [x] Diagnose Goblin motor — ✅ 2026-03-28 diagnostic complete (see Maintenance-Log.md)
 - [x] **Goblin: decide rebuild vs. replace** — ✅ 2026-04-08 Decision made: replace. Source 3-rib 4age from Henry for $350 + melted motor trade.
-- [ ] **Acquire Goblin motor from Henry** — ✅ Scheduled Friday April 9, 2026. $350 + melted motor in trade.
+- [x] **Acquire Goblin motor from Henry** — ✅ 2026-04-09 Done. Motor on stand in garage.
+- [ ] **Set up workbench/table in garage** — prerequisite for 4AG teardown
+- [ ] **Order 4AG parts from Battle Garage** — use prior research kit; order ASAP
+- [ ] **Tell Miles to start 4AG teardown** — assess, measure, spec bearings; Ian is support/grunt
 - [ ] **Coordinate Euro Speedworks swap weekend** — Arrange with Ryan; Ian helps Ryan on MGB rebuild in exchange for lift access; ~1 day swap with lift
-- [ ] **Tear down new Goblin motor** — inspect before any parts are ordered; do not assume it's clean
-- [ ] **Goblin parts list** — stock pistons confirmed; slightly higher comp head gasket; full rebuild kit; rings for std pistons; bearings TBD pending sizing; new clutch (spec TBD); research best value for dollar on all parts
 - [ ] **Schedule hot tank at C-TEC** — coordinate with Miles; block + head need to go through the automotive program at North Kansas City High School
 - [ ] **Research: 4age oiling system upgrades** — oil pickup, better oil pump, 20-valve pump upgrade; confirm if 20v pump is standard path or if better options exist; cost-effective solutions prioritized
-- [ ] **Prep MGB GTS for Apr 19 KCRX E2** — Ian helping Ryan at Euro Speedworks; Ian driving at the event
-- [ ] Confirm 2026 rallycross event schedule — which events, which dates (need to identify the 3rd KC event as the Goblin target)
-- [ ] Confirm 2026 autocross event schedule
+- [ ] **KCRX E2 Sunday Apr 19** — Confirm Ian's MGB ride with Ryan; confirm Miles's Miata ride. If not confirmed before Sunday, consider skipping.
+- [ ] **Fergus — talk to Doug about mechanical issues** — one clear, research-backed conversation about brakes, shifter, and engine issues. If dismissed, reassess commitment to national events.
+- [x] Film Apr 12 autocross — ✅ Parker filmed. Edit and publish vlog.
 - [x] Lake Garnett Grand Prix Revival date — ✅ 2026-04-07 **Oct 9–11, 2026 (8 track sessions) confirmed**
 - [ ] Assess Dale's current mechanical condition before first 2026 event (car is currently out for work — motor at Clay County, body at Gary Rod and Chassis; check in around end of May)
 - [ ] Book Nessie's first dragstrip outing: Thunder Valley Friday Night Test & Tune on May 15, 2026; keep Mo-Kan Fun Drags on May 29, 2026 as fallback
@@ -47,6 +49,7 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 ## Vehicles
 
+- [ ] **Source 2 wheels (7.5" wide) + 2 tires (225 ~200 treadwear) for Fitty Cent EST dry setup** — secondhand wheels preferred; sticky compound for front only
 - [ ] Fully document Goblin rebuild — film every step for content
 - [ ] Identify and document the $100 mystery motor for Killer Corolla
 - [ ] Complete TRD parts inventory on Killer Corolla
@@ -59,10 +62,11 @@ summary: Concrete next actions organized by area. Short and actionable only — 
 
 ## Content
 
-- [ ] Fit clutch video (Apr 10)
-- [ ] COC edit (Apr 20)
-- [ ] Film Apr 12 autocross
+- [ ] **AX E1 vlog** — edit Parker's footage from April 12 (rain, splashing, Hudson 57.4, Fergus chaos). Publish soon while fresh.
+- [ ] Fit clutch video (overdue — was Apr 10)
+- [ ] COC edit (Apr 20 target)
 - [ ] Catch-up vlog before Apr 20
+- [ ] **Fitty Cent EST dry tire setup** — document and post when wheels/tires arrive: 225 sticky front + 205 340 rear. Could be short video or social content.
 
 ---
 

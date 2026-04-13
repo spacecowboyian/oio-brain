@@ -3,7 +3,7 @@ title: 2026 Season Results — OIO Drivers
 type: reference
 status: active
 owner: Ian Jennings
-updated: 2026-03-29
+updated: 2026-04-13
 tags: [results, rallycross, 2026, kcrscca, ian, ryan, miles, hudson]
 source_of_truth: true
 summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCross Event 1 (March 22, 2026). Machine-readable data in oio-racing-results.json.
@@ -22,7 +22,7 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 | Circuit | Events | Drivers |
 |---|---|---|
 | KCR RallyCross (KCRX) | 1 of ~10 | Ian, Ryan, Miles, Hudson |
-| KCRSCCA Autocross | Not yet started | — |
+| KCRSCCA Autocross | 1 of ~10 | Ian (Fergus/FSP), Hudson + Miles (Fitty Cent/EST) |
 | KS Region RallyCross (KSRX) | Not yet started | — |
 
 ---
@@ -95,7 +95,68 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 
 ---
 
+## KCR AUTOCROSS 2026
+
+### Event 1 — 2026-04-12 @ MCC Course, Independence MO
+
+**KCR SCCA Autocross Event 1**
+**Conditions:** Rainy and windy all day. Course had an unusual crossover element — two sections shared the same physical space, requiring careful timing and causing multiple red flag situations.
+**Venue:** MCC (CDL testing facility in Independence, MO) — small interconnected roads, not an open parking lot.
+
+---
+
+#### F Street Prepared (FSP) — 2 Drivers
+
+| Pos | Driver | Car | R1 | R2 | R3 | R4 | Best | Notes |
+|---|---|---|---|---|---|---|---|---|
+| 1 | **Doug** [last name TBD] | 2002 BMW 2002 "Fergus" | DNF (red flagged → rerun) | 59.7 | 59.2 | **58.4** | **58.4** | Won FSP. |
+| 2 | Ian Jennings | 2002 BMW 2002 "Fergus" | **63.0** | DNF (got lost at crossover) | 61.8 | 82.0 (big slide) | **61.8** | First ever drive of Fergus. Co-driving Doug's car. |
+
+**Notes:**
+- Only 2 entries in FSP — Doug and Ian co-driving Fergus. Doug won.
+- Doug's R1 was red-flagged (someone spun at crossover); he received a rerun and ran 59.7.
+- Ian's R2 DNF: got lost at crossover, went down wrong road, had to back up — red-flagged Jonathan Griffiths who was directly behind him.
+- Fergus mechanical issues observed: spongy brakes (nearly to floor), shifter with no discernible gates, engine misfiring/cutting out at cam onset, heavy white smoke from exhaust late in event.
+- Sonia (Doug's wife) drove Fergus in Heat 1 — car's inaugural competition run.
+
+---
+
+#### E Street Touring (EST) — Top Finishers
+
+| Pos | Driver | Car | R1 | R2 | R3 (raw) | R4 | Best |
+|---|---|---|---|---|---|---|---|
+| 1 | Scott Highland | 2011 Honda Fit | ~58 | ~58 | ~58 | **55.978** | **55.978** |
+| 2 | [Mazda Miata driver] | Mazda Miata | — | — | **56.7** | — | **56.7** |
+| 3 | **Hudson Smith** | 2009 Honda Fit GE8 (Fitty Cent) | 62.6 | **57.4** | 57.0 + cone (→59) | ~57.x + cone | **57.4** |
+| ~5–7 | **Miles Smith** | 2009 Honda Fit GE8 (Fitty Cent) | 68.7 | 63.7 | 59.2 | 59.1 | **59.1** |
+
+**Notes:**
+- EST class leader after R1: 60.8 (unknown driver).
+- Hudson ran 57.4 on R2, going fastest in class at that point — announced by Doug as "the whole EST field just got raw-timed by a 15-year-old on a permit."
+- Hudson hit cones on R3 and R4 while pushing harder to extend his lead. Cone penalties (+2 sec each) dropped him to 3rd.
+- Scott Highland used Bridgestone RE71Rs; ran 55.978 on final run after track dried slightly — took the win.
+- Miles showed steady incremental improvement across all 4 runs (68.7 → 63.7 → 59.2 → 59.1).
+- Tire setup: Fitty Cent on 15" wheels with 205 Continental 340 treadwear tires (rain-appropriate).
+- Pressure: approximately 32 psi all around — over-rotation observed; reduce rear slightly next wet event.
+
+**Lessons learned:**
+- Hudson needs consistency over chasing pace; his R2 57.4 was fast enough to contend — pushing harder produced cone penalties and slower effective times.
+- "Stay pinned" over large puddles — nose-up keeps momentum; nose-down costs time.
+- Dry event tire plan: 225 on 7.5" wide wheel at front (sticky ~200 treadwear), 205 340 treadwear at rear. Budget: 2 wheels + 2 tires.
+
+---
+
 ## HEAD-TO-HEAD 2026
+
+### Ian vs. Miles — KCR Autocross 2026 (EST / FSP)
+
+| Event | Ian (FSP) | Miles (EST) | Hudson (EST) |
+|---|---|---|---|
+| AX E1 MCC | 61.8 best (2nd/2 in FSP, co-driving Fergus) | 59.1 best (~5–7th EST) | 57.4 best (3rd EST) |
+
+*Ian and Miles/Hudson running in different classes in different cars — not directly comparable.*
+
+---
 
 ### Ian vs. Miles — KCRX 2026 (MR class)
 
@@ -111,6 +172,10 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 
 | Milestone | Details |
 |---|---|
+| Hudson AX E1 57.4 | KCR AX E1 EST, 2009 Honda Fit on 340 treadwear in the rain — announced as fastest in class at the time; finished 3rd after cone penalties on R3/R4 |
+| Miles AX E1 steady improvement | KCR AX E1 EST — 68.7 → 63.7 → 59.2 → 59.1 over 4 runs; consistent incremental gains |
+| Ian's first Fergus drive | First time in Doug's BMW 2002 "Fergus" — FSP class KCR AX E1. Discovered spongy brakes, dead shifter, engine misfiring. |
+| Scott Highland last-run win | Ran 55.978 on final run with RE71Rs to steal EST win from Hudson |
 | Ryan KCRX E1 trophy | 2nd in MR class, Ray Rocks — first OIO trophy of 2026 |
 | Miles KCRX E1 trophy | 3rd in MR class, Ray Rocks — trophy at season opener |
 | Ryan 2026 debut car | 1990 Mazda Miata — not the MGB GT (still in paint) or AE86 |
