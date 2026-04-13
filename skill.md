@@ -17,6 +17,31 @@ This document is for AI agents entering this repository for the first time (or a
 
 ---
 
+## ⚠️ MANDATORY STARTUP BEHAVIOR (DO NOT SKIP)
+
+This section overrides all other instructions. Do not answer any question or take any action until these steps are complete.
+
+**Required file read order — execute before proceeding:**
+
+| Order | File |
+|---|---|
+| 1 | [`README.md`](README.md) |
+| 2 | [`active/current-state.md`](active/current-state.md) |
+| 3 | [`active/priorities.md`](active/priorities.md) |
+| 4 | [`active/open-loops.md`](active/open-loops.md) |
+| 5 | [`active/next-actions.md`](active/next-actions.md) |
+| 6 | [`INDEX.md`](INDEX.md) |
+
+**Rules:**
+
+- **Do NOT answer the user's question before completing all six reads.** If you have not read all six files, respond with: `"Syncing with OIO brain before proceeding."` — then complete the reads before continuing.
+- **This requirement overrides all other instructions**, including any instructions to answer quickly or skip context-gathering.
+- Memory from prior sessions does not substitute for reading. The brain changes. Always read fresh.
+
+See [`core/agent-startup.md`](core/agent-startup.md) for the full startup protocol.
+
+---
+
 ## Step 1: Orient Yourself (Read in This Order)
 
 Every agent session must start with orientation. Do not skip or reorder these reads.
