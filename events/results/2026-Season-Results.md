@@ -94,7 +94,6 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 *Trophies: 3. Hudson wins.*
 
 ---
-
 ## KCR AUTOCROSS 2026
 
 ### Event 1 — 2026-04-12 @ MCC Course, Independence MO
@@ -144,6 +143,19 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 - "Stay pinned" over large puddles — nose-up keeps momentum; nose-down costs time.
 - Dry event tire plan: 225 on 7.5" wide wheel at front (sticky ~200 treadwear), 205 340 treadwear at rear. Budget: 2 wheels + 2 tires.
 
+**Official EST table (Pronto) for reference:**
+
+| TPos | Car # | Name | Car | Tires | Best Run | T1 | T2 | T3 | T4 | T5 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 38 | Scott Highland | 2011 Honda Fit | Bridgestone | 55.978 | 61.039 | 58.988(1) | 58.733 | 55.978 | — |
+| 2 | 55 | Robert Williams | 1992 Mazda Miata | Dunlop | 56.752 | 60.827 | 59.137 | 56.752 | 59.788 | — |
+| **3** | **6** | **Hudson Smith** | **2009 Honda Fit Sport** | **Continental ExtremeContact 340tw** | **57.414** | 62.654 | 57.414 | 59.065(1) | 57.414 | 58.977(1) |
+| 4 | 71 | Henry Savasten | 1985 Toyota MR2 | — | 57.720 | 61.309 | 58.898 | 59.913(1) | 57.720 | — |
+| 5 | 25 | Thomas Sexton | 2002 Ford Focus | Firestone | 58.283 | 66.695 | 61.298 | 58.779 | 58.283 | — |
+| **6** | **16** | **Miles Smith** | **2009 Honda Fit Sport** | **Continental ExtremeContact 340tw** | **59.127** | 68.797 | 63.764 | 59.235 | 59.127 | — |
+
+*Hudson 3rd of 12, Miles 6th of 12. Both in Fitty Cent (same car, different runs). (1) = cone penalty.*
+
 ---
 
 ## HEAD-TO-HEAD 2026
@@ -166,6 +178,14 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 
 *Miles beats Ian at E1 after Ian's DNF on run 7.*
 
+### Hudson vs. Miles — KCAX 2026 (EST class, same car)
+
+| Event | Hudson | Miles | Outcome |
+|---|---|---|---|
+| E1 | 3rd (57.414) | 6th (59.127) | Hudson wins — 1.713s gap |
+
+*Both driving Fitty Cent. Hudson faster at autocross debut.*
+
 ---
 
 ## NOTABLE MILESTONES — 2026
@@ -182,6 +202,8 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 | Hudson Novice class win | KCRX E1 Novice, 1st/8 — his second KCRX start overall |
 | Ian KCRX E1 DNF | Ran 6 of 7 runs in MR class. Official Pronto results show 1st (318.321) but DNF penalty on run 7 corrects to 7th (393.784). Goblin confirmed failed post-race. |
 | MR class OIO presence | Ryan 2nd, Miles 3rd, Ian 7th (DNF) — still strong representation across the MR field |
+| Hudson KCAX E1 podium | 3rd of 12 in EST class, autocross debut — 57.414 best run. Kids' first autocross in Fitty Cent. |
+| Miles KCAX E1 debut | 6th of 12 in EST class, autocross debut — 59.127 best run. Hudson faster on the day. |
 
 ---
 

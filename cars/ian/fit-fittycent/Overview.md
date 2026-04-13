@@ -74,6 +74,7 @@ This car is the subject of the How-To content that drives most of OIO's top-of-f
 | Engine mount — dogbone | Stiffer inserts | Not the strongest option |
 | Engine mount — passenger side | Hasport | On shelf — removed due to NVH; reinstallable |
 | Tires | Continental DWS06 (500 treadwear) | Street/event tires; no longer available in 15" |
+| Tires (competition) | Continental ExtremeContact 340tw | Used at KCAX E1 2026 |
 | Interior | Stock | — |
 | Wheels/Tires (race) | Stock or near-stock | Verify current setup |
 | ECU | Stock | FlashPro/KTuner planned for EST build |
@@ -156,17 +157,17 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 ### AUTOCROSS — Hudson Smith
 
-| Year | Event | Date | Class | # | P | Entries | Best Time | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 2026 | E1 | 2026-04-12 | EST | 6 | **3rd** | — | **57.4** | R2 57.4 was fastest in class at time of run; hit cones R3+R4 chasing pace. Rain, 340 treadwear tires. |
+| Year | Event | Date | Class | # | Result | Notes |
+|---|---|---|---|---|---|---|
+| 2026 | E1 | 2026-04-12 | EST | 6 | **3rd / 12** | 57.414 best — autocross debut — podium |
 
-### AUTOCROSS — Miles Smith
+### AUTOCROSS — Miles Smith (Novice 2024 / EST 2026)
 
-| Year | Event | Date | Class | # | P | Entries | Best Time | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 2024 | E1 | 2024-04-07 | Novice-STS | 6 | 13th (Novice) | — | PAX 46.508 | |
-| 2024 | E4 MidDiv | 2024-06-29 | Novice-STS | 6 | 9th (Novice) | — | PAX 43.809 | |
-| 2026 | E1 | 2026-04-12 | EST | 6 | ~5th–7th | — | **59.1** | Ran 68.7→63.7→59.2→59.1 — steady incremental improvement all day. Rain, 340 treadwear tires. |
+| Year | Event | Date | Class | # | Result | Notes |
+|---|---|---|---|---|---|---|
+| 2024 | E1 | 2024-04-07 | Novice-STS | 6 | 13th (Novice) | PAX 46.508 |
+| 2024 | E4 MidDiv | 2024-06-29 | Novice-STS | 6 | 9th (Novice) | PAX 43.809 |
+| 2026 | E1 | 2026-04-12 | EST | 16 | 6th / 12 | 59.127 best — autocross debut in EST class |
 
 ### RALLYCROSS — Ian Jennings
 
