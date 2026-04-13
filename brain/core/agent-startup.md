@@ -85,7 +85,7 @@ Do not rely on memory alone to determine whether your context is current.
 
 ## Related Files
 
-- [`skill.md`](../skill.md) — Agent onboarding guide; orientation sequence
+- [`brain/skill.md`](../skill.md) — Agent onboarding guide; orientation sequence (canonical in `brain/skill.md`, root redirects there)
 - [`active/current-state.md`](../active/current-state.md) — Live brain state
 - [`.github/copilot-instructions.md`](../.github/copilot-instructions.md) — Full standing instructions including Truth Enforcement
 - [`core/repo-standards.md`](repo-standards.md) — Frontmatter and document class rules
