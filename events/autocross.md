@@ -113,7 +113,7 @@ OIO participates in SCCA Solo (autocross) events. Key events on the OIO calendar
 |---|---|---|---|---|
 | KCR AX E1 | 2026-04-12 | Fitty Cent / Hudson Smith | 3rd EST | 57.4 raw on R2 was fastest in class at time of run ("raw-timed the whole EST field, 15-year-old on a permit" — Doug on PA). Cone penalties on R3+R4 dropped to 3rd. Rain, 340 treadwear. |
 | KCR AX E1 | 2026-04-12 | Fitty Cent / Miles Smith | ~5–7th EST | 68.7 → 63.7 → 59.2 → 59.1 — textbook incremental improvement. Rain event. |
-| KCR AX E1 | 2026-04-12 | Fergus (BMW 2002) / Ian Jennings | 2nd FSP | Ian's first-ever drive of Fergus. Discovered spongy brakes, dead shifter, engine misfiring. Still ran 61.8 best. Co-driving Doug's car. |
+| KCR AX E1 | 2026-04-12 | Fergus (BMW 2002) / Ian Jennings | 2nd FSP | Ian's first-ever drive of Fergus. Discovered spongy brakes, dead shifter, engine misfiring. Still ran 61.872 best. Co-driving Douglas Hitchcock's car (winner at 58.477). |
 
 ---
 
