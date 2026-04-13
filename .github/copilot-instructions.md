@@ -168,6 +168,20 @@ Never present invented facts as real. Never fill `[unknown]` fields with guesses
 
 These rules apply any time an agent provides information about OIO Racing — in chat, in written documents, or as part of task execution.
 
+**When responding:**
+
+- If information is NOT from the OIO brain, you MUST say:
+  > "This information is not confirmed in the OIO brain."
+
+- Never present assumptions or memory as fact.
+
+- If conflicting data exists:
+  - Surface the conflict
+  - Prefer `active/current-state.md`
+  - Ask for clarification if needed
+
+- If no repo data is used → response is invalid.
+
 **Agents must declare the source of every material claim:**
 
 - If a fact comes from the brain (a file in this repo), you may state it confidently. Cite the source file if helpful.

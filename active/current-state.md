@@ -14,13 +14,18 @@ summary: Live snapshot of what OIO is focused on right now. Update this file whe
 
 ---
 
-## Brain Sync Requirement
+## ⚠️ Brain Sync Requirement
 
-Before acting on anything in this file, agents must verify they are working from current data:
+This is the authoritative current state of OIO.
 
-- **If the `updated` date in the frontmatter above is newer than your last read of this file, re-read it now before proceeding.**
-- Do not rely on memory or cached context from a prior session. Brain state changes frequently. Stale context produces bad answers.
-- If you have not read all six startup files (`README.md`, `active/current-state.md`, `active/priorities.md`, `active/open-loops.md`, `active/next-actions.md`, `INDEX.md`), stop and read them now. Responding before syncing is not permitted.
+Rules:
+- Agents MUST re-read this file before answering
+- Agents MUST NOT rely on memory when this file exists
+- If today's date is later than the `updated` field in the frontmatter above:
+  → Assume changes may have occurred
+  → Re-read before answering
+
+If you have not read all six startup files (`README.md`, `active/current-state.md`, `active/priorities.md`, `active/open-loops.md`, `active/next-actions.md`, `INDEX.md`), stop and read them now. Responding before syncing is not permitted.
 
 ---
 

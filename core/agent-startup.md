@@ -61,10 +61,12 @@ When a user says **"Sync with OIO brain"** (or a close variant), treat it as an 
 
 2. Read all six files in the required order.
 
-3. Confirm completion with a brief status summary:
-   > `"Brain sync complete. [1–2 sentence summary of current state, top priority, and any critical open loops.] Ready to proceed."`
+3. Confirm readiness by replying:
+   > `"OIO brain synced. Current-state last updated: [DATE]"`
 
-4. Do not begin any substantive response until the confirmation message is sent.
+   Where `[DATE]` is the `updated` value from the frontmatter of `active/current-state.md`.
+
+4. Only after this confirmation message is sent may you answer questions.
 
 **Do not skip this sequence**, even if you believe you already have current context. If Ian is asking you to sync, sync.
 
