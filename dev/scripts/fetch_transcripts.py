@@ -44,7 +44,7 @@ except ImportError:
     _YTDLP_AVAILABLE = False
 
 CATALOG_FILE = os.path.join(os.path.dirname(__file__), "..", "..", "brain", "content", "video-catalog.md")
-TRANSCRIPTS_DIR = os.path.join(os.path.dirname(__file__), "..", "transcripts")
+TRANSCRIPTS_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "brain", "transcripts")
 RATE_LIMIT_SECONDS = 1  # 1 request per second
 
 
@@ -299,7 +299,7 @@ def write_transcript(video, segments, transcripts_dir):
         "title": video["title"],
         "date": video["date"],
         "url": video["url"],
-        "transcript_path": os.path.join("transcripts", folder_name, "transcript.md"),
+        "transcript_path": os.path.join("brain", "transcripts", folder_name, "transcript.md"),
         "segment_count": len(segments),
         "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }

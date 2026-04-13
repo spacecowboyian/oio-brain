@@ -59,7 +59,7 @@ Each transcript saved to: `OIO Brain/02 - Content/Video Scripts/YYYY-MM-DD_video
 ## Pipeline Flow
 
 1. **Trigger**: Cron (every 2 hours) OR manual dispatch OR catalog update
-2. **Fetch**: `fetch_transcripts.py` fetches up to 25 new transcripts → `OIO Brain/02 - Content/Video Scripts/`
+2. **Fetch**: `fetch_transcripts.py` fetches up to 25 new transcripts → `brain/transcripts/`
 3. **Clean**: `clean_transcripts.py` generates clean readable scripts
 4. **Link**: `update_catalog_transcripts.py` adds links to catalog
 5. **Commit**: Commits transcripts, clean scripts, and updated catalog
@@ -179,8 +179,8 @@ To complete the clean script generation for all existing transcripts:
 ## References
 
 - Video catalog: `OIO-Video-Catalog.md`
-- Video Scripts folder: `OIO Brain/02 - Content/Video Scripts/`
-- Unavailable log: `transcripts/UNAVAILABLE.md` (legacy location)
+- Video Scripts folder: `brain/transcripts/`
+- Unavailable log: `brain/transcripts/UNAVAILABLE.md`
 - Fetch script: `scripts/fetch_transcripts.py`
 - Clean script generator: `scripts/clean_transcripts.py`
 - Catalog linker: `scripts/update_catalog_transcripts.py`

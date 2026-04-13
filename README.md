@@ -66,9 +66,9 @@ OIO execution is heavily DIY and bottlenecked by Ian's available hours.
 │   ├── business/          ← Budget, sponsors, merch, website
 │   ├── ops/               ← Contacts, accounts, policies, operating system
 │   ├── data/              ← JSON data: social posts, racing results
+│   ├── transcripts/       ← YouTube video transcripts (auto-fetched)
 │   └── resources/         ← Reference materials
 ├── dev/                   ← Code, scripts, pipeline tooling
-├── transcripts/           ← YouTube video transcripts
 ├── photos/                ← Photo library by driver
 ├── intake/
 │   ├── docs/              ← Drop documents here for processing
