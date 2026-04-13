@@ -23,6 +23,16 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
+## 2026-04-13 — skill.md Moved Into brain/ Directory
+
+**Decision:** Moved the canonical agent skill guide from `skill.md` (repo root) to `brain/skill.md`. Root `skill.md` is now a thin redirect. All internal links and `README.md` updated to point to `brain/skill.md`.
+
+**Why:** Skill and onboarding content logically belongs inside the brain directory alongside the other agent governance files. Having it at root was inconsistent with the `brain/` structure and made it harder for agents navigating the brain to find it.
+
+**Implications:** Any external references to `skill.md` (Copilot agent config, etc.) still resolve via the root redirect. `brain/core/agent-startup.md` and `README.md` updated to reference the new canonical location.
+
+---
+
 ## 2026-04-13 — Fitty Cent EST Build Arc Locked and Imported Into Brain
 
 **Decision:** Committed to the Fitty Cent EST Build Arc as an active 4-episode content arc for Summer–Fall 2026. Arc documents imported into brain across three files: car profile update, EST rules reference, and active arc document.
