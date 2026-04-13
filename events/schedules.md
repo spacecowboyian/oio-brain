@@ -3,7 +3,7 @@ title: Event Schedules — 2026
 type: event
 status: active
 owner: Ian Jennings
-updated: 2026-04-07
+updated: 2026-04-13
 tags: [schedule, events, season-2026, calendar]
 source_of_truth: true
 summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCRX Rallycross (9 scored events), KSRX Rallycross (11 events), and other key events. Updated from Ian's family calendar and official schedules.
@@ -13,7 +13,7 @@ summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCR
 
 > Full 2026 racing season calendar. Sourced from Ian's family calendar and official KCRX/KSRX/KCR schedules.
 
-*Last updated: April 7, 2026*
+*Last updated: April 13, 2026*
 
 ---
 
@@ -32,7 +32,7 @@ summary: Full 2026 racing season calendar. Covers KCR Autocross (10 events), KCR
 
 | # | Date | Status | Notes |
 |---|------|--------|-------|
-| 1 | Sun Apr 12 | ✅ Done | Kids' first autocross — Hudson 3rd EST (57.4 best), Miles ~5–7th EST (59.1 best). Rainy. Co-driving Fergus with Doug in FSP. |
+| 1 | Sun Apr 12 | ✅ Done | Kids' first autocross — Hudson 3rd EST (57.4 best), Miles ~5–7th EST (59.1 best). Rainy. FSP in Fergus: Douglas Hitchcock 1st (58.477), Ian 2nd (61.872). |
 | 2 | Sat Apr 25 | ✅ Confirmed | |
 | 3 | Sun Apr 26 | ✅ Confirmed | |
 | 4 | Sun May 17 | ✅ Confirmed | |

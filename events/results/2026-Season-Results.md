@@ -108,13 +108,13 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 
 | Pos | Driver | Car | R1 | R2 | R3 | R4 | Best | Notes |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **Doug** [last name TBD] | 2002 BMW 2002 "Fergus" | DNF (red flagged → rerun) | 59.7 | 59.2 | **58.4** | **58.4** | Won FSP. |
-| 2 | Ian Jennings | 2002 BMW 2002 "Fergus" | **63.0** | DNF (got lost at crossover) | 61.8 | 82.0 (big slide) | **61.8** | First ever drive of Fergus. Co-driving Doug's car. |
+| 1 | **Douglas Hitchcock** (#176) | 1976 BMW 2002 "Fergus" (Hoosier) | 56.111 (RRN) | 59.727 | 59.230 | **58.477** | **58.477** | Won FSP (official class table). |
+| 2 | Ian Jennings (#76) | 1976 BMW 2002 "Fergus" | **63.097** | 82.886 | 61.872 | 82.106 | **61.872** | First ever drive of Fergus. Co-driving Doug's car. |
 
 **Notes:**
-- Only 2 entries in FSP — Doug and Ian co-driving Fergus. Doug won.
-- Doug's R1 was red-flagged (someone spun at crossover); he received a rerun and ran 59.7.
-- Ian's R2 DNF: got lost at crossover, went down wrong road, had to back up — red-flagged Jonathan Griffiths who was directly behind him.
+- Only 2 entries in FSP — Douglas Hitchcock and Ian co-driving Fergus. Douglas won by 3.395s (61.872 - 58.477).
+- Class standings source provided by Ian/Doug includes RRN notation for Douglas's run sequence.
+- Ian's crossover navigation issue still occurred on course; official class table records 82.886 and 82.106 as his off-pace runs.
 - Fergus mechanical issues observed: spongy brakes (nearly to floor), shifter with no discernible gates, engine misfiring/cutting out at cam onset, heavy white smoke from exhaust late in event.
 - Sonia (Doug's wife) drove Fergus in Heat 1 — car's inaugural competition run.
 
@@ -164,7 +164,7 @@ summary: 2026 competition results for all OIO drivers. Starts with KCR RallyCros
 
 | Event | Ian (FSP) | Miles (EST) | Hudson (EST) |
 |---|---|---|---|
-| AX E1 MCC | 61.8 best (2nd/2 in FSP, co-driving Fergus) | 59.1 best (~5–7th EST) | 57.4 best (3rd EST) |
+| AX E1 MCC | 61.872 best (2nd/2 in FSP, co-driving Fergus) | 59.1 best (~5–7th EST) | 57.4 best (3rd EST) |
 
 *Ian and Miles/Hudson running in different classes in different cars — not directly comparable.*
 

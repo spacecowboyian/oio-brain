@@ -57,7 +57,7 @@ Also covered: the 4AG motor arriving from Henry and going on the stand in the ga
 | Name | Role | Context |
 |---|---|---|
 | Ian Jennings | Primary | Drove Fergus, co-managed Fitty Cent effort, provided all narrative |
-| Doug [last name unknown] | Fergus car owner/co-driver | Doug drove and won FSP; dismissive of Ian's mechanical concerns |
+| Douglas Hitchcock | Fergus car owner/co-driver | Drove and won FSP at 58.477; dismissive of Ian's mechanical concerns |
 | Sonia | Doug's wife | Took Fergus out for inaugural heat 1 run in FSP; reportedly had a blast |
 | Miles Smith | Driver / mechanic | Freed rock from Fit rotor, swapped wheels. Drove Fit in EST (68.7 → 59.1 over 4 runs). Assigned to lead 4AG teardown. |
 | Hudson Smith | Driver | Drove Fit in EST. 62.6 → 57.4 (raw speed) but hit cones on R3 and R4 chasing time. Finished 3rd. |
