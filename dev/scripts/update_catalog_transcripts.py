@@ -25,7 +25,7 @@ from pathlib import Path
 
 
 CATALOG_FILE = Path(__file__).parent.parent.parent / "brain" / "content" / "video-catalog.md"
-TRANSCRIPTS_DIR = Path(__file__).parent.parent / "transcripts"
+TRANSCRIPTS_DIR = Path(__file__).parent.parent.parent / "brain" / "transcripts"
 
 
 def get_transcript_mapping():
@@ -54,7 +54,7 @@ def get_transcript_mapping():
 
             video_id = meta.get("video_id")
             if video_id:
-                transcript_path = f"transcripts/{folder.name}/transcript.md"
+                transcript_path = f"brain/transcripts/{folder.name}/transcript.md"
                 mapping[video_id] = transcript_path
         except (json.JSONDecodeError, KeyError):
             continue

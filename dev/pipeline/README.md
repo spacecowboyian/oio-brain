@@ -231,7 +231,7 @@ for (const driverFolder in cars/) {
 ### Transcript Sources
 
 - **Intake dailies:** `intake/dailies/*.txt` — Raw daily notes from Ian
-- **YouTube transcripts:** `transcripts/*.vtt` — Auto-fetched from YouTube API
+- **YouTube transcripts:** `brain/transcripts/*.vtt` — Auto-fetched from YouTube API
 - **Manual transcripts:** Any text content provided during processing
 
 ### Future Enhancements

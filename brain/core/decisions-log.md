@@ -23,6 +23,16 @@ Append-only. New entries go at the top. Do not edit past entries — add a follo
 
 ---
 
+## 2026-04-13 — transcripts/ Moved Into brain/
+
+**Decision:** Moved `transcripts/` from the repo root into `brain/transcripts/`. Updated all scripts (`dev/scripts/fetch_transcripts.py`, `dev/scripts/clean_transcripts.py`, `dev/scripts/update_catalog_transcripts.py`), the `clean-transcripts.yml` workflow, `README.md`, `brain/skill.md`, `.github/copilot-instructions.md`, and `INDEX.md` to reference the new path.
+
+**Why:** The transcripts folder contains auto-fetched YouTube video content that is part of the brain knowledge base. Keeping it at the root was inconsistent with the `brain/` directory structure. Everything else that is canonical OIO knowledge lives under `brain/`.
+
+**Implications:** All new transcripts are written to `brain/transcripts/`. Scripts and workflows updated accordingly. The `transcript_path` field in `metadata.json` files for newly fetched transcripts will now use the `brain/transcripts/` prefix. Existing metadata.json files in the moved folder still contain the old path — they are historical records and do not affect script operation.
+
+---
+
 ## 2026-04-13 — skill.md Moved Into brain/ Directory
 
 **Decision:** Moved the canonical agent skill guide from `skill.md` (repo root) to `brain/skill.md`. Root `skill.md` is now a thin redirect. All internal links and `README.md` updated to point to `brain/skill.md`.

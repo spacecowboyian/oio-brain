@@ -120,7 +120,7 @@ Only after orienting yourself should you read domain-specific files in `brain/`.
 ├── intake/photos/               ← Intake queue for new photos
 │
 ├── photos/                      ← Photo library organized by driver/car
-├── transcripts/                 ← Auto-fetched YouTube video transcripts
+├── brain/transcripts/           ← Auto-fetched YouTube video transcripts
 └── dev/scripts/                 ← Data processing scripts
 ```
 
@@ -212,7 +212,7 @@ When images are pushed to `intake/photos/`:
 ### YouTube Transcripts
 
 - Final YouTube transcripts are auto-fetched by `.github/workflows/fetch-youtube-transcripts.yml`
-- They are stored in `transcripts/YYYY-MM-DD_title/` (transcript.md + metadata.json)
+- They are stored in `brain/transcripts/YYYY-MM-DD_title/` (transcript.md + metadata.json)
 - Do not manually edit these — they are the auto-fetch archive
 
 ### Social Posts

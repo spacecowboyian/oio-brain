@@ -231,10 +231,10 @@ There are two distinct types of transcripts in this repo. Do not confuse them.
 
 | Type | Location | Source | Purpose |
 |---|---|---|---|
-| **Final YouTube transcripts** | `transcripts/` (repo root) | Published YouTube videos — auto-fetched by `fetch-youtube-transcripts` workflow | Full text archive of published content |
+| **Final YouTube transcripts** | `brain/transcripts/` | Published YouTube videos — auto-fetched by `fetch-youtube-transcripts` workflow | Full text archive of published content |
 | **Dailies** | `intake/dailies/` | Raw audio from Ian's working video files (unedited clips) | Drive brain data updates + create summary for future scripting/outlining |
 
-**Final transcripts** are auto-fetched from YouTube and stored in `transcripts/YYYY-MM-DD_title/`. They require no manual action.
+**Final transcripts** are auto-fetched from YouTube and stored in `brain/transcripts/YYYY-MM-DD_title/`. They require no manual action.
 
 **Dailies** are raw audio dumps that Ian drops manually. They are NOT published videos. The goal is to use the audio to extract data into the brain and create a summary that can inform future video outlines and scripts.
 
