@@ -24,7 +24,7 @@ import re
 from pathlib import Path
 
 
-CATALOG_FILE = Path(__file__).parent.parent / "content" / "video-catalog.md"
+CATALOG_FILE = Path(__file__).parent.parent.parent / "brain" / "content" / "video-catalog.md"
 TRANSCRIPTS_DIR = Path(__file__).parent.parent / "transcripts"
 
 

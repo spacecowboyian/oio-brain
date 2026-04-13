@@ -25,7 +25,7 @@ Rules:
   → Assume changes may have occurred
   → Re-read before answering
 
-If you have not read all six startup files (`README.md`, `active/current-state.md`, `active/priorities.md`, `active/open-loops.md`, `active/next-actions.md`, `INDEX.md`), stop and read them now. Responding before syncing is not permitted.
+If you have not read all six startup files (`README.md`, `brain/active/current-state.md`, `brain/active/priorities.md`, `brain/active/open-loops.md`, `brain/active/next-actions.md`, `INDEX.md`), stop and read them now. Responding before syncing is not permitted.
 
 ---
 

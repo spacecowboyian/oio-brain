@@ -6,14 +6,14 @@ The canonical operational brain for **Outside Inside Outside Racing (OIO)** — 
 
 ## If you are an AI agent
 
-Start with [`skill.md`](skill.md) — it explains how to use this brain. Then read [`active/current-state.md`](active/current-state.md) and [`active/next-actions.md`](active/next-actions.md). Full standing instructions in [`.github/copilot-instructions.md`](.github/copilot-instructions.md).
+Start with [`skill.md`](skill.md) — it explains how to use this brain. Then read [`brain/active/current-state.md`](brain/active/current-state.md) and [`brain/active/next-actions.md`](brain/active/next-actions.md). Full standing instructions in [`.github/copilot-instructions.md`](.github/copilot-instructions.md).
 
 - Use the dedicated `paperclip` worktree based on `main` for repo edits.
 - Leave the default repo worktree alone unless explicitly told otherwise.
 
 ## If you are a human
 
-Start at [`core/README.md`](core/README.md) or [`INDEX.md`](INDEX.md) for navigation.
+Start at [`brain/core/README.md`](brain/core/README.md) or [`INDEX.md`](INDEX.md) for navigation.
 
 ---
 
@@ -30,11 +30,11 @@ OIO makes grassroots motorsports feel accessible to regular people — autocross
 
 | File | What It Contains |
 |---|---|
-| [`active/current-state.md`](active/current-state.md) | What is happening right now |
-| [`active/priorities.md`](active/priorities.md) | What matters most and why |
-| [`active/open-loops.md`](active/open-loops.md) | Pending decisions and unknowns |
-| [`active/next-actions.md`](active/next-actions.md) | Concrete next steps |
-| [`core/decisions-log.md`](core/decisions-log.md) | Decision history |
+| [`brain/active/current-state.md`](brain/active/current-state.md) | What is happening right now |
+| [`brain/active/priorities.md`](brain/active/priorities.md) | What matters most and why |
+| [`brain/active/open-loops.md`](brain/active/open-loops.md) | Pending decisions and unknowns |
+| [`brain/active/next-actions.md`](brain/active/next-actions.md) | Concrete next steps |
+| [`brain/core/decisions-log.md`](brain/core/decisions-log.md) | Decision history |
 
 ## Execution Reality (Planning Guardrail)
 
@@ -55,16 +55,19 @@ OIO execution is heavily DIY and bottlenecked by Ian's available hours.
 ├── skill.md               ← Agent onboarding guide (start here if you're an AI)
 ├── .github/
 │   └── copilot-instructions.md   ← AI agent standing instructions
-├── core/                  ← Governance, standards, templates, decisions log
-├── active/                ← Live memory layer
-├── brand/                 ← Mission, voice, audience, team bios
-├── content/               ← Video pipeline, ideas, schedules, published log
-├── cars/                  ← All vehicles by driver/car-slug
-├── events/                ← Autocross, rallycross, schedules, results
-├── production/            ← Camera/audio workflow, editing SOPs, shot lists
-├── business/              ← Budget, sponsors, merch, website
-├── ops/                   ← Contacts, accounts, policies, operating system
-├── data/                  ← JSON data: social posts, racing results
+├── brain/                 ← All brain/knowledge documents live here
+│   ├── core/              ← Governance, standards, templates, decisions log
+│   ├── active/            ← Live memory layer (also synced to Google Drive)
+│   ├── brand/             ← Mission, voice, audience, team bios
+│   ├── content/           ← Video pipeline, ideas, schedules, published log
+│   ├── cars/              ← All vehicles by driver/car-slug
+│   ├── events/            ← Autocross, rallycross, schedules, results
+│   ├── production/        ← Camera/audio workflow, editing SOPs, shot lists
+│   ├── business/          ← Budget, sponsors, merch, website
+│   ├── ops/               ← Contacts, accounts, policies, operating system
+│   ├── data/              ← JSON data: social posts, racing results
+│   └── resources/         ← Reference materials
+├── dev/                   ← Code, scripts, pipeline tooling
 ├── transcripts/           ← YouTube video transcripts
 ├── photos/                ← Photo library by driver
 ├── intake/

@@ -273,7 +273,7 @@ Respond with JSON only — no prose:
 def _build_fleet_context() -> str:
     """Load a compact fleet summary from car overview files in the brain."""
     lines = []
-    cars_root = REPO_ROOT / "cars"
+    cars_root = REPO_ROOT / "brain" / "cars"
     if not cars_root.exists():
         return "Fleet context unavailable"
 
@@ -307,7 +307,7 @@ def _read(path: Path, limit: int) -> str:
 
 
 def load_brand_voice() -> str:
-    return _read(REPO_ROOT / "brand" / "voice-and-tone.md", 3000)
+    return _read(REPO_ROOT / "brain" / "brand" / "voice-and-tone.md", 3000)
 
 
 def load_vehicle_context(vehicle_key: str) -> str:
@@ -315,14 +315,14 @@ def load_vehicle_context(vehicle_key: str) -> str:
     if not match or vehicle_key == "unknown":
         return ""
     driver, slug = match
-    overview = REPO_ROOT / "cars" / driver / slug / "overview.md"
+    overview = REPO_ROOT / "brain" / "cars" / driver / slug / "overview.md"
     if not overview.exists():
-        overview = REPO_ROOT / "cars" / driver / slug / "Overview.md"
+        overview = REPO_ROOT / "brain" / "cars" / driver / slug / "Overview.md"
     return _read(overview, 3000)
 
 
 def load_story_arcs() -> str:
-    return _read(REPO_ROOT / "content" / "story-arcs.md", 2000)
+    return _read(REPO_ROOT / "brain" / "content" / "story-arcs.md", 2000)
 
 
 def load_approved_captions(vehicle_key: str) -> list[str]:

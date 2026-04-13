@@ -1,0 +1,89 @@
+name: Sync Brain from Google Drive
+
+on:
+  # Run every 30 minutes to pull the latest brain edits from Google Drive.
+  # Only runs if GOOGLE_DRIVE_CREDENTIALS and GOOGLE_DRIVE_BRAIN_FOLDER_ID
+  # secrets are configured — the workflow exits cleanly if they are missing.
+  schedule:
+    - cron: '*/30 * * * *'
+
+  workflow_dispatch:
+    inputs:
+      path:
+        description: 'Subfolder to sync (e.g. "active" — leave blank for all of brain/)'
+        required: false
+        default: ''
+        type: string
+      force:
+        description: 'Overwrite local files even if they are newer than Drive'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  sync-from-gdrive:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required secrets
+        id: check-secrets
+        run: |
+          if [ -z "${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}" ] || \
+             [ -z "${{ secrets.GOOGLE_DRIVE_BRAIN_FOLDER_ID }}" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::GOOGLE_DRIVE_CREDENTIALS or GOOGLE_DRIVE_BRAIN_FOLDER_ID not configured — skipping sync."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python 3.11
+        if: steps.check-secrets.outputs.skip == 'false'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.check-secrets.outputs.skip == 'false'
+        run: |
+          pip install \
+            google-auth \
+            google-auth-httplib2 \
+            google-api-python-client
+
+      - name: Sync brain docs from Google Drive
+        if: steps.check-secrets.outputs.skip == 'false'
+        env:
+          GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
+          GOOGLE_DRIVE_BRAIN_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_BRAIN_FOLDER_ID }}
+        run: |
+          PATH_ARG="${{ github.event.inputs.path }}"
+          FORCE_ARG="${{ github.event.inputs.force }}"
+
+          CMD="python dev/scripts/sync_brain_from_gdrive.py"
+          if [ -n "$PATH_ARG" ]; then
+            CMD="$CMD --path '$PATH_ARG'"
+          fi
+          if [ "$FORCE_ARG" = "true" ]; then
+            CMD="$CMD --force"
+          fi
+
+          eval "$CMD"
+
+      - name: Commit updated brain docs
+        if: steps.check-secrets.outputs.skip == 'false'
+        run: |
+          git config user.name "OIO Brain Sync Bot"
+          git config user.email "bot@oioracing.local"
+          git add "brain/"
+          if git diff --cached --quiet; then
+            echo "No changes pulled from Google Drive."
+          else
+            CHANGED=$(git diff --cached --name-only | wc -l)
+            git commit -m "chore: sync ${CHANGED} brain doc(s) from Google Drive [skip ci]"
+            git push
+          fi

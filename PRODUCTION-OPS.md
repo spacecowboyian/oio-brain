@@ -214,8 +214,8 @@ Operations procedures for the live photo automation pipeline.
 **When OIO Racing gets a new car or driver:**
 
 1. **Update context files**
-   - `cars/` directory - add car specs
-   - `brand/team-bios.md` - add driver bio
+   - `brain/cars/` directory - add car specs
+   - `brain/brand/team-bios.md` - add driver bio
 
 2. **Test with sample photo**
    ```bash

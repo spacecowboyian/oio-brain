@@ -48,11 +48,11 @@ from datetime import date
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-REPO_ROOT   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SOCIAL_DIR  = os.path.join(REPO_ROOT, "data", "social-posts")
-BRAND_DIR   = os.path.join(REPO_ROOT, "brand")
-CONTENT_DIR = os.path.join(REPO_ROOT, "content")
-CARS_DIR    = os.path.join(REPO_ROOT, "cars")
+REPO_ROOT   = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+SOCIAL_DIR  = os.path.join(REPO_ROOT, "brain", "data", "social-posts")
+BRAND_DIR   = os.path.join(REPO_ROOT, "brain", "brand")
+CONTENT_DIR = os.path.join(REPO_ROOT, "brain", "content")
+CARS_DIR    = os.path.join(REPO_ROOT, "brain", "cars")
 
 VOICE_DOC   = os.path.join(BRAND_DIR, "social-voice.md")
 SEASON_DOC  = os.path.join(CONTENT_DIR, "story-arcs.md")

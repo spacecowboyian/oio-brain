@@ -20,7 +20,7 @@ const API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_ID = 'UCA6AlnPQNu5u3Clq_hEmBKQ'; // retained for reference; playlist ID is derived from this
 const UPLOADS_PLAYLIST = 'UUA6AlnPQNu5u3Clq_hEmBKQ';
 
-const MASTER_FILE = path.join(__dirname, '..', 'data', 'oio-videos-master.json');
+const MASTER_FILE = path.join(__dirname, '..', 'brain', 'data', 'oio-videos-master.json');
 const DOCDUMP_FILE = path.join(__dirname, '..', 'intake', 'docs', 'oio_videos_raw.json');
 
 if (!API_KEY) {
