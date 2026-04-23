@@ -122,7 +122,7 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 
 ## Social Post Arc
 
-*Auto-generated 2026-04-22 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-23 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Posts mentioning this car:** 71 posts
 
