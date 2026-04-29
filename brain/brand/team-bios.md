@@ -54,7 +54,7 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-28 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-29 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 202 posts
 
@@ -112,7 +112,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-28 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-29 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 131 posts
 
@@ -151,7 +151,7 @@ Serious SCCA competitor. Lives in Manhattan, KS.
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-28 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-29 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 30 posts
 
@@ -199,7 +199,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-28 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-29 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 37 posts
 
@@ -230,7 +230,7 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-28 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-29 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 5 posts
 
@@ -287,7 +287,7 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 ### Social Post Arc
 
-*Auto-generated 2026-04-28 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-29 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 17 posts
 
