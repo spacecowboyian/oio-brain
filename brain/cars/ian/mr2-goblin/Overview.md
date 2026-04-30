@@ -104,7 +104,7 @@ The Goblin's 2026 narrative has escalated. After the March 28 engine MRI confirm
 
 ## Social Post Arc
 
-*Auto-generated 2026-04-29 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-04-30 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Posts mentioning this car:** 46 posts
 
