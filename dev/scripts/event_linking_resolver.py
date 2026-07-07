@@ -44,7 +44,7 @@ EXPLICIT_MENTION_BOOST = 0.50
 VISUAL_HINT_BOOST = 0.15
 FILENAME_HINT_BOOST = 0.10
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 DEFAULT_LINKAGE_ROOT = REPO_ROOT / "data" / "linkage"
 DEFAULT_AUDIT_LOG = DEFAULT_LINKAGE_ROOT / "audit-log.jsonl"
 DEFAULT_INDEX = DEFAULT_LINKAGE_ROOT / "index.json"
@@ -123,6 +123,85 @@ def _car_slug_from_path(path: Path) -> str:
     return path.parent.name
 
 
+# ---------------------------------------------------------------------------
+# Adapter: convert JS normalizer output (OUT-285) to resolver input
+# ---------------------------------------------------------------------------
+
+def adapt_normalizer_output(
+    js_result: Dict[str, Any],
+    media_id: Optional[str] = None,
+) -> Dict[str, Any]:
+    """
+    Convert the output of the JS normalizer (dev/pipeline/normalizer.js) into
+    the format expected by this resolver.
+
+    JS normalizer uses camelCase and `carId` / `date` fields; resolver expects
+    snake_case and `car_slug` / `event_date`.
+
+    The `media_id` is not produced by the normalizer — callers should set a
+    stable identifier (e.g. SHA256 of the file path).
+    """
+    if media_id is None:
+        raw_path = str(js_result.get("mediaPath", js_result.get("media_path", "")))
+        media_id = "MED-" + hashlib.sha256(raw_path.encode()).hexdigest()[:12].upper()
+
+    # Map signal types from JS to resolver conventions
+    _signal_map = {
+        "filename_match": "filename_hint",
+        "transcript_mention": "explicit_mention",
+        "exif_datetime": "exif",
+        "file_mtime": "file_mtime",
+        "iso_date_in_transcript": "exif",
+        "month_day_in_transcript": "exif",
+    }
+
+    car_candidates: List[Dict[str, Any]] = []
+    for cc in js_result.get("carCandidates", js_result.get("car_candidates", [])):
+        car_id = cc.get("carId") or cc.get("car_slug") or cc.get("car_id", "")
+        signals = cc.get("signals", [])
+        # Determine dominant signal type
+        sig_types = [_signal_map.get(s.get("type", ""), s.get("type", "")) for s in signals]
+        # explicit_mention wins if present
+        if "explicit_mention" in sig_types:
+            sig_type = "explicit_mention"
+        elif "visual_hint" in sig_types:
+            sig_type = "visual_hint"
+        elif "filename_hint" in sig_types:
+            sig_type = "filename_hint"
+        else:
+            sig_type = sig_types[0] if sig_types else "unknown"
+
+        car_candidates.append({
+            "car_slug": car_id,
+            "confidence": float(cc.get("confidence", 0.0)),
+            "signal_type": sig_type,
+            "signal_value": str(signals[0].get("pattern") or signals[0].get("sentence", "")) if signals else "",
+        })
+
+    date_candidates: List[Dict[str, Any]] = []
+    for dc in js_result.get("dateCandidates", js_result.get("date_candidates", [])):
+        raw_date = dc.get("date") or dc.get("event_date", "")
+        signals = dc.get("signals", [])
+        sig_type = _signal_map.get(
+            signals[0].get("type", "") if signals else "",
+            "unknown",
+        )
+        date_candidates.append({
+            "event_date": raw_date,
+            "confidence": float(dc.get("confidence", 0.0)),
+            "signal_type": sig_type,
+        })
+
+    return {
+        "media_id": media_id,
+        "media_type": js_result.get("mediaType") or js_result.get("media_type", "unknown"),
+        "media_path": js_result.get("mediaPath") or js_result.get("media_path", ""),
+        "captured_at": None,
+        "car_candidates": car_candidates,
+        "date_candidates": date_candidates,
+    }
+
+
 def load_timeline_events_from_repo(
     cars_root: Optional[Path] = None,
 ) -> List[Dict[str, Any]]:
@@ -133,7 +212,9 @@ def load_timeline_events_from_repo(
     Each event has: event_id, event_date, car_slug, title, source_file.
     """
     if cars_root is None:
-        cars_root = REPO_ROOT / "cars"
+        # Try brain/cars first (new layout), fall back to cars/ (legacy)
+        brain_cars = REPO_ROOT / "brain" / "cars"
+        cars_root = brain_cars if brain_cars.exists() else REPO_ROOT / "cars"
 
     events: List[Dict[str, Any]] = []
     if not cars_root.exists():
