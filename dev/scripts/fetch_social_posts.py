@@ -192,11 +192,22 @@ def save_post(platform, post_id, date_str, text):
 # Meta Graph API fetchers
 # ---------------------------------------------------------------------------
 
+class AuthError(RuntimeError):
+    """Raised when the API returns 401 or 403 — token expired or invalid."""
+
+
 def _api_get(url, params, retries=3):
     """GET request with simple retry on transient errors."""
     for attempt in range(retries):
         try:
             resp = requests.get(url, params=params, timeout=30)
+            if resp.status_code in (401, 403):
+                # Auth errors are permanent — no point retrying
+                raise AuthError(
+                    f"Auth failed (HTTP {resp.status_code}): META_ACCESS_TOKEN is expired or invalid. "
+                    "Generate a new long-lived Page token at https://developers.facebook.com/tools/explorer/ "
+                    "and update the META_ACCESS_TOKEN GitHub secret."
+                )
             if resp.status_code == 429:
                 wait = 60 * (attempt + 1)
                 print(f"  Rate limited — waiting {wait}s before retry...")
@@ -204,6 +215,8 @@ def _api_get(url, params, retries=3):
                 continue
             resp.raise_for_status()
             return resp.json()
+        except AuthError:
+            raise
         except requests.RequestException as exc:
             if attempt < retries - 1:
                 time.sleep(5)
@@ -437,6 +450,7 @@ def main():
 
     state = load_state()
     total_saved = 0
+    had_auth_error = False
 
     print(f"OIO Social Post Fetcher — batch size: {args.batch_size} per platform")
 
@@ -453,6 +467,9 @@ def main():
                 batch_size=args.batch_size,
             )
             total_saved += n
+        except AuthError as exc:
+            print(f"\n[Facebook] AUTH ERROR: {exc}")
+            had_auth_error = True
         except RuntimeError as exc:
             print(f"\n[Facebook] ERROR: {exc}")
             print("Check META_ACCESS_TOKEN permissions and META_FACEBOOK_PAGE_ID.")
@@ -470,6 +487,9 @@ def main():
                 batch_size=args.batch_size,
             )
             total_saved += n
+        except AuthError as exc:
+            print(f"\n[Instagram] AUTH ERROR: {exc}")
+            had_auth_error = True
         except RuntimeError as exc:
             print(f"\n[Instagram] ERROR: {exc}")
             print("Check META_ACCESS_TOKEN permissions and META_INSTAGRAM_ACCOUNT_ID.")
@@ -489,6 +509,12 @@ def main():
 
     if total_saved == 0 and args.platform == "both" and fb_complete and ig_complete:
         print("  Everything is up to date.")
+
+    if had_auth_error:
+        print("\n❌ AUTH FAILURE: META_ACCESS_TOKEN is expired or invalid.")
+        print("   Renew at https://developers.facebook.com/tools/explorer/")
+        print("   Then update the META_ACCESS_TOKEN secret in the GitHub repo settings.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
