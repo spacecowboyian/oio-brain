@@ -71,7 +71,7 @@ The ST205 has been called. Every SCCA event Richard enters is a chapter in this 
 
 ## Social Post Arc
 
-*Auto-generated 2026-08-22 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-08-27 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Posts mentioning this car:** 1 post
 
