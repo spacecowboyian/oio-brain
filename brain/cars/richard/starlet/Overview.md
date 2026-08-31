@@ -60,7 +60,7 @@ Get the 4A-G in, get it on track. Richard is also thinking about swapping in a M
 
 ## Social Post Arc
 
-*Auto-generated 2026-08-30 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-08-31 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Posts mentioning this car:** 2 posts
 
