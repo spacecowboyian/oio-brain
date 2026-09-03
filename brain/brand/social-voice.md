@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-09-03 from 1059 posts (1059 Facebook, 0 Instagram) covering 2018-11-19 → 2026-04-04. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-09-03 from 1084 posts (1084 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-03. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,11 +409,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 437 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 204 | 3+ hashtags; copy is minimal |
-| Absurdist Humor | 4 | Committed bit — lawnmower as valid trash-talk |
+| Punchy / Short | 440 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 224 | 3+ hashtags; copy is minimal |
+| Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
-| Community Voice | 37 | 'Our Hudson', 'errbody in the pool' |
+| Community Voice | 43 | 'Our Hudson', 'errbody in the pool' |
 | Self-Deprecating | 4 | Ian is wrong, underpowered, or bedazzled |
 
 ---
@@ -424,12 +424,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 53 |
-| Event Recap | 274 |
+| Event Recap | 287 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
 | Enthusiast Take | 16 |
 | Farewell / Milestone | 20 |
-| Community Celebration | 10 |
+| Community Celebration | 11 |
 | Acquisition | 6 |
 
 ---
@@ -506,34 +506,34 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1059 posts:
+Top 25 hashtags across 1084 posts:
 
 | Hashtag | Uses |
 |---|---|
+| #cars | 84 |
+| #rallycross | 75 |
 | #rxfx | 68 |
-| #rallycross | 65 |
-| #cars | 64 |
 | #axrxfx | 61 |
-| #ae86 | 44 |
-| #dalesdragon | 39 |
+| #ae86 | 45 |
+| #dalesdragon | 40 |
 | #toyota | 38 |
+| #fitgang | 36 |
+| #racing | 35 |
 | #ra21 | 34 |
 | #scca | 32 |
-| #racing | 32 |
-| #fitgang | 31 |
+| #hondafit | 31 |
 | #kcrscca | 28 |
 | #diy | 26 |
 | #sccarallycross | 25 |
 | #rxaw11 | 25 |
+| #mgbgts | 24 |
 | #fx16 | 23 |
-| #mgbgts | 22 |
-| #hondafit | 22 |
+| #oioracing | 23 |
 | #autocross | 20 |
+| #celica | 20 |
 | #mr2 | 20 |
-| #celica | 19 |
 | #bhrtribe | 18 |
 | #tercel | 17 |
-| #4age | 16 |
-| #kconstruction | 16 |
+| #18rg | 17 |
 
 <!-- social-voice-stats:end -->

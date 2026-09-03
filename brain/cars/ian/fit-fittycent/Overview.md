@@ -194,7 +194,7 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 *Auto-generated 2026-09-03 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 52 posts
+**Posts mentioning this car:** 64 posts
 
 **Story arc from social posts:**
 
@@ -205,11 +205,11 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 **Recent social posts:**
 
-- **2026-01-14** — Someday.. someday..   Today or never!  #fitgang
-- **2026-01-20** — New video link in the comments! Been a minute, so here’s the full shop catch-up.  Honda Fits, Celicas, an off-road Camry…
-- **2026-03-06** — Speaking of new tires… #fittycent the #ge8 #hondafit is back in the #fitgang rocking the @continental_tire dws06 for all…
-- **2026-03-22** — World’s slowest drag race… it might not actually be but Ian gets to post the videos and he’s got to beat the Miata at ra…
-- **2026-03-25** — Here's our Hudson in the #ge8 #hondafit gettin it done in the gravel at Kansas City Region SCCA RallyCross #1 for 2026!…
+- **2026-08-21** — Hudson's been the slowest in the car all day. Miles is four seconds a run quicker. Ian's been doing this for years.  But…
+- **2026-08-23** — It’s Kansas region rally Cross in Carbondale. Midday update. #fitgang in full effect. #cars #racing
+- **2026-08-23** — What are you waiting for? #fitgang #hondafit #cars #rally
+- **2026-08-25** — First day of sophomore year for Hudson and #fiddycent 🤞 #fitgang #cars #hondafit
+- **2026-09-03** — We all know it can.. but someone asked if it can autocross and I mean.. of course. But its better at rallycross. Watch h…
 
 <!-- social-arc:honda-fit---fitty-cent:end -->
 
