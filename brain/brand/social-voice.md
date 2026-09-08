@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-09-08 from 1087 posts (1087 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-07. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-09-08 from 1088 posts (1088 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-08. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,7 +409,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 441 | Single line. Sometimes one word. 'Approved.' |
+| Punchy / Short | 442 | Single line. Sometimes one word. 'Approved.' |
 | Hashtag-Heavy | 226 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 53 |
-| Event Recap | 290 |
+| Event Recap | 291 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
 | Enthusiast Take | 18 |
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1087 posts:
+Top 25 hashtags across 1088 posts:
 
 | Hashtag | Uses |
 |---|---|
