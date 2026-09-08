@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-09-08 from 1092 posts (1092 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-08. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-09-08 from 1094 posts (1094 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-08. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,11 +409,11 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 444 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 228 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 446 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 229 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
-| Community Voice | 44 | 'Our Hudson', 'errbody in the pool' |
+| Community Voice | 45 | 'Our Hudson', 'errbody in the pool' |
 | Self-Deprecating | 4 | Ian is wrong, underpowered, or bedazzled |
 
 ---
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 53 |
-| Event Recap | 295 |
+| Event Recap | 297 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
 | Enthusiast Take | 18 |
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1092 posts:
+Top 25 hashtags across 1094 posts:
 
 | Hashtag | Uses |
 |---|---|
@@ -517,12 +517,12 @@ Top 25 hashtags across 1092 posts:
 | #ae86 | 45 |
 | #dalesdragon | 40 |
 | #toyota | 38 |
-| #fitgang | 37 |
+| #fitgang | 38 |
 | #scca | 36 |
 | #racing | 35 |
 | #ra21 | 34 |
 | #hondafit | 32 |
-| #oioracing | 29 |
+| #oioracing | 31 |
 | #kcrscca | 28 |
 | #diy | 26 |
 | #sccarallycross | 25 |
