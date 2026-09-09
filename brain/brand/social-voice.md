@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-09-09 from 1098 posts (1098 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-09. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-09-09 from 1102 posts (1102 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-09. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 447 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 232 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 451 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 233 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 45 | 'Our Hudson', 'errbody in the pool' |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 53 |
-| Event Recap | 301 |
+| Event Recap | 305 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
 | Enthusiast Take | 18 |
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1098 posts:
+Top 25 hashtags across 1102 posts:
 
 | Hashtag | Uses |
 |---|---|
@@ -516,11 +516,11 @@ Top 25 hashtags across 1098 posts:
 | #axrxfx | 61 |
 | #ae86 | 45 |
 | #dalesdragon | 40 |
+| #oioracing | 39 |
 | #toyota | 38 |
 | #fitgang | 38 |
 | #scca | 36 |
 | #racing | 35 |
-| #oioracing | 35 |
 | #ra21 | 34 |
 | #hondafit | 32 |
 | #kcrscca | 28 |
@@ -530,10 +530,10 @@ Top 25 hashtags across 1098 posts:
 | #autocross | 24 |
 | #mgbgts | 24 |
 | #fx16 | 23 |
+| #sccasolonats | 22 |
 | #celica | 20 |
 | #mr2 | 20 |
 | #bhrtribe | 18 |
-| #sccasolonats | 18 |
 | #tercel | 17 |
 
 <!-- social-voice-stats:end -->
