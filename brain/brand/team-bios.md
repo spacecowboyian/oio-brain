@@ -56,7 +56,7 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 *Auto-generated 2026-09-09 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 213 posts
+**Social post mentions:** 214 posts
 
 - **Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)
 - **Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)
@@ -65,9 +65,9 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 **Recent posts:**
 
-- **2026-08-22** — The 18R-G returns from the machinist. Toyota's twin-cam, torn down to nothing and measured back to spec. The congregatio…
 - **2026-09-08** — FSP after Course 1.  1. Danny Gross, Mazda 3 — 47.299 2. Andrew Blasiman, '83 Rabbit GTI — 47.677 3. Adam Deffenbaugh, M…
 - **2026-09-08** — FSP after day 1.  1. Andrew Blasiman, '83 Rabbit GTI — 47.159 2. Danny Gross, Mazda 3 — 47.299 3. Adam Deffenbaugh, Mazd…
+- **2026-09-09** — Doug's last run. He needed a 73.1 to take the weekend and ran a 73.9. Same pace as Ian all week — it's not the drivers,…
 - **2026-09-09** — Ian's run 2. Tuesday, east course. 50.927, clean.  #sccasolonats #oioracing #fsp #bmw2002
 
 <!-- social-arc:ian:end -->
