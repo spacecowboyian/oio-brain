@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-09-09 from 1105 posts (1105 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-09. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-09-09 from 1106 posts (1106 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-09. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 57 |
 | Build Update | 53 |
-| Event Recap | 308 |
+| Event Recap | 309 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
 | Enthusiast Take | 18 |
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1105 posts:
+Top 25 hashtags across 1106 posts:
 
 | Hashtag | Uses |
 |---|---|
@@ -515,7 +515,7 @@ Top 25 hashtags across 1105 posts:
 | #rxfx | 68 |
 | #axrxfx | 61 |
 | #ae86 | 45 |
-| #oioracing | 42 |
+| #oioracing | 43 |
 | #dalesdragon | 40 |
 | #toyota | 38 |
 | #fitgang | 38 |
@@ -525,9 +525,9 @@ Top 25 hashtags across 1105 posts:
 | #hondafit | 32 |
 | #kcrscca | 28 |
 | #diy | 26 |
+| #sccasolonats | 26 |
 | #sccarallycross | 25 |
 | #rxaw11 | 25 |
-| #sccasolonats | 25 |
 | #autocross | 24 |
 | #mgbgts | 24 |
 | #fx16 | 23 |
