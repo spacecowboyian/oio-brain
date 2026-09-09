@@ -54,9 +54,9 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-08 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-09 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 211 posts
+**Social post mentions:** 212 posts
 
 - **Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)
 - **Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)
@@ -65,10 +65,10 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 **Recent posts:**
 
-- **2026-08-19** — KCRX E6. Four OIO drivers entered. Three class wins. Ian finished second.  Miles was fastest of all four at 402.6. Hudso…
 - **2026-08-21** — Hudson's been the slowest in the car all day. Miles is four seconds a run quicker. Ian's been doing this for years.  But…
 - **2026-08-22** — The 18R-G returns from the machinist. Toyota's twin-cam, torn down to nothing and measured back to spec. The congregatio…
 - **2026-09-08** — FSP after Course 1.  1. Danny Gross, Mazda 3 — 47.299 2. Andrew Blasiman, '83 Rabbit GTI — 47.677 3. Adam Deffenbaugh, M…
+- **2026-09-08** — FSP after day 1.  1. Andrew Blasiman, '83 Rabbit GTI — 47.159 2. Danny Gross, Mazda 3 — 47.299 3. Adam Deffenbaugh, Mazd…
 
 <!-- social-arc:ian:end -->
 
@@ -112,7 +112,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-08 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-09 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 136 posts
 
@@ -151,7 +151,7 @@ Serious SCCA competitor. Lives in Manhattan, KS.
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-08 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-09 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 30 posts
 
@@ -199,7 +199,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-08 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-09 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 37 posts
 
@@ -230,7 +230,7 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-08 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-09 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 11 posts
 
@@ -287,7 +287,7 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-08 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-09 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 22 posts
 
