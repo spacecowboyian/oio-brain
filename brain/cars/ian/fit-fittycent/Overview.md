@@ -192,7 +192,7 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 ## Social Post Arc
 
-*Auto-generated 2026-09-09 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-10 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Posts mentioning this car:** 66 posts
 
