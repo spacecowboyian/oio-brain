@@ -54,7 +54,7 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-12 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-13 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 214 posts
 
@@ -112,7 +112,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-12 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-13 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 137 posts
 
@@ -151,7 +151,7 @@ Serious SCCA competitor. Lives in Manhattan, KS.
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-12 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-13 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 30 posts
 
@@ -199,7 +199,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-12 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-13 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 37 posts
 
@@ -230,18 +230,18 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-12 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-13 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 11 posts
+**Social post mentions:** 12 posts
 
 - **Breakout** — fastest novice run all day at KCRX E1 2026, faster than most non-novice (Mar 25, 2026)
 
 **Recent posts:**
 
-- **2026-08-19** — KCRX E6. Four OIO drivers entered. Three class wins. Ian finished second.  Miles was fastest of all four at 402.6. Hudso…
 - **2026-08-20** — Miles ran Modified Front alone. Solo class win, nobody to beat.  402.600 total. Fastest of all four OIO drivers, every c…
 - **2026-08-21** — Hudson's been the slowest in the car all day. Miles is four seconds a run quicker. Ian's been doing this for years.  But…
 - **2026-08-25** — First day of sophomore year for Hudson and #fiddycent 🤞 #fitgang #cars #hondafit
+- **2026-09-12** — Hudson putting his own 4AGE together. Not many kids at school can say that.  #oioracing #4age #ae92 #toyota #corolla
 
 <!-- social-arc:hudson:end -->
 
@@ -287,7 +287,7 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 ### Social Post Arc
 
-*Auto-generated 2026-09-12 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-09-13 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 22 posts
 
