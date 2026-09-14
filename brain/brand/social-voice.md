@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-09-14 from 1109 posts (1109 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-12. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-09-14 from 1110 posts (1110 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-14. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,7 +409,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 454 | Single line. Sometimes one word. 'Approved.' |
+| Punchy / Short | 455 | Single line. Sometimes one word. 'Approved.' |
 | Hashtag-Heavy | 239 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1109 posts:
+Top 25 hashtags across 1110 posts:
 
 | Hashtag | Uses |
 |---|---|
