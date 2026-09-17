@@ -124,7 +124,7 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 
 *Auto-generated 2026-09-17 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 74 posts
+**Posts mentioning this car:** 75 posts
 
 **Story arc from social posts:**
 
@@ -133,10 +133,10 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 
 **Recent social posts:**
 
-- **2025-12-22** — Another 1st Generation Celica followed us home yesterday. This one was once destined to slide.. any thoughts about what…
 - **2026-02-28** — Making hay while the sun shines. Ryan has the #mgbgts off to get bodywork. Ian wrestled yet another steering rack out of…
 - **2026-08-05** — Oh man. Man oh man. Ian has bad ideas about #dalesdragon
 - **2026-08-22** — The 18R-G returns from the machinist. Toyota's twin-cam, torn down to nothing and measured back to spec. The congregatio…
+- **2026-09-17** — Dale on the move at the Lake Garnett Grand Prix Revival last year. In the KS/MO area? Be in Garnett October 9–11. Regist…
 - **2026-09-17** — Dale out front at the Lake Garnett Grand Prix Revival last year. It's back October 9–11. Register at lggpr.org  #lggpr #…
 
 <!-- social-arc:dale--celica:end -->
