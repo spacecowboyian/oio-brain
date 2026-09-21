@@ -153,17 +153,17 @@ Serious SCCA competitor. Lives in Manhattan, KS.
 
 *Auto-generated 2026-09-21 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 30 posts
+**Social post mentions:** 31 posts
 
 - **ST205 reveal** — arrives at a Church of Combustion event with the ST205; publicly established as a real competitor (Dec 2025)
 - **Starlet 4A-GE telegraphed** — social post hints at next build project (Mar 2026)
 
 **Recent posts:**
 
-- **2023-11-20** — Hail hail the gang’s all here! Ryan set up an endurocross rallycross in the KS region and Ian and Richard came out to gi…
 - **2025-11-11** — Ryan and Richard ran rallycross in KS this weekend with some other real fast folks!
 - **2025-12-30** — Find the new video in the comments to join us once again for the Church of Combustion. This week’s sermon arrives… on bo…
 - **2026-03-06** — Future Richard is calling. Time to get that 4age in the starlet.
+- **2026-09-21** — Welcome to the world the newest OIO Driver. Mr. Pax comes to proud papa Richard and mama Kristy. We wish them all health…
 
 <!-- social-arc:richard:end -->
 
