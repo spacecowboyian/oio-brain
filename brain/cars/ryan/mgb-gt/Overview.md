@@ -89,7 +89,7 @@ Ryan began running the MGB GT at KCRSCCA rallycross in 2024, in class MR (Mid-si
 
 *Auto-generated 2026-09-24 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 52 posts
+**Posts mentioning this car:** 53 posts
 
 **Story arc from social posts:**
 
@@ -101,11 +101,11 @@ Ryan began running the MGB GT at KCRSCCA rallycross in 2024, in class MR (Mid-si
 
 **Recent social posts:**
 
-- **2026-08-06** — Welp.. this fella did all of us in Kansas City Region SCCA RallyCross a solid getting his drone in the way of our dust a…
 - **2026-08-07** — Does it get much better than this? We submit to you that it does not. #oioracing #cars #mgbgts #racing #rallycross #euro…
 - **2026-08-07** — Side exit equals leg burns. Ryan's MGB-GTS, loose on a gravel pit at KCRX 6.  #oioracing #cars #mgb #rallycross #eurospe…
 - **2026-08-14** — Ryan's MGB runs a Toyota 4AC. It also runs hot. The plan was a full bottle of water over the radiator between runs. They…
 - **2026-08-22** — The 18R-G returns from the machinist. Toyota's twin-cam, torn down to nothing and measured back to spec. The congregatio…
+- **2026-09-24** — Ryan rolled the MGB GTS through the town square car show last year. Lake Garnett Grand Prix Revival, Oct 9–11 in Garnett…
 
 <!-- social-arc:mgb-gt:end -->
 

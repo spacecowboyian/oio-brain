@@ -114,17 +114,17 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 *Auto-generated 2026-09-24 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 138 posts
+**Social post mentions:** 139 posts
 
 - **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
 - **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
 
 **Recent posts:**
 
-- **2026-08-19** — KCRX E6. Four OIO drivers entered. Three class wins. Ian finished second.  Miles was fastest of all four at 402.6. Hudso…
 - **2026-08-22** — Get you some smoke. Fix yo mini. Ryan did. Now he.. has a mini. #mini #bmwmini #mechanic #cars
 - **2026-09-11** — Next up: Ryan takes the Cayawn to the Missourah Endurah Gambler 500 with @hothatchracing.  The Gambler: cheap cars, bad…
 - **2026-09-23** — Ryan is making Paul's life hell.. and we're here for it.
+- **2026-09-24** — Ryan rolled the MGB GTS through the town square car show last year. Lake Garnett Grand Prix Revival, Oct 9–11 in Garnett…
 
 <!-- social-arc:ryan:end -->
 
