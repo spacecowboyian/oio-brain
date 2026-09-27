@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-09-27 from 1135 posts (1135 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-27. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-09-27 from 1136 posts (1136 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-27. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -410,7 +410,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
 | Punchy / Short | 459 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 257 | 3+ hashtags; copy is minimal |
+| Hashtag-Heavy | 258 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 45 | 'Our Hudson', 'errbody in the pool' |
@@ -423,7 +423,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 57 |
-| Build Update | 69 |
+| Build Update | 70 |
 | Event Recap | 310 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
@@ -506,14 +506,14 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1135 posts:
+Top 25 hashtags across 1136 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 85 |
 | #rallycross | 75 |
 | #rxfx | 68 |
-| #oioracing | 64 |
+| #oioracing | 65 |
 | #axrxfx | 61 |
 | #ae86 | 45 |
 | #dalesdragon | 40 |
@@ -531,7 +531,7 @@ Top 25 hashtags across 1135 posts:
 | #fx16 | 24 |
 | #autocross | 24 |
 | #mgbgts | 24 |
-| #lggpr | 22 |
+| #lggpr | 23 |
 | #celica | 22 |
 | #mr2 | 20 |
 | #bhrtribe | 18 |
