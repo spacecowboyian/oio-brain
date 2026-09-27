@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-09-26 from 1134 posts (1134 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-26. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-09-27 from 1134 posts (1134 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-26. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
