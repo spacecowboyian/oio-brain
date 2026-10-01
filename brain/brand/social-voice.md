@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-10-01 from 1139 posts (1139 Facebook, 0 Instagram) covering 2018-11-19 → 2026-09-30. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-10-01 from 1140 posts (1140 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-01. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 459 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 261 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 460 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 262 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 45 | 'Our Hudson', 'errbody in the pool' |
@@ -506,14 +506,14 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1139 posts:
+Top 25 hashtags across 1140 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 85 |
+| #cars | 86 |
 | #rallycross | 75 |
+| #oioracing | 69 |
 | #rxfx | 68 |
-| #oioracing | 68 |
 | #axrxfx | 61 |
 | #ae86 | 45 |
 | #dalesdragon | 40 |
@@ -522,15 +522,15 @@ Top 25 hashtags across 1139 posts:
 | #scca | 36 |
 | #racing | 35 |
 | #ra21 | 34 |
-| #hondafit | 32 |
+| #hondafit | 33 |
 | #kcrscca | 28 |
 | #sccasolonats | 27 |
 | #diy | 26 |
+| #autocross | 25 |
 | #lggpr | 25 |
 | #sccarallycross | 25 |
 | #rxaw11 | 25 |
 | #fx16 | 24 |
-| #autocross | 24 |
 | #mgbgts | 24 |
 | #celica | 23 |
 | #mr2 | 20 |

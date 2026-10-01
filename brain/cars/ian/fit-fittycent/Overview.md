@@ -194,7 +194,7 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 *Auto-generated 2026-10-01 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 66 posts
+**Posts mentioning this car:** 67 posts
 
 **Story arc from social posts:**
 
@@ -205,11 +205,11 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 **Recent social posts:**
 
-- **2026-08-23** — What are you waiting for? #fitgang #hondafit #cars #rally
 - **2026-08-25** — First day of sophomore year for Hudson and #fiddycent 🤞 #fitgang #cars #hondafit
 - **2026-09-03** — We all know it can.. but someone asked if it can autocross and I mean.. of course. But its better at rallycross. Watch h…
 - **2026-09-08** — Fit down. Of course.  #sccasolonats #oioracing #fitgang
 - **2026-09-08** — The Fit gang came to Nationals.  GD3 Honda Fit, 180 XB, wing, splitter, Hawk pads, parked next to a Lotus wearing the sa…
+- **2026-10-01** — Fitty Cent. EST class.  #oioracing #cars #hondafit #ge8 #autocross
 
 <!-- social-arc:honda-fit---fitty-cent:end -->
 
