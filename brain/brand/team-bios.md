@@ -54,7 +54,7 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 ### Social Post Arc
 
-*Auto-generated 2026-10-01 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-10-02 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 217 posts
 
@@ -112,19 +112,19 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-10-01 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-10-02 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 139 posts
+**Social post mentions:** 140 posts
 
 - **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
 - **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
 
 **Recent posts:**
 
-- **2026-08-22** — Get you some smoke. Fix yo mini. Ryan did. Now he.. has a mini. #mini #bmwmini #mechanic #cars
 - **2026-09-11** — Next up: Ryan takes the Cayawn to the Missourah Endurah Gambler 500 with @hothatchracing.  The Gambler: cheap cars, bad…
 - **2026-09-23** — Ryan is making Paul's life hell.. and we're here for it.
 - **2026-09-24** — Ryan rolled the MGB GTS through the town square car show last year. Lake Garnett Grand Prix Revival, Oct 9–11 in Garnett…
+- **2026-10-01** — Ryan strikes again!
 
 <!-- social-arc:ryan:end -->
 
@@ -151,7 +151,7 @@ Serious SCCA competitor. Lives in Manhattan, KS.
 
 ### Social Post Arc
 
-*Auto-generated 2026-10-01 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-10-02 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 31 posts
 
@@ -199,7 +199,7 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 ### Social Post Arc
 
-*Auto-generated 2026-10-01 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-10-02 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 37 posts
 
@@ -230,7 +230,7 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 ### Social Post Arc
 
-*Auto-generated 2026-10-01 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-10-02 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 12 posts
 
@@ -287,7 +287,7 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 ### Social Post Arc
 
-*Auto-generated 2026-10-01 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
+*Auto-generated 2026-10-02 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
 **Social post mentions:** 22 posts
 
