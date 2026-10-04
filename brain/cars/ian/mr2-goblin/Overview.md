@@ -106,7 +106,7 @@ The Goblin's 2026 narrative has escalated. After the March 28 engine MRI confirm
 
 *Auto-generated 2026-10-04 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 46 posts
+**Posts mentioning this car:** 47 posts
 
 **Story arc from social posts:**
 
@@ -118,11 +118,11 @@ The Goblin's 2026 narrative has escalated. After the March 28 engine MRI confirm
 
 **Recent social posts:**
 
-- **2026-03-22** — BONESAW… er.. the #goblinmr2 is READY! Ain’t no Miata gotta lotta chance in the gravel against mid-rear powa! That is..…
 - **2026-03-22** — The Miata gal pals brought their handbags…. Ian wishes he had a handbag. #miata #mx5 #cars #mr2
 - **2026-03-22** — World’s slowest drag race… it might not actually be but Ian gets to post the videos and he’s got to beat the Miata at ra…
 - **2026-03-28** — The goblin speaketh… cylinder four is done. Time to tear it down. #goblinMR2 #RXMR2 #rallycross #aw11
 - **2026-04-01** — We killed another rallycross car. So naturally, we made a questionable decision. 😅  The MR2 is done for the season. The…
+- **2026-10-04** — Fresh 16V 4AGE, closing in on first start. #oioracing #4age #aw11 #toyotamr2 #enginebuild
 
 <!-- social-arc:goblin--mr2:end -->
 
