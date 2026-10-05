@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-10-05 from 1145 posts (1145 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-04. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-10-05 from 1146 posts (1146 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-05. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -410,7 +410,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
 | Punchy / Short | 463 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 265 | 3+ hashtags; copy is minimal |
+| Hashtag-Heavy | 266 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 46 | 'Our Hudson', 'errbody in the pool' |
@@ -422,9 +422,9 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 57 |
+| Video Tease | 58 |
 | Build Update | 72 |
-| Event Recap | 311 |
+| Event Recap | 312 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
 | Enthusiast Take | 19 |
@@ -506,13 +506,13 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1145 posts:
+Top 25 hashtags across 1146 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 88 |
-| #rallycross | 75 |
-| #oioracing | 72 |
+| #cars | 89 |
+| #rallycross | 76 |
+| #oioracing | 73 |
 | #rxfx | 68 |
 | #axrxfx | 61 |
 | #ae86 | 45 |
@@ -522,7 +522,7 @@ Top 25 hashtags across 1145 posts:
 | #scca | 37 |
 | #racing | 35 |
 | #ra21 | 34 |
-| #hondafit | 33 |
+| #hondafit | 34 |
 | #kcrscca | 28 |
 | #sccasolonats | 27 |
 | #autocross | 26 |
