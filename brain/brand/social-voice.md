@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-10-06 from 1146 posts (1146 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-05. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-10-06 from 1147 posts (1147 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-06. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -410,7 +410,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
 | Punchy / Short | 463 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 266 | 3+ hashtags; copy is minimal |
+| Hashtag-Heavy | 267 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 46 | 'Our Hudson', 'errbody in the pool' |
@@ -422,7 +422,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 58 |
+| Video Tease | 59 |
 | Build Update | 72 |
 | Event Recap | 312 |
 | Event Hype | 25 |
@@ -506,13 +506,13 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1146 posts:
+Top 25 hashtags across 1147 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 89 |
+| #cars | 90 |
 | #rallycross | 76 |
-| #oioracing | 73 |
+| #oioracing | 74 |
 | #rxfx | 68 |
 | #axrxfx | 61 |
 | #ae86 | 45 |
@@ -526,14 +526,14 @@ Top 25 hashtags across 1146 posts:
 | #kcrscca | 28 |
 | #sccasolonats | 27 |
 | #autocross | 26 |
+| #lggpr | 26 |
 | #diy | 26 |
-| #lggpr | 25 |
 | #sccarallycross | 25 |
 | #rxaw11 | 25 |
 | #fx16 | 24 |
 | #celica | 24 |
 | #mgbgts | 24 |
+| #lakegarnett | 21 |
 | #mr2 | 20 |
-| #lakegarnett | 20 |
 
 <!-- social-voice-stats:end -->
