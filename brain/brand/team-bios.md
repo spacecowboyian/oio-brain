@@ -114,17 +114,17 @@ See [KCRSCCA Competition History](../../04%20-%20Events/Results/KCRSCCA-RX-Histo
 
 *Auto-generated 2026-10-07 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 140 posts
+**Social post mentions:** 141 posts
 
 - **MGBGT full buildout** — winter 2025–26 bodywork campaign: strip → patch → sand → orange paint (ongoing)
 - **Trash talk initiator** — leads the Miata-vs-MR2 smack talk series against Ian (Mar 2026)
 
 **Recent posts:**
 
-- **2026-09-11** — Next up: Ryan takes the Cayawn to the Missourah Endurah Gambler 500 with @hothatchracing.  The Gambler: cheap cars, bad…
 - **2026-09-23** — Ryan is making Paul's life hell.. and we're here for it.
 - **2026-09-24** — Ryan rolled the MGB GTS through the town square car show last year. Lake Garnett Grand Prix Revival, Oct 9–11 in Garnett…
 - **2026-10-01** — Ryan strikes again!
+- **2026-10-07** — Ryan's making a run at the #kcrscca Modified Rear Wheel Drive championship.  #oioracing #cars #mgb #rallycross
 
 <!-- social-arc:ryan:end -->
 
