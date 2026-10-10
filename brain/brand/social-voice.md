@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-10-10 from 1149 posts (1149 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-07. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-10-10 from 1151 posts (1151 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-10. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,7 +409,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 464 | Single line. Sometimes one word. 'Approved.' |
+| Punchy / Short | 466 | Single line. Sometimes one word. 'Approved.' |
 | Hashtag-Heavy | 268 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1149 posts:
+Top 25 hashtags across 1151 posts:
 
 | Hashtag | Uses |
 |---|---|
@@ -524,9 +524,9 @@ Top 25 hashtags across 1149 posts:
 | #ra21 | 34 |
 | #hondafit | 34 |
 | #kcrscca | 29 |
+| #lggpr | 27 |
 | #sccasolonats | 27 |
 | #autocross | 26 |
-| #lggpr | 26 |
 | #diy | 26 |
 | #sccarallycross | 25 |
 | #rxaw11 | 25 |
