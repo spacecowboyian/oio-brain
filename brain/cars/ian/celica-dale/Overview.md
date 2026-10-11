@@ -124,7 +124,7 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 
 *Auto-generated 2026-10-11 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 78 posts
+**Posts mentioning this car:** 79 posts
 
 **Story arc from social posts:**
 
@@ -133,10 +133,10 @@ Dale's 2026 arc is a season-long pilgrimage. Every episode that involves Dale mo
 
 **Recent social posts:**
 
-- **2026-09-17** — Dale on the move at the Lake Garnett Grand Prix Revival last year. In the KS/MO area? Be in Garnett October 9–11. Regist…
 - **2026-09-17** — Dale out front at the Lake Garnett Grand Prix Revival last year. It's back October 9–11. Register at lggpr.org  #lggpr #…
 - **2026-09-23** — 2024. Sammy the dog was happy to have the miles. Dale the car was not. Lake Garnett Grand Prix Revival, Oct 9–11 in Garn…
 - **2026-09-25** — A few bumps and bruises. Dale earned every one, and shows them all off at the town square car show. Lake Garnett Grand P…
+- **2026-10-11** — Dale making one of his 6 track sessions for the weekend at the Lake Garnett Grand Prix. Miles behind the wheel with park…
 - **2026-10-11** — Day one of the Lake Garnett Grand Prix Revival, morning to night. Hudson took Dale, the 1972 Celica, out in the rookie 6…
 
 <!-- social-arc:dale--celica:end -->
