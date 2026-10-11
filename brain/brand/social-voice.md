@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-10-11 from 1151 posts (1151 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-10. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-10-11 from 1152 posts (1152 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-11. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -410,7 +410,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
 | Punchy / Short | 466 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 268 | 3+ hashtags; copy is minimal |
+| Hashtag-Heavy | 269 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 46 | 'Our Hudson', 'errbody in the pool' |
@@ -423,7 +423,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 59 |
-| Build Update | 72 |
+| Build Update | 73 |
 | Event Recap | 314 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
@@ -506,13 +506,13 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1151 posts:
+Top 25 hashtags across 1152 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 91 |
+| #cars | 92 |
 | #rallycross | 77 |
-| #oioracing | 75 |
+| #oioracing | 76 |
 | #rxfx | 68 |
 | #axrxfx | 61 |
 | #ae86 | 45 |
@@ -524,14 +524,14 @@ Top 25 hashtags across 1151 posts:
 | #ra21 | 34 |
 | #hondafit | 34 |
 | #kcrscca | 29 |
-| #lggpr | 27 |
+| #lggpr | 28 |
 | #sccasolonats | 27 |
 | #autocross | 26 |
 | #diy | 26 |
 | #sccarallycross | 25 |
+| #celica | 25 |
 | #rxaw11 | 25 |
 | #fx16 | 24 |
-| #celica | 24 |
 | #mgbgts | 24 |
 | #lakegarnett | 21 |
 | #mr2 | 20 |

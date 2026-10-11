@@ -56,7 +56,7 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 *Auto-generated 2026-10-11 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 217 posts
+**Social post mentions:** 218 posts
 
 - **Goblin revival** — brings the Goblin back from cold storage, documented publicly (Nov 2025)
 - **Pre-race hype meets reality** — declares the Goblin race-ready, engine fails post-event (Mar 2026)
@@ -65,10 +65,10 @@ Creator, driver, shop foreman, reluctant mechanic. Self-described shadetree mech
 
 **Recent posts:**
 
-- **2026-09-09** — Ian's run 2. Tuesday, east course. 50.927, clean.  #sccasolonats #oioracing #fsp #bmw2002
 - **2026-09-19** — 2017. Ian's first time on track, in GIR, his 2014 Fiesta ST. Lake Garnett Grand Prix Revival, Oct 9–11 in Garnett, KS. R…
 - **2026-09-19** — OG wheels are up on the wall in Ian’s garage.. that’ll be enough work for this summer day in mid-September. #suburban #t…
 - **2026-09-29** — He told Ian he'd owned both of these back in the day. You hear all sorts of great stories at the Lake Garnett Grand Prix…
+- **2026-10-11** — Day one of the Lake Garnett Grand Prix Revival, morning to night. Hudson took Dale, the 1972 Celica, out in the rookie 6…
 
 <!-- social-arc:ian:end -->
 
@@ -232,16 +232,16 @@ Ian's three kids. Track time makes better street drivers — getting them in ear
 
 *Auto-generated 2026-10-11 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 12 posts
+**Social post mentions:** 13 posts
 
 - **Breakout** — fastest novice run all day at KCRX E1 2026, faster than most non-novice (Mar 25, 2026)
 
 **Recent posts:**
 
-- **2026-08-20** — Miles ran Modified Front alone. Solo class win, nobody to beat.  402.600 total. Fastest of all four OIO drivers, every c…
 - **2026-08-21** — Hudson's been the slowest in the car all day. Miles is four seconds a run quicker. Ian's been doing this for years.  But…
 - **2026-08-25** — First day of sophomore year for Hudson and #fiddycent 🤞 #fitgang #cars #hondafit
 - **2026-09-12** — Hudson putting his own 4AGE together. Not many kids at school can say that.  #oioracing #4age #ae92 #toyota #corolla
+- **2026-10-11** — Day one of the Lake Garnett Grand Prix Revival, morning to night. Hudson took Dale, the 1972 Celica, out in the rookie 6…
 
 <!-- social-arc:hudson:end -->
 
@@ -289,14 +289,14 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 *Auto-generated 2026-10-11 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 22 posts
+**Social post mentions:** 23 posts
 
 **Recent posts:**
 
-- **2026-08-12** — Miles and Hudson shared Fitty Cent for the day. Same car, same course. Miles came back a second a run quicker. Hudson ca…
 - **2026-08-19** — KCRX E6. Four OIO drivers entered. Three class wins. Ian finished second.  Miles was fastest of all four at 402.6. Hudso…
 - **2026-08-20** — Miles ran Modified Front alone. Solo class win, nobody to beat.  402.600 total. Fastest of all four OIO drivers, every c…
 - **2026-08-21** — Hudson's been the slowest in the car all day. Miles is four seconds a run quicker. Ian's been doing this for years.  But…
+- **2026-10-11** — Day one of the Lake Garnett Grand Prix Revival, morning to night. Hudson took Dale, the 1972 Celica, out in the rookie 6…
 
 <!-- social-arc:miles:end -->
 
