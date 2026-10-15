@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-10-15 from 1156 posts (1156 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-13. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-10-15 from 1157 posts (1157 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-15. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -410,7 +410,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
 | Punchy / Short | 466 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 272 | 3+ hashtags; copy is minimal |
+| Hashtag-Heavy | 273 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 46 | 'Our Hudson', 'errbody in the pool' |
@@ -423,7 +423,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 59 |
-| Build Update | 73 |
+| Build Update | 74 |
 | Event Recap | 314 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
@@ -506,12 +506,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1156 posts:
+Top 25 hashtags across 1157 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 93 |
-| #oioracing | 79 |
+| #cars | 94 |
+| #oioracing | 80 |
 | #rallycross | 77 |
 | #rxfx | 68 |
 | #axrxfx | 61 |
@@ -523,17 +523,17 @@ Top 25 hashtags across 1156 posts:
 | #racing | 35 |
 | #ra21 | 34 |
 | #hondafit | 34 |
-| #lggpr | 30 |
+| #lggpr | 31 |
 | #kcrscca | 29 |
+| #celica | 27 |
 | #sccasolonats | 27 |
 | #autocross | 26 |
 | #diy | 26 |
-| #celica | 26 |
 | #sccarallycross | 25 |
 | #rxaw11 | 25 |
 | #fx16 | 24 |
 | #mgbgts | 24 |
-| #lakegarnett | 21 |
+| #lakegarnett | 22 |
 | #mr2 | 20 |
 
 <!-- social-voice-stats:end -->
