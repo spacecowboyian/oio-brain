@@ -289,14 +289,14 @@ Miles is the co-driver of Ian's MR2 in KCRSCCA rallycross competition (Ian is th
 
 *Auto-generated 2026-10-17 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Social post mentions:** 24 posts
+**Social post mentions:** 25 posts
 
 **Recent posts:**
 
-- **2026-08-20** — Miles ran Modified Front alone. Solo class win, nobody to beat.  402.600 total. Fastest of all four OIO drivers, every c…
 - **2026-08-21** — Hudson's been the slowest in the car all day. Miles is four seconds a run quicker. Ian's been doing this for years.  But…
 - **2026-10-11** — Dale making one of his 6 track sessions for the weekend at the Lake Garnett Grand Prix. Miles behind the wheel with park…
 - **2026-10-11** — Day one of the Lake Garnett Grand Prix Revival, morning to night. Hudson took Dale, the 1972 Celica, out in the rookie 6…
+- **2026-10-17** — One school in the country gives a four-year degree in restoring old cars.  A student-built '53 Mercedes took 2nd at Pebb…
 
 <!-- social-arc:miles:end -->
 
