@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-10-17 from 1159 posts (1159 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-16. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-10-17 from 1160 posts (1160 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-17. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,7 +409,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 468 | Single line. Sometimes one word. 'Approved.' |
+| Punchy / Short | 469 | Single line. Sometimes one word. 'Approved.' |
 | Hashtag-Heavy | 274 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
@@ -506,7 +506,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1159 posts:
+Top 25 hashtags across 1160 posts:
 
 | Hashtag | Uses |
 |---|---|
@@ -523,7 +523,7 @@ Top 25 hashtags across 1159 posts:
 | #racing | 35 |
 | #ra21 | 34 |
 | #hondafit | 34 |
-| #lggpr | 32 |
+| #lggpr | 33 |
 | #kcrscca | 29 |
 | #celica | 28 |
 | #sccasolonats | 27 |
