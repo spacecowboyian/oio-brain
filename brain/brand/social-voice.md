@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-10-19 from 1162 posts (1162 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-19. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-10-19 from 1163 posts (1163 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-19. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -410,7 +410,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
 | Punchy / Short | 470 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 275 | 3+ hashtags; copy is minimal |
+| Hashtag-Heavy | 276 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 46 | 'Our Hudson', 'errbody in the pool' |
@@ -422,7 +422,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 | Type | Count |
 |---|---|
-| Video Tease | 60 |
+| Video Tease | 61 |
 | Build Update | 74 |
 | Event Recap | 314 |
 | Event Hype | 25 |
@@ -506,12 +506,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1162 posts:
+Top 25 hashtags across 1163 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 95 |
-| #oioracing | 82 |
+| #oioracing | 83 |
 | #rallycross | 77 |
 | #rxfx | 68 |
 | #axrxfx | 61 |
@@ -521,14 +521,14 @@ Top 25 hashtags across 1162 posts:
 | #fitgang | 39 |
 | #scca | 37 |
 | #racing | 35 |
+| #hondafit | 35 |
 | #ra21 | 34 |
-| #hondafit | 34 |
 | #lggpr | 33 |
 | #kcrscca | 29 |
 | #celica | 28 |
+| #diy | 27 |
 | #sccasolonats | 27 |
 | #autocross | 26 |
-| #diy | 26 |
 | #sccarallycross | 25 |
 | #rxaw11 | 25 |
 | #fx16 | 24 |
