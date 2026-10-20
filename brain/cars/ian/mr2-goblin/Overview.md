@@ -106,7 +106,7 @@ The Goblin's 2026 narrative has escalated. After the March 28 engine MRI confirm
 
 *Auto-generated 2026-10-20 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 48 posts
+**Posts mentioning this car:** 49 posts
 
 **Story arc from social posts:**
 
@@ -118,11 +118,11 @@ The Goblin's 2026 narrative has escalated. After the March 28 engine MRI confirm
 
 **Recent social posts:**
 
-- **2026-03-22** — World’s slowest drag race… it might not actually be but Ian gets to post the videos and he’s got to beat the Miata at ra…
 - **2026-03-28** — The goblin speaketh… cylinder four is done. Time to tear it down. #goblinMR2 #RXMR2 #rallycross #aw11
 - **2026-04-01** — We killed another rallycross car. So naturally, we made a questionable decision. 😅  The MR2 is done for the season. The…
 - **2026-10-04** — Fresh 16V 4AGE, closing in on first start. #oioracing #4age #aw11 #toyotamr2 #enginebuild
 - **2026-10-19** — This started as a torque check.  The last time these plugs weren't checked, cylinder 3 and a head went with them. New se…
+- **2026-10-20** — The 2026 rallycross season started with a funeral.  The Goblin blew its motor on the last run of day one. The Honda Fit…
 
 <!-- social-arc:goblin--mr2:end -->
 

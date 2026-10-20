@@ -194,7 +194,7 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 *Auto-generated 2026-10-20 from social posts by `dev/scripts/analyze_social_posts.py`. Do not hand-edit.*
 
-**Posts mentioning this car:** 70 posts
+**Posts mentioning this car:** 71 posts
 
 **Story arc from social posts:**
 
@@ -205,11 +205,11 @@ Both Ian and Miles Smith have raced Fitty Cent in KCRSCCA events (autocross and 
 
 **Recent social posts:**
 
-- **2026-09-08** — The Fit gang came to Nationals.  GD3 Honda Fit, 180 XB, wing, splitter, Hawk pads, parked next to a Lotus wearing the sa…
 - **2026-10-01** — Fitty Cent. EST class.  #oioracing #cars #hondafit #ge8 #autocross
 - **2026-10-03** — Repost from Lean #fitgang
 - **2026-10-05** — Can a Honda Fit do it in the dirt?  It beat every all wheel drive car there but one. See for yourself.  https://youtu.be…
 - **2026-10-19** — This started as a torque check.  The last time these plugs weren't checked, cylinder 3 and a head went with them. New se…
+- **2026-10-20** — The 2026 rallycross season started with a funeral.  The Goblin blew its motor on the last run of day one. The Honda Fit…
 
 <!-- social-arc:honda-fit---fitty-cent:end -->
 
