@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-10-25 from 1168 posts (1168 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-24. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-10-25 from 1169 posts (1169 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-25. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 472 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 278 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 473 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 279 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 46 | 'Our Hudson', 'errbody in the pool' |
@@ -424,7 +424,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 |---|---|
 | Video Tease | 62 |
 | Build Update | 75 |
-| Event Recap | 315 |
+| Event Recap | 316 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
 | Enthusiast Take | 19 |
@@ -506,12 +506,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1168 posts:
+Top 25 hashtags across 1169 posts:
 
 | Hashtag | Uses |
 |---|---|
 | #cars | 96 |
-| #oioracing | 85 |
+| #oioracing | 86 |
 | #rallycross | 78 |
 | #rxfx | 68 |
 | #axrxfx | 61 |
@@ -520,15 +520,15 @@ Top 25 hashtags across 1168 posts:
 | #dalesdragon | 40 |
 | #fitgang | 39 |
 | #scca | 37 |
-| #hondafit | 36 |
+| #hondafit | 37 |
 | #racing | 35 |
 | #ra21 | 34 |
 | #lggpr | 33 |
-| #kcrscca | 30 |
+| #kcrscca | 31 |
 | #celica | 28 |
+| #autocross | 27 |
 | #diy | 27 |
 | #sccasolonats | 27 |
-| #autocross | 26 |
 | #sccarallycross | 25 |
 | #rxaw11 | 25 |
 | #fx16 | 24 |
