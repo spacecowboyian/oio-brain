@@ -400,7 +400,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ## Live Post Stats Appendix
 
-*Auto-generated 2026-10-28 from 1169 posts (1169 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-25. Updated on every social post ingestion run — do not hand-edit this section.*
+*Auto-generated 2026-10-28 from 1170 posts (1170 Facebook, 0 Instagram) covering 2018-11-19 → 2026-10-28. Updated on every social post ingestion run — do not hand-edit this section.*
 
 ---
 
@@ -409,8 +409,8 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Tone | Posts | What It Looks Like |
 |---|---|---|
 | Pit-Talk Casual | 6 | Short, direct, 1–3 sentences — 'this thing rules' |
-| Punchy / Short | 473 | Single line. Sometimes one word. 'Approved.' |
-| Hashtag-Heavy | 279 | 3+ hashtags; copy is minimal |
+| Punchy / Short | 474 | Single line. Sometimes one word. 'Approved.' |
+| Hashtag-Heavy | 280 | 3+ hashtags; copy is minimal |
 | Absurdist Humor | 5 | Committed bit — lawnmower as valid trash-talk |
 | Storytelling / Sermon | 5 | Multi-sentence arc: setup, conflict, payoff implied |
 | Community Voice | 46 | 'Our Hudson', 'errbody in the pool' |
@@ -423,7 +423,7 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 | Type | Count |
 |---|---|
 | Video Tease | 62 |
-| Build Update | 75 |
+| Build Update | 76 |
 | Event Recap | 316 |
 | Event Hype | 25 |
 | Trash Talk | 9 |
@@ -506,12 +506,12 @@ If a post sounds like a real enthusiast telling the story of a real machine and 
 
 ### Observed Hashtag Frequency
 
-Top 25 hashtags across 1169 posts:
+Top 25 hashtags across 1170 posts:
 
 | Hashtag | Uses |
 |---|---|
-| #cars | 96 |
-| #oioracing | 86 |
+| #cars | 97 |
+| #oioracing | 87 |
 | #rallycross | 78 |
 | #rxfx | 68 |
 | #axrxfx | 61 |
